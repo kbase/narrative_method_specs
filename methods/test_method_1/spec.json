@@ -4,24 +4,9 @@
     "authors": [ "msneddon","wstester1" ],
     "contact": "help@kbase.us",
     
-    "subtitle":"This method is a test, and only a test, of the method store system.",
-    "tooltip" :"This method is a test, and only a test.  Hello tooltip!",
-    
-    "screenshots": [ "s1.png","s2.png" ],
-    
     "categorizations": [
         ["Some Methods"]
     ],
-    
-    "method_suggestions": {
-        "next": [
-            "test_method_2",
-            "test_method_3"
-        ],
-        "related": [
-            "test_method_4"
-        ]
-    },
     
     "widgets": {
         "output":"KBaseDefaultViewer"
@@ -30,9 +15,6 @@
     "parameters": [
         {
             "id": "genome",
-            "ui_name": "Genome",
-            "short_hint":"The Genome you want to test",
-            "long_hint":"This is the Genome that will be used during tests.  Select one that is good.",
             
             "optional":false,
             "advanced":false,
@@ -49,9 +31,6 @@
         
         {
             "id": "iterations",
-            "ui_name": "Iterations",
-            "short_hint":"The number of times you want to test",
-            "long_hint":"This is the Genome that will be used during tests.  Select one that is good.",
             
             "optional":false,
             "advanced":true,

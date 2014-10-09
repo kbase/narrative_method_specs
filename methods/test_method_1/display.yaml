@@ -1,0 +1,40 @@
+---
+name     : Test Method 1
+subtitle : This method is a test, and only a test, of the method store system.
+tooltip  : This method is a test, and only a test.  Hello tooltip!
+
+screenshots :
+    - s1.png
+    - s2.png
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        - test_method_2
+    next :
+        - test_method_3
+        - test_method_4
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    genome :
+        ui-name    : Genome
+        short-hint : The genome object you wish to test.
+        long-hint  : |
+            This is the Genome that will be used during tests.  Select one that is good.<br>
+            For more details, see <a href="https://kbase.us">kbase</a>.
+        
+    
+    iterations :
+        ui-name    : Iterations
+        short-hint : The number of times you want to test
+        long-hint  : |
+            This method runs a series of tests.  This parameter sets the number of times the method is run.<br>
+            For more details, see <a href="https://kbase.us">kbase</a>.
+
+
