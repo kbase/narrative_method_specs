@@ -40,3 +40,21 @@ parameters :
             For more details, see <a href="https://kbase.us">kbase</a>.
 
 
+description : |
+    <p>This is a test method</p>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+
+
+technical-description : |
+    <b> this is the technical description </b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+    
+    
+    
+    

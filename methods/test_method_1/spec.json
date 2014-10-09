@@ -4,9 +4,7 @@
     "authors": [ "msneddon","wstester1" ],
     "contact": "help@kbase.us",
     
-    "categorizations": [
-        ["Some Methods"]
-    ],
+    "categories": [ "testmethods" ],
     
     "widgets": {
         "output":"KBaseDefaultViewer"
