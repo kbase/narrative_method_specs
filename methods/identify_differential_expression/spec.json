@@ -1,0 +1,16 @@
+{
+  "name" : "Identify Differential Expression",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "variation_expression_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : null
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Identify Differential Expression"
+  }
+}

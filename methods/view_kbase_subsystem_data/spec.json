@@ -1,0 +1,16 @@
+{
+  "name" : "View KBase Subsystem Data",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "microbes_annotation" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "KBaseSEEDFunctions"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "View KBase Subsystem Data"
+  }
+}

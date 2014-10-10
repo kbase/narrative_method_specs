@@ -1,0 +1,65 @@
+#
+# Define basic display information
+#
+name     : Construct Co-expression Network and Clusters
+subtitle : Construct co-expression network and a set of densely interconnected clusters in co-expression network based on expression table object
+tooltip  : Construct co-expression network and a set of densely interconnected clusters in co-expression network based on expression table object
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param4 :
+        ui-name : num_module
+        short-hint : The number of cluster
+        long-hint  : |
+            The number of cluster
+
+
+    param3 :
+        ui-name : cut_off
+        short-hint : Lower cutoff to keep edges
+        long-hint  : |
+            Lower cutoff to keep edges
+
+
+    param2 :
+        ui-name : clust_method
+        short-hint : Clustering algorithm ('hclust' for hierachical clustering or 'WGNCA')
+        long-hint  : |
+            Clustering algorithm ('hclust' for hierachical clustering or 'WGNCA')
+
+
+    param1 :
+        ui-name : net_method
+        short-hint : Network construction algorithm ('simple' for Pearson correlation coefficient or 'WGCNA')
+        long-hint  : |
+            Network construction algorithm ('simple' for Pearson correlation coefficient or 'WGCNA')
+
+
+    param0 :
+        ui-name : series_obj_id
+        short-hint : Object id of the expression Series data
+        long-hint  : |
+            Object id of the expression Series data
+
+
+description : |
+    Construct co-expression network and a set of densely interconnected clusters in co-expression network based on expression table object
+
+
+technical-description : |
+    Construct co-expression network and a set of densely interconnected clusters in co-expression network based on expression table object

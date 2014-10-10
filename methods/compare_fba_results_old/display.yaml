@@ -1,0 +1,44 @@
+#
+# Define basic display information
+#
+name     : Compare FBA Results
+subtitle : Compare two FBA results, showing differences in fluxes for reactions.
+tooltip  : Compare two FBA results, showing differences in fluxes for reactions.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param1 :
+        ui-name : Second FBA result
+        short-hint : Second FBA result
+        long-hint  : |
+            Second FBA result
+
+
+    param0 :
+        ui-name : First FBA result
+        short-hint : First FBA result
+        long-hint  : |
+            First FBA result
+
+
+description : |
+    Compare two FBA results, showing differences in fluxes for reactions.
+
+
+technical-description : |
+    Compare two FBA results, showing differences in fluxes for reactions.

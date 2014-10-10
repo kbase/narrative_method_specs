@@ -1,0 +1,16 @@
+{
+  "name" : "Delete File",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "kbase_commands" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "DisplayTextWidget"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Delete File"
+  }
+}

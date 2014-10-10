@@ -1,0 +1,16 @@
+{
+  "name" : "Build Media",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "microbes_metabolic_modeling" ],
+  "widgets" : {
+    "input" : "kbaseBuildMediaInput",
+    "output" : "kbaseMediaViewer"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Build Media"
+  }
+}

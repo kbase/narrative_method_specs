@@ -1,0 +1,51 @@
+#
+# Define basic display information
+#
+name     : Compare Two Metabolic Models
+subtitle : Compare genes mapped to the same reactions from two metabolic models according to the comparison result between proteomes. See also the function 'Compare Two Proteomes'.  [19]
+tooltip  : Compare genes mapped to the same reactions from two metabolic models according to the comparison result between proteomes. See also the function 'Compare Two Proteomes'.  [19]
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param2 :
+        ui-name : Proteome Comparison ID
+        short-hint : Proteome comparison ID [19.3]
+        long-hint  : |
+            Proteome comparison ID [19.3]
+
+
+    param1 :
+        ui-name : FBA Model 2 ID
+        short-hint : an FBA model id from second genome [19.2]
+        long-hint  : |
+            an FBA model id from second genome [19.2]
+
+
+    param0 :
+        ui-name : FBA Model 1 ID
+        short-hint : an FBA model id from first genome [19.1]
+        long-hint  : |
+            an FBA model id from first genome [19.1]
+
+
+description : |
+    Compare genes mapped to the same reactions from two metabolic models according to the comparison result between proteomes. See also the function 'Compare Two Proteomes'.  [19]
+
+
+technical-description : |
+    Compare genes mapped to the same reactions from two metabolic models according to the comparison result between proteomes. See also the function 'Compare Two Proteomes'.  [19]

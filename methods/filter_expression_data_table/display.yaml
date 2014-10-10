@@ -1,0 +1,51 @@
+#
+# Define basic display information
+#
+name     : Filter Expression Data Table 
+subtitle : It takes the complete data table as input and filters the significant differentially expressed genes
+tooltip  : It takes the complete data table as input and filters the significant differentially expressed genes
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param2 :
+        ui-name : Output file prefix
+        short-hint : Output File prefix
+        long-hint  : |
+            Output File prefix
+
+
+    param1 :
+        ui-name : DataTable Name
+        short-hint : Datatable Name
+        long-hint  : |
+            Datatable Name
+
+
+    param0 :
+        ui-name : Workspace
+        short-hint : Name of workspace; default is current
+        long-hint  : |
+            Name of workspace; default is current
+
+
+description : |
+    It takes the complete data table as input and filters the significant differentially expressed genes
+
+
+technical-description : |
+    It takes the complete data table as input and filters the significant differentially expressed genes

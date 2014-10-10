@@ -1,0 +1,16 @@
+{
+  "name" : "Trait Manhattan Plot",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "gwas_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "Manhattan"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Trait Manhattan Plot"
+  }
+}

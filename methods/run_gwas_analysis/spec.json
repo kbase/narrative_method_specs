@@ -1,0 +1,16 @@
+{
+  "name" : "Run GWAS analysis",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "gwas_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "ValueListWidget"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Run GWAS analysis"
+  }
+}

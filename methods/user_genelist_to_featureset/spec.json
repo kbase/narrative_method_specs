@@ -1,0 +1,16 @@
+{
+  "name" : "User genelist to FeatureSet",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "gwas_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "ValueListWidget"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "User genelist to FeatureSet"
+  }
+}

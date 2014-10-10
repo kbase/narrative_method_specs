@@ -1,0 +1,16 @@
+{
+  "name" : "Gene network",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "gwas_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbasePlantsNetworkNarrative"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Gene network"
+  }
+}

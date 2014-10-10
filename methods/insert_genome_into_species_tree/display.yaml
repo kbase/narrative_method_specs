@@ -1,0 +1,51 @@
+#
+# Define basic display information
+#
+name     : Insert Genome into Species Tree
+subtitle : Insert a Genome into a global genome tree composed of 49 conserved COGs [20]
+tooltip  : Insert a Genome into a global genome tree composed of 49 conserved COGs [20]
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param2 :
+        ui-name : Output species tree ID
+        short-hint : Output species tree ID. If empty, an ID will be chosen randomly. [20.3]
+        long-hint  : |
+            Output species tree ID. If empty, an ID will be chosen randomly. [20.3]
+
+
+    param1 :
+        ui-name : Neighbor public genome count
+        short-hint : number of closest public genomes the tree will contain. (optional, default value is 100) [20.2]
+        long-hint  : |
+            number of closest public genomes the tree will contain. (optional, default value is 100) [20.2]
+
+
+    param0 :
+        ui-name : Genome ID
+        short-hint : a Genome to insert into the tree [20.1]
+        long-hint  : |
+            a Genome to insert into the tree [20.1]
+
+
+description : |
+    Insert a Genome into a global genome tree composed of 49 conserved COGs [20]
+
+
+technical-description : |
+    Insert a Genome into a global genome tree composed of 49 conserved COGs [20]

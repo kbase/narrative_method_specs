@@ -1,0 +1,44 @@
+#
+# Define basic display information
+#
+name     : Build a Metabolic Model
+subtitle : Given an annotated Genome, build a draft metabolic model which can be analyzed with FBA. [6]
+tooltip  : Given an annotated Genome, build a draft metabolic model which can be analyzed with FBA. [6]
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param1 :
+        ui-name : Output Metabolic Model Name
+        short-hint : select a name for the generated metabolic model (optional) [6.2]
+        long-hint  : |
+            select a name for the generated metabolic model (optional) [6.2]
+
+
+    param0 :
+        ui-name : Genome Name
+        short-hint : Source genome name [6.1]
+        long-hint  : |
+            Source genome name [6.1]
+
+
+description : |
+    Given an annotated Genome, build a draft metabolic model which can be analyzed with FBA. [6]
+
+
+technical-description : |
+    Given an annotated Genome, build a draft metabolic model which can be analyzed with FBA. [6]

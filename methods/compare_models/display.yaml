@@ -1,0 +1,37 @@
+#
+# Define basic display information
+#
+name     : Compare Models
+subtitle : Compare two or models and compute core, noncore unique reactions, functional roles with their subsystem information.
+tooltip  : Compare two or models and compute core, noncore unique reactions, functional roles with their subsystem information.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : Model IDs
+        short-hint : list of model ids (comma seperated)
+        long-hint  : |
+            list of model ids (comma seperated)
+
+
+description : |
+    Compare two or models and compute core, noncore unique reactions, functional roles with their subsystem information.
+
+
+technical-description : |
+    Compare two or models and compute core, noncore unique reactions, functional roles with their subsystem information.

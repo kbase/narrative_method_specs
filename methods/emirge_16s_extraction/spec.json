@@ -1,0 +1,16 @@
+{
+  "name" : "EMIRGE 16S Extraction",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "communities_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "ImageViewWidget"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "EMIRGE 16S Extraction"
+  }
+}

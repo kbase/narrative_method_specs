@@ -1,0 +1,16 @@
+{
+  "name" : "FeatureSet table",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "gwas_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "GeneTableWidget"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "FeatureSet table"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name" : "View Abundance Profile Values",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "communities_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "GeneTableWidget"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "View Abundance Profile Values"
+  }
+}

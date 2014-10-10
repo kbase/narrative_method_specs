@@ -1,0 +1,16 @@
+{
+  "name" : "Genome Comparison from Pangenome",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : false,
+  "categories" : [ "microbes_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "compgenomePa"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Genome Comparison from Pangenome"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name" : "Delete Reaction",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "microbes_metabolic_modeling" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseModelTabs"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Delete Reaction"
+  }
+}

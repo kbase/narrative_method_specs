@@ -1,0 +1,16 @@
+{
+  "name" : "Annotate Network Genes with Ontology Terms",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "plants_coexpression_service" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "ValueListWidget"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Annotate Network Genes with Ontology Terms"
+  }
+}

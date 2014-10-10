@@ -1,0 +1,16 @@
+{
+  "name" : "Import NCBI Genome",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : false,
+  "categories" : [ "microbes_services" ],
+  "widgets" : {
+    "input" : "NcbiGenomeImportInput",
+    "output" : "GenomeAnnotation"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Import NCBI Genome"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name" : "View Metabolic Model Details",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : false,
+  "categories" : [ "microbes_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseModelTabs"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "View Metabolic Model Details"
+  }
+}

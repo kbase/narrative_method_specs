@@ -1,0 +1,44 @@
+#
+# Define basic display information
+#
+name     : User genelist to FeatureSet
+subtitle : This method converts user gene list to FeatureSet typed object.
+tooltip  : This method converts user gene list to FeatureSet typed object.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param1 :
+        ui-name : out_id
+        short-hint : Output FeatureSet object identifier
+        long-hint  : |
+            Output FeatureSet object identifier
+
+
+    param0 :
+        ui-name : gene_ids
+        short-hint : List of genes (comma separated)
+        long-hint  : |
+            List of genes (comma separated)
+
+
+description : |
+    This method converts user gene list to FeatureSet typed object.
+
+
+technical-description : |
+    This method converts user gene list to FeatureSet typed object.

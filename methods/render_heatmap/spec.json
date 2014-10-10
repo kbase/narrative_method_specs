@@ -1,0 +1,16 @@
+{
+  "name" : "Render Heatmap",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "variation_expression_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseHeatmap"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Render Heatmap"
+  }
+}

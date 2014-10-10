@@ -1,0 +1,16 @@
+{
+  "name" : "Download File",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "kbase_commands" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "DownloadFileWidget"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Download File"
+  }
+}

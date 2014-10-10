@@ -1,0 +1,79 @@
+#
+# Define basic display information
+#
+name     : View Abundance Profile Values
+subtitle : View a slice of a BIOM format abundance profile as a table
+tooltip  : View a slice of a BIOM format abundance profile as a table
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param6 :
+        ui-name : Show Stats
+        short-hint : include significance stats in table view
+        long-hint  : |
+            include significance stats in table view
+
+
+    param5 :
+        ui-name : Column End
+        short-hint : column position to end table with, default is last
+        long-hint  : |
+            column position to end table with, default is last
+
+
+    param4 :
+        ui-name : Column Start
+        short-hint : column position to start table with, default is first
+        long-hint  : |
+            column position to start table with, default is first
+
+
+    param3 :
+        ui-name : Row End
+        short-hint : row position to end table with, default is last
+        long-hint  : |
+            row position to end table with, default is last
+
+
+    param2 :
+        ui-name : Row Start
+        short-hint : row position to start table with, default is first
+        long-hint  : |
+            row position to start table with, default is first
+
+
+    param1 :
+        ui-name : Input Name
+        short-hint : object name of Communities.Profile
+        long-hint  : |
+            object name of Communities.Profile
+
+
+    param0 :
+        ui-name : Workspace
+        short-hint : name of workspace, default is current
+        long-hint  : |
+            name of workspace, default is current
+
+
+description : |
+    View a slice of a BIOM format abundance profile as a table
+
+
+technical-description : |
+    View a slice of a BIOM format abundance profile as a table

@@ -1,0 +1,16 @@
+{
+  "name" : "Filter Differentially Expressed Genes",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "plants_coexpression_service" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "ValueListWidget"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Filter Differentially Expressed Genes"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name" : "Compare Two Proteomes",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : false,
+  "categories" : [ "microbes_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "GenomeComparisonWidget"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Compare Two Proteomes"
+  }
+}

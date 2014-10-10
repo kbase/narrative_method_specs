@@ -1,0 +1,37 @@
+#
+# Define basic display information
+#
+name     : View Media
+subtitle : Bring up a detailed view of a Media set within the narrative. [9]
+tooltip  : Bring up a detailed view of a Media set within the narrative. [9]
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : Media ID
+        short-hint : Media type [9.1]
+        long-hint  : |
+            Media type [9.1]
+
+
+description : |
+    Bring up a detailed view of a Media set within the narrative. [9]
+
+
+technical-description : |
+    Bring up a detailed view of a Media set within the narrative. [9]

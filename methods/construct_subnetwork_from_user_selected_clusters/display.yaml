@@ -1,0 +1,44 @@
+#
+# Define basic display information
+#
+name     : Construct Subnetwork from User Selected Clusters
+subtitle : Construct subnetwork connecting genes in user-selected clusters
+tooltip  : Construct subnetwork connecting genes in user-selected clusters
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param1 :
+        ui-name : cluster_id_list
+        short-hint : Comma-separated list of user-selected cluster ids
+        long-hint  : |
+            Comma-separated list of user-selected cluster ids
+
+
+    param0 :
+        ui-name : net_obj_id
+        short-hint : Cluster object id
+        long-hint  : |
+            Cluster object id
+
+
+description : |
+    Construct subnetwork connecting genes in user-selected clusters
+
+
+technical-description : |
+    Construct subnetwork connecting genes in user-selected clusters

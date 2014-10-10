@@ -1,0 +1,65 @@
+#
+# Define basic display information
+#
+name     : Generate Data Table 
+subtitle : It takes the Expression series id as input and builds a complete gene expression data table
+tooltip  : It takes the Expression series id as input and builds a complete gene expression data table
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param4 :
+        ui-name : Output file prefix
+        short-hint : Output File prefix
+        long-hint  : |
+            Output File prefix
+
+
+    param3 :
+        ui-name : Reference
+        short-hint : Reference Genome (kbase id)
+        long-hint  : |
+            Reference Genome (kbase id)
+
+
+    param2 :
+        ui-name : Expression Series ID
+        short-hint : Expression Series Id
+        long-hint  : |
+            Expression Series Id
+
+
+    param1 :
+        ui-name : Name
+        short-hint : Datatable Name
+        long-hint  : |
+            Datatable Name
+
+
+    param0 :
+        ui-name : Workspace
+        short-hint : Name of the workspace; default is current
+        long-hint  : |
+            Name of the workspace; default is current
+
+
+description : |
+    It takes the Expression series id as input and builds a complete gene expression data table
+
+
+technical-description : |
+    It takes the Expression series id as input and builds a complete gene expression data table

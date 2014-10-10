@@ -1,0 +1,37 @@
+#
+# Define basic display information
+#
+name     : Upload Genome (GBK-file)
+subtitle : Upload a Genome and ContigSet from GBK-file (or files in case of zip) into your workspace. This function should be run before adding KBase annotations to this Genome. [25]
+tooltip  : Upload a Genome and ContigSet from GBK-file (or files in case of zip) into your workspace. This function should be run before adding KBase annotations to this Genome. [25]
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : Genome Object ID
+        short-hint : Output Genome ID. If empty, an ID will be chosen randomly. [25.1]
+        long-hint  : |
+            Output Genome ID. If empty, an ID will be chosen randomly. [25.1]
+
+
+description : |
+    Upload a Genome and ContigSet from GBK-file (or files in case of zip) into your workspace. This function should be run before adding KBase annotations to this Genome. [25]
+
+
+technical-description : |
+    Upload a Genome and ContigSet from GBK-file (or files in case of zip) into your workspace. This function should be run before adding KBase annotations to this Genome. [25]

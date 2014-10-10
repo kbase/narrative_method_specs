@@ -1,0 +1,16 @@
+{
+  "name" : "Integrate Gapfill Solution",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : false,
+  "categories" : [ "microbes_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseIntegrateGapfillOutput"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Integrate Gapfill Solution"
+  }
+}

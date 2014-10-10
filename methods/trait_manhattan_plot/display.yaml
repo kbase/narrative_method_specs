@@ -1,0 +1,44 @@
+#
+# Define basic display information
+#
+name     : Trait Manhattan Plot
+subtitle : Widget to visualize top SNPs related to a trait on the manhattan plot. On the X-axis of the plot are all contigs, and on the Y-axis is -log10(pvalue) of SNPs-association for the trait.
+tooltip  : Widget to visualize top SNPs related to a trait on the manhattan plot. On the X-axis of the plot are all contigs, and on the Y-axis is -log10(pvalue) of SNPs-association for the trait.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param1 :
+        ui-name : gwas_result
+        short-hint : GWAS analysis (MLM) result
+        long-hint  : |
+            GWAS analysis (MLM) result
+
+
+    param0 :
+        ui-name : workspaceID
+        short-hint : workspaceID (use current if empty)
+        long-hint  : |
+            workspaceID (use current if empty)
+
+
+description : |
+    Widget to visualize top SNPs related to a trait on the manhattan plot. On the X-axis of the plot are all contigs, and on the Y-axis is -log10(pvalue) of SNPs-association for the trait.
+
+
+technical-description : |
+    Widget to visualize top SNPs related to a trait on the manhattan plot. On the X-axis of the plot are all contigs, and on the Y-axis is -log10(pvalue) of SNPs-association for the trait.

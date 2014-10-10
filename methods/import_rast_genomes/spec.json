@@ -1,0 +1,16 @@
+{
+  "name" : "Import RAST Genomes",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "microbes_assembly_genome_import" ],
+  "widgets" : {
+    "input" : "rastGenomeImportInput",
+    "output" : "GenomeAnnotation"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Import RAST Genomes"
+  }
+}

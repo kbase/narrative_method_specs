@@ -1,0 +1,37 @@
+#
+# Define basic display information
+#
+name     : View Pangenome
+subtitle : Show Pangenome object. [29]
+tooltip  : Show Pangenome object. [29]
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : Pangenome ID
+        short-hint : ID of pangenome object [29.1]
+        long-hint  : |
+            ID of pangenome object [29.1]
+
+
+description : |
+    Show Pangenome object. [29]
+
+
+technical-description : |
+    Show Pangenome object. [29]

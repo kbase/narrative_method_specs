@@ -1,0 +1,93 @@
+#
+# Define basic display information
+#
+name     : Create Expression Series 
+subtitle : Bundles the gene expression profiles of all the RNA-Seq samples to a RNA-Seq experiment. Input the Expression Samples and details about the experiment to create a RNASeq series
+tooltip  : Bundles the gene expression profiles of all the RNA-Seq samples to a RNA-Seq experiment. Input the Expression Samples and details about the experiment to create a RNASeq series
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param7 :
+        ui-name : Publication Date
+        short-hint : External Source Date
+        long-hint  : |
+            External Source Date
+
+
+    param6 :
+        ui-name : Source Id
+        short-hint : source_Id
+        long-hint  : |
+            source_Id
+
+
+    param5 :
+        ui-name : Experiment Summary
+        short-hint : Summary of the Experiment
+        long-hint  : |
+            Summary of the Experiment
+
+
+    param4 :
+        ui-name : Experiment Design
+        short-hint : Design of the Experiment
+        long-hint  : |
+            Design of the Experiment
+
+
+    param3 :
+        ui-name : Experiment Title
+        short-hint : Title
+        long-hint  : |
+            Title
+
+
+    param2 :
+        ui-name : Reference Genome (kbase id)
+        short-hint : Reference genome
+        long-hint  : |
+            Reference genome
+
+
+    param1 :
+        ui-name : Expression Samples
+        short-hint : Expression Sample ids
+        long-hint  : |
+            Expression Sample ids
+
+
+    param0 :
+        ui-name : Workspace
+        short-hint : Name of the workspace; default is current
+        long-hint  : |
+            Name of the workspace; default is current
+
+
+    param8 :
+        ui-name : Output file prefix
+        short-hint : Output File prefix
+        long-hint  : |
+            Output File prefix
+
+
+description : |
+    Bundles the gene expression profiles of all the RNA-Seq samples to a RNA-Seq experiment. Input the Expression Samples and details about the experiment to create a RNASeq series
+
+
+technical-description : |
+    Bundles the gene expression profiles of all the RNA-Seq samples to a RNA-Seq experiment. Input the Expression Samples and details about the experiment to create a RNASeq series

@@ -1,0 +1,16 @@
+{
+  "name" : "Plot Gene Expression Histogram",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "variation_expression_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseHistogram"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Plot Gene Expression Histogram"
+  }
+}

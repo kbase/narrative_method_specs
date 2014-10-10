@@ -1,0 +1,16 @@
+{
+  "name" : "Insert Set of Genomes into Species Tree",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : false,
+  "categories" : [ "microbes_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseTree"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Insert Set of Genomes into Species Tree"
+  }
+}

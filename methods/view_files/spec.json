@@ -1,0 +1,16 @@
+{
+  "name" : "View Files",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "kbase_commands" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "GeneTableWidget"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "View Files"
+  }
+}

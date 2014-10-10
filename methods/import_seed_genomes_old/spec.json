@@ -1,0 +1,16 @@
+{
+  "name" : "Import SEED Genomes",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : false,
+  "categories" : [ "microbes_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "GenomeAnnotation"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Import SEED Genomes"
+  }
+}

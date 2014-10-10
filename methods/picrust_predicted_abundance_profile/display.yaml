@@ -1,0 +1,51 @@
+#
+# Define basic display information
+#
+name     : PICRUSt Predicted Abundance Profile
+subtitle : Create a KEGG annotated functional abundance profile for 16S data in BIOM format using PICRUSt. The input OTUs are created by QIIME using a closed-reference OTU picking against the Greengenes database (pre-clustered at 97% identity).
+tooltip  : Create a KEGG annotated functional abundance profile for 16S data in BIOM format using PICRUSt. The input OTUs are created by QIIME using a closed-reference OTU picking against the Greengenes database (pre-clustered at 97% identity).
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param2 :
+        ui-name : Output Name
+        short-hint : object name of resulting BIOM profile
+        long-hint  : |
+            object name of resulting BIOM profile
+
+
+    param1 :
+        ui-name : Input BIOM
+        short-hint : object name of OTU table
+        long-hint  : |
+            object name of OTU table
+
+
+    param0 :
+        ui-name : Workspace
+        short-hint : name of workspace, default is current
+        long-hint  : |
+            name of workspace, default is current
+
+
+description : |
+    Create a KEGG annotated functional abundance profile for 16S data in BIOM format using PICRUSt. The input OTUs are created by QIIME using a closed-reference OTU picking against the Greengenes database (pre-clustered at 97% identity).
+
+
+technical-description : |
+    Create a KEGG annotated functional abundance profile for 16S data in BIOM format using PICRUSt. The input OTUs are created by QIIME using a closed-reference OTU picking against the Greengenes database (pre-clustered at 97% identity).

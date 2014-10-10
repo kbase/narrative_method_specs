@@ -1,0 +1,16 @@
+{
+  "name" : "Upload Contigs (FASTA-file)",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "microbes_assembly_genome_import" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "ContigSetUploadWidget"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Upload Contigs (FASTA-file)"
+  }
+}

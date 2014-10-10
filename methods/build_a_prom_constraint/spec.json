@@ -1,0 +1,16 @@
+{
+  "name" : "Build a PROM constraint",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "microbes_metabolic_modeling" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbasePromConstraint"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Build a PROM constraint"
+  }
+}

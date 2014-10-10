@@ -1,0 +1,16 @@
+{
+  "name" : "Merge to Community Model",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "communities_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseModelTabs"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Merge to Community Model"
+  }
+}

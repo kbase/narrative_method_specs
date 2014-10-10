@@ -1,0 +1,16 @@
+{
+  "name" : "Rank Abundance from Abundance Profile",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "communities_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "GraphWidget"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Rank Abundance from Abundance Profile"
+  }
+}

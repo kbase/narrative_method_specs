@@ -1,0 +1,51 @@
+#
+# Define basic display information
+#
+name     : Boxplots from Abundance Profile
+subtitle : Generate boxplots from annotation abundance data.
+tooltip  : Generate boxplots from annotation abundance data.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param2 :
+        ui-name : Label Name
+        short-hint : label by metagenome name and not ID
+        long-hint  : |
+            label by metagenome name and not ID
+
+
+    param1 :
+        ui-name : Input Name
+        short-hint : object name of Communities.Profile
+        long-hint  : |
+            object name of Communities.Profile
+
+
+    param0 :
+        ui-name : Workspace
+        short-hint : name of workspace, default is current
+        long-hint  : |
+            name of workspace, default is current
+
+
+description : |
+    Generate boxplots from annotation abundance data.
+
+
+technical-description : |
+    Generate boxplots from annotation abundance data.

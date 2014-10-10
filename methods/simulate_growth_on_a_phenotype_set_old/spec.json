@@ -1,0 +1,16 @@
+{
+  "name" : "Simulate growth on a Phenotype Set",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : false,
+  "categories" : [ "microbes_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseSimulationSet"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Simulate growth on a Phenotype Set"
+  }
+}

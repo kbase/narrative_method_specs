@@ -1,0 +1,44 @@
+#
+# Define basic display information
+#
+name     : Compute Pangenome
+subtitle : Rapidly compute gene families for a set of phylogenetically close genomes
+tooltip  : Rapidly compute gene families for a set of phylogenetically close genomes
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param1 :
+        ui-name : Pangenome ID
+        short-hint : ID for output pangenome
+        long-hint  : |
+            ID for output pangenome
+
+
+    param0 :
+        ui-name : Genome Set ID
+        short-hint : a Genome Set to compute pangenome for
+        long-hint  : |
+            a Genome Set to compute pangenome for
+
+
+description : |
+    Rapidly compute gene families for a set of phylogenetically close genomes
+
+
+technical-description : |
+    Rapidly compute gene families for a set of phylogenetically close genomes

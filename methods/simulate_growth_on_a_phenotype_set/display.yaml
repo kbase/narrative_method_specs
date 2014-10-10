@@ -1,0 +1,51 @@
+#
+# Define basic display information
+#
+name     : Simulate growth on a Phenotype Set
+subtitle : Simulate the growth of a model on a phenotype set.
+tooltip  : Simulate the growth of a model on a phenotype set.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param2 :
+        ui-name : Phenotype Simulation Result
+        short-hint : Name for result of phenotype simulation (optional)
+        long-hint  : |
+            Name for result of phenotype simulation (optional)
+
+
+    param1 :
+        ui-name : Phenotype Set
+        short-hint : Phenotype Set
+        long-hint  : |
+            Phenotype Set
+
+
+    param0 :
+        ui-name : FBA Model
+        short-hint : FBA model
+        long-hint  : |
+            FBA model
+
+
+description : |
+    Simulate the growth of a model on a phenotype set.
+
+
+technical-description : |
+    Simulate the growth of a model on a phenotype set.

@@ -1,0 +1,16 @@
+{
+  "name" : "Annotate Clusters with Enriched Ontology Terms",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "plants_coexpression_service" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "GeneTableWidget"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Annotate Clusters with Enriched Ontology Terms"
+  }
+}

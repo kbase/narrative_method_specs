@@ -1,0 +1,58 @@
+#
+# Define basic display information
+#
+name     : Prepare Variation data for GWAS
+subtitle : Perform filtering on Minor allele frequency (MAF). Minor allele frequency (MAF) refers to the frequency at which the least common <a href="http://en.wikipedia.org/wiki/Allele">allele</a> occurs in a given population.
+tooltip  : Perform filtering on Minor allele frequency (MAF). Minor allele frequency (MAF) refers to the frequency at which the least common <a href="http://en.wikipedia.org/wiki/Allele">allele</a> occurs in a given population.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param3 :
+        ui-name : comment
+        short-hint : Comment
+        long-hint  : |
+            Comment
+
+
+    param2 :
+        ui-name : out
+        short-hint : Population variation, filtered
+        long-hint  : |
+            Population variation, filtered
+
+
+    param1 :
+        ui-name : variation
+        short-hint : Population variation object
+        long-hint  : |
+            Population variation object
+
+
+    param0 :
+        ui-name : maf
+        short-hint : Minor allele frequency
+        long-hint  : |
+            Minor allele frequency
+
+
+description : |
+    Perform filtering on Minor allele frequency (MAF). Minor allele frequency (MAF) refers to the frequency at which the least common <a href="http://en.wikipedia.org/wiki/Allele">allele</a> occurs in a given population.
+
+
+technical-description : |
+    Perform filtering on Minor allele frequency (MAF). Minor allele frequency (MAF) refers to the frequency at which the least common <a href="http://en.wikipedia.org/wiki/Allele">allele</a> occurs in a given population.

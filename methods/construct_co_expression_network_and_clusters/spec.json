@@ -1,0 +1,16 @@
+{
+  "name" : "Construct Co-expression Network and Clusters",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "plants_coexpression_service" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "ValueListWidget"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Construct Co-expression Network and Clusters"
+  }
+}

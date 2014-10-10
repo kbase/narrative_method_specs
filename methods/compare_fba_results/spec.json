@@ -1,0 +1,16 @@
+{
+  "name" : "Compare FBA Results",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "microbes_metabolic_modeling" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseCompareFBAs"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Compare FBA Results"
+  }
+}

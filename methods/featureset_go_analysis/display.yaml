@@ -1,0 +1,65 @@
+#
+# Define basic display information
+#
+name     : FeatureSet GO Analysis
+subtitle : This method annotate GO terms and execute GO enrichment test
+tooltip  : This method annotate GO terms and execute GO enrichment test
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param4 :
+        ui-name : out_id
+        short-hint : Output FeatureSet object identifier
+        long-hint  : |
+            Output FeatureSet object identifier
+
+
+    param3 :
+        ui-name : domain
+        short-hint : Domain list (comma separated, biological_process,molecular_function,cellular_component)
+        long-hint  : |
+            Domain list (comma separated, biological_process,molecular_function,cellular_component)
+
+
+    param2 :
+        ui-name : ec
+        short-hint : Evidence code list (comma separated, IEA,ISS,IDA,IEP,IPI,RCA ..)
+        long-hint  : |
+            Evidence code list (comma separated, IEA,ISS,IDA,IEP,IPI,RCA ..)
+
+
+    param1 :
+        ui-name : p_value
+        short-hint : p-value cutoff
+        long-hint  : |
+            p-value cutoff
+
+
+    param0 :
+        ui-name : feature_set_id
+        short-hint : FeatureSet workspace object id
+        long-hint  : |
+            FeatureSet workspace object id
+
+
+description : |
+    This method annotate GO terms and execute GO enrichment test
+
+
+technical-description : |
+    This method annotate GO terms and execute GO enrichment test

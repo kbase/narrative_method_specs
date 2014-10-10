@@ -1,0 +1,16 @@
+{
+  "name" : "View Multiple Alignment",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : false,
+  "categories" : [ "microbes_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseMSA"
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "View Multiple Alignment"
+  }
+}

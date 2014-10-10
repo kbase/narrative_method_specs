@@ -1,0 +1,16 @@
+{
+  "name" : "Assemble Genome from Fasta",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : false,
+  "categories" : [ "microbes_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : null
+  },
+  "parameters" : { },
+  "behavior" : {
+    "python_function" : "Assemble Genome from Fasta"
+  }
+}
