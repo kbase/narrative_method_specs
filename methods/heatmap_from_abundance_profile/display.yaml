@@ -38,14 +38,16 @@ parameters :
 
     param4 :
         ui-name : Cluster
-        short-hint : cluster method, one of: ward, single, complete, mcquitty, median, centroid
+        short-hint : |
+            cluster method, one of: ward, single, complete, mcquitty, median, centroid
         long-hint  : |
             cluster method, one of: ward, single, complete, mcquitty, median, centroid
 
 
     param3 :
         ui-name : Distance
-        short-hint : distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
+        short-hint : |
+            distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
         long-hint  : |
             distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
 

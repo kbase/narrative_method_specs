@@ -30,7 +30,8 @@ parameters :
 
 
     param6 :
-        ui-name : % Identity
+        ui-name : |
+            % Identity
         short-hint : percent value for minimum % identity cutoff, default is 60
         long-hint  : |
             percent value for minimum % identity cutoff, default is 60

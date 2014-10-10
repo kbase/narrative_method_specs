@@ -31,7 +31,8 @@ parameters :
 
     param3 :
         ui-name : Distance
-        short-hint : distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
+        short-hint : |
+            distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
         long-hint  : |
             distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
 
