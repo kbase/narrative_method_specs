@@ -1,12 +1,2 @@
-{
-    "test_method_1" : { "status": "prod" },
-    
-    "test_method_2" : { "status": "prod" },
-    
-    "test_method_3" : { "status": "dev" },
-    
-    "test_method_4" : { "status": "test" },
-    
-    "test_method_5" : { "status": "none" }
-    
+{    
 }   
