@@ -47,6 +47,7 @@
     ],
     
     "behavior": {
+        "python_class" : "Microbes Services",
         "python_function":"NameOfTestFunction"
     }
     
