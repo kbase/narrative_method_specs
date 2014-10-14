@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Execute KBase Command
-subtitle : Execute given KBase command.
-tooltip  : Execute given KBase command.
+subtitle : |
+    Execute given KBase command.
+tooltip  : |
+    Execute given KBase command.
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : Command
-        short-hint : command to run
+        ui-name : |
+            Command
+        short-hint : |
+            command to run
         long-hint  : |
             command to run
 

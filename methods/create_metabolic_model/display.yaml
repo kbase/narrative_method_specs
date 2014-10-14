@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Create Metabolic Model
-subtitle : Create a draft metabolic model from metagenome Subsystems annotations.
-tooltip  : Create a draft metabolic model from metagenome Subsystems annotations.
+subtitle : |
+    Create a draft metabolic model from metagenome Subsystems annotations.
+tooltip  : |
+    Create a draft metabolic model from metagenome Subsystems annotations.
 
 screenshots :
     []
@@ -23,22 +25,28 @@ method-suggestions :
 #
 parameters :
     param2 :
-        ui-name : Output Name
-        short-hint : object name of model
+        ui-name : |
+            Output Name
+        short-hint : |
+            object name of model
         long-hint  : |
             object name of model
 
 
     param1 :
-        ui-name : Input Name
-        short-hint : object name of Communities.ProfileTable
+        ui-name : |
+            Input Name
+        short-hint : |
+            object name of Communities.ProfileTable
         long-hint  : |
             object name of Communities.ProfileTable
 
 
     param0 :
-        ui-name : Workspace
-        short-hint : name of workspace, default is current
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
         long-hint  : |
             name of workspace, default is current
 

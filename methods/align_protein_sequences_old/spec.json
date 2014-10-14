@@ -9,8 +9,39 @@
     "input" : null,
     "output" : "kbaseMSA"
   },
-  "parameters" : { },
+  "parameters" : [ {
+    "id" : "param2",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseTrees.MSA" ]
+    }
+  }, {
+    "id" : "param1",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseSearch.FeatureSet" ]
+    }
+  } ],
   "behavior" : {
+    "python_class" : "Microbes Services",
     "python_function" : "Align Protein Sequences"
   }
 }

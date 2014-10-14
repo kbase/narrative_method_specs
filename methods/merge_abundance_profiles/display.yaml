@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Merge Abundance Profiles
-subtitle : Merge two or more BIOM format abundance profiles
-tooltip  : Merge two or more BIOM format abundance profiles
+subtitle : |
+    Merge two or more BIOM format abundance profiles
+tooltip  : |
+    Merge two or more BIOM format abundance profiles
 
 screenshots :
     []
@@ -23,43 +25,55 @@ method-suggestions :
 #
 parameters :
     param5 :
-        ui-name : Output Name
-        short-hint : object name of merged abundance profile table
+        ui-name : |
+            Output Name
+        short-hint : |
+            object name of merged abundance profile table
         long-hint  : |
             object name of merged abundance profile table
 
 
     param4 :
-        ui-name : Fourth Profile
-        short-hint : object name of Communities.Profile, optional
+        ui-name : |
+            Fourth Profile
+        short-hint : |
+            object name of Communities.Profile, optional
         long-hint  : |
             object name of Communities.Profile, optional
 
 
     param3 :
-        ui-name : Third Profile
-        short-hint : object name of Communities.Profile, optional
+        ui-name : |
+            Third Profile
+        short-hint : |
+            object name of Communities.Profile, optional
         long-hint  : |
             object name of Communities.Profile, optional
 
 
     param2 :
-        ui-name : Second Profile
-        short-hint : object name of Communities.Profile, required
+        ui-name : |
+            Second Profile
+        short-hint : |
+            object name of Communities.Profile, required
         long-hint  : |
             object name of Communities.Profile, required
 
 
     param1 :
-        ui-name : First Profile
-        short-hint : object name of Communities.Profile required
+        ui-name : |
+            First Profile
+        short-hint : |
+            object name of Communities.Profile required
         long-hint  : |
             object name of Communities.Profile required
 
 
     param0 :
-        ui-name : Workspace
-        short-hint : name of workspace, default is current
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
         long-hint  : |
             name of workspace, default is current
 

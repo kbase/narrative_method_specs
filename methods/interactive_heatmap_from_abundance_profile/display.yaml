@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Interactive Heatmap from Abundance Profile
-subtitle : Generate an interactive heatmap-dendrogram from annotation abundance data.
-tooltip  : Generate an interactive heatmap-dendrogram from annotation abundance data.
+subtitle : |
+    Generate an interactive heatmap-dendrogram from annotation abundance data.
+tooltip  : |
+    Generate an interactive heatmap-dendrogram from annotation abundance data.
 
 screenshots :
     []
@@ -23,29 +25,37 @@ method-suggestions :
 #
 parameters :
     param3 :
-        ui-name : Label
-        short-hint : label rows
+        ui-name : |
+            Label
+        short-hint : |
+            label rows
         long-hint  : |
             label rows
 
 
     param2 :
-        ui-name : Label Name
-        short-hint : label by metagenome name and not ID
+        ui-name : |
+            Label Name
+        short-hint : |
+            label by metagenome name and not ID
         long-hint  : |
             label by metagenome name and not ID
 
 
     param1 :
-        ui-name : Input Name
-        short-hint : object name of Communities.Profile
+        ui-name : |
+            Input Name
+        short-hint : |
+            object name of Communities.Profile
         long-hint  : |
             object name of Communities.Profile
 
 
     param0 :
-        ui-name : Workspace
-        short-hint : name of workspace, default is current
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
         long-hint  : |
             name of workspace, default is current
 

@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Import NCBI Genome
-subtitle : Import a Genome and ContigSet from NCBI into your workspace. [26]
-tooltip  : Import a Genome and ContigSet from NCBI into your workspace. [26]
+subtitle : |
+    Import a Genome and ContigSet from NCBI into your workspace. [26]
+tooltip  : |
+    Import a Genome and ContigSet from NCBI into your workspace. [26]
 
 screenshots :
     []
@@ -23,15 +25,19 @@ method-suggestions :
 #
 parameters :
     param1 :
-        ui-name : Genome Object ID
-        short-hint : Output Genome ID. If empty, an ID will be chosen automatically. [26.2]
+        ui-name : |
+            Genome Object ID
+        short-hint : |
+            Output Genome ID. If empty, an ID will be chosen automatically. [26.2]
         long-hint  : |
             Output Genome ID. If empty, an ID will be chosen automatically. [26.2]
 
 
     param0 :
-        ui-name : NCBI Genome Name
-        short-hint : Name of public genome accessible on NCBI FTP. [26.1]
+        ui-name : |
+            NCBI Genome Name
+        short-hint : |
+            Name of public genome accessible on NCBI FTP. [26.1]
         long-hint  : |
             Name of public genome accessible on NCBI FTP. [26.1]
 

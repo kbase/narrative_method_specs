@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Build Media
-subtitle : Assemble a set of compounds to use as a media set for performing FBA on a metabolic model. [8]
-tooltip  : Assemble a set of compounds to use as a media set for performing FBA on a metabolic model. [8]
+subtitle : |
+    Assemble a set of compounds to use as a media set for performing FBA on a metabolic model. [8]
+tooltip  : |
+    Assemble a set of compounds to use as a media set for performing FBA on a metabolic model. [8]
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : Media ID
-        short-hint : Base media type [8.1]
+        ui-name : |
+            Media ID
+        short-hint : |
+            Base media type [8.1]
         long-hint  : |
             Base media type [8.1]
 

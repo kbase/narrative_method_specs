@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Build Genome Set From Tree
-subtitle : Build a genome set from the contents of the species tree, copying any CDM genomes into local workspace.
-tooltip  : Build a genome set from the contents of the species tree, copying any CDM genomes into local workspace.
+subtitle : |
+    Build a genome set from the contents of the species tree, copying any CDM genomes into local workspace.
+tooltip  : |
+    Build a genome set from the contents of the species tree, copying any CDM genomes into local workspace.
 
 screenshots :
     []
@@ -23,15 +25,19 @@ method-suggestions :
 #
 parameters :
     param1 :
-        ui-name : Output Genome Set ID
-        short-hint : ID to use when saving genome set
+        ui-name : |
+            Output Genome Set ID
+        short-hint : |
+            ID to use when saving genome set
         long-hint  : |
             ID to use when saving genome set
 
 
     param0 :
-        ui-name : Species Tree
-        short-hint : a species tree with close genomes
+        ui-name : |
+            Species Tree
+        short-hint : |
+            a species tree with close genomes
         long-hint  : |
             a species tree with close genomes
 

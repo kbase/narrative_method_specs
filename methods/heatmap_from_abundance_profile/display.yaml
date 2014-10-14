@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Heatmap from Abundance Profile
-subtitle : Generate a heatmap-dendrogram from annotation abundance data.
-tooltip  : Generate a heatmap-dendrogram from annotation abundance data.
+subtitle : |
+    Generate a heatmap-dendrogram from annotation abundance data.
+tooltip  : |
+    Generate a heatmap-dendrogram from annotation abundance data.
 
 screenshots :
     []
@@ -23,21 +25,26 @@ method-suggestions :
 #
 parameters :
     param6 :
-        ui-name : Label
-        short-hint : label rows
+        ui-name : |
+            Label
+        short-hint : |
+            label rows
         long-hint  : |
             label rows
 
 
     param5 :
-        ui-name : Order
-        short-hint : order columns
+        ui-name : |
+            Order
+        short-hint : |
+            order columns
         long-hint  : |
             order columns
 
 
     param4 :
-        ui-name : Cluster
+        ui-name : |
+            Cluster
         short-hint : |
             cluster method, one of: ward, single, complete, mcquitty, median, centroid
         long-hint  : |
@@ -45,7 +52,8 @@ parameters :
 
 
     param3 :
-        ui-name : Distance
+        ui-name : |
+            Distance
         short-hint : |
             distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
         long-hint  : |
@@ -53,22 +61,28 @@ parameters :
 
 
     param2 :
-        ui-name : Label Name
-        short-hint : label by metagenome name and not ID
+        ui-name : |
+            Label Name
+        short-hint : |
+            label by metagenome name and not ID
         long-hint  : |
             label by metagenome name and not ID
 
 
     param1 :
-        ui-name : Input Name
-        short-hint : object name of Communities.Profile
+        ui-name : |
+            Input Name
+        short-hint : |
+            object name of Communities.Profile
         long-hint  : |
             object name of Communities.Profile
 
 
     param0 :
-        ui-name : Workspace
-        short-hint : name of workspace, default is current
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
         long-hint  : |
             name of workspace, default is current
 

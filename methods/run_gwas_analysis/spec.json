@@ -9,8 +9,49 @@
     "input" : null,
     "output" : "ValueListWidget"
   },
-  "parameters" : { },
+  "parameters" : [ {
+    "id" : "param3",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGwasData.GwasTopVariations" ]
+    }
+  }, {
+    "id" : "param2",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGwasData.GwasPopulationTrait" ]
+    }
+  }, {
+    "id" : "param1",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGwasData.GwasPopulationKinship" ]
+    }
+  }, {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGwasData.GwasPopulationVariation" ]
+    }
+  } ],
   "behavior" : {
+    "python_class" : "GWAS Services",
     "python_function" : "Run GWAS analysis"
   }
 }

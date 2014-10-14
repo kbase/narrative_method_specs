@@ -9,8 +9,39 @@
     "input" : null,
     "output" : "GenomeComparisonWidget"
   },
-  "parameters" : { },
+  "parameters" : [ {
+    "id" : "param2",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "GenomeComparison.ProteomeComparison" ]
+    }
+  }, {
+    "id" : "param1",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+    }
+  }, {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+    }
+  } ],
   "behavior" : {
+    "python_class" : "Microbes Comparative Genomics",
     "python_function" : "Compare Two Proteomes"
   }
 }

@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Import RAST Genomes
-subtitle : Import genomes from the RAST annotation pipeline.
-tooltip  : Import genomes from the RAST annotation pipeline.
+subtitle : |
+    Import genomes from the RAST annotation pipeline.
+tooltip  : |
+    Import genomes from the RAST annotation pipeline.
 
 screenshots :
     []
@@ -23,22 +25,28 @@ method-suggestions :
 #
 parameters :
     param2 :
-        ui-name : RAST Password
-        short-hint : Your RAST Password
+        ui-name : |
+            RAST Password
+        short-hint : |
+            Your RAST Password
         long-hint  : |
             Your RAST Password
 
 
     param1 :
-        ui-name : RAST Username
-        short-hint : Your RAST Username
+        ui-name : |
+            RAST Username
+        short-hint : |
+            Your RAST Username
         long-hint  : |
             Your RAST Username
 
 
     param0 :
-        ui-name : RAST Genome IDs
-        short-hint : list of genome ids (comma seperated)
+        ui-name : |
+            RAST Genome IDs
+        short-hint : |
+            list of genome ids (comma seperated)
         long-hint  : |
             list of genome ids (comma seperated)
 

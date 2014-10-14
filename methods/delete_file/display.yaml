@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Delete File
-subtitle : Delete a file from temp invocation file space.
-tooltip  : Delete a file from temp invocation file space.
+subtitle : |
+    Delete a file from temp invocation file space.
+tooltip  : |
+    Delete a file from temp invocation file space.
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : File
-        short-hint : file to delete
+        ui-name : |
+            File
+        short-hint : |
+            file to delete
         long-hint  : |
             file to delete
 

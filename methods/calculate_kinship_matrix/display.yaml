@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Calculate Kinship matrix
-subtitle : Computes the n by n kinship matrix for a set of n related subjects. The kinship matrix defines pairwise genetic relatedness among individuals and is estimated by using all genotyped markers. This requires the filtered SNPs as input.
-tooltip  : Computes the n by n kinship matrix for a set of n related subjects. The kinship matrix defines pairwise genetic relatedness among individuals and is estimated by using all genotyped markers. This requires the filtered SNPs as input.
+subtitle : |
+    Computes the n by n kinship matrix for a set of n related subjects. The kinship matrix defines pairwise genetic relatedness among individuals and is estimated by using all genotyped markers. This requires the filtered SNPs as input.
+tooltip  : |
+    Computes the n by n kinship matrix for a set of n related subjects. The kinship matrix defines pairwise genetic relatedness among individuals and is estimated by using all genotyped markers. This requires the filtered SNPs as input.
 
 screenshots :
     []
@@ -23,22 +25,28 @@ method-suggestions :
 #
 parameters :
     param2 :
-        ui-name : comment
-        short-hint : Comment
+        ui-name : |
+            comment
+        short-hint : |
+            Comment
         long-hint  : |
             Comment
 
 
     param1 :
-        ui-name : out
-        short-hint : Computed Kinship matrix
+        ui-name : |
+            out
+        short-hint : |
+            Computed Kinship matrix
         long-hint  : |
             Computed Kinship matrix
 
 
     param0 :
-        ui-name : filtered_variation
-        short-hint : Population variation, filtered
+        ui-name : |
+            filtered_variation
+        short-hint : |
+            Population variation, filtered
         long-hint  : |
             Population variation, filtered
 

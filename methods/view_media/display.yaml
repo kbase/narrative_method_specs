@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : View Media
-subtitle : Bring up a detailed view of a Media set within the narrative. [9]
-tooltip  : Bring up a detailed view of a Media set within the narrative. [9]
+subtitle : |
+    Bring up a detailed view of a Media set within the narrative. [9]
+tooltip  : |
+    Bring up a detailed view of a Media set within the narrative. [9]
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : Media ID
-        short-hint : Media type [9.1]
+        ui-name : |
+            Media ID
+        short-hint : |
+            Media type [9.1]
         long-hint  : |
             Media type [9.1]
 

@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Integrate Gapfill Solution
-subtitle : Integrate a Gapfill solution into your metabolic model [13]
-tooltip  : Integrate a Gapfill solution into your metabolic model [13]
+subtitle : |
+    Integrate a Gapfill solution into your metabolic model [13]
+tooltip  : |
+    Integrate a Gapfill solution into your metabolic model [13]
 
 screenshots :
     []
@@ -23,22 +25,28 @@ method-suggestions :
 #
 parameters :
     param2 :
-        ui-name : Output Model Result Name
-        short-hint : select a name for the gapfilled object (optional) [13.3]
+        ui-name : |
+            Output Model Result Name
+        short-hint : |
+            select a name for the gapfilled object (optional) [13.3]
         long-hint  : |
             select a name for the gapfilled object (optional) [13.3]
 
 
     param1 :
-        ui-name : Gapfill ID
-        short-hint : select the ID of the gapfill solution (found in the Gapfilling tab in the model viewer, usually in the form 'modelId.gf.2.gfsol.1') [13.2]
+        ui-name : |
+            Gapfill ID
+        short-hint : |
+            select the ID of the gapfill solution (found in the Gapfilling tab in the model viewer, usually in the form 'modelId.gf.2.gfsol.1') [13.2]
         long-hint  : |
             select the ID of the gapfill solution (found in the Gapfilling tab in the model viewer, usually in the form 'modelId.gf.2.gfsol.1') [13.2]
 
 
     param0 :
-        ui-name : Metabolic Model
-        short-hint : the metabolic model to integrate gapfill solutions into [13.1]
+        ui-name : |
+            Metabolic Model
+        short-hint : |
+            the metabolic model to integrate gapfill solutions into [13.1]
         long-hint  : |
             the metabolic model to integrate gapfill solutions into [13.1]
 

@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : View Genome Comparison
-subtitle : View genome comparison results.
-tooltip  : View genome comparison results.
+subtitle : |
+    View genome comparison results.
+tooltip  : |
+    View genome comparison results.
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : Genome comparison ID
-        short-hint : Genome comparison ID
+        ui-name : |
+            Genome comparison ID
+        short-hint : |
+            Genome comparison ID
         long-hint  : |
             Genome comparison ID
 

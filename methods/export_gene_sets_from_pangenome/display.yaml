@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Export gene sets from Pangenome
-subtitle : Export gene sets from Pangenome as external FeatureSet objects. [26]
-tooltip  : Export gene sets from Pangenome as external FeatureSet objects. [26]
+subtitle : |
+    Export gene sets from Pangenome as external FeatureSet objects. [26]
+tooltip  : |
+    Export gene sets from Pangenome as external FeatureSet objects. [26]
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : Pangenome ID
-        short-hint : ID of pangenome object [26.1]
+        ui-name : |
+            Pangenome ID
+        short-hint : |
+            ID of pangenome object [26.1]
         long-hint  : |
             ID of pangenome object [26.1]
 

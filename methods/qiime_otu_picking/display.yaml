@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : QIIME OTU picking
-subtitle : Closed-reference OTU picking against the Greengenes database (pre-clustered at 97% identity).
-tooltip  : Closed-reference OTU picking against the Greengenes database (pre-clustered at 97% identity).
+subtitle : |
+    Closed-reference OTU picking against the Greengenes database (pre-clustered at 97% identity).
+tooltip  : |
+    Closed-reference OTU picking against the Greengenes database (pre-clustered at 97% identity).
 
 screenshots :
     []
@@ -23,29 +25,37 @@ method-suggestions :
 #
 parameters :
     param3 :
-        ui-name : Output Name
-        short-hint : object name of resulting BIOM profile
+        ui-name : |
+            Output Name
+        short-hint : |
+            object name of resulting BIOM profile
         long-hint  : |
             object name of resulting BIOM profile
 
 
     param2 :
-        ui-name : Input Metagenome
-        short-hint : Metagenome object
+        ui-name : |
+            Input Metagenome
+        short-hint : |
+            Metagenome object
         long-hint  : |
             Metagenome object
 
 
     param1 :
-        ui-name : Input Sequence
-        short-hint : object name of input sequence file
+        ui-name : |
+            Input Sequence
+        short-hint : |
+            object name of input sequence file
         long-hint  : |
             object name of input sequence file
 
 
     param0 :
-        ui-name : Workspace
-        short-hint : name of workspace, default is current
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
         long-hint  : |
             name of workspace, default is current
 

@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Build Genome Set Object
-subtitle : Construct a Genome Set object [22]
-tooltip  : Construct a Genome Set object [22]
+subtitle : |
+    Construct a Genome Set object [22]
+tooltip  : |
+    Construct a Genome Set object [22]
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : Output genome set ID
-        short-hint : Output genome set ID. If empty, an ID will be chosen randomly. [22.1]
+        ui-name : |
+            Output genome set ID
+        short-hint : |
+            Output genome set ID. If empty, an ID will be chosen randomly. [22.1]
         long-hint  : |
             Output genome set ID. If empty, an ID will be chosen randomly. [22.1]
 

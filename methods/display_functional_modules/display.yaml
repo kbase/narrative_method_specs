@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Display Functional Modules
-subtitle : Display information for network clusters.
-tooltip  : Display information for network clusters.
+subtitle : |
+    Display information for network clusters.
+tooltip  : |
+    Display information for network clusters.
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : nto
-        short-hint : Network Typed Object
+        ui-name : |
+            nto
+        short-hint : |
+            Network Typed Object
         long-hint  : |
             Network Typed Object
 

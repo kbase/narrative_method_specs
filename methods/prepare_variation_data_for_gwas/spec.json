@@ -9,8 +9,49 @@
     "input" : null,
     "output" : "ValueListWidget"
   },
-  "parameters" : { },
+  "parameters" : [ {
+    "id" : "param3",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "param2",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGwasData.GwasPopulationVariation" ]
+    }
+  }, {
+    "id" : "param1",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGwasData.GwasPopulationVariation" ]
+    }
+  }, {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "0.0" ],
+    "field_type" : "int-slider",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  } ],
   "behavior" : {
+    "python_class" : "GWAS Services",
     "python_function" : "Prepare Variation data for GWAS"
   }
 }

@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Genome Comparison from Pangenome
-subtitle : Genome Comparison analysis based on the PanGenome input.
-tooltip  : Genome Comparison analysis based on the PanGenome input.
+subtitle : |
+    Genome Comparison analysis based on the PanGenome input.
+tooltip  : |
+    Genome Comparison analysis based on the PanGenome input.
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : Pangenome ID
-        short-hint : Pangenome ID
+        ui-name : |
+            Pangenome ID
+        short-hint : |
+            Pangenome ID
         long-hint  : |
             Pangenome ID
 

@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Plot Gene Expression Histogram
-subtitle : Generates the histogram for an ExpressionSample. x-axis  - Gene Expression level (FPKM ) y-axis  - Number of genes with a particular expression level
-tooltip  : Generates the histogram for an ExpressionSample. x-axis  - Gene Expression level (FPKM ) y-axis  - Number of genes with a particular expression level
+subtitle : |
+    Generates the histogram for an ExpressionSample. x-axis  - Gene Expression level (FPKM ) y-axis  - Number of genes with a particular expression level
+tooltip  : |
+    Generates the histogram for an ExpressionSample. x-axis  - Gene Expression level (FPKM ) y-axis  - Number of genes with a particular expression level
 
 screenshots :
     []
@@ -23,22 +25,28 @@ method-suggestions :
 #
 parameters :
     param2 :
-        ui-name : Output file prefix
-        short-hint : Output File prefix
+        ui-name : |
+            Output file prefix
+        short-hint : |
+            Output File prefix
         long-hint  : |
             Output File prefix
 
 
     param1 :
-        ui-name : Gene Expression file
-        short-hint : Gene Expression file
+        ui-name : |
+            Gene Expression file
+        short-hint : |
+            Gene Expression file
         long-hint  : |
             Gene Expression file
 
 
     param0 :
-        ui-name : Workspace
-        short-hint : Name of workspace, default is current
+        ui-name : |
+            Workspace
+        short-hint : |
+            Name of workspace, default is current
         long-hint  : |
             Name of workspace, default is current
 

@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : KEGG Mapper
-subtitle : Compare two or more metabolic networks via overlay on graphical KEGG Map.
-tooltip  : Compare two or more metabolic networks via overlay on graphical KEGG Map.
+subtitle : |
+    Compare two or more metabolic networks via overlay on graphical KEGG Map.
+tooltip  : |
+    Compare two or more metabolic networks via overlay on graphical KEGG Map.
 
 screenshots :
     []
@@ -23,22 +25,28 @@ method-suggestions :
 #
 parameters :
     param2 :
-        ui-name : Model 2 Name
-        short-hint : object name of second KBaseFBA.FBAModel
+        ui-name : |
+            Model 2 Name
+        short-hint : |
+            object name of second KBaseFBA.FBAModel
         long-hint  : |
             object name of second KBaseFBA.FBAModel
 
 
     param1 :
-        ui-name : Model 1 Name
-        short-hint : object name of first KBaseFBA.FBAModel
+        ui-name : |
+            Model 1 Name
+        short-hint : |
+            object name of first KBaseFBA.FBAModel
         long-hint  : |
             object name of first KBaseFBA.FBAModel
 
 
     param0 :
-        ui-name : Workspace
-        short-hint : name of workspace, default is current
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
         long-hint  : |
             name of workspace, default is current
 

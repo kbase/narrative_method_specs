@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : View Phenotype Simulation Results
-subtitle : Bring up a detailed view of your Phenotype Simulation results within the narrative.
-tooltip  : Bring up a detailed view of your Phenotype Simulation results within the narrative.
+subtitle : |
+    Bring up a detailed view of your Phenotype Simulation results within the narrative.
+tooltip  : |
+    Bring up a detailed view of your Phenotype Simulation results within the narrative.
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : Phenotype Simulation Set
-        short-hint : the phenotype results to view
+        ui-name : |
+            Phenotype Simulation Set
+        short-hint : |
+            the phenotype results to view
         long-hint  : |
             the phenotype results to view
 

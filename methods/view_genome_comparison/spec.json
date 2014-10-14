@@ -9,8 +9,19 @@
     "input" : null,
     "output" : "kbaseGenomeComparisonViewer"
   },
-  "parameters" : { },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.GenomeComparison" ]
+    }
+  } ],
   "behavior" : {
+    "python_class" : "Microbes Comparative Genomics",
     "python_function" : "View Genome Comparison"
   }
 }

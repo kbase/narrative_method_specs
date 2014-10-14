@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Generate SBML file
-subtitle : Generates an SBML file for the specified model.
-tooltip  : Generates an SBML file for the specified model.
+subtitle : |
+    Generates an SBML file for the specified model.
+tooltip  : |
+    Generates an SBML file for the specified model.
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : FBA Model ID
-        short-hint : an FBA model id
+        ui-name : |
+            FBA Model ID
+        short-hint : |
+            an FBA model id
         long-hint  : |
             an FBA model id
 

@@ -9,8 +9,29 @@
     "input" : null,
     "output" : "kbaseGenomeSetBuilder"
   },
-  "parameters" : { },
+  "parameters" : [ {
+    "id" : "param1",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseSearch.GenomeSet" ]
+    }
+  }, {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseTrees.Tree" ]
+    }
+  } ],
   "behavior" : {
+    "python_class" : "Microbes Comparative Genomics",
     "python_function" : "Build Genome Set From Tree"
   }
 }

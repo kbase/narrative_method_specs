@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Merge to Community Model
-subtitle : Constructs models for abundant OTUs in metagenome based on functions of reference genome hits.
-tooltip  : Constructs models for abundant OTUs in metagenome based on functions of reference genome hits.
+subtitle : |
+    Constructs models for abundant OTUs in metagenome based on functions of reference genome hits.
+tooltip  : |
+    Constructs models for abundant OTUs in metagenome based on functions of reference genome hits.
 
 screenshots :
     []
@@ -23,22 +25,28 @@ method-suggestions :
 #
 parameters :
     param2 :
-        ui-name : Community Model Output ID
-        short-hint : output ID of generated community model
+        ui-name : |
+            Community Model Output ID
+        short-hint : |
+            output ID of generated community model
         long-hint  : |
             output ID of generated community model
 
 
     param1 :
-        ui-name : Species abundance
-        short-hint : list of species relative abundance (; separated)
+        ui-name : |
+            Species abundance
+        short-hint : |
+            list of species relative abundance (; separated)
         long-hint  : |
             list of species relative abundance (; separated)
 
 
     param0 :
-        ui-name : Model IDs
-        short-hint : list of species model ids (; seperated)
+        ui-name : |
+            Model IDs
+        short-hint : |
+            list of species model ids (; seperated)
         long-hint  : |
             list of species model ids (; seperated)
 

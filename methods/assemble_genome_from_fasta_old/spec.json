@@ -9,8 +9,29 @@
     "input" : null,
     "output" : null
   },
-  "parameters" : { },
+  "parameters" : [ {
+    "id" : "param1",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+    }
+  }, {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  } ],
   "behavior" : {
+    "python_class" : "Microbes Services",
     "python_function" : "Assemble Genome from Fasta"
   }
 }

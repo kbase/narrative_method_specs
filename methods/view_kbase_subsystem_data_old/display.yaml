@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : View KBase Subsystem Data
-subtitle : View and explore the KBase Subsystem categories associated with genes in your genome.
-tooltip  : View and explore the KBase Subsystem categories associated with genes in your genome.
+subtitle : |
+    View and explore the KBase Subsystem categories associated with genes in your genome.
+tooltip  : |
+    View and explore the KBase Subsystem categories associated with genes in your genome.
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : Genome
-        short-hint : select the genome you want to view
+        ui-name : |
+            Genome
+        short-hint : |
+            select the genome you want to view
         long-hint  : |
             select the genome you want to view
 

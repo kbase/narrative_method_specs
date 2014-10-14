@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Profile to OTU annotations
-subtitle : Translates metagenome profile into an OTU annotation object for modeling.
-tooltip  : Translates metagenome profile into an OTU annotation object for modeling.
+subtitle : |
+    Translates metagenome profile into an OTU annotation object for modeling.
+tooltip  : |
+    Translates metagenome profile into an OTU annotation object for modeling.
 
 screenshots :
     []
@@ -23,15 +25,19 @@ method-suggestions :
 #
 parameters :
     param1 :
-        ui-name : Output OTU annotation object
-        short-hint : name of OTU annotation object to be generated
+        ui-name : |
+            Output OTU annotation object
+        short-hint : |
+            name of OTU annotation object to be generated
         long-hint  : |
             name of OTU annotation object to be generated
 
 
     param0 :
-        ui-name : Metagenome Profile Table
-        short-hint : ID of the metagenome profile
+        ui-name : |
+            Metagenome Profile Table
+        short-hint : |
+            ID of the metagenome profile
         long-hint  : |
             ID of the metagenome profile
 

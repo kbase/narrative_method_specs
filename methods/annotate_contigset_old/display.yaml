@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Annotate ContigSet
-subtitle : Build a Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace. [3]
-tooltip  : Build a Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace. [3]
+subtitle : |
+    Build a Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace. [3]
+tooltip  : |
+    Build a Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace. [3]
 
 screenshots :
     []
@@ -23,29 +25,37 @@ method-suggestions :
 #
 parameters :
     param3 :
-        ui-name : Output Genome ID
-        short-hint : Annotated output genome ID. If empty, an ID will be chosen randomly. [3.3]
+        ui-name : |
+            Output Genome ID
+        short-hint : |
+            Annotated output genome ID. If empty, an ID will be chosen randomly. [3.3]
         long-hint  : |
             Annotated output genome ID. If empty, an ID will be chosen randomly. [3.3]
 
 
     param2 :
-        ui-name : Genetic Code
-        short-hint : enter the genetic code for your new genome (default is 11) [3.2]
+        ui-name : |
+            Genetic Code
+        short-hint : |
+            enter the genetic code for your new genome (default is 11) [3.2]
         long-hint  : |
             enter the genetic code for your new genome (default is 11) [3.2]
 
 
     param1 :
-        ui-name : Scientific Name
-        short-hint : enter the scientific name to assign to your new genome [3.2]
+        ui-name : |
+            Scientific Name
+        short-hint : |
+            enter the scientific name to assign to your new genome [3.2]
         long-hint  : |
             enter the scientific name to assign to your new genome [3.2]
 
 
     param0 :
-        ui-name : Contig Set Object
-        short-hint : An object with contig data [3.1]
+        ui-name : |
+            Contig Set Object
+        short-hint : |
+            An object with contig data [3.1]
         long-hint  : |
             An object with contig data [3.1]
 

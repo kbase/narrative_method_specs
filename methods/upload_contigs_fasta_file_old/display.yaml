@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Upload Contigs (FASTA-file)
-subtitle : Upload a ContigSet from FASTA-file into your workspace. This function should be run before wrapping the ContigSet as a Genome object. [19]
-tooltip  : Upload a ContigSet from FASTA-file into your workspace. This function should be run before wrapping the ContigSet as a Genome object. [19]
+subtitle : |
+    Upload a ContigSet from FASTA-file into your workspace. This function should be run before wrapping the ContigSet as a Genome object. [19]
+tooltip  : |
+    Upload a ContigSet from FASTA-file into your workspace. This function should be run before wrapping the ContigSet as a Genome object. [19]
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : Contig Set Object ID
-        short-hint : Output contig set ID. If empty, an ID will be chosen randomly. [19.1]
+        ui-name : |
+            Contig Set Object ID
+        short-hint : |
+            Output contig set ID. If empty, an ID will be chosen randomly. [19.1]
         long-hint  : |
             Output contig set ID. If empty, an ID will be chosen randomly. [19.1]
 

@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Upload File
-subtitle : Upload a file to temp invocation file space.
-tooltip  : Upload a file to temp invocation file space.
+subtitle : |
+    Upload a file to temp invocation file space.
+tooltip  : |
+    Upload a file to temp invocation file space.
 
 screenshots :
     []

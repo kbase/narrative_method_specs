@@ -9,8 +9,19 @@
     "input" : null,
     "output" : "kbaseGenomeSetBuilder"
   },
-  "parameters" : { },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseSearch.GenomeSet" ]
+    }
+  } ],
   "behavior" : {
+    "python_class" : "Microbes Comparative Genomics",
     "python_function" : "Build Genome Set Object"
   }
 }

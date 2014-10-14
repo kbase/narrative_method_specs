@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Render Heatmap
-subtitle : It takes the filtered expression data table and generates the heatmap
-tooltip  : It takes the filtered expression data table and generates the heatmap
+subtitle : |
+    It takes the filtered expression data table and generates the heatmap
+tooltip  : |
+    It takes the filtered expression data table and generates the heatmap
 
 screenshots :
     []
@@ -23,15 +25,19 @@ method-suggestions :
 #
 parameters :
     param1 :
-        ui-name : Filtered Datatable
-        short-hint : Filtered Datatable
+        ui-name : |
+            Filtered Datatable
+        short-hint : |
+            Filtered Datatable
         long-hint  : |
             Filtered Datatable
 
 
     param0 :
-        ui-name : Workspace
-        short-hint : Name of the workspace; default is current
+        ui-name : |
+            Workspace
+        short-hint : |
+            Name of the workspace; default is current
         long-hint  : |
             Name of the workspace; default is current
 

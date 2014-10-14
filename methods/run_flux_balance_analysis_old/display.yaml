@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Run Flux Balance Analysis
-subtitle : Run Flux Balance Analysis on a metabolic model. [10]
-tooltip  : Run Flux Balance Analysis on a metabolic model. [10]
+subtitle : |
+    Run Flux Balance Analysis on a metabolic model. [10]
+tooltip  : |
+    Run Flux Balance Analysis on a metabolic model. [10]
 
 screenshots :
     []
@@ -23,85 +25,109 @@ method-suggestions :
 #
 parameters :
     param11 :
-        ui-name : PROM constraint
-        short-hint : specify the PROM constraint to apply for regulation of the metabolic model  (optional) [10.12]
+        ui-name : |
+            PROM constraint
+        short-hint : |
+            specify the PROM constraint to apply for regulation of the metabolic model  (optional) [10.12]
         long-hint  : |
             specify the PROM constraint to apply for regulation of the metabolic model  (optional) [10.12]
 
 
     param10 :
-        ui-name : All rxns reversible?
-        short-hint : set to 'yes' or '1' to allow all model reactions to be reversible (optional) [10.11]
+        ui-name : |
+            All rxns reversible?
+        short-hint : |
+            set to 'yes' or '1' to allow all model reactions to be reversible (optional) [10.11]
         long-hint  : |
             set to 'yes' or '1' to allow all model reactions to be reversible (optional) [10.11]
 
 
     param7 :
-        ui-name : Default Max Uptake
-        short-hint : specify the default maximum nutrient uptake flux (optional) [10.8]
+        ui-name : |
+            Default Max Uptake
+        short-hint : |
+            specify the default maximum nutrient uptake flux (optional) [10.8]
         long-hint  : |
             specify the default maximum nutrient uptake flux (optional) [10.8]
 
 
     param6 :
-        ui-name : Default Min Uptake
-        short-hint : specify the default minumum nutrient uptake flux (optional) [10.7]
+        ui-name : |
+            Default Min Uptake
+        short-hint : |
+            specify the default minumum nutrient uptake flux (optional) [10.7]
         long-hint  : |
             specify the default minumum nutrient uptake flux (optional) [10.7]
 
 
     param5 :
-        ui-name : Default Maximum flux
-        short-hint : specify the default maximum intracellular flux (optional) [10.6]
+        ui-name : |
+            Default Maximum flux
+        short-hint : |
+            specify the default maximum intracellular flux (optional) [10.6]
         long-hint  : |
             specify the default maximum intracellular flux (optional) [10.6]
 
 
     param4 :
-        ui-name : Reaction Knockouts
-        short-hint : specify reaction knockouts by reaction ID delimited by semicolons(;) (optional) [10.5]
+        ui-name : |
+            Reaction Knockouts
+        short-hint : |
+            specify reaction knockouts by reaction ID delimited by semicolons(;) (optional) [10.5]
         long-hint  : |
             specify reaction knockouts by reaction ID delimited by semicolons(;) (optional) [10.5]
 
 
     param3 :
-        ui-name : Gene Knockouts
-        short-hint : specify gene knockouts by the gene's feature ID delimited by semicolons(;) (optional) [10.4]
+        ui-name : |
+            Gene Knockouts
+        short-hint : |
+            specify gene knockouts by the gene's feature ID delimited by semicolons(;) (optional) [10.4]
         long-hint  : |
             specify gene knockouts by the gene's feature ID delimited by semicolons(;) (optional) [10.4]
 
 
     param2 :
-        ui-name : Output FBA Result Name
-        short-hint : select a name for the FBA result object (optional) [10.3]
+        ui-name : |
+            Output FBA Result Name
+        short-hint : |
+            select a name for the FBA result object (optional) [10.3]
         long-hint  : |
             select a name for the FBA result object (optional) [10.3]
 
 
     param1 :
-        ui-name : Media
-        short-hint : the media condition in which to run FBA (optional, default is an artificial complete media) [10.2]
+        ui-name : |
+            Media
+        short-hint : |
+            the media condition in which to run FBA (optional, default is an artificial complete media) [10.2]
         long-hint  : |
             the media condition in which to run FBA (optional, default is an artificial complete media) [10.2]
 
 
     param0 :
-        ui-name : Metabolic Model
-        short-hint : the metabolic model you wish to run [10.1]
+        ui-name : |
+            Metabolic Model
+        short-hint : |
+            the metabolic model you wish to run [10.1]
         long-hint  : |
             the metabolic model you wish to run [10.1]
 
 
     param9 :
-        ui-name : Maximize Objective?
-        short-hint : set to 'no' or '0' to run FBA without maximizing the objective function (optional) [10.10]
+        ui-name : |
+            Maximize Objective?
+        short-hint : |
+            set to 'no' or '0' to run FBA without maximizing the objective function (optional) [10.10]
         long-hint  : |
             set to 'no' or '0' to run FBA without maximizing the objective function (optional) [10.10]
 
 
     param8 :
-        ui-name : Minimize Flux?
-        short-hint : set to 'yes' or '1' to run FBA by minimizing flux (optional) [10.9]
+        ui-name : |
+            Minimize Flux?
+        short-hint : |
+            set to 'yes' or '1' to run FBA by minimizing flux (optional) [10.9]
         long-hint  : |
             set to 'yes' or '1' to run FBA by minimizing flux (optional) [10.9]
 

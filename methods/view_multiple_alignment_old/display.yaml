@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : View Multiple Alignment
-subtitle : View multiple sequence alignment. [29]
-tooltip  : View multiple sequence alignment. [29]
+subtitle : |
+    View multiple sequence alignment. [29]
+tooltip  : |
+    View multiple sequence alignment. [29]
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : MSA ID
-        short-hint : Multiple sequence alignment object ID.[29.1]
+        ui-name : |
+            MSA ID
+        short-hint : |
+            Multiple sequence alignment object ID.[29.1]
         long-hint  : |
             Multiple sequence alignment object ID.[29.1]
 

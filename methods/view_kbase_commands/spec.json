@@ -9,8 +9,9 @@
     "input" : null,
     "output" : "CategoryViewWidget"
   },
-  "parameters" : { },
+  "parameters" : [ ],
   "behavior" : {
+    "python_class" : "KBase Commands",
     "python_function" : "View KBase Commands"
   }
 }

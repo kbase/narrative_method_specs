@@ -25,29 +25,37 @@ method-suggestions :
 #
 parameters :
     param3 :
-        ui-name : Reference
-        short-hint : Input organism (kb_id)
+        ui-name : |
+            Reference
+        short-hint : |
+            Input organism (kb_id)
         long-hint  : |
             Input organism (kb_id)
 
 
     param2 :
-        ui-name : Paired-End (?)
-        short-hint : Paired-End say 'yes'; else 'no'; default is 'no'
+        ui-name : |
+            Paired-End (?)
+        short-hint : |
+            Paired-End say 'yes'; else 'no'; default is 'no'
         long-hint  : |
             Paired-End say 'yes'; else 'no'; default is 'no'
 
 
     param1 :
-        ui-name : Input_file
-        short-hint : Input to the raw sequencing data (paired end, comma sep)
+        ui-name : |
+            Input_file
+        short-hint : |
+            Input to the raw sequencing data (paired end, comma sep)
         long-hint  : |
             Input to the raw sequencing data (paired end, comma sep)
 
 
     param0 :
-        ui-name : Workspace
-        short-hint : name of workspace; default is current
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace; default is current
         long-hint  : |
             name of workspace; default is current
 

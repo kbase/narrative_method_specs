@@ -9,8 +9,29 @@
     "input" : null,
     "output" : "kbasePlantsNTO"
   },
-  "parameters" : { },
+  "parameters" : [ {
+    "id" : "param1",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseNetworks.Network" ]
+    }
+  } ],
   "behavior" : {
+    "python_class" : "Plants Coexpression Service",
     "python_function" : "Construct Subnetwork from User Selected Clusters"
   }
 }

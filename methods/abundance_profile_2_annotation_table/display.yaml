@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Abundance Profile 2 Annotation Table
-subtitle : Transform a metagenomic abundance profile into an annotation table object. The annotation table can be used as input for metabolic modeling modeling.
-tooltip  : Transform a metagenomic abundance profile into an annotation table object. The annotation table can be used as input for metabolic modeling modeling.
+subtitle : |
+    Transform a metagenomic abundance profile into an annotation table object. The annotation table can be used as input for metabolic modeling modeling.
+tooltip  : |
+    Transform a metagenomic abundance profile into an annotation table object. The annotation table can be used as input for metabolic modeling modeling.
 
 screenshots :
     []
@@ -23,15 +25,19 @@ method-suggestions :
 #
 parameters :
     param1 :
-        ui-name : Abundance Profile
-        short-hint : ID for input abundance profile
+        ui-name : |
+            Abundance Profile
+        short-hint : |
+            ID for input abundance profile
         long-hint  : |
             ID for input abundance profile
 
 
     param0 :
-        ui-name : Workspace
-        short-hint : name of workspace, default is current
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
         long-hint  : |
             name of workspace, default is current
 

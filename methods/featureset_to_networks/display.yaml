@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : FeatureSet to Networks
-subtitle : Query all available network data in KBase central store.
-tooltip  : Query all available network data in KBase central store.
+subtitle : |
+    Query all available network data in KBase central store.
+tooltip  : |
+    Query all available network data in KBase central store.
 
 screenshots :
     []
@@ -23,15 +25,19 @@ method-suggestions :
 #
 parameters :
     param1 :
-        ui-name : out_id
-        short-hint : Output Networks object identifier
+        ui-name : |
+            out_id
+        short-hint : |
+            Output Networks object identifier
         long-hint  : |
             Output Networks object identifier
 
 
     param0 :
-        ui-name : feature_set_id
-        short-hint : FeatureSet workspace object id
+        ui-name : |
+            feature_set_id
+        short-hint : |
+            FeatureSet workspace object id
         long-hint  : |
             FeatureSet workspace object id
 

@@ -9,8 +9,19 @@
     "input" : "kbaseBuildMediaInput",
     "output" : "kbaseMediaViewer"
   },
-  "parameters" : { },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseBiochem.Media" ]
+    }
+  } ],
   "behavior" : {
+    "python_class" : "Microbes Metabolic Modeling",
     "python_function" : "Build Media"
   }
 }

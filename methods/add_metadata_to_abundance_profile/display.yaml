@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Add Metadata to Abundance Profile
-subtitle : Add given key-value metadata to inputed abundace profile for inputed metagenome list.
-tooltip  : Add given key-value metadata to inputed abundace profile for inputed metagenome list.
+subtitle : |
+    Add given key-value metadata to inputed abundace profile for inputed metagenome list.
+tooltip  : |
+    Add given key-value metadata to inputed abundace profile for inputed metagenome list.
 
 screenshots :
     []
@@ -23,36 +25,46 @@ method-suggestions :
 #
 parameters :
     param4 :
-        ui-name : Value
-        short-hint : value of metadata field to add
+        ui-name : |
+            Value
+        short-hint : |
+            value of metadata field to add
         long-hint  : |
             value of metadata field to add
 
 
     param3 :
-        ui-name : Label
-        short-hint : name of metadata field to add
+        ui-name : |
+            Label
+        short-hint : |
+            name of metadata field to add
         long-hint  : |
             name of metadata field to add
 
 
     param2 :
-        ui-name : Profile Name
-        short-hint : object name of Communities.Profile
+        ui-name : |
+            Profile Name
+        short-hint : |
+            object name of Communities.Profile
         long-hint  : |
             object name of Communities.Profile
 
 
     param1 :
-        ui-name : Metagenome List
-        short-hint : object name of Communities.Collection
+        ui-name : |
+            Metagenome List
+        short-hint : |
+            object name of Communities.Collection
         long-hint  : |
             object name of Communities.Collection
 
 
     param0 :
-        ui-name : Workspace
-        short-hint : name of workspace, default is current
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
         long-hint  : |
             name of workspace, default is current
 

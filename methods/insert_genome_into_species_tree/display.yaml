@@ -2,15 +2,13 @@
 # Define basic display information
 #
 name     : Insert Genome into Species Tree
-subtitle : Insert a Genome into a global genome tree composed of 49 conserved COGs [20]
-tooltip  : Insert a Genome into a global genome tree composed of 49 conserved COGs [20]
+subtitle : |
+    Insert a Genome into a global genome tree composed of 49 conserved COGs [20]
+tooltip  : |
+    Insert a Genome into a global genome tree composed of 49 conserved COGs [20]
 
 screenshots :
-    - s1.png
-    - s2.png
-    - s3.png
-    - s4.png
-    - s5.png
+    []
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
@@ -27,37 +25,34 @@ method-suggestions :
 #
 parameters :
     param2 :
-        ui-name : Output species tree ID
-        short-hint : Output species tree ID. If empty, an ID will be chosen randomly. [20.3]
+        ui-name : |
+            Output species tree ID
+        short-hint : |
+            Output species tree ID. If empty, an ID will be chosen randomly. [20.3]
         long-hint  : |
             Output species tree ID. If empty, an ID will be chosen randomly. [20.3]
 
 
     param1 :
-        ui-name : Neighbor public genome count
-        short-hint : number of closest public genomes the tree will contain. (optional, default value is 100) [20.2]
+        ui-name : |
+            Neighbor public genome count
+        short-hint : |
+            number of closest public genomes the tree will contain. (optional, default value is 100) [20.2]
         long-hint  : |
             number of closest public genomes the tree will contain. (optional, default value is 100) [20.2]
 
 
     param0 :
-        ui-name : Genome ID
-        short-hint : a Genome to insert into the tree [20.1]
+        ui-name : |
+            Genome ID
+        short-hint : |
+            a Genome to insert into the tree [20.1]
         long-hint  : |
             a Genome to insert into the tree [20.1]
 
 
 description : |
-    <p>This method allows you to take a microbial genome sequence and place it in a species tree.  You have the option
-    of selecting the number of closest genomes to consider.</p>
-    
-    <p>The method operates by first identifying the closest genomes and identifying 49 highly-conserved
-    <a href="http://www.ncbi.nlm.nih.gov/COG/">COG</a> families.  These families are used to construct an alignment
-    and <a href="http://www.microbesonline.org/fasttree/">fast tree</a> is used to build the species tree.
-    </p>
-    
-    <p>The resulting species tree is displayed and saved to your workspace</p>
-    
+    Insert a Genome into a global genome tree composed of 49 conserved COGs [20]
 
 
 technical-description : |

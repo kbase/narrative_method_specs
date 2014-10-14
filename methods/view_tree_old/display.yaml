@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : View Tree
-subtitle : View a Tree from your workspace [21]
-tooltip  : View a Tree from your workspace [21]
+subtitle : |
+    View a Tree from your workspace [21]
+tooltip  : |
+    View a Tree from your workspace [21]
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : Tree ID
-        short-hint : a Tree id [21.1]
+        ui-name : |
+            Tree ID
+        short-hint : |
+            a Tree id [21.1]
         long-hint  : |
             a Tree id [21.1]
 

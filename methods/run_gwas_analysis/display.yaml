@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Run GWAS analysis
-subtitle : Computes association between each SNP and a trait of interest that has been scored across a large number of individuals. This method takes Filtered SNP object, kinship matrix, trait object as input and computes association.
-tooltip  : Computes association between each SNP and a trait of interest that has been scored across a large number of individuals. This method takes Filtered SNP object, kinship matrix, trait object as input and computes association.
+subtitle : |
+    Computes association between each SNP and a trait of interest that has been scored across a large number of individuals. This method takes Filtered SNP object, kinship matrix, trait object as input and computes association.
+tooltip  : |
+    Computes association between each SNP and a trait of interest that has been scored across a large number of individuals. This method takes Filtered SNP object, kinship matrix, trait object as input and computes association.
 
 screenshots :
     []
@@ -23,29 +25,37 @@ method-suggestions :
 #
 parameters :
     param3 :
-        ui-name : out
-        short-hint : Output
+        ui-name : |
+            out
+        short-hint : |
+            Output
         long-hint  : |
             Output
 
 
     param2 :
-        ui-name : traits
-        short-hint : Trait object id
+        ui-name : |
+            traits
+        short-hint : |
+            Trait object id
         long-hint  : |
             Trait object id
 
 
     param1 :
-        ui-name : kinship_matrix
-        short-hint : Kinship matrix object id
+        ui-name : |
+            kinship_matrix
+        short-hint : |
+            Kinship matrix object id
         long-hint  : |
             Kinship matrix object id
 
 
     param0 :
-        ui-name : genotype
-        short-hint : Population variation object
+        ui-name : |
+            genotype
+        short-hint : |
+            Population variation object
         long-hint  : |
             Population variation object
 

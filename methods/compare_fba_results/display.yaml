@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Compare FBA Results
-subtitle : Compare two FBA results, showing differences in fluxes for reactions.
-tooltip  : Compare two FBA results, showing differences in fluxes for reactions.
+subtitle : |
+    Compare two FBA results, showing differences in fluxes for reactions.
+tooltip  : |
+    Compare two FBA results, showing differences in fluxes for reactions.
 
 screenshots :
     []
@@ -23,15 +25,19 @@ method-suggestions :
 #
 parameters :
     param1 :
-        ui-name : Second FBA result
-        short-hint : Second FBA result
+        ui-name : |
+            Second FBA result
+        short-hint : |
+            Second FBA result
         long-hint  : |
             Second FBA result
 
 
     param0 :
-        ui-name : First FBA result
-        short-hint : First FBA result
+        ui-name : |
+            First FBA result
+        short-hint : |
+            First FBA result
         long-hint  : |
             First FBA result
 

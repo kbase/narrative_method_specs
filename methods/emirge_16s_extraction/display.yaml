@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : EMIRGE 16S Extraction
-subtitle : EMIRGE (Miller et al., Genome Biol. 2011) extracts 16S sequences from a WGS metagenome and reconstructs full-length small subunit gene sequences. It also provides estimates of relative taxon abundances.
-tooltip  : EMIRGE (Miller et al., Genome Biol. 2011) extracts 16S sequences from a WGS metagenome and reconstructs full-length small subunit gene sequences. It also provides estimates of relative taxon abundances.
+subtitle : |
+    EMIRGE (Miller et al., Genome Biol. 2011) extracts 16S sequences from a WGS metagenome and reconstructs full-length small subunit gene sequences. It also provides estimates of relative taxon abundances.
+tooltip  : |
+    EMIRGE (Miller et al., Genome Biol. 2011) extracts 16S sequences from a WGS metagenome and reconstructs full-length small subunit gene sequences. It also provides estimates of relative taxon abundances.
 
 screenshots :
     []
@@ -23,29 +25,37 @@ method-suggestions :
 #
 parameters :
     param3 :
-        ui-name : Output 16S Sequences
-        short-hint : object name of resulting 16S sequences
+        ui-name : |
+            Output 16S Sequences
+        short-hint : |
+            object name of resulting 16S sequences
         long-hint  : |
             object name of resulting 16S sequences
 
 
     param2 :
-        ui-name : Input FASTQ Pair 2
-        short-hint : Communities.SequenceFile object name, fastq mate pair 2
+        ui-name : |
+            Input FASTQ Pair 2
+        short-hint : |
+            Communities.SequenceFile object name, fastq mate pair 2
         long-hint  : |
             Communities.SequenceFile object name, fastq mate pair 2
 
 
     param1 :
-        ui-name : Input FASTQ Pair 1
-        short-hint : Communities.SequenceFile object name, fastq mate pair 1
+        ui-name : |
+            Input FASTQ Pair 1
+        short-hint : |
+            Communities.SequenceFile object name, fastq mate pair 1
         long-hint  : |
             Communities.SequenceFile object name, fastq mate pair 1
 
 
     param0 :
-        ui-name : Workspace
-        short-hint : name of workspace, default is current
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
         long-hint  : |
             name of workspace, default is current
 

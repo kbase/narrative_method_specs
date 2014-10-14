@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : View KBase Commands
-subtitle : View available KBase commands.
-tooltip  : View available KBase commands.
+subtitle : |
+    View available KBase commands.
+tooltip  : |
+    View available KBase commands.
 
 screenshots :
     []

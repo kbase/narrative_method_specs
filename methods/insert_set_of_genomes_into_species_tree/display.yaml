@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Insert Set of Genomes into Species Tree
-subtitle : Insert a Genome Set into a global genome tree composed of 50 conserved COGs [23]
-tooltip  : Insert a Genome Set into a global genome tree composed of 50 conserved COGs [23]
+subtitle : |
+    Insert a Genome Set into a global genome tree composed of 50 conserved COGs [23]
+tooltip  : |
+    Insert a Genome Set into a global genome tree composed of 50 conserved COGs [23]
 
 screenshots :
     []
@@ -23,22 +25,28 @@ method-suggestions :
 #
 parameters :
     param2 :
-        ui-name : Output species tree ID
-        short-hint : Output species tree ID. If empty, an ID will be chosen randomly. [23.3]
+        ui-name : |
+            Output species tree ID
+        short-hint : |
+            Output species tree ID. If empty, an ID will be chosen randomly. [23.3]
         long-hint  : |
             Output species tree ID. If empty, an ID will be chosen randomly. [23.3]
 
 
     param1 :
-        ui-name : Neighbor public genome count
-        short-hint : number of closest public genomes the tree will contain. (optional, default value is 100) [23.2]
+        ui-name : |
+            Neighbor public genome count
+        short-hint : |
+            number of closest public genomes the tree will contain. (optional, default value is 100) [23.2]
         long-hint  : |
             number of closest public genomes the tree will contain. (optional, default value is 100) [23.2]
 
 
     param0 :
-        ui-name : Genome Set ID
-        short-hint : a Genome Set to insert into the tree [23.1]
+        ui-name : |
+            Genome Set ID
+        short-hint : |
+            a Genome Set to insert into the tree [23.1]
         long-hint  : |
             a Genome Set to insert into the tree [23.1]
 

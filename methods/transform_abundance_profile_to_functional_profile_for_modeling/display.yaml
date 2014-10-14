@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Transform Abundance Profile to Functional Profile for Modeling
-subtitle : Create SEED/Subsystems functional annotations from a KEGG metagenome abundance profile. For input into modeling service.
-tooltip  : Create SEED/Subsystems functional annotations from a KEGG metagenome abundance profile. For input into modeling service.
+subtitle : |
+    Create SEED/Subsystems functional annotations from a KEGG metagenome abundance profile. For input into modeling service.
+tooltip  : |
+    Create SEED/Subsystems functional annotations from a KEGG metagenome abundance profile. For input into modeling service.
 
 screenshots :
     []
@@ -23,22 +25,28 @@ method-suggestions :
 #
 parameters :
     param2 :
-        ui-name : Output Name
-        short-hint : object name of annotation set table
+        ui-name : |
+            Output Name
+        short-hint : |
+            object name of annotation set table
         long-hint  : |
             object name of annotation set table
 
 
     param1 :
-        ui-name : Input Name
-        short-hint : object name of Communities.Profile
+        ui-name : |
+            Input Name
+        short-hint : |
+            object name of Communities.Profile
         long-hint  : |
             object name of Communities.Profile
 
 
     param0 :
-        ui-name : Workspace
-        short-hint : name of workspace, default is current
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
         long-hint  : |
             name of workspace, default is current
 

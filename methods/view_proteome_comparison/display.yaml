@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : View Proteome Comparison
-subtitle : Show the hit map result of running a comparison between two proteomes, which includes information about best-bidirectional hits. [18]
-tooltip  : Show the hit map result of running a comparison between two proteomes, which includes information about best-bidirectional hits. [18]
+subtitle : |
+    Show the hit map result of running a comparison between two proteomes, which includes information about best-bidirectional hits. [18]
+tooltip  : |
+    Show the hit map result of running a comparison between two proteomes, which includes information about best-bidirectional hits. [18]
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : Proteome Comparison ID
-        short-hint : Proteome comparison ID [18.1]
+        ui-name : |
+            Proteome Comparison ID
+        short-hint : |
+            Proteome comparison ID [18.1]
         long-hint  : |
             Proteome comparison ID [18.1]
 

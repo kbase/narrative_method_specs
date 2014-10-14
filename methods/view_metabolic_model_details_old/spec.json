@@ -9,8 +9,19 @@
     "input" : null,
     "output" : "kbaseModelTabs"
   },
-  "parameters" : { },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
+    }
+  } ],
   "behavior" : {
+    "python_class" : "Microbes Services",
     "python_function" : "View Metabolic Model Details"
   }
 }

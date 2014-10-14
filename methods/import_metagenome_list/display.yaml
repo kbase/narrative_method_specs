@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Import Metagenome List
-subtitle : Import metagenome list object into workspace.
-tooltip  : Import metagenome list object into workspace.
+subtitle : |
+    Import metagenome list object into workspace.
+tooltip  : |
+    Import metagenome list object into workspace.
 
 screenshots :
     []
@@ -23,15 +25,19 @@ method-suggestions :
 #
 parameters :
     param1 :
-        ui-name : Metagenome List Name
-        short-hint : name of metagenome list object
+        ui-name : |
+            Metagenome List Name
+        short-hint : |
+            name of metagenome list object
         long-hint  : |
             name of metagenome list object
 
 
     param0 :
-        ui-name : Workspace
-        short-hint : name of workspace, default is current
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
         long-hint  : |
             name of workspace, default is current
 

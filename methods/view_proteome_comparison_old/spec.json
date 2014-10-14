@@ -9,8 +9,19 @@
     "input" : null,
     "output" : "GenomeComparisonWidget"
   },
-  "parameters" : { },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "GenomeComparison.ProteomeComparison" ]
+    }
+  } ],
   "behavior" : {
+    "python_class" : "Microbes Services",
     "python_function" : "View Proteome Comparison"
   }
 }

@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Construct Co-expression Network and Clusters
-subtitle : Construct co-expression network and a set of densely interconnected clusters in co-expression network based on expression table object
-tooltip  : Construct co-expression network and a set of densely interconnected clusters in co-expression network based on expression table object
+subtitle : |
+    Construct co-expression network and a set of densely interconnected clusters in co-expression network based on expression table object
+tooltip  : |
+    Construct co-expression network and a set of densely interconnected clusters in co-expression network based on expression table object
 
 screenshots :
     []
@@ -23,36 +25,46 @@ method-suggestions :
 #
 parameters :
     param4 :
-        ui-name : num_module
-        short-hint : The number of cluster
+        ui-name : |
+            num_module
+        short-hint : |
+            The number of cluster
         long-hint  : |
             The number of cluster
 
 
     param3 :
-        ui-name : cut_off
-        short-hint : Lower cutoff to keep edges
+        ui-name : |
+            cut_off
+        short-hint : |
+            Lower cutoff to keep edges
         long-hint  : |
             Lower cutoff to keep edges
 
 
     param2 :
-        ui-name : clust_method
-        short-hint : Clustering algorithm ('hclust' for hierachical clustering or 'WGNCA')
+        ui-name : |
+            clust_method
+        short-hint : |
+            Clustering algorithm ('hclust' for hierachical clustering or 'WGNCA')
         long-hint  : |
             Clustering algorithm ('hclust' for hierachical clustering or 'WGNCA')
 
 
     param1 :
-        ui-name : net_method
-        short-hint : Network construction algorithm ('simple' for Pearson correlation coefficient or 'WGCNA')
+        ui-name : |
+            net_method
+        short-hint : |
+            Network construction algorithm ('simple' for Pearson correlation coefficient or 'WGCNA')
         long-hint  : |
             Network construction algorithm ('simple' for Pearson correlation coefficient or 'WGCNA')
 
 
     param0 :
-        ui-name : series_obj_id
-        short-hint : Object id of the expression Series data
+        ui-name : |
+            series_obj_id
+        short-hint : |
+            Object id of the expression Series data
         long-hint  : |
             Object id of the expression Series data
 

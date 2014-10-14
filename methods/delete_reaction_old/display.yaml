@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Delete Reaction
-subtitle : Delete reactions from selected Metabolic Model
-tooltip  : Delete reactions from selected Metabolic Model
+subtitle : |
+    Delete reactions from selected Metabolic Model
+tooltip  : |
+    Delete reactions from selected Metabolic Model
 
 screenshots :
     []
@@ -23,22 +25,28 @@ method-suggestions :
 #
 parameters :
     param2 :
-        ui-name : Edited Model
-        short-hint : ID of model with deleted reactions
+        ui-name : |
+            Edited Model
+        short-hint : |
+            ID of model with deleted reactions
         long-hint  : |
             ID of model with deleted reactions
 
 
     param1 :
-        ui-name : Reaction(s) ID(s)
-        short-hint : Reactions to be deleted. Add multiple reactions seperated by ;
+        ui-name : |
+            Reaction(s) ID(s)
+        short-hint : |
+            Reactions to be deleted. Add multiple reactions seperated by ;
         long-hint  : |
             Reactions to be deleted. Add multiple reactions seperated by ;
 
 
     param0 :
-        ui-name : Metabolic Model
-        short-hint : the metabolic model to edit
+        ui-name : |
+            Metabolic Model
+        short-hint : |
+            the metabolic model to edit
         long-hint  : |
             the metabolic model to edit
 

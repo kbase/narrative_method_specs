@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : GeneList to Networks
-subtitle : This method displays a gene list along with functional annotation in a table.
-tooltip  : This method displays a gene list along with functional annotation in a table.
+subtitle : |
+    This method displays a gene list along with functional annotation in a table.
+tooltip  : |
+    This method displays a gene list along with functional annotation in a table.
 
 screenshots :
     []
@@ -23,15 +25,19 @@ method-suggestions :
 #
 parameters :
     param1 :
-        ui-name : out_id
-        short-hint : Output Networks object identifier
+        ui-name : |
+            out_id
+        short-hint : |
+            Output Networks object identifier
         long-hint  : |
             Output Networks object identifier
 
 
     param0 :
-        ui-name : obj_id
-        short-hint : Gene List workspace object identifier.
+        ui-name : |
+            obj_id
+        short-hint : |
+            Gene List workspace object identifier.
         long-hint  : |
             Gene List workspace object identifier.
 

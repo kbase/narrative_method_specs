@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Annotate Clusters with Enriched Ontology Terms
-subtitle : Identify Gene Ontology terms enriched in individual network clusters
-tooltip  : Identify Gene Ontology terms enriched in individual network clusters
+subtitle : |
+    Identify Gene Ontology terms enriched in individual network clusters
+tooltip  : |
+    Identify Gene Ontology terms enriched in individual network clusters
 
 screenshots :
     []
@@ -23,29 +25,37 @@ method-suggestions :
 #
 parameters :
     param3 :
-        ui-name : domain
-        short-hint : Domain list (comma separated, biological_process, ...)
+        ui-name : |
+            domain
+        short-hint : |
+            Domain list (comma separated, biological_process, ...)
         long-hint  : |
             Domain list (comma separated, biological_process, ...)
 
 
     param2 :
-        ui-name : ec
-        short-hint : Evidence code list (comma separated, IEA, ...)
+        ui-name : |
+            ec
+        short-hint : |
+            Evidence code list (comma separated, IEA, ...)
         long-hint  : |
             Evidence code list (comma separated, IEA, ...)
 
 
     param1 :
-        ui-name : p_value
-        short-hint : p-value cutoff
+        ui-name : |
+            p_value
+        short-hint : |
+            p-value cutoff
         long-hint  : |
             p-value cutoff
 
 
     param0 :
-        ui-name : net_obj_id
-        short-hint : Cluster object id
+        ui-name : |
+            net_obj_id
+        short-hint : |
+            Cluster object id
         long-hint  : |
             Cluster object id
 

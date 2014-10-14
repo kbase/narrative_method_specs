@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Build Gene Tree
-subtitle : Build phylogenetic tree for multiple alignmnet of protein sequences [28]
-tooltip  : Build phylogenetic tree for multiple alignmnet of protein sequences [28]
+subtitle : |
+    Build phylogenetic tree for multiple alignmnet of protein sequences [28]
+tooltip  : |
+    Build phylogenetic tree for multiple alignmnet of protein sequences [28]
 
 screenshots :
     []
@@ -23,15 +25,19 @@ method-suggestions :
 #
 parameters :
     param1 :
-        ui-name : Output gene tree ID
-        short-hint : Output gene tree ID. If empty, an ID will be chosen randomly. [28.2]
+        ui-name : |
+            Output gene tree ID
+        short-hint : |
+            Output gene tree ID. If empty, an ID will be chosen randomly. [28.2]
         long-hint  : |
             Output gene tree ID. If empty, an ID will be chosen randomly. [28.2]
 
 
     param0 :
-        ui-name : MSA ID
-        short-hint : a Multiple sequence alignment [28.1]
+        ui-name : |
+            MSA ID
+        short-hint : |
+            a Multiple sequence alignment [28.1]
         long-hint  : |
             a Multiple sequence alignment [28.1]
 

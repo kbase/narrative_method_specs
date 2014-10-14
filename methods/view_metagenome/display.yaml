@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : View Metagenome
-subtitle : Overview of metagenome statistics, numeric and plotted.
-tooltip  : Overview of metagenome statistics, numeric and plotted.
+subtitle : |
+    Overview of metagenome statistics, numeric and plotted.
+tooltip  : |
+    Overview of metagenome statistics, numeric and plotted.
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : Metagenome ID
-        short-hint : id of a metagenome
+        ui-name : |
+            Metagenome ID
+        short-hint : |
+            id of a metagenome
         long-hint  : |
             id of a metagenome
 

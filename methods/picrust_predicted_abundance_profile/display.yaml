@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : PICRUSt Predicted Abundance Profile
-subtitle : Create a KEGG annotated functional abundance profile for 16S data in BIOM format using PICRUSt. The input OTUs are created by QIIME using a closed-reference OTU picking against the Greengenes database (pre-clustered at 97% identity).
-tooltip  : Create a KEGG annotated functional abundance profile for 16S data in BIOM format using PICRUSt. The input OTUs are created by QIIME using a closed-reference OTU picking against the Greengenes database (pre-clustered at 97% identity).
+subtitle : |
+    Create a KEGG annotated functional abundance profile for 16S data in BIOM format using PICRUSt. The input OTUs are created by QIIME using a closed-reference OTU picking against the Greengenes database (pre-clustered at 97% identity).
+tooltip  : |
+    Create a KEGG annotated functional abundance profile for 16S data in BIOM format using PICRUSt. The input OTUs are created by QIIME using a closed-reference OTU picking against the Greengenes database (pre-clustered at 97% identity).
 
 screenshots :
     []
@@ -23,22 +25,28 @@ method-suggestions :
 #
 parameters :
     param2 :
-        ui-name : Output Name
-        short-hint : object name of resulting BIOM profile
+        ui-name : |
+            Output Name
+        short-hint : |
+            object name of resulting BIOM profile
         long-hint  : |
             object name of resulting BIOM profile
 
 
     param1 :
-        ui-name : Input BIOM
-        short-hint : object name of OTU table
+        ui-name : |
+            Input BIOM
+        short-hint : |
+            object name of OTU table
         long-hint  : |
             object name of OTU table
 
 
     param0 :
-        ui-name : Workspace
-        short-hint : name of workspace, default is current
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
         long-hint  : |
             name of workspace, default is current
 

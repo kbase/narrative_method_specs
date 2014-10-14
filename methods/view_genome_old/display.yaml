@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : View Genome
-subtitle : View and explore a Genome object in your workspace. [5]
-tooltip  : View and explore a Genome object in your workspace. [5]
+subtitle : |
+    View and explore a Genome object in your workspace. [5]
+tooltip  : |
+    View and explore a Genome object in your workspace. [5]
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : Genome
-        short-hint : select the genome you want to view [5.1]
+        ui-name : |
+            Genome
+        short-hint : |
+            select the genome you want to view [5.1]
         long-hint  : |
             select the genome you want to view [5.1]
 

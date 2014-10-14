@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : View FBA Result Details
-subtitle : Bring up a detailed view of your FBA result within the narrative. [11]
-tooltip  : Bring up a detailed view of your FBA result within the narrative. [11]
+subtitle : |
+    Bring up a detailed view of your FBA result within the narrative. [11]
+tooltip  : |
+    Bring up a detailed view of your FBA result within the narrative. [11]
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param0 :
-        ui-name : FBA Result
-        short-hint : the FBA Result to view [11.1]
+        ui-name : |
+            FBA Result
+        short-hint : |
+            the FBA Result to view [11.1]
         long-hint  : |
             the FBA Result to view [11.1]
 

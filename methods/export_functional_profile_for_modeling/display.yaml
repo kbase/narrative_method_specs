@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Export Functional Profile for Modeling
-subtitle : Retrieve all SEED/Subsystems functional annotations for a given metagenome ID. Alternatively, filter annotations for specific taxa. For input into modeling service.
-tooltip  : Retrieve all SEED/Subsystems functional annotations for a given metagenome ID. Alternatively, filter annotations for specific taxa. For input into modeling service.
+subtitle : |
+    Retrieve all SEED/Subsystems functional annotations for a given metagenome ID. Alternatively, filter annotations for specific taxa. For input into modeling service.
+tooltip  : |
+    Retrieve all SEED/Subsystems functional annotations for a given metagenome ID. Alternatively, filter annotations for specific taxa. For input into modeling service.
 
 screenshots :
     []
@@ -23,8 +25,10 @@ method-suggestions :
 #
 parameters :
     param7 :
-        ui-name : Alignment Length
-        short-hint : value for minimum alignment length cutoff, default is 15
+        ui-name : |
+            Alignment Length
+        short-hint : |
+            value for minimum alignment length cutoff, default is 15
         long-hint  : |
             value for minimum alignment length cutoff, default is 15
 
@@ -32,56 +36,71 @@ parameters :
     param6 :
         ui-name : |
             % Identity
-        short-hint : percent value for minimum % identity cutoff, default is 60
+        short-hint : |
+            percent value for minimum % identity cutoff, default is 60
         long-hint  : |
             percent value for minimum % identity cutoff, default is 60
 
 
     param5 :
-        ui-name : E-Value
-        short-hint : negative exponent value for maximum e-value cutoff, default is 5
+        ui-name : |
+            E-Value
+        short-hint : |
+            negative exponent value for maximum e-value cutoff, default is 5
         long-hint  : |
             negative exponent value for maximum e-value cutoff, default is 5
 
 
     param4 :
-        ui-name : Annotation Level
-        short-hint : taxon level to group annotations by
+        ui-name : |
+            Annotation Level
+        short-hint : |
+            taxon level to group annotations by
         long-hint  : |
             taxon level to group annotations by
 
 
     param3 :
-        ui-name : Top Taxa
-        short-hint : produce annotations for top N abundant taxa
+        ui-name : |
+            Top Taxa
+        short-hint : |
+            produce annotations for top N abundant taxa
         long-hint  : |
             produce annotations for top N abundant taxa
 
 
     param2 :
-        ui-name : Output Name
-        short-hint : object name of annotation set table
+        ui-name : |
+            Output Name
+        short-hint : |
+            object name of annotation set table
         long-hint  : |
             object name of annotation set table
 
 
     param1 :
-        ui-name : Metagenome
-        short-hint : Communities.Metagenome object name
+        ui-name : |
+            Metagenome
+        short-hint : |
+            Communities.Metagenome object name
         long-hint  : |
             Communities.Metagenome object name
 
 
     param0 :
-        ui-name : Workspace
-        short-hint : name of workspace, default is current
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
         long-hint  : |
             name of workspace, default is current
 
 
     param8 :
-        ui-name : Remainder
-        short-hint : lump together remaining taxa after top N
+        ui-name : |
+            Remainder
+        short-hint : |
+            lump together remaining taxa after top N
         long-hint  : |
             lump together remaining taxa after top N
 
