@@ -1,0 +1,53 @@
+{
+    "name":"Test Method 1",
+    "ver":"1.0.1",
+    "authors": [ "msneddon","wstester1" ],
+    "contact": "help@kbase.us",
+    
+    "categories": [ "testmethods" ],
+    
+    "widgets": {
+        "output":"KBaseDefaultViewer"
+    },
+    
+    "parameters": [
+        {
+            "id": "genome",
+            
+            "optional":false,
+            "advanced":false,
+            
+            "allow_multiple":false,
+            "default_values":[""],
+            
+            "field_type" : "text",
+            
+            "text_options":{
+                "valid_ws_types":["KBaseGenomes.Genome", "KBaseGenomes.PlantGenome"]
+            }
+        },
+        
+        {
+            "id": "iterations",
+            
+            "optional":false,
+            "advanced":true,
+            
+            "allow_multiple":false,
+            "default_values":["1"],
+            
+            "field_type" : "intslider",
+            
+            "intslider_options":{
+                "min":1,
+                "max":10,
+                "step":1
+            }
+        }
+    ],
+    
+    "behavior": {
+        "python_function":"NameOfTestFunction"
+    }
+    
+}
