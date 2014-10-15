@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name_    : Test Method 1
+name    : Test Method 1
 subtitle : This method is a test, and only a test, of the method store system.
 tooltip  : This method is a test, and only a test.  Hello tooltip!
 
