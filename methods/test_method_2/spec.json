@@ -48,7 +48,7 @@
     
     "behavior": {
         "python_class" : "Microbes Services",
-        "python_function":"NameOfTestFunction"
+        "python_function":"NameOfTestFunction",
         "service-mapping": {
             "url": "http://neverservice.com:555/",
             "name": "KBaseNeverService",
