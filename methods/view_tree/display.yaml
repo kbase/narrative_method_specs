@@ -3,9 +3,9 @@
 #
 name     : View Tree
 subtitle : |
-    View a Tree from your workspace [21]
+    View a Tree from your workspace
 tooltip  : |
-    View a Tree from your workspace [21]
+    View a Tree from your workspace
 
 screenshots :
     []
@@ -34,7 +34,8 @@ parameters :
 
 
 description : |
-    View a Tree from your workspace [21]
+    View a Phylogenetic Tree in your workspace.  Click on nodes to maximize or
+    minimize them, or to go to the landing page for the Genome/Feature.
 
 
 technical-description : |
