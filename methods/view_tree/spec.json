@@ -1,7 +1,7 @@
 {
   "name" : "View Tree",
   "ver" : "1.0.0",
-  "authors" : [ ],
+  "authors" : [ "wstester1" ],
   "contact" : "help@kbase.us",
   "visble" : true,
   "categories" : [ "microbes_comparative_genomics" ],
