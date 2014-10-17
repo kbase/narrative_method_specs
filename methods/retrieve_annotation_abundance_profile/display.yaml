@@ -24,85 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param12 :
+    param0 :
         ui-name : |
-            Normalize
+            Workspace
         short-hint : |
-            log transform the abundance data
+            name of workspace, default is current
         long-hint  : |
-            log transform the abundance data
-
-
-    param11 :
-        ui-name : |
-            Alignment Length
-        short-hint : |
-            value for minimum alignment length cutoff, default is 15
-        long-hint  : |
-            value for minimum alignment length cutoff, default is 15
-
-
-    param10 :
-        ui-name : |
-            % Identity
-        short-hint : |
-            percent value for minimum % identity cutoff, default is 60
-        long-hint  : |
-            percent value for minimum % identity cutoff, default is 60
-
-
-    param7 :
-        ui-name : |
-            Filter Level
-        short-hint : |
-            hierarchical level of filter names list
-        long-hint  : |
-            hierarchical level of filter names list
-
-
-    param6 :
-        ui-name : |
-            Filter List
-        short-hint : |
-            object name of list of names to filter results by
-        long-hint  : |
-            object name of list of names to filter results by
-
-
-    param5 :
-        ui-name : |
-            Source Name
-        short-hint : |
-            data source to filter results by
-        long-hint  : |
-            data source to filter results by
-
-
-    param4 :
-        ui-name : |
-            Annotation Level
-        short-hint : |
-            annotation hierarchical level to retrieve abundances for
-        long-hint  : |
-            annotation hierarchical level to retrieve abundances for
-
-
-    param3 :
-        ui-name : |
-            Annotation Type
-        short-hint : |
-            annotation of abundance profile, one of 'taxa' or 'functions'
-        long-hint  : |
-            annotation of abundance profile, one of 'taxa' or 'functions'
-
-
-    param2 :
-        ui-name : |
-            Output Name
-        short-hint : |
-            object name of abundance profile table
-        long-hint  : |
-            object name of abundance profile table
+            name of workspace, default is current
 
 
     param1 :
@@ -114,13 +42,67 @@ parameters :
             object name of Communities.Collection
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Workspace
+            Output Name
         short-hint : |
-            name of workspace, default is current
+            object name of abundance profile table
         long-hint  : |
-            name of workspace, default is current
+            object name of abundance profile table
+
+
+    param3 :
+        ui-name : |
+            Annotation Type
+        short-hint : |
+            annotation of abundance profile, one of 'taxa' or 'functions'
+        long-hint  : |
+            annotation of abundance profile, one of 'taxa' or 'functions'
+
+
+    param4 :
+        ui-name : |
+            Annotation Level
+        short-hint : |
+            annotation hierarchical level to retrieve abundances for
+        long-hint  : |
+            annotation hierarchical level to retrieve abundances for
+
+
+    param5 :
+        ui-name : |
+            Source Name
+        short-hint : |
+            data source to filter results by
+        long-hint  : |
+            data source to filter results by
+
+
+    param6 :
+        ui-name : |
+            Filter List
+        short-hint : |
+            object name of list of names to filter results by
+        long-hint  : |
+            object name of list of names to filter results by
+
+
+    param7 :
+        ui-name : |
+            Filter Level
+        short-hint : |
+            hierarchical level of filter names list
+        long-hint  : |
+            hierarchical level of filter names list
+
+
+    param8 :
+        ui-name : |
+            Filter Source
+        short-hint : |
+            data source of filter names list
+        long-hint  : |
+            data source of filter names list
 
 
     param9 :
@@ -132,13 +114,31 @@ parameters :
             negative exponent value for maximum e-value cutoff, default is 5
 
 
-    param8 :
+    param10 :
         ui-name : |
-            Filter Source
+            % Identity
         short-hint : |
-            data source of filter names list
+            percent value for minimum % identity cutoff, default is 60
         long-hint  : |
-            data source of filter names list
+            percent value for minimum % identity cutoff, default is 60
+
+
+    param11 :
+        ui-name : |
+            Alignment Length
+        short-hint : |
+            value for minimum alignment length cutoff, default is 15
+        long-hint  : |
+            value for minimum alignment length cutoff, default is 15
+
+
+    param12 :
+        ui-name : |
+            Normalize
+        short-hint : |
+            log transform the abundance data
+        long-hint  : |
+            log transform the abundance data
 
 
 description : |

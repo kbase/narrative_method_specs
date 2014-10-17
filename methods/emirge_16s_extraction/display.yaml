@@ -24,22 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param3 :
+    param0 :
         ui-name : |
-            Output 16S Sequences
+            Workspace
         short-hint : |
-            object name of resulting 16S sequences
+            name of workspace, default is current
         long-hint  : |
-            object name of resulting 16S sequences
-
-
-    param2 :
-        ui-name : |
-            Input FASTQ Pair 2
-        short-hint : |
-            Communities.SequenceFile object name, fastq mate pair 2
-        long-hint  : |
-            Communities.SequenceFile object name, fastq mate pair 2
+            name of workspace, default is current
 
 
     param1 :
@@ -51,13 +42,22 @@ parameters :
             Communities.SequenceFile object name, fastq mate pair 1
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Workspace
+            Input FASTQ Pair 2
         short-hint : |
-            name of workspace, default is current
+            Communities.SequenceFile object name, fastq mate pair 2
         long-hint  : |
-            name of workspace, default is current
+            Communities.SequenceFile object name, fastq mate pair 2
+
+
+    param3 :
+        ui-name : |
+            Output 16S Sequences
+        short-hint : |
+            object name of resulting 16S sequences
+        long-hint  : |
+            object name of resulting 16S sequences
 
 
 description : |

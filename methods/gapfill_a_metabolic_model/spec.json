@@ -10,27 +10,7 @@
     "output" : "kbaseModelTabs"
   },
   "parameters" : [ {
-    "id" : "param4",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
-  }, {
-    "id" : "param3",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
-  }, {
-    "id" : "param2",
+    "id" : "param0",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -50,7 +30,7 @@
       "valid_ws_types" : [ "KBaseBiochem.Media" ]
     }
   }, {
-    "id" : "param0",
+    "id" : "param2",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -58,6 +38,26 @@
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
+    }
+  }, {
+    "id" : "param3",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "param4",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
     }
   } ],
   "behavior" : {

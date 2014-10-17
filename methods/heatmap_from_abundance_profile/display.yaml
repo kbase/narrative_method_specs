@@ -24,49 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param6 :
+    param0 :
         ui-name : |
-            Label
+            Workspace
         short-hint : |
-            label rows
+            name of workspace, default is current
         long-hint  : |
-            label rows
-
-
-    param5 :
-        ui-name : |
-            Order
-        short-hint : |
-            order columns
-        long-hint  : |
-            order columns
-
-
-    param4 :
-        ui-name : |
-            Cluster
-        short-hint : |
-            cluster method, one of: ward, single, complete, mcquitty, median, centroid
-        long-hint  : |
-            cluster method, one of: ward, single, complete, mcquitty, median, centroid
-
-
-    param3 :
-        ui-name : |
-            Distance
-        short-hint : |
-            distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
-        long-hint  : |
-            distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
-
-
-    param2 :
-        ui-name : |
-            Label Name
-        short-hint : |
-            label by metagenome name and not ID
-        long-hint  : |
-            label by metagenome name and not ID
+            name of workspace, default is current
 
 
     param1 :
@@ -78,13 +42,49 @@ parameters :
             object name of Communities.Profile
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Workspace
+            Label Name
         short-hint : |
-            name of workspace, default is current
+            label by metagenome name and not ID
         long-hint  : |
-            name of workspace, default is current
+            label by metagenome name and not ID
+
+
+    param3 :
+        ui-name : |
+            Distance
+        short-hint : |
+            distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
+        long-hint  : |
+            distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
+
+
+    param4 :
+        ui-name : |
+            Cluster
+        short-hint : |
+            cluster method, one of: ward, single, complete, mcquitty, median, centroid
+        long-hint  : |
+            cluster method, one of: ward, single, complete, mcquitty, median, centroid
+
+
+    param5 :
+        ui-name : |
+            Order
+        short-hint : |
+            order columns
+        long-hint  : |
+            order columns
+
+
+    param6 :
+        ui-name : |
+            Label
+        short-hint : |
+            label rows
+        long-hint  : |
+            label rows
 
 
 description : |

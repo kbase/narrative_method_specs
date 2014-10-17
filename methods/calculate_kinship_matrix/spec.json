@@ -10,14 +10,14 @@
     "output" : "ValueListWidget"
   },
   "parameters" : [ {
-    "id" : "param2",
+    "id" : "param0",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
+      "valid_ws_types" : [ "KBaseGwasData.GwasPopulationVariation" ]
     }
   }, {
     "id" : "param1",
@@ -30,14 +30,14 @@
       "valid_ws_types" : [ "KBaseGwasData.GwasPopulationKinship" ]
     }
   }, {
-    "id" : "param0",
+    "id" : "param2",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseGwasData.GwasPopulationVariation" ]
+      "valid_ws_types" : [ ]
     }
   } ],
   "behavior" : {

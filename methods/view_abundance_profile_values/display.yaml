@@ -24,49 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param6 :
+    param0 :
         ui-name : |
-            Show Stats
+            Workspace
         short-hint : |
-            include significance stats in table view
+            name of workspace, default is current
         long-hint  : |
-            include significance stats in table view
-
-
-    param5 :
-        ui-name : |
-            Column End
-        short-hint : |
-            column position to end table with, default is last
-        long-hint  : |
-            column position to end table with, default is last
-
-
-    param4 :
-        ui-name : |
-            Column Start
-        short-hint : |
-            column position to start table with, default is first
-        long-hint  : |
-            column position to start table with, default is first
-
-
-    param3 :
-        ui-name : |
-            Row End
-        short-hint : |
-            row position to end table with, default is last
-        long-hint  : |
-            row position to end table with, default is last
-
-
-    param2 :
-        ui-name : |
-            Row Start
-        short-hint : |
-            row position to start table with, default is first
-        long-hint  : |
-            row position to start table with, default is first
+            name of workspace, default is current
 
 
     param1 :
@@ -78,13 +42,49 @@ parameters :
             object name of Communities.Profile
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Workspace
+            Row Start
         short-hint : |
-            name of workspace, default is current
+            row position to start table with, default is first
         long-hint  : |
-            name of workspace, default is current
+            row position to start table with, default is first
+
+
+    param3 :
+        ui-name : |
+            Row End
+        short-hint : |
+            row position to end table with, default is last
+        long-hint  : |
+            row position to end table with, default is last
+
+
+    param4 :
+        ui-name : |
+            Column Start
+        short-hint : |
+            column position to start table with, default is first
+        long-hint  : |
+            column position to start table with, default is first
+
+
+    param5 :
+        ui-name : |
+            Column End
+        short-hint : |
+            column position to end table with, default is last
+        long-hint  : |
+            column position to end table with, default is last
+
+
+    param6 :
+        ui-name : |
+            Show Stats
+        short-hint : |
+            include significance stats in table view
+        long-hint  : |
+            include significance stats in table view
 
 
 description : |

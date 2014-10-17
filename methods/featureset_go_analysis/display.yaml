@@ -24,31 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param4 :
+    param0 :
         ui-name : |
-            out_id
+            feature_set_id
         short-hint : |
-            Output FeatureSet object identifier
+            FeatureSet workspace object id
         long-hint  : |
-            Output FeatureSet object identifier
-
-
-    param3 :
-        ui-name : |
-            domain
-        short-hint : |
-            Domain list (comma separated, biological_process,molecular_function,cellular_component)
-        long-hint  : |
-            Domain list (comma separated, biological_process,molecular_function,cellular_component)
-
-
-    param2 :
-        ui-name : |
-            ec
-        short-hint : |
-            Evidence code list (comma separated, IEA,ISS,IDA,IEP,IPI,RCA ..)
-        long-hint  : |
-            Evidence code list (comma separated, IEA,ISS,IDA,IEP,IPI,RCA ..)
+            FeatureSet workspace object id
 
 
     param1 :
@@ -60,13 +42,31 @@ parameters :
             p-value cutoff
 
 
-    param0 :
+    param2 :
         ui-name : |
-            feature_set_id
+            ec
         short-hint : |
-            FeatureSet workspace object id
+            Evidence code list (comma separated, IEA,ISS,IDA,IEP,IPI,RCA ..)
         long-hint  : |
-            FeatureSet workspace object id
+            Evidence code list (comma separated, IEA,ISS,IDA,IEP,IPI,RCA ..)
+
+
+    param3 :
+        ui-name : |
+            domain
+        short-hint : |
+            Domain list (comma separated, biological_process,molecular_function,cellular_component)
+        long-hint  : |
+            Domain list (comma separated, biological_process,molecular_function,cellular_component)
+
+
+    param4 :
+        ui-name : |
+            out_id
+        short-hint : |
+            Output FeatureSet object identifier
+        long-hint  : |
+            Output FeatureSet object identifier
 
 
 description : |

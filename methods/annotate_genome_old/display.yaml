@@ -24,15 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
-        ui-name : |
-            Output Genome ID
-        short-hint : |
-            Annotated output genome ID. If empty, annotation will be added into original genome object. [4.2]
-        long-hint  : |
-            Annotated output genome ID. If empty, annotation will be added into original genome object. [4.2]
-
-
     param0 :
         ui-name : |
             Genome ID
@@ -40,6 +31,15 @@ parameters :
             Source genome ID [4.1]
         long-hint  : |
             Source genome ID [4.1]
+
+
+    param1 :
+        ui-name : |
+            Output Genome ID
+        short-hint : |
+            Annotated output genome ID. If empty, annotation will be added into original genome object. [4.2]
+        long-hint  : |
+            Annotated output genome ID. If empty, annotation will be added into original genome object. [4.2]
 
 
 description : |

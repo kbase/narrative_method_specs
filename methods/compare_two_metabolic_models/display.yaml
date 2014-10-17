@@ -24,13 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param2 :
+    param0 :
         ui-name : |
-            Proteome Comparison ID
+            FBA Model 1 ID
         short-hint : |
-            Proteome comparison ID [19.3]
+            an FBA model id from first genome [19.1]
         long-hint  : |
-            Proteome comparison ID [19.3]
+            an FBA model id from first genome [19.1]
 
 
     param1 :
@@ -42,13 +42,13 @@ parameters :
             an FBA model id from second genome [19.2]
 
 
-    param0 :
+    param2 :
         ui-name : |
-            FBA Model 1 ID
+            Proteome Comparison ID
         short-hint : |
-            an FBA model id from first genome [19.1]
+            Proteome comparison ID [19.3]
         long-hint  : |
-            an FBA model id from first genome [19.1]
+            Proteome comparison ID [19.3]
 
 
 description : |

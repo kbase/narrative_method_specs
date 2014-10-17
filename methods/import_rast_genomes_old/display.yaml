@@ -24,13 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param2 :
+    param0 :
         ui-name : |
-            RAST Password
+            RAST Genome IDs
         short-hint : |
-            Your RAST Password
+            list of genome ids (comma seperated)
         long-hint  : |
-            Your RAST Password
+            list of genome ids (comma seperated)
 
 
     param1 :
@@ -42,13 +42,13 @@ parameters :
             Your RAST Username
 
 
-    param0 :
+    param2 :
         ui-name : |
-            RAST Genome IDs
+            RAST Password
         short-hint : |
-            list of genome ids (comma seperated)
+            Your RAST Password
         long-hint  : |
-            list of genome ids (comma seperated)
+            Your RAST Password
 
 
 description : |

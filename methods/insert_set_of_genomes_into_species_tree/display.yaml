@@ -24,13 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param2 :
+    param0 :
         ui-name : |
-            Output species tree ID
+            Genome Set ID
         short-hint : |
-            Output species tree ID. If empty, an ID will be chosen randomly. [23.3]
+            a Genome Set to insert into the tree [23.1]
         long-hint  : |
-            Output species tree ID. If empty, an ID will be chosen randomly. [23.3]
+            a Genome Set to insert into the tree [23.1]
 
 
     param1 :
@@ -42,13 +42,13 @@ parameters :
             number of closest public genomes the tree will contain. (optional, default value is 100) [23.2]
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Genome Set ID
+            Output species tree ID
         short-hint : |
-            a Genome Set to insert into the tree [23.1]
+            Output species tree ID. If empty, an ID will be chosen randomly. [23.3]
         long-hint  : |
-            a Genome Set to insert into the tree [23.1]
+            Output species tree ID. If empty, an ID will be chosen randomly. [23.3]
 
 
 description : |

@@ -10,16 +10,6 @@
     "output" : "GeneTableWidget"
   },
   "parameters" : [ {
-    "id" : "param1",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "Communities.Profile" ]
-    }
-  }, {
     "id" : "param0",
     "optional" : false,
     "advanced" : false,
@@ -28,6 +18,16 @@
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "param1",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "Communities.Profile" ]
     }
   } ],
   "behavior" : {

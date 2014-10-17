@@ -24,13 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param2 :
+    param0 :
         ui-name : |
-            Output file prefix
+            Workspace
         short-hint : |
-            Output File prefix
+            Name of workspace; default is current
         long-hint  : |
-            Output File prefix
+            Name of workspace; default is current
 
 
     param1 :
@@ -42,13 +42,13 @@ parameters :
             Datatable Name
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Workspace
+            Output file prefix
         short-hint : |
-            Name of workspace; default is current
+            Output File prefix
         long-hint  : |
-            Name of workspace; default is current
+            Output File prefix
 
 
 description : |

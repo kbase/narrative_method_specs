@@ -24,22 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param3 :
+    param0 :
         ui-name : |
-            Reference
+            Workspace
         short-hint : |
-            Input organism (kb_id)
+            name of workspace; default is current
         long-hint  : |
-            Input organism (kb_id)
-
-
-    param2 :
-        ui-name : |
-            Paired-End (?)
-        short-hint : |
-            Paired-End say 'yes'; else 'no'; default is 'no'
-        long-hint  : |
-            Paired-End say 'yes'; else 'no'; default is 'no'
+            name of workspace; default is current
 
 
     param1 :
@@ -51,13 +42,22 @@ parameters :
             Input to the raw sequencing data (paired end, comma sep)
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Workspace
+            Paired-End (?)
         short-hint : |
-            name of workspace; default is current
+            Paired-End say 'yes'; else 'no'; default is 'no'
         long-hint  : |
-            name of workspace; default is current
+            Paired-End say 'yes'; else 'no'; default is 'no'
+
+
+    param3 :
+        ui-name : |
+            Reference
+        short-hint : |
+            Input organism (kb_id)
+        long-hint  : |
+            Input organism (kb_id)
 
 
 description : |

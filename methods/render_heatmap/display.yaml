@@ -24,15 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
-        ui-name : |
-            Filtered Datatable
-        short-hint : |
-            Filtered Datatable
-        long-hint  : |
-            Filtered Datatable
-
-
     param0 :
         ui-name : |
             Workspace
@@ -40,6 +31,15 @@ parameters :
             Name of the workspace; default is current
         long-hint  : |
             Name of the workspace; default is current
+
+
+    param1 :
+        ui-name : |
+            Filtered Datatable
+        short-hint : |
+            Filtered Datatable
+        long-hint  : |
+            Filtered Datatable
 
 
 description : |

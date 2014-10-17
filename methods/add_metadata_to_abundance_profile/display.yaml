@@ -24,31 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param4 :
+    param0 :
         ui-name : |
-            Value
+            Workspace
         short-hint : |
-            value of metadata field to add
+            name of workspace, default is current
         long-hint  : |
-            value of metadata field to add
-
-
-    param3 :
-        ui-name : |
-            Label
-        short-hint : |
-            name of metadata field to add
-        long-hint  : |
-            name of metadata field to add
-
-
-    param2 :
-        ui-name : |
-            Profile Name
-        short-hint : |
-            object name of Communities.Profile
-        long-hint  : |
-            object name of Communities.Profile
+            name of workspace, default is current
 
 
     param1 :
@@ -60,13 +42,31 @@ parameters :
             object name of Communities.Collection
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Workspace
+            Profile Name
         short-hint : |
-            name of workspace, default is current
+            object name of Communities.Profile
         long-hint  : |
-            name of workspace, default is current
+            object name of Communities.Profile
+
+
+    param3 :
+        ui-name : |
+            Label
+        short-hint : |
+            name of metadata field to add
+        long-hint  : |
+            name of metadata field to add
+
+
+    param4 :
+        ui-name : |
+            Value
+        short-hint : |
+            value of metadata field to add
+        long-hint  : |
+            value of metadata field to add
 
 
 description : |

@@ -24,22 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param3 :
+    param0 :
         ui-name : |
-            Output Name
+            Workspace
         short-hint : |
-            object name of resulting BIOM profile
+            name of workspace, default is current
         long-hint  : |
-            object name of resulting BIOM profile
-
-
-    param2 :
-        ui-name : |
-            Input Metagenome
-        short-hint : |
-            Metagenome object
-        long-hint  : |
-            Metagenome object
+            name of workspace, default is current
 
 
     param1 :
@@ -51,13 +42,22 @@ parameters :
             object name of input sequence file
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Workspace
+            Input Metagenome
         short-hint : |
-            name of workspace, default is current
+            Metagenome object
         long-hint  : |
-            name of workspace, default is current
+            Metagenome object
+
+
+    param3 :
+        ui-name : |
+            Output Name
+        short-hint : |
+            object name of resulting BIOM profile
+        long-hint  : |
+            object name of resulting BIOM profile
 
 
 description : |

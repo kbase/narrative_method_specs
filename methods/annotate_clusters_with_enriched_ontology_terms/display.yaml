@@ -24,22 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param3 :
+    param0 :
         ui-name : |
-            domain
+            net_obj_id
         short-hint : |
-            Domain list (comma separated, biological_process, ...)
+            Cluster object id
         long-hint  : |
-            Domain list (comma separated, biological_process, ...)
-
-
-    param2 :
-        ui-name : |
-            ec
-        short-hint : |
-            Evidence code list (comma separated, IEA, ...)
-        long-hint  : |
-            Evidence code list (comma separated, IEA, ...)
+            Cluster object id
 
 
     param1 :
@@ -51,13 +42,22 @@ parameters :
             p-value cutoff
 
 
-    param0 :
+    param2 :
         ui-name : |
-            net_obj_id
+            ec
         short-hint : |
-            Cluster object id
+            Evidence code list (comma separated, IEA, ...)
         long-hint  : |
-            Cluster object id
+            Evidence code list (comma separated, IEA, ...)
+
+
+    param3 :
+        ui-name : |
+            domain
+        short-hint : |
+            Domain list (comma separated, biological_process, ...)
+        long-hint  : |
+            Domain list (comma separated, biological_process, ...)
 
 
 description : |

@@ -24,22 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param3 :
+    param0 :
         ui-name : |
-            Label
+            Workspace
         short-hint : |
-            label rows
+            name of workspace, default is current
         long-hint  : |
-            label rows
-
-
-    param2 :
-        ui-name : |
-            Label Name
-        short-hint : |
-            label by metagenome name and not ID
-        long-hint  : |
-            label by metagenome name and not ID
+            name of workspace, default is current
 
 
     param1 :
@@ -51,13 +42,22 @@ parameters :
             object name of Communities.Profile
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Workspace
+            Label Name
         short-hint : |
-            name of workspace, default is current
+            label by metagenome name and not ID
         long-hint  : |
-            name of workspace, default is current
+            label by metagenome name and not ID
+
+
+    param3 :
+        ui-name : |
+            Label
+        short-hint : |
+            label rows
+        long-hint  : |
+            label rows
 
 
 description : |

@@ -24,31 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param4 :
+    param0 :
         ui-name : |
-            3D
+            Workspace
         short-hint : |
-            create 3-D PCoA
+            name of workspace, default is current
         long-hint  : |
-            create 3-D PCoA
-
-
-    param3 :
-        ui-name : |
-            Distance
-        short-hint : |
-            distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
-        long-hint  : |
-            distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
-
-
-    param2 :
-        ui-name : |
-            Metadata
-        short-hint : |
-            metadata field to group metagenomes by
-        long-hint  : |
-            metadata field to group metagenomes by
+            name of workspace, default is current
 
 
     param1 :
@@ -60,13 +42,31 @@ parameters :
             object name of Communities.Profile
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Workspace
+            Metadata
         short-hint : |
-            name of workspace, default is current
+            metadata field to group metagenomes by
         long-hint  : |
-            name of workspace, default is current
+            metadata field to group metagenomes by
+
+
+    param3 :
+        ui-name : |
+            Distance
+        short-hint : |
+            distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
+        long-hint  : |
+            distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
+
+
+    param4 :
+        ui-name : |
+            3D
+        short-hint : |
+            create 3-D PCoA
+        long-hint  : |
+            create 3-D PCoA
 
 
 description : |

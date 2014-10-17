@@ -10,17 +10,17 @@
     "output" : "ValueListWidget"
   },
   "parameters" : [ {
-    "id" : "param4",
+    "id" : "param0",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
+      "valid_ws_types" : [ "KBaseExpression.ExpressionSeries" ]
     }
   }, {
-    "id" : "param3",
+    "id" : "param1",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -40,7 +40,7 @@
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param1",
+    "id" : "param3",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -50,14 +50,14 @@
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param0",
+    "id" : "param4",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseExpression.ExpressionSeries" ]
+      "valid_ws_types" : [ ]
     }
   } ],
   "behavior" : {

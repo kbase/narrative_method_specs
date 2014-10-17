@@ -10,21 +10,11 @@
     "output" : "DrilldownHeatmapWidget"
   },
   "parameters" : [ {
-    "id" : "param3",
+    "id" : "param0",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "yes" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
-  }, {
-    "id" : "param2",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "no" ],
+    "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ]
@@ -40,11 +30,21 @@
       "valid_ws_types" : [ "Communities.Profile" ]
     }
   }, {
-    "id" : "param0",
+    "id" : "param2",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "" ],
+    "default_values" : [ "no" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "param3",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "yes" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ]

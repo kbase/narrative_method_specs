@@ -24,13 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param2 :
+    param0 :
         ui-name : |
-            Edited Model
+            Metabolic Model
         short-hint : |
-            ID of model with deleted reactions
+            the metabolic model to edit
         long-hint  : |
-            ID of model with deleted reactions
+            the metabolic model to edit
 
 
     param1 :
@@ -42,13 +42,13 @@ parameters :
             Reactions to be deleted. Add multiple reactions seperated by ;
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Metabolic Model
+            Edited Model
         short-hint : |
-            the metabolic model to edit
+            ID of model with deleted reactions
         long-hint  : |
-            the metabolic model to edit
+            ID of model with deleted reactions
 
 
 description : |

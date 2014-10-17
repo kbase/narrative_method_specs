@@ -24,15 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
-        ui-name : |
-            Second FBA result
-        short-hint : |
-            Second FBA result
-        long-hint  : |
-            Second FBA result
-
-
     param0 :
         ui-name : |
             First FBA result
@@ -40,6 +31,15 @@ parameters :
             First FBA result
         long-hint  : |
             First FBA result
+
+
+    param1 :
+        ui-name : |
+            Second FBA result
+        short-hint : |
+            Second FBA result
+        long-hint  : |
+            Second FBA result
 
 
 description : |

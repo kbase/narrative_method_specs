@@ -24,31 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param4 :
+    param0 :
         ui-name : |
-            num_module
+            series_obj_id
         short-hint : |
-            The number of cluster
+            Object id of the expression Series data
         long-hint  : |
-            The number of cluster
-
-
-    param3 :
-        ui-name : |
-            cut_off
-        short-hint : |
-            Lower cutoff to keep edges
-        long-hint  : |
-            Lower cutoff to keep edges
-
-
-    param2 :
-        ui-name : |
-            clust_method
-        short-hint : |
-            Clustering algorithm ('hclust' for hierachical clustering or 'WGNCA')
-        long-hint  : |
-            Clustering algorithm ('hclust' for hierachical clustering or 'WGNCA')
+            Object id of the expression Series data
 
 
     param1 :
@@ -60,13 +42,31 @@ parameters :
             Network construction algorithm ('simple' for Pearson correlation coefficient or 'WGCNA')
 
 
-    param0 :
+    param2 :
         ui-name : |
-            series_obj_id
+            clust_method
         short-hint : |
-            Object id of the expression Series data
+            Clustering algorithm ('hclust' for hierachical clustering or 'WGNCA')
         long-hint  : |
-            Object id of the expression Series data
+            Clustering algorithm ('hclust' for hierachical clustering or 'WGNCA')
+
+
+    param3 :
+        ui-name : |
+            cut_off
+        short-hint : |
+            Lower cutoff to keep edges
+        long-hint  : |
+            Lower cutoff to keep edges
+
+
+    param4 :
+        ui-name : |
+            num_module
+        short-hint : |
+            The number of cluster
+        long-hint  : |
+            The number of cluster
 
 
 description : |

@@ -10,7 +10,7 @@
     "output" : "MetagenomeListUploadWidget"
   },
   "parameters" : [ {
-    "id" : "param1",
+    "id" : "param0",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -20,7 +20,7 @@
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param0",
+    "id" : "param1",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,

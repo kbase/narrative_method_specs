@@ -24,22 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param3 :
+    param0 :
         ui-name : |
-            Min Reactions
+            OTU Annotation
         short-hint : |
-            minimum reactions for OTU model (default is 100)
+            name of OTU annotation object
         long-hint  : |
-            minimum reactions for OTU model (default is 100)
-
-
-    param2 :
-        ui-name : |
-            Min Abundance
-        short-hint : |
-            minimum abundance for OTU model  (default is 3)
-        long-hint  : |
-            minimum abundance for OTU model  (default is 3)
+            name of OTU annotation object
 
 
     param1 :
@@ -51,13 +42,22 @@ parameters :
             maximum number of OTU models (default is 2)
 
 
-    param0 :
+    param2 :
         ui-name : |
-            OTU Annotation
+            Min Abundance
         short-hint : |
-            name of OTU annotation object
+            minimum abundance for OTU model  (default is 3)
         long-hint  : |
-            name of OTU annotation object
+            minimum abundance for OTU model  (default is 3)
+
+
+    param3 :
+        ui-name : |
+            Min Reactions
+        short-hint : |
+            minimum reactions for OTU model (default is 100)
+        long-hint  : |
+            minimum reactions for OTU model (default is 100)
 
 
 description : |

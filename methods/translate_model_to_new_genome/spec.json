@@ -10,7 +10,7 @@
     "output" : "kbaseModelTabs"
   },
   "parameters" : [ {
-    "id" : "param3",
+    "id" : "param0",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -18,16 +18,6 @@
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
-    }
-  }, {
-    "id" : "param2",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
     }
   }, {
     "id" : "param1",
@@ -40,7 +30,17 @@
       "valid_ws_types" : [ "GenomeComparison.ProteomeComparison" ]
     }
   }, {
-    "id" : "param0",
+    "id" : "param2",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "param3",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,

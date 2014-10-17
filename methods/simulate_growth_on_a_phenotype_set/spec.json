@@ -10,14 +10,14 @@
     "output" : "kbaseSimulationSet"
   },
   "parameters" : [ {
-    "id" : "param2",
+    "id" : "param0",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBasePhenotypes.PhenotypeSimulationSet" ]
+      "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
     }
   }, {
     "id" : "param1",
@@ -30,14 +30,14 @@
       "valid_ws_types" : [ "KBasePhenotypes.PhenotypeSet" ]
     }
   }, {
-    "id" : "param0",
+    "id" : "param2",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
+      "valid_ws_types" : [ "KBasePhenotypes.PhenotypeSimulationSet" ]
     }
   } ],
   "behavior" : {

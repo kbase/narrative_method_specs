@@ -24,15 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
-        ui-name : |
-            out_id
-        short-hint : |
-            Output Networks object identifier
-        long-hint  : |
-            Output Networks object identifier
-
-
     param0 :
         ui-name : |
             obj_id
@@ -40,6 +31,15 @@ parameters :
             Gene List workspace object identifier.
         long-hint  : |
             Gene List workspace object identifier.
+
+
+    param1 :
+        ui-name : |
+            out_id
+        short-hint : |
+            Output Networks object identifier
+        long-hint  : |
+            Output Networks object identifier
 
 
 description : |

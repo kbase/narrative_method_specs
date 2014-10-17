@@ -24,22 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param3 :
+    param0 :
         ui-name : |
-            Translated Model ID
+            FBA Model ID
         short-hint : |
-            ID to which translated model should be saved
+            an FBA model id from first genome [19.1]
         long-hint  : |
-            ID to which translated model should be saved
-
-
-    param2 :
-        ui-name : |
-            Remove No-gene Reactions
-        short-hint : |
-            specify "yes" if reactions with no genes should be removed
-        long-hint  : |
-            specify "yes" if reactions with no genes should be removed
+            an FBA model id from first genome [19.1]
 
 
     param1 :
@@ -51,13 +42,22 @@ parameters :
             Proteome comparison ID [19.3]
 
 
-    param0 :
+    param2 :
         ui-name : |
-            FBA Model ID
+            Remove No-gene Reactions
         short-hint : |
-            an FBA model id from first genome [19.1]
+            specify "yes" if reactions with no genes should be removed
         long-hint  : |
-            an FBA model id from first genome [19.1]
+            specify "yes" if reactions with no genes should be removed
+
+
+    param3 :
+        ui-name : |
+            Translated Model ID
+        short-hint : |
+            ID to which translated model should be saved
+        long-hint  : |
+            ID to which translated model should be saved
 
 
 description : |

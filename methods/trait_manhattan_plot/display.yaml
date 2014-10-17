@@ -24,15 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
-        ui-name : |
-            gwas_result
-        short-hint : |
-            GWAS analysis (MLM) result
-        long-hint  : |
-            GWAS analysis (MLM) result
-
-
     param0 :
         ui-name : |
             workspaceID
@@ -40,6 +31,15 @@ parameters :
             workspaceID (use current if empty)
         long-hint  : |
             workspaceID (use current if empty)
+
+
+    param1 :
+        ui-name : |
+            gwas_result
+        short-hint : |
+            GWAS analysis (MLM) result
+        long-hint  : |
+            GWAS analysis (MLM) result
 
 
 description : |

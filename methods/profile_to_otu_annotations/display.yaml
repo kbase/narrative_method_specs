@@ -24,15 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
-        ui-name : |
-            Output OTU annotation object
-        short-hint : |
-            name of OTU annotation object to be generated
-        long-hint  : |
-            name of OTU annotation object to be generated
-
-
     param0 :
         ui-name : |
             Metagenome Profile Table
@@ -40,6 +31,15 @@ parameters :
             ID of the metagenome profile
         long-hint  : |
             ID of the metagenome profile
+
+
+    param1 :
+        ui-name : |
+            Output OTU annotation object
+        short-hint : |
+            name of OTU annotation object to be generated
+        long-hint  : |
+            name of OTU annotation object to be generated
 
 
 description : |

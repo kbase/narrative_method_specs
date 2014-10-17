@@ -24,15 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
-        ui-name : |
-            Genome Object ID
-        short-hint : |
-            Output Genome ID. If empty, an ID will be chosen automatically. [26.2]
-        long-hint  : |
-            Output Genome ID. If empty, an ID will be chosen automatically. [26.2]
-
-
     param0 :
         ui-name : |
             NCBI Genome Name
@@ -40,6 +31,15 @@ parameters :
             Name of public genome accessible on NCBI FTP. [26.1]
         long-hint  : |
             Name of public genome accessible on NCBI FTP. [26.1]
+
+
+    param1 :
+        ui-name : |
+            Genome Object ID
+        short-hint : |
+            Output Genome ID. If empty, an ID will be chosen automatically. [26.2]
+        long-hint  : |
+            Output Genome ID. If empty, an ID will be chosen automatically. [26.2]
 
 
 description : |

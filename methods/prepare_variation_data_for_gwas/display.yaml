@@ -24,22 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param3 :
+    param0 :
         ui-name : |
-            comment
+            maf
         short-hint : |
-            Comment
+            Minor allele frequency
         long-hint  : |
-            Comment
-
-
-    param2 :
-        ui-name : |
-            out
-        short-hint : |
-            Population variation, filtered
-        long-hint  : |
-            Population variation, filtered
+            Minor allele frequency
 
 
     param1 :
@@ -51,13 +42,22 @@ parameters :
             Population variation object
 
 
-    param0 :
+    param2 :
         ui-name : |
-            maf
+            out
         short-hint : |
-            Minor allele frequency
+            Population variation, filtered
         long-hint  : |
-            Minor allele frequency
+            Population variation, filtered
+
+
+    param3 :
+        ui-name : |
+            comment
+        short-hint : |
+            Comment
+        long-hint  : |
+            Comment
 
 
 description : |

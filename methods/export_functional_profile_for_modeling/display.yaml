@@ -24,58 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param7 :
+    param0 :
         ui-name : |
-            Alignment Length
+            Workspace
         short-hint : |
-            value for minimum alignment length cutoff, default is 15
+            name of workspace, default is current
         long-hint  : |
-            value for minimum alignment length cutoff, default is 15
-
-
-    param6 :
-        ui-name : |
-            % Identity
-        short-hint : |
-            percent value for minimum % identity cutoff, default is 60
-        long-hint  : |
-            percent value for minimum % identity cutoff, default is 60
-
-
-    param5 :
-        ui-name : |
-            E-Value
-        short-hint : |
-            negative exponent value for maximum e-value cutoff, default is 5
-        long-hint  : |
-            negative exponent value for maximum e-value cutoff, default is 5
-
-
-    param4 :
-        ui-name : |
-            Annotation Level
-        short-hint : |
-            taxon level to group annotations by
-        long-hint  : |
-            taxon level to group annotations by
-
-
-    param3 :
-        ui-name : |
-            Top Taxa
-        short-hint : |
-            produce annotations for top N abundant taxa
-        long-hint  : |
-            produce annotations for top N abundant taxa
-
-
-    param2 :
-        ui-name : |
-            Output Name
-        short-hint : |
-            object name of annotation set table
-        long-hint  : |
-            object name of annotation set table
+            name of workspace, default is current
 
 
     param1 :
@@ -87,13 +42,58 @@ parameters :
             Communities.Metagenome object name
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Workspace
+            Output Name
         short-hint : |
-            name of workspace, default is current
+            object name of annotation set table
         long-hint  : |
-            name of workspace, default is current
+            object name of annotation set table
+
+
+    param3 :
+        ui-name : |
+            Top Taxa
+        short-hint : |
+            produce annotations for top N abundant taxa
+        long-hint  : |
+            produce annotations for top N abundant taxa
+
+
+    param4 :
+        ui-name : |
+            Annotation Level
+        short-hint : |
+            taxon level to group annotations by
+        long-hint  : |
+            taxon level to group annotations by
+
+
+    param5 :
+        ui-name : |
+            E-Value
+        short-hint : |
+            negative exponent value for maximum e-value cutoff, default is 5
+        long-hint  : |
+            negative exponent value for maximum e-value cutoff, default is 5
+
+
+    param6 :
+        ui-name : |
+            % Identity
+        short-hint : |
+            percent value for minimum % identity cutoff, default is 60
+        long-hint  : |
+            percent value for minimum % identity cutoff, default is 60
+
+
+    param7 :
+        ui-name : |
+            Alignment Length
+        short-hint : |
+            value for minimum alignment length cutoff, default is 15
+        long-hint  : |
+            value for minimum alignment length cutoff, default is 15
 
 
     param8 :

@@ -10,7 +10,7 @@
     "output" : "kbaseHistogram"
   },
   "parameters" : [ {
-    "id" : "param2",
+    "id" : "param0",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -30,7 +30,7 @@
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param0",
+    "id" : "param2",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,

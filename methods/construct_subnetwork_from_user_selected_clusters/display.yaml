@@ -24,15 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
-        ui-name : |
-            cluster_id_list
-        short-hint : |
-            Comma-separated list of user-selected cluster ids
-        long-hint  : |
-            Comma-separated list of user-selected cluster ids
-
-
     param0 :
         ui-name : |
             net_obj_id
@@ -40,6 +31,15 @@ parameters :
             Cluster object id
         long-hint  : |
             Cluster object id
+
+
+    param1 :
+        ui-name : |
+            cluster_id_list
+        short-hint : |
+            Comma-separated list of user-selected cluster ids
+        long-hint  : |
+            Comma-separated list of user-selected cluster ids
 
 
 description : |

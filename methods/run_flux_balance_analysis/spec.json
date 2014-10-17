@@ -10,51 +10,41 @@
     "output" : "kbaseFbaTabsNarrative"
   },
   "parameters" : [ {
-    "id" : "param11",
+    "id" : "param0",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseFBA.PromConstraint" ]
+      "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
     }
   }, {
-    "id" : "param10",
+    "id" : "param1",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "no" ],
+    "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
+      "valid_ws_types" : [ "KBaseBiochem.Media" ]
     }
   }, {
-    "id" : "param7",
+    "id" : "param2",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "0" ],
+    "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
+      "valid_ws_types" : [ "KBaseFBA.FBA" ]
     }
   }, {
-    "id" : "param6",
+    "id" : "param3",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "-100" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
-  }, {
-    "id" : "param5",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "100" ],
+    "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ]
@@ -70,51 +60,31 @@
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param3",
+    "id" : "param5",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "" ],
+    "default_values" : [ "100" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param2",
+    "id" : "param6",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "" ],
+    "default_values" : [ "-100" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseFBA.FBA" ]
+      "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param1",
+    "id" : "param7",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "KBaseBiochem.Media" ]
-    }
-  }, {
-    "id" : "param0",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
-    }
-  }, {
-    "id" : "param9",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "yes" ],
+    "default_values" : [ "0" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ]
@@ -128,6 +98,36 @@
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "param9",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "yes" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "param10",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "no" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "param11",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFBA.PromConstraint" ]
     }
   } ],
   "behavior" : {

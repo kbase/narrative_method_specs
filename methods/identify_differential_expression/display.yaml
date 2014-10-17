@@ -24,40 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param5 :
+    param0 :
         ui-name : |
-            Output file prefix
+            Workspace
         short-hint : |
-            Output File prefix
+            Name of the workspace, default is current
         long-hint  : |
-            Output File prefix
-
-
-    param4 :
-        ui-name : |
-            Reference
-        short-hint : |
-            Reference Genome (kbase id)
-        long-hint  : |
-            Reference Genome (kbase id)
-
-
-    param3 :
-        ui-name : |
-            Gene Expressionfiles
-        short-hint : |
-            Gene Expression files
-        long-hint  : |
-            Gene Expression files
-
-
-    param2 :
-        ui-name : |
-            Alignment files
-        short-hint : |
-            Alignment files
-        long-hint  : |
-            Alignment files
+            Name of the workspace, default is current
 
 
     param1 :
@@ -69,13 +42,40 @@ parameters :
             Experiment title
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Workspace
+            Alignment files
         short-hint : |
-            Name of the workspace, default is current
+            Alignment files
         long-hint  : |
-            Name of the workspace, default is current
+            Alignment files
+
+
+    param3 :
+        ui-name : |
+            Gene Expressionfiles
+        short-hint : |
+            Gene Expression files
+        long-hint  : |
+            Gene Expression files
+
+
+    param4 :
+        ui-name : |
+            Reference
+        short-hint : |
+            Reference Genome (kbase id)
+        long-hint  : |
+            Reference Genome (kbase id)
+
+
+    param5 :
+        ui-name : |
+            Output file prefix
+        short-hint : |
+            Output File prefix
+        long-hint  : |
+            Output File prefix
 
 
 description : |

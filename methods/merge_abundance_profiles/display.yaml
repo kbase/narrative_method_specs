@@ -24,40 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param5 :
+    param0 :
         ui-name : |
-            Output Name
+            Workspace
         short-hint : |
-            object name of merged abundance profile table
+            name of workspace, default is current
         long-hint  : |
-            object name of merged abundance profile table
-
-
-    param4 :
-        ui-name : |
-            Fourth Profile
-        short-hint : |
-            object name of Communities.Profile, optional
-        long-hint  : |
-            object name of Communities.Profile, optional
-
-
-    param3 :
-        ui-name : |
-            Third Profile
-        short-hint : |
-            object name of Communities.Profile, optional
-        long-hint  : |
-            object name of Communities.Profile, optional
-
-
-    param2 :
-        ui-name : |
-            Second Profile
-        short-hint : |
-            object name of Communities.Profile, required
-        long-hint  : |
-            object name of Communities.Profile, required
+            name of workspace, default is current
 
 
     param1 :
@@ -69,13 +42,40 @@ parameters :
             object name of Communities.Profile required
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Workspace
+            Second Profile
         short-hint : |
-            name of workspace, default is current
+            object name of Communities.Profile, required
         long-hint  : |
-            name of workspace, default is current
+            object name of Communities.Profile, required
+
+
+    param3 :
+        ui-name : |
+            Third Profile
+        short-hint : |
+            object name of Communities.Profile, optional
+        long-hint  : |
+            object name of Communities.Profile, optional
+
+
+    param4 :
+        ui-name : |
+            Fourth Profile
+        short-hint : |
+            object name of Communities.Profile, optional
+        long-hint  : |
+            object name of Communities.Profile, optional
+
+
+    param5 :
+        ui-name : |
+            Output Name
+        short-hint : |
+            object name of merged abundance profile table
+        long-hint  : |
+            object name of merged abundance profile table
 
 
 description : |

@@ -24,15 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
-        ui-name : |
-            New
-        short-hint : |
-            new filename
-        long-hint  : |
-            new filename
-
-
     param0 :
         ui-name : |
             Old
@@ -40,6 +31,15 @@ parameters :
             old filename
         long-hint  : |
             old filename
+
+
+    param1 :
+        ui-name : |
+            New
+        short-hint : |
+            new filename
+        long-hint  : |
+            new filename
 
 
 description : |

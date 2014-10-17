@@ -24,13 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param2 :
+    param0 :
         ui-name : |
-            Output Name
+            Workspace
         short-hint : |
-            object name of model
+            name of workspace, default is current
         long-hint  : |
-            object name of model
+            name of workspace, default is current
 
 
     param1 :
@@ -42,13 +42,13 @@ parameters :
             object name of Communities.ProfileTable
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Workspace
+            Output Name
         short-hint : |
-            name of workspace, default is current
+            object name of model
         long-hint  : |
-            name of workspace, default is current
+            object name of model
 
 
 description : |

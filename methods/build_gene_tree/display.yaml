@@ -24,15 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
-        ui-name : |
-            Output gene tree ID
-        short-hint : |
-            Output gene tree ID. If empty, an ID will be chosen randomly. [28.2]
-        long-hint  : |
-            Output gene tree ID. If empty, an ID will be chosen randomly. [28.2]
-
-
     param0 :
         ui-name : |
             MSA ID
@@ -40,6 +31,15 @@ parameters :
             a Multiple sequence alignment [28.1]
         long-hint  : |
             a Multiple sequence alignment [28.1]
+
+
+    param1 :
+        ui-name : |
+            Output gene tree ID
+        short-hint : |
+            Output gene tree ID. If empty, an ID will be chosen randomly. [28.2]
+        long-hint  : |
+            Output gene tree ID. If empty, an ID will be chosen randomly. [28.2]
 
 
 description : |

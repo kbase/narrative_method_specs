@@ -24,15 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
-        ui-name : |
-            out_id
-        short-hint : |
-            Output Networks object identifier
-        long-hint  : |
-            Output Networks object identifier
-
-
     param0 :
         ui-name : |
             feature_set_id
@@ -40,6 +31,15 @@ parameters :
             FeatureSet workspace object id
         long-hint  : |
             FeatureSet workspace object id
+
+
+    param1 :
+        ui-name : |
+            out_id
+        short-hint : |
+            Output Networks object identifier
+        long-hint  : |
+            Output Networks object identifier
 
 
 description : |

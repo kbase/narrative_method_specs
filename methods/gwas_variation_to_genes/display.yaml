@@ -24,49 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param6 :
+    param0 :
         ui-name : |
-            fs_out
+            workspaceID
         short-hint : |
-            Output FeatureSet workspace object name
+            Workspace (use current if empty)
         long-hint  : |
-            Output FeatureSet workspace object name
-
-
-    param5 :
-        ui-name : |
-            gl_out
-        short-hint : |
-            Output GwasGeneLint workspace object name
-        long-hint  : |
-            Output GwasGeneLint workspace object name
-
-
-    param4 :
-        ui-name : |
-            distance
-        short-hint : |
-            Distance in bp around SNP to look for genes
-        long-hint  : |
-            Distance in bp around SNP to look for genes
-
-
-    param3 :
-        ui-name : |
-            pmin
-        short-hint : |
-            Minimum pvalue (-log10)
-        long-hint  : |
-            Minimum pvalue (-log10)
-
-
-    param2 :
-        ui-name : |
-            num2snps
-        short-hint : |
-            Number to snps
-        long-hint  : |
-            Number to snps
+            Workspace (use current if empty)
 
 
     param1 :
@@ -78,13 +42,49 @@ parameters :
             GWAS analysis MLM result object
 
 
-    param0 :
+    param2 :
         ui-name : |
-            workspaceID
+            num2snps
         short-hint : |
-            Workspace (use current if empty)
+            Number to snps
         long-hint  : |
-            Workspace (use current if empty)
+            Number to snps
+
+
+    param3 :
+        ui-name : |
+            pmin
+        short-hint : |
+            Minimum pvalue (-log10)
+        long-hint  : |
+            Minimum pvalue (-log10)
+
+
+    param4 :
+        ui-name : |
+            distance
+        short-hint : |
+            Distance in bp around SNP to look for genes
+        long-hint  : |
+            Distance in bp around SNP to look for genes
+
+
+    param5 :
+        ui-name : |
+            gl_out
+        short-hint : |
+            Output GwasGeneLint workspace object name
+        long-hint  : |
+            Output GwasGeneLint workspace object name
+
+
+    param6 :
+        ui-name : |
+            fs_out
+        short-hint : |
+            Output FeatureSet workspace object name
+        long-hint  : |
+            Output FeatureSet workspace object name
 
 
 description : |

@@ -24,15 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
-        ui-name : |
-            Output Metabolic Model Name
-        short-hint : |
-            select a name for the generated metabolic model (optional) [6.2]
-        long-hint  : |
-            select a name for the generated metabolic model (optional) [6.2]
-
-
     param0 :
         ui-name : |
             Genome Name
@@ -40,6 +31,15 @@ parameters :
             Source genome name [6.1]
         long-hint  : |
             Source genome name [6.1]
+
+
+    param1 :
+        ui-name : |
+            Output Metabolic Model Name
+        short-hint : |
+            select a name for the generated metabolic model (optional) [6.2]
+        long-hint  : |
+            select a name for the generated metabolic model (optional) [6.2]
 
 
 description : |

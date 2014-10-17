@@ -24,22 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param3 :
+    param0 :
         ui-name : |
-            Output Genome ID
+            Contig Set Object
         short-hint : |
-            Annotated output genome ID. If empty, an ID will be chosen randomly. [3.3]
+            An object with contig data [3.1]
         long-hint  : |
-            Annotated output genome ID. If empty, an ID will be chosen randomly. [3.3]
-
-
-    param2 :
-        ui-name : |
-            Genetic Code
-        short-hint : |
-            enter the genetic code for your new genome (default is 11) [3.2]
-        long-hint  : |
-            enter the genetic code for your new genome (default is 11) [3.2]
+            An object with contig data [3.1]
 
 
     param1 :
@@ -51,13 +42,22 @@ parameters :
             enter the scientific name to assign to your new genome [3.2]
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Contig Set Object
+            Genetic Code
         short-hint : |
-            An object with contig data [3.1]
+            enter the genetic code for your new genome (default is 11) [3.2]
         long-hint  : |
-            An object with contig data [3.1]
+            enter the genetic code for your new genome (default is 11) [3.2]
+
+
+    param3 :
+        ui-name : |
+            Output Genome ID
+        short-hint : |
+            Annotated output genome ID. If empty, an ID will be chosen randomly. [3.3]
+        long-hint  : |
+            Annotated output genome ID. If empty, an ID will be chosen randomly. [3.3]
 
 
 description : |

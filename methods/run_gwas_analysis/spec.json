@@ -10,24 +10,14 @@
     "output" : "ValueListWidget"
   },
   "parameters" : [ {
-    "id" : "param3",
+    "id" : "param0",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseGwasData.GwasTopVariations" ]
-    }
-  }, {
-    "id" : "param2",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "KBaseGwasData.GwasPopulationTrait" ]
+      "valid_ws_types" : [ "KBaseGwasData.GwasPopulationVariation" ]
     }
   }, {
     "id" : "param1",
@@ -40,14 +30,24 @@
       "valid_ws_types" : [ "KBaseGwasData.GwasPopulationKinship" ]
     }
   }, {
-    "id" : "param0",
+    "id" : "param2",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseGwasData.GwasPopulationVariation" ]
+      "valid_ws_types" : [ "KBaseGwasData.GwasPopulationTrait" ]
+    }
+  }, {
+    "id" : "param3",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGwasData.GwasTopVariations" ]
     }
   } ],
   "behavior" : {

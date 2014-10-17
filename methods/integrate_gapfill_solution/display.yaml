@@ -24,13 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param2 :
+    param0 :
         ui-name : |
-            Output Model Result Name
+            Metabolic Model
         short-hint : |
-            select a name for the gapfilled object (optional) [13.3]
+            the metabolic model to integrate gapfill solutions into [13.1]
         long-hint  : |
-            select a name for the gapfilled object (optional) [13.3]
+            the metabolic model to integrate gapfill solutions into [13.1]
 
 
     param1 :
@@ -42,13 +42,13 @@ parameters :
             select the ID of the gapfill solution (found in the Gapfilling tab in the model viewer, usually in the form 'modelId.gf.2.gfsol.1') [13.2]
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Metabolic Model
+            Output Model Result Name
         short-hint : |
-            the metabolic model to integrate gapfill solutions into [13.1]
+            select a name for the gapfilled object (optional) [13.3]
         long-hint  : |
-            the metabolic model to integrate gapfill solutions into [13.1]
+            select a name for the gapfilled object (optional) [13.3]
 
 
 description : |

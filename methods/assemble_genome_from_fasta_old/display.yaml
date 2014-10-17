@@ -24,15 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
-        ui-name : |
-            Output Genome ID
-        short-hint : |
-            Annotated output genome ID. If empty, an ID will be chosen randomly. [2.2]
-        long-hint  : |
-            Annotated output genome ID. If empty, an ID will be chosen randomly. [2.2]
-
-
     param0 :
         ui-name : |
             Contig File ID
@@ -40,6 +31,15 @@ parameters :
             A FASTA file with contig data [2.1]
         long-hint  : |
             A FASTA file with contig data [2.1]
+
+
+    param1 :
+        ui-name : |
+            Output Genome ID
+        short-hint : |
+            Annotated output genome ID. If empty, an ID will be chosen randomly. [2.2]
+        long-hint  : |
+            Annotated output genome ID. If empty, an ID will be chosen randomly. [2.2]
 
 
 description : |

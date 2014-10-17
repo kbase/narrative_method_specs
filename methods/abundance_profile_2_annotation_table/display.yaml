@@ -24,15 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
-        ui-name : |
-            Abundance Profile
-        short-hint : |
-            ID for input abundance profile
-        long-hint  : |
-            ID for input abundance profile
-
-
     param0 :
         ui-name : |
             Workspace
@@ -40,6 +31,15 @@ parameters :
             name of workspace, default is current
         long-hint  : |
             name of workspace, default is current
+
+
+    param1 :
+        ui-name : |
+            Abundance Profile
+        short-hint : |
+            ID for input abundance profile
+        long-hint  : |
+            ID for input abundance profile
 
 
 description : |

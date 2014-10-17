@@ -24,58 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param7 :
+    param0 :
         ui-name : |
-            Publication Date
+            Workspace
         short-hint : |
-            External Source Date
+            Name of the workspace; default is current
         long-hint  : |
-            External Source Date
-
-
-    param6 :
-        ui-name : |
-            Source Id
-        short-hint : |
-            source_Id
-        long-hint  : |
-            source_Id
-
-
-    param5 :
-        ui-name : |
-            Experiment Summary
-        short-hint : |
-            Summary of the Experiment
-        long-hint  : |
-            Summary of the Experiment
-
-
-    param4 :
-        ui-name : |
-            Experiment Design
-        short-hint : |
-            Design of the Experiment
-        long-hint  : |
-            Design of the Experiment
-
-
-    param3 :
-        ui-name : |
-            Experiment Title
-        short-hint : |
-            Title
-        long-hint  : |
-            Title
-
-
-    param2 :
-        ui-name : |
-            Reference Genome (kbase id)
-        short-hint : |
-            Reference genome
-        long-hint  : |
-            Reference genome
+            Name of the workspace; default is current
 
 
     param1 :
@@ -87,13 +42,58 @@ parameters :
             Expression Sample ids
 
 
-    param0 :
+    param2 :
         ui-name : |
-            Workspace
+            Reference Genome (kbase id)
         short-hint : |
-            Name of the workspace; default is current
+            Reference genome
         long-hint  : |
-            Name of the workspace; default is current
+            Reference genome
+
+
+    param3 :
+        ui-name : |
+            Experiment Title
+        short-hint : |
+            Title
+        long-hint  : |
+            Title
+
+
+    param4 :
+        ui-name : |
+            Experiment Design
+        short-hint : |
+            Design of the Experiment
+        long-hint  : |
+            Design of the Experiment
+
+
+    param5 :
+        ui-name : |
+            Experiment Summary
+        short-hint : |
+            Summary of the Experiment
+        long-hint  : |
+            Summary of the Experiment
+
+
+    param6 :
+        ui-name : |
+            Source Id
+        short-hint : |
+            source_Id
+        long-hint  : |
+            source_Id
+
+
+    param7 :
+        ui-name : |
+            Publication Date
+        short-hint : |
+            External Source Date
+        long-hint  : |
+            External Source Date
 
 
     param8 :

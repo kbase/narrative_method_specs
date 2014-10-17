@@ -10,31 +10,31 @@
     "output" : "ValueListWidget"
   },
   "parameters" : [ {
-    "id" : "param6",
+    "id" : "param0",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseSearch.FeatureSet" ]
+      "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param5",
+    "id" : "param1",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseGwasData.GwasGeneList" ]
+      "valid_ws_types" : [ "KBaseGwasData.GwasTopVariations" ]
     }
   }, {
-    "id" : "param4",
+    "id" : "param2",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "10000" ],
+    "default_values" : [ "100" ],
     "field_type" : "int-slider",
     "text_options" : {
       "valid_ws_types" : [ ]
@@ -50,34 +50,34 @@
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param2",
+    "id" : "param4",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "100" ],
+    "default_values" : [ "10000" ],
     "field_type" : "int-slider",
     "text_options" : {
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param1",
+    "id" : "param5",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseGwasData.GwasTopVariations" ]
+      "valid_ws_types" : [ "KBaseGwasData.GwasGeneList" ]
     }
   }, {
-    "id" : "param0",
+    "id" : "param6",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
+      "valid_ws_types" : [ "KBaseSearch.FeatureSet" ]
     }
   } ],
   "behavior" : {
