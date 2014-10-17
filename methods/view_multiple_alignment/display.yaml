@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : View Multiple Alignment
+subtitle : |
+    View multiple sequence alignment. [29]
+tooltip  : |
+    View multiple sequence alignment. [29]
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            MSA ID
+        short-hint : |
+            Multiple sequence alignment object ID.[29.1]
+        long-hint  : |
+            Multiple sequence alignment object ID.[29.1]
+
+
+description : |
+    View multiple sequence alignment. [29]
+
+
+technical-description : |
+    View multiple sequence alignment. [29]

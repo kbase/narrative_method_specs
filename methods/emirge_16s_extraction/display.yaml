@@ -1,0 +1,68 @@
+#
+# Define basic display information
+#
+name     : EMIRGE 16S Extraction
+subtitle : |
+    EMIRGE (Miller et al., Genome Biol. 2011) extracts 16S sequences from a WGS metagenome and reconstructs full-length small subunit gene sequences. It also provides estimates of relative taxon abundances.
+tooltip  : |
+    EMIRGE (Miller et al., Genome Biol. 2011) extracts 16S sequences from a WGS metagenome and reconstructs full-length small subunit gene sequences. It also provides estimates of relative taxon abundances.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
+        long-hint  : |
+            name of workspace, default is current
+
+
+    param1 :
+        ui-name : |
+            Input FASTQ Pair 1
+        short-hint : |
+            Communities.SequenceFile object name, fastq mate pair 1
+        long-hint  : |
+            Communities.SequenceFile object name, fastq mate pair 1
+
+
+    param2 :
+        ui-name : |
+            Input FASTQ Pair 2
+        short-hint : |
+            Communities.SequenceFile object name, fastq mate pair 2
+        long-hint  : |
+            Communities.SequenceFile object name, fastq mate pair 2
+
+
+    param3 :
+        ui-name : |
+            Output 16S Sequences
+        short-hint : |
+            object name of resulting 16S sequences
+        long-hint  : |
+            object name of resulting 16S sequences
+
+
+description : |
+    EMIRGE (Miller et al., Genome Biol. 2011) extracts 16S sequences from a WGS metagenome and reconstructs full-length small subunit gene sequences. It also provides estimates of relative taxon abundances.
+
+
+technical-description : |
+    EMIRGE (Miller et al., Genome Biol. 2011) extracts 16S sequences from a WGS metagenome and reconstructs full-length small subunit gene sequences. It also provides estimates of relative taxon abundances.

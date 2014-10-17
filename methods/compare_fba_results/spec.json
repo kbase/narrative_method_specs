@@ -1,0 +1,37 @@
+{
+  "name" : "Compare FBA Results",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "microbes_metabolic_modeling" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseCompareFBAs"
+  },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFBA.FBA" ]
+    }
+  }, {
+    "id" : "param1",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFBA.FBA" ]
+    }
+  } ],
+  "behavior" : {
+    "python_class" : "Microbes Metabolic Modeling",
+    "python_function" : "Compare FBA Results"
+  }
+}

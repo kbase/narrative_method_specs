@@ -1,0 +1,86 @@
+#
+# Define basic display information
+#
+name     : Calculate Gene Expression
+subtitle : |
+    Aligns the raw sequencing read (fastq) file (per sample) to the reference genome using the splice junction mapper Tophat and assembles the reads to transcripts using Cufflinks. Input the RNASeq fastq files loaded from uploader and generate alignment files  and gene expression files
+tooltip  : |
+    Aligns the raw sequencing read (fastq) file (per sample) to the reference genome using the splice junction mapper Tophat and assembles the reads to transcripts using Cufflinks. Input the RNASeq fastq files loaded from uploader and generate alignment files  and gene expression files
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Workspace
+        short-hint : |
+            Name of workspace; default is current
+        long-hint  : |
+            Name of workspace; default is current
+
+
+    param1 :
+        ui-name : |
+            Paired-End (?)
+        short-hint : |
+            Paired-End say 'yes'; else 'no'; default is 'no'
+        long-hint  : |
+            Paired-End say 'yes'; else 'no'; default is 'no'
+
+
+    param2 :
+        ui-name : |
+            Input files
+        short-hint : |
+            Input the raw sequencing data (fastq)
+        long-hint  : |
+            Input the raw sequencing data (fastq)
+
+
+    param3 :
+        ui-name : |
+            Reference
+        short-hint : |
+            Reference Genome (kbase id)
+        long-hint  : |
+            Reference Genome (kbase id)
+
+
+    param4 :
+        ui-name : |
+            Source/Source Id
+        short-hint : |
+            Source and Source Id
+        long-hint  : |
+            Source and Source Id
+
+
+    param5 :
+        ui-name : |
+            Output file prefix
+        short-hint : |
+            Output File prefix
+        long-hint  : |
+            Output File prefix
+
+
+description : |
+    Aligns the raw sequencing read (fastq) file (per sample) to the reference genome using the splice junction mapper Tophat and assembles the reads to transcripts using Cufflinks. Input the RNASeq fastq files loaded from uploader and generate alignment files  and gene expression files
+
+
+technical-description : |
+    Aligns the raw sequencing read (fastq) file (per sample) to the reference genome using the splice junction mapper Tophat and assembles the reads to transcripts using Cufflinks. Input the RNASeq fastq files loaded from uploader and generate alignment files  and gene expression files

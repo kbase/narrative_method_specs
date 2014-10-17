@@ -1,0 +1,37 @@
+{
+  "name" : "Render Heatmap",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "variation_expression_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseHeatmap"
+  },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "param1",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  } ],
+  "behavior" : {
+    "python_class" : "Variation Expression Services",
+    "python_function" : "Render Heatmap"
+  }
+}

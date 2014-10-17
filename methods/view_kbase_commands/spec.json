@@ -1,0 +1,17 @@
+{
+  "name" : "View KBase Commands",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "kbase_commands" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "CategoryViewWidget"
+  },
+  "parameters" : [ ],
+  "behavior" : {
+    "python_class" : "KBase Commands",
+    "python_function" : "View KBase Commands"
+  }
+}

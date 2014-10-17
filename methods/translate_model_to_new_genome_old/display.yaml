@@ -1,0 +1,68 @@
+#
+# Define basic display information
+#
+name     : Translate Model to New Genome
+subtitle : |
+    Functionality to assign a new genome to an imported model. A proteome comparison is done between the orginal model genome and the new desired genome. Metoblic reactions from original model get mapped to genes in the new genome'.  [19]
+tooltip  : |
+    Functionality to assign a new genome to an imported model. A proteome comparison is done between the orginal model genome and the new desired genome. Metoblic reactions from original model get mapped to genes in the new genome'.  [19]
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            FBA Model ID
+        short-hint : |
+            an FBA model id from first genome [19.1]
+        long-hint  : |
+            an FBA model id from first genome [19.1]
+
+
+    param1 :
+        ui-name : |
+            Proteome Comparison ID
+        short-hint : |
+            Proteome comparison ID [19.3]
+        long-hint  : |
+            Proteome comparison ID [19.3]
+
+
+    param2 :
+        ui-name : |
+            Remove No-gene Reactions
+        short-hint : |
+            specify "yes" if reactions with no genes should be removed
+        long-hint  : |
+            specify "yes" if reactions with no genes should be removed
+
+
+    param3 :
+        ui-name : |
+            Translated Model ID
+        short-hint : |
+            ID to which translated model should be saved
+        long-hint  : |
+            ID to which translated model should be saved
+
+
+description : |
+    Functionality to assign a new genome to an imported model. A proteome comparison is done between the orginal model genome and the new desired genome. Metoblic reactions from original model get mapped to genes in the new genome'.  [19]
+
+
+technical-description : |
+    Functionality to assign a new genome to an imported model. A proteome comparison is done between the orginal model genome and the new desired genome. Metoblic reactions from original model get mapped to genes in the new genome'.  [19]

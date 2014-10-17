@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : View Metagenome
+subtitle : |
+    Overview of metagenome statistics, numeric and plotted.
+tooltip  : |
+    Overview of metagenome statistics, numeric and plotted.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Metagenome ID
+        short-hint : |
+            id of a metagenome
+        long-hint  : |
+            id of a metagenome
+
+
+description : |
+    Overview of metagenome statistics, numeric and plotted.
+
+
+technical-description : |
+    Overview of metagenome statistics, numeric and plotted.

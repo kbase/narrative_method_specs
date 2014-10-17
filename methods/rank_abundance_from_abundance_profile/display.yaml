@@ -1,0 +1,86 @@
+#
+# Define basic display information
+#
+name     : Rank Abundance from Abundance Profile
+subtitle : |
+    Generate rank abundance profile from annotation abundance data.
+tooltip  : |
+    Generate rank abundance profile from annotation abundance data.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
+        long-hint  : |
+            name of workspace, default is current
+
+
+    param1 :
+        ui-name : |
+            Input Name
+        short-hint : |
+            object name of Communities.Profile
+        long-hint  : |
+            object name of Communities.Profile
+
+
+    param2 :
+        ui-name : |
+            Annotation Level
+        short-hint : |
+            annotation hierarchical level to retrieve abundances for
+        long-hint  : |
+            annotation hierarchical level to retrieve abundances for
+
+
+    param3 :
+        ui-name : |
+            Label Name
+        short-hint : |
+            label by metagenome name and not ID
+        long-hint  : |
+            label by metagenome name and not ID
+
+
+    param4 :
+        ui-name : |
+            Top Annotations
+        short-hint : |
+            produce profile for top N abundant annotations
+        long-hint  : |
+            produce profile for top N abundant annotations
+
+
+    param5 :
+        ui-name : |
+            Order By
+        short-hint : |
+            rank by either the position of metagenome in profile (integer) or 'average' or 'max' of metagenomes
+        long-hint  : |
+            rank by either the position of metagenome in profile (integer) or 'average' or 'max' of metagenomes
+
+
+description : |
+    Generate rank abundance profile from annotation abundance data.
+
+
+technical-description : |
+    Generate rank abundance profile from annotation abundance data.

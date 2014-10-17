@@ -1,0 +1,59 @@
+#
+# Define basic display information
+#
+name     : Delete Reaction
+subtitle : |
+    Delete reactions from selected Metabolic Model
+tooltip  : |
+    Delete reactions from selected Metabolic Model
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Metabolic Model
+        short-hint : |
+            the metabolic model to edit
+        long-hint  : |
+            the metabolic model to edit
+
+
+    param1 :
+        ui-name : |
+            Reaction(s) ID(s)
+        short-hint : |
+            Reactions to be deleted. Add multiple reactions seperated by ;
+        long-hint  : |
+            Reactions to be deleted. Add multiple reactions seperated by ;
+
+
+    param2 :
+        ui-name : |
+            Edited Model
+        short-hint : |
+            ID of model with deleted reactions
+        long-hint  : |
+            ID of model with deleted reactions
+
+
+description : |
+    Delete reactions from selected Metabolic Model
+
+
+technical-description : |
+    Delete reactions from selected Metabolic Model

@@ -1,0 +1,27 @@
+{
+  "name" : "View Proteome Comparison",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "microbes_comparative_genomics" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "GenomeComparisonWidget"
+  },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "GenomeComparison.ProteomeComparison" ]
+    }
+  } ],
+  "behavior" : {
+    "python_class" : "Microbes Comparative Genomics",
+    "python_function" : "View Proteome Comparison"
+  }
+}

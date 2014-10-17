@@ -1,0 +1,7 @@
+{
+  "name" : "KBase Commands",
+  "parent" : [ ],
+  "tooltip" : "Functions for executing KBase commands and manipulating the results",
+  "ver" : "1.0.0",
+  "visible" : true
+}

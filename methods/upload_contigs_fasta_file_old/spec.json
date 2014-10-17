@@ -1,0 +1,27 @@
+{
+  "name" : "Upload Contigs (FASTA-file)",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : false,
+  "categories" : [ "microbes_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "ContigSetUploadWidget"
+  },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.ContigSet" ]
+    }
+  } ],
+  "behavior" : {
+    "python_class" : "Microbes Services",
+    "python_function" : "Upload Contigs (FASTA-file)"
+  }
+}

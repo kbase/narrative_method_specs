@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : Display Functional Modules
+subtitle : |
+    Display information for network clusters.
+tooltip  : |
+    Display information for network clusters.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            nto
+        short-hint : |
+            Network Typed Object
+        long-hint  : |
+            Network Typed Object
+
+
+description : |
+    Display information for network clusters.
+
+
+technical-description : |
+    Display information for network clusters.

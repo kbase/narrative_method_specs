@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : View PNG File
+subtitle : |
+    View a .png image file from temp invocation file space.
+tooltip  : |
+    View a .png image file from temp invocation file space.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            File
+        short-hint : |
+            file to display
+        long-hint  : |
+            file to display
+
+
+description : |
+    View a .png image file from temp invocation file space.
+
+
+technical-description : |
+    View a .png image file from temp invocation file space.

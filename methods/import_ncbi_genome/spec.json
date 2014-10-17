@@ -1,0 +1,37 @@
+{
+  "name" : "Import NCBI Genome",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "microbes_assembly_genome_import" ],
+  "widgets" : {
+    "input" : "NcbiGenomeImportInput",
+    "output" : "GenomeAnnotation"
+  },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "param1",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+    }
+  } ],
+  "behavior" : {
+    "python_class" : "Microbes Assembly & Genome Import",
+    "python_function" : "Import NCBI Genome"
+  }
+}

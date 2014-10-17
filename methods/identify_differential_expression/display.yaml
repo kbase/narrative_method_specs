@@ -1,0 +1,86 @@
+#
+# Define basic display information
+#
+name     : Identify Differential Expression
+subtitle : |
+    Merges the assembled transcripts together and calls Cuffdiff to identify differentially expressed genes in a RNA-Seq experiment
+tooltip  : |
+    Merges the assembled transcripts together and calls Cuffdiff to identify differentially expressed genes in a RNA-Seq experiment
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Workspace
+        short-hint : |
+            Name of the workspace, default is current
+        long-hint  : |
+            Name of the workspace, default is current
+
+
+    param1 :
+        ui-name : |
+            Experiment Name
+        short-hint : |
+            Experiment title
+        long-hint  : |
+            Experiment title
+
+
+    param2 :
+        ui-name : |
+            Alignment files
+        short-hint : |
+            Alignment files
+        long-hint  : |
+            Alignment files
+
+
+    param3 :
+        ui-name : |
+            Gene Expressionfiles
+        short-hint : |
+            Gene Expression files
+        long-hint  : |
+            Gene Expression files
+
+
+    param4 :
+        ui-name : |
+            Reference
+        short-hint : |
+            Reference Genome (kbase id)
+        long-hint  : |
+            Reference Genome (kbase id)
+
+
+    param5 :
+        ui-name : |
+            Output file prefix
+        short-hint : |
+            Output File prefix
+        long-hint  : |
+            Output File prefix
+
+
+description : |
+    Merges the assembled transcripts together and calls Cuffdiff to identify differentially expressed genes in a RNA-Seq experiment
+
+
+technical-description : |
+    Merges the assembled transcripts together and calls Cuffdiff to identify differentially expressed genes in a RNA-Seq experiment

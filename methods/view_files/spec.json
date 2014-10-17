@@ -1,0 +1,27 @@
+{
+  "name" : "View Files",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "kbase_commands" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "GeneTableWidget"
+  },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "name" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  } ],
+  "behavior" : {
+    "python_class" : "KBase Commands",
+    "python_function" : "View Files"
+  }
+}

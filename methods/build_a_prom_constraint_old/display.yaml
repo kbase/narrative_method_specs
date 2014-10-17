@@ -1,0 +1,59 @@
+#
+# Define basic display information
+#
+name     : Build a PROM constraint
+subtitle : |
+    Given a gene expression series and a regulome, build a PROM constraint for FBA. [24]
+tooltip  : |
+    Given a gene expression series and a regulome, build a PROM constraint for FBA. [24]
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Genome Name
+        short-hint : |
+            Genome ID [24.1]
+        long-hint  : |
+            Genome ID [24.1]
+
+
+    param1 :
+        ui-name : |
+            Gene Expression Series Name
+        short-hint : |
+            Gene Expression Series ID [24.2]
+        long-hint  : |
+            Gene Expression Series ID [24.2]
+
+
+    param2 :
+        ui-name : |
+            Regulome Name
+        short-hint : |
+            Regulome ID [24.3]
+        long-hint  : |
+            Regulome ID [24.3]
+
+
+description : |
+    Given a gene expression series and a regulome, build a PROM constraint for FBA. [24]
+
+
+technical-description : |
+    Given a gene expression series and a regulome, build a PROM constraint for FBA. [24]

@@ -1,0 +1,27 @@
+{
+  "name" : "View Phenotype Set",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "microbes_metabolic_modeling" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbasePhenotypeSet"
+  },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBasePhenotypes.PhenotypeSet" ]
+    }
+  } ],
+  "behavior" : {
+    "python_class" : "Microbes Metabolic Modeling",
+    "python_function" : "View Phenotype Set"
+  }
+}

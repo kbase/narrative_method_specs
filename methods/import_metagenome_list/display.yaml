@@ -1,0 +1,50 @@
+#
+# Define basic display information
+#
+name     : Import Metagenome List
+subtitle : |
+    Import metagenome list object into workspace.
+tooltip  : |
+    Import metagenome list object into workspace.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
+        long-hint  : |
+            name of workspace, default is current
+
+
+    param1 :
+        ui-name : |
+            Metagenome List Name
+        short-hint : |
+            name of metagenome list object
+        long-hint  : |
+            name of metagenome list object
+
+
+description : |
+    Import metagenome list object into workspace.
+
+
+technical-description : |
+    Import metagenome list object into workspace.

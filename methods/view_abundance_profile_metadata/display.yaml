@@ -1,0 +1,50 @@
+#
+# Define basic display information
+#
+name     : View Abundance Profile Metadata
+subtitle : |
+    View metadata from an abundance profile as a table
+tooltip  : |
+    View metadata from an abundance profile as a table
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
+        long-hint  : |
+            name of workspace, default is current
+
+
+    param1 :
+        ui-name : |
+            Input Name
+        short-hint : |
+            object name of Communities.Profile
+        long-hint  : |
+            object name of Communities.Profile
+
+
+description : |
+    View metadata from an abundance profile as a table
+
+
+technical-description : |
+    View metadata from an abundance profile as a table

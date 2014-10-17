@@ -1,0 +1,104 @@
+#
+# Define basic display information
+#
+name     : Sub-select Abundance Profile
+subtitle : |
+    Sort and/or subselect annotation abundance data and outputs from statistical analyses.
+tooltip  : |
+    Sort and/or subselect annotation abundance data and outputs from statistical analyses.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
+        long-hint  : |
+            name of workspace, default is current
+
+
+    param1 :
+        ui-name : |
+            Input Name
+        short-hint : |
+            object name of Communities.Profile
+        long-hint  : |
+            object name of Communities.Profile
+
+
+    param2 :
+        ui-name : |
+            Output Name
+        short-hint : |
+            object name of altered profile
+        long-hint  : |
+            object name of altered profile
+
+
+    param3 :
+        ui-name : |
+            Sort by Column
+        short-hint : |
+            column number to sort output by, (0 for last column), default is no sorting
+        long-hint  : |
+            column number to sort output by, (0 for last column), default is no sorting
+
+
+    param4 :
+        ui-name : |
+            Sort Direction
+        short-hint : |
+            direction of sorting. 'asc' for ascending sort, 'desc' for descending sort
+        long-hint  : |
+            direction of sorting. 'asc' for ascending sort, 'desc' for descending sort
+
+
+    param5 :
+        ui-name : |
+            Columns
+        short-hint : |
+            number of columns from the left to return from input table, default is all
+        long-hint  : |
+            number of columns from the left to return from input table, default is all
+
+
+    param6 :
+        ui-name : |
+            Rows
+        short-hint : |
+            number of rows from the top to return from input table, default is all
+        long-hint  : |
+            number of rows from the top to return from input table, default is all
+
+
+    param7 :
+        ui-name : |
+            Output List
+        short-hint : |
+            create only list of annotations from ordering and sub-selection
+        long-hint  : |
+            create only list of annotations from ordering and sub-selection
+
+
+description : |
+    Sort and/or subselect annotation abundance data and outputs from statistical analyses.
+
+
+technical-description : |
+    Sort and/or subselect annotation abundance data and outputs from statistical analyses.

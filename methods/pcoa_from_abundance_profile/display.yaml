@@ -1,0 +1,77 @@
+#
+# Define basic display information
+#
+name     : PCoA from Abundance Profile
+subtitle : |
+    Generate a PCoA from annotation abundance data.
+tooltip  : |
+    Generate a PCoA from annotation abundance data.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Workspace
+        short-hint : |
+            name of workspace, default is current
+        long-hint  : |
+            name of workspace, default is current
+
+
+    param1 :
+        ui-name : |
+            Input Name
+        short-hint : |
+            object name of Communities.Profile
+        long-hint  : |
+            object name of Communities.Profile
+
+
+    param2 :
+        ui-name : |
+            Metadata
+        short-hint : |
+            metadata field to group metagenomes by
+        long-hint  : |
+            metadata field to group metagenomes by
+
+
+    param3 :
+        ui-name : |
+            Distance
+        short-hint : |
+            distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
+        long-hint  : |
+            distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
+
+
+    param4 :
+        ui-name : |
+            3D
+        short-hint : |
+            create 3-D PCoA
+        long-hint  : |
+            create 3-D PCoA
+
+
+description : |
+    Generate a PCoA from annotation abundance data.
+
+
+technical-description : |
+    Generate a PCoA from annotation abundance data.

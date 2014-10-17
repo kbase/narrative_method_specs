@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : Annotate Network Genes with Ontology Terms
+subtitle : |
+    Add Gene Ontology annotation to network gene nodes
+tooltip  : |
+    Add Gene Ontology annotation to network gene nodes
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            net_obj_id
+        short-hint : |
+            Network object id
+        long-hint  : |
+            Network object id
+
+
+description : |
+    Add Gene Ontology annotation to network gene nodes
+
+
+technical-description : |
+    Add Gene Ontology annotation to network gene nodes

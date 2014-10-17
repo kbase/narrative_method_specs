@@ -1,0 +1,37 @@
+{
+  "name" : "User genelist to FeatureSet",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "gwas_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "ValueListWidget"
+  },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "param1",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseSearch.FeatureSet" ]
+    }
+  } ],
+  "behavior" : {
+    "python_class" : "GWAS Services",
+    "python_function" : "User genelist to FeatureSet"
+  }
+}

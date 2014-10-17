@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : Generate SBML file
+subtitle : |
+    Generates an SBML file for the specified model.
+tooltip  : |
+    Generates an SBML file for the specified model.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            FBA Model ID
+        short-hint : |
+            an FBA model id
+        long-hint  : |
+            an FBA model id
+
+
+description : |
+    Generates an SBML file for the specified model.
+
+
+technical-description : |
+    Generates an SBML file for the specified model.

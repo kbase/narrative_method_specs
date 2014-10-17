@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : Import SEED Genomes
+subtitle : |
+    Import genomes from the pubSEED database.
+tooltip  : |
+    Import genomes from the pubSEED database.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            SEED Genome IDs
+        short-hint : |
+            list of genome ids (comma seperated)
+        long-hint  : |
+            list of genome ids (comma seperated)
+
+
+description : |
+    Import genomes from the pubSEED database.
+
+
+technical-description : |
+    Import genomes from the pubSEED database.

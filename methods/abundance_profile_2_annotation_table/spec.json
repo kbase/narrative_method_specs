@@ -1,0 +1,37 @@
+{
+  "name" : "Abundance Profile 2 Annotation Table",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "communities_services" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "ImageViewWidget"
+  },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "param1",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "Communities.Profile" ]
+    }
+  } ],
+  "behavior" : {
+    "python_class" : "Communities Services",
+    "python_function" : "Abundance Profile 2 Annotation Table"
+  }
+}

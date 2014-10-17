@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : Build Genome Set Object
+subtitle : |
+    Construct a Genome Set object [22]
+tooltip  : |
+    Construct a Genome Set object [22]
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Output genome set ID
+        short-hint : |
+            Output genome set ID. If empty, an ID will be chosen randomly. [22.1]
+        long-hint  : |
+            Output genome set ID. If empty, an ID will be chosen randomly. [22.1]
+
+
+description : |
+    Construct a Genome Set object [22]
+
+
+technical-description : |
+    Construct a Genome Set object [22]

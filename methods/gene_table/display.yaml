@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : Gene table
+subtitle : |
+    This method displays a gene list along with functional annotation in a table.
+tooltip  : |
+    This method displays a gene list along with functional annotation in a table.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            obj_id
+        short-hint : |
+            Gene List workspace object identifier.
+        long-hint  : |
+            Gene List workspace object identifier.
+
+
+description : |
+    This method displays a gene list along with functional annotation in a table.
+
+
+technical-description : |
+    This method displays a gene list along with functional annotation in a table.

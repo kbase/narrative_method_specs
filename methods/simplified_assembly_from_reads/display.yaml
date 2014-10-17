@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : Simplified Assembly From Reads
+subtitle : |
+    Use the AssemblyRAST service to assemble a set of contigs from sequenced reads. This starts a job that might run for several hours. When it finishes, the assembled ContigSet will be stored in your data space. [1]
+tooltip  : |
+    Use the AssemblyRAST service to assemble a set of contigs from sequenced reads. This starts a job that might run for several hours. When it finishes, the assembled ContigSet will be stored in your data space. [1]
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Assembly Input file
+        short-hint : |
+            A list of files with read information [1.1]
+        long-hint  : |
+            A list of files with read information [1.1]
+
+
+description : |
+    Use the AssemblyRAST service to assemble a set of contigs from sequenced reads. This starts a job that might run for several hours. When it finishes, the assembled ContigSet will be stored in your data space. [1]
+
+
+technical-description : |
+    Use the AssemblyRAST service to assemble a set of contigs from sequenced reads. This starts a job that might run for several hours. When it finishes, the assembled ContigSet will be stored in your data space. [1]

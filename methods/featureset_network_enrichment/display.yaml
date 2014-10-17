@@ -1,0 +1,77 @@
+#
+# Define basic display information
+#
+name     : FeatureSet Network Enrichment
+subtitle : |
+    This method annotate GO terms and execute GO enrichment test
+tooltip  : |
+    This method annotate GO terms and execute GO enrichment test
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            feature_set_id
+        short-hint : |
+            FeatureSet workspace object id
+        long-hint  : |
+            FeatureSet workspace object id
+
+
+    param1 :
+        ui-name : |
+            p_value
+        short-hint : |
+            p-value cutoff
+        long-hint  : |
+            p-value cutoff
+
+
+    param2 :
+        ui-name : |
+            ref_wsid
+        short-hint : |
+            Reference Network workspace id (optional, default to current workspace)
+        long-hint  : |
+            Reference Network workspace id (optional, default to current workspace)
+
+
+    param3 :
+        ui-name : |
+            ref_network
+        short-hint : |
+            Reference Network object name
+        long-hint  : |
+            Reference Network object name
+
+
+    param4 :
+        ui-name : |
+            out_id
+        short-hint : |
+            Output FeatureSet object identifier
+        long-hint  : |
+            Output FeatureSet object identifier
+
+
+description : |
+    This method annotate GO terms and execute GO enrichment test
+
+
+technical-description : |
+    This method annotate GO terms and execute GO enrichment test
