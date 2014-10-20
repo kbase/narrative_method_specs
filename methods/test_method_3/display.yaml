@@ -1,0 +1,76 @@
+#
+# Define basic display information
+#
+name     : Test Method 3
+subtitle : This method is a test, and only a test, of the method store system.
+tooltip  : This method is a test, and only a test.  Hello tooltip!
+
+screenshots :
+    - s1.png
+    - s2.png
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        - test_method_2
+    next :
+        - test_method_5
+        - test_method_6
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name    : Param 0
+        short-hint : The genome object you wish to test.
+        long-hint  : |
+            This is the Genome that will be used during tests.  Select one that is good.<br>
+            For more details, see <a href="https://kbase.us">kbase</a>.
+    param1 :
+        ui-name    : Param 1
+        short-hint : The genome object you wish to test.
+        long-hint  : |
+            This is the Genome that will be used during tests.  Select one that is good.<br>
+            For more details, see <a href="https://kbase.us">kbase</a>.
+    param2 :
+        ui-name    : Param 2
+        short-hint : The genome object you wish to test.
+        long-hint  : |
+            This is the Genome that will be used during tests.  Select one that is good.<br>
+            For more details, see <a href="https://kbase.us">kbase</a>.
+    param3 :
+        ui-name    : Param 3
+        short-hint : The genome object you wish to test.
+        long-hint  : |
+            This is the Genome that will be used during tests.  Select one that is good.<br>
+            For more details, see <a href="https://kbase.us">kbase</a>.
+    param4 :
+        ui-name    : Param 4
+        short-hint : The genome object you wish to test.
+        long-hint  : |
+            This is the Genome that will be used during tests.  Select one that is good.<br>
+            For more details, see <a href="https://kbase.us">kbase</a>.
+        
+
+description : |
+    <p>This is a test method</p>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+
+
+technical-description : |
+    <b> this is the technical description </b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+    
+    
+    
+    

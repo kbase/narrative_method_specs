@@ -1,0 +1,121 @@
+{
+    "ver":"1.0.1",
+    "authors": [ "msneddon","wstester1" ],
+    "contact": "help@kbase.us",
+    
+    "categories": [ "testmethods" ],
+    
+    "widgets": {
+        "output":"KBaseDefaultViewer"
+    },
+    
+    "parameters": [
+        {
+            "id": "param0",
+            
+            "optional":false,
+            "advanced":false,
+            
+            "allow_multiple":false,
+            "default_values":[""],
+            
+            "field_type" : "checkbox",
+            
+            "checkbox_options":{
+                "checked_value": 10,
+                "unchecked_value": -10
+            }
+        },
+        
+        {
+            "id": "param1",
+            
+            "optional":false,
+            "advanced":true,
+            
+            "allow_multiple":false,
+            "default_values":["1"],
+            
+            "field_type" : "floatslider",
+            
+            "floatslider_options":{
+                "min":1,
+                "max":10
+            }
+        },
+
+        {
+            "id": "param2",
+            
+            "optional":false,
+            "advanced":false,
+            
+            "allow_multiple":false,
+            "default_values":[""],
+            
+            "field_type" : "textarea",
+            
+            "textarea_options":{
+                "n_rows": 10
+            }
+        },
+
+        {
+            "id": "param3",
+            
+            "optional":false,
+            "advanced":false,
+            
+            "allow_multiple":false,
+            "default_values":[""],
+            
+            "field_type" : "dropdown",
+            
+            "dropdown_options":{
+                "options": [
+                    {
+                        "id": "item0",
+                        "ui_name": "First"
+                    },
+                    {
+                        "id": "item1",
+                        "ui_name": "Second"
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "param4",
+            
+            "optional":false,
+            "advanced":false,
+            
+            "allow_multiple":false,
+            "default_values":[""],
+            
+            "field_type" : "radio",
+            
+            "radio_options":{
+                "options": [
+                    {
+                        "id": "item0",
+                        "ui_name": "First",
+                        "ui_tooltip": "First tooltip"
+                    },
+                    {
+                        "id": "item1",
+                        "ui_name": "Second",
+                        "ui_tooltip": "Second tooltip"
+                    }
+                ]
+            }
+        },
+    ],
+    
+    "behavior": {
+        "python_class" : "Microbes Services",
+        "python_function":"NameOfTestFunction"
+    }
+    
+}
