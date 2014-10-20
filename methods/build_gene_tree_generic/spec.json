@@ -35,18 +35,43 @@
       "url" : "https://kbase.us/services/trees",
       "name" : "KBaseTrees",
       "method" : "construct_tree_for_alignment",
-      "parameters_mapping" : {
-        "param0" : {
+      "input_mapping" : [
+        {
+          "input_parameter": "param0",
           "target_property": "msa_ref",
           "target_type_transform": "ref"
         },
-        "param1" : {
+        {
+          "constant_value": "FastTree",
+          "target_property": "tree_method"
+        },
+        {
+          "input_parameter": "param1",
           "target_property": "out_tree_id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "out_workspace"
         }
-      },
-      "workspace_name_mapping" : {
-        "target_property": "out_workspace"
-      }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "param1",
+          "target_property": "treeID"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceID"
+        },
+        {
+          "constant_value": "500px",
+          "target_property": "height"
+        },
+        {
+          "service_method_output_path": [],
+          "target_property": "jobID"
+        }
+      ]
     }
   }
 }
