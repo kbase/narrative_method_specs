@@ -1,0 +1,32 @@
+{
+    "ver":"1.0.5",
+    "authors": [ "msneddon","wstester1" ],
+    "contact": "help@kbase.us",
+    
+    "categories": [ "testmethods" ],
+    
+    "steps" : [
+        {
+            "step-id": "step_1",
+            "method-id": "test_method_1"
+        },
+        {
+            "step-id": "step_2",
+            "method-id": "test_method_2",
+            "input_mapping" : [
+                {
+                    "step":"step_1",
+                    "source":"input",
+                    "from":"genome",
+                    "to": "genome",
+                    "transformation": null
+                }
+            ]
+        }
+    ],
+    
+    
+    "behavior": {
+    }
+    
+}
