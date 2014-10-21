@@ -54,6 +54,11 @@
             "input_mapping": [
                 { 
                     "input_parameter": "genome",
+                    "generated_value": {
+                        "prefix": "genome_",
+                        "symbols": 8,
+                        "suffix": ".obj"
+                    },
                     "target_property": "input_genome",
                     "target_type_transform": "ref"
                 },
