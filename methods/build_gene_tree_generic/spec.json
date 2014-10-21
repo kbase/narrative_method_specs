@@ -47,6 +47,9 @@
         },
         {
           "input_parameter": "param1",
+          "generated_value": {
+            "prefix": "genetree_"
+          },
           "target_property": "out_tree_id"
         },
         {
