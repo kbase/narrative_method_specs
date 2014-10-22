@@ -16,10 +16,9 @@
             "input_mapping" : [
                 {
                     "step":"step_1",
-                    "source":"input",
+                    "is_from_input":true,
                     "from":"genome",
-                    "to": "genome",
-                    "transformation": null
+                    "to": "genome"
                 }
             ]
         }

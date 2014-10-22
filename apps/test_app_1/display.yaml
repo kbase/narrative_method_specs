@@ -2,10 +2,13 @@
 # Define basic display information
 #
 name     : Test All 1
-subtitle : This app is a test, and only a test, of the method store system.
-tooltip  : This app is a test, and only a test.  Hello tooltip!
+subtitle : |
+    This app is a test, and only a test, of the method store system.
+tooltip  : |
+    This app is a test, and only a test.  Hello tooltip!
 
 screenshots : []
+
 
 header : |
     This is some text that might appear at the top of this
@@ -24,8 +27,6 @@ description : |
     app page.  This should be more elaborate than the header, and
     shouldn't really be direct instructions, but more an explanation of what
     is going on.</p>
-    
-    <pre>some code here</pre>
     
     yada, yada, yada <br>
 
