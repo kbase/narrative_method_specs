@@ -76,5 +76,6 @@
         }
       ]
     }
-  }
+  },
+  "job_id_output_field": "jobID"
 }
