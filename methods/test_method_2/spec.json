@@ -79,6 +79,6 @@
                 }
             ]
         }
-    }
-    
+    },
+    "job_id_output_field": "re2"
 }
