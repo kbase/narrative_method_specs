@@ -1,0 +1,43 @@
+#
+# Define basic display information
+#
+name     : Annotate a Microbial Genome
+subtitle : |
+    This app is a test, and only a test, of the method store system.
+tooltip  : |
+    This app is a test, and only a test.  Hello tooltip!
+
+screenshots : []
+
+
+header : |
+    This is some text that might appear at the top of this
+    app providing some instructions for the user to get started, hints, or
+    other warnings.
+
+step-descriptions :
+    step_1 : |
+        additional instructions/details regarding the step with id step_1
+    step_2 : |
+        additional instructions/details regarding the step with id step_2
+
+
+description : |
+    <p>This is a description of the test app that would appear on the
+    app page.  This should be more elaborate than the header, and
+    shouldn't really be direct instructions, but more an explanation of what
+    is going on.</p>
+    
+    yada, yada, yada <br>
+
+
+technical-description : |
+    <b> this is the technical description of the test app</b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+    
+    
+    
+    
