@@ -1,0 +1,50 @@
+#
+# Define basic display information
+#
+name     : Import NCBI Genome
+subtitle : |
+    Import a Genome and ContigSet from NCBI into your workspace. [26]
+tooltip  : |
+    Import a Genome and ContigSet from NCBI into your workspace. [26]
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            NCBI Genome Name
+        short-hint : |
+            Name of public genome accessible on NCBI FTP. [26.1]
+        long-hint  : |
+            Name of public genome accessible on NCBI FTP. [26.1]
+
+
+    param1 :
+        ui-name : |
+            Genome Object ID
+        short-hint : |
+            Output Genome ID. If empty, an ID will be chosen automatically. [26.2]
+        long-hint  : |
+            Output Genome ID. If empty, an ID will be chosen automatically. [26.2]
+
+
+description : |
+    Import a Genome and ContigSet from NCBI into your workspace. [26]
+
+
+technical-description : |
+    Import a Genome and ContigSet from NCBI into your workspace. [26]
