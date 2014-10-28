@@ -18,8 +18,6 @@ header : |
 step-descriptions :
     step_1 : |
         additional instructions/details regarding the step with id step_1
-    step_2 : |
-        additional instructions/details regarding the step with id step_2
 
 
 description : |

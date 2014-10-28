@@ -1,0 +1,37 @@
+#
+# Define basic display information
+#
+name     : Build and Gapfill and FBA Model
+subtitle : |
+    In this App, you can build a model for a genome and gapfill it.
+tooltip  : |
+    In this App, you can build a model for a genome and gapfill it.
+
+screenshots : []
+
+
+header : |
+    The model reconstruction app requires an annotated genome that can be used
+    to build your model.
+
+step-descriptions :
+    step_1 : |
+        additional instructions/details regarding the step with id step_1
+    step_2 : |
+        additional instructions/details regarding the step with id step_2
+
+
+description : |
+    <p>In this app, you can build a model for your genome.</p>
+
+
+technical-description : |
+    <b> this is the technical description of the test app</b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+    
+    
+    
+    
