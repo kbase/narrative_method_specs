@@ -8,12 +8,12 @@
     "steps" : [
         {
             "step-id": "step_2",
-            "method-id": "proteome_comparison"
+            "method-id": "compare_two_proteomes"
         },
         
         {
             "step-id": "step_3",
-            "method-id": "model_translation"
+            "method-id": "translate_model_to_new_genome"
         },
         
         {
