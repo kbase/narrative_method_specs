@@ -1,5 +1,5 @@
 {
-    "ver":"0.1.0",
+    "ver":"1.0.5",
     "authors": [ "chenry" ],
     "contact": "help@kbase.us",
     
@@ -8,7 +8,7 @@
     "steps" : [
         {
             "step-id": "step_2",
-            "method-id": "build_a_metabolic_model"
+            "method-id": "merge_to_community_model"
         },
         
         {
@@ -18,7 +18,7 @@
                 {
                     "step":"step_1",
                     "is_from_input":true,
-                    "from":"param1",
+                    "from":"param2",
                     "to": "param0"
                 }
             ]

@@ -1,0 +1,47 @@
+#
+# Define basic display information
+#
+name     : FBA Model Translation
+subtitle : |
+    In this app, the user provides an existing model and a new genome.
+    The original model is translated to the new input genome based on bi-directional best hits.
+    
+tooltip  : |
+    In this app, the user provides an existing model and a new genome.
+    The original model is translated to the new input genome based on bi-directional best hits.
+
+screenshots : []
+
+
+header : |
+    The model translation app requires a model and genome as input, and optionally can take a
+    media formulation as input. It's possible you have already loaded your objects into KBase.
+    In that case, use the widgets below to transfer the objects into the workspace selected for
+    this app. Otherwise, use the widget below to upload your objects into KBase.
+
+step-descriptions :
+    step_2 : |
+        additional instructions/details regarding the step with id step_2
+    step_3 : |
+        additional instructions/details regarding the step with id step_3
+    step_4 : |
+        additional instructions/details regarding the step with id step_4
+    step_5 : |
+        additional instructions/details regarding the step with id step_5
+
+
+description : |
+    <p>In this app, the user provides an existing model and a new genome.
+    The original model is translated to the new input genome based on bi-directional best hits.</p>
+
+
+technical-description : |
+    <b> this is the technical description of the test app</b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+    
+    
+    
+    

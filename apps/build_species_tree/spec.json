@@ -1,0 +1,24 @@
+{
+    "ver":"0.1.0",
+    "authors": [ "chenry" ],
+    "contact": "help@kbase.us",
+    
+    "categories": [ "featured_apps" ],
+    
+    "steps" : [
+        {
+            "step-id": "step_2",
+            "method-id": "insert_set_of_genomes_into_species_tree"
+        },
+        
+        {
+            "step-id": "step_3",
+            "method-id": "build_genome_set_from_tree"
+        }
+    ],
+    
+    
+    "behavior": {
+    }
+    
+}

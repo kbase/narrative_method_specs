@@ -1,5 +1,5 @@
 {
-    "ver":"0.1.0",
+    "ver":"1.0.5",
     "authors": [ "chenry" ],
     "contact": "help@kbase.us",
     
@@ -7,8 +7,8 @@
     
     "steps" : [
         {
-            "step-id": "step_1",
-            "method-id": "annotate_contigset"
+            "step-id": "step_2",
+            "method-id": "run_flux_balance_analysis"
         }
     ],
     

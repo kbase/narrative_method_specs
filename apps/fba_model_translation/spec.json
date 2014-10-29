@@ -1,0 +1,34 @@
+{
+    "ver":"0.1.0",
+    "authors": [ "chenry" ],
+    "contact": "help@kbase.us",
+    
+    "categories": [ "featured_apps" ],
+    
+    "steps" : [
+        {
+            "step-id": "step_2",
+            "method-id": "proteome_comparison"
+        },
+        
+        {
+            "step-id": "step_3",
+            "method-id": "model_translation"
+        },
+        
+        {
+            "step-id": "step_4",
+            "method-id": "gapfill_a_metabolic_model"
+        },
+        
+        {
+            "step-id": "step_5",
+            "method-id": "compare_two_metabolic_models"
+        }
+    ],
+    
+    
+    "behavior": {
+    }
+    
+}

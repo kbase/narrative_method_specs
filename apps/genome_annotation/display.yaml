@@ -3,9 +3,9 @@
 #
 name     : Annotate a Microbial Genome
 subtitle : |
-    This app is a test, and only a test, of the method store system.
+    In this app, the user uploads contigs for annotation using the RAST approach.
 tooltip  : |
-    This app is a test, and only a test.  Hello tooltip!
+    In this app, the user uploads contigs for annotation using the RAST approach.
 
 screenshots : []
 
@@ -21,10 +21,10 @@ step-descriptions :
 
 
 description : |
-    <p>This is a description of the test app that would appear on the
-    app page.  This should be more elaborate than the header, and
-    shouldn't really be direct instructions, but more an explanation of what
-    is going on.</p>
+    <p>The genome annotation app requires contigs as input. It's possible you
+    have already loaded your contigs into KBase. In that case, use the widget
+    below to transfer the contigs into the workspace selected for this app.
+    Otherwise, use the widget below to upload your contigs into KBase.</p>
     
     yada, yada, yada <br>
 

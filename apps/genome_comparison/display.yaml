@@ -1,0 +1,39 @@
+#
+# Define basic display information
+#
+name     : Genome Comparison
+subtitle : |
+    In this app, the user provides a genome set. The genomes in the set are compared to construct a pangenome,
+    then a detailed comparison is printed.
+tooltip  : |
+    In this app, the user provides a genome set. The genomes in the set are compared to construct a pangenome,
+    then a detailed comparison is printed.
+
+screenshots : []
+
+
+header : |
+    Some instructions here
+
+step-descriptions :
+    step_2 : |
+        additional instructions/details regarding the step with id step_2
+    step_3 : |
+        additional instructions/details regarding the step with id step_3
+
+
+description : |
+    <p>In this app, the user provides a genome set. The genomes in the set are compared to construct a pangenome,
+    then a detailed comparison is printed.</p>
+
+
+technical-description : |
+    <b> this is the technical description of the test app</b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+    
+    
+    
+    

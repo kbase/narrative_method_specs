@@ -1,0 +1,34 @@
+#
+# Define basic display information
+#
+name     : FBA Model Comparison
+subtitle : |
+    In this App, you can compare multiple fba models.
+tooltip  : |
+    In this App, you can compare multiple fba models.
+
+screenshots : []
+
+
+header : |
+    Some instructions here.
+
+step-descriptions :
+    step_2 : |
+        additional instructions/details regarding the step with id step_2
+
+
+description : |
+    <p>In this app, you can compare multiple fba models.</p>
+
+
+technical-description : |
+    <b> this is the technical description of the test app</b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+    
+    
+    
+    

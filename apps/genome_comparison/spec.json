@@ -7,8 +7,13 @@
     
     "steps" : [
         {
-            "step-id": "step_1",
-            "method-id": "annotate_contigset"
+            "step-id": "step_2",
+            "method-id": "compute_pangenome"
+        },
+        
+        {
+            "step-id": "step_3",
+            "method-id": "genome_comparison_from_pangenome"
         }
     ],
     
