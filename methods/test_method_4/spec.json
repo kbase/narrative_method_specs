@@ -1,0 +1,53 @@
+{
+    "name":"Test Method 4",
+    "ver":"1.0.1",
+    "authors": [ "msneddon","wstester1" ],
+    "contact": "help@kbase.us",
+    
+    "categories": [ "testmethods" ],
+    
+    "widgets": {
+        "output":"KBaseDefaultViewer"
+    },
+    
+    "parameters": [
+        {
+            "id": "genome",
+            
+            "optional":false,
+            "advanced":false,
+            
+            "allow_multiple":false,
+            "default_values":[""],
+            
+            "field_type" : "text",
+            
+            "text_options":{
+                "valid_ws_types":["KBaseGenomes.Genome", "KBaseGenomes.PlantGenome"]
+            }
+        },
+        
+        {
+            "id": "output_genome",
+            
+            "optional":false,
+            "advanced":false,
+            
+            "allow_multiple":false,
+            "default_values":["OutputGenome"],
+            
+            "field_type" : "text",
+            
+            "text_options":{
+                "valid_ws_types":["KBaseGenomes.Genome"],
+                "is_output_name":true
+            }
+        }
+    ],
+    
+    "behavior": {
+        "python_class" : "Microbes Services",
+        "python_function":"NameOfTestFunction"
+    }
+    
+}

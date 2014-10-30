@@ -1,0 +1,64 @@
+#
+# Define basic display information
+#
+name     : Test Method 4
+subtitle : This method is a test, and only a test, of the method store system.
+tooltip  : This method is a test, and only a test.  Hello tooltip!
+
+screenshots :
+    - s1.png
+    - s2.png
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        - test_method_2
+    next :
+        - test_method_3
+
+#
+# This is the text that will replace the input boxes after the method is run.  Use
+# double curly brackets to rever to parameters
+#
+replacement-text : |
+    Test Method 4 was run on {{genome}} to produce a new genome named {{output_genome}}.
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    genome :
+        ui-name    : Genome
+        short-hint : The genome object you wish to test.
+        long-hint  : |
+            This is the Genome that will be used during tests.  Select one that is good.<br>
+            For more details, see <a href="https://kbase.us">kbase</a>.
+        
+    
+    output_genome :
+        ui-name    : Output Genome
+        short-hint : The output genome name
+        long-hint  : |
+            This is the name of the output genome object that you will construct
+
+
+description : |
+    <p>This is a test method</p>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+
+
+technical-description : |
+    <b> this is the technical description </b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+    
+    
+    
+    
