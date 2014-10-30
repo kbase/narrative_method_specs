@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Build and Gapfill and FBA Model
+name     : Build and Gapfill an FBA Model
 subtitle : |
     In this App, you can build a model for a genome and gapfill it.
 tooltip  : |
