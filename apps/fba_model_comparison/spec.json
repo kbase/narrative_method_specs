@@ -8,7 +8,7 @@
     "steps" : [
         {
             "step-id": "step_2",
-            "method-id": "compare_two_metabolic_models"
+            "method-id": "compare_two_metabolic_models_generic"
         }
     ],
     

@@ -8,12 +8,20 @@
     "steps" : [
         {
             "step-id": "step_2",
-            "method-id": "insert_set_of_genomes_into_species_tree"
+            "method-id": "insert_genome_into_species_tree_generic"
         },
         
         {
             "step-id": "step_3",
-            "method-id": "build_genome_set_from_tree"
+            "method-id": "build_genome_set_from_tree",
+            "input_mapping" : [
+                {
+                    "step":"step_2",
+                    "is_from_input":true,
+                    "from":"param2",
+                    "to": "param0"
+                }
+            ]
         }
     ],
     

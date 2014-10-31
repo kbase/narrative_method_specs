@@ -8,12 +8,12 @@
     "steps" : [
         {
             "step-id": "step_2",
-            "method-id": "build_a_metabolic_model"
+            "method-id": "build_a_metabolic_model_generic"
         },
         
         {
             "step-id": "step_3",
-            "method-id": "gapfill_a_metabolic_model",
+            "method-id": "gapfill_a_metabolic_model_generic",
             "input_mapping" : [
                 {
                     "step":"step_1",

@@ -6,7 +6,7 @@
   "categories" : [ "generic_service_calls" ],
   "widgets" : {
     "input" : null,
-    "output" : "GenomeAnnotation"
+    "output" : "kbaseModelTabs"
   },
   "parameters" : [ {
     "id" : "param0",
@@ -26,51 +26,41 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+      "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
     }
   } ],
   "behavior" : {
     "service-mapping" : {
-      "url" : "https://kbase.us/services/genome_comparison/jsonrpc",
-      "name" : "GenomeComparison",
-      "method" : "annotate_genome",
+      "url" : "https://kbase.us/services/fba_model_services/",
+      "name" : "fbaModelServices",
+      "method" : "genome_to_fbamodel",
       "input_mapping" : [
         {
           "input_parameter": "param0",
-          "target_property": "in_genome_id"
+          "target_property": "genome"
+        },
+        {
+          "input_parameter": "param1"
+          "generated_value": {
+            "prefix": "model_"
+          },
+          "target_property": "model"
         },
         {
           "narrative_system_variable": "workspace",
-          "target_property": "in_genome_ws"
-        },
-        {
-          "input_parameter": "param1",
-          "target_property": "out_genome_id"
-        },
-        {
-          "narrative_system_variable": "workspace",
-          "target_property": "out_genome_ws"
-        },
-        {
-          "constant_value": 1,
-          "target_property": "seed_annotation_only"
+          "target_property": "workspace"
         }
       ],
       "output_mapping" : [
         {
           "input_parameter": "param1",
-          "target_property": "ws_id"
+          "target_property": "id"
         },
         {
           "narrative_system_variable": "workspace",
-          "target_property": "ws_name"
-        },
-        {
-          "service_method_output_path": [],
-          "target_property": "job_id"
+          "target_property": "ws"
         }
       ]
     }
-  },
-  "job_id_output_field": "job_id"
+  }
 }
