@@ -40,7 +40,7 @@
           "target_property": "genome"
         },
         {
-          "input_parameter": "param1"
+          "input_parameter": "param1",
           "generated_value": {
             "prefix": "model_"
           },

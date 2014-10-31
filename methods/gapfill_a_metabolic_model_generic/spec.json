@@ -71,7 +71,7 @@
           "target_property": "model"
         },
         {
-          "input_parameter": "param4"
+          "input_parameter": "param4",
           "target_property": "out_model"
         },
         {
