@@ -75,12 +75,12 @@
           "target_property": "out_model"
         },
         {
-          "constant_value": "formulation",
-          "target_property": {}
+          "constant_value": {},
+          "target_property": "formulation"
         },
         {
-          "constant_value": "fastgapfill",
-          "target_property": 1
+          "constant_value": 1,
+          "target_property": "fastgapfill"
         },
         {
           "narrative_system_variable": "workspace",
