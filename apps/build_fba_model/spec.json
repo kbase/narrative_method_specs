@@ -16,7 +16,7 @@
             "method-id": "gapfill_a_metabolic_model_generic",
             "input_mapping" : [
                 {
-                    "step":"step_1",
+                    "step":"step_2",
                     "is_from_input":true,
                     "from":"param1",
                     "to": "param0"
