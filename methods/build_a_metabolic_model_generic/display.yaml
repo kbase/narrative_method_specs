@@ -3,9 +3,9 @@
 #
 name     : Build a Metabolic Model
 subtitle : |
-    Given an annotated Genome, build a draft metabolic model which can be analyzed with FBA. [6]
+    Given an annotated Genome, build a draft metabolic model which can be analyzed with FBA.
 tooltip  : |
-    Given an annotated Genome, build a draft metabolic model which can be analyzed with FBA. [6]
+    Given an annotated Genome, build a draft metabolic model which can be analyzed with FBA.
 
 screenshots :
     []
@@ -27,24 +27,26 @@ parameters :
     param0 :
         ui-name : |
             Genome Name
+        placeholder : |
+            select a genome
         short-hint : |
-            Source genome name [6.1]
+            this annotated genome will be used to build a new metabolic model
         long-hint  : |
-            Source genome name [6.1]
+            Source genome name
 
 
     param1 :
         ui-name : |
             Output Metabolic Model Name
         short-hint : |
-            select a name for the generated metabolic model (optional) [6.2]
+            select a name for the generated metabolic model
         long-hint  : |
-            select a name for the generated metabolic model (optional) [6.2]
+            select a name for the generated metabolic model
 
 
 description : |
-    Given an annotated Genome, build a draft metabolic model which can be analyzed with FBA. [6]
+    Given an annotated Genome, build a draft metabolic model which can be analyzed with FBA.
 
 
 technical-description : |
-    Given an annotated Genome, build a draft metabolic model which can be analyzed with FBA. [6]
+    Given an annotated Genome, build a draft metabolic model which can be analyzed with FBA.

@@ -3,9 +3,9 @@
 #
 name     : Gapfill a Metabolic Model
 subtitle : |
-    Run Gapfilling on an metabolic model.  Gapfill attempts to identify the minimal number of reactions needed to add to your metabolic model in order for the model to predict growth in the given media condition (or in complete media if no Media is provided).  Gapfilling is an optimization procedure that can produce many possible solutions.  After a gapfilling job is submitted and run, you can view the results by viewing a metabolic model details, and incorporate the new reactions by running the Integrate Gapfill Solution function. [12]
+    Run Gapfilling on an metabolic model.  Gapfill attempts to identify the minimal number of reactions needed to add to your metabolic model in order for the model to predict growth in the given media condition (or in complete media if no Media is provided).  Gapfilling is an optimization procedure that can produce many possible solutions.  After a gapfilling job is submitted and run, you can view the results by viewing a metabolic model details, and incorporate the new reactions by running the Integrate Gapfill Solution function.
 tooltip  : |
-    Run Gapfilling on an metabolic model.  Gapfill attempts to identify the minimal number of reactions needed to add to your metabolic model in order for the model to predict growth in the given media condition (or in complete media if no Media is provided).  Gapfilling is an optimization procedure that can produce many possible solutions.  After a gapfilling job is submitted and run, you can view the results by viewing a metabolic model details, and incorporate the new reactions by running the Integrate Gapfill Solution function. [12]
+    Run Gapfilling on an metabolic model.  Gapfill attempts to identify the minimal number of reactions needed to add to your metabolic model in order for the model to predict growth in the given media condition (or in complete media if no Media is provided).  Gapfilling is an optimization procedure that can produce many possible solutions.  After a gapfilling job is submitted and run, you can view the results by viewing a metabolic model details, and incorporate the new reactions by running the Integrate Gapfill Solution function.
 
 screenshots :
     []
@@ -28,18 +28,18 @@ parameters :
         ui-name : |
             Metabolic Model
         short-hint : |
-            the metabolic model to gapfill [12.1]
+            the metabolic model to gapfill
         long-hint  : |
-            the metabolic model to gapfill [12.1]
+            the metabolic model to gapfill 
 
 
     param1 :
         ui-name : |
             Media
         short-hint : |
-            the media condition in which to gapfill [12.2]
+            the media condition in which to gapfill
         long-hint  : |
-            the media condition in which to gapfill [12.2]
+            the media condition in which to gapfill
 
 
     param2 :
@@ -53,20 +53,20 @@ parameters :
 
     param3 :
         ui-name : |
-            Integrate Solution
+            Integrate Solution?
         short-hint : |
-            automatically integrate solution (yes/no)
+            automatically integrate solution into the model (yes/no)
         long-hint  : |
             automatically integrate solution (yes/no)
 
 
     param4 :
         ui-name : |
-            Output Model ID
+            Output Model Name
         short-hint : |
-            select a name for the model result object (optional)
+            select a name for the Model result object if you do not want to overwrite the original model
         long-hint  : |
-            select a name for the model result object (optional)
+            select a name for the model result object
 
 
 description : |
