@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : Annotate a Microbial Genome
+subtitle : |
+    In this app, the user uploads contigs for annotation using the RAST approach.
+tooltip  : |
+    In this app, the user uploads contigs for annotation using the RAST approach.
+
+screenshots : []
+
+
+header : |
+    This is some text that might appear at the top of this
+    app providing some instructions for the user to get started, hints, or
+    other warnings.
+
+step-descriptions :
+    step_1 : |
+        additional instructions/details regarding the step with id step_1
+
+
+description : |
+    <p>The genome annotation app requires contigs as input. It's possible you
+    have already loaded your contigs into KBase. In that case, use the widget
+    below to transfer the contigs into the workspace selected for this app.
+    Otherwise, use the widget below to upload your contigs into KBase.</p>
+    
+    yada, yada, yada <br>
+
+
+technical-description : |
+    <b> this is the technical description of the test app</b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+    
+    
+    
+    

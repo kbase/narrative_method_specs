@@ -1,0 +1,36 @@
+#
+# Define basic display information
+#
+name     : Community FBA Modeling
+subtitle : |
+    In this App, you can create an fba model for a microbial community and gapfill it.
+tooltip  : |
+    In this App, you can create an fba model for a microbial community and gapfill it.
+
+screenshots : []
+
+
+header : |
+    Instructions appear here.
+
+step-descriptions :
+    step_2 : |
+        additional instructions/details regarding the step with id step_2
+    step_3 : |
+        additional instructions/details regarding the step with id step_3
+
+
+description : |
+    <p>In this app, you can build an fba model for your microbial community.</p>
+
+
+technical-description : |
+    <b> this is the technical description of the test app</b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+    
+    
+    
+    

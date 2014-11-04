@@ -1,0 +1,38 @@
+#
+# Define basic display information
+#
+name     : Phenotype Analysis
+subtitle : |
+    In this app, the user runs phenotype simulation, which not only simulates
+    all phenotype conditions, but also gapfills the model in all phenotype conditions.
+tooltip  : |
+    In this app, the user runs phenotype simulation, which not only simulates
+    all phenotype conditions, but also gapfills the model in all phenotype conditions.
+
+screenshots : []
+
+
+header : |
+    Some instructions here.
+
+step-descriptions :
+    step_2 : |
+        additional instructions/details regarding the step with id step_2
+
+
+description : |
+    <p>In this app, the user runs phenotype simulation, which not only simulates
+    all phenotype conditions, but also gapfills the model in all phenotype conditions.
+    Once the simulaiton is complete, the model can be adjusted to better fit phenotype data.</p>
+
+
+technical-description : |
+    <b> this is the technical description of the test app</b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+    
+    
+    
+    
