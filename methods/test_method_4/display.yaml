@@ -32,6 +32,7 @@ parameters :
     genome :
         ui-name    : Genome
         short-hint : The genome object you wish to test.
+        placeholder : select a genome
         long-hint  : |
             This is the Genome that will be used during tests.  Select one that is good.<br>
             For more details, see <a href="https://kbase.us">kbase</a>.
