@@ -83,6 +83,10 @@
           "target_property": "fastgapfill"
         },
         {
+          "constant_value": 30,
+          "target_property": "totalTimeLimit"
+        },
+        {
           "narrative_system_variable": "workspace",
           "target_property": "model_workspace"
         },
