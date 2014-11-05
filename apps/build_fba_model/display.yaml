@@ -3,7 +3,7 @@
 #
 name     : Build and Gapfill an FBA Model
 subtitle : |
-    In this App, you can build a model for a genome and gapfill it.
+    Starting with an Annotated Genome, build a metabolic model and add reactions until the model can predict growth.
 tooltip  : |
     In this App, you can build a model for a genome and gapfill it.
 
@@ -11,8 +11,16 @@ screenshots : []
 
 
 header : |
-    The model reconstruction app requires an annotated genome that can be used
-    to build your model.
+    <p>Starting with an annotated Genome, this KBase App will use the annotations to identify
+    which biochemical reactions are likely to occur in your organism.  Annotations are not always perfect,
+    so some essential reactions will likely be missed.  Gapfilling is an approach to automatically
+    add reactions until the model is complete enough to predict that the cell will grow under some conditions</p>
+    
+    <p>Begin by selecting an annotated Genome data object below, and provide a name for the new metabolic model.
+    Then click Run to start the App</p>
+    
+    <p>For more technical details about the methods used in this app, see the documentation on the 
+    <a href="https://kbase.us/developer-zone/documentation/fba-modeling-service/" target="_blank">kbase FBA tools</a>.</p>
 
 step-descriptions :
     step_2 : |
