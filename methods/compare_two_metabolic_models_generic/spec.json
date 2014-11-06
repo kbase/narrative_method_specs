@@ -41,7 +41,7 @@
     }
   } ],
   "behavior" : {
-    "service-mapping" : {
+    "none" : {
       "output_mapping" : [
         {
           "input_parameter": "param0",
