@@ -1,0 +1,84 @@
+{
+  "ver" : "1.0.0",
+  "authors" : [ "msneddon" ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "generic_service_calls" ],
+  "widgets" : {
+    "input" : null,
+    "output" : null
+  },
+  "parameters" : [ {
+    "id" : "genome",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+    }
+  }, {
+    "id" : "description",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+    }
+  }, {
+    "id" : "output_genome",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ],
+      "is_output_name":true
+    }
+  }, {
+    "id" : "int_value",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "123" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as": "int"
+    }
+  }, {
+    "id" : "float_value",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as": "float"
+    }
+  }, {
+    "id" : "advanced_float_value",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as": "float"
+    }
+  } ],
+  "behavior" : {
+    "service-mapping" : {
+      "url" : "https://kbase.us/services/narrative_method_store/rpc",
+      "name" : "NarrativeMethodStore",
+      "method" : "status",
+      "input_mapping" : [
+      ],
+      "output_mapping" : [
+      ]
+    }
+  }
+}

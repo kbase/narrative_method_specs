@@ -1,0 +1,94 @@
+#
+# Define basic display information
+#
+name     : Example Method
+subtitle : |
+    This is an example method to highlight the various supported input field options.
+tooltip  : |
+    This is an example method to highlight the various supported input field options.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    genome :
+        ui-name : |
+            Genome
+        short-hint : |
+            when allowed types are specified, a dropdown of typed objects in the current workspace appears
+        long-hint  : |
+            when allowed types are specified, a dropdown of typed objects in the current workspace appears
+        placeholder : |
+            placeholder text is possible
+
+
+    description :
+        ui-name : |
+            Description
+        short-hint : |
+            notice that if a field is marked as optional, no red indicator arrow is shown
+        long-hint  : |
+            notice that if a field is marked as optional, no red indicator arrow is shown
+            
+    output_genome :
+        ui-name : |
+            Output Genome
+        short-hint : |
+            if a text field indicates it is an output name, then it is ok to specify an object that does not yet exist
+        long-hint  : |
+            if a text field indicates it is an output name, then it is ok to specify an object that does not yet exist
+        placeholder : |
+            provide a name for the output
+            
+    int_value :
+        ui-name : |
+            Integer
+        short-hint : |
+            text fields can have default values, and can validate as an integer if specified in the spec
+        long-hint  : |
+            text fields can validate as an integer if specified in the spec
+            
+    float_value :
+        ui-name : |
+            Float
+        short-hint : |
+            same for float values- the input must be parsable as a number
+        long-hint  : |
+            same for float values- the input must be parsable as a number        
+    
+    advanced_float_value :
+        ui-name : |
+            Another Float
+        short-hint : |
+            fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value
+        long-hint  : |
+            fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value    
+    
+    
+
+description : |
+    <p>This description can be marked up with <b>html</b> and can have <a href="https://kbase.us">links</a></p>
+    <p>This description should be understandable by a novice biologist user.</p>
+
+technical-description : |
+    <p>A technical description should describe exactly what is going on under the covers, probably linking to
+    some publications, providing algorithms, etc.</p>
+    <pre>
+       # some psuedocode
+       # or examples should go here
+    </pre>
+    <p>This section should be for experts who actually want to know what it is you are doing in the method.</p>
+    
