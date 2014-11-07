@@ -69,6 +69,44 @@
     "text_options" : {
       "validate_as": "float"
     }
+  }, {
+    "id": "checkbox_example",
+    "optional":false,
+    "advanced":false,
+    "allow_multiple":false,
+    "default_values":[""],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id" : "dropdown_example",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "dropdown",
+    "dropdown_options":{
+      "options": [
+        {
+          "id": "yes",
+          "ui_name": "Yes"
+        },
+        {
+          "id": "no",
+          "ui_name": "No"
+        },
+        {
+          "id": "maybe",
+          "ui_name": "Maybe so"
+        },
+        {
+          "id": "complicated",
+          "ui_name": "It's complicated"
+        }
+      ]
+    }
   } ],
   "behavior" : {
     "service-mapping" : {

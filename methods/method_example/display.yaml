@@ -47,7 +47,7 @@ parameters :
         ui-name : |
             Output Genome
         short-hint : |
-            if a text field indicates it is an output name, then it is ok to specify an object that does not yet exist
+            if a text field indicates it is an output name, then it is ok to specify an object that does not yet exist; notice also that spaces are not allowed in names.
         long-hint  : |
             if a text field indicates it is an output name, then it is ok to specify an object that does not yet exist
         placeholder : |
@@ -77,6 +77,21 @@ parameters :
         long-hint  : |
             fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value    
     
+    checkbox_example :
+        ui-name : |
+            Want a checkbox?
+        short-hint : |
+            checkboxes allow you to return one of two possible values as configured in the spec
+        long-hint  : |
+            checkboxes allow you to return one of two possible values as configured in the spec
+            
+    dropdown_example :
+        ui-name : |
+            Dropdown Example
+        short-hint : |
+            dropdown fields are also possible to force selection of predefined options
+        long-hint  : |
+            dropdown fields are also possible to force selection of predefined options    
     
 
 description : |
