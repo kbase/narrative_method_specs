@@ -44,7 +44,7 @@
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ 1 ],
+    "default_values" : [ "checked" ],
     "field_type" : "checkbox",
     "checkbox_options" : {
       "checked_value": 1,
