@@ -1,0 +1,112 @@
+{
+  "name" : "Gapfill a Metabolic Model",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "generic_service_calls" ],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseModelTabs"
+  },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
+    }
+  }, {
+    "id" : "param1",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseBiochem.Media" ]
+    }
+  }, {
+    "id" : "param2",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
+    }
+  }, {
+    "id" : "param3",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "checked" ],
+    "field_type" : "checkbox",
+    "checkbox_options" : {
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id" : "param4",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFBA.FBAModel" ],
+      "is_output_name":true
+    }
+  } ],
+  "behavior" : {
+    "service-mapping" : {
+      "url" : "https://kbase.us/services/fba_model_services/",
+      "name" : "fbaModelServices",
+      "method" : "gapfill_model",
+      "input_mapping" : [
+        {
+          "input_parameter": "param0",
+          "target_property": "model"
+        },
+        {
+          "input_parameter": "param4",
+          "target_property": "out_model"
+        },
+        {
+          "constant_value": {},
+          "target_property": "formulation"
+        },
+        {
+          "constant_value": 1,
+          "target_property": "fastgapfill"
+        },
+        {
+          "constant_value": 30,
+          "target_property": "totalTimeLimit"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "model_workspace"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspace"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "param4",
+          "target_property": "id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws"
+        }
+      ]
+    }
+  }
+}

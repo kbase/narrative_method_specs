@@ -1,0 +1,7 @@
+{
+  "name" : "Errors",
+  "parent" : [ ],
+  "tooltip" : "Methods with critical errors",
+  "ver" : "1.0.0",
+  "visible" : true
+}

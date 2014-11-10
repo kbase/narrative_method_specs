@@ -1,0 +1,32 @@
+{
+    "ver":"0.1.0",
+    "authors": [ "chenry" ],
+    "contact": "help@kbase.us",
+    
+    "categories": [ "featured_apps" ],
+    
+    "steps" : [
+        {
+            "step-id": "step_2",
+            "method-id": "merge_to_community_model"
+        },
+        
+        {
+            "step-id": "step_3",
+            "method-id": "gapfill_a_metabolic_model",
+            "input_mapping" : [
+                {
+                    "step":"step_1",
+                    "is_from_input":true,
+                    "from":"param2",
+                    "to": "param0"
+                }
+            ]
+        }
+    ],
+    
+    
+    "behavior": {
+    }
+    
+}

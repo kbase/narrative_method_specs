@@ -1,0 +1,36 @@
+#
+# Define basic display information
+#
+name     : Build a Species Tree
+subtitle : |
+    In this App, you can build a species tree for a set of genomes.
+tooltip  : |
+    In this App, you can build a species tree for a set of genomes.
+
+screenshots : []
+
+
+header : |
+    Instructions appear here.
+
+step-descriptions :
+    step_2 : |
+        Construct a species tree containing all genomes in the supplied genome set
+    step_3 : |
+        Build a new genome set containing all genomes included in the species tree
+
+
+description : |
+    <p>In this app, you can build a species tree including your genome.</p>
+
+
+technical-description : |
+    <b> this is the technical description of the test app</b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+    
+    
+    
+    

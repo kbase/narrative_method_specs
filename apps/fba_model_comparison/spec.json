@@ -1,0 +1,19 @@
+{
+    "ver":"0.1.0",
+    "authors": [ "chenry" ],
+    "contact": "help@kbase.us",
+    
+    "categories": [ "featured_apps" ],
+    
+    "steps" : [
+        {
+            "step-id": "step_2",
+            "method-id": "compare_two_metabolic_models_generic"
+        }
+    ],
+    
+    
+    "behavior": {
+    }
+    
+}

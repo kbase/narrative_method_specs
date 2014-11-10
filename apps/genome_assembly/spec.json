@@ -1,0 +1,24 @@
+{
+    "ver":"0.1.0",
+    "authors": [ "chenry" ],
+    "contact": "help@kbase.us",
+    
+    "categories": [ "featured_apps" ],
+    
+    "steps" : [
+        {
+            "step-id": "step_2",
+            "method-id": "simplified_assembly_from_reads"
+        },
+        
+        {
+            "step-id": "step_3",
+            "method-id": "annotate_contigset"
+        }
+    ],
+    
+    
+    "behavior": {
+    }
+    
+}
