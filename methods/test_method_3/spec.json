@@ -87,11 +87,11 @@
                 "options": [
                     {
                         "value": "item0",
-                        "ui_name": "First"
+                        "display": "First"
                     },
                     {
                         "value": "item1",
-                        "ui_name": "Second"
+                        "display": "Second"
                     }
                 ]
             }
