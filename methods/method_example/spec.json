@@ -106,6 +106,7 @@
           "ui_name": "It's complicated"
         }
       ]
+    }
   }, {
     "id" : "list_of_things",
     "optional" : true,
