@@ -58,8 +58,8 @@
             
             "text_options":{
                 "valid_as":"float",
-                "min_int" : 0.5,
-                "max_int" : 20.2
+                "min_float" : 0.5,
+                "max_float" : 20.2
             }
         },
         {
