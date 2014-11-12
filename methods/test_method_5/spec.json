@@ -1,0 +1,100 @@
+{
+    "name":"Test Method 5",
+    "ver":"1.0.1",
+    "authors": [ "msneddon","wstester1" ],
+    "contact": "help@kbase.us",
+    
+    "categories": [ "testmethods" ],
+    
+    "widgets": {
+        "output":"KBaseDefaultViewer"
+    },
+    
+    "parameters": [
+        {
+            "id": "text_int_number",
+            
+            "optional":false,
+            "advanced":false,
+            "disabled":false,
+            "allow_multiple":false,
+            "default_values":[""],
+            
+            "field_type" : "text",
+            
+            "text_options":{
+                "valid_as":"int",
+                "min_int" : 0,
+                "max_int" : 20
+            }
+        },
+        {
+            "id": "text_int_number_disabled",
+            
+            "optional":false,
+            "advanced":false,
+            "disabled":true,
+            "allow_multiple":false,
+            "default_values":[""],
+            
+            "field_type" : "text",
+            
+            "text_options":{
+                "valid_as":"int",
+                "min_int" : 0,
+                "max_int" : 20
+            }
+        },
+        {
+            "id": "text_float_number",
+            
+            "optional":false,
+            "advanced":false,
+            "disabled":false,
+            "allow_multiple":false,
+            "default_values":[""],
+            
+            "field_type" : "text",
+            
+            "text_options":{
+                "valid_as":"float",
+                "min_int" : 0.5,
+                "max_int" : 20.2
+            }
+        },
+        {
+            "id": "regex",
+            
+            "optional":false,
+            "advanced":false,
+            "disabled":false,
+            "allow_multiple":false,
+            "default_values":[""],
+            
+            "field_type" : "text",
+            
+            "text_options":{
+                "valid_as":"float",
+                "regex_constraint" :
+                    [
+                        {
+                            "regex":"^good",
+                            "error_text":"input must start with good",
+                            "match":1
+                        },
+                        {
+                            "regex":"bad$",
+                            "error_text":"input cannot end in bad",
+                            "match":0
+                        }
+                    ]
+            }
+        }
+    ],
+    
+    "behavior": {
+        "python_class" : "Microbes Services",
+        "python_function":"NameOfTestFunction"
+    }
+    
+}
