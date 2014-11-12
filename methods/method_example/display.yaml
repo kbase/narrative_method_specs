@@ -93,6 +93,14 @@ parameters :
         long-hint  : |
             dropdown fields are also possible to force selection of predefined options    
     
+    list_of_things :
+        ui-name : |
+            Elements
+        short-hint : |
+            any text field can be marked to accept a list of things instead of one thing
+        long-hint  : |
+            any text field can be marked to accept a list of things instead of one thing
+    
 
 description : |
     <p>This description can be marked up with <b>html</b> and can have <a href="https://kbase.us">links</a></p>
