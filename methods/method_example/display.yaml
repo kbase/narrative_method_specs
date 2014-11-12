@@ -39,7 +39,7 @@ parameters :
         ui-name : |
             Description
         short-hint : |
-            notice that if a field is marked as optional, no red indicator arrow is shown
+            textareas are possible; also notice that no red indicator arrow is shown for optional fields
         long-hint  : |
             notice that if a field is marked as optional, no red indicator arrow is shown
             
