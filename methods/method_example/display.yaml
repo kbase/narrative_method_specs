@@ -95,7 +95,7 @@ parameters :
     
     list_of_things :
         ui-name : |
-            Elements
+            Thing
         short-hint : |
             any text field can be marked to accept a list of things instead of one thing
         long-hint  : |
