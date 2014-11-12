@@ -31,7 +31,7 @@ parameters :
             This is the Genome that will be used during tests.  Select one that is good.<br>
             For more details, see <a href="https://kbase.us">kbase</a>.
     param0.1 :
-        ui-name    : Param 0
+        ui-name    : Param 0.1
         short-hint : The genome object you wish to test.
         description  : |
             This is the Genome that will be used during tests.

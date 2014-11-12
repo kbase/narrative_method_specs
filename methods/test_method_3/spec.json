@@ -36,7 +36,7 @@
             
             "field_type" : "text",
             
-            "checkbox_options":{
+            "text_options":{
             }
         }, {
             "id": "param1",
