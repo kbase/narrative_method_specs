@@ -39,7 +39,7 @@ parameters :
         ui-name : |
             Description
         short-hint : |
-            notice that if a field is marked as optional, no red indicator arrow is shown
+            textareas are possible; also notice that no red indicator arrow is shown for optional fields
         long-hint  : |
             notice that if a field is marked as optional, no red indicator arrow is shown
             
@@ -92,6 +92,14 @@ parameters :
             dropdown fields are also possible to force selection of predefined options
         long-hint  : |
             dropdown fields are also possible to force selection of predefined options    
+    
+    list_of_things :
+        ui-name : |
+            Thing
+        short-hint : |
+            any text field can be marked to accept a list of things instead of one thing
+        long-hint  : |
+            any text field can be marked to accept a list of things instead of one thing
     
 
 description : |

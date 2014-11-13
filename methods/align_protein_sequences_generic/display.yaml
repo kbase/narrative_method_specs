@@ -1,0 +1,59 @@
+#
+# Define basic display information
+#
+name     : Align Protein Sequences
+subtitle : |
+    Construct multiple sequence alignment object based on set of proteins. [27]
+tooltip  : |
+    Construct multiple sequence alignment object based on set of proteins. [27]
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Feture Set Object
+        short-hint : |
+            An object with protein features [27.1]
+        long-hint  : |
+            An object with protein features [27.1]
+
+
+    param1 :
+        ui-name : |
+            Multiple Alignment Method
+        short-hint : |
+            name of alignment method (one of Muscle, Clustal, ProbCons, T-Coffee, Mafft), leave it blank for default Clustal method [27.2]
+        long-hint  : |
+            name of alignment method (one of Muscle, Clustal, ProbCons, T-Coffee, Mafft), leave it blank for default Clustal method [27.2]
+
+
+    param2 :
+        ui-name : |
+            Output MSA ID
+        short-hint : |
+            Multiple sequence alignment object ID. If empty, an ID will be chosen randomly. [27.3]
+        long-hint  : |
+            Multiple sequence alignment object ID. If empty, an ID will be chosen randomly. [27.3]
+
+
+description : |
+    Construct multiple sequence alignment object based on set of proteins. [27]
+
+
+technical-description : |
+    Construct multiple sequence alignment object based on set of proteins. [27]
