@@ -91,20 +91,20 @@
     "dropdown_options":{
       "options": [
         {
-          "id": "yes",
-          "ui_name": "Yes"
+          "value": "yes",
+          "display": "Yes"
         },
         {
-          "id": "no",
-          "ui_name": "No"
+          "value": "no",
+          "display": "No"
         },
         {
-          "id": "maybe",
-          "ui_name": "Maybe so"
+          "value": "maybe",
+          "display": "Maybe so"
         },
         {
-          "id": "complicated",
-          "ui_name": "It's complicated"
+          "value": "complicated",
+          "display": "It's complicated"
         }
       ]
     }
