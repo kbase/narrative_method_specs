@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : Name of the App
+name     : Create Metagenomic Heatmap
 subtitle : |
-    In this App, you can do stuff.
+    Generate a heatmap-dendrogram from annotation abundance data.
 tooltip  : |
-    In this App, you can do stuff.
+    Generate a heatmap-dendrogram from annotation abundance data.
 
 screenshots : []
 
@@ -15,11 +15,11 @@ header : |
 
 step-descriptions :
     step_1 : |
-        Description of step
+        Generate a heatmap-dendrogram from annotation abundance data.
 
 
 description : |
-    <p>In this App, you can do stuff.</p>
+    <p>In this App, you can generate a heatmap-dendrogram.</p>
 
 
 technical-description : |
