@@ -55,6 +55,16 @@ technical-description : |
     
     yada, yada, yada <br>
     
-    
+publications :
+    -
+        pmid: 2231712
+        display-text: Basic local alignment search tool.
+        link: http://www.ncbi.nlm.nih.gov/pubmed/2231712
+    -
+        display-text: Some made up paper
+    -
+        link: http://www.ncbi.nlm.nih.gov/pubmed/2231712
+    -
+        pmid: 2231712
     
     
