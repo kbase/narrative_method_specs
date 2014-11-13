@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : Name of the App
+name     : Metagenomic PCoA Analysis
 subtitle : |
-    In this App, you can do stuff.
+    Generate a PCoA from annotation abundance data.
 tooltip  : |
-    In this App, you can do stuff.
+    Generate a PCoA from annotation abundance data.
 
 screenshots : []
 
@@ -15,11 +15,11 @@ header : |
 
 step-descriptions :
     step_1 : |
-        Description of step
+        Generate a PCoA from annotation abundance data.
 
 
 description : |
-    <p>In this App, you can do stuff.</p>
+    <p>In this App, you can generate a PCoA plot.</p>
 
 
 technical-description : |
