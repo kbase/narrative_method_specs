@@ -92,19 +92,27 @@
       "options": [
         {
           "value": "yes",
-          "display": "Yes"
+          "display": "Yes",
+          "id": "yes",
+          "ui_name": "Yes"
         },
         {
           "value": "no",
-          "display": "No"
+          "display": "No",
+          "id": "no",
+          "ui_name": "No"
         },
         {
           "value": "maybe",
-          "display": "Maybe so"
+          "display": "Maybe so",
+          "id": "maybe",
+          "ui_name": "Maybe so"
         },
         {
           "value": "complicated",
-          "display": "It's complicated"
+          "display": "It's complicated",
+          "id": "complicated",
+          "ui_name": "It's complicated"
         }
       ]
     }
