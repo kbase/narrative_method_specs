@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : Name of the App
+name     : Normalize Metagenomic Abundance Profile
 subtitle : |
-    In this App, you can do stuff.
+    Compare normalized vs. raw abundance profiles.
 tooltip  : |
-    In this App, you can do stuff.
+    Compare normalized vs. raw abundance profiles.
 
 screenshots : []
 
@@ -15,19 +15,19 @@ header : |
 
 step-descriptions :
     step_1 : |
-        Description of step
+        Generate boxplots from raw abundance profile.
     step_2 : |
-        Description of step
+        View a slice of raw abundance profile as a table.
     step_3 : |
-        Description of step
+        Retrieve normalized abundance profile for selected metagenomes.
     step_4 : |
-        Description of step
+        Generate boxplots from normalized abundance profile.
     step_5 : |
-        Description of step
+        View a slice of normalized abundance profile as a table.
 
 
 description : |
-    <p>In this App, you can do stuff.</p>
+    <p>In this App, you can normalize an abundance profile.</p>
 
 
 technical-description : |
