@@ -24,11 +24,12 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
+    "field_type" : "textarea",
+    "textarea_options" : {
+      "n_rows" : 6
     }
-  }, {
+  },
+  {
     "id" : "output_genome",
     "optional" : true,
     "advanced" : false,
@@ -90,24 +91,34 @@
     "dropdown_options":{
       "options": [
         {
-          "id": "yes",
-          "ui_name": "Yes"
+          "value": "yes",
+          "display": "Yes"
         },
         {
-          "id": "no",
-          "ui_name": "No"
+          "value": "no",
+          "display": "No"
         },
         {
-          "id": "maybe",
-          "ui_name": "Maybe so"
+          "value": "maybe",
+          "display": "Maybe so"
         },
         {
-          "id": "complicated",
-          "ui_name": "It's complicated"
+          "value": "complicated",
+          "display": "It's complicated"
         }
       ]
     }
-  } ],
+  }, {
+    "id" : "list_of_things",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : true,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [  ]
+    }
+  }],
   "behavior" : {
     "service-mapping" : {
       "url" : "https://kbase.us/services/narrative_method_store/rpc",
