@@ -1,0 +1,32 @@
+#
+# Define basic display information
+#
+name     : Name of the App
+subtitle : |
+    In this App, you can do stuff.
+tooltip  : |
+    In this App, you can do stuff.
+
+screenshots : []
+
+
+header : |
+    Instructions appear here.
+
+step-descriptions :
+    step_1 : |
+        Description of step
+    step_2 : |
+        Description of step
+
+
+description : |
+    <p>In this App, you can do stuff.</p>
+
+
+technical-description : |
+    <b> this is the technical description of the app</b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
