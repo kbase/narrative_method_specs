@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : Name of the App
+name     : Generate Metagenomic Rank Abundance Plot
 subtitle : |
-    In this App, you can do stuff.
+    Generate rank abundance profile from annotation abundance data.
 tooltip  : |
-    In this App, you can do stuff.
+    Generate rank abundance profile from annotation abundance data.
 
 screenshots : []
 
@@ -15,11 +15,11 @@ header : |
 
 step-descriptions :
     step_1 : |
-        Description of step
+        Generate rank abundance profile from annotation abundance data.
 
 
 description : |
-    <p>In this App, you can do stuff.</p>
+    <p>In this App, you can generate a rank abundance profile.</p>
 
 
 technical-description : |
