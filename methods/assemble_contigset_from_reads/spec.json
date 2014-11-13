@@ -34,8 +34,9 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
+    "field_type" : "textarea",
+    "textarea_options" : {
+      "n_rows":1
     }
   }, {
     "id" : "output_contigset",
@@ -59,23 +60,33 @@
       "options": [
         {
           "value": "auto",
-          "display": "Automatic Assembly"
+          "display": "Automatic Assembly",
+          "id": "auto",
+          "ui_name": "Automatic Assembly"
         },
         {
           "value": "fast",
-          "display": "Fast Pipeline"
+          "display": "Fast Pipeline",
+          "id": "fast",
+          "ui_name": "Fast Pipeline"
         },
         {
           "value": "smart",
-          "display": "Smart Pipeline"
+          "display": "Smart Pipeline",
+          "id": "smart",
+          "ui_name": "Smart Pipeline"
         },
         {
           "value": "kiki",
-          "display": "Kiki Assembler"
+          "display": "Kiki Assembler",
+          "id": "kiki",
+          "ui_name": "Kiki Assembler"
         },
         {
           "value": "full_spades",
-          "display": "SPAdes Pipeline"
+          "display": "SPAdes Pipeline",
+          "id": "full_spades",
+          "ui_name": "SPAdes Pipeline"
         }
       ]
     }
@@ -90,23 +101,33 @@
       "options": [
         {
           "value": "velvet",
-          "display": "velvet"
+          "display": "velvet",
+          "id": "velvet",
+          "ui_name": "velvet"
         },
         {
           "value": "kiki",
-          "display": "kiki"
+          "display": "kiki",
+          "id": "kiki",
+          "ui_name": "kiki"
         },
         {
           "value": "spades",
-          "display": "spades"
+          "display": "spades",
+          "id": "spades",
+          "ui_name": "spades"
         },
         {
           "value": "a6",
-          "display": "a6"
+          "display": "a6",
+          "id": "a6",
+          "ui_name": "a6"
         },
         {
           "value": "idba",
-          "display": "idba"
+          "display": "idba",
+          "id": "idba",
+          "ui_name": "idba"
         }
       ]
     }
