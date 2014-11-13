@@ -2,6 +2,8 @@
 # Define basic display information
 #
 name     : Assemble Contigset from Reads
+subtitle  : |
+    Assembles a set of reads and outputs a set of contigs.
 tooltip  : |
     Assembles a set of reads and outputs a set of contigs.
 
