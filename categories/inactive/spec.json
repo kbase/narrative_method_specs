@@ -1,0 +1,7 @@
+{
+  "name" : "Inactive Methods",
+  "parent" : [ ],
+  "tooltip" : "Methods that are out of date",
+  "ver" : "1.0.0",
+  "visible" : true
+}
