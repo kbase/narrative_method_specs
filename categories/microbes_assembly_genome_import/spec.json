@@ -1,7 +1,0 @@
-{
-  "name" : "Microbes Assembly & Genome Import",
-  "parent" : [ ],
-  "tooltip" : "Demo workflow microbes service",
-  "ver" : "1.0.0",
-  "visible" : true
-}

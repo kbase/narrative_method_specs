@@ -3,7 +3,7 @@
   "authors" : [ "fangfang", "cbun" ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : [ "generic_service_calls" ],
+  "categories" : ["inactive"],
   "widgets" : {
     "input" : null,
     "output" : null

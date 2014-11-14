@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : [ "kbase_commands" ],
+  "categories" : ["inactive"],
   "widgets" : {
     "input" : null,
     "output" : "DisplayTextWidget"

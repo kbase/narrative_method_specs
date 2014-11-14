@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : [ "microbes_metabolic_modeling" ],
+  "categories" : ["inactive"],
   "widgets" : {
     "input" : null,
     "output" : "compmodels"

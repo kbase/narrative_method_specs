@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : [ "plants_coexpression_service" ],
+  "categories" : ["inactive"],
   "widgets" : {
     "input" : null,
     "output" : "kbasePlantsNTO"

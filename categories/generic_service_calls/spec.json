@@ -1,7 +1,0 @@
-{
-  "name" : "Generic Service Calls",
-  "parent" : [ ],
-  "tooltip" : "Functions including generic service calls",
-  "ver" : "1.0.0",
-  "visible" : true
-}
