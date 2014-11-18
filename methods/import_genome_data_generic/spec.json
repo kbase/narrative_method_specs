@@ -1,0 +1,86 @@
+{
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "generic_service_calls" ],
+  "widgets" : {
+    "input" : "GenomeImportWidget",
+    "output" : "GenomeAnnotation"
+  },
+  "parameters" : [ {
+    "id" : "gbkFile",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "file",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "ftpFolder",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "outputObject",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+    }
+  } ],
+  "behavior" : {
+    "service-mapping" : {
+      "url" : "http://localhost:11111/",
+      "name" : "GenomeComparison",
+      "method" : "import_genome",
+      "input_mapping" : [
+        {
+          "input_parameter": "gbkFile",
+          "target_property": "shock_node_id"
+        },
+        {
+          "input_parameter": "ftpFolder",
+          "target_property": "ftp_path"
+        },
+        {
+          "input_parameter": "outputObject",
+          "generated_value": {
+            "prefix": "genome_",
+            "suffix": ".ncbi"
+          },
+          "target_property": "out_genome_id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "out_genome_ws"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "outputObject",
+          "target_property": "ws_id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws_name"
+        },
+        {
+          "service_method_output_path": [],
+          "target_property": "job_id"
+        }
+      ]
+    }
+  },
+  "job_id_output_field": "job_id"
+}
