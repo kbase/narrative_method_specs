@@ -24,6 +24,14 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
+    mode :
+        ui-name : |
+            Hiddent tab parameter
+        short-hint : |
+            Hiddent tab parameter
+        long-hint  : |
+            Hiddent tab parameter
+
     gbkFile :
         ui-name : |
             Genbank file
