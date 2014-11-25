@@ -1,0 +1,96 @@
+#
+# Define basic display information
+#
+name     : Assemble Contigset from Reads
+subtitle  : |
+    Assembles a set of reads and outputs a set of contigs.
+tooltip  : |
+    Assembles a set of reads and outputs a set of contigs.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    assembly_input :
+        ui-name : |
+            AssemblyInput
+        short-hint : |
+            the assembly input object
+        long-hint  : |
+            the assembly input object
+        placeholder : |
+            select an AssemblyInput object
+
+    read_library :
+        ui-name : |
+            Read Library
+        short-hint : |
+            the read files can be directly specified here
+        long-hint  : |
+            the read files can be directly specified here
+
+    description :
+        ui-name : |
+            Description
+        short-hint : |
+            brief description of the assembly
+        long-hint  : |
+            brief description of the assembly
+
+    output_contigset :
+        ui-name : |
+            Output ContigSet
+        short-hint : |
+            the name of the output data
+        long-hint  : |
+            the name of the output data
+
+    recipe :
+        ui-name : |
+            Assembly Recipe
+        short-hint : |
+            an assembly recipe
+        long-hint  : |
+            an assembly recipe
+
+    assembler :
+        ui-name : |
+            Assembler
+        short-hint : |
+            the assembler to use
+        long-hint  : |
+            the assembler to use
+
+    pipeline :
+        ui-name : |
+            Assembly Pipeline
+        short-hint : |
+            the assembly pipeline to use
+        long-hint  : |
+            the assembly pipeline to use
+
+description : |
+    <p>This description can be marked up with <b>html</b> and can have <a href="https://kbase.us">links</a></p>
+    <p>This description should be understandable by a novice biologist user.</p>
+
+technical-description : |
+    <p>A technical description should describe exactly what is going on under the covers, probably linking to
+    some publications, providing algorithms, etc.</p>
+    <pre>
+       # some psuedocode
+       # or examples should go here
+    </pre>
+    <p>This section should be for experts who actually want to know what it is you are doing in the method.</p>
