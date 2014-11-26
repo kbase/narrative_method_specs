@@ -1,0 +1,19 @@
+{
+    "ver":"0.1.0",
+    "authors": [ "chenry" ],
+    "contact": "help@kbase.us",
+    
+    "categories": [ "featured_apps" ],
+    
+    "steps" : [
+        {
+            "step-id": "step_1",
+            "method-id": "assemble_contigset_from_reads"
+        }
+    ],
+    
+    
+    "behavior": {
+    }
+    
+}
