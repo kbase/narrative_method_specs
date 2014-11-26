@@ -20,10 +20,8 @@ header : |
     the contigs are annotated using RAST.
 
 step-descriptions :
-    step_2 : |
-        additional instructions/details regarding the step with id step_2
-    step_3 : |
-        additional instructions/details regarding the step with id step_3
+    step_1 : |
+        additional instructions/details regarding the step with id step 1
 
 
 description : |
