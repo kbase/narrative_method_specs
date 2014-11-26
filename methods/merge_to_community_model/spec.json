@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : [ "communities_services" ],
+  "categories" : ["inactive"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseModelTabs"

@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : [ "gwas_services" ],
+  "categories" : ["inactive"],
   "widgets" : {
     "input" : null,
     "output" : "Manhattan"

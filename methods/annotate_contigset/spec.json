@@ -1,16 +1,15 @@
 {
-  "name" : "Annotate ContigSet",
   "ver" : "1.0.0",
-  "authors" : [ ],
+  "authors" : [ "chenry", "olson" ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : [ "microbes_annotation" ],
+  "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "GenomeAnnotation"
+    "output" : "kbaseGenomeView"
   },
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "input_contigset",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -20,38 +19,87 @@
       "valid_ws_types" : [ "KBaseGenomes.ContigSet" ]
     }
   }, {
-    "id" : "param1",
+    "id" : "scientific_name",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
+    "field_type" : "text"
   }, {
-    "id" : "param2",
-    "optional" : false,
+    "id" : "genetic_code",
+    "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
+    "default_values" : [ "11" ],
+    "field_type" : "dropdown",
+     "dropdown_options":{
+      "options": [
+        {
+          "value": "11",
+          "display": "11 (Archaea, most Bacteria, most Virii, and some Mitochondria)",
+          "id": "11",
+          "ui_name": "11 (Archaea, most Bacteria, most Virii, and some Mitochondria)"
+        },
+        {
+          "value": "4",
+          "display": "4 (Mycoplasmaea, Spiroplasmaea, Ureoplasmaea, and Fungal Mitochondria)",
+          "id": "fast",
+          "ui_name": "4 (Mycoplasmaea, Spiroplasmaea, Ureoplasmaea, and Fungal Mitochondria)"
+        }
+      ]
     }
   }, {
-    "id" : "param3",
+    "id" : "output_genome",
     "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ],
+      "is_output_name":true
     }
-  } ],
+  }],
   "behavior" : {
-    "python_class" : "Microbes Annotation",
-    "python_function" : "Annotate ContigSet"
+    "service-mapping" : {
+      "url" : "impl",
+      "name" : "genome_annotation",
+      "method" : "annotate_ws_contigs.pl",
+      "input_mapping" : [
+        {
+          "input_parameter": "input_contigset",
+          "target_property": "input_contigset"
+        },
+        {
+          "input_parameter": "scientific_name",
+          "target_property": "scientific_name"
+        },
+        {
+          "input_parameter": "genetic_code",
+          "target_property": "genetic_code"
+        },
+        {
+          "input_parameter": "output_genome",
+          "generated_value": {
+            "prefix": "genome_"
+          },
+          "target_property": "output_genome"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspace"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "output_genome",
+          "target_property": "id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws"
+        }
+      ]
+    }
   }
 }

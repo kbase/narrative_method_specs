@@ -3,10 +3,10 @@
   "authors" : [ "msneddon" ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : [ "generic_service_calls" ],
+  "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : null
+    "output" : "kbaseDefaultNarrativeOutput"
   },
   "parameters" : [ {
     "id" : "genome",
@@ -91,18 +91,26 @@
     "dropdown_options":{
       "options": [
         {
+          "value": "yes",
+          "display": "Yes",
           "id": "yes",
           "ui_name": "Yes"
         },
         {
+          "value": "no",
+          "display": "No",
           "id": "no",
           "ui_name": "No"
         },
         {
+          "value": "maybe",
+          "display": "Maybe so",
           "id": "maybe",
           "ui_name": "Maybe so"
         },
         {
+          "value": "complicated",
+          "display": "It's complicated",
           "id": "complicated",
           "ui_name": "It's complicated"
         }

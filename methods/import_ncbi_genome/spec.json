@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : [ "microbes_assembly_genome_import" ],
+  "categories" : ["inactive"],
   "widgets" : {
     "input" : "NcbiGenomeImportInput",
     "output" : "GenomeAnnotation"

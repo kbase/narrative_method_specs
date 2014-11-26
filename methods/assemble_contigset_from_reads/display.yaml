@@ -2,8 +2,10 @@
 # Define basic display information
 #
 name     : Assemble Contigset from Reads
+subtitle  : |
+    Assembles a set of reads and outputs a set of contigs.
 tooltip  : |
-    This is an example method to highlight the various supported input field options.
+    Assembles a set of reads and outputs a set of contigs.
 
 screenshots :
     []
@@ -26,9 +28,9 @@ parameters :
         ui-name : |
             AssemblyInput
         short-hint : |
-            when allowed types are specified, a dropdown of typed objects in the current workspace appears
+            the assembly input object
         long-hint  : |
-            when allowed types are specified, a dropdown of typed objects in the current workspace appears
+            the assembly input object
         placeholder : |
             select an AssemblyInput object
 
@@ -36,51 +38,49 @@ parameters :
         ui-name : |
             Read Library
         short-hint : |
-            textareas are possible; also notice that no red indicator arrow is shown for optional fields
+            the read files can be directly specified here
         long-hint  : |
-            notice that if a field is marked as optional, no red indicator arrow is shown
+            the read files can be directly specified here
 
     description :
         ui-name : |
             Description
         short-hint : |
-            if a text field indicates it is an output name, then it is ok to specify an object that does not yet exist; notice also that spaces are not allowed in names.
+            brief description of the assembly
         long-hint  : |
-            if a text field indicates it is an output name, then it is ok to specify an object that does not yet exist
-        placeholder : |
-            provide a name for the output
+            brief description of the assembly
 
     output_contigset :
         ui-name : |
             Output ContigSet
         short-hint : |
-            fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value
+            the name of the output data
         long-hint  : |
-            fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value
+            the name of the output data
 
     recipe :
         ui-name : |
             Assembly Recipe
         short-hint : |
-            dropdown fields are also possible to force selection of predefined options
+            an assembly recipe
         long-hint  : |
-            dropdown fields are also possible to force selection of predefined options
+            an assembly recipe
 
     assembler :
         ui-name : |
             Assembler
         short-hint : |
-            dropdown fields are also possible to force selection of predefined options
+            the assembler to use
         long-hint  : |
-            dropdown fields are also possible to force selection of predefined options
+            the assembler to use
 
     pipeline :
         ui-name : |
             Assembly Pipeline
         short-hint : |
-            dropdown fields are also possible to force selection of predefined options
+            the assembly pipeline to use
         long-hint  : |
-            dropdown fields are also possible to force selection of predefined options
+            the assembly pipeline to use
 
 description : |
     <p>This description can be marked up with <b>html</b> and can have <a href="https://kbase.us">links</a></p>

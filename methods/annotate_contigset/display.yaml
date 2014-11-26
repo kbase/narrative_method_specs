@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : Annotate ContigSet
+name     : Annotate a Contig Set
 subtitle : |
-    Build a Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace. [3]
+    Build an annotated Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer.
 tooltip  : |
-    Build a Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace. [3]
+    Build an annotated Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer.
 
 screenshots :
     []
@@ -24,45 +24,44 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_contigset :
         ui-name : |
-            Contig Set Object
+            Contig Set
         short-hint : |
-            An object with contig data [3.1]
+            the set of contig sequences to annotate
         long-hint  : |
-            An object with contig data [3.1]
+            the set of contig sequences to annotate
 
 
-    param1 :
+    scientific_name :
         ui-name : |
             Scientific Name
         short-hint : |
-            enter the scientific name to assign to your new genome [3.2]
+            the scientific name to assign to the genome
         long-hint  : |
-            enter the scientific name to assign to your new genome [3.2]
+            the scientific name to assign to the genome
 
 
-    param2 :
+    genetic_code :
         ui-name : |
             Genetic Code
         short-hint : |
-            enter the genetic code for your new genome (default is 11) [3.2]
+            the genetic code used in translating to protein sequences
         long-hint  : |
-            enter the genetic code for your new genome (default is 11) [3.2]
+            the genetic code used in translating to protein sequences
 
 
-    param3 :
+    output_genome :
         ui-name : |
-            Output Genome ID
+            Output Genome Name
         short-hint : |
-            Annotated output genome ID. If empty, an ID will be chosen randomly. [3.3]
+            name to assign the output genome; if left blank, a name will be generated for you
         long-hint  : |
-            Annotated output genome ID. If empty, an ID will be chosen randomly. [3.3]
+            name to assign the output genome; if left blank, a name will be generated for you
 
 
 description : |
-    Build a Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace. [3]
-
+    Build an annotated Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer.
 
 technical-description : |
-    Build a Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace. [3]
+    Build an annotated Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer.
