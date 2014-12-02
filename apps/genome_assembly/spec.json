@@ -8,7 +8,7 @@
     "steps" : [
         {
             "step-id": "step_2",
-            "method-id": "simplified_assembly_from_reads"
+            "method-id": "assemble_contigset_from_reads"
         },
         
         {
