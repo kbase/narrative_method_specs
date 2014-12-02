@@ -152,10 +152,6 @@
           "target_property": "assembly_input"
         },
         {
-          "input_parameter": "read_library",
-          "target_property": "read_library"
-        },
-        {
           "input_parameter": "description",
           "target_property": "description"
         },
@@ -164,23 +160,11 @@
           "target_property": "recipe"
         },
         {
-          "input_parameter": "assembler",
-          "target_property": "assembler"
-        },
-        {
-          "input_parameter": "pipeline",
-          "target_property": "pipeline"
-        },
-        {
-          "narrative_system_variable": "workspace",
-          "target_property": "workspace"
-        }
-      ],
-      "output_mapping" : [
-        {
           "input_parameter": "output_contigset",
           "target_property": "output_contigset"
         }
+      ],
+      "output_mapping" : [
       ]
     }
   }
