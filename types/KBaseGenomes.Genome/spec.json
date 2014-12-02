@@ -1,0 +1,10 @@
+{
+    "ver":"0.1.0",
+    "view_method_ids":[
+        "view_genome"
+    ],
+    "import_method_ids":[
+        "import_genome_data_generic"
+    ],
+    "landing_page_url_prefix":"genomes"
+}
