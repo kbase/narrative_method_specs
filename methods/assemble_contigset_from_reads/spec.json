@@ -160,10 +160,6 @@
           "target_property": "description"
         },
         {
-          "input_parameter": "assembly_input",
-          "target_property": "assembly_input"
-        },
-        {
           "input_parameter": "recipe",
           "target_property": "recipe"
         },
