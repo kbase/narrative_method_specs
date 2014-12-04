@@ -62,9 +62,9 @@
   }],
   "behavior" : {
     "service-mapping" : {
-      "url" : "impl",
+      "url" : "",
       "name" : "genome_annotation",
-      "method" : "annotate_ws_contigs.pl",
+      "method" : "annotate_genome",
       "input_mapping" : [
         {
           "input_parameter": "input_contigset",
