@@ -13,7 +13,7 @@
         
         {
             "step-id": "step_3",
-            "method-id": "build_genome_set_from_tree",
+            "method-id": "build_genome_set_from_tree_generic",
             "input_mapping" : [
                 {
                     "step":"step_2",
