@@ -5,7 +5,7 @@ name     : Contigs
 subtitle : ContigSet object
 tooltip  : ContigSet object
 
-icon : 
+icon : contigset.jpg
 
 description : |
     <p>This type describes contig set.</p>
