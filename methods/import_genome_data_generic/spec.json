@@ -13,24 +13,24 @@
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "{\"gbkFile\":\"uploadFile\",\"ftpFolder\":\"importFtp\"}" ],
+    "default_values" : [ "" ],
     "field_type" : "tab",
     "text_options" : {
       "valid_ws_types" : [ ]
     },
-    "radio_options": {
+    "tab_options": {
         "options": [ {
             "id": "existingData",
             "ui_name": "Existing genome",
-            "ui_tooltip": ""
+            "param_ids": []
         }, {
             "id": "uploadFile",
             "ui_name": "Upload GBK file",
-            "ui_tooltip": ""
+            "param_ids": ["gbkFile"]
         }, {
             "id": "importFtp",
             "ui_name": "Import from FTP",
-            "ui_tooltip": ""
+            "param_ids": ["ftpFolder"]
         } ]
     }
   }, {
