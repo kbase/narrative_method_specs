@@ -32,7 +32,7 @@ parameters :
         long-hint  : |
             Hiddent tab parameter
 
-    gbkFile :
+    fastaFile :
         ui-name : |
             Fasta file
         short-hint : |
