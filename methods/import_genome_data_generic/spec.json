@@ -78,7 +78,7 @@
       "valid_ws_types" : [ "KBaseGenomes.Genome" ]
     }
   }, {
-    "id" : "outputObject",
+    "id" : "contigObject",
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
