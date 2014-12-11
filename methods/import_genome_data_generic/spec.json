@@ -77,6 +77,16 @@
     "text_options" : {
       "valid_ws_types" : [ "KBaseGenomes.Genome" ]
     }
+  }, {
+    "id" : "outputObject",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.ContigSet" ]
+    }
   } ],
   "behavior" : {
     "service-mapping" : {

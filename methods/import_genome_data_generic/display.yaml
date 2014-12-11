@@ -60,9 +60,17 @@ parameters :
         ui-name : |
             Genome Object ID
         short-hint : |
-            Output Genome ID. If empty, an ID will be chosen randomly.
+            Output Genome ID. Required field.
         long-hint  : |
-            Output Genome ID. If empty, an ID will be chosen randomly.
+            Output Genome ID. Required field.
+
+    contigObject :
+        ui-name : |
+            ContigSet Object ID
+        short-hint : |
+            Output ContigSet ID. If empty, an ID will be chosen based on Genome Object ID.
+        long-hint  : |
+            Output ContigSet ID. If empty, an ID will be chosen based on Genome Object ID.
 
 
 description : |
