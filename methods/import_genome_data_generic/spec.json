@@ -24,10 +24,6 @@
             "ui_name": "Existing genome",
             "param_ids": []
         }, {
-            "id": "uploadFasta",
-            "ui_name": "Upload Fasta file",
-            "param_ids": ["fastaFile"]
-        }, {
             "id": "uploadGbk",
             "ui_name": "Upload GBK file",
             "param_ids": ["gbkFile"]
@@ -36,16 +32,6 @@
             "ui_name": "Import from FTP",
             "param_ids": ["ftpFolder"]
         } ]
-    }
-  }, {
-    "id" : "fastaFile",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "file",
-    "text_options" : {
-      "valid_ws_types" : [ ]
     }
   }, {
     "id" : "gbkFile",

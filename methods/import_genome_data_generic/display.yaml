@@ -32,14 +32,6 @@ parameters :
         long-hint  : |
             Hiddent tab parameter
 
-    fastaFile :
-        ui-name : |
-            Fasta file
-        short-hint : |
-            File with dna data in Fasta format.
-        long-hint  : |
-            File with dna data in Fasta format.
-
     gbkFile :
         ui-name : |
             Genbank file
