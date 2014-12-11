@@ -34,6 +34,14 @@ parameters :
 
     gbkFile :
         ui-name : |
+            Fasta file
+        short-hint : |
+            File with dna data in Fasta format.
+        long-hint  : |
+            File with dna data in Fasta format.
+
+    gbkFile :
+        ui-name : |
             Genbank file
         short-hint : |
             File with genome data in GBK format or zip-file with contigs.
