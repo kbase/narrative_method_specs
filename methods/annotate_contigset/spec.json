@@ -82,7 +82,7 @@
       "valid_ws_types" : [ "KBaseGenomes.Genome" ],
       "is_output_name":true
     }
-  }. {
+  }, {
     "id": "call_features_rRNA_SEED",
     "optional":false,
     "advanced":true,
@@ -93,7 +93,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "call_features_tRNA_trnascan",
     "optional":false,
     "advanced":true,
@@ -104,7 +104,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "call_selenoproteins",
     "optional":false,
     "advanced":true,
@@ -115,7 +115,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "call_pyrrolysoproteins",
     "optional":false,
     "advanced":true,
@@ -126,7 +126,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "call_features_repeat_region_SEED",
     "optional":false,
     "advanced":true,
@@ -137,7 +137,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "call_features_insertion_sequences",
     "optional":false,
     "advanced":true,
@@ -148,7 +148,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "call_features_strep_suis_repeat",
     "optional":false,
     "advanced":true,
@@ -159,7 +159,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "call_features_strep_pneumo_repeat",
     "optional":false,
     "advanced":true,
@@ -170,7 +170,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "call_features_crispr",
     "optional":false,
     "advanced":true,
@@ -181,7 +181,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "call_features_CDS_glimmer3",
     "optional":false,
     "advanced":true,
@@ -192,7 +192,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "call_features_CDS_prodigal",
     "optional":false,
     "advanced":true,
@@ -203,7 +203,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "call_features_CDS_genemark",
     "optional":false,
     "advanced":true,
@@ -214,7 +214,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "annotate_proteins_kmer_v2",
     "optional":false,
     "advanced":true,
@@ -225,7 +225,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "kmer_v1_parameters",
     "optional":false,
     "advanced":true,
@@ -236,7 +236,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "annotate_proteins_similarity",
     "optional":false,
     "advanced":true,
@@ -247,7 +247,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "resolve_overlapping_features",
     "optional":false,
     "advanced":true,
@@ -258,7 +258,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "find_close_neighbors",
     "optional":false,
     "advanced":true,
@@ -269,7 +269,7 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
-  }. {
+  }, {
     "id": "call_features_prophage_phispy",
     "optional":false,
     "advanced":true,
