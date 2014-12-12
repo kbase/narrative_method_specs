@@ -60,7 +60,8 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseGenomes.ContigSet" ]
+      "valid_ws_types" : [ "KBaseGenomes.ContigSet" ],
+      "is_output_name" : true
     }
   } ],
   "behavior" : {
