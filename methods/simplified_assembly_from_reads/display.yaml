@@ -3,9 +3,9 @@
 #
 name     : Simplified Assembly From Reads
 subtitle : |
-    Use the AssemblyRAST service to assemble a set of contigs from sequenced reads. This starts a job that might run for several hours. When it finishes, the assembled ContigSet will be stored in your data space. [1]
+    Assemble set of short DNA reads into a set of contigs
 tooltip  : |
-    Use the AssemblyRAST service to assemble a set of contigs from sequenced reads. This starts a job that might run for several hours. When it finishes, the assembled ContigSet will be stored in your data space. [1]
+    Assemble set of short DNA reads into a set of contigs
 
 screenshots :
     []
@@ -26,15 +26,19 @@ method-suggestions :
 parameters :
     param0 :
         ui-name : |
-            Assembly Input file
+            AssemblyInput
         short-hint : |
-            A list of files with read information [1.1]
+           A data set of genomic reads generated from a sequencing platform (e.g. Illumina, PacBio).  The set can specify sets of paired-end and/or single-end reads.
         long-hint  : |
-            A list of files with read information [1.1]
+            A data set of genomic reads generated from a sequencing platform (e.g. Illumina, PacBio).  The set can specify sets of paired-end and/or single-end reads.
 
 
 description : |
-    Use the AssemblyRAST service to assemble a set of contigs from sequenced reads. This starts a job that might run for several hours. When it finishes, the assembled ContigSet will be stored in your data space. [1]
+    The Assembly Service can be used to perform an automatic genome assembly using the latest computational tools.  A single or multiple assemblers can be invoked for comparison.  The resulting assemblies are automatically processed via a collection of analysis tools, developed both internally and by the community, by which the service attempts to select the "best" assembly to suggest to the user.
+
+    Several workflows, or "recipes" are available that have been manually tuned and tested to offer workflows that fit certain dataset types or desired analysis criteria such as throughput or rigor.  The flexible nature of the compute engine also enables the rapid design and emulation of other popular protocols.
+
+    Without having to compose complicated scripts, custom workflows can be designed and executed in "pipeline" mode.  A workflow can be composed of a combination of quality filtering or trimming, error correction, adapter removal, assembly, scaffolding, or post-processing.
 
 
 technical-description : |
