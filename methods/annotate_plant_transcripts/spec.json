@@ -26,12 +26,13 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ],
+      "is_output_name":true
     }
   } ],
   "behavior" : {
     "service-mapping" : {
-      "url" : "https://kbase.us/services/genome_annotation",
+      "url" : "",
       "name" : "GenomeAnnotation",
       "method" : "rast-annotate-proteins-kmer-v1",
       "input_mapping" : [
