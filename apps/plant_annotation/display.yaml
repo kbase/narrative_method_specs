@@ -1,0 +1,37 @@
+#
+# Define basic display information
+#
+name     : Annotate a set of Plant Transcripts
+subtitle : |
+    In this app, the user annotates a set of plant transcripts in a genome object using PlantSEED annotation
+tooltip  : |
+    In this app, the user annotates a set of plant transcripts in a genome object using PlantSEED annotation
+
+screenshots : []
+
+header : |
+    This is some text that might appear at the top of this
+    app providing some instructions for the user to get started, hints, or
+    other warnings.
+
+step-descriptions :
+    step_1 : |
+        additional instructions/details regarding the step with id step_1
+
+
+description : |
+    <p>The genome annotation app requires a genome object containing
+    plant transcripts as input. You must have already loaded your
+    plant transcripts into KBase. You can use the widget below to
+    annotate your transcripts.</p>
+
+technical-description : |
+    <b>This is the technical description of the test app</b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+    
+    
+    
+    
