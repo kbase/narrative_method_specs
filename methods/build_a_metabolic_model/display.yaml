@@ -5,7 +5,12 @@ name     : Build a Metabolic Model
 tooltip  : |
     Use an annotated genome to produce a draft metabolic model.
 screenshots :
+<<<<<<< HEAD
+    - build_metabolic_model_input.png
+    - build_metabolic_model_output.png
+=======
     [build_metabolic_model_input.png; build_metabolic_model_output.png]
+>>>>>>> 5312bfdebc4ff9e74291f2465f8c227fa5974294
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
