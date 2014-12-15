@@ -1,0 +1,73 @@
+#
+# Define basic display information
+#
+name     : Import Genome
+subtitle : |
+    Upload a Genome and ContigSet from GBK-file (or files in case of zip) into your workspace. This function should be followed by adding KBase annotations into this Genome.
+tooltip  : |
+    Upload a Genome and ContigSet from GBK-file (or files in case of zip) into your workspace. This function should be followed by adding KBase annotations into this Genome.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    mode :
+        ui-name : |
+            Hiddent tab parameter
+        short-hint : |
+            Hiddent tab parameter
+        long-hint  : |
+            Hiddent tab parameter
+
+    gbkFile :
+        ui-name : |
+            Genbank file
+        short-hint : |
+            File with genome data in GBK format or zip-file with contigs.
+        long-hint  : |
+            File with genome data in GBK format or zip-file with contigs.
+
+    ftpFolder :
+        ui-name : |
+            FTP folder
+        short-hint : |
+            Path to FTP folder with genome GBK-file(s).
+        long-hint  : |
+            Path to FTP folder with genome GBK-file(s).
+
+    outputObject :
+        ui-name : |
+            Genome Object ID
+        short-hint : |
+            Output Genome ID. Required field.
+        long-hint  : |
+            Output Genome ID. Required field.
+
+    contigObject :
+        ui-name : |
+            ContigSet Object ID
+        short-hint : |
+            Output ContigSet ID. If empty, an ID will be chosen based on Genome Object ID.
+        long-hint  : |
+            Output ContigSet ID. If empty, an ID will be chosen based on Genome Object ID.
+
+
+description : |
+    Upload a Genome and ContigSet from GBK-file (or files in case of zip) into your workspace. This function should be followed by adding KBase annotations into this Genome.
+
+
+technical-description : |
+    Upload a Genome and ContigSet from GBK-file (or files in case of zip) into your workspace. This function should be followed by adding KBase annotations into this Genome.

@@ -1,0 +1,42 @@
+#
+# Define basic display information
+#
+name     : Contig Set Assembly
+subtitle : |
+    In this app, the user uploads raw reads from genome sequencing. These reads are
+    then assembled into contigs using a wide range of possible assembly techniqes. Lastly,
+    the contigs are annotated using RAST.
+tooltip  : |
+    In this app, the user uploads raw reads from genome sequencing. These reads are
+    then assembled into contigs using a wide range of possible assembly techniqes. Lastly,
+    the contigs are annotated using RAST.
+
+screenshots : []
+
+
+header : |
+    In this app, the user uploads raw reads from genome sequencing. These reads are
+    then assembled into contigs using a wide range of possible assembly techniqes. Lastly,
+    the contigs are annotated using RAST.
+
+step-descriptions :
+    step_1 : |
+        additional instructions/details regarding the step with id step 1
+
+
+description : |
+    <p>In this app, the user uploads raw reads from genome sequencing. These reads are
+    then assembled into contigs using a wide range of possible assembly techniqes. Lastly,
+    the contigs are annotated using RAST.</p>
+
+
+technical-description : |
+    <b> this is the technical description of the test app</b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
+    
+    
+    
+    

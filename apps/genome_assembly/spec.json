@@ -8,12 +8,20 @@
     "steps" : [
         {
             "step-id": "step_2",
-            "method-id": "simplified_assembly_from_reads"
+            "method-id": "assemble_contigset_from_reads"
         },
         
         {
             "step-id": "step_3",
-            "method-id": "annotate_contigset"
+            "method-id": "annotate_contigset",
+            "input_mapping" : [
+                {
+                    "step":"step_2",
+                    "is_from_input":true,
+                    "from":"output_contigset",
+                    "to": "input_contigset"
+                }
+            ]
         }
     ],
     

@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : Contigs
+subtitle : ContigSet object
+tooltip  : ContigSet object
+
+icon : contigset.jpg
+
+description : |
+    <p>This type describes contig set.</p>
+
+    
+    
+    

@@ -1,0 +1,79 @@
+{
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "importers" ],
+  "widgets" : {
+    "input" : "kbaseTabbedInput"
+  },
+  "parameters" : [ {
+    "id" : "mode",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "tab",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    },
+    "tab_options": {
+        "options": [ {
+            "id": "existingData",
+            "ui_name": "Existing contigset",
+            "param_ids": []
+        }, {
+            "id": "uploadFasta",
+            "ui_name": "Upload Fasta file",
+            "param_ids": ["fastaFile"]
+        }, {
+            "id": "importFtp",
+            "ui_name": "Import from FTP",
+            "param_ids": ["ftpFolder"]
+        } ]
+    }
+  }, {
+    "id" : "fastaFile",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "file",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "ftpFolder",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "outputObject",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.ContigSet" ],
+      "is_output_name" : true
+    }
+  } ],
+  "behavior" : {
+    "service-mapping" : {
+      "url" : "http://localhost:11111/",
+      "name" : "KBaseDataImport",
+      "method" : "upload",
+      "input_mapping" : [
+      ],
+      "output_mapping" : [
+      ]
+    }
+  },
+  "job_id_output_field": "job_id"
+}

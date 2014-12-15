@@ -1,0 +1,137 @@
+{
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "importers" ],
+  "widgets" : {
+    "input" : "GenomeImportWidget",
+    "output" : "GenomeAnnotation"
+  },
+  "parameters" : [ {
+    "id" : "mode",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "tab",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    },
+    "tab_options": {
+        "options": [ {
+            "id": "existingData",
+            "ui_name": "Existing genome",
+            "param_ids": []
+        }, {
+            "id": "uploadGbk",
+            "ui_name": "Upload GBK file",
+            "param_ids": ["gbkFile"]
+        }, {
+            "id": "importFtp",
+            "ui_name": "Import from FTP",
+            "param_ids": ["ftpFolder"]
+        } ]
+    }
+  }, {
+    "id" : "gbkFile",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "file",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "ftpFolder",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "outputObject",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ],
+      "is_output_name" : true
+    }
+  }, {
+    "id" : "contigObject",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.ContigSet" ],
+      "is_output_name" : true
+    }
+  } ],
+  "behavior" : {
+    "service-mapping" : {
+      "url" : "http://localhost:11111/",
+      "name" : "KBaseDataImport",
+      "method" : "upload",
+      "input_mapping" : [
+        {
+          "constant_value": "KBaseGenomes.GBK",
+          "target_argument_position": 0
+        },
+        {
+          "constant_value": "KBaseGenomes.Genome",
+          "target_argument_position": 1
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_argument_position": 2
+        },
+        {
+          "input_parameter": "outputObject",
+          "generated_value": {
+            "prefix": "genome_"
+          },
+          "target_argument_position": 3
+        },
+        {
+          "input_parameter": "mode",
+          "target_property": "mode",
+          "target_argument_position": 4
+        },
+        {
+          "input_parameter": "gbkFile",
+          "target_property": "shock_node_id",
+          "target_argument_position": 4
+        },
+        {
+          "input_parameter": "ftpFolder",
+          "target_property": "ftp_path",
+          "target_argument_position": 4
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "outputObject",
+          "target_property": "ws_id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws_name"
+        },
+        {
+          "service_method_output_path": ["0"],
+          "target_property": "job_id"
+        }
+      ]
+    }
+  },
+  "job_id_output_field": "job_id"
+}

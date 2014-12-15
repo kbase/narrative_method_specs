@@ -1,0 +1,32 @@
+#
+# Define basic display information
+#
+name     : Build Metagenomic Abundance Profile
+subtitle : |
+    Build and view annotation abundance data for selected metagenomes.
+tooltip  : |
+    Build and view annotation abundance data for selected metagenomes.
+
+screenshots : []
+
+
+header : |
+    Instructions appear here.
+
+step-descriptions :
+    step_1 : |
+        Retrieve annotation abundance data for selected metagenomes.
+    step_2 : |
+        View a slice of a BIOM format abundance profile as a table.
+
+
+description : |
+    <p>In this App, you can build and view abundance profile.</p>
+
+
+technical-description : |
+    <b> this is the technical description of the app</b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>

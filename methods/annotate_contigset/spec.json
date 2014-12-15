@@ -26,8 +26,31 @@
     "default_values" : [ "" ],
     "field_type" : "text"
   }, {
+    "id" : "domain",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "B" ],
+    "field_type" : "dropdown",
+     "dropdown_options":{
+      "options": [
+        {
+          "value": "B",
+          "display": "B (Bacteria)",
+          "id": "B",
+          "ui_name": "B (Bacteria)"
+        },
+        {
+          "value": "A",
+          "display": "A (Archaea)",
+          "id": "fast",
+          "ui_name": "A (Archaea)"
+        }
+      ]
+    }
+  }, {
     "id" : "genetic_code",
-    "optional" : true,
+    "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "11" ],
@@ -59,12 +82,211 @@
       "valid_ws_types" : [ "KBaseGenomes.Genome" ],
       "is_output_name":true
     }
+  }, {
+    "id": "call_features_rRNA_SEED",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "call_features_tRNA_trnascan",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "call_selenoproteins",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "call_pyrrolysoproteins",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "call_features_repeat_region_SEED",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "call_features_insertion_sequences",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["0"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "call_features_strep_suis_repeat",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "call_features_strep_pneumo_repeat",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "call_features_crispr",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "call_features_CDS_glimmer3",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "call_features_CDS_prodigal",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "call_features_CDS_genemark",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["0"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "annotate_proteins_kmer_v2",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "kmer_v1_parameters",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "annotate_proteins_similarity",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "resolve_overlapping_features",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "find_close_neighbors",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "call_features_prophage_phispy",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["0"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+
   }],
   "behavior" : {
     "service-mapping" : {
-      "url" : "impl",
+      "url" : "",
       "name" : "genome_annotation",
-      "method" : "annotate_ws_contigs.pl",
+      "method" : "annotate_genome",
       "input_mapping" : [
         {
           "input_parameter": "input_contigset",
@@ -75,8 +297,84 @@
           "target_property": "scientific_name"
         },
         {
+          "input_parameter": "domain",
+          "target_property": "domain"
+        },
+        {
           "input_parameter": "genetic_code",
           "target_property": "genetic_code"
+        },
+        {
+          "input_parameter": "call_features_rRNA_SEED",
+          "target_property": "call_features_rRNA_SEED"
+        },
+        {
+          "input_parameter": "call_features_tRNA_trnascan",
+          "target_property": "call_features_tRNA_trnascan"
+        },
+        {
+          "input_parameter": "call_selenoproteins",
+          "target_property": "call_selenoproteins"
+        },
+        {
+          "input_parameter": "call_pyrrolysoproteins",
+          "target_property": "call_pyrrolysoproteins"
+        },
+        {
+          "input_parameter": "call_features_repeat_region_SEED",
+          "target_property": "call_features_repeat_region_SEED"
+        },
+        {
+          "input_parameter": "call_features_insertion_sequences",
+          "target_property": "call_features_insertion_sequences"
+        },
+        {
+          "input_parameter": "call_features_strep_suis_repeat",
+          "target_property": "call_features_strep_suis_repeat"
+        },
+        {
+          "input_parameter": "call_features_strep_pneumo_repeat",
+          "target_property": "call_features_strep_pneumo_repeat"
+        },
+        {
+          "input_parameter": "call_features_crispr",
+          "target_property": "call_features_crispr"
+        },
+        {
+          "input_parameter": "call_features_CDS_glimmer3",
+          "target_property": "call_features_CDS_glimmer3"
+        },
+        {
+          "input_parameter": "call_features_CDS_prodigal",
+          "target_property": "call_features_CDS_prodigal"
+        },
+        {
+          "input_parameter": "call_features_CDS_genemark",
+          "target_property": "call_features_CDS_genemark"
+        },
+        {
+          "input_parameter": "annotate_proteins_kmer_v2",
+          "target_property": "annotate_proteins_kmer_v2"
+        },
+        {
+          "input_parameter": "kmer_v1_parameters",
+          "target_property": "kmer_v1_parameters"
+        },
+        {
+          "input_parameter": "annotate_proteins_similarity",
+          "target_property": "annotate_proteins_similarity"
+        },
+        {
+          "input_parameter": "resolve_overlapping_features",
+          "target_property": "resolve_overlapping_features"
+        },
+        {
+          "input_parameter": "find_close_neighbors",
+          "target_property": "find_close_neighbors"
+        },
+        {
+          "input_parameter": "call_features_prophage_phispy",
+          "target_property": "call_features_prophage_phispy"
         },
         {
           "input_parameter": "output_genome",

@@ -9,7 +9,7 @@
     "output" : "GenomeAnnotation"
   },
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "input_genome",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -19,59 +19,53 @@
       "valid_ws_types" : [ "KBaseGenomes.Genome" ]
     }
   }, {
-    "id" : "param1",
+    "id" : "output_genome",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseGenomes.Genome" ],
-      "is_output_name":true
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
     }
   } ],
   "behavior" : {
     "service-mapping" : {
-      "url" : "https://kbase.us/services/genome_comparison/jsonrpc",
-      "name" : "GenomeComparison",
-      "method" : "annotate_genome",
+      "url" : "https://kbase.us/services/genome_annotation",
+      "name" : "GenomeAnnotation",
+      "method" : "rast-annotate-proteins-kmer-v1",
       "input_mapping" : [
         {
-          "input_parameter": "param0",
-          "target_property": "in_genome_id"
+          "input_parameter": "input_genome",
+          "target_property": "input"
+        },
+        {
+          "input_parameter": "output_genome",
+          "target_property": "output"
         },
         {
           "narrative_system_variable": "workspace",
-          "target_property": "in_genome_ws"
+          "target_property": "workspace"
         },
         {
-          "input_parameter": "param1",
-          "target_property": "out_genome_id"
+          "constant_value": 8,
+          "target_property": "kmer-size"
         },
         {
-          "narrative_system_variable": "workspace",
-          "target_property": "out_genome_ws"
-        },
-        {
-          "constant_value": 1,
-          "target_property": "seed_annotation_only"
+          "constant_value": "Release70",
+          "target_property": "dataset-name"
         }
       ],
       "output_mapping" : [
         {
-          "input_parameter": "param1",
+          "input_parameter": "output_genome",
           "target_property": "ws_id"
         },
         {
           "narrative_system_variable": "workspace",
           "target_property": "ws_name"
-        },
-        {
-          "service_method_output_path": [],
-          "target_property": "job_id"
         }
       ]
     }
-  },
-  "job_id_output_field": "job_id"
+  }
 }

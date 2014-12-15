@@ -1,0 +1,14 @@
+{
+    "ver": "0.1.0",
+    "authors": [ "teharrison" ],
+    "contact": "help@kbase.us",
+    "categories": [ "featured_apps" ],
+    "steps" : [
+        {
+            "step-id": "step_1",
+            "method-id": "pcoa_from_abundance_profile"
+        }
+    ],
+    "behavior": {
+    }
+}
