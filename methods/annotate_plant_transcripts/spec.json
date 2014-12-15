@@ -1,0 +1,71 @@
+{
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "GenomeAnnotation"
+  },
+  "parameters" : [ {
+    "id" : "input_genome",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+    }
+  }, {
+    "id" : "output_genome",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+    }
+  } ],
+  "behavior" : {
+    "service-mapping" : {
+      "url" : "https://kbase.us/services/genome_annotation",
+      "name" : "GenomeAnnotation",
+      "method" : "rast-annotate-proteins-kmer-v1",
+      "input_mapping" : [
+        {
+          "input_parameter": "input_genome",
+          "target_property": "input"
+        },
+        {
+          "input_parameter": "output_genome",
+          "target_property": "output"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspace"
+        },
+        {
+          "constant_value": 8,
+          "target_property": "kmer-size"
+        },
+        {
+          "constant_value": "Release70",
+          "target_property": "dataset-name"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "output_genome",
+          "target_property": "ws_id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws_name"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "ver":"0.1.0",
+    "authors": [ "seaver" ],
+    "contact": "help@kbase.us",
+    
+    "categories": [],
+    
+    "steps" : [
+        {
+            "step-id": "step_1",
+            "method-id": "annotate_plant_transcripts"
+        }
+    ],
+    
+    
+    "behavior": {
+    }
+    
+}

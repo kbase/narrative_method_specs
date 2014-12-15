@@ -1,0 +1,50 @@
+#
+# Define basic display information
+#
+name     : Annotate Plant Genome
+subtitle : |
+    Annotate a Genome object with structural and functional gene annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace.
+tooltip  : |
+    Annotate a Genome object with structural and functional gene annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_genome :
+        ui-name : |
+            Genome ID
+        short-hint : |
+            Source genome ID
+        long-hint  : |
+            Source genome ID
+
+
+    output_genome :
+        ui-name : |
+            Output Genome ID
+        short-hint : |
+            Annotated output genome ID. If empty, annotation will be added into original genome object.
+        long-hint  : |
+            Annotated output genome ID. If empty, annotation will be added into original genome object.
+
+
+description : |
+    Annotate a Genome object with structural and functional gene annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace.
+
+
+technical-description : |
+    Annotate a Genome object with structural and functional gene annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace.
