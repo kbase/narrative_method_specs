@@ -2,13 +2,13 @@
 # Define basic display information
 #
 name     : Gapfill a Metabolic Model
-subtitle : |
-    Run Gapfilling on an metabolic model.  Gapfill attempts to identify the minimal number of reactions needed to add to your metabolic model in order for the model to predict growth in the given media condition (or in complete media if no Media is provided).  Gapfilling is an optimization procedure that can produce many possible solutions.  After a gapfilling job is submitted and run, you can view the results by viewing a metabolic model details, and incorporate the new reactions by running the Integrate Gapfill Solution function. [12]
 tooltip  : |
-    Run Gapfilling on an metabolic model.  Gapfill attempts to identify the minimal number of reactions needed to add to your metabolic model in order for the model to predict growth in the given media condition (or in complete media if no Media is provided).  Gapfilling is an optimization procedure that can produce many possible solutions.  After a gapfilling job is submitted and run, you can view the results by viewing a metabolic model details, and incorporate the new reactions by running the Integrate Gapfill Solution function. [12]
+    Identify the minimal set of biochemical reactions to add to a draft metabolic model to enable it produce biomass in a specified media. 
 
 screenshots :
-    []
+    
+    - gapfill_a_metabolic_model.png
+    - gapfill_a_metabolic_model_output.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
@@ -26,52 +26,77 @@ method-suggestions :
 parameters :
     param0 :
         ui-name : |
-            Metabolic Model
+            FBAModel
         short-hint : |
-            the metabolic model to gapfill [12.1]
+            A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass. 
         long-hint  : |
-            the metabolic model to gapfill [12.1]
+            A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass. 
 
 
     param1 :
         ui-name : |
             Media
         short-hint : |
-            the media condition in which to gapfill [12.2]
+            Media condition specifying the chemical compounds in which growth of the organism is to be analyzed.
         long-hint  : |
-            the media condition in which to gapfill [12.2]
+            Media condition specifying the chemical compounds in which growth of the organism is to be analyzed.
 
 
     param2 :
         ui-name : |
             Source Gapfill Model
         short-hint : |
-            model to gapfill from
+            A source gapfill model could be used to add additional reactions and compounds in gapfilling that are not found in the KBase gapfilling database.
         long-hint  : |
-            model to gapfill from
+            A source gapfill model could be used to add additional reactions and compounds in gapfilling that are not found in the KBase gapfilling database.
 
 
     param3 :
         ui-name : |
             Integrate Solution
         short-hint : |
-            automatically integrate solution (yes/no)
+            Check the box to integrate gapfilled reactions into the original model. Otherwise provide a new model name in the "Output Model ID" field below.
         long-hint  : |
-            automatically integrate solution (yes/no)
+            Check the box to integrate gapfilled reactions into the original model. Otherwise provide a new model name in the "Output Model ID" field below.
 
 
     param4 :
         ui-name : |
             Output Model ID
         short-hint : |
-            select a name for the model result object (optional)
+            A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass, including gapfilled reactions. Gapfilled reactions can be seen in the "Gapfill" tab of the output widget.
         long-hint  : |
-            select a name for the model result object (optional)
+            A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass, including gapfilled reactions. Gapfilled reactions can be 		seen in the "Gapfill" tab of the output widget.
 
 
 description : |
-    Run Gapfilling on an metabolic model.  Gapfill attempts to identify the minimal number of reactions needed to add to your metabolic model in order for the model to predict growth in the given media condition (or in complete media if no Media is provided).  Gapfilling is an optimization procedure that can produce many possible solutions.  After a gapfilling job is submitted and run, you can view the results by viewing a metabolic model details, and incorporate the new reactions by running the Integrate Gapfill Solution function. [12]
+    <p>Draft metabolic models usually have missing reactions (gaps) due to incomplete or incorrect functional genome annotations. As a result, these models are unable to generate biomass on media where the organism typically is capable of growing. Gapfilling algorithms can be used to overcome this problem. These algorithms tentatively fill metabolic gaps by identifying the minimal number of biochemical reactions to add to the draft metabolic model to enable it to produce biomass in a specified media. Gapfilling is an optimization procedure that can produce multiple solutions.</p> 
+
+    <p>Once a set of gapfilling solutions is successfully generated by this method, users can view these solutions. Viewing each gapfilling solution is recommended to determine the one that is most biologically plausible and best fits the physiological aspects of the given organism. The selected gapfill solution may then be integrated into the initial draft model using the Integrate Gapfill Solution method (See Integrate Gapfill Solution).</p>
+
+    <p>Biochemistry data used in the model construction pipeline have been gathered from multiple published metabolic models and from public databases such as KEGG, MetaCyc, EcoCyc, Plant BioCyc, Plant Metabolic Networks, and Gramene. Currently, the biochemistry database in KBase includes more than 13,000 biochemical reactions and over 16,000 metabolic compounds.</p>
 
 
 technical-description : |
-    Run Gapfilling on an metabolic model.  Gapfill attempts to identify the minimal number of reactions needed to add to your metabolic model in order for the model to predict growth in the given media condition (or in complete media if no Media is provided).  Gapfilling is an optimization procedure that can produce many possible solutions.  After a gapfilling job is submitted and run, you can view the results by viewing a metabolic model details, and incorporate the new reactions by running the Integrate Gapfill Solution function. [12]
+    <p>Description of parameters changeable by users</p>
+    <p><ol>
+        <li>Model Input
+            <p>The model to be gapfilled</p></li>
+        <li>Media
+			<p>TMedia condition to be used in gapfilling. If not selected, complete media is used by default.</p></li>
+        <li>Source Gapfill Model
+			<p>A source gapfill model could be used to add additional reactions and compounds in gapfilling that are not found in the KBase gapfilling database.</p></li>
+        <li>Integrate Solution
+			<p>Check the box to integrate gapfilled reactions into the original model. Otherwise provide a new model name in the "Output Model ID" field below.</p></li>
+        <li>Output Model ID
+			The name of the new gapfilled model if a user decided not to integrate the gapfilled reactions into the original model.</p></li>
+    </ol></p>
+    
+publications :
+    -
+        display-text: Satish Kumar V, Dasika MS, Maranas CD (2007) Optimization based automated curation of metabolic reconstructions. BMC Bioinformatics 8: 212. doi:10.1186/1471-2105-8-212.
+        link: http://www.biomedcentral.com/1471-2105/8/212
+    -
+        display-text: Reed JL, Patel TR, Chen KH, Joyce AR, Applebee MK, et al. (2006) Systems approach to refining genome annotation. Proceedings of the National Academy of Sciences 103: 17480–17484. doi:10.1073/pnas.0603364103.
+        link: http://www.pnas.org/content/103/46/17480.short
+
