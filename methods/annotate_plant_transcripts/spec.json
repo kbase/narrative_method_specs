@@ -33,7 +33,7 @@
   "behavior" : {
     "service-mapping" : {
       "url" : "",
-      "name" : "GenomeAnnotation",
+      "name" : "genome_annotation",
       "method" : "rast-annotate-proteins-kmer-v1",
       "input_mapping" : [
         {
