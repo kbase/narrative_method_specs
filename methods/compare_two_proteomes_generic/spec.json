@@ -44,7 +44,7 @@
     "service-mapping" : {
       "url" : "https://kbase.us/services/genome_comparison/jsonrpc",
       "name" : "GenomeComparison",
-      "method" : "annotate_genome",
+      "method" : "blast_proteomes",
       "input_mapping" : [
         {
           "input_parameter": "param0",
@@ -72,10 +72,6 @@
         {
           "narrative_system_variable": "workspace",
           "target_property": "output_ws"
-        },
-        {
-          "constant_value": 1,
-          "target_property": "seed_annotation_only"
         }
       ],
       "output_mapping" : [
