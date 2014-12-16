@@ -24,34 +24,24 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_model :
         ui-name : |
-            FBAModel
+            Input model
         short-hint : |
             A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass. 
         long-hint  : |
             A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass. 
 
 
-    param1 :
+    input_media :
         ui-name : |
-            Media
+            Growth condition
         short-hint : |
-            Media condition specifying the chemical compounds in which growth of the organism is to be analyzed.
+            Growth condition specifying the chemical compounds in which growth of the organism is to be analyzed.
         long-hint  : |
-            Media condition specifying the chemical compounds in which growth of the organism is to be analyzed.
+            Growth condition specifying the chemical compounds in which growth of the organism is to be analyzed.
 
-
-    param2 :
-        ui-name : |
-            Source Gapfill Model
-        short-hint : |
-            A source gapfill model could be used to add additional reactions and compounds in gapfilling that are not found in the KBase gapfilling database.
-        long-hint  : |
-            A source gapfill model could be used to add additional reactions and compounds in gapfilling that are not found in the KBase gapfilling database.
-
-
-    param3 :
+    integrate_solution :
         ui-name : |
             Integrate Solution
         short-hint : |
@@ -59,15 +49,29 @@ parameters :
         long-hint  : |
             Check the box to integrate gapfilled reactions into the original model. Otherwise provide a new model name in the "Output Model ID" field below.
 
-
-    param4 :
+    output_model :
         ui-name : |
-            Output Model ID
+            Output model ID
         short-hint : |
             A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass, including gapfilled reactions. Gapfilled reactions can be seen in the "Gapfill" tab of the output widget.
         long-hint  : |
             A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass, including gapfilled reactions. Gapfilled reactions can be 		seen in the "Gapfill" tab of the output widget.
 
+    comprehensive_gapfill :
+        ui-name : |
+            Comprehensive gapfill
+        short-hint : |
+            Check the box to attempt to activate all model reactions rather than just biomass.
+        long-hint  : |
+            Check the box to attempt to activate all model reactions rather than just biomass.
+
+    source_model :
+        ui-name : |
+            Source Gapfill Model
+        short-hint : |
+            A source gapfill model could be used to add additional reactions and compounds in gapfilling that are not found in the KBase gapfilling database.
+        long-hint  : |
+            A source gapfill model could be used to add additional reactions and compounds in gapfilling that are not found in the KBase gapfilling database.
 
 description : |
     <p>Draft metabolic models usually have missing reactions (gaps) due to incomplete or incorrect functional genome annotations. As a result, these models are unable to generate biomass on media where the organism typically is capable of growing. Gapfilling algorithms can be used to overcome this problem. These algorithms tentatively fill metabolic gaps by identifying the minimal number of biochemical reactions to add to the draft metabolic model to enable it to produce biomass in a specified media. Gapfilling is an optimization procedure that can produce multiple solutions.</p> 
@@ -83,12 +87,12 @@ technical-description : |
         <li>Model Input
             <p>The model to be gapfilled</p></li>
         <li>Media
-			<p>TMedia condition to be used in gapfilling. If not selected, complete media is used by default.</p></li>
+			<p>Media condition to be used in gapfilling. If not selected, complete media is used by default.</p></li>
         <li>Source Gapfill Model
 			<p>A source gapfill model could be used to add additional reactions and compounds in gapfilling that are not found in the KBase gapfilling database.</p></li>
         <li>Integrate Solution
 			<p>Check the box to integrate gapfilled reactions into the original model. Otherwise provide a new model name in the "Output Model ID" field below.</p></li>
-        <li>Output Model ID
+        <li>Output model ID
 			The name of the new gapfilled model if a user decided not to integrate the gapfilled reactions into the original model.</p></li>
     </ol></p>
     

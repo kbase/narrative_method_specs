@@ -4,13 +4,13 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["active"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseModelTabs"
   },
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "input_model",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -20,8 +20,8 @@
       "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
     }
   }, {
-    "id" : "param1",
-    "optional" : false,
+    "id" : "input_media",
+    "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
@@ -30,38 +30,113 @@
       "valid_ws_types" : [ "KBaseBiochem.Media" ]
     }
   }, {
-    "id" : "param2",
+    "id": "integrate_solution",
+    "optional":false,
+    "advanced":false,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id" : "output_model",
     "optional" : false,
     "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFBA.FBAModel" ],
+      "is_output_name":true
+    }
+  }, {
+    "id": "comprehensive_gapfill",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["0"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id" : "source_model",
+    "optional" : true,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
     }
-  }, {
-    "id" : "param3",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
-  }, {
-    "id" : "param4",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
   } ],
   "behavior" : {
-    "python_class" : "Microbes Metabolic Modeling",
-    "python_function" : "Gapfill a Metabolic Model"
+    "service-mapping" : {
+      "url" : "",
+      "name" : "KBaseFBAModeling",
+      "method" : "gapfill_model",
+      "input_mapping" : [
+        {
+          "input_parameter": "input_model",
+          "target_property": "model"
+        },
+        {
+          "input_parameter": "output_model",
+          "target_property": "out_model"
+        },
+        {
+          "input_parameter": "input_media",
+          "target_property": "formulation:formulation:media"
+        },
+        {
+          "input_parameter": "integrate_solution",
+          "target_property": "integrate_solution"
+        },
+        {
+          "input_parameter": "comprehensive_gapfill",
+          "target_property": "simultaneous"
+        },
+        {
+          "input_parameter": "source_model",
+          "target_property": "source_model"
+        },
+        {
+          "constant_value": 1,
+          "target_property": "fastgapfill"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspace"
+        }
+        ,
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "model_workspace"
+        }
+        ,
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "source_model_ws"
+        }
+        ,
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "formulation:formulation:media_workspace"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "output_model",
+          "target_property": "id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws"
+        }
+      ]
+    }
   }
 }
