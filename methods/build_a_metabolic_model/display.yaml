@@ -25,7 +25,7 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    genome :
+    input_genome :
         ui-name : |
             Genome
         short-hint : |
@@ -35,15 +35,41 @@ parameters :
         placeholder : |
             Genome name
 
-    output_genome :
+    output_model :
         ui-name : |
             FBAModel
         short-hint : |
-            A draft metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass 
+            A draft metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of biomass 
         description  : |
-           A draft metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass 
+            A draft metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of biomass 
         placeholder : |
-           Output Metabolic Model Name<
+            Output model Name
+           
+    core_model :
+        ui-name : |
+            Core only?
+        short-hint : |
+            Only include central-carbon reactions and metabolites in generated model 
+        description  : |
+            Only include central-carbon reactions and metabolites in generated model
+            
+    full_db_model :
+        ui-name : |
+            Full database?
+        short-hint : |
+            Include all reactions in the entire database in generated model
+        description  : |
+            Include all reactions in the entire database in generated model
+            
+    template_model :
+        ui-name : |
+            Template model
+        short-hint : |
+            Template model to use when reconstruction new model from genome annotations
+        description  : |
+            Template model to use when reconstruction new model from genome annotations
+        placeholder : |
+            Template model name
 
 description : |
     <p>A draft metabolic model serves as a starting point for subsequent curation and gapfilling.</p> 
