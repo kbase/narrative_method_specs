@@ -24,7 +24,7 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_model :
         ui-name : |
             Metabolic Model
         short-hint : |
@@ -33,7 +33,7 @@ parameters :
             the metabolic model to gapfill 
 
 
-    param1 :
+    input_media :
         ui-name : |
             Media
         short-hint : |
@@ -42,7 +42,7 @@ parameters :
             the media condition in which to gapfill
 
 
-    param2 :
+    source_model :
         ui-name : |
             Source Gapfill Model
         short-hint : |
@@ -51,7 +51,7 @@ parameters :
             model to gapfill from
 
 
-    param3 :
+    integrate_sol :
         ui-name : |
             Integrate Solution?
         short-hint : |
@@ -60,7 +60,7 @@ parameters :
             automatically integrate solution (yes/no)
 
 
-    param4 :
+    output_model :
         ui-name : |
             Output Model Name
         short-hint : |

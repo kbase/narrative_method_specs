@@ -20,21 +20,19 @@
     }
   }, {
     "id" : "output_genome",
-    "optional" : false,
+    "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseGenomes.Genome" ],
-      "is_output_name":true
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
     }
   } ],
   "behavior" : {
-    "service-mapping" : {
-      "url" : "",
-      "name" : "genome_annotation",
-      "method" : "rast-annotate-proteins-kmer-v1",
+    "script-mapping" : {
+      "module" : "genome_annotation",
+      "script" : "rast-annotate-proteins-kmer-v1",
       "input_mapping" : [
         {
           "input_parameter": "input_genome",
