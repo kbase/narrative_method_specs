@@ -10,7 +10,7 @@
     "output" : "kbaseModelTabs"
   },
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "input_model",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -20,17 +20,17 @@
       "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
     }
   }, {
-    "id" : "param1",
+    "id" : "input_media",
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "" ],
+    "default_values" : [ "complete" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ "KBaseBiochem.Media" ]
     }
   }, {
-    "id" : "param2",
+    "id" : "source_model",
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
@@ -40,7 +40,7 @@
       "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
     }
   }, {
-    "id" : "param3",
+    "id" : "integrate_sol",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -51,7 +51,7 @@
       "unchecked_value": 0
     }
   }, {
-    "id" : "param4",
+    "id" : "output_model",
     "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
@@ -69,16 +69,12 @@
       "method" : "gapfill_model",
       "input_mapping" : [
         {
-          "input_parameter": "param0",
+          "input_parameter": "input_model",
           "target_property": "model"
         },
         {
-          "input_parameter": "param4",
+          "input_parameter": "output_model",
           "target_property": "out_model"
-        },
-        {
-          "constant_value": {},
-          "target_property": "formulation"
         },
         {
           "constant_value": 1,
@@ -91,15 +87,11 @@
         {
           "narrative_system_variable": "workspace",
           "target_property": "model_workspace"
-        },
-        {
-          "narrative_system_variable": "workspace",
-          "target_property": "workspace"
         }
       ],
       "output_mapping" : [
         {
-          "input_parameter": "param4",
+          "input_parameter": "output_model",
           "target_property": "id"
         },
         {

@@ -9,7 +9,7 @@
     "output" : "kbaseModelTabs"
   },
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "input_genome",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -19,7 +19,7 @@
       "valid_ws_types" : [ "KBaseGenomes.Genome" ]
     }
   }, {
-    "id" : "param1",
+    "id" : "output_model",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -37,11 +37,11 @@
       "method" : "genome_to_fbamodel",
       "input_mapping" : [
         {
-          "input_parameter": "param0",
+          "input_parameter": "input_genome",
           "target_property": "genome"
         },
         {
-          "input_parameter": "param1",
+          "input_parameter": "output_model",
           "generated_value": {
             "prefix": "model_"
           },
@@ -54,7 +54,7 @@
       ],
       "output_mapping" : [
         {
-          "input_parameter": "param1",
+          "input_parameter": "output_model",
           "target_property": "id"
         },
         {

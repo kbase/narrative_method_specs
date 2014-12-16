@@ -3,9 +3,9 @@
 #
 name     : Build a Metabolic Model
 subtitle : |
-    Given an annotated Genome, build a draft metabolic model which can be analyzed with FBA.
+    This method uses an annotated genome to produce a draft metabolic model.
 tooltip  : |
-    Given an annotated Genome, build a draft metabolic model which can be analyzed with FBA.
+    This method uses an annotated genome to produce a draft metabolic model.
 
 screenshots :
     []
@@ -24,29 +24,36 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_genome :
         ui-name : |
-            Genome Name
+            Genome
         placeholder : |
             select a genome
         short-hint : |
-            this annotated genome will be used to build a new metabolic model
-        long-hint  : |
             Source genome name
+        long-hint  : |
+            A genome (set of DNA contigs) including structural and functional annotations
 
 
-    param1 :
+    output_model :
         ui-name : |
             Output Metabolic Model Name
         short-hint : |
             select a name for the generated metabolic model
         long-hint  : |
-            select a name for the generated metabolic model
+            A draft metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass 
 
 
 description : |
-    Given an annotated Genome, build a draft metabolic model which can be analyzed with FBA.
+    A draft metabolic model serves as an advanced starting point for a model curation. Models are built upon genome functional annotations where gene-protein associations are mapped onto biochemical reactions. The model can be used for Flux Balance Analysis (FBA) on a given media. Once a draft model is generated, the quality of the model could be improved by filling gaps in the metabolic network (gapfilling process) and by manual curation efforts. Gapfilling process involves of adding reactions and compounds to make biochemical network generate biomass. This "gapfilled"  version of the model could be further improved by reconciling phenotypic experimental growth data generated on different media conditions.   
 
 
 technical-description : |
     Given an annotated Genome, build a draft metabolic model which can be analyzed with FBA.
+    
+publications :
+    -
+        pmid: 20802497
+        display-text: Building a Metabolic Model
+        link: http://www.ncbi.nlm.nih.gov/pubmed/20802497
+    

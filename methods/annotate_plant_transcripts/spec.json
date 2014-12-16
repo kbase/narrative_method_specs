@@ -20,7 +20,7 @@
     }
   }, {
     "id" : "output_genome",
-    "optional" : false,
+    "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
@@ -32,7 +32,7 @@
   "behavior" : {
     "service-mapping" : {
       "url" : "https://kbase.us/services/genome_annotation",
-      "name" : "GenomeAnnotation",
+      "name" : "genome_annotation",
       "method" : "rast-annotate-proteins-kmer-v1",
       "input_mapping" : [
         {
