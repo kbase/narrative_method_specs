@@ -13,7 +13,7 @@
         
         {
             "step-id": "step_2",
-            "method-id": "gapfill_a_metabolic_model_generic",
+            "method-id": "gapfill_a_metabolic_model",
             "input_mapping" : [
                 {
                     "step":"step_1",
