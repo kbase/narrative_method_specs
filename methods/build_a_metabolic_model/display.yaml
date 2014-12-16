@@ -4,8 +4,12 @@
 name     : Build a Metabolic Model
 tooltip  : |
     Use an annotated genome to produce a draft metabolic model.
+
 screenshots :
-    [build_metabolic_model_input.png; build_metabolic_model_output.png]
+
+    - build_metabolic_model_input.png
+    - build_metabolic_model_output.png
+
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
@@ -48,6 +52,7 @@ description : |
     
     <p>The model construction methodology in KBase is primarily based on the Model SEED framework (Henry et. al) and the RASTtk genome annotation pipeline (Overbeek et. al). Biochemistry data used in the model construction pipeline have been gathered from multiple published metabolic models and from public databases such as KEGG, MetaCyc, EcoCyc, Plant BioCyc, Plant Metabolic Networks, and Gramene. Currently, the biochemistry database in KBase includes more than 13,000 biochemical reactions and over 16,000 metabolic compounds.</p>
     <p>Once a draft model is generated, model accuracy can be improved by filling gaps in the metabolic network (gapfilling process) and through manual curation efforts. The gapfilling process (see Gapfill a Metabolic Model) involves adding a minimal number of reactions and compounds to make the biochemical network capable of generating biomass. This "gapfilled" version of the model can be further improved by reconciling phenotypic experimental growth data generated on different media conditions (see Simulate Growth on a Phenotype Set).  The resulting metabolic model could be used to perform Flux Balance Analysis (see Run Flux Balance Analysis) on a given media formulation predicting flux distributions for all biochemical reactions in the network.</p>
+
 technical-description : |
     <p>Description of parameters changeable by users</p>
     <p><ol>

@@ -30,7 +30,7 @@
     }
   }, {
     "id" : "description",
-    "optional" : true,
+    "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
@@ -40,7 +40,7 @@
     }
   }, {
     "id" : "output_contigset",
-    "optional" : true,
+    "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
@@ -161,7 +161,10 @@
         },
         {
           "input_parameter": "output_contigset",
-          "target_property": "output_contigset"
+          "target_property": "output_contigset",
+          "generated_value": {
+            "prefix": "contigset_"
+          }
         }
       ],
       "output_mapping" : [
