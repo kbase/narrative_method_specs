@@ -8,7 +8,7 @@
     "steps" : [
         {
             "step-id": "step_1",
-            "method-id": "build_a_metabolic_model_generic"
+            "method-id": "build_a_metabolic_model"
         },
         
         {
