@@ -60,7 +60,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseFBA.ModelTemplate" ],
+      "valid_ws_types" : [ "KBaseFBA.ModelTemplate" ]
     }
   } ],
   "behavior" : {
