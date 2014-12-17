@@ -7,7 +7,7 @@
     
     "steps" : [
         {
-            "step-id": "step_2",
+            "step-id": "step_1",
             "method-id": "run_flux_balance_analysis"
         }
     ],
