@@ -14,7 +14,7 @@ header : |
     Some Instructions here.
 
 step-descriptions :
-    step_2 : |
+    step_1 : |
         additional instructions/details regarding the step with id step_2
 
 
