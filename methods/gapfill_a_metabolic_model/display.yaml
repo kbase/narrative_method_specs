@@ -55,7 +55,7 @@ parameters :
         short-hint : |
             A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass, including gapfilled reactions. Gapfilled reactions can be seen in the "Gapfill" tab of the output widget.
         long-hint  : |
-            A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass, including gapfilled reactions. Gapfilled reactions can be 		seen in the "Gapfill" tab of the output widget.
+            A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass, including gapfilled reactions. Gapfilled reactions can be seen in the "Gapfill" tab of the output widget.
 
     comprehensive_gapfill :
         ui-name : |
