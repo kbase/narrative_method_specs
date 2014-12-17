@@ -24,117 +24,131 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_model :
         ui-name : |
             Metabolic Model
         short-hint : |
-            the metabolic model you wish to run [10.1]
+            the metabolic model you wish to run
         long-hint  : |
-            the metabolic model you wish to run [10.1]
+            the metabolic model you wish to run
 
 
-    param1 :
+    input_media :
         ui-name : |
-            Media
+            Growth condition
         short-hint : |
-            the media condition in which to run FBA (optional, default is an artificial complete media) [10.2]
+            the growth condition in which to run FBA (optional, default is an artificial complete media) [10.2]
         long-hint  : |
-            the media condition in which to run FBA (optional, default is an artificial complete media) [10.2]
+            the growth condition in which to run FBA (optional, default is an artificial complete media) [10.2]
 
 
-    param2 :
+    output_fba :
         ui-name : |
-            Output FBA Result Name
+            Output FBA result ID
         short-hint : |
-            select a name for the FBA result object (optional) [10.3]
+            select a name for the FBA result object
         long-hint  : |
-            select a name for the FBA result object (optional) [10.3]
+            select a name for the FBA result object
 
-
-    param3 :
+    fva :
         ui-name : |
-            Gene Knockouts
+            Flux variability analysis?
         short-hint : |
-            specify gene knockouts by the gene's feature ID delimited by semicolons(;) (optional) [10.4]
+            check this box to minimize and maximize all reaction fluxes, enabling reaction classification
         long-hint  : |
-            specify gene knockouts by the gene's feature ID delimited by semicolons(;) (optional) [10.4]
-
-
-    param4 :
+            check this box to minimize and maximize all reaction fluxes, enabling reaction classification
+    
+    simulate_ko :
         ui-name : |
-            Reaction Knockouts
+            Simulate all single KO?
         short-hint : |
-            specify reaction knockouts by reaction ID delimited by semicolons(;) (optional) [10.5]
+            check this box to simulate all single gene knockouts to identifiy essential genes
         long-hint  : |
-            specify reaction knockouts by reaction ID delimited by semicolons(;) (optional) [10.5]
-
-
-    param5 :
-        ui-name : |
-            Default Maximum flux
-        short-hint : |
-            specify the default maximum intracellular flux (optional) [10.6]
-        long-hint  : |
-            specify the default maximum intracellular flux (optional) [10.6]
-
-
-    param6 :
-        ui-name : |
-            Default Min Uptake
-        short-hint : |
-            specify the default minumum nutrient uptake flux (optional) [10.7]
-        long-hint  : |
-            specify the default minumum nutrient uptake flux (optional) [10.7]
-
-
-    param7 :
-        ui-name : |
-            Default Max Uptake
-        short-hint : |
-            specify the default maximum nutrient uptake flux (optional) [10.8]
-        long-hint  : |
-            specify the default maximum nutrient uptake flux (optional) [10.8]
-
-
-    param8 :
+            check this box to simulate all single gene knockouts to identifiy essential genes
+    
+    minimize_flux :
         ui-name : |
             Minimize Flux?
         short-hint : |
-            set to 'yes' or '1' to run FBA by minimizing flux (optional) [10.9]
+            check this box to minimize the sum of all fluxes following biomass optimization
         long-hint  : |
-            set to 'yes' or '1' to run FBA by minimizing flux (optional) [10.9]
+            check this box to minimize the sum of all fluxes following biomass optimization
 
-
-    param9 :
+    gene_ko :
         ui-name : |
-            Maximize Objective?
+            Gene Knockouts
         short-hint : |
-            set to 'no' or '0' to run FBA without maximizing the objective function (optional) [10.10]
+            specify gene knockouts by the gene's feature ID (optional)
         long-hint  : |
-            set to 'no' or '0' to run FBA without maximizing the objective function (optional) [10.10]
+            specify gene knockouts by the gene's feature ID (optional)
 
 
-    param10 :
+    reaction_ko :
         ui-name : |
-            All rxns reversible?
+            Reaction Knockouts
         short-hint : |
-            set to 'yes' or '1' to allow all model reactions to be reversible (optional) [10.11]
+            specify reaction knockouts by reaction ID (e.g. rxn00001_c0) (optional)
         long-hint  : |
-            set to 'yes' or '1' to allow all model reactions to be reversible (optional) [10.11]
+            specify reaction knockouts by reaction ID (e.g. rxn00001_c0) (optional)
 
 
-    param11 :
+    additional_compounds :
+        ui-name : |
+            Addtional compounds
+        short-hint : |
+            specify additional compounds to add to media (optional)
+        long-hint  : |
+            specify additional compounds to add to media (optional)
+
+
+    maxc_uptake :
+        ui-name : |
+            Max carbon uptake
+        short-hint : |
+            maximum mols of carbon permitted for uptake (optional)
+        long-hint  : |
+            maximum mols of carbon permitted for uptake (optional)
+
+
+    maxn_uptake :
+        ui-name : |
+            Max nitrogen uptake
+        short-hint : |
+            maximum mols of nitrogen permitted for uptake (optional)
+        long-hint  : |
+            maximum mols of nitrogen permitted for uptake (optional)
+
+
+    maxs_uptake :
+        ui-name : |
+            Max sulfur uptake
+        short-hint : |
+            maximum mols of sulfur permitted for uptake (optional)
+        long-hint  : |
+            maximum mols of sulfur permitted for uptake (optional)
+    
+    
+    maxp_uptake :
+        ui-name : |
+            Max phosphate uptake
+        short-hint : |
+            maximum mols of phosphate permitted for uptake (optional)
+        long-hint  : |
+            maximum mols of phosphate permitted for uptake (optional)
+
+
+   input_prom :
         ui-name : |
             PROM constraint
         short-hint : |
-            specify the PROM constraint to apply for regulation of the metabolic model  (optional) [10.12]
+            specify the PROM constraint to apply for regulation of the metabolic model  (optional)
         long-hint  : |
-            specify the PROM constraint to apply for regulation of the metabolic model  (optional) [10.12]
+            specify the PROM constraint to apply for regulation of the metabolic model  (optional)
 
 
 description : |
-    Run Flux Balance Analysis on a metabolic model. [10]
+    Run Flux Balance Analysis on a metabolic model.
 
 
 technical-description : |
-    Run Flux Balance Analysis on a metabolic model. [10]
+    Run Flux Balance Analysis on a metabolic model.
