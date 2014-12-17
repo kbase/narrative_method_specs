@@ -137,7 +137,7 @@ parameters :
             maximum mols of phosphate permitted for uptake (optional)
 
 
-   input_prom :
+    input_prom :
         ui-name : |
             PROM constraint
         short-hint : |
