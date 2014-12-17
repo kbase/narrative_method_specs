@@ -87,22 +87,22 @@ technical-description : |
         <li>Model Input
             <p>The model to be gapfilled</p></li>
         <li>Media
-			<p>Media condition to be used in gapfilling. If not selected, complete media is used by default.</p></li>
+                        <p>Media condition to be used in gapfilling. If not selected, complete media is used by default.</p></li>
         <li>Source Gapfill Model
-			<p>A source gapfill model could be used to add additional reactions and compounds in gapfilling that are not found in the KBase gapfilling database.</p></li>
+                        <p>A source gapfill model could be used to add additional reactions and compounds in gapfilling that are not found in the KBase gapfilling database.</p></li>
         <li>Integrate Solution
-			<p>Check the box to integrate gapfilled reactions into the original model. Otherwise provide a new model name in the "Output Model ID" field below.</p></li>
+                        <p>Check the box to integrate gapfilled reactions into the original model. Otherwise provide a new model name in the "Output Model ID" field below.</p></li>
         <li>Output model ID
-			The name of the new gapfilled model if a user decided not to integrate the gapfilled reactions into the original model.</p></li>
+                        The name of the new gapfilled model if a user decided not to integrate the gapfilled reactions into the original model.</p></li>
     </ol></p>
     
 publications :
     -
         display-text: |
-	    Satish Kumar V, Dasika MS, Maranas CD (2007) Optimization based automated curation of metabolic reconstructions. BMC Bioinformatics 8: 212. doi:10.1186/1471-2105-8-212.
+            Satish Kumar V, Dasika MS, Maranas CD (2007) Optimization based automated curation of metabolic reconstructions. BMC Bioinformatics 8: 212. doi:10.1186/1471-2105-8-212.
         link: http://www.biomedcentral.com/1471-2105/8/212
     -
         display-text: |
-	    Reed JL, Patel TR, Chen KH, Joyce AR, Applebee MK, et al. (2006) Systems approach to refining genome annotation. Proceedings of the National Academy of Sciences 103: 17480-17484. doi:10.1073/pnas.0603364103.
+            Reed JL, Patel TR, Chen KH, Joyce AR, Applebee MK, et al. (2006) Systems approach to refining genome annotation. Proceedings of the National Academy of Sciences 103: 17480-17484. doi:10.1073/pnas.0603364103.
         link: http://www.pnas.org/content/103/46/17480.short
 
