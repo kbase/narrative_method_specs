@@ -67,7 +67,7 @@
     "service-mapping" : {
       "url" : "",
       "name" : "KBaseFBAModeling",
-      "method" : "genome_to_model",
+      "method" : "genome_to_fbamodel",
       "input_mapping" : [
         {
           "input_parameter": "input_genome",
