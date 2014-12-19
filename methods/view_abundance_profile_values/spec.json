@@ -10,16 +10,6 @@
     "output" : "GeneTableWidget"
   },
   "parameters" : [ {
-    "id" : "param0",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
-  }, {
     "id" : "param1",
     "optional" : false,
     "advanced" : false,
@@ -31,7 +21,7 @@
     }
   }, {
     "id" : "param2",
-    "optional" : false,
+    "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
@@ -41,7 +31,7 @@
     }
   }, {
     "id" : "param3",
-    "optional" : false,
+    "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
@@ -51,7 +41,7 @@
     }
   }, {
     "id" : "param4",
-    "optional" : false,
+    "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
@@ -61,7 +51,7 @@
     }
   }, {
     "id" : "param5",
-    "optional" : false,
+    "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
@@ -75,10 +65,17 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "yes" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
+    "field_type" : "dropdown",
+    "dropdown_options" : [
+        {
+            "value" : "yes",
+            "display" : "yes"
+        },
+        {
+            "value" : "no",
+            "display" : "no"
+        }
+    ]
   } ],
   "behavior" : {
     "python_class" : "Communities Services",

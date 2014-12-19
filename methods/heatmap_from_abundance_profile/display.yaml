@@ -24,15 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
-        ui-name : |
-            Workspace
-        short-hint : |
-            name of workspace, default is current
-        long-hint  : |
-            name of workspace, default is current
-
-
     param1 :
         ui-name : |
             Input Name
@@ -55,18 +46,18 @@ parameters :
         ui-name : |
             Distance
         short-hint : |
-            distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
+            distance / dissimilarity metric
         long-hint  : |
-            distance/dissimilarity metric, one of: bray-curtis, euclidean, maximum, manhattan, canberra, minkowski, difference
+            distance / dissimilarity metric
 
 
     param4 :
         ui-name : |
             Cluster
         short-hint : |
-            cluster method, one of: ward, single, complete, mcquitty, median, centroid
+            cluster method
         long-hint  : |
-            cluster method, one of: ward, single, complete, mcquitty, median, centroid
+            cluster method
 
 
     param5 :

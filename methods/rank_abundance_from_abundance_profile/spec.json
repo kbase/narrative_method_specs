@@ -10,16 +10,6 @@
     "output" : "GraphWidget"
   },
   "parameters" : [ {
-    "id" : "param0",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
-  }, {
     "id" : "param1",
     "optional" : false,
     "advanced" : false,
@@ -31,24 +21,74 @@
     }
   }, {
     "id" : "param2",
-    "optional" : false,
+    "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
+    "field_type" : "dropdown",
+    "dropdown_options" : [
+        {
+            "value" : "species",
+            "display" : "species"
+        },
+        {
+            "value" : "genus",
+            "display" : "genus"
+        },
+        {
+            "value" : "family",
+            "display" : "family"
+        },
+        {
+            "value" : "order",
+            "display" : "order"
+        },
+        {
+            "value" : "class",
+            "display" : "class"
+        },
+        {
+            "value" : "phylum",
+            "display" : "phylum"
+        },
+        {
+            "value" : "domain",
+            "display" : "domain"
+        },
+        {
+            "value" : "function",
+            "display" : "function"
+        },
+        {
+            "value" : "level3",
+            "display" : "level3"
+        },
+        {
+            "value" : "level2",
+            "display" : "level2"
+        },
+        {
+            "value" : "level1",
+            "display" : "level1"
+        }
+    ]
   }, {
     "id" : "param3",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "no" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
+    "field_type" : "dropdown",
+    "dropdown_options" : [
+        {
+            "value" : "no",
+            "display" : "no"
+        },
+        {
+            "value" : "yes",
+            "display" : "yes"
+        }
+    ]
   }, {
     "id" : "param4",
     "optional" : false,

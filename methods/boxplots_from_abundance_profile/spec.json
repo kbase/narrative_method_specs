@@ -10,16 +10,6 @@
     "output" : "ImageViewWidget"
   },
   "parameters" : [ {
-    "id" : "param0",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
-  }, {
     "id" : "param1",
     "optional" : false,
     "advanced" : false,
@@ -35,10 +25,17 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "no" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
+    "field_type" : "dropdown",
+    "dropdown_options" : [
+        {
+            "value" : "no",
+            "display" : "no"
+        },
+        {
+            "value" : "yes",
+            "display" : "yes"
+        }
+    ]
   } ],
   "behavior" : {
     "python_class" : "Communities Services",

@@ -24,15 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
-        ui-name : |
-            Workspace
-        short-hint : |
-            name of workspace, default is current
-        long-hint  : |
-            name of workspace, default is current
-
-
     param1 :
         ui-name : |
             Metagenome List
@@ -55,9 +46,9 @@ parameters :
         ui-name : |
             Annotation Type
         short-hint : |
-            annotation of abundance profile, one of 'taxa' or 'functions'
+            annotation type of abundance profile
         long-hint  : |
-            annotation of abundance profile, one of 'taxa' or 'functions'
+            annotation type of abundance profile
 
 
     param4 :
