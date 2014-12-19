@@ -1,12 +1,12 @@
 {
   "ver" : "1.0.0",
-  "authors" : [ ],
+  "authors" : [ "seaver" ],
   "contact" : "help@kbase.us",
   "visble" : true,
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "GenomeAnnotation"
+    "output" : "kbaseGenomeView"
   },
   "parameters" : [ {
     "id" : "input_genome",
@@ -33,6 +33,7 @@
     "script-mapping" : {
       "module" : "genome_annotation",
       "script" : "rast-annotate-proteins-kmer-v1",
+      "has_files" : true,
       "input_mapping" : [
         {
           "input_parameter": "input_genome",
@@ -47,7 +48,7 @@
           "target_property": "workspace"
         },
         {
-          "constant_value": 8,
+          "constant_value": "8",
           "target_property": "kmer-size"
         },
         {
