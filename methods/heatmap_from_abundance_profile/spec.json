@@ -26,16 +26,17 @@
     "allow_multiple" : false,
     "default_values" : [ "no" ],
     "field_type" : "dropdown",
-    "dropdown_options" : [
+    "dropdown_options" : {
+        "options": [
         {
             "value" : "no",
-            "display" "no"
+            "display" : "no"
         },
         {
             "value" : "yes",
             "display" : "yes"
         }
-    ]
+    ] }
   }, {
     "id" : "param3",
     "optional" : false,
@@ -43,10 +44,11 @@
     "allow_multiple" : false,
     "default_values" : [ "euclidean" ],
     "field_type" : "dropdown",
-    "dropdown_options" : [
+    "dropdown_options" : {
+        "options": [
         {
             "value" : "euclidean",
-            "display" "euclidean"
+            "display" : "euclidean"
         },
         {
             "value" : "bray-curtis",
@@ -54,7 +56,7 @@
         },
         {
             "value" : "maximum",
-            "display" "maximum"
+            "display" : "maximum"
         },
         {
             "value" : "manhattan",
@@ -72,7 +74,7 @@
             "value" : "difference",
             "display" : "difference"
         }
-    ]
+    ] }
   }, {
     "id" : "param4",
     "optional" : false,
@@ -80,31 +82,33 @@
     "allow_multiple" : false,
     "default_values" : [ "ward" ],
     "field_type" : "dropdown",
-    "dropdown_options" : [
+    "dropdown_options" : {
+        "options": [
         {
             "value" : "ward",
-            "display" "ward"
+            "display" : "ward"
         },
         {
             "value" : "single",
-            "display" "single"
+            "display" : "single"
         },
         {
             "value" : "complete",
-            "display" "complete"
+            "display" : "complete"
         },
         {
             "value" : "mcquitty",
-            "display" "mcquitty"
+            "display" : "mcquitty"
         },
         {
             "value" : "median",
-            "display" "median"
+            "display" : "median"
         },
         {
             "value" : "centroid",
-            "display" "centroid"
+            "display" : "centroid"
         }
+    ] }
   }, {
     "id" : "param5",
     "optional" : false,
@@ -112,16 +116,17 @@
     "allow_multiple" : false,
     "default_values" : [ "yes" ],
     "field_type" : "dropdown",
-    "dropdown_options" : [
+    "dropdown_options" : {
+        "options": [
         {
             "value" : "yes",
-            "display" "yes"
+            "display" : "yes"
         },
         {
             "value" : "no",
             "display" : "no"
         }
-    ]
+    ] }
   }, {
     "id" : "param6",
     "optional" : false,
@@ -129,16 +134,17 @@
     "allow_multiple" : false,
     "default_values" : [ "no" ],
     "field_type" : "dropdown",
-    "dropdown_options" : [
+    "dropdown_options" : {
+        "options": [
         {
             "value" : "no",
-            "display" "no"
+            "display" : "no"
         },
         {
             "value" : "yes",
             "display" : "yes"
         }
-    ]
+    ] }
   } ],
   "behavior" : {
     "python_class" : "Communities Services",
