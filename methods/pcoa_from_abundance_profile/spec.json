@@ -36,10 +36,11 @@
     "allow_multiple" : false,
     "default_values" : [ "euclidean" ],
     "field_type" : "dropdown",
-    "dropdown_options" : [
+    "dropdown_options" : {
+        "options": [
         {
             "value" : "euclidean",
-            "display" "euclidean"
+            "display" : "euclidean"
         },
         {
             "value" : "bray-curtis",
@@ -47,7 +48,7 @@
         },
         {
             "value" : "maximum",
-            "display" "maximum"
+            "display" : "maximum"
         },
         {
             "value" : "manhattan",
@@ -55,7 +56,7 @@
         },
         {
             "value" : "canberra",
-            "display" "canberra"
+            "display" : "canberra"
         },
         {
             "value" : "minkowski",
@@ -65,7 +66,7 @@
             "value" : "difference",
             "display" : "difference"
         }
-    ]
+    ] }
   }, {
     "id" : "param4",
     "optional" : false,
@@ -73,16 +74,17 @@
     "allow_multiple" : false,
     "default_values" : [ "no" ],
     "field_type" : "dropdown",
-    "dropdown_options" : [
+    "dropdown_options" : {
+        "options": [
         {
             "value" : "no",
-            "display" "no"
+            "display" : "no"
         },
         {
             "value" : "yes",
             "display" : "yes"
         }
-    ]
+    ] }
   } ],
   "behavior" : {
     "python_class" : "Communities Services",

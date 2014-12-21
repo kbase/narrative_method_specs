@@ -36,7 +36,8 @@
     "allow_multiple" : false,
     "default_values" : [ "taxa" ],
     "field_type" : "dropdown",
-    "dropdown_options" : [
+    "dropdown_options" : {
+        "options": [
         {
             "value" : "taxa",
             "display" : "taxanomic"
@@ -45,7 +46,7 @@
             "value" : "functions",
             "display" : "functional"
         }
-    ]
+    ] }
   }, {
     "id" : "param4",
     "optional" : false,
@@ -53,7 +54,8 @@
     "allow_multiple" : false,
     "default_values" : [ "genus" ],
     "field_type" : "dropdown",
-    "dropdown_options" : [
+    "dropdown_options" : {
+        "options": [
         {
             "value" : "genus",
             "display" : "genus"
@@ -94,7 +96,7 @@
             "value" : "level1",
             "display" : "level1"
         }
-    ]
+    ] }
   }, {
     "id" : "param5",
     "optional" : false,
@@ -102,7 +104,8 @@
     "allow_multiple" : false,
     "default_values" : [ "SEED" ],
     "field_type" : "dropdown",
-    "dropdown_options" : [
+    "dropdown_options" : {
+        "options": [
         {
             "value" : "SEED",
             "display" : "SEED"
@@ -175,7 +178,7 @@
             "value" : "KO",
             "display" : "KO"
         }
-    ]
+    ] }
   }, {
     "id" : "param6",
     "optional" : true,
@@ -193,7 +196,8 @@
     "allow_multiple" : false,
     "default_values" : [ "genus" ],
     "field_type" : "dropdown",
-    "dropdown_options" : [
+    "dropdown_options" : {
+        "options": [
         {
             "value" : "genus",
             "display" : "genus"
@@ -234,7 +238,7 @@
             "value" : "level1",
             "display" : "level1"
         }
-    ]
+    ] }
   }, {
     "id" : "param8",
     "optional" : true,
@@ -242,7 +246,8 @@
     "allow_multiple" : false,
     "default_values" : [ "SEED" ],
     "field_type" : "dropdown",
-    "dropdown_options" : [
+    "dropdown_options" : {
+        "options": [
         {
             "value" : "SEED",
             "display" : "SEED"
@@ -315,7 +320,7 @@
             "value" : "KO",
             "display" : "KO"
         }
-    ]
+    ] }
   }, {
     "id" : "param9",
     "optional" : false,
@@ -353,7 +358,8 @@
     "allow_multiple" : false,
     "default_values" : [ "yes" ],
     "field_type" : "dropdown",
-    "dropdown_options" : [
+    "dropdown_options" : {
+        "options": [
         {
             "value" : "yes",
             "display" : "yes"
@@ -362,7 +368,7 @@
             "value" : "no",
             "display" : "no"
         }
-    ]
+    ] }
   } ],
   "behavior" : {
     "python_class" : "Communities Services",
