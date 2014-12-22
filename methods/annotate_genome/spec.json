@@ -7,7 +7,7 @@
   "categories" : ["inactive"],
   "widgets" : {
     "input" : null,
-    "output" : "GenomeAnnotation"
+    "output" : "kbaseGenomeView"
   },
   "parameters" : [ {
     "id" : "param0",
