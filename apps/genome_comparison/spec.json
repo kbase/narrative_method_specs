@@ -13,7 +13,15 @@
         
         {
             "step-id": "step_3",
-            "method-id": "genome_comparison_from_pangenome"
+            "method-id": "genome_comparison_from_pangenome",
+            "input_mapping" : [
+                {
+                    "step":"step_2",
+                    "is_from_input":true,
+                    "from":"param1",
+                    "to": "param0"
+                }
+            ]
         }
     ],
     

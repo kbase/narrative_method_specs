@@ -66,7 +66,8 @@
     "allow_multiple" : false,
     "default_values" : [ "yes" ],
     "field_type" : "dropdown",
-    "dropdown_options" : [
+    "dropdown_options" : {
+        "options": [
         {
             "value" : "yes",
             "display" : "yes"
@@ -75,7 +76,7 @@
             "value" : "no",
             "display" : "no"
         }
-    ]
+    ] }
   } ],
   "behavior" : {
     "python_class" : "Communities Services",

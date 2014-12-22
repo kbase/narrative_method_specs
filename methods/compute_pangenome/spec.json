@@ -27,7 +27,8 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseGenomes.Pangenome" ]
+      "valid_ws_types" : [ "KBaseGenomes.Pangenome" ],
+      "is_output_name":true
     }
   } ],
   "behavior" : {
