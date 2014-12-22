@@ -1,0 +1,7 @@
+{
+  "name" : "Viewing Methods",
+  "parent" : [ ],
+  "tooltip" : "Methods that show objects",
+  "ver" : "1.0.0",
+  "visible" : false
+}

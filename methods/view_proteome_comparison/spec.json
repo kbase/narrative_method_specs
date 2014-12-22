@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["viewers"],
   "widgets" : {
     "input" : null,
     "output" : "GenomeComparisonWidget"
@@ -21,7 +21,17 @@
     }
   } ],
   "behavior" : {
-    "python_class" : "Microbes Comparative Genomics",
-    "python_function" : "View Proteome Comparison"
+    "none" : {
+      "output_mapping" : [
+        {
+          "input_parameter": "param0",
+          "target_property": "ws_id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws_name"
+        }
+      ]
+    }
   }
 }

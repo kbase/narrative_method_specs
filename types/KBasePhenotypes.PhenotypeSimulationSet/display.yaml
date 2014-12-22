@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : Phenotype simulation set
+subtitle : Phenotype simulation set object
+tooltip  : Phenotype simulation set object
+
+icon : none
+
+description : |
+    <p>This type describes phenotype simulation set.</p>
+
+    
+    
+    
