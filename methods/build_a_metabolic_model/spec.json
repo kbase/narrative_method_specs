@@ -96,7 +96,7 @@
       ],
       "output_mapping" : [
         {
-          "input_parameter": "output_model",
+          "input_parameter": "model",
           "target_property": "id"
         },
         {
