@@ -1,54 +1,37 @@
 {
-  "name" : "Retrieve Annotation Abundance Profile",
+  "name" : "Retrieve Taxonomic Abundance Profile",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "ImageViewWidget"
+    "output" : "DataDump"
   },
   "parameters" : [ {
-    "id" : "param1",
+    "id" : "input_metagenomes",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "Communities.Collection" ]
+      "valid_ws_types" : [ "Communities.Collection", "Communities.MetagenomeSet" ]
     }
   }, {
-    "id" : "param2",
+    "id" : "output_profile",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
+      "valid_ws_types" : [ "Communities.TaxonomicProfile" ],
+      "is_output_name": true
     }
   }, {
-    "id" : "param3",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "taxa" ],
-    "field_type" : "dropdown",
-    "dropdown_options" : {
-        "options": [
-        {
-            "value" : "taxa",
-            "display" : "taxanomic"
-        },
-        {
-            "value" : "functions",
-            "display" : "functional"
-        }
-    ] }
-  }, {
-    "id" : "param4",
+    "id" : "level",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -79,26 +62,10 @@
         {
             "value" : "domain",
             "display" : "domain"
-        },
-        {
-            "value" : "function",
-            "display" : "function"
-        },
-        {
-            "value" : "level3",
-            "display" : "level3"
-        },
-        {
-            "value" : "level2",
-            "display" : "level2"
-        },
-        {
-            "value" : "level1",
-            "display" : "level1"
         }
     ] }
   }, {
-    "id" : "param5",
+    "id" : "source",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -161,28 +128,12 @@
         {
             "value" : "M5RNA",
             "display" : "M5RNA"
-        },
-        {
-            "value" : "Subsystems",
-            "display" : "Subsystems"
-        },
-        {
-            "value" : "NOG",
-            "display" : "NOG"
-        },
-        {
-            "value" : "COG",
-            "display" : "COG"
-        },
-        {
-            "value" : "KO",
-            "display" : "KO"
         }
     ] }
   }, {
-    "id" : "param6",
+    "id" : "filter_list",
     "optional" : true,
-    "advanced" : false,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
@@ -190,38 +141,14 @@
       "valid_ws_types" : [ "Communities.Data" ]
     }
   }, {
-    "id" : "param7",
+    "id" : "filter_level",
     "optional" : true,
-    "advanced" : false,
+    "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "genus" ],
+    "default_values" : [ "level3" ],
     "field_type" : "dropdown",
     "dropdown_options" : {
         "options": [
-        {
-            "value" : "genus",
-            "display" : "genus"
-        },
-        {
-            "value" : "family",
-            "display" : "family"
-        },
-        {
-            "value" : "order",
-            "display" : "order"
-        },
-        {
-            "value" : "class",
-            "display" : "class"
-        },
-        {
-            "value" : "phylum",
-            "display" : "phylum"
-        },
-        {
-            "value" : "domain",
-            "display" : "domain"
-        },
         {
             "value" : "function",
             "display" : "function"
@@ -240,70 +167,14 @@
         }
     ] }
   }, {
-    "id" : "param8",
+    "id" : "filter_source",
     "optional" : true,
-    "advanced" : false,
+    "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "SEED" ],
+    "default_values" : [ "Subsystems" ],
     "field_type" : "dropdown",
     "dropdown_options" : {
         "options": [
-        {
-            "value" : "SEED",
-            "display" : "SEED"
-        },
-        {
-            "value" : "RefSeq",
-            "display" : "RefSeq"
-        },
-        {
-            "value" : "GenBank",
-            "display" : "GenBank"
-        },
-        {
-            "value" : "IMG",
-            "display" : "IMG"
-        },
-        {
-            "value" : "TrEMBL",
-            "display" : "TrEMBL"
-        },
-        {
-            "value" : "SwissProt",
-            "display" : "SwissProt"
-        },
-        {
-            "value" : "PATRIC",
-            "display" : "PATRIC"
-        },
-        {
-            "value" : "KEGG",
-            "display" : "KEGG"
-        },
-        {
-            "value" : "M5NR",
-            "display" : "M5NR"
-        },
-        {
-            "value" : "RDP",
-            "display" : "RDP"
-        },
-        {
-            "value" : "Greengenes",
-            "display" : "Greengenes"
-        },
-        {
-            "value" : "LSU",
-            "display" : "LSU"
-        },
-        {
-            "value" : "SSU",
-            "display" : "SSU"
-        },
-        {
-            "value" : "M5RNA",
-            "display" : "M5RNA"
-        },
         {
             "value" : "Subsystems",
             "display" : "Subsystems"
@@ -322,9 +193,9 @@
         }
     ] }
   }, {
-    "id" : "param9",
+    "id" : "evalue",
     "optional" : false,
-    "advanced" : false,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "5" ],
     "field_type" : "text",
@@ -332,9 +203,9 @@
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param10",
+    "id" : "identity",
     "optional" : false,
-    "advanced" : false,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "60" ],
     "field_type" : "text",
@@ -342,36 +213,81 @@
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param11",
+    "id" : "length",
     "optional" : false,
-    "advanced" : false,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "15" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ]
     }
-  }, {
-    "id" : "param12",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "yes" ],
-    "field_type" : "dropdown",
-    "dropdown_options" : {
-        "options": [
-        {
-            "value" : "yes",
-            "display" : "yes"
-        },
-        {
-            "value" : "no",
-            "display" : "no"
-        }
-    ] }
   } ],
   "behavior" : {
-    "python_class" : "Communities Services",
-    "python_function" : "Retrieve Annotation Abundance Profile"
+    "script-mapping" : {
+        "module" : "communities_api",
+        "script" : "mg-compare-taxa",
+        "has_files": true,
+        "input_mapping" : [
+            {
+                "input_parameter": "input_metagenomes",
+                "target_property": "ids"
+            },
+            {
+                "input_parameter": "output_profile",
+                "target_property": "output"
+            },
+            {
+                "input_parameter": "level",
+                "target_property": "level"
+            },
+            {
+                "input_parameter": "source",
+                "target_property": "source"
+            },
+            {
+                "input_parameter": "filter_list",
+                "target_property": "intersect_name"
+            },
+            {
+                "input_parameter": "filter_level",
+                "target_property": "intersect_level"
+            },
+            {
+                "input_parameter": "filter_source",
+                "target_property": "intersect_source"
+            },
+            {
+                "input_parameter": "evalue",
+                "target_property": "evalue"
+            },
+            {
+                "input_parameter": "identity",
+                "target_property": "identity"
+            },
+            {
+                "input_parameter": "length",
+                "target_property": "length"
+            },
+            {
+                "narrative_system_variable": "token",
+                "target_property": "token"
+            }
+        ],
+        "output_mapping" : [
+            {
+                "input_parameter": "output_profile",
+                "target_property": "id"
+            },
+            {
+                "narrative_system_variable": "workspace",
+                "target_property": "ws"
+            },
+            {
+                "narrative_system_variable": "token",
+                "target_property": "auth"
+            }
+        ]
+    }
   }
 }
