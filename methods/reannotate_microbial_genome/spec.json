@@ -1,5 +1,5 @@
 {
-  "name" : "Reannotate Microbial Genome",
+  "name" : "Reannotate microbial genome",
   "authors" : [ "chenry", "olson" ],
   "contact" : "help@kbase.us",
   "visble" : true,
@@ -133,7 +133,7 @@
     "optional":false,
     "advanced":true,
     "allow_multiple":false,
-    "default_values":["1"],
+    "default_values":["0"],
     "field_type" : "checkbox",
     "checkbox_options":{
       "checked_value": 1,
@@ -144,7 +144,7 @@
     "optional":false,
     "advanced":true,
     "allow_multiple":false,
-    "default_values":["1"],
+    "default_values":["0"],
     "field_type" : "checkbox",
     "checkbox_options":{
       "checked_value": 1,
