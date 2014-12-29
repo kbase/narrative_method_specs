@@ -4,13 +4,13 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["active"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseGenomeComparisonViewer"
   },
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "input_pangenome",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -19,9 +19,51 @@
     "text_options" : {
       "valid_ws_types" : [ "KBaseGenomes.Pangenome" ]
     }
+  }, {
+    "id" : "output_gencomp",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.GenomeComparison" ],
+      "is_output_name":true
+    }
   } ],
   "behavior" : {
-    "python_class" : "Microbes Comparative Genomics",
-    "python_function" : "Genome Comparison from Pangenome"
+    "service-mapping" : {
+      "url" : "",
+      "name" : "KBaseFBAModeling",
+      "method" : "compare_genomes",
+      "input_mapping" : [
+        {
+          "input_parameter": "input_pangenome",
+          "target_property": "pangenome_id"
+        },
+        {
+          "input_parameter": "output_gencomp",
+          "target_property": "output_id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspace"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "pangenome_ws"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "output_gencomp",
+          "target_property": "id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws"
+        }
+      ]
+    }
   }
 }

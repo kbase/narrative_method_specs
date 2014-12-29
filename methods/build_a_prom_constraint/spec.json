@@ -1,16 +1,16 @@
 {
-  "name" : "Build a PROM constraint",
+  "name" : "Build PROM constraint",
   "ver" : "1.0.0",
-  "authors" : [ ],
+  "authors" : [ "chenry", "olson" ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["active"],
   "widgets" : {
     "input" : null,
     "output" : "kbasePromConstraint"
   },
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "input_genome",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -20,7 +20,17 @@
       "valid_ws_types" : [ "KBaseGenomes.Genome" ]
     }
   }, {
-    "id" : "param1",
+	"id" : "input_regulome",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseRegulation.Regulome" ]
+    }
+  }, {
+	"id" : "input_series",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -30,18 +40,66 @@
       "valid_ws_types" : [ "KBaseExpression.ExpressionSeries" ]
     }
   }, {
-    "id" : "param2",
-    "optional" : false,
+    "id" : "output_prom",
+    "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseRegulation.Regulome" ]
+      "valid_ws_types" : [ "KBaseFBA.PromConstraint" ],
+      "is_output_name":true
     }
-  } ],
+  }],
   "behavior" : {
-    "python_class" : "Microbes Metabolic Modeling",
-    "python_function" : "Build a PROM constraint"
+    "service-mapping" : {
+      "url" : "",
+      "name" : "KBaseFBAModeling",
+      "method" : "create_promconstraint",
+      "input_mapping" : [
+        {
+          "input_parameter": "input_genome",
+          "target_property": "genome_id"
+        },
+        {
+          "input_parameter": "input_series",
+          "target_property": "series_id"
+        },
+        {
+          "input_parameter": "output_prom",
+          "target_property": "promconstraint_id"
+        },
+        {
+          "input_parameter": "input_regulome",
+          "target_property": "regulome_id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspace"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "regulome_workspace"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "genome_workspace"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "expression_workspace"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "output_prom",
+          "target_property": "id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws"
+        }
+      ]
+    }
   }
 }

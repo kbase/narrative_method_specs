@@ -4,13 +4,13 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["active"],
   "widgets" : {
     "input" : null,
     "output" : "ValueListWidget"
   },
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "input_metagenome",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -20,38 +20,91 @@
       "valid_ws_types" : [ "KBaseGenomes.MetagenomeAnnotation" ]
     }
   }, {
-    "id" : "param1",
+    "id" : "max_otu_models",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "" ],
+    "default_values" : [ "2" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param2",
+    "id" : "min_reactions",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "" ],
+    "default_values" : [ "100" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param3",
+    "id" : "min_abundance",
     "optional" : false,
-    "advanced" : false,
+    "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "" ],
+    "default_values" : [ "1" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "confidence_threshold",
+    "optional" : false,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "0" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ]
     }
   } ],
   "behavior" : {
-    "python_class" : "Communities Services",
-    "python_function" : "OTU annotations to Models"
+    "service-mapping" : {
+      "url" : "",
+      "name" : "KBaseFBAModeling",
+      "method" : "metagenome_to_fbamodels",
+      "input_mapping" : [
+        {
+          "input_parameter": "input_metagenome",
+          "target_property": "metaanno_uid"
+        },
+        {
+          "input_parameter": "min_abundance",
+          "target_property": "min_abundance"
+        },
+        {
+          "input_parameter": "confidence_threshold",
+          "target_property": "confidence_threshold"
+        },
+        {
+          "input_parameter": "max_otu_models",
+          "target_property": "max_otu_models"
+        },
+        {
+          "input_parameter": "min_reactions",
+          "target_property": "min_reactions"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspace"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "metaanno_ws"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "input_metagenome",
+          "target_property": "id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws"
+        }
+      ]
+    }
   }
 }

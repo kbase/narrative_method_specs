@@ -3,9 +3,9 @@
 #
 name     : Build a PROM constraint
 subtitle : |
-    Given a gene expression series and a regulome, build a PROM constraint for FBA. [24]
+    Given a gene expression series and a regulome, build a PROM constraint for FBA.
 tooltip  : |
-    Given a gene expression series and a regulome, build a PROM constraint for FBA. [24]
+    Given a gene expression series and a regulome, build a PROM constraint for FBA.
 
 screenshots :
     []
@@ -24,36 +24,44 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_genome :
         ui-name : |
-            Genome Name
+            Genome
         short-hint : |
-            Genome ID [24.1]
+            ID of genome for which PROM constraints should be built
         long-hint  : |
-            Genome ID [24.1]
+            ID of genome for which PROM constraints should be built
 
 
-    param1 :
+    input_series :
         ui-name : |
-            Gene Expression Series Name
+            Gene Expression Series
         short-hint : |
-            Gene Expression Series ID [24.2]
+            ID of expression series to use in building PROM constraints
         long-hint  : |
-            Gene Expression Series ID [24.2]
+            ID of expression series to use in building PROM constraints
 
 
-    param2 :
+    input_regulome :
         ui-name : |
-            Regulome Name
+            Regulome
         short-hint : |
-            Regulome ID [24.3]
+            ID of regulome constraints to use in building PROM constraints
         long-hint  : |
-            Regulome ID [24.3]
+            ID of regulome constraints to use in building PROM constraints
+            
+    output_prom :
+        ui-name : |
+            Output PROM
+        short-hint : |
+            ID of PROM constraints to save as output
+        long-hint  : |
+            ID of PROM constraints to save as output
 
 
 description : |
-    Given a gene expression series and a regulome, build a PROM constraint for FBA. [24]
+    Given a gene expression series and a regulome, build a PROM constraint for FBA.
 
 
 technical-description : |
-    Given a gene expression series and a regulome, build a PROM constraint for FBA. [24]
+    Given a gene expression series and a regulome, build a PROM constraint for FBA.

@@ -26,11 +26,11 @@ method-suggestions :
 parameters :
     param0 :
         ui-name : |
-            Genome Set ID
+            Genomes
         short-hint : |
-            a Genome Set to compute pangenome for
+            Genomes to compute pangenome for
         long-hint  : |
-            a Genome Set to compute pangenome for
+            Genomes to compute pangenome for
 
 
     param1 :

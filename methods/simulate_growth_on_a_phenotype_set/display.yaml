@@ -24,7 +24,7 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_model :
         ui-name : |
             FBA Model
         short-hint : |
@@ -33,7 +33,7 @@ parameters :
             FBA model
 
 
-    param1 :
+    input_phenoset :
         ui-name : |
             Phenotype Set
         short-hint : |
@@ -42,13 +42,13 @@ parameters :
             Phenotype Set
 
 
-    param2 :
+    output_phenosim :
         ui-name : |
             Phenotype Simulation Result
         short-hint : |
-            Name for result of phenotype simulation (optional)
+            Name for result of phenotype simulation
         long-hint  : |
-            Name for result of phenotype simulation (optional)
+            Name for result of phenotype simulation
 
 
 description : |

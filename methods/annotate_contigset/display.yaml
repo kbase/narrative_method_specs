@@ -145,14 +145,6 @@ parameters :
         long-hint  : |
             Analysis steps to include in annotation pipieline
             
-    call_features_CDS_genemark :
-        ui-name : |
-            Call features CDS genemark
-        short-hint : |
-            Analysis steps to include in annotation pipieline
-        long-hint  : |
-            Analysis steps to include in annotation pipieline
-    
     annotate_proteins_kmer_v2 :
         ui-name : |
             Annotate proteins kmer v2

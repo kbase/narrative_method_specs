@@ -24,7 +24,7 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_metagenome :
         ui-name : |
             OTU Annotation
         short-hint : |
@@ -33,31 +33,40 @@ parameters :
             name of OTU annotation object
 
 
-    param1 :
+    max_otu_models :
         ui-name : |
             Max OTU Models
         short-hint : |
-            maximum number of OTU models (default is 2)
+            maximum number of OTU models
         long-hint  : |
-            maximum number of OTU models (default is 2)
+            maximum number of OTU models
 
 
-    param2 :
+    min_reactions :
         ui-name : |
-            Min Abundance
+            Min reactions
         short-hint : |
-            minimum abundance for OTU model  (default is 3)
+            minimum reactions for OTU model
         long-hint  : |
-            minimum abundance for OTU model  (default is 3)
+            minimum reactions for OTU model
 
 
-    param3 :
+    min_abundance :
         ui-name : |
-            Min Reactions
+            Min abundance
         short-hint : |
-            minimum reactions for OTU model (default is 100)
+            minimum abundance for OTU model
         long-hint  : |
-            minimum reactions for OTU model (default is 100)
+            minimum abundance for OTU model
+            
+            
+    confidence_threshold :
+        ui-name : |
+            Confidence threshold
+        short-hint : |
+            minimum reactions for OTU model
+        long-hint  : |
+            minimum reactions for OTU model
 
 
 description : |

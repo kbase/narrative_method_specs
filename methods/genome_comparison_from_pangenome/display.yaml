@@ -24,13 +24,21 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_pangenome :
         ui-name : |
             Pangenome ID
         short-hint : |
             Pangenome ID
         long-hint  : |
             Pangenome ID
+            
+    output_gencomp :
+        ui-name : |
+            Genome comparison ID
+        short-hint : |
+            Genome comparison ID
+        long-hint  : |
+            Genome comparison ID
 
 
 description : |

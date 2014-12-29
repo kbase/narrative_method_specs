@@ -151,17 +151,6 @@
       "unchecked_value": 0
     }
   }, {
-    "id": "call_features_CDS_genemark",
-    "optional":false,
-    "advanced":true,
-    "allow_multiple":false,
-    "default_values":["0"],
-    "field_type" : "checkbox",
-    "checkbox_options":{
-      "checked_value": 1,
-      "unchecked_value": 0
-    }
-  }, {
     "id": "annotate_proteins_kmer_v2",
     "optional":false,
     "advanced":true,
@@ -282,10 +271,6 @@
         {
           "input_parameter": "call_features_CDS_prodigal",
           "target_property": "call_features_CDS_prodigal"
-        },
-        {
-          "input_parameter": "call_features_CDS_genemark",
-          "target_property": "call_features_CDS_genemark"
         },
         {
           "input_parameter": "annotate_proteins_kmer_v2",
