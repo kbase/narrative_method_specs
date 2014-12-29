@@ -1,12 +1,11 @@
 {
-  "name" : "Import NCBI Genome",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
   "categories" : ["active"],
   "widgets" : {
-    "input" : "NcbiGenomeImportInput",
+    "input" : null,
     "output" : "kbaseGenomeView"
   },
   "parameters" : [ {
@@ -17,7 +16,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
     }
   }, {
     "id" : "param1",
@@ -34,23 +33,27 @@
     "service-mapping" : {
       "url" : "https://kbase.us/services/genome_comparison/jsonrpc",
       "name" : "GenomeComparison",
-      "method" : "import_ncbi_genome",
+      "method" : "annotate_genome",
       "input_mapping" : [
         {
           "input_parameter": "param0",
-          "target_property": "genome_name"
+          "target_property": "in_genome_id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "in_genome_ws"
         },
         {
           "input_parameter": "param1",
-          "generated_value": {
-            "prefix": "genome_",
-            "suffix": ".ncbi"
-          },
           "target_property": "out_genome_id"
         },
         {
           "narrative_system_variable": "workspace",
           "target_property": "out_genome_ws"
+        },
+        {
+          "constant_value": 1,
+          "target_property": "seed_annotation_only"
         }
       ],
       "output_mapping" : [
@@ -61,8 +64,13 @@
         {
           "narrative_system_variable": "workspace",
           "target_property": "ws_name"
+        },
+        {
+          "service_method_output_path": [],
+          "target_property": "job_id"
         }
       ]
     }
-  }
+  },
+  "job_id_output_field": "job_id"
 }

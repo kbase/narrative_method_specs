@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["viewers"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseTree"
@@ -21,7 +21,21 @@
     }
   } ],
   "behavior" : {
-    "python_class" : "Microbes Comparative Genomics",
-    "python_function" : "View Tree"
+    "none" : {
+      "output_mapping" : [
+        {
+          "input_parameter": "param0",
+          "target_property": "treeID"
+        },
+        {
+          "constant_value": "500px",
+          "target_property": "height"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceID"
+        }
+      ]
+    }
   }
 }

@@ -1,0 +1,7 @@
+{
+  "name" : "Importing Methods",
+  "parent" : [ ],
+  "tooltip" : "Methods that import objects",
+  "ver" : "1.0.0",
+  "visible" : false
+}

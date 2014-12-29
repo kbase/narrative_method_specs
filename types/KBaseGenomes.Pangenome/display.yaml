@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : Pan-genome
+subtitle : Pan-genome object
+tooltip  : Pan-genome object
+
+icon : none
+
+description : |
+    <p>This type describes pan-genome.</p>
+
+    
+    
+    

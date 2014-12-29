@@ -1,10 +1,10 @@
 {
-  "name" : "View Genome",
+  "name" : "Annotate Genome",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["viewers"],
+  "categories" : ["inactive"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseGenomeView"
@@ -19,19 +19,19 @@
     "text_options" : {
       "valid_ws_types" : [ "KBaseGenomes.Genome" ]
     }
+  }, {
+    "id" : "param1",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+    }
   } ],
   "behavior" : {
-    "none" : {
-      "output_mapping" : [
-        {
-          "input_parameter": "param0",
-          "target_property": "id"
-        },
-        {
-          "narrative_system_variable": "workspace",
-          "target_property": "ws"
-        }
-      ]
-    }
+    "python_class" : "Microbes Annotation",
+    "python_function" : "Annotate Genome"
   }
 }
