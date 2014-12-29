@@ -52,6 +52,12 @@
                     "is_from_input":true,
                     "from":"output_model",
                     "to": "param1"
+                },
+                {
+                    "step":"step_1",
+                    "is_from_input":true,
+                    "from":"param2",
+                    "to": "param2"
                 }
             ]
         }
