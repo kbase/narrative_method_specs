@@ -121,7 +121,7 @@ parameters :
         long-hint  : |
             Analysis steps to include in annotation pipieline
             
-     annotate_proteins_kmer_v2 :
+    annotate_proteins_kmer_v2 :
         ui-name : |
             Annotate proteins kmer v2
         short-hint : |

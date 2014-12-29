@@ -16,9 +16,9 @@
             "method-id": "annotate_contigset",
             "input_mapping" : [
                 {
-                    "step":"step_1",
-                    "is_from_input":true,
-                    "from":"output_contigset",
+                    "step": "step_1",
+                    "is_from_input": true,
+                    "from": "output_contigset",
                     "to": "input_contigset"
                 }
             ]
