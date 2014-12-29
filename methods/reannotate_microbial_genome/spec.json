@@ -1,4 +1,5 @@
 {
+  "ver" : "1.0.0",
   "name" : "Reannotate microbial genome",
   "authors" : [ "chenry", "olson" ],
   "contact" : "help@kbase.us",

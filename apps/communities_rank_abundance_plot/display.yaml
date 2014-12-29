@@ -13,7 +13,7 @@ screenshots : []
 header : |
     Instructions appear here.
 
-step-descriptions : |
+step-descriptions :
     step_1 : |
         Generate rank abundance profile from annotation abundance data.
 
