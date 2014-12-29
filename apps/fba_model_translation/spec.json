@@ -7,23 +7,53 @@
     
     "steps" : [
         {
-            "step-id": "step_2",
+            "step-id": "step_1",
             "method-id": "compare_two_proteomes"
         },
         
         {
+            "step-id": "step_2",
+            "method-id": "translate_model_to_new_genome",
+            "input_mapping" : [
+                {
+                    "step":"step_1",
+                    "is_from_input":true,
+                    "from":"param2",
+                    "to": "input_protcomp"
+                }
+            ]
+        },
+        
+        {
             "step-id": "step_3",
-            "method-id": "translate_model_to_new_genome"
+            "method-id": "gapfill_a_metabolic_model",
+            "input_mapping" : [
+                {
+                    "step":"step_1",
+                    "is_from_input":true,
+                    "from":"output_model",
+                    "to": "input_model"
+                }
+            ]
         },
         
         {
             "step-id": "step_4",
-            "method-id": "gapfill_a_metabolic_model"
-        },
-        
-        {
-            "step-id": "step_5",
-            "method-id": "compare_two_metabolic_models"
+            "method-id": "compare_two_metabolic_models",
+            "input_mapping" : [
+                {
+                    "step":"step_2",
+                    "is_from_input":true,
+                    "from":"input_model",
+                    "to": "param0"
+                },
+                {
+                    "step":"step_3",
+                    "is_from_input":true,
+                    "from":"output_model",
+                    "to": "param1"
+                }
+            ]
         }
     ],
     

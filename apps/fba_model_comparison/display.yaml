@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : FBA Model Comparison
+name     : Compare Two Metabolic Models
 subtitle : |
     In this App, you can compare multiple fba models.
 tooltip  : |
@@ -14,12 +14,12 @@ header : |
     Some instructions here.
 
 step-descriptions :
-    step_2 : |
-        additional instructions/details regarding the step with id step_2
+    step_1 : |
+        additional instructions/details regarding the step with id step_1
 
 
 description : |
-    <p>In this app, you can compare multiple fba models.</p>
+    <p>The "Compare Two Metabolic Models" app enables the user to view the similarities and differences between metabolic models of selected genomes. To begin, the user may either upload a set of metabolic models in Excel or SBML format or select a set of metabolic models already present in KBase. KBase will then conduct a side-by-side comparison of the models, presenting a detailed exportable report to the user.</p>
 
 
 technical-description : |
