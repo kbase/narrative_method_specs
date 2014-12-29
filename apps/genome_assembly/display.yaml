@@ -27,7 +27,7 @@ step-descriptions :
 
 
 description : |
-    <p>The "Assemble and Annotate Microbial Genome" app assembles a set of NGS reads into contigs and then performs structural and functional annotation of the assembled contigs, calling genes and assigning biological functions. The user supplies a set of FASTA or FASTQ files with reads from next-generation sequencing, and chooses one of a variety of assembly algorithms. After assembly, the contigs are automatically annotated by KBase’s annotation pipeline, which includes assignment of biological functions derived from the SEED Subsystems ontology. The resulting annotated genome can be exported in GenBank or FASTA format or used as input to other KBase apps such as Genome-scale Metabolic Model Reconstruction.</p>
+    <p>test</p>
 
 
 technical-description : |
