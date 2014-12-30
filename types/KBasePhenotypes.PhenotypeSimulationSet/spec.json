@@ -1,0 +1,9 @@
+{
+    "ver":"0.1.0",
+    "view_method_ids":[
+        "view_phenotype_simulation_results"
+    ],
+    "import_method_ids":[
+    ],
+    "landing_page_url_prefix":""
+}

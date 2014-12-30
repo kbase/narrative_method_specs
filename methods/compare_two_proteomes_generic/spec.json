@@ -2,8 +2,8 @@
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
-  "visble" : true,
-  "categories" : ["active"],
+  "visble" : false,
+  "categories" : ["inactive"],
   "widgets" : {
     "input" : null,
     "output" : "GenomeComparisonWidget"
@@ -36,14 +36,15 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "GenomeComparison.ProteomeComparison" ]
+      "valid_ws_types" : [ "GenomeComparison.ProteomeComparison" ],
+      "is_output_name":true
     }
   } ],
   "behavior" : {
     "service-mapping" : {
       "url" : "https://kbase.us/services/genome_comparison/jsonrpc",
       "name" : "GenomeComparison",
-      "method" : "annotate_genome",
+      "method" : "blast_proteomes",
       "input_mapping" : [
         {
           "input_parameter": "param0",
@@ -71,10 +72,6 @@
         {
           "narrative_system_variable": "workspace",
           "target_property": "output_ws"
-        },
-        {
-          "constant_value": 1,
-          "target_property": "seed_annotation_only"
         }
       ],
       "output_mapping" : [

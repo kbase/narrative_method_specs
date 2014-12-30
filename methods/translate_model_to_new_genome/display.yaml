@@ -3,9 +3,9 @@
 #
 name     : Translate Model to New Genome
 subtitle : |
-    Functionality to assign a new genome to an imported model. A proteome comparison is done between the orginal model genome and the new desired genome. Metoblic reactions from original model get mapped to genes in the new genome'.  [19]
+    Translate an existing metabollic to model a new genome based on bi-directional best hits.    
 tooltip  : |
-    Functionality to assign a new genome to an imported model. A proteome comparison is done between the orginal model genome and the new desired genome. Metoblic reactions from original model get mapped to genes in the new genome'.  [19]
+    Translate an existing metabollic to model a new genome based on bi-directional best hits.
 
 screenshots :
     []
@@ -24,34 +24,25 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_model :
         ui-name : |
             FBA Model ID
         short-hint : |
-            an FBA model id from first genome [19.1]
+            an FBA model id from first genome
         long-hint  : |
-            an FBA model id from first genome [19.1]
+            an FBA model id from first genome
 
 
-    param1 :
+    input_protcomp :
         ui-name : |
             Proteome Comparison ID
         short-hint : |
-            Proteome comparison ID [19.3]
+            Proteome comparison ID
         long-hint  : |
-            Proteome comparison ID [19.3]
+            Proteome comparison ID
 
 
-    param2 :
-        ui-name : |
-            Remove No-gene Reactions
-        short-hint : |
-            specify "yes" if reactions with no genes should be removed
-        long-hint  : |
-            specify "yes" if reactions with no genes should be removed
-
-
-    param3 :
+    output_model :
         ui-name : |
             Translated Model ID
         short-hint : |
@@ -60,9 +51,19 @@ parameters :
             ID to which translated model should be saved
 
 
+    keep_nogene_rxn :
+        ui-name : |
+            Keep No-gene Reactions
+        short-hint : |
+            check box to keep reactions with no genes associated
+        long-hint  : |
+            check box to keep reactions with no genes associated
+
+
 description : |
-    Functionality to assign a new genome to an imported model. A proteome comparison is done between the orginal model genome and the new desired genome. Metoblic reactions from original model get mapped to genes in the new genome'.  [19]
+    Translate an existing metabollic to model a new genome based on bi-directional best hits.
 
 
 technical-description : |
-    Functionality to assign a new genome to an imported model. A proteome comparison is done between the orginal model genome and the new desired genome. Metoblic reactions from original model get mapped to genes in the new genome'.  [19]
+    Translate an existing metabollic to model a new genome based on bi-directional best hits.
+    

@@ -24,7 +24,7 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_model :
         ui-name : |
             Metabolic Model
         short-hint : |
@@ -33,7 +33,7 @@ parameters :
             the metabolic model to edit
 
 
-    param1 :
+    reactions :
         ui-name : |
             Reaction(s) ID(s)
         short-hint : |
@@ -42,7 +42,7 @@ parameters :
             Reactions to be deleted. Add multiple reactions seperated by ;
 
 
-    param2 :
+    output_model :
         ui-name : |
             Edited Model
         short-hint : |

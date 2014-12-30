@@ -3,9 +3,9 @@
 #
 name     : Run Flux Balance Analysis
 subtitle : |
-    In this App, you can run FBA on an FBA Model.
+    Run flux balance analysis on an input metabolic model to predict and characterize intracellular fluxes.
 tooltip  : |
-    In this App, you can run FBA on an FBA Model.
+    Run flux balance analysis on an input metabolic model
 
 screenshots : []
 
@@ -14,12 +14,12 @@ header : |
     Some Instructions here.
 
 step-descriptions :
-    step_2 : |
-        additional instructions/details regarding the step with id step_2
+    step_1 : |
+        additional instructions/details regarding the step with id step_1
 
 
 description : |
-    <p>In this app, you can run FBA.</p>
+    <p>The "Run Flux Balance Analysis" app enables users to construct a model of how metabolites flow through the metabolic network of an organism. The user starts by either uploading a model into KBase in SBML format, or selecting an existing model constructed by KBase. KBase will then simulate flux balance analysis with the model, enabling a wide range of custom FBA algorithms, including flux variability analysis, knockout of all individual genes, fitting to expression data, and Probabilistic Regulation of Metabolism (PROM). This app produces an FBA object, which may be exported in Excel or SBML format.</p>
 
 
 technical-description : |
@@ -28,6 +28,7 @@ technical-description : |
     <pre>some code here</pre>
     
     yada, yada, yada <br>
+ 
     
     
     

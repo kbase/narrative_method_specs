@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["viewers"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseSimulationSet"
@@ -21,7 +21,17 @@
     }
   } ],
   "behavior" : {
-    "python_class" : "Microbes Metabolic Modeling",
-    "python_function" : "View Phenotype Simulation Results"
+    "none" : {
+      "output_mapping" : [
+        {
+          "input_parameter": "param0",
+          "target_property": "name"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws"
+        }
+      ]
+    }
   }
 }

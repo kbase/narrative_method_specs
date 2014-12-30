@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : Proteome comparison
+subtitle : Proteome comparison object
+tooltip  : Proteome comparison object
+
+icon : none
+
+description : |
+    <p>This type describes proteome comparison.</p>
+
+    
+    
+    

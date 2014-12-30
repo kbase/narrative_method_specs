@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["viewers"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseFbaTabsNarrative"
@@ -21,7 +21,19 @@
     }
   } ],
   "behavior" : {
-    "python_class" : "Microbes Metabolic Modeling",
-    "python_function" : "View FBA Result Details"
+    "none" : {
+      "output_mapping" : [
+        {
+          "input_parameter": "param0",
+          "target_property": "ids",
+          "target_type_transform": "list"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaces",
+          "target_type_transform": "list"
+        }
+      ]
+    }
   }
 }

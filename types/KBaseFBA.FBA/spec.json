@@ -1,0 +1,9 @@
+{
+    "ver":"0.1.0",
+    "view_method_ids":[
+        "view_fba_result_details"
+    ],
+    "import_method_ids":[
+    ],
+    "landing_page_url_prefix":"ws/fbas"
+}

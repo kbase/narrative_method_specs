@@ -4,22 +4,12 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["active"],
   "widgets" : {
     "input" : null,
     "output" : "ImageViewWidget"
   },
   "parameters" : [ {
-    "id" : "param0",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
-  }, {
     "id" : "param1",
     "optional" : false,
     "advanced" : false,
@@ -35,50 +25,126 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "no" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
+    "field_type" : "dropdown",
+    "dropdown_options" : {
+        "options": [
+        {
+            "value" : "no",
+            "display" : "no"
+        },
+        {
+            "value" : "yes",
+            "display" : "yes"
+        }
+    ] }
   }, {
     "id" : "param3",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "euclidean" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
+    "field_type" : "dropdown",
+    "dropdown_options" : {
+        "options": [
+        {
+            "value" : "euclidean",
+            "display" : "euclidean"
+        },
+        {
+            "value" : "bray-curtis",
+            "display" : "bray-curtis"
+        },
+        {
+            "value" : "maximum",
+            "display" : "maximum"
+        },
+        {
+            "value" : "manhattan",
+            "display" : "manhattan"
+        },
+        {
+            "value" : "canberra",
+            "display" "canberra"
+        },
+        {
+            "value" : "minkowski",
+            "display" : "minkowski"
+        },
+        {
+            "value" : "difference",
+            "display" : "difference"
+        }
+    ] }
   }, {
     "id" : "param4",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "ward" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
+    "field_type" : "dropdown",
+    "dropdown_options" : {
+        "options": [
+        {
+            "value" : "ward",
+            "display" : "ward"
+        },
+        {
+            "value" : "single",
+            "display" : "single"
+        },
+        {
+            "value" : "complete",
+            "display" : "complete"
+        },
+        {
+            "value" : "mcquitty",
+            "display" : "mcquitty"
+        },
+        {
+            "value" : "median",
+            "display" : "median"
+        },
+        {
+            "value" : "centroid",
+            "display" : "centroid"
+        }
+    ] }
   }, {
     "id" : "param5",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "yes" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
+    "field_type" : "dropdown",
+    "dropdown_options" : {
+        "options": [
+        {
+            "value" : "yes",
+            "display" : "yes"
+        },
+        {
+            "value" : "no",
+            "display" : "no"
+        }
+    ] }
   }, {
     "id" : "param6",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "no" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
+    "field_type" : "dropdown",
+    "dropdown_options" : {
+        "options": [
+        {
+            "value" : "no",
+            "display" : "no"
+        },
+        {
+            "value" : "yes",
+            "display" : "yes"
+        }
+    ] }
   } ],
   "behavior" : {
     "python_class" : "Communities Services",

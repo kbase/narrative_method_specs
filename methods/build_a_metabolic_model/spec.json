@@ -4,13 +4,13 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["active"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseModelTabs"
-  },
+  },  
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "input_genome",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -20,18 +20,90 @@
       "valid_ws_types" : [ "KBaseGenomes.Genome" ]
     }
   }, {
-    "id" : "param1",
+    "id" : "output_model",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
+      "valid_ws_types" : [ "KBaseFBA.FBAModel" ],
+      "is_output_name":true
+    }
+  }, {
+    "id" : "core_model",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["0"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id" : "full_db_model",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["0"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id" : "template_model",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFBA.ModelTemplate" ]
     }
   } ],
   "behavior" : {
-    "python_class" : "Microbes Metabolic Modeling",
-    "python_function" : "Build a Metabolic Model"
+    "service-mapping" : {
+      "url" : "",
+      "name" : "KBaseFBAModeling",
+      "method" : "genome_to_fbamodel",
+      "input_mapping" : [
+        {
+          "input_parameter": "input_genome",
+          "target_property": "genome"
+        },
+        {
+          "input_parameter": "output_model",
+          "target_property": "model"
+        },
+        {
+          "input_parameter": "core_model",
+          "target_property": "coremodel"
+        },
+        {
+          "input_parameter": "full_db_model",
+          "target_property": "fulldb"
+        },
+        {
+          "input_parameter": "template_model",
+          "target_property": "templatemodel"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspace"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "output_model",
+          "target_property": "id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws"
+        }
+      ]
+    }
   }
 }

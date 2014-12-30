@@ -3,11 +3,11 @@
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
-  "visble" : true,
+  "visble" : false,
   "categories" : ["inactive"],
   "widgets" : {
     "input" : null,
-    "output" : "GenomeAnnotation"
+    "output" : "kbaseGenomeView"
   },
   "parameters" : [ {
     "id" : "param0",

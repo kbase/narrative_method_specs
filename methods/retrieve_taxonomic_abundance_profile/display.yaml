@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : Retrieve Annotation Abundance Profile
+name     : Retrieve Taxonomic Abundance Profile
 subtitle : |
-    Retrieve annotation abundance data for selected metagenomes.
+    Retrieve taxonomic abundance data for selected metagenomes.
 tooltip  : |
-    Retrieve annotation abundance data for selected metagenomes.
+    Retrieve taxonomic abundance data for selected metagenomes.
 
 screenshots :
     []
@@ -24,16 +24,7 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
-        ui-name : |
-            Workspace
-        short-hint : |
-            name of workspace, default is current
-        long-hint  : |
-            name of workspace, default is current
-
-
-    param1 :
+    input_metagenomes :
         ui-name : |
             Metagenome List
         short-hint : |
@@ -42,7 +33,7 @@ parameters :
             object name of Communities.Collection
 
 
-    param2 :
+    output_profile :
         ui-name : |
             Output Name
         short-hint : |
@@ -51,25 +42,16 @@ parameters :
             object name of abundance profile table
 
 
-    param3 :
+    level :
         ui-name : |
-            Annotation Type
+            Taxonomic Level
         short-hint : |
-            annotation of abundance profile, one of 'taxa' or 'functions'
+            taxonomic hierarchical level to retrieve abundances for
         long-hint  : |
-            annotation of abundance profile, one of 'taxa' or 'functions'
+            taxonomic hierarchical level to retrieve abundances for
 
 
-    param4 :
-        ui-name : |
-            Annotation Level
-        short-hint : |
-            annotation hierarchical level to retrieve abundances for
-        long-hint  : |
-            annotation hierarchical level to retrieve abundances for
-
-
-    param5 :
+    source :
         ui-name : |
             Source Name
         short-hint : |
@@ -78,7 +60,7 @@ parameters :
             data source to filter results by
 
 
-    param6 :
+    filter_list :
         ui-name : |
             Filter List
         short-hint : |
@@ -87,7 +69,7 @@ parameters :
             object name of list of names to filter results by
 
 
-    param7 :
+    filter_level :
         ui-name : |
             Filter Level
         short-hint : |
@@ -96,7 +78,7 @@ parameters :
             hierarchical level of filter names list
 
 
-    param8 :
+    filter_source :
         ui-name : |
             Filter Source
         short-hint : |
@@ -105,7 +87,7 @@ parameters :
             data source of filter names list
 
 
-    param9 :
+    evalue :
         ui-name : |
             E-Value
         short-hint : |
@@ -114,7 +96,7 @@ parameters :
             negative exponent value for maximum e-value cutoff, default is 5
 
 
-    param10 :
+    identity :
         ui-name : |
             % Identity
         short-hint : |
@@ -123,27 +105,18 @@ parameters :
             percent value for minimum % identity cutoff, default is 60
 
 
-    param11 :
+    length :
         ui-name : |
             Alignment Length
         short-hint : |
             value for minimum alignment length cutoff, default is 15
         long-hint  : |
             value for minimum alignment length cutoff, default is 15
-
-
-    param12 :
-        ui-name : |
-            Normalize
-        short-hint : |
-            log transform the abundance data
-        long-hint  : |
-            log transform the abundance data
-
+            
 
 description : |
-    Retrieve annotation abundance data for selected metagenomes.
+    Retrieve taxonomic abundance data for selected metagenomes.
 
 
 technical-description : |
-    Retrieve annotation abundance data for selected metagenomes.
+    Retrieve taxonomic abundance data for selected metagenomes.

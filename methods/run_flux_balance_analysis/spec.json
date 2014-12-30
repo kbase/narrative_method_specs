@@ -4,13 +4,13 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["active"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseFbaTabsNarrative"
-  },
+  },  
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "input_model",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -20,8 +20,8 @@
       "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
     }
   }, {
-    "id" : "param1",
-    "optional" : false,
+    "id" : "input_media",
+    "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
@@ -30,99 +30,123 @@
       "valid_ws_types" : [ "KBaseBiochem.Media" ]
     }
   }, {
-    "id" : "param2",
+    "id" : "output_fba",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseFBA.FBA" ]
+      "valid_ws_types" : [ "KBaseFBA.FBA" ],
+      "is_output_name":true
     }
   }, {
-    "id" : "param3",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
+    "id": "fva",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["0"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "simulate_ko",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["0"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id": "minimize_flux",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["0"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+    "id" : "gene_ko",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : true,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param4",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
+    "id" : "reaction_ko",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : true,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param5",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "100" ],
+    "id" : "additional_compounds",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : true,
+    "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param6",
-    "optional" : false,
-    "advanced" : false,
+    "id" : "maxc_uptake",
+    "optional" : true,
+    "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "-100" ],
+    "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
+      "validate_as": "float"
     }
   }, {
-    "id" : "param7",
-    "optional" : false,
-    "advanced" : false,
+    "id" : "maxn_uptake",
+    "optional" : true,
+    "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "0" ],
+    "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
+      "validate_as": "float"
     }
   }, {
-    "id" : "param8",
-    "optional" : false,
-    "advanced" : false,
+    "id" : "maxs_uptake",
+    "optional" : true,
+    "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "no" ],
+    "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
+      "validate_as": "float"
     }
   }, {
-    "id" : "param9",
-    "optional" : false,
-    "advanced" : false,
+    "id" : "maxp_uptake",
+    "optional" : true,
+    "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "yes" ],
+    "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
+      "validate_as": "float"
     }
   }, {
-    "id" : "param10",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "no" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
-  }, {
-    "id" : "param11",
-    "optional" : false,
-    "advanced" : false,
+    "id" : "input_prom",
+    "optional" : true,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
@@ -131,7 +155,94 @@
     }
   } ],
   "behavior" : {
-    "python_class" : "Microbes Metabolic Modeling",
-    "python_function" : "Run Flux Balance Analysis"
+    "service-mapping" : {
+      "url" : "",
+      "name" : "KBaseFBAModeling",
+      "method" : "runfba",
+      "input_mapping" : [
+        {
+          "input_parameter": "input_model",
+          "target_property": "model"
+        },
+        {
+          "input_parameter": "output_fba",
+          "target_property": "fba"
+        },
+        {
+          "input_parameter": "fva",
+          "target_property": "fva"
+        },
+        {
+          "input_parameter": "input_media",
+          "target_property": "formulation:media"
+        },
+        {
+          "input_parameter": "additional_compounds",
+          "target_property": "formulation:additionalcpds"
+        },
+        {
+          "input_parameter": "gene_ko",
+          "target_property": "formulation:geneko"
+        },
+        {
+          "input_parameter": "reaction_ko",
+          "target_property": "formulation:rxnko"
+        },
+        {
+          "input_parameter": "maxc_uptake",
+          "target_property": "formulation:uptakelim:C"
+        },
+        {
+          "input_parameter": "maxn_uptake",
+          "target_property": "formulation:uptakelim:N"
+        },
+        {
+          "input_parameter": "maxp_uptake",
+          "target_property": "formulation:uptakelim:P"
+        },
+        {
+          "input_parameter": "maxs_uptake",
+          "target_property": "formulation:uptakelim:S"
+        },
+        {
+          "input_parameter": "input_prom",
+          "target_property": "formulation:promconstraint"
+        },
+        {
+          "input_parameter": "simulate_ko",
+          "target_property": "simulateko"
+        },
+        {
+          "input_parameter": "minimize_flux",
+          "target_property": "minimizeflux"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "model_workspace"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "formulation:media_workspace"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "formulation:prommconstraint_workspace"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspace"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "output_fba",
+          "target_property": "id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws"
+        }
+      ]
+    }
   }
 }

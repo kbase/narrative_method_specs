@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : FBA model
+subtitle : FBA model object
+tooltip  : FBA model object
+
+icon : none
+
+description : |
+    <p>This type describes FBA model.</p>
+
+    
+    
+    

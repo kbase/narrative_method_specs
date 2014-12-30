@@ -3,9 +3,9 @@
 #
 name     : Integrate Gapfill Solution
 subtitle : |
-    Integrate a Gapfill solution into your metabolic model [13]
+    Integrate a Gapfill solution into your metabolic model
 tooltip  : |
-    Integrate a Gapfill solution into your metabolic model [13]
+    Integrate a Gapfill solution into your metabolic model
 
 screenshots :
     []
@@ -24,36 +24,36 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_model :
         ui-name : |
             Metabolic Model
         short-hint : |
-            the metabolic model to integrate gapfill solutions into [13.1]
+            the metabolic model to integrate gapfill solutions into
         long-hint  : |
-            the metabolic model to integrate gapfill solutions into [13.1]
+            the metabolic model to integrate gapfill solutions into
 
 
-    param1 :
+    gapfill_solutions :
         ui-name : |
-            Gapfill ID
+            Gapfill solution ID
         short-hint : |
-            select the ID of the gapfill solution (found in the Gapfilling tab in the model viewer, usually in the form 'modelId.gf.2.gfsol.1') [13.2]
+            select the ID of the gapfill solution (found in the Gapfilling tab in the model viewer, usually in the form '0.0')
         long-hint  : |
-            select the ID of the gapfill solution (found in the Gapfilling tab in the model viewer, usually in the form 'modelId.gf.2.gfsol.1') [13.2]
+            select the ID of the gapfill solution (found in the Gapfilling tab in the model viewer, usually in the form '0.0')
 
 
-    param2 :
+    output_model :
         ui-name : |
             Output Model Result Name
         short-hint : |
-            select a name for the gapfilled object (optional) [13.3]
+            select a name for the gapfilled object
         long-hint  : |
-            select a name for the gapfilled object (optional) [13.3]
+            select a name for the gapfilled object
 
 
 description : |
-    Integrate a Gapfill solution into your metabolic model [13]
+    Integrate a Gapfill solution into your metabolic model
 
 
 technical-description : |
-    Integrate a Gapfill solution into your metabolic model [13]
+    Integrate a Gapfill solution into your metabolic model

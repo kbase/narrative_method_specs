@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : Multiple sequence alignment
+subtitle : Multiple sequence alignment object
+tooltip  : Multiple sequence alignment object
+
+icon : none
+
+description : |
+    <p>This type describes multiple sequence alignment.</p>
+
+    
+    
+    

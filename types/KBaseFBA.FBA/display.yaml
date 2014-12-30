@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : FBA
+subtitle : FBA object
+tooltip  : FBA object
+
+icon : none
+
+description : |
+    <p>This type describes flux balance analysis.</p>
+
+    
+    
+    

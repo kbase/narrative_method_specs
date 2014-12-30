@@ -4,10 +4,10 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["viewers"],
   "widgets" : {
     "input" : null,
-    "output" : "GenomeAnnotation"
+    "output" : "kbaseGenomeView"
   },
   "parameters" : [ {
     "id" : "param0",
@@ -21,7 +21,17 @@
     }
   } ],
   "behavior" : {
-    "python_class" : "Microbes Annotation",
-    "python_function" : "View Genome"
+    "none" : {
+      "output_mapping" : [
+        {
+          "input_parameter": "param0",
+          "target_property": "id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws"
+        }
+      ]
+    }
   }
 }

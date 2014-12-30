@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Build and Gapfill a Plant FBA Model
+name     : Build Plant Metabolic Model and Run FBA
 subtitle : |
     Starting with an Annotated Genome object containing plant transcripts, build a metabolic model and add reactions until the model can predict growth.
 tooltip  : |
@@ -10,16 +10,7 @@ tooltip  : |
 screenshots : []
 
 header : |
-    <p>Starting with an annotated Genome, this KBase App will use the annotations to identify
-    which biochemical reactions are likely to occur in your plant.  Annotations are not always perfect,
-    so some essential reactions will likely be missed.  Gapfilling is an approach to automatically
-    add reactions until the model is complete enough to predict that the plant will grow under some conditions</p>
-    
-    <p>Begin by selecting an annotated Genome data object below, and provide a name for the new metabolic model.
-    Then click Run to start the App</p>
-    
-    <p>For more technical details about the methods used in this app, see the documentation on the 
-    <a href="https://kbase.us/developer-zone/documentation/fba-modeling-service/" target="_blank">kbase FBA tools</a>.</p>
+    <p>The "Build Plant Metabolic Model and Run FBA" app generates a metabolic model for a plant and then runs FBA on the model. The user begins by supplying an annotated Genome object derived either from another KBase app (Plant Transcript Sequences to Annotated Genome) or from the collection of annotated Genome objects pre-loaded in KBase. A metabolic model is generated from the PlantSEED metabolic annotation in the Genome object. It is gap filled and run through Flux Balance Analysis (FBA). The user can then visualize the model and export (as SBML) both the model and the FBA results.</p>
 
 step-descriptions :
     step_1 : |

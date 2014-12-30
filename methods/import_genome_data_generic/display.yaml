@@ -42,32 +42,32 @@ parameters :
 
     ftpFolder :
         ui-name : |
-            FTP folder
+            FTP FOLDER
         short-hint : |
-            Path to FTP folder with genome GBK-file(s).
+            Enter the path to the FTP folder with the GBK-file(s).<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/
         long-hint  : |
-            Path to FTP folder with genome GBK-file(s).
+            Enter the path to the FTP folder with the GBK-file(s).<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/
 
     outputObject :
         ui-name : |
-            Genome Object ID
+            GENOME OBJECT ID
         short-hint : |
-            Output Genome ID. Required field.
+            Provide a name for the genome object you are uploading.<br>ex) Shewanella_MR_4
         long-hint  : |
-            Output Genome ID. Required field.
+            Provide a name for the genome object you are uploading.<br>ex) Shewanella_MR_4
 
     contigObject :
         ui-name : |
-            ContigSet Object ID
+            CONTIG-SET OBJECT ID
         short-hint : |
-            Output ContigSet ID. If empty, an ID will be chosen based on Genome Object ID.
+            Provide a name for the contig-set object you are uploading. If empty, an ID will be chosen based on genome object ID.
         long-hint  : |
-            Output ContigSet ID. If empty, an ID will be chosen based on Genome Object ID.
+            Provide a name for the contig-set object you are uploading. If empty, an ID will be chosen based on genome object ID.
 
 
 description : |
-    Upload a Genome and ContigSet from GBK-file (or files in case of zip) into your workspace. This function should be followed by adding KBase annotations into this Genome.
+    Import into your narrative a genome from your local GBK files or from an FTP, such as NCBI.
 
 
 technical-description : |
-    Upload a Genome and ContigSet from GBK-file (or files in case of zip) into your workspace. This function should be followed by adding KBase annotations into this Genome.
+    Import into your narrative a genome from your local GBK files or from an FTP, such as NCBI.

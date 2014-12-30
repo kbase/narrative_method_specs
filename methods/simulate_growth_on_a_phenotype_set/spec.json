@@ -4,13 +4,13 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["active"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseSimulationSet"
   },
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "input_model",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -20,7 +20,7 @@
       "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
     }
   }, {
-    "id" : "param1",
+    "id" : "input_phenoset",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -30,18 +30,58 @@
       "valid_ws_types" : [ "KBasePhenotypes.PhenotypeSet" ]
     }
   }, {
-    "id" : "param2",
+    "id" : "output_phenosim",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBasePhenotypes.PhenotypeSimulationSet" ]
+      "valid_ws_types" : [ "KBasePhenotypes.PhenotypeSimulationSet" ],
+      "is_output_name":true
     }
   } ],
   "behavior" : {
-    "python_class" : "Microbes Metabolic Modeling",
-    "python_function" : "Simulate growth on a Phenotype Set"
+    "service-mapping" : {
+      "url" : "",
+      "name" : "KBaseFBAModeling",
+      "method" : "simulate_phenotypes",
+      "input_mapping" : [
+        {
+          "input_parameter": "input_model",
+          "target_property": "model"
+        },
+        {
+          "input_parameter": "input_phenoset",
+          "target_property": "phenotypeSet"
+        },
+        {
+          "input_parameter": "output_phenosim",
+          "target_property": "phenotypeSimultationSet"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspace"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "phenotypeSet_workspace"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "model_workspace"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "output_phenosim",
+          "target_property": "id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws"
+        }
+      ]
+    }
   }
 }

@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Phenotype Analysis
+name     : Simulate and Reconcile Growth Phenotypes
 subtitle : |
     In this app, the user runs phenotype simulation, which not only simulates
     all phenotype conditions, but also gapfills the model in all phenotype conditions.
@@ -16,14 +16,12 @@ header : |
     Some instructions here.
 
 step-descriptions :
-    step_2 : |
-        additional instructions/details regarding the step with id step_2
+    step_1 : |
+        additional instructions/details regarding the step with id step_1
 
 
 description : |
-    <p>In this app, the user runs phenotype simulation, which not only simulates
-    all phenotype conditions, but also gapfills the model in all phenotype conditions.
-    Once the simulaiton is complete, the model can be adjusted to better fit phenotype data.</p>
+    <p>The "Simulate and Reconcile Growth Phenotypes" app predicts phenotypic characteristics of an organism based on a set of model conditions. To begin, the user uploads a table of phenotype data (e.g., Biolog or gene essentiality data) into the app. The user also either uploads a metabolic model or selects a model already present in KBase. KBase uses the selected model to simulate the uploaded phenotypes, presenting simulation results in a detailed exportable report. This app also conducts some reconciliation of models with phenotype data.</p>
 
 
 technical-description : |

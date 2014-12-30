@@ -27,7 +27,8 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseTrees.Tree" ]
+      "valid_ws_types" : [ "KBaseTrees.Tree" ],
+      "is_output_name":true
     }
   } ],
   "behavior" : {

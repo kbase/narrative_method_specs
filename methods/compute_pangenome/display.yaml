@@ -24,16 +24,16 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_genomes :
         ui-name : |
-            Genome Set ID
+            Genomes
         short-hint : |
-            a Genome Set to compute pangenome for
+            Genomes to compute pangenome for
         long-hint  : |
-            a Genome Set to compute pangenome for
+            Genomes to compute pangenome for
 
 
-    param1 :
+    output_pangenome :
         ui-name : |
             Pangenome ID
         short-hint : |
