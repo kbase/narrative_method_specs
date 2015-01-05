@@ -136,18 +136,6 @@
                   "target_property": "source"
               },
               {
-                  "input_parameter": "filter_list",
-                  "target_property": "intersect_name"
-              },
-              {
-                  "input_parameter": "filter_level",
-                  "target_property": "intersect_level"
-              },
-              {
-                  "input_parameter": "filter_source",
-                  "target_property": "intersect_source"
-              },
-              {
                   "input_parameter": "evalue",
                   "target_property": "evalue"
               },
