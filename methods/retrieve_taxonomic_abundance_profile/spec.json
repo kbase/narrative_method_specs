@@ -145,7 +145,7 @@
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "level3" ],
+    "default_values" : [ "" ],
     "field_type" : "dropdown",
     "dropdown_options" : {
         "options": [
@@ -171,7 +171,7 @@
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "Subsystems" ],
+    "default_values" : [ "" ],
     "field_type" : "dropdown",
     "dropdown_options" : {
         "options": [

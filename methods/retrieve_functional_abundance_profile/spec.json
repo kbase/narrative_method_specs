@@ -97,7 +97,7 @@
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "genus" ],
+    "default_values" : [ "" ],
     "field_type" : "dropdown",
     "dropdown_options" : {
         "options": [
@@ -131,7 +131,7 @@
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "SEED" ],
+    "default_values" : [ "" ],
     "field_type" : "dropdown",
     "dropdown_options" : {
         "options": [
