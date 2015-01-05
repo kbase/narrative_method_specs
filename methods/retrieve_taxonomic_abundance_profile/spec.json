@@ -131,68 +131,6 @@
         }
     ] }
   }, {
-    "id" : "filter_list",
-    "optional" : true,
-    "advanced" : true,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "Communities.Data" ]
-    }
-  }, {
-    "id" : "filter_level",
-    "optional" : true,
-    "advanced" : true,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "dropdown",
-    "dropdown_options" : {
-        "options": [
-        {
-            "value" : "function",
-            "display" : "function"
-        },
-        {
-            "value" : "level3",
-            "display" : "level3"
-        },
-        {
-            "value" : "level2",
-            "display" : "level2"
-        },
-        {
-            "value" : "level1",
-            "display" : "level1"
-        }
-    ] }
-  }, {
-    "id" : "filter_source",
-    "optional" : true,
-    "advanced" : true,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "dropdown",
-    "dropdown_options" : {
-        "options": [
-        {
-            "value" : "Subsystems",
-            "display" : "Subsystems"
-        },
-        {
-            "value" : "NOG",
-            "display" : "NOG"
-        },
-        {
-            "value" : "COG",
-            "display" : "COG"
-        },
-        {
-            "value" : "KO",
-            "display" : "KO"
-        }
-    ] }
-  }, {
     "id" : "evalue",
     "optional" : false,
     "advanced" : true,
