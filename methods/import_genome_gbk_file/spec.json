@@ -67,18 +67,8 @@
           "target_argument_position": 3
         },
         {
-          "input_parameter": "mode",
-          "target_property": "mode",
-          "target_argument_position": 4
-        },
-        {
           "input_parameter": "gbkFile",
           "target_property": "shock_node_id",
-          "target_argument_position": 4
-        },
-        {
-          "input_parameter": "ftpFolder",
-          "target_property": "ftp_path",
           "target_argument_position": 4
         }
       ],
@@ -92,7 +82,7 @@
           "target_property": "ws_name"
         },
         {
-          "service_method_output_path": ["0"],
+          "service_method_output_path": ["1"],
           "target_property": "job_id"
         }
       ]
