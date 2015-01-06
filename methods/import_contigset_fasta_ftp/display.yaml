@@ -1,0 +1,49 @@
+#
+# Define basic display information
+#
+name     : Import Contigs
+subtitle : |
+    Upload a ContigSet object from FTP into your workspace.
+tooltip  : |
+    Upload a ContigSet object from FTP into your workspace.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    ftpFolder :
+        ui-name : |
+            FTP folder
+        short-hint : |
+            Path to FTP folder with genome Fasta-file.
+        long-hint  : |
+            Path to FTP folder with genome Fasta-file.
+
+    outputObject :
+        ui-name : |
+            ContigSet Object ID
+        short-hint : |
+            Target object ID.
+        long-hint  : |
+            Target object ID.
+
+
+description : |
+    Upload a ContigSet object from Fasta-file into your workspace.
+
+
+technical-description : |
+    Upload a ContigSet object from Fasta-file into your workspace.
