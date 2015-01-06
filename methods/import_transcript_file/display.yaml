@@ -1,0 +1,49 @@
+#
+# Define basic display information
+#
+name     : UPLOAD TRANSCRIPT FILE
+subtitle : |
+    Import into your narrative a transcript object from a local file in FASTA format.
+tooltip  : |
+    Import into your narrative a transcript object from a local file in FASTA format.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    fastaFile :
+        ui-name : |
+            FASTA FILE
+        short-hint : |
+            File with protein/rna data in FASTA format.
+        long-hint  : |
+            File with protein/rna data in FASTA format.
+
+    outputObject :
+        ui-name : |
+            GENOME OBJECT ID
+        short-hint : |
+            Provide a name for the genome object you are uploading.<br>ex) Athaliana.TAIR10
+        long-hint  : |
+            Provide a name for the genome object you are uploading.<br>ex) Athaliana.TAIR10
+
+
+description : |
+    Import into your narrative a transcript object from a local file in FASTA format.
+
+
+technical-description : |
+    Import into your narrative a transcript object from a local file in FASTA format.
