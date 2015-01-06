@@ -26,7 +26,7 @@ method-suggestions :
 parameters :
     gbkFile :
         ui-name : |
-            Genbank file
+            GENBANK FILE
         short-hint : |
             File with genome data in GBK format or zip-file with contigs.
         long-hint  : |
