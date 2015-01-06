@@ -5,7 +5,7 @@
   "visble" : true,
   "categories" : [ "importers" ],
   "widgets" : {
-    "input" : "kbaseTabbedInput"
+    "input" : "kbaseNarrativeMethodInput"
   },
   "parameters" : [ {
     "id" : "ftpFolder",
