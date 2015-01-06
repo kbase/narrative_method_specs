@@ -24,34 +24,42 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
+    input_profile :
         ui-name : |
-            Input Name
+            Input Profile
         short-hint : |
-            object name of Communities.Profile
+            object name of input abundance profile
         long-hint  : |
-            object name of Communities.Profile
+            object name of input abundance profile
 
 
-    param2 :
+    output_heatmap :
         ui-name : |
-            Label Name
+            Output Heatmap
         short-hint : |
-            label by metagenome name and not ID
+            object name of output heatmap
         long-hint  : |
-            label by metagenome name and not ID
+            object name of output heatmap
 
 
-    param3 :
+    distance :
         ui-name : |
             Distance
         short-hint : |
             distance / dissimilarity metric
         long-hint  : |
             distance / dissimilarity metric
+    
+    name :
+        ui-name : |
+            Label by Name
+        short-hint : |
+            label by metagenome name and not ID
+        long-hint  : |
+            label by metagenome name and not ID
 
 
-    param4 :
+    cluster :
         ui-name : |
             Cluster
         short-hint : |
@@ -60,18 +68,18 @@ parameters :
             cluster method
 
 
-    param5 :
+    order :
         ui-name : |
-            Order
+            Order Columns
         short-hint : |
             order columns
         long-hint  : |
             order columns
 
 
-    param6 :
+    label :
         ui-name : |
-            Label
+            Label Rows
         short-hint : |
             label rows
         long-hint  : |

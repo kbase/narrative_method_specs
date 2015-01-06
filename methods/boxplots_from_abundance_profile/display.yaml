@@ -24,18 +24,27 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
+    input_profile :
         ui-name : |
-            Input Name
+            Input Profile
         short-hint : |
-            object name of Communities.Profile
+            object name of input abundance profile
         long-hint  : |
-            object name of Communities.Profile
+            object name of input abundance profile
 
 
-    param2 :
+    output_boxplot :
         ui-name : |
-            Label Name
+            Output Boxplot
+        short-hint : |
+            object name of output boxplot
+        long-hint  : |
+            object name of output boxplot
+
+
+    name :
+        ui-name : |
+            Label by Name
         short-hint : |
             label by metagenome name and not ID
         long-hint  : |
