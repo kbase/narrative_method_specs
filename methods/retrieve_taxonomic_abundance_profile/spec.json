@@ -1,0 +1,219 @@
+{
+  "name" : "Retrieve Taxonomic Abundance Profile",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "DataDump"
+  },
+  "parameters" : [ {
+    "id" : "input_metagenomes",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "Communities.Collection", "Communities.MetagenomeSet" ]
+    }
+  }, {
+    "id" : "output_profile",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "Communities.TaxonomicProfile" ],
+      "is_output_name": true
+    }
+  }, {
+    "id" : "level",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "genus" ],
+    "field_type" : "dropdown",
+    "dropdown_options" : {
+        "options": [
+        {
+            "value" : "genus",
+            "display" : "genus"
+        },
+        {
+            "value" : "family",
+            "display" : "family"
+        },
+        {
+            "value" : "order",
+            "display" : "order"
+        },
+        {
+            "value" : "class",
+            "display" : "class"
+        },
+        {
+            "value" : "phylum",
+            "display" : "phylum"
+        },
+        {
+            "value" : "domain",
+            "display" : "domain"
+        }
+    ] }
+  }, {
+    "id" : "source",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "SEED" ],
+    "field_type" : "dropdown",
+    "dropdown_options" : {
+        "options": [
+        {
+            "value" : "SEED",
+            "display" : "SEED"
+        },
+        {
+            "value" : "RefSeq",
+            "display" : "RefSeq"
+        },
+        {
+            "value" : "GenBank",
+            "display" : "GenBank"
+        },
+        {
+            "value" : "IMG",
+            "display" : "IMG"
+        },
+        {
+            "value" : "TrEMBL",
+            "display" : "TrEMBL"
+        },
+        {
+            "value" : "SwissProt",
+            "display" : "SwissProt"
+        },
+        {
+            "value" : "PATRIC",
+            "display" : "PATRIC"
+        },
+        {
+            "value" : "KEGG",
+            "display" : "KEGG"
+        },
+        {
+            "value" : "M5NR",
+            "display" : "M5NR"
+        },
+        {
+            "value" : "RDP",
+            "display" : "RDP"
+        },
+        {
+            "value" : "Greengenes",
+            "display" : "Greengenes"
+        },
+        {
+            "value" : "LSU",
+            "display" : "LSU"
+        },
+        {
+            "value" : "SSU",
+            "display" : "SSU"
+        },
+        {
+            "value" : "M5RNA",
+            "display" : "M5RNA"
+        }
+    ] }
+  }, {
+    "id" : "evalue",
+    "optional" : false,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "5" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "identity",
+    "optional" : false,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "60" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "length",
+    "optional" : false,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "15" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  } ],
+  "behavior" : {
+    "script-mapping" : {
+        "module" : "communities_api",
+        "script" : "mg-compare-taxa",
+        "has_files": true,
+        "input_mapping" : [
+            {
+                "input_parameter": "input_metagenomes",
+                "target_property": "ids"
+            },
+            {
+                "input_parameter": "output_profile",
+                "target_property": "output"
+            },
+            {
+                "input_parameter": "level",
+                "target_property": "level"
+            },
+            {
+                "input_parameter": "source",
+                "target_property": "source"
+            },
+            {
+                "input_parameter": "evalue",
+                "target_property": "evalue"
+            },
+            {
+                "input_parameter": "identity",
+                "target_property": "identity"
+            },
+            {
+                "input_parameter": "length",
+                "target_property": "length"
+            },
+            {
+                "narrative_system_variable": "token",
+                "target_property": "token"
+            }
+        ],
+        "output_mapping" : [
+            {
+                "input_parameter": "output_profile",
+                "target_property": "id"
+            },
+            {
+                "narrative_system_variable": "workspace",
+                "target_property": "ws"
+            },
+            {
+                "narrative_system_variable": "token",
+                "target_property": "auth"
+            }
+        ]
+    }
+  }
+}

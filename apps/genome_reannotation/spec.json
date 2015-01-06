@@ -8,9 +8,10 @@
     "steps" : [
         {
             "step-id": "step_1",
-            "method-id": "simulate_growth_on_a_phenotype_set"
+            "method-id": "reannotate_microbial_genome"
         }
     ],
+    
     
     "behavior": {
     }

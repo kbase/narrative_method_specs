@@ -24,25 +24,15 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_models :
         ui-name : |
             Model IDs
         short-hint : |
-            list of species model ids (; seperated)
+            list of species models
         long-hint  : |
-            list of species model ids (; seperated)
+            list of species models
 
-
-    param1 :
-        ui-name : |
-            Species abundance
-        short-hint : |
-            list of species relative abundance (; separated)
-        long-hint  : |
-            list of species relative abundance (; separated)
-
-
-    param2 :
+    output_model :
         ui-name : |
             Community Model Output ID
         short-hint : |

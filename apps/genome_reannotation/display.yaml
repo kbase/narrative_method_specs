@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Annotate Microbial Genome
+name     : Reannotate Microbial Genome
 subtitle : |
     In this app, the user uploads contigs for annotation using the RAST approach.
 tooltip  : |
@@ -21,7 +21,7 @@ step-descriptions :
 
 
 description : |
-    <p>The "Annotate Microbial Genome" app assigns biological functions to contigs in an assembled genome. The user starts by loading a genome into KBase by importing from NCBI, uploading a GenBank file, or uploading a FASTA file containing assembled contigs. KBase will then perform structural and functional annotation of the contigs, calling genes and assigning biological functions derived from the SEED Subsystems ontology. The resulting annotated genome can be exported in GenBank or FASTA format or used as input to other KBase apps such as Genome-scale Metabolic Model Reconstruction.</p>
+    <p>The "Reannotate Microbial Genome" app assigns biological functions to contigs in an assembled genome. The user starts by loading a genome into KBase by importing from NCBI, uploading a GenBank file, or uploading a FASTA file containing assembled contigs. KBase will then perform structural and functional annotation of the contigs, calling genes and assigning biological functions derived from the SEED Subsystems ontology. The resulting annotated genome can be exported in GenBank or FASTA format or used as input to other KBase apps such as Genome-scale Metabolic Model Reconstruction.</p>
 
 
 technical-description : |

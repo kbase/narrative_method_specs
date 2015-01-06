@@ -20,7 +20,7 @@ header : |
 
 <p>This app feeds into the following apps:  Normalize Data for Microbial Communities, Generate Metagenomic Rank Abundance Plot, Create Metagenomic Heatmap, and Compare Metagenomes Using PCoA.</p>
 
-step-descriptions : 
+step-descriptions :
     step_1 : |
         Specify the list of metagenomes and the attributes that will define the annotation abundance data that will be returned as an abundance profile.
     step_2 : |

@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : Annotate a Contig Set
+name     : Reannotate microbial genome
 subtitle : |
-    Build an annotated Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer.
+    Reannotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]
 tooltip  : |
-    Build an annotated Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer.
+    Reannotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]
 
 screenshots :
     []
@@ -24,38 +24,14 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    input_contigset :
+    input_genome :
         ui-name : |
-            Contig Set
+            Genome
         short-hint : |
-            the set of contig sequences to annotate
+            Input genome object to be reannotated
         long-hint  : |
-            the set of contig sequences to annotate
+            Input genome object to be reannotated
 
-
-    scientific_name :
-        ui-name : |
-            Scientific Name
-        short-hint : |
-            the scientific name to assign to the genome
-        long-hint  : |
-            the scientific name to assign to the genome
-    
-    domain :
-        ui-name : |
-            Domain
-        short-hint : |
-            the domain of life of the organism being annotated
-        long-hint  : |
-            the domain of life of the organism being annotated
-
-    genetic_code :
-        ui-name : |
-            Genetic Code
-        short-hint : |
-            the genetic code used in translating to protein sequences
-        long-hint  : |
-            the genetic code used in translating to protein sequences
 
     call_features_rRNA_SEED :
         ui-name : |
@@ -201,9 +177,9 @@ parameters :
         long-hint  : |
             name to assign the output genome; if left blank, a name will be generated for you
 
-
 description : |
-    Build an annotated Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer.
+    Reannotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]
+
 
 technical-description : |
-    Build an annotated Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer.
+    Reannotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]

@@ -1,0 +1,95 @@
+#
+# Define basic display information
+#
+name     : Retrieve Functional Abundance Profile
+subtitle : |
+    Retrieve functional abundance data for selected metagenomes.
+tooltip  : |
+    Retrieve functional abundance data for selected metagenomes.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_metagenomes :
+        ui-name : |
+            Metagenome List
+        short-hint : |
+            object name of Communities.Collection
+        long-hint  : |
+            object name of Communities.Collection
+
+
+    output_profile :
+        ui-name : |
+            Output Name
+        short-hint : |
+            object name of abundance profile table
+        long-hint  : |
+            object name of abundance profile table
+
+
+    level :
+        ui-name : |
+            Functional Level
+        short-hint : |
+            functional hierarchical level to retrieve abundances for
+        long-hint  : |
+            functional hierarchical level to retrieve abundances for
+
+
+    source :
+        ui-name : |
+            Source Name
+        short-hint : |
+            data source to filter results by
+        long-hint  : |
+            data source to filter results by
+
+
+    evalue :
+        ui-name : |
+            E-Value
+        short-hint : |
+            negative exponent value for maximum e-value cutoff, default is 5
+        long-hint  : |
+            negative exponent value for maximum e-value cutoff, default is 5
+
+
+    identity :
+        ui-name : |
+            % Identity
+        short-hint : |
+            percent value for minimum % identity cutoff, default is 60
+        long-hint  : |
+            percent value for minimum % identity cutoff, default is 60
+
+
+    length :
+        ui-name : |
+            Alignment Length
+        short-hint : |
+            value for minimum alignment length cutoff, default is 15
+        long-hint  : |
+            value for minimum alignment length cutoff, default is 15
+            
+
+description : |
+    Retrieve functional abundance data for selected metagenomes.
+
+
+technical-description : |
+    Retrieve functional abundance data for selected metagenomes.

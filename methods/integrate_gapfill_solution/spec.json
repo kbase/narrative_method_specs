@@ -4,13 +4,13 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["active"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseIntegrateGapfillOutput"
   },
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "input_model",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -20,28 +20,62 @@
       "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
     }
   }, {
-    "id" : "param1",
+    "id" : "gapfill_solutions",
     "optional" : false,
     "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "e.g model.gf.2.gfsol.1" ],
+    "allow_multiple" : true,
+    "default_values" : [ "0.0" ],
     "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "KBaseFBA.Gapfilling" ]
-    }
+    "text_options" : {}
   }, {
-    "id" : "param2",
+    "id" : "output_model",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
+      "valid_ws_types" : [ "KBaseFBA.FBAModel" ],
+      "is_output_name":true
     }
   } ],
   "behavior" : {
-    "python_class" : "Microbes Metabolic Modeling",
-    "python_function" : "Integrate Gapfill Solution"
+    "service-mapping" : {
+      "url" : "",
+      "name" : "KBaseFBAModeling",
+      "method" : "integrate_reconciliation_solutions",
+      "input_mapping" : [
+        {
+          "input_parameter": "input_model",
+          "target_property": "model"
+        },
+        {
+          "input_parameter": "gapfill_solutions",
+          "target_property": "gapfillSolutions"
+        },
+        {
+          "input_parameter": "output_model",
+          "target_property": "out_model"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspace"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "model_workspace"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "output_model",
+          "target_property": "id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws"
+        }
+      ]
+    }
   }
 }
