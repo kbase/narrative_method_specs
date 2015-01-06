@@ -1,0 +1,50 @@
+#
+# Define basic display information
+#
+name     : Normalize Abundance Profile
+subtitle : |
+    Normalize abundance data for selected metagenomes.
+tooltip  : |
+    Normalize abundance data for selected metagenomes.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_profile :
+        ui-name : |
+            Raw Abundance Profile
+        short-hint : |
+            object name of input abundance profile
+        long-hint  : |
+            object name of input abundance profile
+
+
+    output_profile :
+        ui-name : |
+            Normalized Abundance Profile
+        short-hint : |
+            object name of output abundance profile
+        long-hint  : |
+            object name of output abundance profile
+
+
+description : |
+    Normalize abundance data for selected profile.
+
+
+technical-description : |
+    Normalize abundance data for selected profile.

@@ -1,0 +1,57 @@
+#
+# Define basic display information
+#
+name     : Import from FTP
+subtitle : |
+    Import into your narrative a genome and contig set from an FTP site, such as NCBI.
+tooltip  : |
+    Import into your narrative a genome and contig set from an FTP site, such as NCBI.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    ftpFolder :
+        ui-name : |
+            FTP FOLDER
+        short-hint : |
+            Enter the path to the FTP folder with the GBK-file(s).<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/
+        long-hint  : |
+            Enter the path to the FTP folder with the GBK-file(s).<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/
+
+    outputObject :
+        ui-name : |
+            GENOME OBJECT ID
+        short-hint : |
+            Provide a name for the genome object you are uploading.<br>ex) Shewanella_MR_4
+        long-hint  : |
+            Provide a name for the genome object you are uploading.<br>ex) Shewanella_MR_4
+
+    contigObject :
+        ui-name : |
+            CONTIG-SET OBJECT ID
+        short-hint : |
+            Provide a name for the contig-set object you are uploading. If empty, an ID will be chosen based on genome object ID.
+        long-hint  : |
+            Provide a name for the contig-set object you are uploading. If empty, an ID will be chosen based on genome object ID.
+
+
+description : |
+    Import into your narrative a genome from your local GBK files from an FTP, such as NCBI.
+
+
+technical-description : |
+    Import into your narrative a genome from your local GBK files from an FTP, such as NCBI.

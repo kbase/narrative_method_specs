@@ -83,116 +83,6 @@
         }
     ] }
   }, {
-    "id" : "filter_list",
-    "optional" : true,
-    "advanced" : true,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "Communities.Data" ]
-    }
-  }, {
-    "id" : "filter_level",
-    "optional" : true,
-    "advanced" : true,
-    "allow_multiple" : false,
-    "default_values" : [ "genus" ],
-    "field_type" : "dropdown",
-    "dropdown_options" : {
-        "options": [
-        {
-            "value" : "genus",
-            "display" : "genus"
-        },
-        {
-            "value" : "family",
-            "display" : "family"
-        },
-        {
-            "value" : "order",
-            "display" : "order"
-        },
-        {
-            "value" : "class",
-            "display" : "class"
-        },
-        {
-            "value" : "phylum",
-            "display" : "phylum"
-        },
-        {
-            "value" : "domain",
-            "display" : "domain"
-        }
-    ] }
-  }, {
-    "id" : "filter_source",
-    "optional" : true,
-    "advanced" : true,
-    "allow_multiple" : false,
-    "default_values" : [ "SEED" ],
-    "field_type" : "dropdown",
-    "dropdown_options" : {
-        "options": [
-        {
-            "value" : "SEED",
-            "display" : "SEED"
-        },
-        {
-            "value" : "RefSeq",
-            "display" : "RefSeq"
-        },
-        {
-            "value" : "GenBank",
-            "display" : "GenBank"
-        },
-        {
-            "value" : "IMG",
-            "display" : "IMG"
-        },
-        {
-            "value" : "TrEMBL",
-            "display" : "TrEMBL"
-        },
-        {
-            "value" : "SwissProt",
-            "display" : "SwissProt"
-        },
-        {
-            "value" : "PATRIC",
-            "display" : "PATRIC"
-        },
-        {
-            "value" : "KEGG",
-            "display" : "KEGG"
-        },
-        {
-            "value" : "M5NR",
-            "display" : "M5NR"
-        },
-        {
-            "value" : "RDP",
-            "display" : "RDP"
-        },
-        {
-            "value" : "Greengenes",
-            "display" : "Greengenes"
-        },
-        {
-            "value" : "LSU",
-            "display" : "LSU"
-        },
-        {
-            "value" : "SSU",
-            "display" : "SSU"
-        },
-        {
-            "value" : "M5RNA",
-            "display" : "M5RNA"
-        }
-    ] }
-  }, {
     "id" : "evalue",
     "optional" : false,
     "advanced" : true,
@@ -244,18 +134,6 @@
               {
                   "input_parameter": "source",
                   "target_property": "source"
-              },
-              {
-                  "input_parameter": "filter_list",
-                  "target_property": "intersect_name"
-              },
-              {
-                  "input_parameter": "filter_level",
-                  "target_property": "intersect_level"
-              },
-              {
-                  "input_parameter": "filter_source",
-                  "target_property": "intersect_source"
               },
               {
                   "input_parameter": "evalue",

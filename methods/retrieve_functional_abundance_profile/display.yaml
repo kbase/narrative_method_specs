@@ -60,33 +60,6 @@ parameters :
             data source to filter results by
 
 
-    filter_list :
-        ui-name : |
-            Filter List
-        short-hint : |
-            object name of list of names to filter results by
-        long-hint  : |
-            object name of list of names to filter results by
-
-
-    filter_level :
-        ui-name : |
-            Filter Level
-        short-hint : |
-            hierarchical level of filter names list
-        long-hint  : |
-            hierarchical level of filter names list
-
-
-    filter_source :
-        ui-name : |
-            Filter Source
-        short-hint : |
-            data source of filter names list
-        long-hint  : |
-            data source of filter names list
-
-
     evalue :
         ui-name : |
             E-Value
