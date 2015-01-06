@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Import from FTP
+name     : IMPORT FROM FTP
 subtitle : |
     Import into your narrative a genome and contig set from an FTP site, such as NCBI.
 tooltip  : |

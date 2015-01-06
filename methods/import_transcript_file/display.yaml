@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : UPLOAD TRANSCRIPT FILE
+name     : UPLOAD TRANSCRIPT
 subtitle : |
     Import into your narrative a transcript object from a local file in FASTA format.
 tooltip  : |
