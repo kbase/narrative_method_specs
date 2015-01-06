@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : Import Genome
+name     : UPLOAD GBK FILE
 subtitle : |
-    Upload a Genome and ContigSet from GBK-file (or files in case of zip) into your workspace. This function should be followed by adding KBase annotations into this Genome.
+    Import into your narrative a genome and contig set from a local file in GBK format.
 tooltip  : |
-    Upload a Genome and ContigSet from GBK-file (or files in case of zip) into your workspace. This function should be followed by adding KBase annotations into this Genome.
+    Import into your narrative a genome and contig set from a local file in GBK format.
 
 screenshots :
     []
@@ -24,14 +24,6 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    mode :
-        ui-name : |
-            Hiddent tab parameter
-        short-hint : |
-            Hiddent tab parameter
-        long-hint  : |
-            Hiddent tab parameter
-
     gbkFile :
         ui-name : |
             Genbank file
@@ -39,14 +31,6 @@ parameters :
             File with genome data in GBK format or zip-file with contigs.
         long-hint  : |
             File with genome data in GBK format or zip-file with contigs.
-
-    ftpFolder :
-        ui-name : |
-            FTP FOLDER
-        short-hint : |
-            Enter the path to the FTP folder with the GBK-file(s).<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/
-        long-hint  : |
-            Enter the path to the FTP folder with the GBK-file(s).<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/
 
     outputObject :
         ui-name : |

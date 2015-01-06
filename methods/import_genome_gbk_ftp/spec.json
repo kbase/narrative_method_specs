@@ -9,41 +9,6 @@
     "output" : "GenomeAnnotation"
   },
   "parameters" : [ {
-    "id" : "mode",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "tab",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    },
-    "tab_options": {
-        "options": [ {
-            "id": "existingData",
-            "ui_name": "Existing genome",
-            "param_ids": []
-        }, {
-            "id": "uploadGbk",
-            "ui_name": "Upload GBK file",
-            "param_ids": ["gbkFile"]
-        }, {
-            "id": "importFtp",
-            "ui_name": "Import from FTP",
-            "param_ids": ["ftpFolder"]
-        } ]
-    }
-  }, {
-    "id" : "gbkFile",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "file",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
-  }, {
     "id" : "ftpFolder",
     "optional" : false,
     "advanced" : false,
