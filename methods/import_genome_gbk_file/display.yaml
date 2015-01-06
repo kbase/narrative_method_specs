@@ -1,0 +1,57 @@
+#
+# Define basic display information
+#
+name     : UPLOAD GBK FILE
+subtitle : |
+    Import into your narrative a genome and contig set from a local file in GBK format.
+tooltip  : |
+    Import into your narrative a genome and contig set from a local file in GBK format.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    gbkFile :
+        ui-name : |
+            GENBANK FILE
+        short-hint : |
+            File with genome data in GBK format or zip-file with contigs.
+        long-hint  : |
+            File with genome data in GBK format or zip-file with contigs.
+
+    outputObject :
+        ui-name : |
+            GENOME OBJECT ID
+        short-hint : |
+            Provide a name for the genome object you are uploading.<br>ex) Shewanella_MR_4
+        long-hint  : |
+            Provide a name for the genome object you are uploading.<br>ex) Shewanella_MR_4
+
+    contigObject :
+        ui-name : |
+            CONTIG-SET OBJECT ID
+        short-hint : |
+            Provide a name for the contig-set object you are uploading. If empty, an ID will be chosen based on genome object ID.
+        long-hint  : |
+            Provide a name for the contig-set object you are uploading. If empty, an ID will be chosen based on genome object ID.
+
+
+description : |
+    Import into your narrative a genome from your local GBK files or from an FTP, such as NCBI.
+
+
+technical-description : |
+    Import into your narrative a genome from your local GBK files or from an FTP, such as NCBI.
