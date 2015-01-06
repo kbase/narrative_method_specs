@@ -17,7 +17,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "Communities.TaxonomicProfile", "Communities.FunctionalProfile" ]
+      "valid_ws_types" : [ "Communities.TaxonomicMatrix", "Communities.FunctionalMatrix" ]
     }
   }, {
     "id" : "output_profile",
@@ -27,7 +27,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "Communities.TaxonomicProfile", "Communities.FunctionalProfile" ],
+      "valid_ws_types" : [ "Communities.TaxonomicMatrix", "Communities.FunctionalMatrix" ],
       "is_output_name": true
     }
   } ],
