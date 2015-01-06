@@ -5,7 +5,7 @@
   "visble" : true,
   "categories" : [ "importers" ],
   "widgets" : {
-    "input" : "GenomeImportWidget",
+    "input" : "kbaseNarrativeMethodInput",
     "output" : "GenomeAnnotation"
   },
   "parameters" : [ {
