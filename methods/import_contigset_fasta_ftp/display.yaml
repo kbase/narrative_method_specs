@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Import Contigs
+name     : IMPORT FROM FTP
 subtitle : |
     Upload a ContigSet object from FTP into your workspace.
 tooltip  : |
@@ -26,7 +26,7 @@ method-suggestions :
 parameters :
     ftpFolder :
         ui-name : |
-            FTP folder
+            FTP FOLDER
         short-hint : |
             Path to FTP folder with genome Fasta-file.
         long-hint  : |
@@ -34,7 +34,7 @@ parameters :
 
     outputObject :
         ui-name : |
-            ContigSet Object ID
+            CONTIGSET OBJECT ID
         short-hint : |
             Target object ID.
         long-hint  : |
