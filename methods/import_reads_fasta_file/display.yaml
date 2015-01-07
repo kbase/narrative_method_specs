@@ -1,5 +1,5 @@
 name     : FASTA FILE
-subtitle : -
+subtitle : none
 tooltip  : Upload a ReferenceAssembly object from Fasta-file into your workspace.
 
 screenshots :
@@ -15,14 +15,13 @@ parameters :
     fastaFile :
         ui-name : FASTA FILE
         short-hint : File with short reads in Fasta format.
-        long-hint  : -
+        long-hint  : none
 
     outputObject :
-        ui-name : |
-            OUTPUT OBJECT ID
+        ui-name : OUTPUT OBJECT ID
         short-hint : Target object ID.
-        long-hint  : Target object ID.
+        long-hint  : none
 
-description : -
+description : none
 
-technical-description : -
+technical-description : none
