@@ -32,7 +32,7 @@
   } ],
   "behavior" : {
     "service-mapping" : {
-      "url" : "https://kbase.us/services/genome_comparison/jsonrpc",
+      "url" : "https://ci.kbase.us/services/genome_comparison/jsonrpc",
       "name" : "GenomeComparison",
       "method" : "import_ncbi_genome",
       "input_mapping" : [

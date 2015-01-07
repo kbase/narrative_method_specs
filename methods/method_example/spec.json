@@ -129,7 +129,7 @@
   }],
   "behavior" : {
     "service-mapping" : {
-      "url" : "https://kbase.us/services/narrative_method_store/rpc",
+      "url" : "https://ci.kbase.us/services/narrative_method_store/rpc",
       "name" : "NarrativeMethodStore",
       "method" : "status",
       "input_mapping" : [
