@@ -7,7 +7,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "DataDump"
+    "output" : "CheckObject"
   },
   "parameters" : [ {
     "id" : "input_profile",

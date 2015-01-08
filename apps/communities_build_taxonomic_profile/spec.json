@@ -6,7 +6,7 @@
     "steps" : [
         {
             "step-id": "step_1",
-            "method-id": "retrieve_functional_abundance_profile"
+            "method-id": "retrieve_taxonomic_abundance_profile"
         },
         {
             "step-id": "step_2",
