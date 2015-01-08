@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : IMPORT FROM FTP
+name     : Import Genome
 subtitle : |
-    Import into your narrative a genome and contig set from an FTP site, such as NCBI.
+    Upload a Genome and ContigSet from GBK-file (or files in case of zip) into your workspace. This function should be followed by adding KBase annotations into this Genome.
 tooltip  : |
-    Import into your narrative a genome and contig set from an FTP site, such as NCBI.
+    Upload a Genome and ContigSet from GBK-file (or files in case of zip) into your workspace. This function should be followed by adding KBase annotations into this Genome.
 
 screenshots :
     []
@@ -24,6 +24,22 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
+    mode :
+        ui-name : |
+            Hiddent tab parameter
+        short-hint : |
+            Hiddent tab parameter
+        long-hint  : |
+            Hiddent tab parameter
+
+    gbkFile :
+        ui-name : |
+            Genbank file
+        short-hint : |
+            File with genome data in GBK format or zip-file with contigs.
+        long-hint  : |
+            File with genome data in GBK format or zip-file with contigs.
+
     ftpFolder :
         ui-name : |
             FTP FOLDER
@@ -50,8 +66,8 @@ parameters :
 
 
 description : |
-    Import into your narrative a genome from your local GBK files from an FTP, such as NCBI.
+    Import into your narrative a genome from your local GBK files or from an FTP, such as NCBI.
 
 
 technical-description : |
-    Import into your narrative a genome from your local GBK files from an FTP, such as NCBI.
+    Import into your narrative a genome from your local GBK files or from an FTP, such as NCBI.

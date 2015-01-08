@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : Transcript
+subtitle : Transcript object
+tooltip  : Transcript object
+
+icon : none
+
+description : |
+    <p>This type describes genome transcripts.</p>
+
+    
+    
+    

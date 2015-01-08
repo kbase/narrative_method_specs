@@ -3,7 +3,7 @@
     "view_method_ids":[
     ],
     "import_method_ids":[
-        "import_contigset_fasta_file", "import_contigset_fasta_ftp"
+        "import_transcript_file"
     ],
     "landing_page_url_prefix":""
 }

@@ -1,19 +1,14 @@
 {
-    "ver":"0.1.0",
-    "authors": [ "chenry" ],
+    "ver": "0.1.0",
+    "authors": [ "teharrison" ],
     "contact": "help@kbase.us",
-    
     "categories": [ "featured_apps" ],
-    
     "steps" : [
         {
             "step-id": "step_1",
-            "method-id": "compare_two_metabolic_models_generic"
+            "method-id": "retrieve_functional_abundance_profile"
         }
     ],
-    
-    
     "behavior": {
     }
-    
 }

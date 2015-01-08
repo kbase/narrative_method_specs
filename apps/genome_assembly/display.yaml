@@ -4,11 +4,11 @@
 name     : Assemble and Annotate Microbial Genome
 subtitle : |
     In this app, the user uploads raw reads from genome sequencing. These reads are
-    then assembled into contigs using a wide range of possible assembly techniqes. Lastly,
+    then assembled into contigs using a wide range of possible assembly techniques. Lastly,
     the contigs are annotated using RAST.
 tooltip  : |
     In this app, the user uploads raw reads from genome sequencing. These reads are
-    then assembled into contigs using a wide range of possible assembly techniqes. Lastly,
+    then assembled into contigs using a wide range of possible assembly techniques. Lastly,
     the contigs are annotated using RAST.
 
 screenshots : []
@@ -16,7 +16,7 @@ screenshots : []
 
 header : |
     In this app, the user uploads raw reads from genome sequencing. These reads are
-    then assembled into contigs using a wide range of possible assembly techniqes. Lastly,
+    then assembled into contigs using a wide range of possible assembly techniques. Lastly,
     the contigs are annotated using RAST.
 
 step-descriptions :
