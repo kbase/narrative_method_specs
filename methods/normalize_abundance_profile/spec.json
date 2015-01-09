@@ -7,7 +7,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "CheckObject"
+    "output" : "AbundanceDataTable"
   },
   "parameters" : [ {
     "id" : "input_profile",
