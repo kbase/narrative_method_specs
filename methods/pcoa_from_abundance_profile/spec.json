@@ -83,7 +83,7 @@
   "behavior" : {
       "script-mapping" : {
           "module" : "communities_api",
-          "script" : "mg-compare-pcoa-plot",
+          "script" : "mg-compare-pcoa",
           "has_files": true,
           "input_mapping" : [
               {

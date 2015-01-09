@@ -117,7 +117,7 @@
   "behavior" : {
         "script-mapping" : {
             "module" : "communities_api",
-            "script" : "mg-compare-heatmap-plot",
+            "script" : "mg-compare-heatmap",
             "has_files": true,
             "input_mapping" : [
                 {
