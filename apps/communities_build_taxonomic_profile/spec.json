@@ -7,18 +7,6 @@
         {
             "step-id": "step_1",
             "method-id": "retrieve_taxonomic_abundance_profile"
-        },
-        {
-            "step-id": "step_2",
-            "method-id": "view_abundance_profile_values",
-            "input_mapping" : [
-                {
-                    "step": "step_1",
-                    "is_from_input": true,
-                    "from": "output_profile",
-                    "to": "input_profile"
-                }
-            ]
         }
     ],
     "behavior": {
