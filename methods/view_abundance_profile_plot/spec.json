@@ -1,0 +1,41 @@
+{
+  "name" : "View Abundance Profile Plot",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "ImageView"
+  },
+  "parameters" : [ {
+    "id" : "input_plot",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "Communities.DataHandle" ]
+    }
+  } ],
+  "behavior" : {
+      "none" : {
+          "output_mapping" : [
+              {
+                  "input_parameter": "input_plot",
+                  "target_property": "id"
+              },
+              {
+                  "narrative_system_variable": "workspace",
+                  "target_property": "ws"
+              },
+              {
+                  "narrative_system_variable": "token",
+                  "target_property": "auth"
+              }
+          ]
+      }
+  }
+}

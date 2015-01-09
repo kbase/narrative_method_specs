@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : View Abundance Profile Plot
+subtitle : |
+    View an abundace profile plot of type Boxplot, Heatmap, or PCoA
+tooltip  : |
+    View an abundace profile plot of type Boxplot, Heatmap, or PCoA
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_plot :
+        ui-name : |
+            Input Name
+        short-hint : |
+            object name of input abundance profile plot
+        long-hint  : |
+            object name of input abundance profile plot
+
+
+description : |
+    View an abundace profile plot of type Boxplot, Heatmap, or PCoA
+
+
+technical-description : |
+    View an abundace profile plot of type Boxplot, Heatmap, or PCoA
