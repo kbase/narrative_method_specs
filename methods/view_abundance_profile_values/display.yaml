@@ -33,6 +33,15 @@ parameters :
             object name of input abundance profile
 
 
+    name :
+        ui-name : |
+            Label by Name
+        short-hint : |
+            label by metagenome name and not ID
+        long-hint  : |
+            label by metagenome name and not ID
+
+
 description : |
     View a BIOM format abundance profile as a table
 
