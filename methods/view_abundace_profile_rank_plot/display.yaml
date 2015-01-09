@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Rank Abundance from Abundance Profile
+name     : View Rank Abundance Plot
 subtitle : |
     Generate rank abundance profile from annotation abundance data.
 tooltip  : |
