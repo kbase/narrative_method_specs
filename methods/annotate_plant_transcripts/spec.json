@@ -26,7 +26,8 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ],
+      "is_output_name":true
     }
   } ],
   "behavior" : {
@@ -59,11 +60,11 @@
       "output_mapping" : [
         {
           "input_parameter": "output_genome",
-          "target_property": "ws_id"
+          "target_property": "id"
         },
         {
           "narrative_system_variable": "workspace",
-          "target_property": "ws_name"
+          "target_property": "ws"
         }
       ]
     }

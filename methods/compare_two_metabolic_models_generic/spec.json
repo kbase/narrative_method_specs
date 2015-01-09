@@ -3,8 +3,8 @@
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
-  "visble" : false,
-  "categories" : ["inactive"],
+  "visble" : true,
+  "categories" : ["active"],
   "widgets" : {
     "input" : null,
     "output" : "FbaModelComparisonWidget"
