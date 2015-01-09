@@ -27,7 +27,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "Communities.HeatmapData" ],
+      "valid_ws_types" : [ "Communities.Heatmap" ],
       "is_output_name": true
     }
   }, {
