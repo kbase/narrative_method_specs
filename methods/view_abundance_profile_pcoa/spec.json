@@ -1,0 +1,69 @@
+{
+  "name" : "View Abundance Profile PCoA",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "AbundanceDataPcoa"
+  },
+  "parameters" : [ {
+    "id" : "input_pcoa",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "Communities.PcoaData" ]
+    }
+  }, {
+    "id" : "x_axis",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "1" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "y_axis",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "2" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  } ],
+  "behavior" : {
+      "none" : {
+          "output_mapping" : [
+              {
+                  "input_parameter": "input_pcoa",
+                  "target_property": "id"
+              },
+              {
+                  "input_parameter": "x_axis",
+                  "target_property": "x_axis"
+              },
+              {
+                  "input_parameter": "y_axis",
+                  "target_property": "y_axis"
+              },
+              {
+                  "narrative_system_variable": "workspace",
+                  "target_property": "ws"
+              },
+              {
+                  "narrative_system_variable": "token",
+                  "target_property": "auth"
+              }
+          ]
+      }
+  }
+}
