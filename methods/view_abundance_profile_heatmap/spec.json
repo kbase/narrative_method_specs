@@ -1,5 +1,5 @@
 {
-  "name" : "View Abundance Profile Values",
+  "name" : "View Abundance Profile PCoA",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
@@ -7,20 +7,20 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "AbundanceDataTable"
+    "output" : "AbundanceDataHeatmap"
   },
   "parameters" : [ {
-    "id" : "input_profile",
+    "id" : "input_heatmap",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "Communities.TaxonomicMatrix", "Communities.FunctionalMatrix" ]
+      "valid_ws_types" : [ "Communities.Heatmap" ]
     }
   }, {
-    "id" : "name",
+    "id" : "rows",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -35,12 +35,12 @@
       "none" : {
           "output_mapping" : [
               {
-                  "input_parameter": "input_profile",
+                  "input_parameter": "input_heatmap",
                   "target_property": "id"
               },
               {
-                  "input_parameter": "name",
-                  "target_property": "name"
+                  "input_parameter": "rows",
+                  "target_property": "rows"
               },
               {
                   "narrative_system_variable": "workspace",

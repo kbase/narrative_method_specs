@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Boxplots from Abundance Profile
+name     : View Boxplots from Abundance Profile
 subtitle : |
     Generate boxplots from annotation abundance data.
 tooltip  : |
@@ -31,15 +31,6 @@ parameters :
             object name of input abundance profile
         long-hint  : |
             object name of input abundance profile
-
-
-    output_boxplot :
-        ui-name : |
-            Output Boxplot
-        short-hint : |
-            object name of output boxplot
-        long-hint  : |
-            object name of output boxplot
 
 
     name :

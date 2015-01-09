@@ -7,7 +7,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "DataDump"
+    "output" : "AbundanceDataPcoa"
   },
   "parameters" : [ {
     "id" : "input_profile",
@@ -27,18 +27,8 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "Communities.DataHandle" ],
+      "valid_ws_types" : [ "Communities. PCoA" ],
       "is_output_name": true
-    }
-  }, {
-    "id" : "metadata",
-    "optional" : true,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
     }
   }, {
     "id" : "distance",
@@ -89,22 +79,11 @@
         "checked_value": 1,
         "unchecked_value": 0
     }
-  }, {      
-    "id" : "three",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "0" ],
-    "field_type" : "checkbox",
-    "checkbox_options": {
-        "checked_value": 1,
-        "unchecked_value": 0
-    }
   } ],
   "behavior" : {
       "script-mapping" : {
           "module" : "communities_api",
-          "script" : "mg-compare-pcoa-plot",
+          "script" : "mg-compare-pcoa",
           "has_files": true,
           "input_mapping" : [
               {
@@ -113,11 +92,7 @@
               },
               {
                   "input_parameter": "output_pcoa",
-                  "target_property": "plot"
-              },
-              {
-                  "input_parameter": "metadata",
-                  "target_property": "metadata"
+                  "target_property": "output"
               },
               {
                   "input_parameter": "distance",
@@ -126,14 +101,6 @@
               {
                   "input_parameter": "name",
                   "target_property": "name"
-              },
-              {
-                  "input_parameter": "three",
-                  "target_property": "three"
-              },
-              {
-                  "constant_value": "1",
-                  "target_property": "reference"
               },
               {
                   "narrative_system_variable": "token",

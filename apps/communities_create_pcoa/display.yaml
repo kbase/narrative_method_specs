@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : Generate Metagenomic Rank Abundance Plot
+name     : Generate Abundance Profile PCoA
 subtitle : |
-    Generate rank abundance profile from annotation abundance data.
+    Generate a PCoA from annotation abundance data.
 tooltip  : |
-    Generate rank abundance profile from annotation abundance data.
+    Generate a PCoA from annotation abundance data.
 
 screenshots : []
 
@@ -15,11 +15,11 @@ header : |
 
 step-descriptions :
     step_1 : |
-        Generate rank abundance profile from annotation abundance data.
+        Generate a PCoA from annotation abundance data.
 
 
 description : |
-    <p>In this App, you can generate a rank abundance profile.</p>
+    <p>In this App, you can generate a PCoA plot.</p>
 
 
 technical-description : |
