@@ -24,34 +24,25 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
+    input_profile :
         ui-name : |
             Input Name
         short-hint : |
-            object name of Communities.Profile
+            object name of input abundance profile
         long-hint  : |
-            object name of Communities.Profile
+            object name of input abundance profile
 
 
-    param2 :
+    name :
         ui-name : |
-            Annotation Level
-        short-hint : |
-            annotation hierarchical level to retrieve abundances for
-        long-hint  : |
-            annotation hierarchical level to retrieve abundances for
-
-
-    param3 :
-        ui-name : |
-            Label Name
+            Label by Name
         short-hint : |
             label by metagenome name and not ID
         long-hint  : |
             label by metagenome name and not ID
 
 
-    param4 :
+    top :
         ui-name : |
             Top Annotations
         short-hint : |
@@ -60,7 +51,7 @@ parameters :
             produce profile for top N abundant annotations
 
 
-    param5 :
+    order :
         ui-name : |
             Order By
         short-hint : |
