@@ -15,13 +15,11 @@ header : |
     <p>This app makes it possible to retrieve functional annotation aundance profiles for a selected set of metagenomes. You can use search to create a list of metagenomes, and then specify options that define the various attributes (e.g. annotation e-value, percent identity, level) to restrict the data that will be returned.</p>
     <p>The most critical parameters for creating a profile (besides inputting the metagenome(s) you want to include along with output name) are the functional level, and source you want to base your annotation on (Source Name).</p>
     <p>The output of this app is an abundance profile for one or more metagenomes. The abundance profile contains the raw annotation abundance data returned for the selected set of data attributes. Abundance profiles serve as the inputs for all other community related apps - normalization, vizualizations (PCoA, heatmap-dendrograms, and rank abundance plots) to look for trends in the data, and statistical anlayses to identify the taxa or functions that drive these trends.</p>
-    <p>This app feeds into the following apps:  Normalize Data for Microbial Communities, Generate Metagenomic Rank Abundance Plot, Create Metagenomic Heatmap, and Compare Metagenomes Using PCoA.</p>
 
 step-descriptions :
     step_1 : |
-        Specify the list of metagenomes and the attributes that will define the data that will be returned as an abundance profile.
-    step_2 : |
-        View the table of abundance values and annotations that will be used as inputs for the statistical tools and visualizations.
+        Specify the list of metagenomes and the attributes that will define the data that will be returned as an abundance profile. Returns a view of the abundance profile in table format.
+
 
 description : |
     <p>In this App, you can build and view abundance profiles.</p>
