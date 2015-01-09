@@ -1,12 +1,12 @@
 {
-  "name" : "Boxplots from Abundance Profile",
+  "name" : "Communities Data Visualization",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
   "categories" : ["active"],
   "widgets" : {
-    "input" : null,
+    "input" : "devVizSelector",
     "output" : "DataDump"
   },
   "parameters" : [ {
