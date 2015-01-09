@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Metagenomic PCoA Analysis
+name     : Plot Abundance Profile PCoA
 subtitle : |
     Generate a PCoA from annotation abundance data.
 tooltip  : |
