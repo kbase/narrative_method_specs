@@ -1,47 +1,54 @@
 {
-  "name" : "Align Protein Sequences",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : [ "importers" ],
   "widgets" : {
-    "input" : null,
-    "output" : "kbaseMSA"
+    "input" : "kbaseNarrativeMethodInput"
   },
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "fastqFile1",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "KBaseSearch.FeatureSet" ]
-    }
-  }, {
-    "id" : "param1",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
+    "field_type" : "file",
     "text_options" : {
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param2",
+    "id" : "fastqFile2",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "file",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "outputObject",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseTrees.MSA" ]
+      "valid_ws_types" : [ "KBaseAssembly.PairedEndLibrary" ],
+      "is_output_name" : true
     }
   } ],
   "behavior" : {
-    "python_class" : "Microbes Comparative Genomics",
-    "python_function" : "Align Protein Sequences"
-  }
+    "service-mapping" : {
+      "url" : "http://localhost:11111/",
+      "name" : "KBaseDataImport",
+      "method" : "upload",
+      "input_mapping" : [
+      ],
+      "output_mapping" : [
+      ]
+    }
+  },
+  "job_id_output_field": "job_id"
 }

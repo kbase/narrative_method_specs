@@ -26,22 +26,21 @@ method-suggestions :
 parameters :
     input_genome :
         ui-name : |
-            Genome ID
+            Source Genome ID
         short-hint : |
-            Source genome ID
+            Source Genome ID
         long-hint  : |
-            Source genome ID
+            Source Genome ID
 
 
     output_genome :
         ui-name : |
-            Output Genome ID
+            Saved Genome ID
         short-hint : |
-            Annotated output genome ID. If empty, annotation will be added into original genome object.
+            ID of newly annotated Genome. This may be the same as the Source Genome ID.
         long-hint  : |
-            Annotated output genome ID. If empty, annotation will be added into original genome object.
-
-
+            ID of newly annotated Genome. This may be the same as the Source Genome ID.
+ 
 description : |
     Annotate a Genome object with structural and functional gene annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace.
 

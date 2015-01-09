@@ -1,37 +1,44 @@
 {
-  "name" : "Build Genome Set From Tree",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : [ "importers" ],
   "widgets" : {
-    "input" : null,
-    "output" : "kbaseGenomeSetBuilder"
+    "input" : "kbaseNarrativeMethodInput"
   },
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "ftpFolder",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseTrees.Tree" ]
+      "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "param1",
+    "id" : "outputObject",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseSearch.GenomeSet" ]
+      "valid_ws_types" : [ "KBaseGenomes.ContigSet" ],
+      "is_output_name" : true
     }
   } ],
   "behavior" : {
-    "python_class" : "Microbes Comparative Genomics",
-    "python_function" : "Build Genome Set From Tree"
-  }
+    "service-mapping" : {
+      "url" : "http://localhost:11111/",
+      "name" : "KBaseDataImport",
+      "method" : "upload",
+      "input_mapping" : [
+      ],
+      "output_mapping" : [
+      ]
+    }
+  },
+  "job_id_output_field": "job_id"
 }
