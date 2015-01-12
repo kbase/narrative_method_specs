@@ -8,7 +8,6 @@ tooltip  : |
     This method uses Flux Balance Analysis (FBA) to predict metabolic fluxes in a metabolic model of an organism grown on a given media.
 
 screenshots :
-    
     - run_flux_balance_analysis.png
     - run_flux_balance_analysis_output.png
 
@@ -149,7 +148,7 @@ parameters :
 
 
 description : |
-    <p>To perform FBA, begin by specifying the media on which you will grow your organism. In KBase, the media object contains the chemical compounds on which you want to analyze the growth of your organism. KBase provides users with more than 500 commonly used media conditions to use when running FBA. These can be found by in the Narrative Interface under the Analyze heading by selecting “+ Add Data” and then navigating to the “Public” tab. In addition, users can build their own custom media formulations.</p>
+    <p></p>
 
 
 technical-description : |
