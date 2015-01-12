@@ -149,10 +149,7 @@ parameters :
 
 
 description : |
-    <p>A metabolic model of a single-celled organism (see Build a Metabolic Model) 
-can be used to carry out Flux Balance Analysis (FBA). 
-FBA is a constraint-based method that estimates growth-optimal fluxes through all reactions in the metabolic network, thereby making it possible to estimate the growth rate of an organism (the rate of biomass production) or the rate of production of a given metabolic output on a specified media.</p>
-
+    <p>A metabolic model of a single-celled organism (see Build a Metabolic Model) can be used to carry out Flux Balance Analysis (FBA). FBA is a constraint-based method that estimates growth-optimal fluxes through all reactions in the metabolic network, thereby making it possible to estimate the growth rate of an organism (the rate of biomass production) or the rate of production of a given metabolic output on a specified media.</p>
     <p>To perform FBA, begin by specifying the media on which you will grow your organism. In KBase, the media object contains the chemical compounds on which you want to analyze the growth of your organism. KBase provides users with more than 500 commonly used media conditions to use when running FBA. These can be found by in the Narrative Interface under the Analyze heading by selecting “+ Add Data” and then navigating to the “Public” tab. In addition, users can build their own custom media formulations.</p>
 
 
