@@ -214,7 +214,7 @@ publications :
     -
         display-text: |   
 SSPACE:
-Boetzer M, Henkel CV, Jansen HJ, Butler D, Pirovano W (2011) Scaffolding pre-assembled contigs using SSPACE. Bioinformatics 27: 578–579. doi:10.1093/bioinformatics/btq683.
+Boetzer M, Henkel CV, Jansen HJ, Butler D, Pirovano W (2011) Scaffolding pre-assembled contigs using SSPACE. Bioinformatics 27: 578-579. doi:10.1093/bioinformatics/btq683.
 
     -
         display-text: |
@@ -229,37 +229,37 @@ link: https://github.com/levinas/seqtk
     -
         display-text: |
 KmerGenie:
-Chikhi R, Medvedev P (2014) Informed and automated k-mer size selection for genome assembly. Bioinformatics 30: 31–37. doi:10.1093/bioinformatics/btt310.
+Chikhi R, Medvedev P (2014) Informed and automated k-mer size selection for genome assembly. Bioinformatics 30: 31-37. doi:10.1093/bioinformatics/btt310.
 
     -
         display-text: |
 bwa:
-Li H, Durbin R (2009) Fast and accurate short read alignment with Burrows-Wheeler transform. Bioinformatics 25: 1754–1760. doi:10.1093/bioinformatics/btp324.
+Li H, Durbin R (2009) Fast and accurate short read alignment with Burrows-Wheeler transform. Bioinformatics 25: 1754-1760. doi:10.1093/bioinformatics/btp324.
 
     -
         display-text: |
 Velvet:
-Zerbino DR, Birney E (2008) Velvet: Algorithms for de novo short read assembly using de Bruijn graphs. Genome Research 18: 821–829. doi:10.1101/gr.074492.107.
+Zerbino DR, Birney E (2008) Velvet: Algorithms for de novo short read assembly using de Bruijn graphs. Genome Research 18: 821-829. doi:10.1101/gr.074492.107.
 
     -
         display-text: |
 MaSuRCA:
-Zimin AV, Marcais G, Puiu D, Roberts M, Salzberg SL, et al. (2013) The MaSuRCA genome assembler. Bioinformatics 29: 2669–2677. doi:10.1093/bioinformatics/btt476.
+Zimin AV, Marcais G, Puiu D, Roberts M, Salzberg SL, et al. (2013) The MaSuRCA genome assembler. Bioinformatics 29: 2669-2677. doi:10.1093/bioinformatics/btt476.
 
     -
         display-text: |
 sga_preprocess:
-Simpson JT, Durbin R (2012) Efficient de novo assembly of large genomes using compressed data structures. Genome Research 22: 549–556. doi:10.1101/gr.126953.111.
+Simpson JT, Durbin R (2012) Efficient de novo assembly of large genomes using compressed data structures. Genome Research 22: 549-556. doi:10.1101/gr.126953.111.
 
     -
         display-text: |
 bhammer:
-Bankevich A, Nurk S, Antipov D, Gurevich AA, Dvorkin M, et al. (2012) SPAdes: A New Genome Assembly Algorithm and Its Applications to Single-Cell Sequencing. Journal of Computational Biology 19: 455–477. doi:10.1089/cmb.2012.0021.
+Bankevich A, Nurk S, Antipov D, Gurevich AA, Dvorkin M, et al. (2012) SPAdes: A New Genome Assembly Algorithm and Its Applications to Single-Cell Sequencing. Journal of Computational Biology 19: 455-477. doi:10.1089/cmb.2012.0021.
 
     -
         display-text: |
 IDBA:
-Peng Y, Leung HCM, Yiu SM, Chin FYL (2012) IDBA-UD: a de novo assembler for single-cell and metagenomic sequencing data with highly uneven depth. Bioinformatics 28: 1420–1428. doi:10.1093/bioinformatics/bts174.
+Peng Y, Leung HCM, Yiu SM, Chin FYL (2012) IDBA-UD: a de novo assembler for single-cell and metagenomic sequencing data with highly uneven depth. Bioinformatics 28: 1420-1428. doi:10.1093/bioinformatics/bts174.
 
     -
         display-text: |
@@ -289,7 +289,7 @@ Vicedomini R, Vezzi F, Scalabrin S, Arvestad L, Policriti A (2013) GAM-NGS: geno
     -
         display-text: |
 ALE:
-Clark SC, Egan R, Frazier PI, Wang Z (2013) ALE: a generic assembly likelihood evaluation framework for assessing the accuracy of genome and metagenome assemblies. Bioinformatics 29: 435–443. doi:10.1093/bioinformatics/bts723.
+Clark SC, Egan R, Frazier PI, Wang Z (2013) ALE: a generic assembly likelihood evaluation framework for assessing the accuracy of genome and metagenome assemblies. Bioinformatics 29: 435-443. doi:10.1093/bioinformatics/bts723.
 
     -
         display-text: |
@@ -304,22 +304,22 @@ Tritt A, Eisen JA, Facciotti MT, Darling AE (2012) An Integrated Pipeline for de
     -
         display-text: |
 TagDust:
-Lassmann T, Hayashizaki Y, Daub CO (2009) TagDust--a program to eliminate artifacts from next generation sequencing data. Bioinformatics 25: 2839–2840. doi:10.1093/bioinformatics/btp527.
+Lassmann T, Hayashizaki Y, Daub CO (2009) TagDust--a program to eliminate artifacts from next generation sequencing data. Bioinformatics 25: 2839-2840. doi:10.1093/bioinformatics/btp527.
 
     -
         display-text: |
 sga_ec:
-Li H, Durbin R (2009) Fast and accurate short read alignment with Burrows-Wheeler transform. Bioinformatics 25: 1754–1760. doi:10.1093/bioinformatics/btp324.
+Li H, Durbin R (2009) Fast and accurate short read alignment with Burrows-Wheeler transform. Bioinformatics 25: 1754-1760. doi:10.1093/bioinformatics/btp324.
 
     -
         display-text: |
 spades:
-Bankevich A, Nurk S, Antipov D, Gurevich AA, Dvorkin M, et al. (2012) SPAdes: A New Genome Assembly Algorithm and Its Applications to Single-Cell Sequencing. Journal of Computational Biology 19: 455–477. doi:10.1089/cmb.2012.0021.
+Bankevich A, Nurk S, Antipov D, Gurevich AA, Dvorkin M, et al. (2012) SPAdes: A New Genome Assembly Algorithm and Its Applications to Single-Cell Sequencing. Journal of Computational Biology 19: 455-477. doi:10.1089/cmb.2012.0021.
 
     -
         display-text: |
 pacbio:
-Chin C-S, Alexander DH, Marks P, Klammer AA, Drake J, et al. (2013) Nonhybrid, finished microbial genome assemblies from long-read SMRT sequencing data. Nature Methods 10: 563–569. doi:10.1038/nmeth.2474.
+Chin C-S, Alexander DH, Marks P, Klammer AA, Drake J, et al. (2013) Nonhybrid, finished microbial genome assemblies from long-read SMRT sequencing data. Nature Methods 10: 563-569. doi:10.1038/nmeth.2474.
 
     -
         display-text: |
@@ -334,12 +334,12 @@ link: https://github.com/levinas/a5
     -
         display-text: |
 QUAST:
-Gurevich A, Saveliev V, Vyahhi N, Tesler G (2013) QUAST: quality assessment tool for genome assemblies. Bioinformatics 29: 1072–1075. doi:10.1093/bioinformatics/btt086.
+Gurevich A, Saveliev V, Vyahhi N, Tesler G (2013) QUAST: quality assessment tool for genome assemblies. Bioinformatics 29: 1072-1075. doi:10.1093/bioinformatics/btt086.
 
     -
         display-text: |
 Bowtie 2:
-Langmead B, Salzberg SL (2012) Fast gapped-read alignment with Bowtie 2. Nature Methods 9: 357–359. doi:10.1038/nmeth.1923.
+Langmead B, Salzberg SL (2012) Fast gapped-read alignment with Bowtie 2. Nature Methods 9: 357-359. doi:10.1038/nmeth.1923.
 
     -
         display-text: |
