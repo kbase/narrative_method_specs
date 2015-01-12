@@ -3,12 +3,14 @@
 #
 name     : Run Flux Balance Analysis
 subtitle : |
-    Run Flux Balance Analysis on a metabolic model. [10]
+    This method uses Flux Balance Analysis (FBA) to predict metabolic fluxes in a metabolic model of an organism grown on a given media.
 tooltip  : |
-    Run Flux Balance Analysis on a metabolic model. [10]
+    This method uses Flux Balance Analysis (FBA) to predict metabolic fluxes in a metabolic model of an organism grown on a given media.
 
 screenshots :
-    []
+    
+    - run_flux_balance_analysis.png
+    - run_flux_balance_analysis_output.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
@@ -26,29 +28,29 @@ method-suggestions :
 parameters :
     input_model :
         ui-name : |
-            Metabolic Model
+            FBAModel
         short-hint : |
-            the metabolic model you wish to run
+            The metabolic model on you wish to run FBA.
         long-hint  : |
-            the metabolic model you wish to run
+            The metabolic network model consisting of genome-wide set of stoichiometric reactions, compounds, and the weighted components of  the biomass on which you wish to carry out  Flux Balance Analysis.
 
 
     input_media :
         ui-name : |
-            Growth condition
+            Media
         short-hint : |
-            the growth condition in which to run FBA (optional, default is an artificial complete media) [10.2]
+            the growth condition in which to run FBA (optional, default is an artificial complete media)
         long-hint  : |
-            the growth condition in which to run FBA (optional, default is an artificial complete media) [10.2]
+            the growth condition in which to run FBA (optional, default is an artificial complete media)
 
 
     output_fba :
         ui-name : |
-            Output FBA result ID
+            Output FBA Result
         short-hint : |
-            select a name for the FBA result object
+            The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model.
         long-hint  : |
-            select a name for the FBA result object
+            The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model.
 
     fva :
         ui-name : |
@@ -78,9 +80,9 @@ parameters :
         ui-name : |
             Gene Knockouts
         short-hint : |
-            specify gene knockouts by the gene's feature ID (optional)
+            specify gene knockouts by the gene feature ID (optional)
         long-hint  : |
-            specify gene knockouts by the gene's feature ID (optional)
+            specify gene knockouts by the gene feature ID (optional)
 
 
     reaction_ko :
@@ -141,14 +143,18 @@ parameters :
         ui-name : |
             PROM constraint
         short-hint : |
-            specify the PROM constraint to apply for regulation of the metabolic model  (optional)
+            specify the PROM constraint to apply for regulation of the metabolic model (optional)
         long-hint  : |
-            specify the PROM constraint to apply for regulation of the metabolic model  (optional)
+            specify the PROM constraint to apply for regulation of the metabolic model (optional)
 
 
 description : |
-    Run Flux Balance Analysis on a metabolic model.
+    <p>To perform FBA, begin by specifying the media on which you will grow your organism. In KBase, the media object contains the chemical compounds on which you want to analyze the growth of your organism. KBase provides users with more than 500 commonly used media conditions to use when running FBA. These can be found by in the Narrative Interface under the Analyze heading by selecting “+ Add Data” and then navigating to the “Public” tab. In addition, users can build their own custom media formulations.</p>
 
 
 technical-description : |
-    Run Flux Balance Analysis on a metabolic model.
+    <p>Description of parameters changeable by users</p>
+
+
+
+    

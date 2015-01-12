@@ -3,9 +3,9 @@
 #
 name     : Normalize Metagenomic Abundance Profile
 subtitle : |
-    Compare normalized vs. raw abundance profiles.
+    Normalize and view abundance data for selected abundance profile.
 tooltip  : |
-    Compare normalized vs. raw abundance profiles.
+    Normalize and view abundance data for selected abundance profile.
 
 screenshots : []
 
@@ -15,15 +15,7 @@ header : |
 
 step-descriptions :
     step_1 : |
-        Generate boxplots from raw abundance profile.
-    step_2 : |
-        View a slice of raw abundance profile as a table.
-    step_3 : |
-        Retrieve normalized abundance profile for selected metagenomes.
-    step_4 : |
-        Generate boxplots from normalized abundance profile.
-    step_5 : |
-        View a slice of normalized abundance profile as a table.
+        Normalize abundance data for selected abundance profile. Returns a view of the abundance profile in table format.
 
 
 description : |

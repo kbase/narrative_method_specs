@@ -1,0 +1,32 @@
+name     : PAIRED END FASTQ
+subtitle : none
+tooltip  : Upload a PairedEndLibrary object from Fastq-file(s) into your workspace.
+
+screenshots :
+    []
+
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+parameters :
+    fastqFile1 :
+        ui-name : FASTQ FILE
+        short-hint : First file with short reads in Fastq format.
+        long-hint  : none
+
+    fastqFile2 :
+        ui-name : FASTQ FILE
+        short-hint : Second file with short reads in Fastq format.
+        long-hint  : none
+
+    outputObject :
+        ui-name : OUTPUT OBJECT ID
+        short-hint : Target object ID.
+        long-hint  : none
+
+description : none
+
+technical-description : none

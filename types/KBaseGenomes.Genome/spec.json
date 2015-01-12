@@ -4,7 +4,7 @@
         "view_genome"
     ],
     "import_method_ids":[
-        "import_genome_data_generic"
+        "import_genome_gbk_file", "import_genome_gbk_ftp"
     ],
     "landing_page_url_prefix":"genomes"
 }

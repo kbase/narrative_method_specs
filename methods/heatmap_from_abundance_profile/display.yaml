@@ -49,14 +49,6 @@ parameters :
             distance / dissimilarity metric
         long-hint  : |
             distance / dissimilarity metric
-    
-    name :
-        ui-name : |
-            Label by Name
-        short-hint : |
-            label by metagenome name and not ID
-        long-hint  : |
-            label by metagenome name and not ID
 
 
     cluster :
@@ -68,22 +60,13 @@ parameters :
             cluster method
 
 
-    order :
+    name :
         ui-name : |
-            Order Columns
+            Label by Name
         short-hint : |
-            order columns
+            label by metagenome name and not ID
         long-hint  : |
-            order columns
-
-
-    label :
-        ui-name : |
-            Label Rows
-        short-hint : |
-            label rows
-        long-hint  : |
-            label rows
+            label by metagenome name and not ID
 
 
 description : |

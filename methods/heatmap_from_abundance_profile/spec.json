@@ -7,7 +7,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "DataDump"
+    "output" : "AbundanceDataHeatmap"
   },
   "parameters" : [ {
     "id" : "input_profile",
@@ -27,7 +27,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "Communities.DataHandle" ],
+      "valid_ws_types" : [ "Communities.Heatmap" ],
       "is_output_name": true
     }
   }, {
@@ -57,7 +57,7 @@
         },
         {
             "value" : "canberra",
-            "display" "canberra"
+            "display" : "canberra"
         },
         {
             "value" : "minkowski",
@@ -113,33 +113,11 @@
         "checked_value": 1,
         "unchecked_value": 0
     }
-  }, {      
-    "id" : "order",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "0" ],
-    "field_type" : "checkbox",
-    "checkbox_options": {
-        "checked_value": 1,
-        "unchecked_value": 0
-    }
-  }, {
-    "id" : "label",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "0" ],
-    "field_type" : "checkbox",
-    "checkbox_options": {
-        "checked_value": 1,
-        "unchecked_value": 0
-    }
   } ],
   "behavior" : {
         "script-mapping" : {
             "module" : "communities_api",
-            "script" : "mg-compare-heatmap-plot",
+            "script" : "mg-compare-heatmap",
             "has_files": true,
             "input_mapping" : [
                 {
@@ -148,7 +126,7 @@
                 },
                 {
                     "input_parameter": "output_heatmap",
-                    "target_property": "plot"
+                    "target_property": "output"
                 },
                 {
                     "input_parameter": "distance",
@@ -161,18 +139,6 @@
                 {
                     "input_parameter": "name",
                     "target_property": "name"
-                },
-                {
-                    "input_parameter": "order",
-                    "target_property": "order"
-                },
-                {
-                    "input_parameter": "label",
-                    "target_property": "label"
-                },
-                {
-                    "constant_value": "1",
-                    "target_property": "reference"
                 },
                 {
                     "narrative_system_variable": "token",
