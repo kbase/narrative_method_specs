@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : Reannotate microbial genome
+name     : Annotate a microbial genome
 subtitle : |
-    Reannotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]
+    Annotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]
 tooltip  : |
-    Reannotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]
+    Annotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]
 
 screenshots :
     []
@@ -144,7 +144,15 @@ parameters :
             Analysis steps to include in annotation pipieline
         long-hint  : |
             Analysis steps to include in annotation pipieline
-            
+    
+    retain_old_anno_for_hypotheticals :
+        ui-name : |
+            Retain old annotations for hypotheticals
+        short-hint : |
+            When KBase annotates as hypothetical, keep existing annotation
+        long-hint  : |
+            When KBase annotates as hypothetical, keep existing annotation. This will make it more difficult to see which genes were annotated by KBase.
+    
     resolve_overlapping_features :
         ui-name : |
             Resolve overlapping features
