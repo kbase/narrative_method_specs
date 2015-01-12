@@ -148,12 +148,19 @@ parameters :
 
 
 description : |
-    <p></p>
+    <p>To perform FBA, begin by specifying the media on which you will grow your organism. In KBase, the media object contains the chemical compounds on which you want to analyze the growth of your organism. KBase provides users with more than 500 commonly used media conditions to use when running FBA. These can be found by in the Narrative Interface under the Analyze heading by selecting "Add Data" and then navigating to the "Public" tab. In addition, users can build their own custom media formulations.</p>
 
 
 technical-description : |
     <p>Description of parameters changeable by users</p>
 
-
-
-    
+publications :
+    -
+        pmid: 20802497
+        display-text: |
+            Henry CS, DeJongh M, Best AA, Frybarger PM, Linsay B, et al. (2010) High-throughput generation, optimization and analysis of genome-scale metabolic models. Nat Biotechnol 28: 977–982. doi:10.1038/nbt.1672.
+        link: http://www.ncbi.nlm.nih.gov/pubmed/20802497
+    -
+        display-text: |
+            Orth JD, Thiele I, Palsson BØ (2010) What is flux balance analysis? Nature Biotechnology 28: 245–248. doi:10.1038/nbt.1614.
+        link: http://www.nature.com/nbt/journal/v28/n3/abs/nbt.1614.html
