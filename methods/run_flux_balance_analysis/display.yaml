@@ -3,9 +3,9 @@
 #
 name     : Run Flux Balance Analysis
 subtitle : |
-    Run Flux Balance Analysis on a metabolic model. [10]
+    Run Flux Balance Analysis on a metabolic model.
 tooltip  : |
-    Run Flux Balance Analysis on a metabolic model. [10]
+    Run Flux Balance Analysis on a metabolic model.
 
 screenshots :
     []
@@ -37,9 +37,9 @@ parameters :
         ui-name : |
             Growth condition
         short-hint : |
-            the growth condition in which to run FBA (optional, default is an artificial complete media) [10.2]
+            the growth condition in which to run FBA (optional, default is an artificial complete media)
         long-hint  : |
-            the growth condition in which to run FBA (optional, default is an artificial complete media) [10.2]
+            the growth condition in which to run FBA (optional, default is an artificial complete media)
 
 
     output_fba :
@@ -78,9 +78,9 @@ parameters :
         ui-name : |
             Gene Knockouts
         short-hint : |
-            specify gene knockouts by the gene's feature ID (optional)
+            specify gene knockouts by the gene feature ID (optional)
         long-hint  : |
-            specify gene knockouts by the gene's feature ID (optional)
+            specify gene knockouts by the gene feature ID (optional)
 
 
     reaction_ko :
@@ -141,9 +141,9 @@ parameters :
         ui-name : |
             PROM constraint
         short-hint : |
-            specify the PROM constraint to apply for regulation of the metabolic model  (optional)
+            specify the PROM constraint to apply for regulation of the metabolic model (optional)
         long-hint  : |
-            specify the PROM constraint to apply for regulation of the metabolic model  (optional)
+            specify the PROM constraint to apply for regulation of the metabolic model (optional)
 
 
 description : |
