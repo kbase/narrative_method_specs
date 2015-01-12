@@ -82,7 +82,7 @@ description : |
 technical-description : |
     <p>Description of parameters changeable by users</p>
     <p><ol>
-        <li>Genome name (genome id for the model to be generated)</li>
+        <li>Genome name (genome id for the model to be generated) </li>
         <li>Output Metabolic Model Name</li>
     </ol></p>
     
