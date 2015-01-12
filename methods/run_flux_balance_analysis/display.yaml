@@ -149,50 +149,12 @@ parameters :
 
 
 description : |
-    <p>A metabolic model of a single-celled organism (see Build a Metabolic Model) 
-    can be used to carry out Flux Balance Analysis (FBA). 
-    FBA is a constraint-based method that estimates growth-optimal fluxes through all reactions in the metabolic network, thereby making it possible to estimate the growth rate of an organism (the rate of biomass production) or the rate of production of a given metabolic output on a specified media.</p>
     <p>To perform FBA, begin by specifying the media on which you will grow your organism. In KBase, the media object contains the chemical compounds on which you want to analyze the growth of your organism. KBase provides users with more than 500 commonly used media conditions to use when running FBA. These can be found by in the Narrative Interface under the Analyze heading by selecting “+ Add Data” and then navigating to the “Public” tab. In addition, users can build their own custom media formulations.</p>
 
 
 technical-description : |
     <p>Description of parameters changeable by users</p>
-    <p><ol>
-        <li>Metabolic Model
-        <p>User selects the model on which to run FBA.</li>
-        <li>Media
-        <p>User selects a media condition on which to simulate growth of the organism. If nothing is selected, the complete media is used by default.</p></li>
-        <li>Output FBA Result Name
-        <p>User selects name in which to store FBA results</p></li>
-        <li>Gene Knockouts
-        <p>List of gene knockouts (the list of gene IDs to be removed from the model separated by ";" delimiter). Gene IDs should be in the same format that appears in your metabolic model (e.g., kb|g.220339.CDS.2927).</p></li>
-        <li>Reaction Knockouts
-        <p>List of reaction knockouts (the list of reaction IDs to be removed from the model separated by ";" delimiter)</p></li>
-        <li>Default Maximum flux
-        <p>The default upper bound for intracellular fluxes (up to 100). If nothing is changed 100 is used.</p></li>
-        <li>Gefault Max Uptake
-        <p>The default maximum nutrient uptake rate (up to 100). If nothing is changed 100 is used.</p></li>
-        <li>Gefault Min Uptake
-        <p>The default minimum nutrient uptake rate (up to -100). If nothing is changed -100 is used.</p></li>
-        <li>Minimize Flux?
-        <p>Default is 0, which means "no"; by default, FBA will attempt to maximize its objective (usually biomass growth). If set to 1, which means "yes", FBA will attempt to minimize its objective instead.</p></li>
-        <li>Maximize Objective?
-        <p>Objective function to maximize when running the FBA - by default, FBA tries to maximize some objective (usually the amount of biomass produced). But if the user specifies "0", this means that FBA should try to minimize its objective instead.</p></li>
-        <li>All rxns reversible
-        <p>Set to 1 or yes to make all reactions reversible.</p></li>
-        <li>PROM (Probabilistic Regulation of Metabolism) constraint
-        <p>This option can be used when running Flux Balance Analysis to simulate the regulation of Target Genes (TG) by Transcription Factors (TF). Specifically, if a Transcription Factor is knocked out during the FBA simulation, the flux through reactions associated with its Target Genes will be restricted proportionally to the degree of regulation between the TF and the TG. PROM constraint  allows users to select a workspace object that is created by running the fba-prom-constraint script in the KBaseFBAModeling service.</p></li>
-    </ol></p>
 
-publications :
-    -
-        pmid: 20802497
-        display-text: |
-            Henry CS, DeJongh M, Best AA, Frybarger PM, Linsay B, et al. (2010) High-throughput generation, optimization and analysis of genome-scale metabolic models. Nat Biotechnol 28: 977–982. doi:10.1038/nbt.1672.
-        link: http://www.ncbi.nlm.nih.gov/pubmed/20802497
-    -
-        display-text: |
-            Orth JD, Thiele I, Palsson BØ (2010) What is flux balance analysis? Nature Biotechnology 28: 245–248. doi:10.1038/nbt.1614.
-        link: http://www.nature.com/nbt/journal/v28/n3/abs/nbt.1614.html
+
 
     
