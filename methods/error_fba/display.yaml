@@ -1,0 +1,196 @@
+#
+# Define basic display information
+#
+name     : Run Flux Balance Analysis
+subtitle : |
+    This method uses Flux Balance Analysis (FBA) to predict metabolic fluxes in a metabolic model of an organism grown on a given media.
+tooltip  : |
+    This method uses Flux Balance Analysis (FBA) to predict metabolic fluxes in a metabolic model of an organism grown on a given media.
+
+screenshots :
+    
+    - run_flux_balance_analysis.png
+    - run_flux_balance_analysis_output.png
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_model :
+        ui-name : |
+            FBAModel
+        short-hint : |
+            The metabolic model on you wish to run FBA.
+        long-hint  : |
+            The metabolic network model consisting of genome-wide set of stoichiometric reactions, compounds, and the weighted components of  the biomass on which you wish to carry out  Flux Balance Analysis.
+
+
+    input_media :
+        ui-name : |
+            Media
+        short-hint : |
+            Media specifies the set of chemical compounds organism can use for its growth.
+        long-hint  : |
+            Media specifies the set of chemical compounds organism can use for its growth.
+
+
+    output_fba :
+        ui-name : |
+            Output FBA Result
+        short-hint : |
+            The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model.
+        long-hint  : |
+            The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model.
+
+    fva :
+        ui-name : |
+            Flux variability analysis?
+        short-hint : |
+            check this box to minimize and maximize all reaction fluxes, enabling reaction classification
+        long-hint  : |
+            check this box to minimize and maximize all reaction fluxes, enabling reaction classification
+    
+    simulate_ko :
+        ui-name : |
+            Simulate all single KO?
+        short-hint : |
+            check this box to simulate all single gene knockouts to identifiy essential genes
+        long-hint  : |
+            check this box to simulate all single gene knockouts to identifiy essential genes
+    
+    minimize_flux :
+        ui-name : |
+            Minimize Flux?
+        short-hint : |
+            check this box to minimize the sum of all fluxes following biomass optimization
+        long-hint  : |
+            check this box to minimize the sum of all fluxes following biomass optimization
+
+    gene_ko :
+        ui-name : |
+            Gene Knockouts
+        short-hint : |
+            specify gene knockouts by the gene's feature ID (optional)
+        long-hint  : |
+            specify gene knockouts by the gene's feature ID (optional)
+
+
+    reaction_ko :
+        ui-name : |
+            Reaction Knockouts
+        short-hint : |
+            specify reaction knockouts by reaction ID (e.g. rxn00001_c0) (optional)
+        long-hint  : |
+            specify reaction knockouts by reaction ID (e.g. rxn00001_c0) (optional)
+
+
+    additional_compounds :
+        ui-name : |
+            Addtional compounds
+        short-hint : |
+            specify additional compounds to add to media (optional)
+        long-hint  : |
+            specify additional compounds to add to media (optional)
+
+
+    maxc_uptake :
+        ui-name : |
+            Max carbon uptake
+        short-hint : |
+            maximum mols of carbon permitted for uptake (optional)
+        long-hint  : |
+            maximum mols of carbon permitted for uptake (optional)
+
+
+    maxn_uptake :
+        ui-name : |
+            Max nitrogen uptake
+        short-hint : |
+            maximum mols of nitrogen permitted for uptake (optional)
+        long-hint  : |
+            maximum mols of nitrogen permitted for uptake (optional)
+
+
+    maxs_uptake :
+        ui-name : |
+            Max sulfur uptake
+        short-hint : |
+            maximum mols of sulfur permitted for uptake (optional)
+        long-hint  : |
+            maximum mols of sulfur permitted for uptake (optional)
+    
+    
+    maxp_uptake :
+        ui-name : |
+            Max phosphate uptake
+        short-hint : |
+            maximum mols of phosphate permitted for uptake (optional)
+        long-hint  : |
+            maximum mols of phosphate permitted for uptake (optional)
+
+
+    input_prom :
+        ui-name : |
+            PROM constraint
+        short-hint : |
+            specify the PROM constraint to apply for regulation of the metabolic model  (optional)
+        long-hint  : |
+            specify the PROM constraint to apply for regulation of the metabolic model  (optional)
+
+
+description : |
+    <p>A metabolic model of a single-celled organism (see Build a Metabolic Model) can be used to carry out Flux Balance Analysis (FBA). FBA is a constraint-based method that estimates growth-optimal fluxes through all reactions in the metabolic network, thereby making it possible to estimate the growth rate of an organism (the rate of biomass production) or the rate of production of a given metabolic output on a specified media.</p>
+    <p>To perform FBA, begin by specifying the media on which you will grow your organism. In KBase, the media object contains the chemical compounds on which you want to analyze the growth of your organism. KBase provides users with more than 500 commonly used media conditions to use when running FBA. These can be found by in the Narrative Interface under the Analyze heading by selecting “+ Add Data” and then navigating to the “Public” tab. In addition, users can build their own custom media formulations.</p>
+
+
+technical-description : |
+    <p>Description of parameters changeable by users</p>
+    <p><ol>
+        <li>Metabolic Model
+        <p>User selects the model on which to run FBA.</li>
+        <li>Media
+        <p>User selects a media condition on which to simulate growth of the organism. If nothing is selected, the complete media is used by default.</p></li>
+        <li>Output FBA Result Name
+        <p>User selects name in which to store FBA results</p></li>
+        <li>Gene Knockouts
+        <p>List of gene knockouts (the list of gene IDs to be removed from the model separated by ";" delimiter). Gene IDs should be in the same format that appears in your metabolic model (e.g., kb|g.220339.CDS.2927).</p></li>
+        <li>Reaction Knockouts
+        <p>List of reaction knockouts (the list of reaction IDs to be removed from the model separated by ";" delimiter)</p></li>
+        <li>Default Maximum flux
+        <p>The default upper bound for intracellular fluxes (up to 100). If nothing is changed 100 is used.</p></li>
+        <li>Gefault Max Uptake
+        <p>The default maximum nutrient uptake rate (up to 100). If nothing is changed 100 is used.</p></li>
+        <li>Gefault Min Uptake
+        <p>The default minimum nutrient uptake rate (up to -100). If nothing is changed -100 is used.</p></li>
+        <li>Minimize Flux?
+        <p>Default is 0, which means "no"; by default, FBA will attempt to maximize its objective (usually biomass growth). If set to 1, which means "yes", FBA will attempt to minimize its objective instead.</p></li>
+        <li>Maximize Objective?
+        <p>Objective function to maximize when running the FBA - by default, FBA tries to maximize some objective (usually the amount of biomass produced). But if the user specifies "0", this means that FBA should try to minimize its objective instead.</p></li>
+        <li>All rxns reversible
+        <p>Set to 1 or yes to make all reactions reversible.</p></li>
+        <li>PROM (Probabilistic Regulation of Metabolism) constraint
+        <p>This option can be used when running Flux Balance Analysis to simulate the regulation of Target Genes (TG) by Transcription Factors (TF). Specifically, if a Transcription Factor is knocked out during the FBA simulation, the flux through reactions associated with its Target Genes will be restricted proportionally to the degree of regulation between the TF and the TG. PROM constraint  allows users to select a workspace object that is created by running the fba-prom-constraint script in the KBaseFBAModeling service.</p></li>
+    </ol></p>
+
+publications :
+    -
+        pmid: 20802497
+        display-text: |
+            Henry CS, DeJongh M, Best AA, Frybarger PM, Linsay B, et al. (2010) High-throughput generation, optimization and analysis of genome-scale metabolic models. Nat Biotechnol 28: 977–982. doi:10.1038/nbt.1672.
+        link: http://www.ncbi.nlm.nih.gov/pubmed/20802497
+    -
+        display-text: |
+            Orth JD, Thiele I, Palsson BØ (2010) What is flux balance analysis? Nature Biotechnology 28: 245–248. doi:10.1038/nbt.1614.
+        link: http://www.nature.com/nbt/journal/v28/n3/abs/nbt.1614.html
+
+    
