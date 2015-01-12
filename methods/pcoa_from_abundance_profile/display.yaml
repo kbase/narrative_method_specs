@@ -24,25 +24,25 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param1 :
+    input_profile :
         ui-name : |
-            Input Name
+            Input Profile
         short-hint : |
-            object name of Communities.Profile
+            object name of input abundance profile
         long-hint  : |
-            object name of Communities.Profile
+            object name of input abundance profile
 
 
-    param2 :
+    output_pcoa :
         ui-name : |
-            Metadata
+            Output PCoA
         short-hint : |
-            metadata field to group metagenomes by
+            object name of output pcoa
         long-hint  : |
-            metadata field to group metagenomes by
+            object name of output pcoa
 
 
-    param3 :
+    distance :
         ui-name : |
             Distance
         short-hint : |
@@ -51,13 +51,13 @@ parameters :
             distance / dissimilarity metric
 
 
-    param4 :
+    name :
         ui-name : |
-            3D
+            Label by Name
         short-hint : |
-            create 3-D PCoA
+            label by metagenome name and not ID
         long-hint  : |
-            create 3-D PCoA
+            label by metagenome name and not ID
 
 
 description : |

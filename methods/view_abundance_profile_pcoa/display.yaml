@@ -1,0 +1,59 @@
+#
+# Define basic display information
+#
+name     : View Abundance Profile PCoA
+subtitle : |
+    View a PCoA generated from an abundance profile
+tooltip  : |
+    View a PCoA generated from an abundance profile
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_pcoa :
+        ui-name : |
+            Input Name
+        short-hint : |
+            object name of input pcoa data
+        long-hint  : |
+            object name of input pcoa data
+
+
+    x_axis :
+        ui-name : |
+            X-Axis PCO
+        short-hint : |
+            PCO to use for X-Axis, integer from 1 to number of components
+        long-hint  : |
+            PCO to use for X-Axis, integer from 1 to number of components
+
+
+    y_axis :
+        ui-name : |
+            Y-Axis PCO
+        short-hint : |
+            PCO to use for Y-Axis, integer from 1 to number of components
+        long-hint  : |
+            PCO to use for Y-Axis, integer from 1 to number of components
+
+
+description : |
+    View a PCoA generated from an abundance profile
+
+
+technical-description : |
+    View a PCoA generated from an abundance profile

@@ -1,0 +1,9 @@
+{
+    "ver":"0.1.0",
+    "view_method_ids":[
+    ],
+    "import_method_ids":[
+        "import_transcript_file"
+    ],
+    "landing_page_url_prefix":""
+}

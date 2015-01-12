@@ -6,39 +6,7 @@
     "steps" : [
         {
             "step-id": "step_1",
-            "method-id": "boxplots_from_abundance_profile"
-        },
-        {
-            "step-id": "step_2",
-            "method-id": "view_abundance_profile_values"
-        },
-        {
-            "step-id": "step_3",
-            "method-id": "retrieve_functional_abundance_profile"
-        },
-        {
-            "step-id": "step_4",
-            "method-id": "boxplots_from_abundance_profile",
-            "input_mapping" : [
-                {
-                    "step": "step_3",
-                    "is_from_input": true,
-                    "from": "param2",
-                    "to": "param1"
-                }
-            ]
-        },
-        {
-            "step-id": "step_5",
-            "method-id": "view_abundance_profile_values",
-            "input_mapping" : [
-                {
-                    "step": "step_3",
-                    "is_from_input": true,
-                    "from": "param2",
-                    "to": "param1"
-                }
-            ]
+            "method-id": "normalize_abundance_profile"
         }
     ],
     "behavior": {

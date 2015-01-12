@@ -36,7 +36,8 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseTrees.MSA" ]
+      "valid_ws_types" : [ "KBaseTrees.MSA" ],
+      "is_output_name":true
     }
   } ],
   "behavior" : {
