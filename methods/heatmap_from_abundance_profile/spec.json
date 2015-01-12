@@ -7,38 +7,31 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "ImageViewWidget"
+    "output" : "AbundanceDataHeatmap"
   },
   "parameters" : [ {
-    "id" : "param1",
+    "id" : "input_profile",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "Communities.Profile" ]
+      "valid_ws_types" : [ "Communities.TaxonomicMatrix", "Communities.FunctionalMatrix" ]
     }
   }, {
-    "id" : "param2",
+    "id" : "output_heatmap",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "no" ],
-    "field_type" : "dropdown",
-    "dropdown_options" : {
-        "options": [
-        {
-            "value" : "no",
-            "display" : "no"
-        },
-        {
-            "value" : "yes",
-            "display" : "yes"
-        }
-    ] }
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "Communities.Heatmap" ],
+      "is_output_name": true
+    }
   }, {
-    "id" : "param3",
+    "id" : "distance",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -64,7 +57,7 @@
         },
         {
             "value" : "canberra",
-            "display" "canberra"
+            "display" : "canberra"
         },
         {
             "value" : "minkowski",
@@ -76,7 +69,7 @@
         }
     ] }
   }, {
-    "id" : "param4",
+    "id" : "cluster",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -110,44 +103,62 @@
         }
     ] }
   }, {
-    "id" : "param5",
+    "id" : "name",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "yes" ],
-    "field_type" : "dropdown",
-    "dropdown_options" : {
-        "options": [
-        {
-            "value" : "yes",
-            "display" : "yes"
-        },
-        {
-            "value" : "no",
-            "display" : "no"
-        }
-    ] }
-  }, {
-    "id" : "param6",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "no" ],
-    "field_type" : "dropdown",
-    "dropdown_options" : {
-        "options": [
-        {
-            "value" : "no",
-            "display" : "no"
-        },
-        {
-            "value" : "yes",
-            "display" : "yes"
-        }
-    ] }
+    "default_values" : [ "0" ],
+    "field_type" : "checkbox",
+    "checkbox_options": {
+        "checked_value": 1,
+        "unchecked_value": 0
+    }
   } ],
   "behavior" : {
-    "python_class" : "Communities Services",
-    "python_function" : "Heatmap from Abundance Profile"
+        "script-mapping" : {
+            "module" : "communities_api",
+            "script" : "mg-compare-heatmap",
+            "has_files": true,
+            "input_mapping" : [
+                {
+                    "input_parameter": "input_profile",
+                    "target_property": "input"
+                },
+                {
+                    "input_parameter": "output_heatmap",
+                    "target_property": "output"
+                },
+                {
+                    "input_parameter": "distance",
+                    "target_property": "distance"
+                },
+                {
+                    "input_parameter": "cluster",
+                    "target_property": "cluster"
+                },
+                {
+                    "input_parameter": "name",
+                    "target_property": "name"
+                },
+                {
+                    "narrative_system_variable": "token",
+                    "target_property": "token"
+                }
+            ],
+            "output_mapping" : [
+                {
+                    "input_parameter": "output_heatmap",
+                    "target_property": "id"
+                },
+                {
+                    "narrative_system_variable": "workspace",
+                    "target_property": "ws"
+                },
+                {
+                    "narrative_system_variable": "token",
+                    "target_property": "auth"
+                }
+            ]
+        }
   }
 }

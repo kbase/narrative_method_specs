@@ -1,0 +1,49 @@
+#
+# Define basic display information
+#
+name     : UPLOAD FROM FASTA FILE
+subtitle : |
+    Upload a ContigSet object from Fasta-file into your workspace.
+tooltip  : |
+    Upload a ContigSet object from Fasta-file into your workspace.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    fastaFile :
+        ui-name : |
+            FASTA FILE
+        short-hint : |
+            File with dna data in Fasta format.
+        long-hint  : |
+            File with dna data in Fasta format.
+
+    outputObject :
+        ui-name : |
+            CONTIGSET OBJECT ID
+        short-hint : |
+            Target object ID.
+        long-hint  : |
+            Target object ID.
+
+
+description : |
+    Upload a ContigSet object from Fasta-file into your workspace.
+
+
+technical-description : |
+    Upload a ContigSet object from Fasta-file into your workspace.

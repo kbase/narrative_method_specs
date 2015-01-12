@@ -8,7 +8,7 @@
     "steps" : [
         {
             "step-id": "step_1",
-            "method-id": "compare_two_proteomes"
+            "method-id": "compare_two_proteomes_generic"
         },
         
         {
@@ -39,7 +39,7 @@
         
         {
             "step-id": "step_4",
-            "method-id": "compare_two_metabolic_models",
+            "method-id": "compare_two_metabolic_models_generic",
             "input_mapping" : [
                 {
                     "step":"step_2",
