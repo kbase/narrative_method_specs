@@ -3,15 +3,9 @@
 #
 name     : Run Flux Balance Analysis
 subtitle : |
-<<<<<<< HEAD
-    Run Flux Balance Analysis on a metabolic model.
-tooltip  : |
-    Run Flux Balance Analysis on a metabolic model.
-=======
     This method uses Flux Balance Analysis (FBA) to predict metabolic fluxes in a metabolic model of an organism grown on a given media.
 tooltip  : |
     This method uses Flux Balance Analysis (FBA) to predict metabolic fluxes in a metabolic model of an organism grown on a given media.
->>>>>>> 294526d1b05cbb0e0fcbc41b4d098bfde3127403
 
 screenshots :
     
@@ -45,15 +39,9 @@ parameters :
         ui-name : |
             Media
         short-hint : |
-<<<<<<< HEAD
             the growth condition in which to run FBA (optional, default is an artificial complete media)
         long-hint  : |
             the growth condition in which to run FBA (optional, default is an artificial complete media)
-=======
-            Media specifies the set of chemical compounds organism can use for its growth.
-        long-hint  : |
-            Media specifies the set of chemical compounds organism can use for its growth.
->>>>>>> 294526d1b05cbb0e0fcbc41b4d098bfde3127403
 
 
     output_fba :
