@@ -2,13 +2,16 @@
 # Define basic display information
 #
 name     : Compare Two Metabolic Models
-subtitle : |
-    Compare genes mapped to the same reactions from two metabolic models according to the comparison result between proteomes. See also the function 'Compare Two Proteomes'.  [19]
 tooltip  : |
-    Compare genes mapped to the same reactions from two metabolic models according to the comparison result between proteomes. See also the function 'Compare Two Proteomes'.  [19]
+    Compare two metabolic models by identifying shared and unique biochemical reactions and compounds. 
 
 screenshots :
-    []
+
+    - compare_two_metabolic_models_input.png
+    - compare_two_metabolic_models_output1.png
+    - compare_two_metabolic_models_output2.png
+    - compare_two_metabolic_models_output3.png
+    - compare_two_metabolic_models_output4.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
@@ -28,32 +31,32 @@ parameters :
         ui-name : |
             FBA Model 1 ID
         short-hint : |
-            an FBA model id from first genome [19.1]
+            Name/ID of the first model
         long-hint  : |
-            an FBA model id from first genome [19.1]
+            Name/ID of the first model
 
 
     param1 :
         ui-name : |
             FBA Model 2 ID
         short-hint : |
-            an FBA model id from second genome [19.2]
+            Name/ID of the second model
         long-hint  : |
-            an FBA model id from second genome [19.2]
+            Name/ID of the second model
 
 
     param2 :
         ui-name : |
             Proteome Comparison ID
         short-hint : |
-            Proteome comparison ID [19.3]
+            A proteome comparison dataset (see “Compare Two Proteomes” method) that includes information about orthologous genes in two genomes for which models were generated.
         long-hint  : |
-            Proteome comparison ID [19.3]
+            A proteome comparison dataset (see “Compare Two Proteomes” method) that includes information about orthologous genes in two genomes for which models were generated.
 
 
 description : |
-    Compare genes mapped to the same reactions from two metabolic models according to the comparison result between proteomes. See also the function 'Compare Two Proteomes'.  [19]
+    <p>Comparison of two different metabolic models identifies their core and unique reactions and compounds, along with the gene-protein associations between the two models. Proteome comparison data (see &quot;Compare Two Proteomes&quot; method) are used to identify the orthologous genes. This method produces an output table that lists core reactions, unique reactions, genes, and annotations associated with each biochemical reaction for the two compared metabolic models.</p>
 
 
 technical-description : |
-    Compare genes mapped to the same reactions from two metabolic models according to the comparison result between proteomes. See also the function 'Compare Two Proteomes'.  [19]
+    none
