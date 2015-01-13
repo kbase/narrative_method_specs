@@ -1,0 +1,30 @@
+#
+# Define basic display information
+#
+name     : Generate Metagenomic Rank Abundance Plot
+subtitle : |
+    Generate Metagenomic Rank Abundance Plot from abundance data.
+tooltip  : |
+    Generate Metagenomic Rank Abundance Plot from abundance data.
+
+screenshots : []
+
+
+header : |
+    Instructions appear here.
+
+step-descriptions :
+    step_1 : |
+        Generate Metagenomic Rank Abundance Plot from abundance data.
+
+
+description : |
+    <p>In this App, you can generate a Rank Abundance plot.</p>
+
+
+technical-description : |
+    <b> this is the technical description of the app</b> <br>
+    
+    <pre>some code here</pre>
+    
+    yada, yada, yada <br>
