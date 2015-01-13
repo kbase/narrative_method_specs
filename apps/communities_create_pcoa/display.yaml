@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Generate Abundance Profile PCoA
+name     : Compare Metagenomes Using PCoA
 subtitle : |
     Generate a PCoA from annotation abundance data.
 tooltip  : |
