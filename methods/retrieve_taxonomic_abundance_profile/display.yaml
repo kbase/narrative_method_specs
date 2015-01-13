@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Retrieve Taxonomic Abundance Profile
+name     : Generate Taxonomic Abundance Data
 subtitle : |
     Retrieve taxonomic abundance data for selected metagenomes.
 tooltip  : |

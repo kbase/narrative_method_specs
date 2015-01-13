@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : PCoA from Abundance Profile
+name     : Generate PCoA from Abundance Data
 subtitle : |
     Generate a PCoA from annotation abundance data.
 tooltip  : |
