@@ -42,6 +42,15 @@ parameters :
             object name of output pcoa
 
 
+    metadata :
+        ui-name : |
+            Metadata
+        short-hint : |
+            metadata field to group metagenomes by
+        long-hint : |
+            metadata field to group metagenomes by
+
+
     distance :
         ui-name : |
             Distance

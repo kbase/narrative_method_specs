@@ -31,6 +31,16 @@
       "is_output_name": true
     }
   }, {
+    "id" : "metadata",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+    "valid_ws_types" : [ ]
+    }
+  }, {
     "id" : "distance",
     "optional" : false,
     "advanced" : false,
@@ -97,6 +107,10 @@
               {
                   "input_parameter": "distance",
                   "target_property": "distance"
+              },
+              {
+                  "input_parameter": "metadata",
+                  "target_property": "metadata"
               },
               {
                   "input_parameter": "name",
