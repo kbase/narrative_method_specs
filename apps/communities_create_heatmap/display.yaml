@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Generate Abundance Profile Heatmap
+name     : Compare Metagenomes Using Heatmap-Dendogram
 subtitle : |
     Generate a heatmap-dendrogram from annotation abundance data.
 tooltip  : |

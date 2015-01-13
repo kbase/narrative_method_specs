@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Normalize Metagenomic Abundance Profile
+name     : Normalize Metagenomic Abundance Data
 subtitle : |
     Normalize and view abundance data for selected abundance profile.
 tooltip  : |
