@@ -42,6 +42,14 @@ parameters :
         long-hint  : |
             the read files can be directly specified here
 
+    reference :
+        ui-name : |
+            Reference Assembly
+        short-hint : |
+            the reference contig set can used to evaluate the quality of the de novo assembly
+        long-hint  : |
+            the reference contig set can used to evaluate the quality of the de novo assembly
+
     description :
         ui-name : |
             Description
