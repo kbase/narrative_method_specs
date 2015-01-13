@@ -1,13 +1,13 @@
 {
-  "name" : "View Abundance Profile Values",
+  "name" : "Communities Data Visualization",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
   "categories" : ["active"],
   "widgets" : {
-    "input" : null,
-    "output" : "AbundanceDataTable"
+    "input" : "devVizSelector",
+    "output" : "DataDump"
   },
   "parameters" : [ {
     "id" : "input_profile",
@@ -18,6 +18,17 @@
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ "Communities.TaxonomicMatrix", "Communities.FunctionalMatrix" ]
+    }
+  }, {
+    "id" : "output_boxplot",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "Communities.DataHandle" ],
+      "is_output_name": true
     }
   }, {
     "id" : "name",
@@ -32,15 +43,36 @@
     }
   } ],
   "behavior" : {
-      "none" : {
-          "output_mapping" : [
+      "script-mapping" : {
+          "module" : "communities_api",
+          "script" : "mg-compare-boxplot-plot",
+          "has_files": true,
+          "input_mapping" : [
               {
                   "input_parameter": "input_profile",
-                  "target_property": "id"
+                  "target_property": "input"
+              },
+              {
+                  "input_parameter": "output_boxplot",
+                  "target_property": "plot"
               },
               {
                   "input_parameter": "name",
                   "target_property": "name"
+              },
+              {
+                  "constant_value": "1",
+                  "target_property": "reference"
+              },
+              {
+                  "narrative_system_variable": "token",
+                  "target_property": "token"
+              }
+          ],
+          "output_mapping" : [
+              {
+                  "input_parameter": "output_boxplot",
+                  "target_property": "id"
               },
               {
                   "narrative_system_variable": "workspace",

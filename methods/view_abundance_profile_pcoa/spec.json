@@ -1,5 +1,5 @@
 {
-  "name" : "View Abundance Profile Values",
+  "name" : "View Abundance Profile PCoA",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
@@ -7,40 +7,53 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "AbundanceDataTable"
+    "output" : "AbundanceDataPcoa"
   },
   "parameters" : [ {
-    "id" : "input_profile",
+    "id" : "input_pcoa",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "Communities.TaxonomicMatrix", "Communities.FunctionalMatrix" ]
+      "valid_ws_types" : [ "Communities. PCoA" ]
     }
   }, {
-    "id" : "name",
+    "id" : "x_axis",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "0" ],
-    "field_type" : "checkbox",
-    "checkbox_options": {
-        "checked_value": 1,
-        "unchecked_value": 0
+    "default_values" : [ "1" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "y_axis",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "2" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
     }
   } ],
   "behavior" : {
       "none" : {
           "output_mapping" : [
               {
-                  "input_parameter": "input_profile",
+                  "input_parameter": "input_pcoa",
                   "target_property": "id"
               },
               {
-                  "input_parameter": "name",
-                  "target_property": "name"
+                  "input_parameter": "x_axis",
+                  "target_property": "x_axis"
+              },
+              {
+                  "input_parameter": "y_axis",
+                  "target_property": "y_axis"
               },
               {
                   "narrative_system_variable": "workspace",

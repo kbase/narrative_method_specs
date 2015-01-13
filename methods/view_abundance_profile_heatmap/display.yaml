@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : View Abundance Profile Values
+name     : View Abundance Profile Heatmap
 subtitle : |
-    View a BIOM format abundance profile as a table
+    View a Heatmap generated from an abundance profile
 tooltip  : |
-    View a BIOM format abundance profile as a table
+    View a Heatmap generated from an abundance profile
 
 screenshots :
     []
@@ -24,27 +24,27 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    input_profile :
+    input_heatmap :
         ui-name : |
             Input Name
         short-hint : |
-            object name of input abundance profile
+            object name of input heatmap data
         long-hint  : |
-            object name of input abundance profile
+            object name of input heatmap data
 
 
-    name :
+    rows :
         ui-name : |
-            Label by Name
+            Label Rows
         short-hint : |
-            label by metagenome name and not ID
+            show row label names
         long-hint  : |
-            label by metagenome name and not ID
+            show row label names
 
 
 description : |
-    View a BIOM format abundance profile as a table
+    View a Heatmap generated from an abundance profile
 
 
 technical-description : |
-    View a BIOM format abundance profile as a table
+    View a Heatmap generated from an abundance profile

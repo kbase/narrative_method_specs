@@ -47,7 +47,7 @@ parameters :
             Metadata
         short-hint : |
             metadata field to group metagenomes by
-        long-hint  : |
+        long-hint : |
             metadata field to group metagenomes by
 
 
@@ -67,15 +67,6 @@ parameters :
             label by metagenome name and not ID
         long-hint  : |
             label by metagenome name and not ID
-
-
-    three :
-        ui-name : |
-            3D
-        short-hint : |
-            create 3-D PCoA
-        long-hint  : |
-            create 3-D PCoA
 
 
 description : |

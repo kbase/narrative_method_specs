@@ -1,5 +1,5 @@
 {
-  "name" : "Boxplots from Abundance Profile",
+  "name" : "View Boxplots from Abundance Profile",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
@@ -7,7 +7,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "DataDump"
+    "output" : "AbundanceDataBoxplot"
   },
   "parameters" : [ {
     "id" : "input_profile",
@@ -18,17 +18,6 @@
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ "Communities.TaxonomicMatrix", "Communities.FunctionalMatrix" ]
-    }
-  }, {
-    "id" : "output_boxplot",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "Communities.DataHandle" ],
-      "is_output_name": true
     }
   }, {
     "id" : "name",
@@ -43,36 +32,15 @@
     }
   } ],
   "behavior" : {
-      "script-mapping" : {
-          "module" : "communities_api",
-          "script" : "mg-compare-boxplot-plot",
-          "has_files": true,
-          "input_mapping" : [
+      "none" : {
+          "output_mapping" : [
               {
                   "input_parameter": "input_profile",
-                  "target_property": "input"
-              },
-              {
-                  "input_parameter": "output_boxplot",
-                  "target_property": "plot"
+                  "target_property": "id"
               },
               {
                   "input_parameter": "name",
                   "target_property": "name"
-              },
-              {
-                  "constant_value": "1",
-                  "target_property": "reference"
-              },
-              {
-                  "narrative_system_variable": "token",
-                  "target_property": "token"
-              }
-          ],
-          "output_mapping" : [
-              {
-                  "input_parameter": "output_boxplot",
-                  "target_property": "id"
               },
               {
                   "narrative_system_variable": "workspace",

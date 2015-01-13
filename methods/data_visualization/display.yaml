@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : View Abundance Profile Values
+name     : Communities Data Visualization
 subtitle : |
-    View a BIOM format abundance profile as a table
+    View abundance data.
 tooltip  : |
-    View a BIOM format abundance profile as a table
+    Generate boxplots, tables from annotation abundance data.
 
 screenshots :
     []
@@ -26,11 +26,20 @@ method-suggestions :
 parameters :
     input_profile :
         ui-name : |
-            Input Name
+            Input
         short-hint : |
-            object name of input abundance profile
+            object name of input abundance matrix
         long-hint  : |
-            object name of input abundance profile
+            object name of input abundance matrix
+
+
+    output_boxplot :
+        ui-name : |
+            Output Boxplot
+        short-hint : |
+            object name of output boxplot
+        long-hint  : |
+            object name of output boxplot
 
 
     name :
@@ -43,8 +52,8 @@ parameters :
 
 
 description : |
-    View a BIOM format abundance profile as a table
+    Generate boxplots from annotation abundance data.
 
 
 technical-description : |
-    View a BIOM format abundance profile as a table
+    Generate boxplots from annotation abundance data.
