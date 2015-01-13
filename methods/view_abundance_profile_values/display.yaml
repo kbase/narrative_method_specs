@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : View Abundance Profile Values
+name     : View Abundance Data Table
 subtitle : |
     View a BIOM format abundance profile as a table
 tooltip  : |
