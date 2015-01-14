@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : View Abundance Profile PCoA
+name     : View Abundance Data PCoA
 subtitle : |
     View a PCoA generated from an abundance profile
 tooltip  : |

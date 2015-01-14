@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : View Abundance Profile Heatmap
+name     : View Abundance Data Heatmap
 subtitle : |
-    View a Heatmap generated from an abundance profile
+    View a Heatmap generated from abundance data
 tooltip  : |
-    View a Heatmap generated from an abundance profile
+    View a Heatmap generated from abundance data
 
 screenshots :
     []
@@ -31,15 +31,6 @@ parameters :
             object name of input heatmap data
         long-hint  : |
             object name of input heatmap data
-
-
-    rows :
-        ui-name : |
-            Label Rows
-        short-hint : |
-            show row label names
-        long-hint  : |
-            show row label names
 
 
 description : |

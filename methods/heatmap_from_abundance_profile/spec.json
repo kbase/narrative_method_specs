@@ -1,5 +1,5 @@
 {
-  "name" : "Heatmap from Abundance Profile",
+  "name" : "Generate Heatmap from Abundance Data",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
@@ -139,10 +139,6 @@
                 {
                     "input_parameter": "name",
                     "target_property": "name"
-                },
-                {
-                    "narrative_system_variable": "token",
-                    "target_property": "token"
                 }
             ],
             "output_mapping" : [

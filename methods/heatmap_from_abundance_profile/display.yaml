@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Heatmap from Abundance Profile
+name     : Generate Heatmap from Abundance Data
 subtitle : |
     Generate a heatmap-dendrogram from annotation abundance data.
 tooltip  : |

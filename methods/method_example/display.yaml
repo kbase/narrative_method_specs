@@ -67,8 +67,8 @@ parameters :
         short-hint : |
             same for float values- the input must be parsable as a number
         long-hint  : |
-            same for float values- the input must be parsable as a number        
-    
+            same for float values- the input must be parsable as a number
+
     advanced_float_value :
         ui-name : |
             Another Float

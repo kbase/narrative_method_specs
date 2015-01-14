@@ -42,8 +42,8 @@
           "target_property": "genomes"
         },
         {
-          "narrative_system_variable": "workspace",
-          "target_property": "genome_workspace"
+          "constant_value": "genomes",
+          "target_property": "genome_workspaces"
         },
         {
           "input_parameter": "output_pangenome",

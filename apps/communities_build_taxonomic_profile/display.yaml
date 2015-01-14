@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Build Taxonomic Abundance Profile
+name     : Build Metagenomic Taxonomic Abundance Data
 subtitle : |
     Build and view taxonomic abundance data for selected metagenomes.
 tooltip  : |
