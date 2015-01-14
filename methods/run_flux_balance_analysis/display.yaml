@@ -137,32 +137,37 @@ parameters :
         long-hint  : |
             Maximum number of moles of phosphate permitted for uptake (Default uptake rates varies from 0 to 100 for all nutrients)
 
+    input_prom :
+        ui-name : |
+            Prom Constraints
+        short-hint : |
+            Prom Constraints
+        long-hint  : |
+            Prom Constraints
 
 
 description : |
     <p>A metabolic model of a single-celled organism (see Build Metabolic Model) can be used to carry out Flux Balance Analysis (FBA). FBA is a constraint-based method that estimates growth-optimal fluxes through all reactions in the metabolic network, thereby making it possible to estimate the growth rate of an organism (the rate of biomass production) or the rate of production of a given metabolic output on a specified media.</p>
     <p>To perform FBA, begin by specifying the media on which you will grow your organism. In KBase, the media object contains the chemical compounds on which you want to analyze the growth of your organism. KBase provides users with more than 500 commonly used media conditions to use when running FBA. These can be found by in the Narrative Interface under the Analyze heading by selecting “+ Add Data” and then navigating to the “Public” tab. In addition, users can build their own custom media formulations.</p>
-
-<p><strong>Inputs</strong>
-
-<ul>FBAModel
-<p>The metabolic network model consisting of genome-wide set of stoichiometric reactions, compounds, and the weighted components of the biomass on which you wish to carry out Flux Balance Analysis.</ul></p>
-
-<ul>Media
-
-<p>Media specifies the set of chemical compounds organism can use for its growth.</ul></p>
-</p>
-
-
-<p><strong>Outputs</strong>
-
-<ul>Output FBA Result
-<p>The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model.</ul></p>
-</p>
-
-
-<p>Team members who developed & deployed algorithm in KBase:
-Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, e-mail help@kbase.us</p>
+    
+    <p><strong>Inputs</strong>
+    
+    <ul>FBAModel
+    <p>The metabolic network model consisting of genome-wide set of stoichiometric reactions, compounds, and the weighted components of the biomass on which you wish to carry out Flux Balance Analysis.</ul></p>
+    
+    <ul>Media
+    
+    <p>Media specifies the set of chemical compounds organism can use for its growth.</ul></p>
+    </p>
+    
+    <p><strong>Outputs</strong>
+    
+    <ul>Output FBA Result
+    <p>The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model.</ul></p>
+    </p>
+    
+    <p>Team members who developed & deployed algorithm in KBase:
+    Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, e-mail help@kbase.us</p>
 
 technical-description : |
 
