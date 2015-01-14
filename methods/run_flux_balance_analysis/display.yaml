@@ -29,27 +29,27 @@ parameters :
         ui-name : |
             FBAModel
         short-hint : |
-            The metabolic model on you wish to run FBA.
+            User selects the model on which to run FBA.
         long-hint  : |
-            The metabolic network model consisting of genome-wide set of stoichiometric reactions, compounds, and the weighted components of  the biomass on which you wish to carry out  Flux Balance Analysis.
+            The metabolic network model consisting of genome-wide set of stoichiometric reactions, compounds, and the weighted components of the biomass on which you wish to carry out  Flux Balance Analysis.
 
 
     input_media :
         ui-name : |
             Media
         short-hint : |
-            The growth condition in which to run FBA (optional, default is an artificial complete media)
+            User selects a media condition on which to simulate growth of the organism. If nothing is selected, the complete media is used by default
         long-hint  : |
-            The growth condition in which to run FBA (optional, default is an artificial complete media)
+            User selects a media condition on which to simulate growth of the organism. If nothing is selected, the complete media is used by default
 
 
     output_fba :
         ui-name : |
             Output FBA Result
         short-hint : |
-            The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model.
+            User selects name in which to store FBA results
         long-hint  : |
-            The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model.
+            The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model
 
     fva :
         ui-name : |
@@ -63,122 +63,109 @@ parameters :
         ui-name : |
             Simulate all single KO?
         short-hint : |
-            check this box to simulate all single gene knockouts to identifiy essential genes
+            User could simulate FBA on single gene knockouts for all the genes in the model identifying essential reactions that carry fluxes on a given media condition.
         long-hint  : |
-            check this box to simulate all single gene knockouts to identifiy essential genes
+            User could simulate FBA on single gene knockouts for all the genes in the model identifying essential reactions that carry fluxes on a given media condition.
     
     minimize_flux :
         ui-name : |
             Minimize Flux?
         short-hint : |
-            check this box to minimize the sum of all fluxes following biomass optimization
+            Default is 0, which means "no"; by default, FBA will attempt to maximize its objective (usually biomass growth). If set to 1, which means "yes", FBA will attempt to minimize its objective instead.
         long-hint  : |
-            check this box to minimize the sum of all fluxes following biomass optimization
+            Default is 0, which means "no"; by default, FBA will attempt to maximize its objective (usually biomass growth). If set to 1, which means "yes", FBA will attempt to minimize its objective instead.
 
     gene_ko :
         ui-name : |
             Gene Knockouts
         short-hint : |
-            specify gene knockouts by the gene feature ID (optional)
+            User may add gene knockout information one at a time using “add another gene knockout” button. Gene IDs should be in the same format that appears in your metabolic model (e.g., kb|g.220339.CDS.2927)
         long-hint  : |
-            specify gene knockouts by the gene feature ID (optional)
+            User may add gene knockout information one at a time using “add another gene knockout” button. Gene IDs should be in the same format that appears in your metabolic model (e.g., kb|g.220339.CDS.2927)
 
 
     reaction_ko :
         ui-name : |
             Reaction Knockouts
         short-hint : |
-            specify reaction knockouts by reaction ID (e.g. rxn00001_c0) (optional)
+            sUser may add reaction knockout information one at a time using “add another reaction knockout” button. Reaction IDs should be in the same format that appears in your metabolic model (e.g rxn00002_c0)
         long-hint  : |
-            specify reaction knockouts by reaction ID (e.g. rxn00001_c0) (optional)
+            User may add reaction knockout information one at a time using “add another reaction knockout” button. Reaction IDs should be in the same format that appears in your metabolic model (e.g rxn00002_c0)
 
 
     additional_compounds :
         ui-name : |
             Addtional compounds
         short-hint : |
-            specify additional compounds to add to media (optional)
+            Specify additional compounds to add to media (optional)
         long-hint  : |
-            specify additional compounds to add to media (optional)
+            Specify additional compounds to add to media (optional)
 
 
     maxc_uptake :
         ui-name : |
             Max carbon uptake
         short-hint : |
-            maximum mols of carbon permitted for uptake (optional)
+            Maximum number of moles of carbon permitted for uptake (Default uptake rates varies from 0 to 100 for all nutrients)
         long-hint  : |
-            maximum mols of carbon permitted for uptake (optional)
+            Maximum number of moles of carbon permitted for uptake (Default uptake rates varies from 0 to 100 for all nutrients)
 
 
     maxn_uptake :
         ui-name : |
             Max nitrogen uptake
         short-hint : |
-            maximum mols of nitrogen permitted for uptake (optional)
+            Maximum number of moles of nitrogen permitted for uptake (Default uptake rates varies from 0 to 100 for all nutrients)
         long-hint  : |
-            maximum mols of nitrogen permitted for uptake (optional)
+            Maximum number of moles of nitrogen permitted for uptake (Default uptake rates varies from 0 to 100 for all nutrients)
 
 
     maxs_uptake :
         ui-name : |
             Max sulfur uptake
         short-hint : |
-            maximum mols of sulfur permitted for uptake (optional)
+            Maximum number of moles of sulfur permitted for uptake (Default uptake rates varies from 0 to 100 for all nutrients)
         long-hint  : |
-            maximum mols of sulfur permitted for uptake (optional)
+            Maximum number of moles of sulfur permitted for uptake (Default uptake rates varies from 0 to 100 for all nutrients)
     
     
     maxp_uptake :
         ui-name : |
             Max phosphate uptake
         short-hint : |
-            maximum mols of phosphate permitted for uptake (optional)
+            Maximum number of moles of phosphate permitted for uptake (Default uptake rates varies from 0 to 100 for all nutrients)
         long-hint  : |
-            maximum mols of phosphate permitted for uptake (optional)
+            Maximum number of moles of phosphate permitted for uptake (Default uptake rates varies from 0 to 100 for all nutrients)
 
-
-    input_prom :
-        ui-name : |
-            PROM constraint
-        short-hint : |
-            specify the PROM constraint to apply for regulation of the metabolic model (optional)
-        long-hint  : |
-            specify the PROM constraint to apply for regulation of the metabolic model (optional)
 
 
 description : |
     <p>A metabolic model of a single-celled organism (see Build Metabolic Model) can be used to carry out Flux Balance Analysis (FBA). FBA is a constraint-based method that estimates growth-optimal fluxes through all reactions in the metabolic network, thereby making it possible to estimate the growth rate of an organism (the rate of biomass production) or the rate of production of a given metabolic output on a specified media.</p>
     <p>To perform FBA, begin by specifying the media on which you will grow your organism. In KBase, the media object contains the chemical compounds on which you want to analyze the growth of your organism. KBase provides users with more than 500 commonly used media conditions to use when running FBA. These can be found by in the Narrative Interface under the Analyze heading by selecting “+ Add Data” and then navigating to the “Public” tab. In addition, users can build their own custom media formulations.</p>
 
+<p><strong>Inputs</strong>
+
+<ul>FBAModel
+<p>The metabolic network model consisting of genome-wide set of stoichiometric reactions, compounds, and the weighted components of the biomass on which you wish to carry out Flux Balance Analysis.</ul></p>
+
+<ul>Media
+
+<p>Media specifies the set of chemical compounds organism can use for its growth.</ul></p>
+</p>
+
+
+<p><strong>Outputs</strong>
+
+<ul>Output FBA Result
+<p>The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model.</ul></p>
+</p>
+
+
+<p>Team members who developed & deployed algorithm in KBase:
+Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, e-mail help@kbase.us</p>
 
 technical-description : |
-    <p>Description of parameters changeable by users</p>
-    <p><ol>
-        <li>Metabolic Model
-        <p>User selects the model on which to run FBA.</li>
-        <li>Growth condition
-        <p>User selects a media condition on which to simulate growth of the organism. If nothing is selected, the complete media is used by default.</p></li>
-        <li>Output FBA Result Name
-        <p>User selects name in which to store FBA results</p></li>
-        <li>Gene Knockouts
-        <p>User may add gene knockout information one at a time using “add another gene knockout” button. Gene IDs should be in the same format that appears in your metabolic model (e.g., kb|g.220339.CDS.2927)</p></li>
-        <li>Reaction Knockouts
-        <p>User may add reaction knockout information one at a time using “add another reaction knockout” button. Reaction IDs should be in the same format that appears in your metabolic model (e.g rxn00002_c0)</p></li>
-        <li>Maximum carbon uptake
-        <p>Maximum number of moles of carbon permitted for uptake (Default uptake rates varies from 0 to 100 for all nutrients)</p></li>
-        <li>Maximum nitrogen uptake
-        <p>Maximum number of moles of nitrogen permitted for uptake (Default uptake rates varies from 0 to 100 for all nutrients)</p></li>
-        <li>Maximum sulfur uptake
-        <p>Maximum number of moles of sulfur permitted for uptake (Default uptake rates varies from 0 to 100 for all nutrients)</p></li>
-        <li>Maximum phosphate uptake 
-        <p>Maximum number of moles of phosphate permitted for uptake (Default uptake rates varies from 0 to 100 for all nutrients)</p></li>
-        <li>Minimize Flux?
-        <p>Default is 0, which means "no"; by default, FBA will attempt to maximize its objective (usually biomass growth). If set to 1, which means "yes", FBA will attempt to minimize its objective instead.</p></li>
-        <li>Simulate all single KO?
-        <p>User could simulate FBA on single gene knockouts for all the genes in the model identifying essential reactions that carry fluxes on a given media condition.</p></li>
-        <li>Flux variability analysis</p></li>
-    </ol></p>
+
 
 publications :
     -
