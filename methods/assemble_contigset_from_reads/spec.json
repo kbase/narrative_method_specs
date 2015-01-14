@@ -1,5 +1,5 @@
 {
-  "ver" : "1.0.0",
+  "ver" : "1.1.0",
   "authors" : [ "fangfang", "cbun" ],
   "contact" : "help@kbase.us",
   "visble" : true,
@@ -21,17 +21,27 @@
   }, {
     "id" : "read_library",
     "optional" : true,
-    "advanced" : true,
+    "advanced" : false,
     "allow_multiple" : true,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseAssembly.SingleEndLibrary", "KBaseAssembly.PairedEndLibrary" ]
+      "valid_ws_types" : [ "KBaseAssembly.SingleEndLibrary", "KBaseAssembly.PairedEndLibrary", "KBaseFile.SingleEndLibrary", "KBaseFile.PairedEndLibrary" ]
+    }
+  }, {
+    "id" : "reference",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseAssembly.ReferenceAssembly" ]
     }
   }, {
     "id" : "description",
-    "optional" : false,
-    "advanced" : false,
+    "optional" : true,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "textarea",
@@ -152,12 +162,28 @@
           "target_property": "assembly_input"
         },
         {
+          "input_parameter": "read_library",
+          "target_property": "read_library"
+        },
+        {
+          "input_parameter": "reference",
+          "target_property": "reference"
+        },
+        {
           "input_parameter": "description",
           "target_property": "description"
         },
         {
           "input_parameter": "recipe",
           "target_property": "recipe"
+        },
+        {
+          "input_parameter": "assembler",
+          "target_property": "assembler"
+        },
+        {
+          "input_parameter": "pipeline",
+          "target_property": "pipeline"
         },
         {
           "input_parameter": "output_contigset",
@@ -168,6 +194,14 @@
         }
       ],
       "output_mapping" : [
+        {
+          "input_parameter": "output_contigset",
+          "target_property": "id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws"
+        }
       ]
     }
   }

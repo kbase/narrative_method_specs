@@ -1,5 +1,5 @@
 {
-  "name" : "PCoA from Abundance Profile",
+  "name" : "Generate PCoA from Abundance Data",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
@@ -27,7 +27,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "Communities. PCoA" ],
+      "valid_ws_types" : [ "Communities.PCoA" ],
       "is_output_name": true
     }
   }, {

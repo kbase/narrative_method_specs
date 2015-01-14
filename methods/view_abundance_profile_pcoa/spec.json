@@ -1,5 +1,5 @@
 {
-  "name" : "View Abundance Profile PCoA",
+  "name" : "View Abundance Data PCoA",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
@@ -17,7 +17,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "Communities. PCoA" ]
+      "valid_ws_types" : [ "Communities.PCoA" ]
     }
   }, {
     "id" : "x_axis",

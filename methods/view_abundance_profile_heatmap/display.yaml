@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : View Abundance Profile Heatmap
+name     : View Abundance Data Heatmap
 subtitle : |
-    View a Heatmap generated from an abundance profile
+    View a Heatmap generated from abundance data
 tooltip  : |
-    View a Heatmap generated from an abundance profile
+    View a Heatmap generated from abundance data
 
 screenshots :
     []

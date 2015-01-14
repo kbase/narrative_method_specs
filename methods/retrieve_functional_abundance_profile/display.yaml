@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Retrieve Functional Abundance Profile
+name     : Generate Functional Abundance Data
 subtitle : |
     Retrieve functional abundance data for selected metagenomes.
 tooltip  : |
