@@ -61,13 +61,6 @@ parameters :
         long-hint  : |
             text fields can validate as an integer if specified in the spec
             
-    float_value :
-        ui-name : |
-            Float
-        short-hint : |
-            same for float values- the input must be parsable as a number
-        long-hint  : |
-            same for float values- the input must be parsable as a number        
     
     advanced_float_value :
         ui-name : |
