@@ -69,9 +69,9 @@ parameters :
         ui-name : |
             Minimize Flux?
         short-hint : |
-            Default is 0, which means "no"; by default, FBA will attempt to maximize its objective (usually biomass growth). If set to 1, which means "yes", FBA will attempt to minimize its objective instead
+            Default is 0, which means "no"; by default, FBA will attempt to maximize its objective (usually biomass growth). If this option is checked which means "yes", FBA will attempt to minimize the sum of all fluxes following the biomass optimization
         long-hint  : |
-            Default is 0, which means "no"; by default, FBA will attempt to maximize its objective (usually biomass growth). If set to 1, which means "yes", FBA will attempt to minimize its objective instead
+            Default is 0, which means "no"; by default, FBA will attempt to maximize its objective (usually biomass growth). If this option is checked which means "yes", FBA will attempt to minimize the sum of all fluxes following the biomass optimization
 
     gene_ko :
         ui-name : |
@@ -89,14 +89,13 @@ parameters :
         long-hint  : |
             User may add reaction knockout information one at a time using “add another reaction knockout” button. Reaction IDs should be in the same format that appears in your metabolic model (e.g rxn00002_c0)
 
-
     additional_compounds :
         ui-name : |
             Additional Compounds
         short-hint : |
-            Specify additional compounds to add to media (optional)
+            Specify additional compounds to add to media one at a time by using “add another additional compound” button
         long-hint  : |
-            Specify additional compounds to add to media (optional)
+            Specify additional compounds to add to media one at a time by using “add another additional compound” button
     
     maxc_uptake :
         ui-name : |
@@ -155,11 +154,11 @@ description : |
     <p><strong>Outputs</strong>
     
     <ul><i>Output FBA Result</i>
-    <p>The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model.</ul></p>
+    <p>The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model</ul></p>
     </p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
-    Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, <a href="mailto:help@kbase.us>e-mail help@kbase.us</a></p>
+    Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
 technical-description : |
 
