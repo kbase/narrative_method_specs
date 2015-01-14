@@ -33,15 +33,6 @@ parameters :
             object name of input heatmap data
 
 
-    rows :
-        ui-name : |
-            Label Rows
-        short-hint : |
-            show row label names
-        long-hint  : |
-            show row label names
-
-
 description : |
     View a Heatmap generated from an abundance profile
 
