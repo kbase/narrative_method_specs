@@ -2,13 +2,13 @@
 # Define basic display information
 #
 name     : Annotate a Contig Set
+subtitle : |
+    Build an annotated Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer.
 tooltip  : |
-    Annotate bacterial or archaeal contigs using components from the RAST (Rapid Annotations using Subsystems Technology) toolkit (RASTtk) (publication forthcoming). 
+    Build an annotated Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer.
 
 screenshots :
-    - annotate_a_contig_set_step1.png
-    - annotate_a_contig_set_output1.png
-    - annotate_a_contig_set_output2.png
+    []
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
@@ -28,9 +28,9 @@ parameters :
         ui-name : |
             Contig Set
         short-hint : |
-            A set of bacterial or archaeal genomic contigs in FASTA format.
+            the set of contig sequences to annotate
         long-hint  : |
-            A set of bacterial or archaeal genomic contigs in FASTA format.
+            the set of contig sequences to annotate
 
 
     scientific_name :
@@ -195,60 +195,15 @@ parameters :
 
     output_genome :
         ui-name : |
-            Output Genome
+            Output Genome Name
         short-hint : |
-            A genome (set of DNA contigs) including structural and functional annotations
+            name to assign the output genome; if left blank, a name will be generated for you
         long-hint  : |
-            A genome (set of DNA contigs) including structural and functional annotations
+            name to assign the output genome; if left blank, a name will be generated for you
 
 
 description : |
-    
-<p>This method uses components from RASTtk to annotate an assembled bacterial or archaeal genome. &nbsp;A set of contigs in FASTA format can be generated using the Assemble Contigs app, or uploaded from a user&rsquo;s computer or imported via ftp. &nbsp;The method converts the FASTA file of contings (the &ldquo;Contig Set&rdquo;) into a genome typed object, which is called a &ldquo;Genome&rdquo; in the data menu. &nbsp;&nbsp;</p>
-<p>There are three essential metadata fields that must be filled in: scientific name, domain, and genetic code. Most bacterial and archaeal genomes use genetic code 11, while Mycoplasmas use genetic code 4. For more information on genetic codes please refer to this NCBI document: <a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi">http://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi</a>. All fields are required because they affect conditional parameters in various programs that are being run. Use existing scientific names whenever possible. &nbsp;</p>
-<br />
-<h4>The Default Annotation Pipeline</h4>
-<p>Clicking &ldquo;Run&rdquo; will run the default pipeline. For a typical 2-5 MBp genome, this should take about 5 minutes. The default pipeline consists of the following steps:
-</p>
-<ol>
-  <li><strong>Call rRNAs </strong><br />
-  This is a custom BLAST-based tool</li>
-  <li><strong>Call tRNAs with tRNAscan </strong><br />
-  <a href="http://www.ncbi.nlm.nih.gov/pubmed/9023104">http://www.ncbi.nlm.nih.gov/pubmed/9023104</a></li>
-  <li><strong>Call selenoproteins</strong><br />
-  This is a custom BLAST-based tool</li>
-  <li><strong>Call pyrrolysylproteins</strong><br />
-  This is a custom BLAST-based tool</li>
-  <li><strong>Call large repeat regions</strong><br />
-  This is a BLASTN search within the genome for regions greater than 95% nucleotide similarity greater than or equal to 100bp in length</li>
-  <li><strong>Find Streptococcus repeat regions</strong><br />
-  (<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3049150/">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3049150/</a>)<br />
-  This is a conditional command that will only be implemented if the genus is Streptococcus.</li>
-  <li><strong>Call CRISPRs</strong><br />
-  This is a custom tool that uses a perl regular expression-based search to find CRISPR elements.</li>
-  <li><strong>Call the protein-encoding genes with Prodigal and Glimmer3</strong><br />
-  <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=20211023">http://www.ncbi.nlm.nih.gov/pubmed/?term=20211023</a><br />
-  <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=17237039">http://www.ncbi.nlm.nih.gov/pubmed/?term=17237039</a></li>
-  <li><strong>Annotate protein-encoding genes with k-mers (version 2)</strong><br />
-  This is a set of signature k-mers (amino acid 8-mers) built from the annotations in the CoreSEED (<a href="http://core.theseed.org/FIG/seedviewer.cgi">http://core.theseed.org/FIG/seedviewer.cgi</a>). The CoreSEED is a database of ~1,000 diverse microbial genomes and is currently the main focus of the RAST manual annotation efforts. &nbsp;Annotating using this k-mer set provides the user with our most stable and best estimate of the core gene functions. &nbsp;</li>
-  <li><strong>Annotate remaining hypothetical proteins with k-mers (version 1)</strong><br />
-  This set of k-mers is built from the FigFam collection (<a href="http://www.ncbi.nlm.nih.gov/pubmed/19762480">http://www.ncbi.nlm.nih.gov/pubmed/19762480</a>) &nbsp;in the PubSEED, which is the publically annotated version of the SEED database that consists of ~12,000 microbial genomes. &nbsp;The &ldquo;classic&rdquo; version of RAST on the RAST website (<a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=rast.nmpdr.org&amp;ie=UTF-8&amp;oe=UTF-8">rast.nmpdr.org</a>) uses the FigFam-based k-mers (hence the version 1 designation).</li>
-  <li><strong>Annotate remaining hypothetical proteins by searching against close relatives </strong><br />
-  We have several nonredundant databases for the most common genera. &nbsp;If the genus name of your organisms matches one of these, a search will be made with the remaining hypothetical proteins to attempt to find a function. &nbsp;The search uses a combination of BLAT and BLAST.</li>
-  <li><strong>Perform a basic gene overlap removal</strong><br />
-  Using multiple gene calling algorithms can result in overlapping gene calls. &nbsp;This program is a custom tool that attempts to minimize overlaps and gaps to provide a set of calls that has a smaller number of gene calling errors. &nbsp;We do not recommend using overlap removal if you are attempting to annotate phage.</li>
-  <li><strong>Find close neighbors</strong><br />
-  After the genome has been annotated, a BLASTP search using a set of unique proteins from the genome is used to find closely related genomes in KBase. The similarity is BLAST-based and should not be considered phylogenetic; however, this works well for quickly finding close relatives for downstream applications.</li>
-</ol>
-<br />
-<h4>Advanced Annotation Options</h4>
-<p>If you wish to customize your annotation, you can click the &ldquo;show advanced options&rdquo; link. This will display the full set of available annotation programs. There are currently two additional commands: &ldquo;Call features insertion sequences&rdquo; and &quot;Call features prophage phispy&rdquo;, which are left unchecked in the default pipleine because they are slower. &nbsp;The insertion sequence finder is a custom BLAST-based script, and information on phispy can be found here: (<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=22584627">http://www.ncbi.nlm.nih.gov/pubmed/?term=22584627</a>).</p>
-<br />
-<h4>GUI Output</h4>
-<p>The GUI output currently consists of three tabs. The &ldquo;Overview&rdquo; tab provides basic information on the annotation job, the &ldquo;Contigs&rdquo; tab provides information on the contigs in the genome, and the &ldquo;Genes&rdquo; tab allows the user to scroll through the features that called. Users can sort on the various types of features. The features that get called can be controlled by using the advanced options. &nbsp;Note that some features will overlap (e.g., &ldquo;prophage&rdquo; and &ldquo;CDS&rdquo;). 
-</p>
-<h4>Additional information</h4>
-<p>For more information on the steps of the default RAStk pipeline please refer to our publication on this (publication forthcoming). &nbsp;For more detailed tutorial information and to explore the additional functionality of RASTtk not currently available in the Narrative interface please refer to <a href="http://tutorial.theseed.org">http://tutorial.theseed.org</a>.</p>
+    Build an annotated Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer.
 
 technical-description : |
-    none
+    Build an annotated Genome object from a ContigSet, creating structural and functional annotations. The annotation job may run for an hour or longer.
