@@ -42,7 +42,7 @@
           "target_property": "genomes"
         },
         {
-          "narrative_system_variable": "workspace",
+          "constant_value": "genomes",
           "target_property": "genome_workspaces"
         },
         {
