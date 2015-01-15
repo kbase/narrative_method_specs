@@ -144,7 +144,7 @@ description : |
     <p><strong>Inputs</strong>
     
     <p><i>FBAModel</i><br>
-    The metabolic network model consisting of genome-wide set of stoichiometric reactions, compounds, and the weighted components of the biomass on which you wish to carry out Flux Balance Analysis</ul></p>
+    The metabolic network model consisting of genome-wide set of stoichiometric reactions, compounds, and the weighted components of the biomass on which you wish to carry out Flux Balance Analysis</p>
     
     <p><i>Media<br>
     Media specifies the set of chemical compounds organism can use for its growth</p>
@@ -153,7 +153,7 @@ description : |
     <p><strong>Outputs</strong>
     
     <p><i>Output FBA Result</i><br>
-    The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model</ul></p>
+    The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model</p>
     </p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
