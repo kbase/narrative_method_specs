@@ -1,14 +1,14 @@
 #
 # Define basic display information
 #
-name     : Gapfill a Metabolic Model
+name     : Gapfill Metabolic Model
 tooltip  : |
-    Identify the minimal set of biochemical reactions to add to a draft metabolic model to enable it produce biomass in a specified media. 
+    Identify the minimal set of biochemical reactions to add to a draft metabolic model to enable it to produce biomass in a specified media. 
 
 screenshots :
     
-    - gapfill_a_metabolic_model.png
-    - gapfill_a_metabolic_model_output.png
+    - gapfill_metabolic_model_input.png
+    - gapfill_metabolic_model_output.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
@@ -26,76 +26,82 @@ method-suggestions :
 parameters :
     input_model :
         ui-name : |
-            Input model
+            Model Input
         short-hint : |
-            A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass. 
+            The model to be gapfilled 
         long-hint  : |
-            A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass. 
+            The model to be gapfilled
 
 
     input_media :
         ui-name : |
             Growth condition
         short-hint : |
-            Growth condition specifying the chemical compounds in which growth of the organism is to be analyzed.
+            Media condition to be used in gapfilling; if not selected, complete media is used by default
         long-hint  : |
-            Growth condition specifying the chemical compounds in which growth of the organism is to be analyzed.
+            Media condition to be used in gapfilling; if not selected, complete media is used by default
 
     integrate_solution :
         ui-name : |
             Integrate Solution
         short-hint : |
-            Check the box to integrate gapfilled reactions into the original model. Otherwise provide a new model name in the "Output Model ID" field below.
+            Check the box to integrate gapfilled reactions into the output model. Otherwise, the gapfilling solution will be stored within the model for manual integration by the user
         long-hint  : |
-            Check the box to integrate gapfilled reactions into the original model. Otherwise provide a new model name in the "Output Model ID" field below.
+            Check the box to integrate gapfilled reactions into the output model. Otherwise, the gapfilling solution will be stored within the model for manual integration by the user
 
     output_model :
         ui-name : |
-            Output model ID
+            Output Model ID
         short-hint : |
-            A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass, including gapfilled reactions. Gapfilled reactions can be seen in the "Gapfill" tab of the output widget.
+            The name of the model produced by the gapfill analysis
         long-hint  : |
-            A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass, including gapfilled reactions. Gapfilled reactions can be seen in the "Gapfill" tab of the output widget.
+            The name of the model produced by the gapfill analysis
 
     comprehensive_gapfill :
         ui-name : |
-            Comprehensive gapfill
+            Comprehensive Gapfill
         short-hint : |
-            Check the box to attempt to activate all model reactions rather than just biomass.
+            Check this box to activate as many reactions as possible, rather than just the biomass objective function
         long-hint  : |
-            Check the box to attempt to activate all model reactions rather than just biomass.
+            Check this box to activate as many reactions as possible, rather than just the biomass objective function
 
     source_model :
         ui-name : |
             Source Gapfill Model
         short-hint : |
-            A source gapfill model could be used to add additional reactions and compounds in gapfilling that are not found in the KBase gapfilling database.
+            A source gapfill model can be used to add additional reactions and compounds in gapfilling that are not found in the default KBase gapfilling database; the default gapfill database will still be utilized but it will be expanded with reactions in the source model
         long-hint  : |
-            A source gapfill model could be used to add additional reactions and compounds in gapfilling that are not found in the KBase gapfilling database.
+           A source gapfill model can be used to add additional reactions and compounds in gapfilling that are not found in the default KBase gapfilling database; the default gapfill database will still be utilized but it will be expanded with reactions in the source model
 
 description : |
     <p>Draft metabolic models usually have missing reactions (gaps) due to incomplete or incorrect functional genome annotations. As a result, these models are unable to generate biomass on media where the organism typically is capable of growing. Gapfilling algorithms can be used to overcome this problem. These algorithms tentatively fill metabolic gaps by identifying the minimal number of biochemical reactions to add to the draft metabolic model to enable it to produce biomass in a specified media. Gapfilling is an optimization procedure that can produce multiple solutions.</p> 
 
-    <p>Once a set of gapfilling solutions is successfully generated by this method, users can view these solutions. Viewing each gapfilling solution is recommended to determine the one that is most biologically plausible and best fits the physiological aspects of the given organism. The selected gapfill solution may then be integrated into the initial draft model using the Integrate Gapfill Solution method (See Integrate Gapfill Solution).</p>
+    <p>Once a set of gapfilling solutions is successfully generated by this method, users can view these solutions. Viewing each gapfilling solution is recommended to determine the one that is most biologically plausible and best fits the physiological aspects of the given organism.</p>
 
     <p>Biochemistry data used in the model construction pipeline have been gathered from multiple published metabolic models and from public databases such as KEGG, MetaCyc, EcoCyc, Plant BioCyc, Plant Metabolic Networks, and Gramene. Currently, the biochemistry database in KBase includes more than 13,000 biochemical reactions and over 16,000 metabolic compounds.</p>
 
+    <p><strong>Inputs</strong>
+    
+    <p><i>FBAModel</i><br>
+    A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass</ul></p>
+    
+    <p><i>Media<br>
+    Media condition specifying the chemical compounds in which growth of the organism is to be analyzed</p>
+    </p>
+    
+    <p><strong>Outputs</strong>
+    
+    <p><i>FBAModel</i><br>
+    A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass, including gapfilled reactions. Gapfilled reactions can be seen in the "Gapfill" tab of the output widget.</ul></p>
+    </p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
+
 
 technical-description : |
-    <p>Description of parameters changeable by users</p>
-    <p><ol>
-        <li>Model Input
-            <p>The model to be gapfilled</p></li>
-        <li>Media
-                        <p>Media condition to be used in gapfilling. If not selected, complete media is used by default.</p></li>
-        <li>Source Gapfill Model
-                        <p>A source gapfill model could be used to add additional reactions and compounds in gapfilling that are not found in the KBase gapfilling database.</p></li>
-        <li>Integrate Solution
-                        <p>Check the box to integrate gapfilled reactions into the original model. Otherwise provide a new model name in the "Output Model ID" field below.</p></li>
-        <li>Output model ID
-                        The name of the new gapfilled model if a user decided not to integrate the gapfilled reactions into the original model.</p></li>
-    </ol></p>
-    
+
+ 
 publications :
     -
         display-text: |
