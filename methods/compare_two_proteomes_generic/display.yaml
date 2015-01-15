@@ -3,9 +3,9 @@
 #
 name     : Compare Two Proteomes
 subtitle : |
-    Start a job to run Blast between the proteomes of two genomes. The comparison information includes best-bidirectional hits. [17]
+    Start a job to run Blast between the proteomes of two genomes. The comparison information includes best-bidirectional hits.
 tooltip  : |
-    Start a job to run Blast between the proteomes of two genomes. The comparison information includes best-bidirectional hits. [17]
+    Start a job to run Blast between the proteomes of two genomes. The comparison information includes best-bidirectional hits.
 
 screenshots :
     []
@@ -28,32 +28,48 @@ parameters :
         ui-name : |
             Genome1 ID
         short-hint : |
-            Source genome1 ID [17.1]
+            Source genome1 ID
         long-hint  : |
-            Source genome1 ID [17.1]
+            Source genome1 ID
 
 
     param1 :
         ui-name : |
             Genome2 ID
         short-hint : |
-            Source genome2 ID [17.2]
+            Source genome2 ID
         long-hint  : |
-            Source genome2 ID [17.2]
+            Source genome2 ID
 
 
     param2 :
         ui-name : |
             Output Proteome Comparison ID
         short-hint : |
-            Output proteome comparison ID. If empty, an ID will be chosen randomly. [17.3]
+            Output proteome comparison ID. If empty, an ID will be chosen randomly.
         long-hint  : |
-            Output proteome comparison ID. If empty, an ID will be chosen randomly. [17.3]
+            Output proteome comparison ID. If empty, an ID will be chosen randomly.
+
+    param_max_eval :
+        ui-name : |
+            Max. e-value
+        short-hint : |
+            Maximum e-value threshold
+        long-hint  : |
+            Maximum e-value threshold
+
+    param_min_perc :
+        ui-name : |
+            Minimum sub-optimal BBH ratio
+        short-hint : |
+            Minimum threshold for percent ratio between hit bit-score and bit-score of related best bi-directional hit
+        long-hint  : |
+            Minimum threshold for percent ratio between hit bit-score and bit-score of related best bi-directional hit
 
 
 description : |
-    Start a job to run Blast between the proteomes of two genomes. The comparison information includes best-bidirectional hits. [17]
+    Start a job to run Blast between the proteomes of two genomes. The comparison information includes best-bidirectional hits.
 
 
 technical-description : |
-    Start a job to run Blast between the proteomes of two genomes. The comparison information includes best-bidirectional hits. [17]
+    Start a job to run Blast between the proteomes of two genomes. The comparison information includes best-bidirectional hits.
