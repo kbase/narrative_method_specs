@@ -11,7 +11,7 @@
   "parameters" : [ {
     "id" : "assembly_input",
     "optional" : true,
-    "advanced" : false,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
