@@ -44,6 +44,10 @@
             {
                 "input_parameter": "output_profile",
                 "target_property": "output"
+            },
+            {
+                "constant_value": "workspace_output",
+                "target_property": "outdir"
             }
         ],
         "output_mapping" : [
