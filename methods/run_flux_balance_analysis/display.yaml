@@ -30,8 +30,7 @@ parameters :
             Metabolic Model
         short-hint : |
             User selects the model on which to run FBA
-        long-hint  : |
-            User selects the model on which to run FBA
+
 
     input_media :
         ui-name : |
