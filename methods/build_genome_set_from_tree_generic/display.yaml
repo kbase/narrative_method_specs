@@ -60,5 +60,5 @@ description : |
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Roman Sutormin. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
-technical-description : |
-    Build a genome set from the contents of the species tree, copying any CDM genomes into local workspace.
+technical-description : | 
+    &nbsp;
