@@ -3,12 +3,14 @@
 #
 name     : Generate Rank Abundance Plot
 subtitle : |
-    Generate rank abundance profile from annotation abundance data.
+    Generate a rank abundance plot from abundance data
 tooltip  : |
-    Generate rank abundance profile from annotation abundance data.
+    Generate a rank abundance plot from abundance data.
 
 screenshots :
-    []
+
+    - generate_rank_abundance_plot_input.png
+    - generate_rank_abundance_plot_output.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
@@ -28,41 +30,55 @@ parameters :
         ui-name : |
             Input Name
         short-hint : |
-            object name of input abundance profile
+            Abundance profile or matrix name
         long-hint  : |
             object name of input abundance profile
 
 
     name :
         ui-name : |
-            Label by Name
+            Label Name
         short-hint : |
-            label by metagenome name and not ID
+            Label by metagenome name and not KBase metagenome ID; default is no (checkbox), alternative is yes
         long-hint  : |
-            label by metagenome name and not ID
+            Label by metagenome name and not KBase metagenome ID; default is no (checkbox), alternative is yes
 
 
     top :
         ui-name : |
             Top Annotations
         short-hint : |
-            produce profile for top N abundant annotations
+            Produce profile for top N abundant annotations; default is 10, alternative is integer
         long-hint  : |
-            produce profile for top N abundant annotations
+            Produce profile for top N abundant annotations; default is 10, alternative is integer
 
 
     order :
         ui-name : |
             Order By
         short-hint : |
-            rank by either the position of metagenome in profile (integer) or 'average' or 'max' of metagenomes
+            Order of metagenomes; the default is average abundance, alternative is either the position of metagenome in profile or the maximum species abundance in each of the metagenomes
         long-hint  : |
-            rank by either the position of metagenome in profile (integer) or 'average' or 'max' of metagenomes
+            Order of metagenomes; the default is average abundance, alternative is either the position of metagenome in profile or the maximum species abundance in each of the metagenomes
 
 
 description : |
-    Generate rank abundance profile from annotation abundance data.
+    <p>This method compares the relative abundance and diversity of species within a community (using amplicon or WGS taxonomic profiles) by plotting the relative abundance. This method takes taxonomic profiles from amplicon or WGS data sets. These profiles can be generated through "Retrieve Taxonomic/Functional  Abundance Data".</p>
+    
+    <p><strong>Inputs</strong>
+    
+    <p><i>Abundance Profile or Matrix</i><br>
+    User-selected profile or matrix generated from "Retrieve Taxonomic/Functional Abundance Data" methods.</p>
+    
+    <p><strong>Outputs</strong>
+    
+    <p><i>Visualization</i><br>
+    Generates an image of an abundance curve (line graph).</p>
+    </p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Kevin Keegan, Jared Bischof, Travis Harrison, Folker Meyer, Tobias Paczian, Andreas Wilke. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
 
 technical-description : |
-    Generate rank abundance profile from annotation abundance data.
+
