@@ -1,6 +1,5 @@
 {
-  "name" : "Build Gene Tree",
-  "ver" : "1.0.0",
+  "ver" : "1.0.1",
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
@@ -17,11 +16,22 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseTrees.MSA" ]
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
     }
   }, {
     "id" : "param1",
     "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ],
+      "validate_as": "int"
+    }
+  }, {
+    "id" : "param2",
+    "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
@@ -33,34 +43,39 @@
   } ],
   "behavior" : {
     "service-mapping" : {
-      "url" : "https://next.kbase.us/services/trees",
+      "url" : "https://kbase.us/services/trees",
       "name" : "KBaseTrees",
-      "method" : "construct_tree_for_alignment",
+      "method" : "construct_species_tree",
       "input_mapping" : [
         {
           "input_parameter": "param0",
-          "target_property": "msa_ref",
-          "target_type_transform": "ref"
-        },
-        {
-          "constant_value": "FastTree",
-          "target_property": "tree_method"
+          "target_property": "new_genomes",
+          "target_type_transform": "list<ref>"
         },
         {
           "input_parameter": "param1",
+          "target_property": "nearest_genome_count",
+          "target_type_transform": "int"
+        },
+        {
+          "input_parameter": "param2",
           "generated_value": {
-            "prefix": "genetree_"
+            "prefix": "sptree_"
           },
           "target_property": "out_tree_id"
         },
         {
           "narrative_system_variable": "workspace",
           "target_property": "out_workspace"
+        },
+        {
+          "constant_value": 0,
+          "target_property": "use_ribosomal_s9_only"
         }
       ],
       "output_mapping" : [
         {
-          "input_parameter": "param1",
+          "input_parameter": "param2",
           "target_property": "treeID"
         },
         {

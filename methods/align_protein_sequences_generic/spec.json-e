@@ -1,5 +1,4 @@
 {
-  "name" : "Build Gene Tree",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
@@ -7,7 +6,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "kbaseTree"
+    "output" : "kbaseMSA"
   },
   "parameters" : [ {
     "id" : "param0",
@@ -17,41 +16,51 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseTrees.MSA" ]
+      "valid_ws_types" : [ "KBaseSearch.FeatureSet" ]
     }
   }, {
     "id" : "param1",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
+    "default_values" : [ "Clustal" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "param2",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseTrees.Tree" ],
+      "valid_ws_types" : [ "KBaseTrees.MSA" ],
       "is_output_name":true
     }
   } ],
   "behavior" : {
     "service-mapping" : {
-      "url" : "https://next.kbase.us/services/trees",
+      "url" : "https://kbase.us/services/trees",
       "name" : "KBaseTrees",
-      "method" : "construct_tree_for_alignment",
+      "method" : "construct_multiple_alignment",
       "input_mapping" : [
         {
           "input_parameter": "param0",
-          "target_property": "msa_ref",
+          "target_property": "featureset_ref",
           "target_type_transform": "ref"
         },
         {
-          "constant_value": "FastTree",
-          "target_property": "tree_method"
+          "input_parameter": "param1",
+          "target_property": "alignment_method"
         },
         {
-          "input_parameter": "param1",
+          "input_parameter": "param2",
           "generated_value": {
-            "prefix": "genetree_"
+            "prefix": "msa_"
           },
-          "target_property": "out_tree_id"
+          "target_property": "out_msa_id"
         },
         {
           "narrative_system_variable": "workspace",
@@ -60,16 +69,12 @@
       ],
       "output_mapping" : [
         {
-          "input_parameter": "param1",
-          "target_property": "treeID"
+          "input_parameter": "param2",
+          "target_property": "msaID"
         },
         {
           "narrative_system_variable": "workspace",
           "target_property": "workspaceID"
-        },
-        {
-          "constant_value": "500px",
-          "target_property": "height"
         },
         {
           "service_method_output_path": [],

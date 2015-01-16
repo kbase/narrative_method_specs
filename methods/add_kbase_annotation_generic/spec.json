@@ -32,7 +32,7 @@
   } ],
   "behavior" : {
     "service-mapping" : {
-      "url" : "https://kbase.us/services/genome_comparison/jsonrpc",
+      "url" : "https://next.kbase.us/services/genome_comparison/jsonrpc",
       "name" : "GenomeComparison",
       "method" : "annotate_genome",
       "input_mapping" : [

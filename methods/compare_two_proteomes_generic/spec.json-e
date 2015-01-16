@@ -64,7 +64,7 @@
   } ],
   "behavior" : {
     "service-mapping" : {
-      "url" : "https://next.kbase.us/services/genome_comparison/jsonrpc",
+      "url" : "https://kbase.us/services/genome_comparison/jsonrpc",
       "name" : "GenomeComparison",
       "method" : "blast_proteomes",
       "input_mapping" : [

@@ -42,7 +42,7 @@
   } ],
   "behavior" : {
     "service-mapping" : {
-      "url" : "https://kbase.us/services/trees",
+      "url" : "https://next.kbase.us/services/trees",
       "name" : "KBaseTrees",
       "method" : "construct_species_tree",
       "input_mapping" : [
