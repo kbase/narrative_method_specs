@@ -39,6 +39,28 @@
       "valid_ws_types" : [ "GenomeComparison.ProteomeComparison" ],
       "is_output_name":true
     }
+  }, {
+    "id" : "param_max_eval",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "10e-10" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ],
+      "validate_as": "float"
+    }
+  }, {
+    "id" : "param_min_perc",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "90" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ],
+      "validate_as": "int"
+    }
   } ],
   "behavior" : {
     "service-mapping" : {
@@ -72,6 +94,14 @@
         {
           "narrative_system_variable": "workspace",
           "target_property": "output_ws"
+        },
+        {
+          "input_parameter": "param_max_eval",
+          "target_property": "max_evalue"
+        },
+        {
+          "input_parameter": "param_min_perc",
+          "target_property": "sub_bbh_percent"
         }
       ],
       "output_mapping" : [

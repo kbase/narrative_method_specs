@@ -27,8 +27,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "Communities.TaxonomicMatrix", "Communities.FunctionalMatrix" ],
-      "is_output_name": true
+      "valid_ws_types" : [ ]
     }
   } ],
   "behavior" : {
@@ -44,6 +43,10 @@
             {
                 "input_parameter": "output_profile",
                 "target_property": "output"
+            },
+            {
+                "constant_value": "workspace_output",
+                "target_property": "outdir"
             }
         ],
         "output_mapping" : [
