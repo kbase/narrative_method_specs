@@ -69,4 +69,5 @@ description : |
     Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
 # no technical description
-technical-description : &nbsp;
+technical-description : | 
+    &nbsp;
