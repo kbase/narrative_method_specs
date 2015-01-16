@@ -6,7 +6,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : null
+    "output" : "kbaseContigSetView"
   },
   "parameters" : [ {
     "id" : "assembly_input",
