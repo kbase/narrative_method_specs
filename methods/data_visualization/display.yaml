@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : Communities Data Visualization
+name     : Create metagenome set
 subtitle : |
-    View abundance data.
+    List of metagenomes
 tooltip  : |
-    Generate boxplots, tables from annotation abundance data.
+    Create a list object for abundance data retrieval
 
 screenshots :
     []
@@ -52,8 +52,8 @@ parameters :
 
 
 description : |
-    Generate boxplots from annotation abundance data.
+    List of metagenomes
 
 
 technical-description : |
-    Generate boxplots from annotation abundance data.
+	Metagenome list object 
