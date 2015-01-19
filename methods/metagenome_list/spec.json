@@ -6,7 +6,7 @@
   "visble" : true,
   "categories" : ["active"],
   "widgets" : {
-    "input" : "devVizSelector",
+    "input" : "create_metagenome_set",
     "output" : null
   },
   "parameters" : [],
