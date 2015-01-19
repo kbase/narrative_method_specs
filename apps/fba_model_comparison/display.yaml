@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : Compare Two Metabolic Models
+name     : Compare Models of Two Genomes
 subtitle : |
-    In this App, you can compare multiple fba models.
+    Compare models of two genomes by comparing reaction content and comparing genes mapped to reactions.
 tooltip  : |
-    In this App, you can compare multiple fba models.
+    Compare models of two genomes by comparing reaction content and comparing genes mapped to reactions.
 
 screenshots : []
 
@@ -19,7 +19,7 @@ step-descriptions :
 
 
 description : |
-    <p>The "Compare Two Metabolic Models" app enables the user to view the similarities and differences between metabolic models of selected genomes. To begin, the user may either upload a set of metabolic models in Excel or SBML format or select a set of metabolic models already present in KBase. KBase will then conduct a side-by-side comparison of the models, presenting a detailed exportable report to the user.</p>
+    <p>The "Compare Models of Two Genomes" app enables a comparison of models from two different genomes (or different annotations of the same genome). Identifies unique reactions in each model, and identifies differences in genes associated to model reactions. Note, if you are attempting to compare two models of the same genome, it is better to use the "Compare two models" method directly and supply no proteome comparison to this method. The user may either upload a set of metabolic models in Excel or SBML format or select a set of metabolic models already present in KBase. KBase will then conduct a side-by-side comparison of the models, presenting a detailed exportable report to the user.</p>
 
 
 technical-description : |
