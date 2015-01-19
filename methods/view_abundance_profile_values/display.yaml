@@ -1,14 +1,16 @@
 #
 # Define basic display information
 #
-name     : View Abundance Data Table
+name     : View Abundance Data
 subtitle : |
-    View a BIOM format abundance profile as a table
+    View all or a portion of the abundance data as a table
 tooltip  : |
-    View a BIOM format abundance profile as a table
+    View all or a portion of the abundance data as a table
 
 screenshots :
-    []
+
+    - view_abundance_data_input.png
+    - view_abundance_data_output.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
@@ -28,23 +30,39 @@ parameters :
         ui-name : |
             Input Name
         short-hint : |
-            object name of input abundance profile
+            Abundance profile name(s)
         long-hint  : |
-            object name of input abundance profile
+            Abundance profile name(s)
 
 
     name :
         ui-name : |
-            Label by Name
+            Label
         short-hint : |
-            label by metagenome name and not ID
+            Default is ID (unchecked), alternative is metagenome name
         long-hint  : |
-            label by metagenome name and not ID
+            Default is ID (unchecked), alternative is metagenome name
 
 
 description : |
-    View a BIOM format abundance profile as a table
+    <p>Once you have generated your profile or matrix from "Retrieve Taonomic/Functional  Abundance Data" this method can be used to view the table of values. You can choose to view the entire table or a selection from it using the table coordinates. Here, you can visually inspect the abundance data. It is recommended to explore the first few lines of the abundance data to determine if there are any irregularities in the data (e.g., profiles with missing abundance data, non-integer values, or other obvious problems that could interfere with downstream analyses and comparisons among the profiles).</p>
+    
+    <p><strong>Inputs</strong>
+    
+    <p><i>Profile</i><br>
+    User-selected profile or set of profiles generated from "Retrieve Taxonomic/Functional  Abundance Data" methods.</p>
+
+    <p><strong>Outputs</strong>
+    
+    <p><i>ProfileTable</i><br>
+    Table of abundances. The table rows are labeled with function or taxa and the columns are labeled with metagenome IDs.</p>
+    </p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Jared Bischof, Travis Harrison, Folker Meyer, Tobias Paczian, Andreas Wilke. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
 
-technical-description : |
-    View a BIOM format abundance profile as a table
+
+technical-description : | 
+    &nbsp;
+

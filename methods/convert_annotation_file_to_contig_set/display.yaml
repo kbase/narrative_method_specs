@@ -1,0 +1,46 @@
+#
+# Define basic display information
+#
+name     : Convert assembly file to contigset
+subtitle : |
+    Convert a KBaseFile.AssemblyFile to a KBaseGenomes.ContigSet
+tooltip  : |
+    Convert a KBaseFile.AssemblyFile to a KBaseGenomes.ContigSet
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        [annotate_contigset]
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_assyfile :
+        ui-name : |
+            Assembly file
+        short-hint : |
+            Input assembly file to be converted
+        long-hint  : |
+            Input assembly file to be converted
+    output_contigset :
+        ui-name : |
+            Name for output ContigSet
+        short-hint : |
+            ContigSet name
+        long-hint  : |
+            Name for output ContigSet
+
+description : |
+    Convert a KBaseFile.AssemblyFile to a KBaseGenomes.ContigSet
+
+technical-description : |
+    Convert a KBaseFile.AssemblyFile to a KBaseGenomes.ContigSet

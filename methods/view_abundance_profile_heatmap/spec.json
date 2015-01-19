@@ -19,17 +19,6 @@
     "text_options" : {
       "valid_ws_types" : [ "Communities.Heatmap" ]
     }
-  }, {
-    "id" : "rows",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "0" ],
-    "field_type" : "checkbox",
-    "checkbox_options": {
-        "checked_value": 1,
-        "unchecked_value": 0
-    }
   } ],
   "behavior" : {
       "none" : {
@@ -37,10 +26,6 @@
               {
                   "input_parameter": "input_heatmap",
                   "target_property": "id"
-              },
-              {
-                  "input_parameter": "rows",
-                  "target_property": "rows"
               },
               {
                   "narrative_system_variable": "workspace",
