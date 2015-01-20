@@ -19,6 +19,8 @@ header : |
 step-descriptions :
     step_1 : |
         Specify the list of metagenomes and the attributes that will define the data that will be returned as an abundance profile. Returns a view of the abundance profile in table format.
+    step_2 : |
+        View abundance taxonomic data as boxplots.
 
 
 description : |
