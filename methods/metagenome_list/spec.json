@@ -21,7 +21,8 @@
                   "narrative_system_variable": "token",
                   "target_property": "auth"
               }
-          ]
+          ],
+		  "output_mapping" : []
       }
   }
 }
