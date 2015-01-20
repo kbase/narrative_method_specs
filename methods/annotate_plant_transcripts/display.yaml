@@ -1,14 +1,15 @@
 #
 # Define basic display information
 #
-name     : Annotate Plant Genome
-subtitle : |
-    Annotate a Genome object with structural and functional gene annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace.
+name     : Annotate Plant Transcripts with Metabolic Functions
+
 tooltip  : |
-    Annotate a Genome object with structural and functional gene annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace.
+    Annotate a set of plant transcripts with metabolic functions from the PlantSEED project
 
 screenshots :
-    []
+    - annotate_plant_transcripts_with_metabolic_functions_input1.png
+    - annotate_plant_transcripts_with_metabolic_functions_input2.png
+    - annotate_plant_transcripts_with_metabolic_functions_input3.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
@@ -28,22 +29,42 @@ parameters :
         ui-name : |
             Source Genome ID
         short-hint : |
-            Source Genome ID
+            The ID of the set of transcripts  to annotate.
         long-hint  : |
-            Source Genome ID
+            The identifier of  the genome object in the user's data set which contains the set of plant transcripts for which annotation is desired
 
 
     output_genome :
         ui-name : |
-            Saved Genome ID
+            Output Genome ID (optional)
         short-hint : |
-            ID of newly annotated Genome. This may be the same as the Source Genome ID.
+            The ID of the genome object to which the new annotated genome object should be saved
         long-hint  : |
-            ID of newly annotated Genome. This may be the same as the Source Genome ID.
+            The annotated genome object will overwrite the original genome object unless you specify a new ID for the annotated genome object
  
 description : |
-    Annotate a Genome object with structural and functional gene annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace.
+    <p>This method uses the RAST approach to annotate plant transcripts with metabolic functions from the PlantSEED project. The PlantSEED project focused on high-quality annotation of plant primary metabolism, and some secondary metabolic pathways, in ten plant genomes. Signature k-mers were generated from this annotation for each metabolic function and then used to assign the same function to a transcript.</p>
+    <p>The transcript data can be added to the system by clicking the + symbol in the Data panel, selecting the &quot;Import&quot; tab, then selecting &quot;Transcript&quot; from the dropdown menu. The user is presented with two boxes.  The first one lets you select the transcript FASTA file. Click on &quot;Select file&quot; to locate the transcript FASTA file on your computer and upload it to KBase. The progress of the upload is reflected in the box to the right of the "Select file" button. When the upload is finished (the progress box shows 100%), enter a name for the resulting data object in the second box and click the "Import" button.</p>
+
+    <p><strong>Inputs</strong>
+    
+    <p><i>Genome</i><br>
+    A set of plant mRNA transcripts.</p>
+    
+    <p><i>Media<br>
+    Media specifies the set of chemical compounds organism can use for its growth</p>
+    </p>
+    
+    <p><strong>Outputs</strong>
+    
+    <p><i>Genome</i><br>
+    A set of metabolically annotated transcripts saved as data of "Genome" type.</p>
+    </p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
 
-technical-description : |
-    Annotate a Genome object with structural and functional gene annotations. The annotation job may run for an hour or longer. When the annotation job finishes, the annotated Genome object will be stored in your workspace.
+technical-description : | 
+    &nbsp;
+

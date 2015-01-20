@@ -2,13 +2,14 @@
 # Define basic display information
 #
 name     : Compare Two Proteomes
-subtitle : |
-    Start a job to run Blast between the proteomes of two genomes. The comparison information includes best-bidirectional hits. [17]
+
 tooltip  : |
-    Start a job to run Blast between the proteomes of two genomes. The comparison information includes best-bidirectional hits. [17]
+    Perform a comparison of two proteomes, producing a dot plot matrix and a table of gene differences
 
 screenshots :
-    []
+
+    - compare_two_proteomes_input.png
+    - compare_two_proteomes_output.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
@@ -28,32 +29,76 @@ parameters :
         ui-name : |
             Genome1 ID
         short-hint : |
-            Source genome1 ID [17.1]
+            Source genome 1 ID
         long-hint  : |
-            Source genome1 ID [17.1]
+            Source genome 1 ID
 
 
     param1 :
         ui-name : |
             Genome2 ID
         short-hint : |
-            Source genome2 ID [17.2]
+            Source genome 2 ID
         long-hint  : |
-            Source genome2 ID [17.2]
+            Source genome 2 ID
 
 
     param2 :
         ui-name : |
             Output Proteome Comparison ID
         short-hint : |
-            Output proteome comparison ID. If empty, an ID will be chosen randomly. [17.3]
+            Output proteome comparison ID; if empty, an ID will be chosen randomly
         long-hint  : |
-            Output proteome comparison ID. If empty, an ID will be chosen randomly. [17.3]
+            Output proteome comparison ID; if empty, an ID will be chosen randomly
+
+    param_max_eval :
+        ui-name : |
+            Max. e-value
+        short-hint : |
+            Maximum e-value threshold
+        long-hint  : |
+            Maximum e-value threshold
+
+    param_min_perc :
+        ui-name : |
+            Minimum sub-optimal BBH ratio
+        short-hint : |
+            Minimum threshold for percent ratio between hit bit-score and bit-score of related best bi-directional hit
+        long-hint  : |
+            Minimum threshold for percent ratio between hit bit-score and bit-score of related best bi-directional hit
 
 
 description : |
-    Start a job to run Blast between the proteomes of two genomes. The comparison information includes best-bidirectional hits. [17]
+    <p>This method performs an all-vs-all proteome comparison for a pair of species. The algorithm determines sets of similar proteins based on the Best Unambiguous Sets (BUS) algorithm by Kellis et al. (see publications).  As a pre-processing step, BUS algorithm eliminates all edges that are less than 80% of the maximum-weight edge both in amino acid identity and in sequence length.  Based on the unambiguous matches that result from this step, the algorithm builds blocks of conserved gene order (synteny) when neighboring genes in one species had one-to-one matches to neighboring genes in the other species; these blocks of conserved synteny are used to resolve additional ambiguities by preferentially keeping matches within synteny blocks.  Finally the algorithm searches for subsets of genes that are locally optimal, such that all best matches of genes within the group are contained within the group, and no genes outside the group have matches within the group.  These best unambiguous subsets ensure that the bipartite graph is maximally separable, while maintaining all possibly orthologous relationships. BUS algorithm builds on other popular methods such as Bidirectional Best Hits (BBHs) and Clusters of Orthologous Genes (COGs) to resolve the correspondence of genes across the species. </p>
+    <p>The output of this method is visualized as a dot plot matrix showing pairs of similar proteins determined from the BUS algorithm. This dot plot can be navigated by users with the provided zoom and scroll functions. Hovering over colored dots in the dot plot displays information about that pair of proteins. Clicking on a dot displays a column browser mode which allows one to navigate to the next or previous similar proteins in either genome. A larger red dot in the plot indicates the current pair of proteins.</p>
+    
+    <p><strong>Inputs</strong>
+    
+    <p><i>Genome</i><br>
+    The first and the second of the pair of species whose proteomes will be compared.</p>
+
+    </p>
+    
+    <p><strong>Outputs</strong>
+    
+    <p><i>ProteomeComparison</i><br>
+    The output contains two maps, one from genome A to genome B and the other from genome B to genome A. These maps contain information about which genes have a gene or several genes with similar sequences in the other genome according to BUS algorithm.</p>
+    </p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
 
-technical-description : |
-    Start a job to run Blast between the proteomes of two genomes. The comparison information includes best-bidirectional hits. [17]
+
+technical-description : ""
+
+publications :
+    -
+        pmid: 15285895
+        display-text: |
+           Kellis M, Patterson N, Birren B, Berger B, Lander ES (2004) Methods in Comparative Genomics: Genome Correspondence, Gene Identification and Regulatory Motif Discovery. Journal of Computational Biology 11: 319–355. doi:10.1089/1066527041410319.
+        link: http://www.ncbi.nlm.nih.gov/pubmed/15285895
+    -
+        display-text: |
+            Manolis Kellis Ph.D. Thesis, Chapter 1: Genome correspondence
+        link: http://web.mit.edu/manoli/www/thesis/Chapter1.html
