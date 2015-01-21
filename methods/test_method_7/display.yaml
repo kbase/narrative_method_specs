@@ -1,0 +1,56 @@
+#
+# Define basic display information
+#
+name     : Assemble Contigset from Reads
+subtitle  : |
+    Assembles a set of reads and outputs a set of contigs.
+tooltip  : |
+    Assembles a set of reads and outputs a set of contigs.
+
+screenshots :
+    []
+
+icon: icon.png
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    assembly_input :
+        ui-name : |
+            AssemblyInput
+        short-hint : |
+            the assembly input object
+        long-hint  : |
+            the assembly input object
+        placeholder : |
+            select an AssemblyInput object
+
+
+fixed-parameters :
+    param_1 :
+        ui-name : |
+            FixedParam1
+        short-hint : |
+            a fixed parameter
+    
+    param_2 :
+        ui-name : |
+            FixedParam2
+        short-hint : |
+            another fixed parameter
+        
+
+description : |
+    <p>This description can be marked up with <b>html</b> and can have <a href="https://kbase.us">links</a></p>
+    <p>This description should be understandable by a novice biologist user.</p>
