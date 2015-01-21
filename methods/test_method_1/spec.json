@@ -2,7 +2,7 @@
     "name":"Test Method 1",
     "ver":"1.0.1",
     "authors": [ "msneddon","wstester1" ],
-    "kb_contributers": [ "wstester3" ],
+    "kb_contributors": [ "wstester3" ],
     "contact": "help@kbase.us",
     
     "categories": [ "testmethods" ],
