@@ -38,16 +38,16 @@ parameters :
 
 
 fixed-parameters :
-    param_1 :
+    -
         ui-name : |
             FixedParam1
-        short-hint : |
+        description : |
             a fixed parameter
     
-    param_2 :
+    -
         ui-name : |
             FixedParam2
-        short-hint : |
+        description : |
             another fixed parameter
         
 
