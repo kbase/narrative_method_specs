@@ -15,11 +15,17 @@ icon: icon.png
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            [test_app_1]
+        next :
+            [test_app_1]
+    methods:
+        related :
+            [test_method_3]
+        next :
+            [test_method_1, test_method_2]
 
 
 #
