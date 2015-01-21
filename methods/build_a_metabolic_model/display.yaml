@@ -82,20 +82,20 @@ description : |
 
     <p><strong>Inputs</strong>
     
-    <ul><i>Genome</i>
-    <p>A genome (set of DNA contigs) including structural and functional annotations</ul></p>
+    <p><i>Genome</i><br>
+    A genome (set of DNA contigs) including structural and functional annotations</p>
     
     <p><strong>Outputs</strong>
     
-    <ul><i>FBAModel</i>
-    <p>A draft metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass</ul></p>
-    </p>
+    <p><i>FBAModel</i>
+    A draft metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass</ul></p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
 
-technical-description : |
+technical-description : | 
+    &nbsp;
     
         
 publications :

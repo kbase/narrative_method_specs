@@ -1,6 +1,7 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
+        "view_contigset"
     ],
     "import_method_ids":[
         "import_contigset_fasta_file", "import_contigset_fasta_ftp"

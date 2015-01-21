@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : Abundance Matrix
+subtitle : Taxonomic Matrix object
+tooltip  : Taxonomic Matrix object
+
+icon : contigset.jpg
+
+description : |
+    <p>This type describes a abundance matrix.</p>
+
+    
+    
+    

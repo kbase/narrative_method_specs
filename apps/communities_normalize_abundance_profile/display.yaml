@@ -16,6 +16,8 @@ header : |
 step-descriptions :
     step_1 : |
         Normalize abundance data for selected abundance profile. Returns a view of the abundance profile in table format.
+    step_2 : |
+        View normalize abundance data as boxplots.
 
 
 description : |

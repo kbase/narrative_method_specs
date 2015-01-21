@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Simulate growth on a Phenotype Set
+name     : Simulate Growth on Phenotype Set
 subtitle : |
     Simulate the growth of a model on a phenotype set.
 tooltip  : |
