@@ -1,0 +1,33 @@
+#
+# Define basic display information
+#
+name     : Build and Normalize Metagenomic Functional Abundance Data
+subtitle : |
+    Build and normalize functional abundance data for selected metagenomes.
+tooltip  : |
+    Retrieve and normalize functional abundance data for selected metagenomes. 
+
+
+screenshots : []
+
+
+header : |
+    <p>This app makes it possible to retrieve functional annotation aundance profiles for a selected set of metagenomes. You can use search to create a list of metagenomes, and then specify options that define the various attributes (e.g. annotation e-value, percent identity, level) to restrict the data that will be returned.</p>
+    <p>The most critical parameters for creating a profile (besides inputting the metagenome(s) you want to include along with output name) are the functional level, and source you want to base your annotation on (Source Name).</p>
+    <p>The output of this app is an abundance profile for one or more metagenomes. The abundance profile contains the raw annotation abundance data returned for the selected set of data attributes. Abundance profiles serve as the inputs for all other community related apps - normalization, vizualizations (PCoA, heatmap-dendrograms, and rank abundance plots) to look for trends in the data, and statistical anlayses to identify the taxa or functions that drive these trends.</p>
+
+step-descriptions :
+    step_1 : |
+        Specify the list of metagenomes and the attributes that will define the data that will be returned as an abundance profile. Returns a view of the abundance profile in table and boxplot format.
+    step_2 : |
+        Normalize abundance data for selected abundance profile. Returns a view of the abundance profile in table and boxplot format.
+
+
+description : |
+    <p>In this App, you can build and normalize abundance profiles.</p>
+
+
+technical-description : |
+    <p>This method allows users to generate and retrieve annotation abundance data for a single metagenome (profile) or generate a matrix of profiles by entering multiple metagenome IDs. Abundance profiles can be built for functional (WGS samples) or taxonomic (WGS or amplicon) annotation. E-value, percent identity, and alignment length values can be used to filter the annotation abundance data to the desired level of stringency.<br><br>
+    Users also have the option of normalizing their data at this step. Data are normalized with a log based transformation; transformed values are standardized within each sample. Normalized values are scaled from 0 to 1 across the entire dataset. After entering a metagenome list and output name, and other relevant parameters that differ from default, enter "Yes" in the last field, "Normalize".</p>
+    <br><br>
