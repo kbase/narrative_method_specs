@@ -3,15 +3,15 @@
 #
 name     : Insert Genomes into Species Tree
 subtitle : |
-    In this App, you can build a species tree for a set of genomes.
+    Determine evolutionary relationships between organisms by calculating a tree combining user-suplied genomes with closely related public genomes in KBase.
 tooltip  : |
-    In this App, you can build a species tree for a set of genomes.
+    Determine evolutionary relationships between organisms by calculating a tree combining user-suplied genomes with closely related public genomes in KBase.
 
 screenshots : []
 
 
 header : |
-    Instructions appear here.
+    <p>The &quot;Insert Genomes into Species Tree&quot; app allows a user to determine evolutionary relationships between organisms based on the differences in their genomic sequences. In this app, the user may either upload a set of genomes into KBase or select from an existing set of genomes already in KBase. KBase will then recruit these genomes into a species tree. KBase will also select a specified number of phylogenetically close genomes from the KBase reference genome database to also include in the tree. The tree object may be exported or viewed in KBase.</p>
 
 step-descriptions :
     step_1 : |
@@ -21,15 +21,11 @@ step-descriptions :
 
 
 description : |
-    <p>The "Insert Genomes into Species Tree" app allows a user to determine evolutionary relationships between organisms based on the differences in their genomes. In this app, the user may either upload a set of genomes into KBase or select from an existing set of genomes already in KBase. KBase will then recruit these genomes into a species tree. KBase will also select a specified number of phylogenetically close genomes from the KBase reference genome database to also include in the tree. The tree object may be exported or viewed in KBase.</p>
+    <p>The &quot;Insert Genomes into Species Tree&quot; app allows a user to determine evolutionary relationships between organisms based on the differences in their genomic sequences. In this app, the user may either upload a set of genomes into KBase or select from an existing set of genomes already in KBase. KBase will then recruit these genomes into a species tree. KBase will also select a specified number of phylogenetically close genomes from the KBase reference genome database to also include in the tree. The tree object may be exported or viewed in KBase.</p>
 
 
 technical-description : |
-    <b> this is the technical description of the test app</b> <br>
-    
-    <pre>some code here</pre>
-    
-    yada, yada, yada <br>
+    &nbsp;
     
     
     
