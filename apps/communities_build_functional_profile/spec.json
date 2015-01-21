@@ -10,7 +10,7 @@
         },
         {
             "step-id": "step_2",
-            "method-id": "view_abundance_profile_boxplots",
+            "method-id": "normalize_abundance_profile",
             "input_mapping" : [
                 {
                     "step": "step_1",

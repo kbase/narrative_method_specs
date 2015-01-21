@@ -7,7 +7,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "AbundanceDataTable"
+    "output" : "AbundanceDataView"
   },
   "parameters" : [ {
     "id" : "input_profile",

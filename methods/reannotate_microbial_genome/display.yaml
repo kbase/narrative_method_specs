@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Annotate a microbial genome
+name     : Annotate Microbial Genome
 subtitle : |
     Annotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]
 tooltip  : |
