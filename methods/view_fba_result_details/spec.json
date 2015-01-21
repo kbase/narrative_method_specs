@@ -7,7 +7,7 @@
   "categories" : ["viewers"],
   "widgets" : {
     "input" : null,
-    "output" : "kbaseFbaTabsNarrative"
+    "output" : "kbaseTabTable"
   },
   "parameters" : [ {
     "id" : "param0",
@@ -24,14 +24,16 @@
     "none" : {
       "output_mapping" : [
         {
+          "constant_value": "KBaseFBA.FBA",
+          "target_property": "type"
+        },
+        {
           "input_parameter": "param0",
-          "target_property": "ids",
-          "target_type_transform": "list"
+          "target_property": "obj"
         },
         {
           "narrative_system_variable": "workspace",
-          "target_property": "workspaces",
-          "target_type_transform": "list"
+          "target_property": "ws"
         }
       ]
     }
