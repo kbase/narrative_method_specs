@@ -1,13 +1,13 @@
 {
-  "name" : "View Metabolic Model Details",
+  "name" : "View Assembly Report",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["viewers"],
   "widgets" : {
     "input" : null,
-    "output" : "kbaseTabTable"
+    "output" : "kbaseAssemblyView"
   },
   "parameters" : [ {
     "id" : "param0",
@@ -17,19 +17,15 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
+      "valid_ws_types" : [ "KBaseAssembly.AssemblyReport" ]
     }
   } ],
   "behavior" : {
     "none" : {
       "output_mapping" : [
         {
-          "constant_value": "KBaseFBA.FBAModel",
-          "target_property": "type"
-        },
-        {
           "input_parameter": "param0",
-          "target_property": "obj"
+          "target_property": "id"
         },
         {
           "narrative_system_variable": "workspace",

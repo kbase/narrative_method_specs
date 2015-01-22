@@ -27,20 +27,20 @@ method-suggestions :
 parameters :
     input_genome :
         ui-name : |
-            Source Genome ID
+            Source ID of Transcripts
         short-hint : |
-            The ID of the set of transcripts  to annotate.
+            The ID of the set of transcripts to annotate (KBase object type: Genome).
         long-hint  : |
-            The identifier of  the genome object in the user's data set which contains the set of plant transcripts for which annotation is desired
+            The identifier of the set of transcripts (contained within a Genome object type) in the user's data set for which annotation is desired.
 
 
     output_genome :
         ui-name : |
-            Output Genome ID (optional)
+            Output ID of Transcripts (optional)
         short-hint : |
-            The ID of the genome object to which the new annotated genome object should be saved
+            The ID of the set of newly annotated set of transcripts (KBase object type: Genome).
         long-hint  : |
-            The annotated genome object will overwrite the original genome object unless you specify a new ID for the annotated genome object
+            The set of newly annotated transcripts will overwrite the original set unless you specify a new ID (KBase object type: Genome).
  
 description : |
     <p>This method uses the RAST approach to annotate plant transcripts with metabolic functions from the PlantSEED project. The PlantSEED project focused on high-quality annotation of plant primary metabolism, and some secondary metabolic pathways, in ten plant genomes. Signature k-mers were generated from this annotation for each metabolic function and then used to assign the same function to a transcript.</p>

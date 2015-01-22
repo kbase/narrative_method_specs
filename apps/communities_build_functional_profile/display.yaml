@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : Build Metagenomic Functional Abundance Data
+name     : Build and Normalize Metagenomic Functional Abundance Data
 subtitle : |
-    Build and view functional abundance data for selected metagenomes.
+    Build and normalize functional abundance data for selected metagenomes.
 tooltip  : |
-    Retrieve and view functional abundance data for selected metagenomes. 
+    Retrieve and normalize functional abundance data for selected metagenomes. 
 
 
 screenshots : []
@@ -18,11 +18,13 @@ header : |
 
 step-descriptions :
     step_1 : |
-        Specify the list of metagenomes and the attributes that will define the data that will be returned as an abundance profile. Returns a view of the abundance profile in table format.
+        Specify the list of metagenomes and the attributes that will define the data that will be returned as an abundance profile. Returns a view of the abundance profile in table and boxplot format.
+    step_2 : |
+        Normalize abundance data for selected abundance profile. Returns a view of the abundance profile in table and boxplot format.
 
 
 description : |
-    <p>In this App, you can build and view abundance profiles.</p>
+    <p>In this App, you can build and normalize abundance profiles.</p>
 
 
 technical-description : |
