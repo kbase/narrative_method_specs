@@ -43,7 +43,7 @@
         },
         {
           "constant_value": "genomes",
-          "target_property": "genome_workspaces"
+          "target_property": "genome_workspace"
         },
         {
           "input_parameter": "output_pangenome",
