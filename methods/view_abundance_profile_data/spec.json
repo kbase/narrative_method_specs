@@ -1,5 +1,5 @@
 {
-  "name" : "Generate Boxplots for Abundance Data",
+  "name" : "View Abundance Data",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
@@ -7,7 +7,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "AbundanceDataBoxplot"
+    "output" : "AbundanceDataView"
   },
   "parameters" : [ {
     "id" : "input_profile",
