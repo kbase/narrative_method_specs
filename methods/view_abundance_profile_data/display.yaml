@@ -3,9 +3,9 @@
 #
 name     : View Abundance Data
 subtitle : |
-    View all or a portion of the abundance data as a table and boxplot
+    View the annotation abundance data as a table and boxplot
 tooltip  : |
-    View all or a portion of the abundance data as a table and boxplot
+    View the annotation abundance data as a table and boxplot
 
 screenshots :
 
@@ -54,8 +54,12 @@ description : |
 
     <p><strong>Outputs</strong>
     
+    <p><i>ProfileBoxplot</i><br>
+    Boxplots abundances. The columns are labeled with metagenome IDs or names.</p>
+    </p>
+    
     <p><i>ProfileTable</i><br>
-    Table of abundances. The table rows are labeled with function or taxa and the columns are labeled with metagenome IDs.</p>
+    Table of abundances. The table rows are labeled with function or taxa and the columns are labeled with metagenome IDs or names.</p>
     </p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
