@@ -57,7 +57,7 @@
       "output_mapping" : [
         {
           "input_parameter": "output_pangenome",
-          "target_property": "id"
+          "target_property": "name"
         },
         {
           "narrative_system_variable": "workspace",

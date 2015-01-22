@@ -3,9 +3,9 @@
 #
 name     : Insert Genome into Species Tree
 subtitle : |
-    Insert a Genome into a global genome tree composed of 49 conserved COGs [20]
+    Insert a Genome into a global genome tree composed of 49 conserved COGs
 tooltip  : |
-    Insert a Genome into a global genome tree composed of 49 conserved COGs [20]
+    Insert a Genome into a global genome tree composed of 49 conserved COGs
 
 screenshots :
     - s1.png
@@ -30,32 +30,32 @@ parameters :
         ui-name : |
             Genome ID
         short-hint : |
-            a Genome to insert into the tree [20.1]
+            a Genome to insert into the tree
         long-hint  : |
-            a Genome to insert into the tree [20.1]
+            a Genome to insert into the tree
 
 
     param1 :
         ui-name : |
             Neighbor public genome count
         short-hint : |
-            number of closest public genomes the tree will contain. (optional, default value is 100) [20.2]
+            number of closest public genomes the tree will contain. (optional, default value is 100)
         long-hint  : |
-            number of closest public genomes the tree will contain. (optional, default value is 100) [20.2]
+            number of closest public genomes the tree will contain. (optional, default value is 100)
 
 
     param2 :
         ui-name : |
             Output species tree ID
         short-hint : |
-            Output species tree ID. If empty, an ID will be chosen randomly. [20.3]
+            Output species tree ID. If empty, an ID will be chosen randomly.
         long-hint  : |
-            Output species tree ID. If empty, an ID will be chosen randomly. [20.3]
+            Output species tree ID. If empty, an ID will be chosen randomly.
 
 
 description : |
-    Insert a Genome into a global genome tree composed of 49 conserved COGs [20]
+    Insert a Genome into a global genome tree composed of 49 conserved COGs
 
 
 technical-description : |
-    Insert a Genome into a global genome tree composed of 49 conserved COGs [20]
+    Insert a Genome into a global genome tree composed of 49 conserved COGs
