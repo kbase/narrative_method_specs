@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : Abundance Heatmap
+subtitle : Abundance Profile Heatmap object
+tooltip  : Abundance Profile Heatmap object
+
+icon : none
+
+description : |
+    <p>This type describes a abundance profile heatmap.</p>
+
+    
+    
+    
