@@ -35,7 +35,11 @@
   "behavior" : {
     "python_class" : "Transform Service",
     "python_function" : "Assy to ContigSet",
-    "script_mapping": {
+    "service-mapping" : {
+      "url" : "blank",
+      "name" : "blank",
+      "method" : "blank",
+      "input_mapping" : [ ],
       "output_mapping" : [
         {
           "input_parameter": "output_contigset",
