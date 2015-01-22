@@ -2,8 +2,8 @@
 # Define basic display information
 #
 name     : Abundance Matrix
-subtitle : Taxonomic Matrix object
-tooltip  : Taxonomic Matrix object
+subtitle : Functional Matrix object
+tooltip  : Functional Matrix object
 
 icon : none
 

@@ -5,7 +5,7 @@ name     : Abundance Matrix
 subtitle : Taxonomic Matrix object
 tooltip  : Taxonomic Matrix object
 
-icon : none
+icon : contigset.jpg
 
 description : |
     <p>This type describes a abundance matrix.</p>
