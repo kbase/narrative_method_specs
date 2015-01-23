@@ -1,0 +1,56 @@
+{
+  "ver" : "1.0.0",
+  "name" : "Convert assembly file to contigset",
+  "authors" : [ "jkbaumohl", "mhenderson", "gaprice" ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseContigSetView"
+  },
+  "parameters" : [ {
+    "id" : "input_assyfile",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFile.AssemblyFile" ]
+    }
+  },
+  {
+    "id" : "output_contigset",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.ContigSet" ],
+      "is_output_name": true
+    }
+  }],
+  "behavior" : {
+    "python_class" : "Transform Service",
+    "python_function" : "Assy to ContigSet",
+    "service-mapping" : {
+      "url" : "blank",
+      "name" : "blank",
+      "method" : "blank",
+      "input_mapping" : [ ],
+      "output_mapping" : [
+        {
+          "input_parameter": "output_contigset",
+          "target_property": "id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws"
+        }
+      ]
+    }
+  },
+  "job_id_output_field": "jobID"
+}

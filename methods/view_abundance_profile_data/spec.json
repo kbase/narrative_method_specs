@@ -1,0 +1,52 @@
+{
+  "name" : "View Abundance Data",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "AbundanceDataView"
+  },
+  "parameters" : [ {
+    "id" : "input_profile",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "Communities.TaxonomicMatrix", "Communities.FunctionalMatrix" ]
+    }
+  }, {
+    "id" : "name",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "0" ],
+    "field_type" : "checkbox",
+    "checkbox_options": {
+        "checked_value": 1,
+        "unchecked_value": 0
+    }
+  } ],
+  "behavior" : {
+      "none" : {
+          "output_mapping" : [
+              {
+                  "input_parameter": "input_profile",
+                  "target_property": "id"
+              },
+              {
+                  "input_parameter": "name",
+                  "target_property": "name"
+              },
+              {
+                  "narrative_system_variable": "workspace",
+                  "target_property": "ws"
+              }
+          ]
+      }
+  }
+}
