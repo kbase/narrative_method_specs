@@ -28,13 +28,22 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
+    input_genomeset :
+        ui-name : |
+            Genome Set
+        short-hint : |
+            Input ID of genome set from which to build pangenome
+        long-hint  : |
+            Input ID of genome set from which to build pangenome
+
+
     input_genomes :
         ui-name : |
             Genome IDs
         short-hint : |
-            Input IDs of all genomes to be compared to form pangenome
+            Input IDs of additional genomes to be included in pangenome
         long-hint  : |
-            Input IDs of all genomes to be compared to form pangenome
+            Input IDs of additional genomes to be included in pangenome
 
 
     output_pangenome :
