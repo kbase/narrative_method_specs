@@ -22,6 +22,11 @@ parameters :
         short-hint : Target object ID.
         long-hint  : none
 
+    refname :
+        ui-name : REFERENCE GENOME
+        short-hint : Optional name of reference genome.
+        long-hint  : none
+
 description : none
 
 technical-description : none

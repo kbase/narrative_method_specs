@@ -40,6 +40,22 @@ parameters :
         long-hint  : |
             Provide a name for the genome object you are uploading.<br>ex) Athaliana.TAIR10
 
+    genomeId :
+        ui-name : |
+            GENOME IDENTIFIER
+        short-hint : |
+            Optional genome tdentifier
+        long-hint  : |
+            Optional genome tdentifier
+
+    dna :
+        ui-name : |
+            IS DNA
+        short-hint : |
+            Indicates that file contains nucleic acid sequences rather than proteins.
+        long-hint  : |
+            Indicates that file contains nucleic acid sequences rather than proteins.
+
 
 description : |
     Import into your narrative a transcript object from a local file in FASTA format.
