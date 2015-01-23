@@ -27,7 +27,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KKBaseGenomes.Genome" ]
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
     }
   }, {
     "id" : "output_pangenome",
