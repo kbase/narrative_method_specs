@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : GenomeSet
+subtitle : GenomeSet object
+tooltip  : GenomeSet object
+
+icon : genome.png
+
+description : |
+    <p>This type describes a genome set.</p>
+
+    
+    
+    
