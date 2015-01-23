@@ -20,10 +20,10 @@
     }
   }, {
     "id" : "param1",
-    "optional" : false,
+    "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "" ],
+    "default_values" : [ "100" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ],
