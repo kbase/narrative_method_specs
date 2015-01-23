@@ -4,21 +4,27 @@
 name     : Annotate Plant Transcripts with Metabolic Functions
 
 tooltip  : |
-    Annotate a set of plant transcripts with metabolic functions from the PlantSEED project
+    Annotate a set of plant transcripts with metabolic functions from the PlantSEED project.
 
 screenshots :
     - annotate_plant_transcripts_with_metabolic_functions_input1.png
-    - annotate_plant_transcripts_with_metabolic_functions_input2.png
-    - annotate_plant_transcripts_with_metabolic_functions_input3.png
+
+icon: icon.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #
@@ -27,44 +33,56 @@ method-suggestions :
 parameters :
     input_genome :
         ui-name : |
-            Source ID of Transcripts
+            Plant Transcripts
         short-hint : |
-            The ID of the set of transcripts to annotate (KBase object type: Genome).
+            The set of plant mRNA transcripts to annotate
         long-hint  : |
-            The identifier of the set of transcripts (contained within a Genome object type) in the user's data set for which annotation is desired.
+            The set of plant mRNA transcripts to annotate
 
 
     output_genome :
         ui-name : |
-            Output ID of Transcripts (optional)
+            Output Genome
         short-hint : |
-            The ID of the set of newly annotated set of transcripts (KBase object type: Genome).
+            A set of metabolically annotated transcripts saved as a "Genome" object
         long-hint  : |
-            The set of newly annotated transcripts will overwrite the original set unless you specify a new ID (KBase object type: Genome).
+            A set of metabolically annotated transcripts saved as a "Genome" object
+        placeholder : |
+            Name of Output Genome
+            
+fixed-parameters :
+    -
+        ui-name : |
+            Dataset name
+        description : |
+            The name of the set of signature k-mers to use for annotating the plant transcripts. The SEED project frequently releases new and updated sets of signature k-mers for each round of annotation accomplished. The set that contains this parameter allows us to retrieve and use the signature k-mers computed via the PlantSEED project. We are currently using Release 70.
+    
+    -
+        ui-name : |
+            k-mer size
+        description : |
+            The length of k-mer to use when annotating plant transcripts. When a set of signature k-mers is computed, the computation is done at various k-mer lengths. By default we are using the signature k-mers of 8 amino acids in length.
+        
  
 description : |
     <p>This method uses the RAST approach to annotate plant transcripts with metabolic functions from the PlantSEED project. The PlantSEED project focused on high-quality annotation of plant primary metabolism, and some secondary metabolic pathways, in ten plant genomes. Signature k-mers were generated from this annotation for each metabolic function and then used to assign the same function to a transcript.</p>
+    
+    <p>The system treats the set of transcripts (both raw and annotated) as a "Genome" object.</p>
+    
     <p>The transcript data can be added to the system by clicking the + symbol in the Data panel, selecting the &quot;Import&quot; tab, then selecting &quot;Transcript&quot; from the dropdown menu. The user is presented with two boxes.  The first one lets you select the transcript FASTA file. Click on &quot;Select file&quot; to locate the transcript FASTA file on your computer and upload it to KBase. The progress of the upload is reflected in the box to the right of the "Select file" button. When the upload is finished (the progress box shows 100%), enter a name for the resulting data object in the second box and click the "Import" button.</p>
 
-    <p><strong>Inputs</strong>
-    
-    <p><i>Genome</i><br>
-    A set of plant mRNA transcripts.</p>
-    
-    <p><i>Media<br>
-    Media specifies the set of chemical compounds organism can use for its growth</p>
-    </p>
-    
-    <p><strong>Outputs</strong>
-    
-    <p><i>Genome</i><br>
-    A set of metabolically annotated transcripts saved as data of "Genome" type.</p>
-    </p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
-    Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
+    Sam Seaver, Chris Henry, Robert Olson, Ross Overbeek, Gordon Pusch, Shiran Pasternak, Doreen Ware. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
+publications :
+    -
+        display-text: |
+            Seaver SMD, Gerdes S, Frelin O, Lerma-Ortiz C, Bradbury LMT, et al. (2014) High-throughput comparison, functional annotation, and metabolic modeling of plant genomes using the PlantSEED resource. Proc Natl Acad Sci USA 111: 9645Ð9650. doi:10.1073/pnas.1401329111
+        link: http://www.pnas.org/content/111/26/9645.short
+    -
+        display-text: |
+            Overbeek R, Olson R, Pusch GD, Olsen GJ, Davis JJ, et al. (2014) The SEED and the Rapid Annotation of microbial genomes using Subsystems Technology (RAST). Nucl Acids Res 42: D206ÐD214. doi:10.1093/nar/gkt1226
+        link: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3965101/
 
-technical-description : | 
-    &nbsp;
 
