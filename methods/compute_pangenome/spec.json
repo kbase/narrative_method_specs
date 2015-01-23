@@ -23,11 +23,11 @@
     "id" : "input_genomes",
     "optional" : true,
     "advanced" : false,
-    "allow_multiple" : false,
+    "allow_multiple" : true,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KKBaseSearch.GenomeSet" ]
+      "valid_ws_types" : [ "KKBaseGenomes.Genome" ]
     }
   }, {
     "id" : "output_pangenome",
