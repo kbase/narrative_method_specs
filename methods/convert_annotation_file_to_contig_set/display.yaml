@@ -19,12 +19,12 @@ icon: icon.png
 suggestions :
     apps:
         related :
-            [test_app_1]
+            []
         next :
-            [test_app_1]
+            []
     methods:
         related :
-            [test_method_3]
+            []
         next :
             [annotate_contigset]
 

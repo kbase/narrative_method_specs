@@ -21,14 +21,14 @@ icon: icon.png
 suggestions :
     apps:
         related :
-            [test_app_1]
+            []
         next :
-            [test_app_1]
+            []
     methods:
         related :
-            [test_method_3]
+            []
         next :
-            [test_method_1, test_method_2]
+            []
 
 
 #

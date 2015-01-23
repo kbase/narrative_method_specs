@@ -4,7 +4,7 @@
 name     : Compute Pangenome
 
 tooltip  : |
-    Compute pangenome from a list of individual genomes
+    Compute pangenome of a set of individual genomes
 
 screenshots :
 
@@ -17,33 +17,38 @@ screenshots :
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #
 # Configure the display and description of the parameters
 #
 parameters :
-    input_genomeset :
-        ui-name : |
-            Genome Set
-        short-hint : |
-            Input ID of genome set from which to build pangenome
-        long-hint  : |
-            Input ID of genome set from which to build pangenome
-
-
     input_genomes :
         ui-name : |
-            Genome IDs
+            Genome ID
         short-hint : |
-            Input IDs of genomes to be included in pangenome
+            The set of genomes to compute pangenome for
         long-hint  : |
-            Input IDs of genomes to be included in pangenome
+            The set of genomes to compute pangenome for
+
+    input_genomeset :
+        ui-name : |
+            Genome Set ID
+        short-hint : |
+            The set of genomes to compute pangenome for
+        long-hint  : |
+            The set of genomes to compute pangenome for
 
 
     output_pangenome :
@@ -65,11 +70,8 @@ description : |
 
     <p><strong>Inputs</strong>
 
-    <p><i>Genome list</i><br>
-    A list of individual genomes to be included in pangenome</p>
-
     <p><i>GenomeSet</i><br>
-    A set of genomes to be included in pangenome </p>
+    A set of references to genomes stored in KBase.</p>
 
     <p><strong>Outputs</strong>
 
@@ -78,8 +80,5 @@ description : |
     </p>
 
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
-    Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad, Matt DeJongh. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
+    Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
-# no technical description
-technical-description : |
-    &nbsp;

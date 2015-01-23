@@ -19,14 +19,14 @@ icon: icon.png
 suggestions :
     apps:
         related :
-            [test_app_1]
+            []
         next :
-            [test_app_1]
+            []
     methods:
         related :
-            [test_method_3]
+            []
         next :
-            [test_method_1, test_method_2]
+            []
 
 #
 # Configure the display and description of the parameters
@@ -57,5 +57,3 @@ description : |
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong> Roman Sutormin. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
-technical-description : | 
-    &nbsp;

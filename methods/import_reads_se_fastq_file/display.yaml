@@ -5,11 +5,17 @@ tooltip  : Upload a SingleEndLibrary object from FASTQ-file into your workspace.
 screenshots :
     []
 
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 parameters :
     fastqFile :
