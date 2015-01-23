@@ -4,7 +4,7 @@
 name     : Compute Pangenome
 
 tooltip  : |
-    Compute pangenome of a set of individual genomes
+    Compute pangenome from a list of individual genomes
 
 screenshots :
 
@@ -30,11 +30,11 @@ method-suggestions :
 parameters :
     input_genomes :
         ui-name : |
-            Genome Set ID
+            Genome IDs
         short-hint : |
-            The set of genomes to compute pangenome for
+            Input IDs of all genomes to be compared to form pangenome
         long-hint  : |
-            The set of genomes to compute pangenome for
+            Input IDs of all genomes to be compared to form pangenome
 
 
     output_pangenome :
@@ -56,8 +56,8 @@ description : |
     
     <p><strong>Inputs</strong>
     
-    <p><i>GenomeSet</i><br>
-    A set of references to genomes stored in KBase.</p>
+    <p><i>Genome list</i><br>
+    A list of genomes from KBase to be compared to form pangenome</p>
 
     <p><strong>Outputs</strong>
     

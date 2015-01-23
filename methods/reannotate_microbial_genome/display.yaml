@@ -3,9 +3,9 @@
 #
 name     : Annotate Microbial Genome
 subtitle : |
-    Annotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]
+    Annotate an existing genome while keeping existing gene calls intact.  This function will start a job that will run for less than two minutes once it has reached the top of the job queue. When the job finishes, the Genome with KBase annotations will be stored in your workspace.
 tooltip  : |
-    Annotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]
+    Annotate an existing genome while keeping existing gene calls intact.  This function will start a job that will run for less than two minutes once it has reached the top of the job queue. When the job finishes, the Genome with KBase annotations will be stored in your workspace.
 
 screenshots :
     []
@@ -186,8 +186,8 @@ parameters :
             name to assign the output genome; if left blank, a name will be generated for you
 
 description : |
-    Reannotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]
+    Annotate an existing genome while keeping existing gene calls intact.  This function will start a job that will run for less than two minutes once it has reached the top of the job queue. When the job finishes, the Genome with KBase annotations will be stored in your workspace.
 
 
 technical-description : |
-    Reannotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]
+    Annotate an existing genome while keeping existing gene calls intact.  This function will start a job that will run for less than two minutes once it has reached the top of the job queue. When the job finishes, the Genome with KBase annotations will be stored in your workspace.

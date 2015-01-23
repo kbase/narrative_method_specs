@@ -1,10 +1,10 @@
 {
-  "name" : "View FBA Result Details",
+  "name" : "View Metabolic Model Details",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["viewers"],
+  "categories" : ["inactive"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseTabTable"
@@ -17,14 +17,14 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseFBA.FBA" ]
+      "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
     }
   } ],
   "behavior" : {
     "none" : {
       "output_mapping" : [
         {
-          "constant_value": "KBaseFBA.FBA",
+          "constant_value": "KBaseFBA.FBAModel",
           "target_property": "type"
         },
         {

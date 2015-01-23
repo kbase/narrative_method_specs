@@ -7,7 +7,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "kbaseModelTabs"
+    "output" : "kbaseTabTable"
   },
   "parameters" : [ {
     "id" : "input_model",
@@ -129,8 +129,12 @@
       ],
       "output_mapping" : [
         {
+          "constant_value": "KBaseFBA.FBAModel",
+          "target_property": "type"
+        },
+        {
           "input_parameter": "output_model",
-          "target_property": "id"
+          "target_property": "obj"
         },
         {
           "narrative_system_variable": "workspace",
