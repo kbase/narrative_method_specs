@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : Insert Set of Genomes into Species Tree
+name     : Insert Genomes into Species Tree
 subtitle : |
-    Insert a Genome Set into a global genome tree composed of 50 conserved COGs
+    Insert Genomes into a global genome tree composed of conserved COGs
 tooltip  : |
-    Insert a Genome Set into a global genome tree composed of 50 conserved COGs
+    Insert Genomes into a global genome tree composed of conserved COGs
 
 screenshots :
     []
@@ -26,11 +26,11 @@ method-suggestions :
 parameters :
     param0 :
         ui-name : |
-            Genome Set ID
+            Genome ID
         short-hint : |
-            a Genome Set to insert into the tree
+            a Genome to insert into the tree
         long-hint  : |
-            a Genome Set to insert into the tree
+            a Genome to insert into the tree
 
 
     param1 :
@@ -52,8 +52,8 @@ parameters :
 
 
 description : |
-    Insert a Genome Set into a global genome tree composed of 50 conserved COGs
+    Insert Genomes into a global genome tree composed of conserved COGs
 
 
 technical-description : |
-    Insert a Genome Set into a global genome tree composed of 50 conserved COGs
+    Insert Genomes into a global genome tree composed of conserved COGs
