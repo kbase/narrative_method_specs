@@ -3,21 +3,30 @@
 #
 name     : Generate Taxonomic Abundance Data
 subtitle : |
-    Retrieve taxonomic abundance data for selected metagenomes.
+    Generate taxonomic annotation abundance data for selected metagenomes.
 tooltip  : |
-    Retrieve taxonomic abundance data for selected metagenomes.
+    Generate taxonomic annotation abundance data for selected metagenomes.
 
 screenshots :
-    []
+    - retrieve_taxonomic_abundance_profile_input.png
+    - retrieve_taxonomic_abundance_profile_output.png
+
+icon: icon.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            [test_app_1]
+        next :
+            [test_app_1]
+    methods:
+        related :
+            [test_method_3]
+        next :
+            [test_method_1, test_method_2]
 
 
 #
@@ -26,70 +35,100 @@ method-suggestions :
 parameters :
     input_metagenomes :
         ui-name : |
-            Metagenome List
+            Metagenome(s)
         short-hint : |
-            object name of Communities.Collection
+            Metagenome(s) used for generating taxonomic abundance data
         long-hint  : |
-            object name of Communities.Collection
+            Metagenome(s) used for generating taxonomic abundance data
 
 
     output_profile :
         ui-name : |
-            Output Name
+            Profile or Matrix
         short-hint : |
-            object name of abundance profile table
+            Profile for taxonomy or a matrix for multiple metagenomes; the table rows contain functions or taxa and the columns contain metagenome IDs
         long-hint  : |
-            object name of abundance profile table
+            Profile for taxonomy or a matrix for multiple metagenomes; the table rows contain functions or taxa and the columns contain metagenome IDs
 
 
     level :
         ui-name : |
             Taxonomic Level
         short-hint : |
-            taxonomic hierarchical level to retrieve abundances for
+            Annotation hierarchical level to retrieve abundances: default is genus, alternatives are strain, species, family, order, class, phylum, domain
         long-hint  : |
-            taxonomic hierarchical level to retrieve abundances for
+            Annotation hierarchical level to retrieve abundances: default is genus, alternatives are strain, species, family, order, class, phylum, domain
 
 
     source :
         ui-name : |
             Source Name
         short-hint : |
-            data source to filter results by
+            Data source for annotation: default is SEED, alternatives are RDP, Greengenes, LSU, SSU
         long-hint  : |
-            data source to filter results by
+            Data source for annotation: default is SEED, alternatives are RDP, Greengenes, LSU, SSU
 
 
     evalue :
         ui-name : |
             E-Value
         short-hint : |
-            negative exponent value for maximum e-value cutoff, default is 5
+            Negative log10 value for the upper E-value cutoff; default is 5, alternative is any other integer
         long-hint  : |
-            negative exponent value for maximum e-value cutoff, default is 5
+            Negative log10 value for the upper E-value cutoff; default is 5, alternative is any other integer
 
 
     identity :
         ui-name : |
-            % Identity
+            Percent Identity
         short-hint : |
-            percent value for minimum % identity cutoff, default is 60
+            Percent value for minimum % identity cutoff: default is 60%, alternative is any integer between 1-100
         long-hint  : |
-            percent value for minimum % identity cutoff, default is 60
+            Percent value for minimum % identity cutoff: default is 60%, alternative is any integer between 1-100
 
 
     length :
         ui-name : |
             Alignment Length
         short-hint : |
-            value for minimum alignment length cutoff, default is 15
+            Value for minimum alignment length cutoff: default is 15bp, alternative is any other integer 
         long-hint  : |
-            value for minimum alignment length cutoff, default is 15
+            Value for minimum alignment length cutoff: default is 15bp, alternative is any other integer 
             
 
 description : |
-    Retrieve taxonomic abundance data for selected metagenomes.
+    <p>This method allows users to generate and retrieve taxonomic abundance data for a single metagenome (profile) or generate a matrix of profiles by entering a metagenome set for WGS or amplicon data sets. E-value, percent identity, and alignment length values can be used to filter the annotation abundance data to the desired level of stringency.</p>
+    
+    <p>After generating these abundances, it is good practice to view the boxplots (use the "Generate Boxplots for Abundance Data" method) of raw and normalized data to determine if normalization is necessary prior to comparative analyses. Datasets that exhibit similar distributions across all samples are comparable (as raw or normalized values); those that exhibit a variety of distributions are not suitable for direct comparison and may require normalization and/or additional processing to remove bias that could adversely affect downstream comparisons.</p>
+    
+    <p>The abundances generated with this method can be used as input for all other microbial communities methods such as “Generate Heatmap from Abundance Data” “Generate PCoA Data from Abundance Data“, “Generate Rank Abundance Plot”  and “Generate Boxplots for Abundance Data”.</p>
+    
+publications :
+    -
 
+        display-text: |
+            Benson DA, Cavanaugh M, Clark K (2013) Genbank. Nucleic Acids Res 41(Database issue):D36–42
+        link: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3531190/
 
-technical-description : |
-    Retrieve taxonomic abundance data for selected metagenomes.
+    -
+        display-text: |
+            Overbeek R, Begley T, Butler RM et al (2005) The subsystems approach to genome annotation and its use in the project to annotate 1000 genomes. Nucleic Acids Res 33(17): 5691–5702
+        link: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1251668/
+
+    -
+        display-text: |
+            Pruesse E, Quast C, Knittel K et al (2007) SILVA: a comprehensive online resource for quality checked and aligned ribosomal RNA sequence data compatible with ARB. Nucleic acids research 35(21):7188–7196
+        link: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2175337/
+
+    -
+        pmid: #######
+        display-text: |
+            DeSantis TZ, Hugenholtz P, Larsen N et al (2006) Greengenes, a Chimera-Checked 16S rRNA gene database and workbench compatible with ARB. Appl Environ Microbiol 72(7):5069–5072
+        link: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1489311/
+        
+    -
+        pmid: #######
+        display-text: |
+            Cole JR, Chai B, Marsh TL et al (2003) The ribosomal database project (RDP-II): previewing a new autoaligner that allows regular updates and the new prokaryotic taxonomy. Nucleic Acids Res 31(1):442–443
+        link: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC165486/       
+

@@ -2,25 +2,31 @@
 # Define basic display information
 #
 name     : Generate Rank Abundance Plot
-subtitle : |
-    Generate a rank abundance plot from abundance data
+
 tooltip  : |
-    Generate a rank abundance plot from abundance data.
+    Generate a rank abundance plot from abundance data in a set of metagenomics samples.
 
 screenshots :
 
     - generate_rank_abundance_plot_input.png
     - generate_rank_abundance_plot_output.png
 
+icon: icon.png
+
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
-
+suggestions :
+    apps:
+        related :
+            [test_app_1]
+        next :
+            [test_app_1]
+    methods:
+        related :
+            [test_method_3]
+        next :
+            [test_method_1, test_method_2]
 
 #
 # Configure the display and description of the parameters
@@ -28,29 +34,28 @@ method-suggestions :
 parameters :
     input_profile :
         ui-name : |
-            Input Name
+            Abundance Profile or Matrix
         short-hint : |
-            Abundance profile or matrix name
+            Select a profile or matrix generated from "Retrieve Taxonomic/Functional Abundance Data"
         long-hint  : |
-            object name of input abundance profile
-
+            Select a profile or matrix generated from "Retrieve Taxonomic/Functional Abundance Data"
 
     name :
         ui-name : |
-            Label Name
+            Label by Name
         short-hint : |
-            Label by metagenome name and not KBase metagenome ID; default is no (checkbox), alternative is yes
+            Label by metagenome name instead of KBase metagenome ID
         long-hint  : |
-            Label by metagenome name and not KBase metagenome ID; default is no (checkbox), alternative is yes
+            Label by metagenome name instead of KBase metagenome ID
 
 
     top :
         ui-name : |
             Top Annotations
         short-hint : |
-            Produce profile for top N abundant annotations; default is 10, alternative is integer
+            Produce profile for top N abundant annotations; default is 10, alternative is an integer
         long-hint  : |
-            Produce profile for top N abundant annotations; default is 10, alternative is integer
+            Produce profile for top N abundant annotations; default is 10, alternative is an integer
 
 
     order :
@@ -63,23 +68,9 @@ parameters :
 
 
 description : |
-    <p>This method compares the relative abundance and diversity of species within a community (using amplicon or WGS taxonomic profiles) by plotting the relative abundance. This method takes taxonomic profiles from amplicon or WGS data sets. These profiles can be generated through "Retrieve Taxonomic/Functional  Abundance Data".</p>
-    
-    <p><strong>Inputs</strong>
-    
-    <p><i>Abundance Profile or Matrix</i><br>
-    User-selected profile or matrix generated from "Retrieve Taxonomic/Functional Abundance Data" methods.</p>
-    
-    <p><strong>Outputs</strong>
-    
-    <p><i>Visualization</i><br>
-    Generates an image of an abundance curve (line graph).</p>
-    </p>
+    <p>This method compares the relative abundance and diversity of species within a community (using amplicon or WGS taxonomic profiles) by plotting the relative abundance in a set of metagenomics samples. This method takes taxonomic profiles from amplicon or WGS data sets. These profiles can be generated through "Generate  Taxonomic/Functional Abundance Data".</p>  
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Kevin Keegan, Jared Bischof, Travis Harrison, Folker Meyer, Tobias Paczian, Andreas Wilke. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
-
-technical-description : | 
-    &nbsp;
 

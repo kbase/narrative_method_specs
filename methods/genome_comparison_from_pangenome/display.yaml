@@ -2,48 +2,71 @@
 # Define basic display information
 #
 name     : Genome Comparison from Pangenome
-subtitle : |
-    Genome Comparison analysis based on the PanGenome input.
+
 tooltip  : |
-    Genome Comparison analysis based on the PanGenome input.
+    Compare isofunctional and homologous gene families for all genomes in the pangenome.
 
 screenshots :
-    []
+    - genome_comparison_from_pangenome_input.png
+
+icon: icon.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
-
-
+suggestions :
+    apps:
+        related :
+            [test_app_1]
+        next :
+            [test_app_1]
+    methods:
+        related :
+            [test_method_3]
+        next :
+            [test_method_1, test_method_2]
 #
 # Configure the display and description of the parameters
 #
 parameters :
     input_pangenome :
         ui-name : |
-            Pangenome ID
+            Pangenome
         short-hint : |
-            Pangenome ID
+            A list of all distinct protein families identified in a set of input genome sequences, as well as the IDs of the proteins present in each family
         long-hint  : |
-            Pangenome ID
+            A list of all distinct protein families identified in a set of input genome sequences, as well as the IDs of the proteins present in each family
+        placeholder : |
+            Name of Pangenome
             
     output_gencomp :
         ui-name : |
-            Genome comparison ID
+            Genome Comparison
         short-hint : |
-            Genome comparison ID
+            Set of all isofunctional and homologous protein families identified across the input set of genome sequences
         long-hint  : |
-            Genome comparison ID
-
-
+            Set of all isofunctional and homologous protein families identified across the input set of genome sequences
+        placeholder : |
+            Name of output Genome Comparison
+            
 description : |
-    Genome Comparison analysis based on the PanGenome input.
-
-
-technical-description : |
-    Genome Comparison analysis based on the PanGenome input.
+    <p>In this genome comparison algorithm, all of the proteins present in an input Pangenome object are compared based on their function and sequence. This comparison groups proteins into  protein families putatively sharing function and sequence-similar protein families. This comparison can be used to identify groups of homologous proteins that are not consistently annotated, or identify consistently annotated proteins that lack significant sequence similarity. In many cases, this method supports the identification and correction of annotation errors. In other cases, this method supports the identification of new and interesting biology (see publications listed below).  Generally, this comparison is valuable for assessing the extent of conservation among an input set of genomes. It also support studies of how genomes have evolved and adapted to their distinctive environments.</p>
+    
+    <p>This comparison builds on the sequence-based homologous protein families identified in the input Pangenome object, extending the data by also identifying protein families with putatively similar functions. Protein families with putatively similar functions are assembled by looking for sets of proteins with identical functional assignments. This protein family construction relies on the use of a consistent annotation ontology as well as annotation with the most specific terms available among all genomes included in the input set.</p>
+    
+publications :
+    -
+        pmid: 16185861
+        display-text: |
+            Medini D, Donati C, Tettelin H, Masignani V, Rappuoli R. (2005). The microbial pan-genome. Curr Opin Genet Dev. 2005 Dec;15(6):589-94
+        link: http://www.ncbi.nlm.nih.gov/pubmed/16185861
+        
+    -
+        display-text: |
+            Tettelin H, Masignani V, Cieslewicz MJ, Donati C, Medini D et al. (2005). Genome analysis of multiple pathogenic isolates of Streptococcus agalactiae: Implications for the microbial “pan-genome”. Curr Opin Genet Dev. 2005 Dec;15(6):589-94
+        link: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1216834/
+        
+    -
+        display-text: |
+            Rasko DA, Rosovitz MJ, Myers GS, Mongodin EF, Fricke WF (2008). The Pangenome Structure of Escherichia coli: Comparative Genomic Analysis of E. coli Commensal and Pathogenic Isolates. J Bacteriol. 2008 Oct;190(20):6881-93
+        link: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2566221/

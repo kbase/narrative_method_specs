@@ -1,23 +1,30 @@
 #
 # Define basic display information
 #
-name     : Create metagenome set
-subtitle : |
-    List of metagenomes
+name     : Create Metagenome Set
+
 tooltip  : |
-    Create a list object for abundance data retrieval
+    A method to combine multiple metagenomes into a set for “Generate Taxonomic/Functional Abundance Data.”
 
 screenshots :
     []
 
+icon: icon.png
+
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            [test_app_1]
+        next :
+            [test_app_1]
+    methods:
+        related :
+            [test_method_3]
+        next :
+            [test_method_1, test_method_2]
 
 
 #
@@ -26,34 +33,29 @@ method-suggestions :
 parameters :
     input_profile :
         ui-name : |
-            Input
+            Metagenomes
         short-hint : |
-            object name of input abundance matrix
+            Users select metagenomes that are found in their data panel
         long-hint  : |
-            object name of input abundance matrix
-
+            Users select metagenomes that are found in their data panel
 
     output_boxplot :
         ui-name : |
             Output Boxplot
         short-hint : |
-            object name of output boxplot
+            Name of output boxplot
         long-hint  : |
-            object name of output boxplot
+            Name of output boxplot
 
 
     name :
         ui-name : |
-            Label by Name
+            Output Metagenome Set
         short-hint : |
-            label by metagenome name and not ID
+            Output set of metagenomes
         long-hint  : |
-            label by metagenome name and not ID
+            Output set of metagenomes
 
 
 description : |
-    List of metagenomes
-
-
-technical-description : |
-	Metagenome list object 
+    <p>This method creates a set of metagenomes out of one or more metagenomes. The set can then be used as input to Generate Taxonomic Abundance Data” or Generate Functional Abundance Data” apps.</p>

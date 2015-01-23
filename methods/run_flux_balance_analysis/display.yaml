@@ -7,7 +7,7 @@ tooltip  : |
     This method uses Flux Balance Analysis (FBA) to predict metabolic fluxes in a metabolic model of an organism grown on a given media.
 
 screenshots :
-    - run_flux_balance_analysis.png
+    - run_flux_balance_analysis_input.png
     - run_flux_balance_analysis_output.png
 
 #
@@ -26,27 +26,27 @@ method-suggestions :
 parameters :
     input_model :
         ui-name : |
-            Metabolic Model
+            FBA Model
         short-hint : |
-            User selects the model on which to run FBA
+            The metabolic network model consisting of genome-wide set of stoichiometric reactions, compounds, and the weighted components of the biomass on which you wish to carry out Flux Balance Analysis
         long-hint  : |
-            User selects the model on which to run FBA
+            The metabolic network model consisting of genome-wide set of stoichiometric reactions, compounds, and the weighted components of the biomass on which you wish to carry out Flux Balance Analysis
 
     input_media :
         ui-name : |
-            Growth Condition
+            Media
         short-hint : |
-            User selects a media condition on which to simulate growth of the organism. If nothing is selected, the complete media is used by default
+            Media specifies the set of chemical compounds organism can use for its growth
         long-hint  : |
             User selects a media condition on which to simulate growth of the organism. If nothing is selected, the complete media is used by default
 
     output_fba :
         ui-name : |
-            Output FBA Result ID
+            Output FBA Result
         short-hint : |
-            User selects name in which to store FBA results
+            The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model
         long-hint  : |
-            User selects name in which to store FBA results
+            The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model
 
     fva :
         ui-name : |
@@ -140,21 +140,6 @@ description : |
     
     <p>A metabolic model of a single-celled organism (see Build Metabolic Model) can be used to carry out Flux Balance Analysis (FBA). FBA is a constraint-based method that estimates growth-optimal fluxes through all reactions in the metabolic network, thereby making it possible to estimate the growth rate of an organism (the rate of biomass production) or the rate of production of a given metabolic output on a specified media.</p>
     <p>To perform FBA, begin by specifying the media on which you will grow your organism. In KBase, the media object contains the chemical compounds on which you want to analyze the growth of your organism. KBase provides users with more than 500 commonly used media conditions to use when running FBA. These can be found by in the Narrative Interface under the Analyze heading by selecting &quot;+ Add Data&quot; and then navigating to the &quot;Public&quot; tab. In addition, users can build their own custom media formulations.</p>
-    
-    <p><strong>Inputs</strong>
-    
-    <p><i>FBAModel</i><br>
-    The metabolic network model consisting of genome-wide set of stoichiometric reactions, compounds, and the weighted components of the biomass on which you wish to carry out Flux Balance Analysis</p>
-    
-    <p><i>Media<br>
-    Media specifies the set of chemical compounds organism can use for its growth</p>
-    </p>
-    
-    <p><strong>Outputs</strong>
-    
-    <p><i>Output FBA Result</i><br>
-    The fluxes for all reactions in the metabolic model and the predicted growth of the biomass according to the FBA model</p>
-    </p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
