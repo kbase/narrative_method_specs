@@ -1,6 +1,6 @@
 name     : REFERENCE FASTA
 subtitle : none
-tooltip  : Upload a ReferenceAssembly object from FASTA-file into your workspace.
+tooltip  : Upload a ReferenceAssembly object from FASTA-file into your narrative.
 
 screenshots :
     []

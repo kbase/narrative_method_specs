@@ -1,6 +1,6 @@
 name     : SINGLE END FASTQ
 subtitle : none
-tooltip  : Upload a SingleEndLibrary object from FASTQ-file into your workspace.
+tooltip  : Upload a SingleEndLibrary object from FASTQ-file into your narrative.
 
 screenshots :
     []

@@ -3,9 +3,9 @@
 #
 name     : UPLOAD FROM FASTA FILE
 subtitle : |
-    Upload a ContigSet object from Fasta-file into your workspace.
+    Upload a ContigSet object from Fasta-file into your narrative.
 tooltip  : |
-    Upload a ContigSet object from Fasta-file into your workspace.
+    Upload a ContigSet object from Fasta-file into your narrative.
 
 screenshots :
     []
