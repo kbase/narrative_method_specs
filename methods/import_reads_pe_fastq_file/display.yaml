@@ -1,6 +1,6 @@
 name     : PAIRED END FASTQ
 subtitle : none
-tooltip  : Upload a PairedEndLibrary object from FASTQ-file(s) into your workspace.
+tooltip  : Upload a PairedEndLibrary object from FASTQ-file(s) into your narrative.
 
 screenshots :
     []

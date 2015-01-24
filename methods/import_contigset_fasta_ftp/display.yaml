@@ -3,9 +3,9 @@
 #
 name     : IMPORT FROM FTP
 subtitle : |
-    Upload a ContigSet object from FTP into your workspace.
+    Upload a ContigSet object from FTP into your narrative.
 tooltip  : |
-    Upload a ContigSet object from FTP into your workspace.
+    Upload a ContigSet object from FTP into your narrative.
 
 screenshots :
     []
