@@ -1,0 +1,58 @@
+#
+# Define basic display information
+#
+name     : Annotate Domains in a Genome
+subtitle : |
+    Annotate protein domains in a Genome object.  The Genome must already have annotated genes.  The annotation job may run for an hour or longer.  When the annotation job finishes, a DomainAnnotation object with the annotated domains will be stored in your data store.
+tooltip  : |
+    Annotate protein domains in a Genome object.  The Genome must already have annotated genes.  The annotation job may run for an hour or longer.  When the annotation job finishes, a DomainAnnotation object with the annotated domains will be stored in your data store.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Genome ID
+        short-hint : |
+            Genome to annotate
+        long-hint  : |
+            Genome to annotate.  It must already have annotated genes
+
+    param1 :
+        ui-name : |
+            Domain Model Set
+        short-hint : |
+            Set of domain models or libraries to use
+        long-hint  : |
+            Set of domain models or libraries to use
+
+    param2 :
+        ui-name : |
+            Output DomainAnnotation ID
+        short-hint : |
+            This object with annotated domains will be stored in your data store
+        long-hint  : |
+            This object with annotated domains will be stored in your data store
+
+
+
+description : |
+    Annotate protein domains in a Genome object.  The Genome must already have annotated genes.  The annotation job may run for an hour or longer.  When the annotation job finishes, a DomainAnnotation object will be stored in your data store.
+
+
+technical-description : |
+    Annotate protein domains in a Genome object.  The Genome must already have annotated genes.  The annotation job may run for an hour or longer.  When the annotation job finishes, a DomainAnnotation object will be stored in your data store. This method will find domains from one or more the following domain databases: Pfam, TIGRFAMs, COG, SMART, and NCBI CDD.
