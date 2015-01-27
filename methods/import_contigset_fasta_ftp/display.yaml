@@ -3,9 +3,9 @@
 #
 name     : IMPORT FROM FTP
 subtitle : |
-    Upload a ContigSet object from FTP into your workspace.
+    Upload a ContigSet object from FTP into your narrative.
 tooltip  : |
-    Upload a ContigSet object from FTP into your workspace.
+    Upload a ContigSet object from FTP into your narrative.
 
 screenshots :
     []
@@ -13,11 +13,17 @@ screenshots :
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #
@@ -39,6 +45,14 @@ parameters :
             Target object ID.
         long-hint  : |
             Target object ID.
+
+    fastaReferenceOnly :
+        ui-name : |
+            FASTA REFERENCE ONLY
+        short-hint : |
+            Creates a reference to the fasta file in Shock, but does not store the sequences in the workspace object. Not recommended unless the fasta file is larger than 1GB. This is the default behaviour for files that are large.
+        long-hint  : |
+            Creates a reference to the fasta file in Shock, but does not store the sequences in the workspace object. Not recommended unless the fasta file is larger than 1GB. This is the default behaviour for files that are large.
 
 
 description : |

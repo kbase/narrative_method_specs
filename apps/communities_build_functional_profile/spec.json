@@ -7,6 +7,18 @@
         {
             "step-id": "step_1",
             "method-id": "retrieve_functional_abundance_profile"
+        },
+        {
+            "step-id": "step_2",
+            "method-id": "normalize_abundance_profile",
+            "input_mapping" : [
+                {
+                    "step": "step_1",
+                    "is_from_input": true,
+                    "from": "output_profile",
+                    "to": "input_profile"
+                }
+            ]
         }
     ],
     "behavior": {

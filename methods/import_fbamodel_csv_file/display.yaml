@@ -1,0 +1,42 @@
+name     : FBA MODEL FROM CSV FILE
+subtitle : none
+tooltip  : Upload an Flux Balance Analysis Model object from CSV file(s) into your narrative.
+
+screenshots :
+    []
+
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+parameters :
+    reactionFile :
+        ui-name : REACTION CSV FILE
+        short-hint : File with reactions in CSV format.
+        long-hint  : none
+
+    compoundFile :
+        ui-name : COMPOUND CSV FILE
+        short-hint : File with compounds in CSV format.
+        long-hint  : none
+
+    outputObject :
+        ui-name : OUTPUT OBJECT ID
+        short-hint : ID for output Flux Balance Analysis Model
+        long-hint  : none
+
+    genomeObject :
+        ui-name : GENOME
+        short-hint : Identifier for Genome which contains features referenced to in FBAModel
+        long-hint  : none
+
+    biomass :
+        ui-name : BIOMASS
+        short-hint : ID of biomass reaction in Reaction CSV File
+        long-hint  : none
+
+description : none
+
+technical-description : none

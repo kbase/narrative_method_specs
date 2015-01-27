@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : Abundance Profile
+subtitle : Taxonomic Profile object
+tooltip  : Taxonomic Profile object
+
+icon : none
+
+description : |
+    <p>This type describes a abundance profile.</p>
+
+    
+    
+    
