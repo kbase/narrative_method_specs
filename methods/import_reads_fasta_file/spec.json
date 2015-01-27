@@ -28,6 +28,13 @@
       "valid_ws_types" : [ "KBaseAssembly.ReferenceAssembly" ],
       "is_output_name" : true
     }
+  }, {
+    "id" : "refname",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text"
   } ],
   "behavior" : {
     "service-mapping" : {

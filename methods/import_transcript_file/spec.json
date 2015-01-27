@@ -29,6 +29,24 @@
       "valid_ws_types" : [ "KBaseGenomes.Genome" ],
       "is_output_name" : true
     }
+  }, {
+    "id" : "genomeId",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text"
+  }, {
+    "id": "dna",
+    "optional":false,
+    "advanced":false,
+    "allow_multiple":false,
+    "default_values":["0"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
   }],
   "behavior" : {
     "service-mapping" : {

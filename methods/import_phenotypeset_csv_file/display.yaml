@@ -1,0 +1,32 @@
+name     : PHENOTYPE SET FROM CSV FILE
+subtitle : none
+tooltip  : Upload a Phenotype Set object from CSV file into your narrative.
+
+screenshots :
+    []
+
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+parameters :
+    csvFile :
+        ui-name : CSV FILE
+        short-hint : File with phenotypes in CSV format.
+        long-hint  : none
+
+    outputObject :
+        ui-name : OUTPUT OBJECT ID
+        short-hint : ID for output Phenotype Set
+        long-hint  : none
+
+    genomeObject :
+        ui-name : GENOME
+        short-hint : Identifier for Genome which contains features referenced to in PhenotypeSet object
+        long-hint  : none
+
+description : none
+
+technical-description : none
