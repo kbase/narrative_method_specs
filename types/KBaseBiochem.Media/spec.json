@@ -1,6 +1,7 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
+    	"view_media"
     ],
     "import_method_ids":[
         "import_media_csv_file"
