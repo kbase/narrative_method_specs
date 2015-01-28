@@ -57,9 +57,9 @@ parameters :
         ui-name : |
             Proteome Comparison
         short-hint : |
-            A proteome comparison dataset (from &quotCompare Two Proteomes&quot method) that includes information about orthologous genes in two genomes for which models were generated.
+            A proteome comparison dataset (from &quot;Compare Two Proteomes&quot; method) that includes information about orthologous genes in two genomes for which models were generated.
         long-hint  : |
-            A proteome comparison dataset (from &quotCompare Two Proteomes&quot method) that includes information about orthologous genes in two genomes for which models were generated.
+            A proteome comparison dataset (from &quot;Compare Two Proteomes&quot; method) that includes information about orthologous genes in two genomes for which models were generated.
 
 
 description : |
