@@ -22,8 +22,3 @@ step-descriptions :
 
 description : |
     <p>The Reconstruct Genome-scale Metabolic Model app automatically constructs a genome-scale metabolic model for a KBase-annotated genome produced by one of the assembly apps. The model is then gap filled to simulate growth in any growth condition specified by the user. KBase already includes over 500 preloaded growth conditions for the user to select from. Users can also load their own custom growth conditions by uploading a table of growth condition data or by constructing a growth condition in KBase. The metabolic model object produced by this app can be exported in SBML or Excel format or immediately used as input in any of the downstream apps described below (e.g., Flux Balance Analysis).</p>
-
-
-technical-description : |
-    &nbsp;    
-     
