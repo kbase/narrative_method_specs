@@ -21,9 +21,5 @@ step-descriptions :
 description : |
     <p>The &quot;Build Plant Metabolic Model and Run FBA&quot; app generates a metabolic model for a plant and then carries out Flux Balance Analysis (FBA) of the model. The user begins by supplying an annotated Genome object derived either from another KBase app (&quot;Plant Transcript Sequences to Annotated Genome&quot;) or from the collection of annotated public genomes pre-loaded in KBase. A metabolic model is generated from the PlantSEED-based metabolic annotation of the genome. The model is then gap filled and subject to FBA simulations. The user can visualize and export both the model and the FBA results.</p>
 
-technical-description : |
-    &nbsp;
-    
-    
     
     
