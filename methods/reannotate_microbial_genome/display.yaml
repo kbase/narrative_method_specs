@@ -202,8 +202,6 @@ description : |
     
     <p>By default, this method assumes that you want to retain the gene calls from the original Genome-typed object and that you only wish to generate new annotations for the protein-encoding genes.  Therefore, the only scripts that run by default are the protein annotation scripts and the nearest neighbor computation.  However, the full annotation pipeline can be turned on using the advanced options.</p>
     
-    <p>By default, this method assumes that you want to retain the gene calls from the original Genome-typed object and that you only wish to generate new annotations for the protein-encoding genes.  Therefore, the only scripts that run by default are the protein annotation scripts and the nearest neighbor computation.  However, the full annotation pipeline can be turned on using the advanced options.</p>
-    
     
     <p><strong>The Default Annotation Pipeline</strong><br>
     Clicking &quot;Run&quot; will run the default pipeline. For a typical 2-5 MBp genome, this should take about 5 minutes. Note that the default behavior of this app is to only reannotate the protein-encoding genes.  The default pipeline for this app consists of the following steps:</p>
