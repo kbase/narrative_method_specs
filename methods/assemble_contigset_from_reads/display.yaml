@@ -87,9 +87,9 @@ parameters :
         ui-name : |
             Assembler Mode
         short-hint : |
-            One or multiple assemblers listed below can be chosen as the preferred tool(s), and result assessments and comparisons are generated
+            An assembler listed below can be chosen as the preferred tool for assembly.
         long-hint  : |
-            One or multiple assemblers listed below can be chosen as the preferred tool(s), and result assessments and comparisons are generated
+            An assembler listed below can be chosen as the preferred tool for assembly.
 
     pipeline :
         ui-name : |
