@@ -50,13 +50,12 @@ parameters :
 
     param2 :
         ui-name : |
-            Tree
+            Output Tree
         short-hint : |
-            A phylogenetic tree relating genomes available in KBase to the user-provided genome set
+            Output species tree name; if empty, an ID will be chosen randomly
         long-hint : |
-            A phylogenetic tree relating genomes available in KBase to the user-provided genome set
-        placeholder  : |
-            Output species tree name; if empty, an ID will be chosen randomly.
+            A phylogenetic tree relating genomes available in KBase to the user-provided genome
+
 
 description : |
     <p>This method allows a user to construct a phylogenetic tree combining the genome(s) provided by the user with a set of closely related genomes selected from all public KBase genomes. Since the number of genomes available in KBase is very large, the procedure starts by selecting a subset of public KBase genomes closely related to the user-provided genomes. Relatedness is determined by alignment similarity to a select subset of COG (Clusters of Orthologous Groups) domains. Next, a phylogenetic tree is reconstructed using FastTree (a method to quickly estimate maximum likelihood phylogeny, see Publications) with the genome provided by the user and the set of genomes identified as similar in the previous step.</p>

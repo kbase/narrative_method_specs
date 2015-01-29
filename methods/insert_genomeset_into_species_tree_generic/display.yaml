@@ -56,13 +56,12 @@ parameters :
 
     param2 :
         ui-name : |
-            Tree
+            Output Tree
         short-hint : |
-            A phylogenetic tree relating genomes available in KBase to the user-provided genome
+            Output species tree name; if empty, an ID will be chosen randomly
         long-hint : |
             A phylogenetic tree relating genomes available in KBase to the user-provided genome
-        placeholder  : |
-            Output species tree name; if empty, an ID will be chosen randomly.
+            
 
 
 description : |
