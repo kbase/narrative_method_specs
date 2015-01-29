@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Genome Comparison from Pangenome
+name     : Compare Genomes from Pangenome
 
 tooltip  : |
     Compare isofunctional and homologous gene families for all genomes in the pangenome.
