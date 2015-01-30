@@ -34,9 +34,17 @@ parameters :
         ui-name : |
             FBA Models
         short-hint : |
-            A list of metabolic models consisting of stoichiometric reactions, compounds, and the weighted components of  the biomass
+            A list of metabolic models consisting of stoichiometric reactions, compounds, and the weighted components of  the biomass. Either one model set (see next input) or at least two individual models must be provided. Both inputs can be provided and will be merged into a single set of models.
         long-hint  : |
-            A list of metabolic models consisting of stoichiometric reactions, compounds, and the weighted components of  the biomass
+            A list of metabolic models consisting of stoichiometric reactions, compounds, and the weighted components of  the biomass. Either one model set (see next input) or at least two individual models must be provided. Both inputs can be provided and will be merged into a single set of models.
+
+    input_modelset :
+        ui-name : |
+            FBA Model set
+        short-hint : |
+            A set of metabolic models which could be combined to form the community model. Either one model set or at least two individual models (see previous input) must be provided. Both inputs can be provided and will be merged into a single set of models.
+        long-hint  : |
+            A set of metabolic models which could be combined to form the community model. Either one model set or at least two individual models (see previous input) must be provided. Both inputs can be provided and will be merged into a single set of models.
 
     output_model :
         ui-name : |

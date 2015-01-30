@@ -11,13 +11,23 @@
   },
   "parameters" : [ {
     "id" : "input_models",
-    "optional" : false,
+    "optional" : true,
     "advanced" : false,
     "allow_multiple" : true,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ "KBaseFBA.FBAModel" ]
+    }
+  }, {
+    "id" : "input_modelset",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFBA.FBAModelSet" ]
     }
   }, {
     "id" : "output_model",
@@ -40,6 +50,10 @@
         {
           "input_parameter": "input_models",
           "target_property": "community_submodel_ids"
+        },
+        {
+          "input_parameter": "input_modelset",
+          "target_property": "community_model_set"
         },
         {
           "input_parameter": "output_model",
