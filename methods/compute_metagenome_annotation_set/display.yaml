@@ -10,8 +10,6 @@ tooltip  : |
 screenshots :
     []
 
-icon: none
-
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
@@ -98,7 +96,6 @@ parameters :
 description : |
     <p>This method allows users to compute an annotation set for a single metagenome. Taxonomic level and top count can be used to restrict the annotation namespace. E-value, percent identity, and alignment length values can be used to filter the annotation abundance data to the desired level of stringency.</p>
     
-    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
-    Kevin Keegan, Jared Bischof, Travis Harrison, Folker Meyer, Tobias Paczian, Andreas Wilke. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong><br>Kevin Keegan, Jared Bischof, Travis Harrison, Folker Meyer, Tobias Paczian, Andreas Wilke. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
  
 
