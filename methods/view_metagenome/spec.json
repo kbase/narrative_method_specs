@@ -7,21 +7,31 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "MGOverviewWidget"
+    "output" : "MetagenomeView"
   },
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "input_metagenome",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
+      "valid_ws_types" : [ "Communities.Metagenome" ]
     }
   } ],
   "behavior" : {
-    "python_class" : "Communities Services",
-    "python_function" : "View Metagenome"
+      "none" : {
+            "output_mapping" : [
+                {
+                    "input_parameter": "input_metagenome",
+                    "target_property": "id"
+                },
+                {
+                    "narrative_system_variable": "workspace",
+                    "target_property": "ws"
+                }
+            ]
+        }
   }
 }

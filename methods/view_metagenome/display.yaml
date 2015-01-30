@@ -3,9 +3,9 @@
 #
 name     : View Metagenome
 subtitle : |
-    Overview of metagenome statistics, numeric and plotted.
+    Overview of metagenome.
 tooltip  : |
-    Overview of metagenome statistics, numeric and plotted.
+    Overview of metagenome.
 
 screenshots :
     []
@@ -30,7 +30,7 @@ suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_metagenome :
         ui-name : |
             Metagenome ID
         short-hint : |
@@ -40,8 +40,8 @@ parameters :
 
 
 description : |
-    Overview of metagenome statistics, numeric and plotted.
+    Overview of metagenome.
 
 
 technical-description : |
-    Overview of metagenome statistics, numeric and plotted.
+    Overview of metagenome.
