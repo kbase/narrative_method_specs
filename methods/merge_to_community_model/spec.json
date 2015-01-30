@@ -57,7 +57,7 @@
         },
         {
           "input_parameter": "output_model",
-          "target_property": "id"
+          "target_property": "obj"
         },
         {
           "narrative_system_variable": "workspace",
