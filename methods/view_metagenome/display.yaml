@@ -32,11 +32,11 @@ suggestions :
 parameters :
     input_metagenome :
         ui-name : |
-            Metagenome ID
+            Metagenome
         short-hint : |
-            id of a metagenome
+            metagenome object
         long-hint  : |
-            id of a metagenome
+            metagenome object
 
 
 description : |
