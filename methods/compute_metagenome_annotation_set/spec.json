@@ -150,7 +150,7 @@
         ],
         "output_mapping" : [
             {
-                "input_parameter": "output_profile",
+                "input_parameter": "output_set",
                 "target_property": "id"
             },
             {
