@@ -1,4 +1,4 @@
-name     : PAIRED END FASTQ
+name     : PAIRED END READS
 subtitle : none
 tooltip  : Upload a PairedEndLibrary object from FASTA/FASTQ file(s) into your narrative.
 
