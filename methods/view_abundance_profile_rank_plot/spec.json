@@ -46,10 +46,22 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "average" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
-    }
+    "field_type" : "dropdown",
+    "dropdown_options" : {
+      "options" : [
+        {
+            "value" : "average",
+            "display" : "average"
+        },
+        {
+            "value" : "max",
+            "display" : "max"
+        },
+        {
+            "value" : "sum",
+            "display" : "sum"
+        }
+      ] }
   } ],
   "behavior" : {
     "none" : {
