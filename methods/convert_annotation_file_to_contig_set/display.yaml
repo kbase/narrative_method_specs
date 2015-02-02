@@ -9,6 +9,7 @@ tooltip  : |
 
 screenshots :
     - convert_annotation_file_to_contig_set_input.png
+    - convert_annotation_file_to_contig_set_output.png
 
 
 icon: icon.png

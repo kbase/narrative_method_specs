@@ -1,6 +1,6 @@
-name     : PAIRED END FASTQ
+name     : PAIRED END READS
 subtitle : none
-tooltip  : Upload a PairedEndLibrary object from FASTQ-file(s) into your narrative.
+tooltip  : Upload a PairedEndLibrary object from FASTA/FASTQ file(s) into your narrative.
 
 screenshots :
     []
@@ -19,13 +19,13 @@ suggestions :
 
 parameters :
     fastqFile1 :
-        ui-name : FASTQ FILE
-        short-hint : First short read file of a paired end library in FASTQ format.
+        ui-name : READS FILE
+        short-hint : First short read file of a paired end library in FASTA/FASTQ format.
         long-hint  : none
 
     fastqFile2 :
-        ui-name : FASTQ FILE
-        short-hint : Second short read file of a paired end library in FASTQ format. Not needed in an interleaved library.
+        ui-name : READS FILE
+        short-hint : Second short read file of a paired end library in FASTA/FASTQ format. Not needed in an interleaved library.
         long-hint  : none
 
     insertSizeMean :

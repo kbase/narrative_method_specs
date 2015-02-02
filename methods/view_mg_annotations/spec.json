@@ -1,5 +1,5 @@
 {
-  "name" : "View Metagenome",
+  "name" : "View Metagenome Annotation Set",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
@@ -7,7 +7,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "MetagenomeView"
+    "output" : "AnnotationSetTable"
   },
   "parameters" : [ {
     "id" : "input_metagenome",
@@ -17,7 +17,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "Communities.Metagenome" ]
+      "valid_ws_types" : [ "KBaseGenomes.MetagenomeAnnotation" ]
     }
   } ],
   "behavior" : {

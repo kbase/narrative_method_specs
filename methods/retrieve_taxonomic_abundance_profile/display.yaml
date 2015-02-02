@@ -55,9 +55,9 @@ parameters :
         ui-name : |
             Taxonomic Level
         short-hint : |
-            Annotation hierarchical level to retrieve abundances: default is genus, alternatives are strain, species, family, order, class, phylum, domain
+            Annotation hierarchical level to retrieve abundances: default is genus, alternatives are family, order, class, phylum, domain
         long-hint  : |
-            Annotation hierarchical level to retrieve abundances: default is genus, alternatives are strain, species, family, order, class, phylum, domain
+            Annotation hierarchical level to retrieve abundances: default is genus, alternatives are family, order, class, phylum, domain
 
 
     source :

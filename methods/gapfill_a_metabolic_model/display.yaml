@@ -62,9 +62,9 @@ parameters :
         ui-name : |
             Output Model
         short-hint : |
-            Name the model produced by the gapfill analysis
+            Name of the model produced by the gapfill analysis
         long-hint  : |
-            Name the model produced by the gapfill analysis
+            Name of the model produced by the gapfill analysis
 
     comprehensive_gapfill :
         ui-name : |
