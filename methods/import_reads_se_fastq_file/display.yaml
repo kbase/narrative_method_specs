@@ -1,4 +1,4 @@
-name     : SINGLE END FASTQ
+name     : SINGLE END READS
 subtitle : none
 tooltip  : Upload a SingleEndLibrary object from FASTA/FASTQ file into your narrative.
 
