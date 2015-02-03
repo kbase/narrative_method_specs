@@ -23,7 +23,8 @@ suggestions :
         related :
             []
         next :
-            []
+            - metagenome_annotation_to_models
+            - view_mg_annotations
 
 
 #

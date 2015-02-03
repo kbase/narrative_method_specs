@@ -23,7 +23,7 @@ suggestions :
         related :
             []
         next :
-            []
+            - merge_to_community_model
 
 
 #
