@@ -30,7 +30,7 @@ suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    input_models :
+    input_metagenome :
         ui-name : |
             Metagenome annotation
         short-hint : |
