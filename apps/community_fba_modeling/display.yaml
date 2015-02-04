@@ -15,9 +15,13 @@ header : |
 
 step-descriptions :
     step_1 : |
-        additional instructions/details regarding the step with id step_1
+        Select functional annotations organized by OTU from metagenome database
     step_2 : |
-        additional instructions/details regarding the step with id step_2
+        Construct metabolic models for abudant OTUs and ensemble model for all remaining functions in annotated metagenome
+    step_3 : |
+        Merge all metagenome models into a single compartmentalized community model
+    step_4 : |
+        Gapfill community model to permit function on a specified growth condition
 
 
 description : |
