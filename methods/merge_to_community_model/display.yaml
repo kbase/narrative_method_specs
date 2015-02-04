@@ -23,7 +23,7 @@ suggestions :
         related :
             []
         next :
-            []
+            - gapfill_a_metabolic_model
 
 
 #

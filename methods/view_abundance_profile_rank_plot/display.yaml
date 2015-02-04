@@ -62,9 +62,9 @@ parameters :
         ui-name : |
             Order By
         short-hint : |
-            Order of metagenomes; the default is average abundance, alternative is either the position of metagenome in profile or the maximum species abundance in each of the metagenomes
+            Order of metagenomes; the default is average abundance, alternative is maximum or sum of abundances in each of the metagenomes
         long-hint  : |
-            Order of metagenomes; the default is average abundance, alternative is either the position of metagenome in profile or the maximum species abundance in each of the metagenomes
+            Order of metagenomes; the default is average abundance, alternative is maximum or sum of abundances in each of the metagenomes
 
 
 description : |
