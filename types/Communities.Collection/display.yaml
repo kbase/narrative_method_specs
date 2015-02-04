@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : Metagenome Collection
+subtitle : Metagenome Collection object
+tooltip  : Metagenome Collection object
+
+icon : none
+
+description : |
+    <p>This type describes a metagemome collection.</p>
+
+    
+    
+    

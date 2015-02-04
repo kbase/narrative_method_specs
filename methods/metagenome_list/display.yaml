@@ -19,12 +19,15 @@ suggestions :
         related :
             []
         next :
-            []
+            - communities_build_functional_profile
+            - communities_build_taxonomic_profile
     methods:
         related :
             []
         next :
-            []
+            - retrieve_functional_abundance_profile
+            - retrieve_taxonomic_abundance_profile
+            - view_mg_collection
 
 
 #

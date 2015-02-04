@@ -87,17 +87,17 @@ parameters :
         ui-name : |
             Assembler Mode
         short-hint : |
-            One or multiple assemblers listed below can be chosen as the preferred tool(s), and result assessments and comparisons are generated
+            An assembler listed below can be chosen as the preferred tool for assembly.
         long-hint  : |
-            One or multiple assemblers listed below can be chosen as the preferred tool(s), and result assessments and comparisons are generated
+            An assembler listed below can be chosen as the preferred tool for assembly.
 
     pipeline :
         ui-name : |
             Assembly Pipeline
         short-hint : |
-            Allows the user to rapidly build a customized pipeline combination using the set of available preprocessing, assembly, and postprocessing tools (see the technical description in the manual page for more information); a pipeline is specified via a space-separated string, e.g: sga_preprocess bhammer tagdust idba
+            Allows the user to rapidly build a customized pipeline combination using the set of available preprocessing, assembly, and postprocessing tools (see the technical description in the manual page for more information); a pipeline is specified via a space-separated string, e.g: bhammer velvet
         long-hint  : |
-            Allows the user to rapidly build a customized pipeline combination using the set of available preprocessing, assembly, and postprocessing tools (see the technical description in the manual page for more information); a pipeline is specified via a space-separated string, e.g: sga_preprocess bhammer tagdust idba
+            Allows the user to rapidly build a customized pipeline combination using the set of available preprocessing, assembly, and postprocessing tools (see the technical description in the manual page for more information); a pipeline is specified via a space-separated string, e.g: bhammer velvet
 
 description : |
 

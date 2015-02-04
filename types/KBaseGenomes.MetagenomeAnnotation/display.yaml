@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : Metagenome Annotation Set
+subtitle : Metagenome annotation set object
+tooltip  : Metagenome annotation set object
+
+icon : none
+
+description : |
+    <p>This type describes a metagemome annotation set.</p>
+
+    
+    
+    

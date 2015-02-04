@@ -25,7 +25,8 @@ suggestions :
         related :
             []
         next :
-            []
+            - normalize_abundance_profile
+            - view_abundance_profile_rank_plot
 
 
 #
