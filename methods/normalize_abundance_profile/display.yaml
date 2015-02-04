@@ -24,7 +24,9 @@ suggestions :
         related :
             []
         next :
-            []
+            - heatmap_from_abundance_profile
+            - pcoa_from_abundance_profile
+            - view_abundance_profile_rank_plot
 
 
 
