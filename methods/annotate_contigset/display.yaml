@@ -211,7 +211,7 @@ parameters :
 
 
 description : |
-    <p>This method uses components from the RAST (Rapid Annotations using Subsystems Technology) toolkit to annotate an assembled bacterial or archaeal genome.  The required input--a set of contigs in FASTA format--can be generated using the &quot;Assemble Contigs from Reads&quot; method, or uploaded from a user’s computer or imported via ftp.  The method converts the FASTA file of contigs (the &quot;Contig Set&quot;) into a genome typed object, which is called a &quot;Genome&quot; in the data menu.</p>
+    <p>This method uses components from the RAST (<a href= "http://rast.nmpdr.org/">Rapid Annotations using Subsystems Technology</a>) toolkit (publication forthcoming) to annotate an assembled bacterial or archaeal genome.  The required input - a Contig Set in FASTA format - can be generated using the Assemble Contigs from Reads method, uploaded from a GenBank file, or imported directly from NCBI via FTP.  The method converts the FASTA file of contigs (the &quot;Contig Set&quot;) into a genome typed object, which is called a &quot;Genome&quot; in the data menu.</p>
     
     <p>There are three essential metadata fields that must be filled in: scientific name, domain, and genetic code. Most bacterial and archaeal genomes use genetic code 11, while Mycoplasmas use genetic code 4. For more information on genetic codes please refer to <a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi">this NCBI document</a>. All fields are required because they affect conditional parameters in various programs that are being run. Use existing scientific names whenever possible.</p>
     

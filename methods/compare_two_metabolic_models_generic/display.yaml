@@ -63,6 +63,6 @@ parameters :
 
 
 description : |
-    <p>Comparison of two different metabolic models identifies their core and unique reactions and compounds, along with the gene-protein associations between the two models. Proteome comparison data (see &quotCompare Two Proteomes&quot method) are used to identify the orthologous genes. This method produces an output table that lists core reactions, unique reactions, genes, and annotations associated with each biochemical reaction for the two compared metabolic models.</p>
+    <p>Comparison of two different metabolic models identifies their core and unique reactions and compounds, along with the gene-protein associations between the two models. When the input models are constructed from different genomes, a Proteome Comparison data object must also be provided as input to map the genes in one model’s genome to the genes in the other model’s genome. This method produces an output table that lists core reactions, unique reactions, genes, and annotations associated with each biochemical reaction for the two compared metabolic models.</p>
     
      <p><strong>Team members who developed & deployed algorithm in KBase:</strong> Chris Henry, Janaka Edirisinghe, Sam Seaver, and Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
