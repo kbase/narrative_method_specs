@@ -10,7 +10,7 @@ tooltip  : |
 screenshots : []
 
 header : |
-    <p>The &quot;Build Plant Metabolic Model&quot; app generates a metabolic model for a plant. The user begins by supplying an annotated Genome object derived from a KBase method: &quot;Plant Transcript Sequences to Annotated Genome&quot;. A metabolic model is generated from the PlantSEED-based metabolic annotation of the genome, and is then gap filled. The user can visualize the model.</p>
+    <p>The Build Plant Metabolic Model app builds a metabolic model, using the annotation data from an annotated Genome object derived from PlantSEEDModels, to reconstruct the metabolic reactions that the cell is capable of performing. It then performs gapfilling, by searching for and subsequently bridging the missing metabolic reactions that were not found in the initial annotation search.</p>
 
 step-descriptions :
     step_1 : |
@@ -19,7 +19,7 @@ step-descriptions :
         additional instructions/details regarding the step with id step_2
 
 description : |
-    <p>The &quot;Build Plant Metabolic Model&quot; app generates a metabolic model for a plant. The user begins by supplying an annotated Genome object derived from a KBase method: &quot;Plant Transcript Sequences to Annotated Genome&quot;. A metabolic model is generated from the PlantSEED-based metabolic annotation of the genome, and is then gap filled. The user can visualize the model.</p>
+    <p>The Build Plant Metabolic Model app builds a metabolic model, using the annotation data from an annotated Genome object derived from PlantSEEDModels, to reconstruct the metabolic reactions that the cell is capable of performing. It then performs gapfilling, by searching for and subsequently bridging the missing metabolic reactions that were not found in the initial annotation search.</p>
 
     
     
