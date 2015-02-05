@@ -1,4 +1,4 @@
-#
+    #
 # Define basic display information
 #
 name     : Generate Functional Abundance Data
@@ -57,18 +57,18 @@ parameters :
         ui-name : |
             Functional Level
         short-hint : |
-            Annotation hierarchical level to retrieve abundances: default is level 3, level 1 (with KEGG as source: e.g., Metabolism), level 2 (e.g., Carbohydrate Metabolism), level 3 (e.g., Glycolysis / Gluconeogenesis), function (e.g., hexokinase) for functional annotation
+            Annotation hierarchical level to generate abundances; default is level 3, level 1 (with KEGG as source: e.g., Metabolism), level 2 (e.g., Carbohydrate Metabolism), level 3 (e.g., Glycolysis / Gluconeogenesis), function (e.g., hexokinase) for functional annotation
         long-hint  : |
-            Annotation hierarchical level to retrieve abundances: default is level 3, level 1 (with KEGG as source: e.g., Metabolism), level 2 (e.g., Carbohydrate Metabolism), level 3 (e.g., Glycolysis / Gluconeogenesis), function (e.g., hexokinase) for functional annotation
+            Annotation hierarchical level to generate abundances; default is level 3, level 1 (with KEGG as source: e.g., Metabolism), level 2 (e.g., Carbohydrate Metabolism), level 3 (e.g., Glycolysis / Gluconeogenesis), function (e.g., hexokinase) for functional annotation
 
 
     source :
         ui-name : |
             Source Name
         short-hint : |
-            Data source for annotation: default is SEED, alternatives are RDP, Greengenes, LSU, SSU
+            Data source for annotation; default is Subsystems, alternatives are KO, NOG, COG
         long-hint  : |
-            Data source for annotation: default is SEED, alternatives are RDP, Greengenes, LSU, SSU
+            Data source for annotation; default is Subsystems, alternatives are KO, NOG, COG
 
 
     evalue :
@@ -99,13 +99,14 @@ parameters :
             
 
 description : |
-    <p>This method allows users to generate and retrieve annotation abundance data for a single metagenome (profile) or generate a matrix of profiles by entering a metagenome ID or a metagenome set. Abundances can be built for functional (WGS samples) annotation. E-value, percent identity, and alignment length values can be used to filter the annotation abundance data to the desired level of stringency.</p>
+    <p>This method generates an abundance profile or matrix of abundance profiles for a single metagenome profile or generate a matrix of profiles by entering a metagenome ID or a metagenome set. It projects abundance data onto data sources, which allows the user to compare metagenomes using PCoA or heatmaps for a selected data source. Functional abundance profiles and matrices can be built for WGS samples. E-value, percent identity, and alignment length values can be used to filter the annotation abundance data to the desired level of stringency. Users can review the distribution of the data using a boxplot and see if normalization is needed to resolve differences in the distribution of values among the selected profiles.</p>
     
     <p>After generating these abundances, it is good practice to view the boxplots (use the "Generate Boxplots for Abundance Data" method) of raw and normalized data to determine if normalization is necessary prior to comparative analyses. Datasets that exhibit similar distributions across all samples are comparable (as raw or normalized values); those that exhibit a variety of distributions are not suitable for direct comparison and may require normalization and/or additional processing to remove bias that could adversely affect downstream comparisons.</p>
     
     <p>The profiles generated with this method can be used as input for all other microbial communities methods such as “Generate Heatmap from Abundance Data” “Generate PCoA Data from Abundance Data“, “Generate Rank Abundance Plot”  and “Generate Boxplots for Abundance Data”.</p>
     
-    <p><strong>Team members who developed & deployed algorithm in KBase:</strong> Jared Bischof, Travis Harrison, Folker Meyer, Tobias Paczian, and Andreas Wilke. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Jared Bischof, Travis Harrison, Folker Meyer, Tobias Paczian, and Andreas Wilke. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
     
     
 publications :

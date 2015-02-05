@@ -3,9 +3,9 @@
 #
 name     : Reconstruct Genome-scale Metabolic Model
 subtitle : |
-    Construct a genome-scale metabolic model and gap-fill it to simulate growth in a specified growth condition.
+    Construct a genome-scale metabolic model and gapfill it to simulate growth in a specified growth condition.
 tooltip  : |
-    Construct a genome-scale metabolic model and gap-fill it to simulate growth in a specified growth condition. 
+    Construct a genome-scale metabolic model and gapfill it to simulate growth in a specified growth condition.
 
 screenshots : []
 
