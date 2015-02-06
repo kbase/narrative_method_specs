@@ -36,7 +36,7 @@
           "display": "COGs 1.0 (from CDD 3.12) domains only"
         },
         {
-          "value": "KBasePublicGeneDomains/CDD-only",
+          "value": "KBasePublicGeneDomains/NCBI-CDD-only",
           "display": "NCBI-curated CDD 3.12 domains only"
         },
         {
