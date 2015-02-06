@@ -67,7 +67,7 @@
   } ],
   "behavior" : {
     "service-mapping" : {
-      "url" : "https://kbase.us/services/gene_families/",
+      "url" : "https://ci.kbase.us/services/gene_families/",
       "name" : "KBaseGeneFamilies",
       "method" : "search_domains",
       "input_mapping" : [
