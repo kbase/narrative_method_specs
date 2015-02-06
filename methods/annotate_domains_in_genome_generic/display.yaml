@@ -3,9 +3,9 @@
 #
 name     : Annotate Domains in a Genome
 subtitle : |
-    Annotate protein domains in a Genome object.  The Genome must already have annotated genes.  The annotation job may run for an hour or longer.  When the annotation job finishes, a DomainAnnotation object with the annotated domains will be stored in your data store.
+    Annotate protein domains in a Genome.  The Genome must already have annotated genes.  The annotation job may run for an hour or longer, depending on the libraries selected.  When the annotation job finishes, a DomainAnnotation object with the annotated domains will be stored in your data store.
 tooltip  : |
-    Annotate protein domains in a Genome object.  The Genome must already have annotated genes.  The annotation job may run for an hour or longer.  When the annotation job finishes, a DomainAnnotation object with the annotated domains will be stored in your data store.
+    Annotate protein domains in a Genome.  The Genome must already have annotated genes.  The annotation job may run for an hour or longer, depending on the libraries selected.  When the annotation job finishes, a DomainAnnotation object with the annotated domains will be stored in your data store.
 
 screenshots :
     []
@@ -15,7 +15,7 @@ screenshots :
 #
 method-suggestions :
     related :
-        []
+        [annotate_genome_generic, annotate_contigset]
     next :
         []
 
@@ -26,11 +26,11 @@ method-suggestions :
 parameters :
     param0 :
         ui-name : |
-            Genome ID
+            Genome
         short-hint : |
             Genome to annotate
         long-hint  : |
-            Genome to annotate.  It must already have annotated genes
+            Select a Genome from your data store annotate.  It must already have annotated genes
 
     param1 :
         ui-name : |
@@ -42,7 +42,7 @@ parameters :
 
     param2 :
         ui-name : |
-            Output DomainAnnotation ID
+            Output DomainAnnotation Name
         short-hint : |
             This object with annotated domains will be stored in your data store
         long-hint  : |
@@ -51,8 +51,33 @@ parameters :
 
 
 description : |
-    Annotate protein domains in a Genome object.  The Genome must already have annotated genes.  The annotation job may run for an hour or longer.  When the annotation job finishes, a DomainAnnotation object will be stored in your data store.
 
+	    <p>
+	    This method identifies protein domains from widely used domain libraries.  It requires a Genome as input, which must already have annotated genes (e.g., those identified using the "Annotate Microbial Genome" or "Annotate Microbial Contigs" methods).
 
-technical-description : |
-    Annotate protein domains in a Genome object.  The Genome must already have annotated genes.  The annotation job may run for an hour or longer.  When the annotation job finishes, a DomainAnnotation object will be stored in your data store. This method will find domains from one or more the following domain databases: Pfam, TIGRFAMs, COG, SMART, and NCBI CDD.
+	    <p>
+	    The user must choose one of the following sets of models with which to annotate their Genome:
+	    
+	    <ul>
+	    
+	    <li><b>COGs</b> (clusters of orthologous groups, <a href="http://www.ncbi.nlm.nih.gov/COG/">http://www.ncbi.nlm.nih.gov/COG/</a>) from the <a href="http://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml">NCBI conserved domains database</a> (CDD) version 3.12.<p>
+	    
+	    <li>NCBI's <b>CDD</b> models from the <a href="http://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml">NCBI conserved domains database</a> (CDD) version 3.12.  This dataset includes only the <a href="http://www.ncbi.nlm.nih.gov/Structure/cdd/cdd_help.shtml#CDSource_NCBI_curated">NCBI-curated domains</a>.<p>
+	    
+	    <li><b>SMART</b> (Simple Modular Architecture Research Tool, <a href="http://smart.embl-heidelberg.de/">http://smart.embl-heidelberg.de/</a> version 6.0, from the <a href="http://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml">NCBI conserved domains database</a> (CDD) version 3.12.<p>
+	    
+	    <li><b>Pfam</b> version 27.0 hidden Markov models, from <a href="http://pfam.xfam.org/">http://pfam.xfam.org/</a>.<p>
+	    
+	    <li><b>TIGRFAMs</b> version 15.0 hidden Markov models, from the <a href="http://www.jcvi.org/cgi-bin/tigrfams/index.cgi">J. Craig Venter Institute</a>.<p>
+	    
+	    <li><b>All of the above</b> libraries.<p>
+	    
+	    </ul>
+	    
+	    <p>For the first three libraries above (COGs, CDD, and SMART), KBase runs RPS-BLAST version 2.2.30, from the <a href="http://www.ncbi.nlm.nih.gov/books/NBK1762/">BLAST+ package at NCBI</a>, identifying all domain hits with an E-value of 10<sup>-4</sup> or better.
+	    
+	    <p>For the two HMM libraries (Pfam and TIGRFAMs), KBase runs <a href="http://hmmer.janelia.org/">HMMER version 3.1b1</a>, identifying all domain hits at least as significant as the family-specific <i>trusted cutoff</i> identified by the curators of each model.
+	    
+	    <p>The annotation job may run for an hour or longer, especially if all libraries are selected.  When the annotation job finishes, a DomainAnnotation object will be stored in your data store, which can be used to browse the domains that were identified in your genome.
+
+	    <p><strong>Team members who developed &amp; deployed methods in KBase:</strong> John-Marc Chandonia, Roman Sutormin, and Pavel Novichkov. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a>
