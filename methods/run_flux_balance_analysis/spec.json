@@ -74,6 +74,26 @@
       "unchecked_value": 0
     }
   }, {
+    "id": "objective",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["bio1"],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id": "custom_bounds",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":true,
+    "default_values":[],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
     "id" : "gene_ko",
     "optional" : true,
     "advanced" : true,
@@ -187,6 +207,14 @@
         {
           "input_parameter": "reaction_ko",
           "target_property": "formulation:rxnko"
+        },
+        {
+          "input_parameter": "objective",
+          "target_property": "biomass"
+        },
+        {
+          "input_parameter": "custom_bounds",
+          "target_property": "custom_bounds"
         },
         {
           "input_parameter": "maxc_uptake",
