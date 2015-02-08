@@ -77,6 +77,22 @@ parameters :
             Default is 0, which means "no"; by default, FBA will attempt to maximize its objective (usually biomass growth). If this option is checked which means "yes", FBA will attempt to minimize the sum of all fluxes following the biomass optimization
         long-hint  : |
             Default is 0, which means "no"; by default, FBA will attempt to maximize its objective (usually biomass growth). If this option is checked which means "yes", FBA will attempt to minimize the sum of all fluxes following the biomass optimization
+    
+    objective :
+        ui-name : |
+            Reaction to maximize
+        short-hint : |
+            ID of reaction flux to maximize in flux balance analysis (e.g. rxn00001, cpd00001_e0, bio1)
+        long-hint  : |
+            ID of reaction flux to maximize in flux balance analysis (e.g. rxn00001, cpd00001_e0, bio1)
+            
+    custom_bounds :
+        ui-name : |
+            Custom flux bounds
+        short-hint : |
+            Custom bounds on reaction or exchange flux (e.g. 0<rxn00001<5, 0<cpd00001_e0<5)
+        long-hint  : |
+            Custom bounds on reaction or exchange flux (e.g. 0<rxn00001<5, 0<cpd00001_e0<5)
 
     gene_ko :
         ui-name : |
