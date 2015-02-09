@@ -49,6 +49,10 @@
           "target_property": "kmer_v1_parameters"
         },
         {
+          "constant_value": "1",
+          "target_property": "retain_old_anno_for_hypotheticals"
+        },
+        {
           "narrative_system_variable": "workspace",
           "target_property": "workspace"
         }
