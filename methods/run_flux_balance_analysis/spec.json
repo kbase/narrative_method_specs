@@ -75,7 +75,7 @@
     }
   }, {
     "id": "objective",
-    "optional":false,
+    "optional":true,
     "advanced":true,
     "allow_multiple":false,
     "default_values":["bio1"],
@@ -85,7 +85,7 @@
     }
   }, {
     "id": "custom_bounds",
-    "optional":false,
+    "optional":true,
     "advanced":true,
     "allow_multiple":true,
     "default_values":[],

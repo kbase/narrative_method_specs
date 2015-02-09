@@ -90,9 +90,9 @@ parameters :
         ui-name : |
             Custom flux bounds
         short-hint : |
-            Custom bounds on reaction or exchange flux (e.g. 0<rxn00001<5, 0<cpd00001_e0<5)
+            Custom bounds on reaction or exchange flux (e.g. 0;rxn00001;5, 0;cpd00001_e0;5)
         long-hint  : |
-            Custom bounds on reaction or exchange flux (e.g. 0<rxn00001<5, 0<cpd00001_e0<5)
+            Custom bounds on reaction or exchange flux (e.g. 0;rxn00001;5, 0;cpd00001_e0;5)
 
     gene_ko :
         ui-name : |
