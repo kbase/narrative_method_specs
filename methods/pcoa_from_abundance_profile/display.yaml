@@ -37,9 +37,9 @@ parameters :
         ui-name : |
             Abundance Profile or Matrix
         short-hint : |
-            Select a profile or matrix generated from "Retrieve Taxonomic/Functional Abundance Data"
+            Select a profile or matrix generated from the Generate Taxonomic Abundance Data or Generate Functional Abundance Data methods
         long-hint  : |
-            Select a profile or matrix generated from "Retrieve Taxonomic/Functional Abundance Data"
+            Select a profile or matrix generated from the Generate Taxonomic Abundance Data or Generate Functional Abundance Data methods
 
 
     output_pcoa :
@@ -79,7 +79,7 @@ parameters :
 
 
 description : |
-    <p>This method uses principal coordinates analysis (PCoA) to cluster abundance profiles generated with "Generate Taxonomic/Functional Abundance Data". The output is visualized with dimension reducing PCoA (each profile is represented by a single point) to identify robust correlations in the functional or taxonomic content of profiles and/or the metadata that characterize their environment. Users can select the profiles, metadata, and number of dimensions (2 or 3). A two- (using the first two principal coordinates) or three- (using the first three principal coordinates) dimensional PCoA plot will be generated. Plots are automatically colored with respect to the selected metadata.</p>
+    <p>This method uses principal coordinates analysis (PCoA) to cluster abundance profiles generated with <a data-method-id=Òretrieve_taxonomic_abundance_profileÓ>Generate Taxonomic Abundance Data</a> or <a data-method-id=Òretrieve_functional_abundance_profileÓ>Generate Functional Abundance Data</a>. The output is visualized with dimension reducing PCoA (each profile is represented by a single point) to identify robust correlations in the functional or taxonomic content of profiles and/or the metadata that characterize their environment. Users can select the profiles, metadata, and number of dimensions (2 or 3). A two- (using the first two principal coordinates) or three- (using the first three principal coordinates) dimensional PCoA plot will be generated. Plots are automatically colored with respect to the selected metadata.</p>
     
     <p>The standard metadata fields that can be used to color the samples are:</p>
     
