@@ -50,14 +50,6 @@ parameters :
         long-hint  : |
             Media condition specifying the chemical compounds in which growth of the organism is to be analyzed; complete media is used by default 
 
-    integrate_solution :
-        ui-name : |
-            Integrate Solution
-        short-hint : |
-            Check the box to integrate gapfilled reactions into the output model; otherwise, the gapfilling solution will be stored within the model for manual integration by the user
-        long-hint  : |
-            Check the box to integrate gapfilled reactions into the output model; otherwise, the gapfilling solution will be stored within the model for manual integration by the user
-
     output_model :
         ui-name : |
             Output Model
