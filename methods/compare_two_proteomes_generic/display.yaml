@@ -4,7 +4,7 @@
 name     : Compare Two Proteomes
 
 tooltip  : |
-    Perform a comparison of two proteomes, producing a dot plot matrix and a table of gene differences
+    Perform a comparison of two proteomes, producing a dot plot matrix and a table of gene differences.
 
 screenshots :
 

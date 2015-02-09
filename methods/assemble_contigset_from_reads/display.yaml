@@ -2,10 +2,9 @@
 # Define basic display information
 #
 name     : Assemble Contigs from Reads
-subtitle  : |
-    Assemble a set of short DNA reads into a set of genome contigs
+
 tooltip  : |
-    Assemble a set of short DNA reads into a set of genome contigs
+    Assemble a set of short DNA reads into a set of genome contigs.
 
 screenshots :
     - assemble_contigs_from_reads_input1.png
