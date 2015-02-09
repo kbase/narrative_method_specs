@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Communities Data Visualization
+name     : View Communities Data
 subtitle : |
     View abundance data.
 tooltip  : |

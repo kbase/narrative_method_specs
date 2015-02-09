@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Build models from metagenome
+name     : Build Models from Metagenome
 
 tooltip  : |
     This method constructs one or more ensemble and OTU models based on an input metagenome annotation.
@@ -71,7 +71,7 @@ parameters :
             The set of metabolic models that will be generated from the metagenome annoations by this method.
 
 description : |
-    <p>This method constructs a series of metabolic models for the input metagenome annotation. Models are constructed for the most abundant OTUs first, up to the specified limit. If the average number of hits per functional role in an OTU fail to exceed the specified minimum abundance, the OTU model will not be constructed. Similarly, if a constructed OTU model contains fewer than the specified minimum number of reactions, it will be rejected and its functions returned to a general pool of hits for the metagenome. Once all specified OTU models are constructed, a single ensemble model will be constructed based on all functional annotations that were not included in any OTU models.</p>
+    <p>This method constructs a series of metabolic models for the input metagenome annotation. Models are constructed for the most abundant operational taxonomic units (OTUs) first, up to the specified limit. If the average number of hits per functional role in an OTU fail to exceed the specified minimum abundance, the OTU model will not be constructed. Similarly, if a constructed OTU model contains fewer than the specified minimum number of reactions, it will be rejected and its functions returned to a general pool of hits for the metagenome. Once all specified OTU models are constructed, a single ensemble model will be constructed based on all functional annotations that were not included in any OTU models.</p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong> Chris Henry, Andreas Wilke, Travis Harrison. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
