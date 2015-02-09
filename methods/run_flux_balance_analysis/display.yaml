@@ -90,9 +90,9 @@ parameters :
         ui-name : |
             Custom flux bounds
         short-hint : |
-            Custom bounds on reaction or exchange flux (e.g. 0<rxn00001<5, 0<cpd00001_e0<5)
+            Custom bounds on reaction or exchange flux (e.g. 0;rxn00001;5, 0;cpd00001_e0;5)
         long-hint  : |
-            Custom bounds on reaction or exchange flux (e.g. 0<rxn00001<5, 0<cpd00001_e0<5)
+            Custom bounds on reaction or exchange flux (e.g. 0;rxn00001;5, 0;cpd00001_e0;5)
 
     gene_ko :
         ui-name : |
@@ -149,14 +149,6 @@ parameters :
             Maximum number of moles of phosphate permitted for uptake (default uptake rates varies from 0 to 100 for all nutrients)
         long-hint  : |
             Maximum number of moles of phosphate permitted for uptake (default uptake rates varies from 0 to 100 for all nutrients)
-    
-    input_prom :
-        ui-name : |
-            PROM Constraints
-        short-hint : |
-            Not Applicable - Obsolete 
-        long-hint  : |
-            Not Applicable - Obsolete 
 
 description : |
     
