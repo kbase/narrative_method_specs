@@ -140,8 +140,8 @@
                 "target_property": "length"
             },
             {
-                "constant_value": "format",
-                "target_property": "json"
+                "constant_value": "json",
+                "target_property": "format"
             },
             {
                 "narrative_system_variable": "token",

@@ -17,7 +17,12 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "Communities.TaxonomicMatrix", "Communities.FunctionalMatrix" ]
+      "valid_ws_types" : [
+        "Communities.TaxonomicMatrix",
+        "Communities.FunctionalMatrix",
+        "Communities.TaxonomicProfile",
+        "Communities.FunctionalProfile"
+      ]
     }
   }, {
     "id" : "name",

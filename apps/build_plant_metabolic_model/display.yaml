@@ -10,16 +10,19 @@ tooltip  : |
 screenshots : []
 
 header : |
-    <p>The Build Plant Metabolic Model app builds a metabolic model, using the annotation data from an annotated Genome object derived from PlantSEEDModels, to reconstruct the metabolic reactions that the cell is capable of performing. It then performs gapfilling, by searching for and subsequently bridging the missing metabolic reactions that were not found in the initial annotation search.</p>
+    <p>The &quot;Build Plant Metabolic Model&quot; app generates a metabolic model for a plant. The user begins by supplying a Genome object containing protein sequences. First, the genome is annotated with PlantSEED-based metabolic annotation. Secondly, a metabolic model is generated from the metabolic annotation in the Genome object. Finally, the metabolic model is gap filled so that growth can be simulated using FBA. The user can visualize the annotated genome and the resulting metabolic model.</p>
 
 step-descriptions :
     step_1 : |
         additional instructions/details regarding the step with id step_1
     step_2 : |
         additional instructions/details regarding the step with id step_2
+    step_3 : |
+        additional instructions/details regarding the step with id step_3
 
 description : |
-    <p>The Build Plant Metabolic Model app builds a metabolic model, using the annotation data from an annotated Genome object derived from PlantSEEDModels, to reconstruct the metabolic reactions that the cell is capable of performing. It then performs gapfilling, by searching for and subsequently bridging the missing metabolic reactions that were not found in the initial annotation search.</p>
+    <p>The &quot;Build Plant Metabolic Model&quot; app generates a metabolic model for a plant. The user begins by supplying a Genome object containing protein sequences. First, the genome is annotated with PlantSEED-based metabolic annotation. Secondly, a metabolic model is generated from the metabolic annotation in the Genome object. Finally, the metabolic model is gap filled so that growth can be simulated using FBA. The user can visualize the annotated genome and the resulting metabolic model.</p>
+
 
     
     
