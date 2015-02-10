@@ -39,7 +39,7 @@
             "method-id": "gapfill_a_metabolic_model",
             "input_mapping" : [
                 {
-                    "step":"step_1",
+                    "step":"step_3",
                     "is_from_input":true,
                     "from":"output_model",
                     "to": "input_model"

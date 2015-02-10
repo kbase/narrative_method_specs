@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : Insert Genome into Species Tree
+name     : Insert Genome Into Species Tree
 subtitle : |
-    Add a set of user-provided genomes to the KBase species tree.
+    Add one or more genomes to the KBase species tree.
 tooltip  : |
-    Add a set of user-provided genomes to the KBase species tree.
+    Add one or more genomes to the KBase species tree.
 
 screenshots :
     - insert_set_of_genomes_into_species_tree_input.png
@@ -36,7 +36,7 @@ parameters :
         short-hint : |
             Genome to be inserted into a phylogenetic species tree
         long-hint  : |
-            Genome to be inserted into a phylogenetic species tree for comparing it with closely related publicly available genomes
+            Genome to be inserted into a phylogenetic species tree composed of closely related publicly available genomes
 
 
     param1 :
@@ -52,9 +52,9 @@ parameters :
         ui-name : |
             Output Tree
         short-hint : |
-            Output species tree name; if empty, an ID will be chosen randomly
+            Output species tree name
         long-hint : |
-            A phylogenetic tree relating genomes available in KBase to the user-provided genome
+            The name of the output phylogenetic tree relating genomes available in KBase to your genome
 
 
 description : |

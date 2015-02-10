@@ -74,6 +74,26 @@
       "unchecked_value": 0
     }
   }, {
+    "id": "objective",
+    "optional":true,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["bio1"],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id": "custom_bounds",
+    "optional":true,
+    "advanced":true,
+    "allow_multiple":true,
+    "default_values":[],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
     "id" : "gene_ko",
     "optional" : true,
     "advanced" : true,
@@ -143,16 +163,6 @@
     "text_options" : {
       "validate_as": "float"
     }
-  }, {
-    "id" : "input_prom",
-    "optional" : true,
-    "advanced" : true,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "KBaseFBA.PromConstraint" ]
-    }
   } ],
   "behavior" : {
     "service-mapping" : {
@@ -189,6 +199,14 @@
           "target_property": "formulation:rxnko"
         },
         {
+          "input_parameter": "objective",
+          "target_property": "biomass"
+        },
+        {
+          "input_parameter": "custom_bounds",
+          "target_property": "custom_bounds"
+        },
+        {
           "input_parameter": "maxc_uptake",
           "target_property": "formulation:uptakelim:C"
         },
@@ -203,10 +221,6 @@
         {
           "input_parameter": "maxs_uptake",
           "target_property": "formulation:uptakelim:S"
-        },
-        {
-          "input_parameter": "input_prom",
-          "target_property": "formulation:promconstraint"
         },
         {
           "input_parameter": "simulate_ko",
