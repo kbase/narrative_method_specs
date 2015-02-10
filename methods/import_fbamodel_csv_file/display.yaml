@@ -1,6 +1,6 @@
-name     : FBA MODEL FROM CSV FILE
+name     : FBA MODEL FROM TSV FILE
 subtitle : none
-tooltip  : Upload an Flux Balance Analysis Model object from CSV file(s) into your narrative.
+tooltip  : Upload an Flux Balance Analysis Model object from TSV file(s) into your narrative.
 
 screenshots :
     []
@@ -13,13 +13,13 @@ method-suggestions :
 
 parameters :
     reactionFile :
-        ui-name : REACTION CSV FILE
-        short-hint : File with reactions in CSV format.
+        ui-name : REACTION TSV FILE
+        short-hint : File with reactions in TSV format.
         long-hint  : none
 
     compoundFile :
-        ui-name : COMPOUND CSV FILE
-        short-hint : File with compounds in CSV format.
+        ui-name : COMPOUND TSV FILE
+        short-hint : File with compounds in TSV format.
         long-hint  : none
 
     outputObject :
@@ -34,7 +34,7 @@ parameters :
 
     biomass :
         ui-name : BIOMASS
-        short-hint : ID of biomass reaction in Reaction CSV File
+        short-hint : ID of biomass reaction in Reaction TSV File
         long-hint  : none
 
 description : none
