@@ -18,8 +18,8 @@ parameters :
         long-hint  : none
 
     compoundFile :
-        ui-name : COMPOUND CSV FILE
-        short-hint : File with compounds in CSV format.
+        ui-name : COMPOUND TSV FILE
+        short-hint : File with compounds in TSV format.
         long-hint  : none
 
     outputObject :
@@ -34,7 +34,7 @@ parameters :
 
     biomass :
         ui-name : BIOMASS
-        short-hint : ID of biomass reaction in Reaction CSV File
+        short-hint : ID of biomass reaction in Reaction TSV File
         long-hint  : none
 
 description : none
