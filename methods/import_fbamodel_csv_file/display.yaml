@@ -34,7 +34,7 @@ parameters :
 
     biomass :
         ui-name : BIOMASS
-        short-hint : ID of biomass reaction in Reaction CSV File
+        short-hint : ID of biomass reaction in Reaction TSV File
         long-hint  : none
 
 description : none
