@@ -50,10 +50,6 @@
               {
                   "narrative_system_variable": "workspace",
                   "target_property": "ws"
-              },
-              {
-                  "narrative_system_variable": "token",
-                  "target_property": "auth"
               }
           ]
       }

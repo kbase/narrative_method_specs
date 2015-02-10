@@ -10,7 +10,7 @@ tooltip  : |
 screenshots : []
 
 header : |
-    <p>The &quot;Build Plant Metabolic Model&quot; app generates a metabolic model for a plant. The user begins by supplying a Genome object containing protein sequences. First, the genome is annotated with PlantSEED-based metabolic annotation. Secondly, a metabolic model is generated from the metabolic annotation in the Genome object. Finally, the metabolic model is gap filled so that growth can be simulated using FBA. The user can visualize the annotated genome and the resulting metabolic model.</p>
+    <p>The Build Plant Metabolic Model app generates metabolic models for a plant. This app starts with either using import of transcript sequences (cDNA or protein sequences) in fasta format or using transcript sequences stored as Genome object in KBase. It involves three steps. First, the transcript sequences are annotated with PlantSEED based metabolic annotations. Second, a draft metabolic model is generated using annotated Genome object. Third, the draft metabolic model is gapfilled so that growth can be stimulated using Flux Balance Analysis (FBA). The user can visualize and download the annotated genome and the resulting metabolic models.</p>
 
 step-descriptions :
     step_1 : |
@@ -21,7 +21,7 @@ step-descriptions :
         additional instructions/details regarding the step with id step_3
 
 description : |
-    <p>The &quot;Build Plant Metabolic Model&quot; app generates a metabolic model for a plant. The user begins by supplying a Genome object containing protein sequences. First, the genome is annotated with PlantSEED-based metabolic annotation. Secondly, a metabolic model is generated from the metabolic annotation in the Genome object. Finally, the metabolic model is gap filled so that growth can be simulated using FBA. The user can visualize the annotated genome and the resulting metabolic model.</p>
+    <p>The Build Plant Metabolic Model app generates metabolic models for a plant. This app starts with either using import of transcript sequences (cDNA or protein sequences) in fasta format or using transcript sequences stored as Genome object in KBase. It involves three steps. First, the transcript sequences are annotated with PlantSEED based metabolic annotations. Second, a draft metabolic model is generated using annotated Genome object. Third, the draft metabolic model is gapfilled so that growth can be stimulated using Flux Balance Analysis (FBA). The user can visualize and download the annotated genome and the resulting metabolic models.</p>
 
 
     

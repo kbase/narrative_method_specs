@@ -35,9 +35,9 @@ parameters :
         ui-name : |
             Abundance Profile or Matrix
         short-hint : |
-            Select a profile or set of profiles generated from "Generate Taxonomic/Functional Abundance Data" methods
+            Select a profile or set of profiles generated from the Generate Taxonomic Abundance Data or Generate Functional Abundance Data methods
         long-hint  : |
-            Select a profile or set of profiles generated from "Generate Taxonomic/Functional Abundance Data" methods
+            Select a profile or set of profiles generated from the Generate Taxonomic Abundance Data or Generate Functional Abundance Data methods
 
 
     name :

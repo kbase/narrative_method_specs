@@ -33,7 +33,7 @@ suggestions :
 parameters :
     input_model :
         ui-name : |
-            FBA Model
+            Draft Model
         short-hint : |
             A metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass
         long-hint : |
@@ -52,7 +52,7 @@ parameters :
 
     output_model :
         ui-name : |
-            Output Model
+            Gapfilled Model
         short-hint : |
             Name of the model produced by the gapfill analysis
         long-hint  : |
