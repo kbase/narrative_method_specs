@@ -166,7 +166,7 @@
   } ],
   "behavior" : {
     "service-mapping" : {
-      "url" : "",
+      "url" : "impl",
       "name" : "KBaseFBAModeling",
       "method" : "runfba",
       "input_mapping" : [
