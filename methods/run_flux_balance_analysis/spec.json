@@ -166,10 +166,14 @@
   } ],
   "behavior" : {
     "service-mapping" : {
-      "url" : "impl",
+      "url" : "",
       "name" : "KBaseFBAModeling",
       "method" : "runfba",
       "input_mapping" : [
+        {
+          "constant_value": "1",
+          "target_property": "localmode"
+        },
         {
           "input_parameter": "input_model",
           "target_property": "model"
