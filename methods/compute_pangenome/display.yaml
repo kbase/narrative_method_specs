@@ -38,17 +38,17 @@ parameters :
         ui-name : |
             Genome(s)
         short-hint : |
-            Add several Genomes to compose a set (optional - but then a genome set must be provided in the next input)
+            Add several Genomes one at a time to compose a set (optional - but then a GenomeSet must be provided in the previous input)
         long-hint  : |
-            Add several Genomes to compose a set (optional - but then a genome set must be provided in the next input)
+            Add several Genomes one at a time to compose a set (optional - but then a GenomeSet must be provided in the previous input)
 
     input_genomeset :
         ui-name : |
             Genome Set
         short-hint : |
-            A set of references to genomes stored in KBase (optional - but then at least two genomes must be provided in the previous input)
+            A set of references to genomes stored in KBase (optional - but then at least two genomes must be provided in the next input)
         long-hint  : |
-            A set of references to genomes stored in KBase (optional - but then at least two genomes must be provided in the previous input)
+            A set of references to genomes stored in KBase (optional - but then at least two genomes must be provided in the next input)
 
     output_pangenome :
         ui-name : |
