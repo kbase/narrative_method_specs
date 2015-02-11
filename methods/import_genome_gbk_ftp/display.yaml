@@ -33,9 +33,9 @@ parameters :
         ui-name : |
             FTP FOLDER
         short-hint : |
-            Enter the path to the FTP folder with the GBK-file(s).<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/
+            Enter the path to the FTP folder with the GenBank file(s). The uncompressed data has to be less than 2G.<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/
         long-hint  : |
-            Enter the path to the FTP folder with the GBK-file(s).<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/
+            Enter the path to the FTP folder with the GenBank file(s). The uncompressed data has to be less than 2G.<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/
 
     outputObject :
         ui-name : |
@@ -55,7 +55,7 @@ parameters :
 
 
 description : |
-    Import into your narrative a genome from your local GBK files from an FTP, such as NCBI.
+    Import into your narrative a genome from your local GenBank files from an FTP, such as NCBI.
 
 
 technical-description : |
