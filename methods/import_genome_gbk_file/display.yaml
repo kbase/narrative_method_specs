@@ -34,9 +34,9 @@ parameters :
         ui-name : |
             GENBANK FILE
         short-hint : |
-            File with genome data in GenBank format or zip-file with contigs. The uncompressed data has to be less than 2G.
+            File with genome data in GenBank format or zip-file with contigs. The uncompressed data has to be less than 2G and with < 10000 files or contigs.
         long-hint  : |
-            File with genome data in GenBank format or zip-file with contigs. The uncompressed data has to be less than 2G.
+            File with genome data in GenBank format or zip-file with contigs. The uncompressed data has to be less than 2G  and with < 10000 files or contigs.
 
     outputObject :
         ui-name : |
