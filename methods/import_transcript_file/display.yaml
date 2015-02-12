@@ -34,13 +34,13 @@ parameters :
         ui-name : |
             FASTA FILE
         short-hint : |
-            File with protein/rna data in FASTA format.
+            File with protein/cDNA in FASTA format (must have .fa or .fasta extension).
         long-hint  : |
-            File with protein/rna data in FASTA format.
+            File with protein/cDNA in FASTA format (must have .fa or .fasta extension).
 
     outputObject :
         ui-name : |
-            GENOME OBJECT ID
+            GENOME OBJECT NAME
         short-hint : |
             Provide a name for the genome object you are uploading.<br>ex) Athaliana.TAIR10
         long-hint  : |
@@ -50,9 +50,9 @@ parameters :
         ui-name : |
             GENOME IDENTIFIER
         short-hint : |
-            Optional genome tdentifier
+            Optional genome identifier.
         long-hint  : |
-            Optional genome tdentifier
+            Optional genome identifier.
 
     dna :
         ui-name : |
