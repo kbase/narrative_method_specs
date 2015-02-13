@@ -48,6 +48,10 @@
       "method" : "build_pangenome",
       "input_mapping" : [
         {
+          "constant_value": "1",
+          "target_property": "localmode"
+        },
+        {
           "input_parameter": "input_genomeset",
           "target_property": "pangenome_set"
         },
