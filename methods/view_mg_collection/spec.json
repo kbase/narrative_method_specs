@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["active"],
+  "categories" : ["active","viewers"],
   "widgets" : {
     "input" : null,
     "output" : "CollectionView"
