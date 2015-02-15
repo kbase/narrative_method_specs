@@ -2,10 +2,9 @@
 # Define basic display information
 #
 name     : View Abundance Data
-subtitle : |
-    View the annotation abundance data as a table and boxplot
+
 tooltip  : |
-    View the annotation abundance data as a table and boxplot
+    View annotation abundance data as a table or a boxplot.
 
 screenshots :
 

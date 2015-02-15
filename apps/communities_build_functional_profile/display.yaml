@@ -3,9 +3,9 @@
 #
 name     : Build and Normalize Metagenomic Functional Abundance Data
 subtitle : |
-    Build and normalize functional abundance data for selected metagenomes.
+    Derive the relative abundance of genes assigned to a user-selected functional ontology in one or more selected metagenomes.
 tooltip  : |
-    Build and normalize functional abundance data for selected metagenomes. 
+    Derive the relative abundance of genes assigned to a user-selected functional ontology in one or more selected metagenomes. 
 
 
 screenshots : []
