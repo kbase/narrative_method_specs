@@ -4,7 +4,7 @@
 name     : Generate Functional Abundance Data
 
 tooltip  : |
-    Generate functional annotation abundance data for selected metagenomes.
+    Calculate absolute functional abundance profiles using different annotation ontologies for one or more WGS metagenomes.
 
 screenshots :
     - retrieve_functional_abundance_profile_input.png

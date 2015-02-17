@@ -3,17 +3,15 @@
 #
 name     : Reconstruct Genome-scale Metabolic Model
 subtitle : |
-    Construct a genome-scale metabolic model and gapfill it to simulate growth in a specified growth condition.
+    Infer and gapfill a metabolic FBA model from a microbial genome in a specified growth condition.
 tooltip  : |
-    Construct a genome-scale metabolic model and gapfill it to simulate growth in a specified growth condition.
+    Infer and gapfill a metabolic FBA model from a microbial genome in a specified growth condition.
 
 screenshots : []
 
 
 header : |
     <p>The Reconstruct Genome-scale Metabolic Model app builds a metabolic model, using the annotation data from an annotated Genome object to reconstruct the metabolic reactions that the cell is capable of performing.  It then performs gapfilling, which is the search for and subsequent bridging of missing metabolic reactions that were not found in the initial annotation search.</p>
-    
-    <p><a href="https://docs.google.com/document/d/1sWVb-adcUUuzLvToISCkjxkoZPAhtHGmqKiKYqj3tn8/">Link to Reconstruct Genome-scale Metabolic Model tutorial</a></p>
 
 
 step-descriptions :
@@ -25,5 +23,4 @@ step-descriptions :
 
 description : |
     <p>The Reconstruct Genome-scale Metabolic Model app builds a metabolic model, using the annotation data from an annotated Genome object to reconstruct the metabolic reactions that the cell is capable of performing.  It then performs gapfilling, which is the search for and subsequent bridging of missing metabolic reactions that were not found in the initial annotation search.</p>
-    
-    <p><a href="https://docs.google.com/document/d/1sWVb-adcUUuzLvToISCkjxkoZPAhtHGmqKiKYqj3tn8/">Link to Reconstruct Genome-scale Metabolic Model tutorial</a></p>
+

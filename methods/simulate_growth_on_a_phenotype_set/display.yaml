@@ -3,9 +3,9 @@
 #
 name     : Simulate Growth on Phenotype Data
 subtitle : |
-    This method uses Flux Balance Analysis to simulate multiple growth phenotypes.
+    Use Flux Balance Analysis (FBA) to simulate multiple growth phenotypes.
 tooltip  : |
-    This method uses Flux Balance Analysis to simulate multiple growth phenotypes.
+    Use Flux Balance Analysis (FBA) to simulate multiple growth phenotypes.
 
 screenshots :
     - simulate_growth_on_a_phenotype_data_input.png

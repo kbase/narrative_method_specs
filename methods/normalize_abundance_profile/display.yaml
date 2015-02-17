@@ -4,7 +4,7 @@
 name     : Normalize Abundance Data
 
 tooltip  : |
-    Normalize abundance data produced by Generate Functional/Taxonomic Abundance Data methods.
+    Normalize metagenomic abundance data produced by the Generate Taxonomic Abundance Data or Generate Functional Abundance Data methods.
 
 screenshots :
     - normalize_abundance_profile_input.png

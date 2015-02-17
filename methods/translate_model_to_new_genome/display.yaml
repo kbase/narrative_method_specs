@@ -2,10 +2,9 @@
 # Define basic display information
 #
 name     : Propagate Model to New Genome
-subtitle : |
-    This method translates a metabolic model from one genome to another.  
+ 
 tooltip  : |
-    This method translates a metabolic model from one genome to another.
+    Translate the metabolic model of one organism to another, using a mapping of similar proteins between their genomes.
 
 screenshots :
     - propagate_model_to_new_genome_input.png
