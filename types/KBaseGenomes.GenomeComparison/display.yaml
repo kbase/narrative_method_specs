@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : Genomes comparison
+subtitle : Genomes comparison object
+tooltip  : Genomes comparison object
+
+icon : none
+
+description : |
+    <p>This type describes genomes comparison.</p>
+
+    
+    
+    
