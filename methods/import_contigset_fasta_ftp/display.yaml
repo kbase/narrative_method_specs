@@ -32,11 +32,11 @@ suggestions :
 parameters :
     ftpFolder :
         ui-name : |
-            FTP FOLDER
+            FTP FILE
         short-hint : |
-            Path to FTP folder with genome Fasta-file.
+            Path to FTP file in Fasta format.<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/NC_008321.fna
         long-hint  : |
-            Path to FTP folder with genome Fasta-file.
+            Path to FTP file in Fasta format.<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/NC_008321.fna
 
     outputObject :
         ui-name : |
