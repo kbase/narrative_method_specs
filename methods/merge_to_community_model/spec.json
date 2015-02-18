@@ -48,6 +48,10 @@
       "method" : "models_to_community_model",
       "input_mapping" : [
         {
+          "constant_value": "1",
+          "target_property": "localmode"
+        },
+        {
           "input_parameter": "input_models",
           "target_property": "community_submodel_ids"
         },
