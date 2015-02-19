@@ -3,9 +3,9 @@
 #
 name     : Build and Normalize Metagenomic Taxonomic Abundance Data
 subtitle : |
-    Build and normalize taxonomic abundance data for selected metagenomes.
+    Derive the relative abundance of genes assigned to a user-selected taxonomic ontology in one or more selected metagenomes.
 tooltip  : |
-    Build and normalize taxonomic abundance data for selected metagenomes. 
+    Derive the relative abundance of genes assigned to a user-selected taxonomic ontology in one or more selected metagenomes. 
 
 
 screenshots : []

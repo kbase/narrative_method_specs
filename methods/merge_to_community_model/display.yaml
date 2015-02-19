@@ -4,7 +4,7 @@
 name     : Merge Metabolic Models into Community Model
 
 tooltip  : |
-    This method merges two or more metabolic models into a compartmentalized community model.
+    Merge two or more metabolic models into a compartmentalized community model.
 
 screenshots :
     - merge_metabolic_models_into_community_model_input.png

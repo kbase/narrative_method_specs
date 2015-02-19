@@ -3,10 +3,9 @@
 #
 name     : View Abundance Data Table
 subtitle : |
-    View the annotation abundance data as a table
+    View annotation abundance data as a table.
 tooltip  : |
-    View the annotation abundance data as a table
-
+    View annotation abundance data as a table.
 screenshots :
 
     - view_abundance_data_input.png
