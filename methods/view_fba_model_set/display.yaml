@@ -1,0 +1,47 @@
+#
+# Define basic display information
+#
+name     : View FBA Model Set
+subtitle : |
+    View FBA Model Set.
+tooltip  : |
+    View FBA Model Set.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            FBA Model Set ID
+        short-hint : |
+            FBA Model Set ID
+        long-hint  : |
+            FBA Model Set ID
+
+
+description : |
+    View FBA model set.
+
+
+technical-description : |
+    View FBA model set.
