@@ -1,0 +1,37 @@
+{
+  "name" : "View Metagenome Collection",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active","viewers"],
+  "widgets" : {
+    "input" : null,
+    "output" : "CollectionView"
+  },
+  "parameters" : [ {
+    "id" : "input_metagenomes",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "Communities.Collection" ]
+    }
+  } ],
+  "behavior" : {
+      "none" : {
+            "output_mapping" : [
+                {
+                    "input_parameter": "input_metagenomes",
+                    "target_property": "id"
+                },
+                {
+                    "narrative_system_variable": "workspace",
+                    "target_property": "ws"
+                }
+            ]
+        }
+  }
+}

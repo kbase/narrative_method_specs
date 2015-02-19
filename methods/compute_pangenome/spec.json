@@ -10,8 +10,18 @@
     "output" : "kbasePanGenome"
   },
   "parameters" : [ {
+    "id" : "input_genomeset",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseSearch.GenomeSet" ]
+    }
+  }, {
     "id" : "input_genomes",
-    "optional" : false,
+    "optional" : true,
     "advanced" : false,
     "allow_multiple" : true,
     "default_values" : [ "" ],
@@ -37,6 +47,10 @@
       "name" : "KBaseFBAModeling",
       "method" : "build_pangenome",
       "input_mapping" : [
+        {
+          "input_parameter": "input_genomeset",
+          "target_property": "pangenome_set"
+        },
         {
           "input_parameter": "input_genomes",
           "target_property": "genomes"

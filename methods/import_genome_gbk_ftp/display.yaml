@@ -13,12 +13,17 @@ screenshots :
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
-
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 #
 # Configure the display and description of the parameters
@@ -26,11 +31,11 @@ method-suggestions :
 parameters :
     ftpFolder :
         ui-name : |
-            FTP FOLDER
+            FTP FILE
         short-hint : |
-            Enter the path to the FTP folder with the GBK-file(s).<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/
+            Enter the path to the FTP file in GenBank format. The uncompressed data has to be less than 2G.<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/NC_008321.gbk
         long-hint  : |
-            Enter the path to the FTP folder with the GBK-file(s).<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/
+            Enter the path to the FTP file in GenBank format. The uncompressed data has to be less than 2G.<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/NC_008321.gbk
 
     outputObject :
         ui-name : |
@@ -50,7 +55,7 @@ parameters :
 
 
 description : |
-    Import into your narrative a genome from your local GBK files from an FTP, such as NCBI.
+    Import into your narrative a genome from your local GenBank files from an FTP, such as NCBI.
 
 
 technical-description : |

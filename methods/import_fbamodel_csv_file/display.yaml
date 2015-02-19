@@ -1,0 +1,42 @@
+name     : FBA MODEL FROM TSV FILE
+subtitle : none
+tooltip  : Upload an Flux Balance Analysis Model object from TSV file(s) into your narrative.
+
+screenshots :
+    []
+
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+parameters :
+    reactionFile :
+        ui-name : REACTION TSV FILE
+        short-hint : File with reactions in TSV format.
+        long-hint  : none
+
+    compoundFile :
+        ui-name : COMPOUND TSV FILE
+        short-hint : File with compounds in TSV format.
+        long-hint  : none
+
+    outputObject :
+        ui-name : OUTPUT OBJECT ID
+        short-hint : ID for output Flux Balance Analysis Model
+        long-hint  : none
+
+    genomeObject :
+        ui-name : GENOME
+        short-hint : Identifier for Genome which contains features referenced to in FBAModel
+        long-hint  : none
+
+    biomass :
+        ui-name : BIOMASS
+        short-hint : ID of biomass reaction in Reaction TSV File
+        long-hint  : none
+
+description : none
+
+technical-description : none

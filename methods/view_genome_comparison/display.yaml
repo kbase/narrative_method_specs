@@ -1,0 +1,47 @@
+#
+# Define basic display information
+#
+name     : View Genome Comparison
+subtitle : |
+    View genome comparison results.
+tooltip  : |
+    View genome comparison results.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Genome comparison ID
+        short-hint : |
+            Genome comparison ID
+        long-hint  : |
+            Genome comparison ID
+
+
+description : |
+    View genome comparison results.
+
+
+technical-description : |
+    View genome comparison results.

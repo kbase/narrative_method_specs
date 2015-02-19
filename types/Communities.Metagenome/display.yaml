@@ -5,7 +5,7 @@ name     : Metagenome
 subtitle : Metagenome object
 tooltip  : Metagenome object
 
-icon : contigset.jpg
+icon : none
 
 description : |
     <p>This type describes a metagemome.</p>

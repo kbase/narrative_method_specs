@@ -3,10 +3,9 @@
 #
 name     : View Abundance Data Table
 subtitle : |
-    View the annotation abundance data as a table
+    View annotation abundance data as a table.
 tooltip  : |
-    View the annotation abundance data as a table
-
+    View annotation abundance data as a table.
 screenshots :
 
     - view_abundance_data_input.png
@@ -15,11 +14,17 @@ screenshots :
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #

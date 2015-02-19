@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : View Metagenome Collection
+subtitle : |
+    Overview of metagenome collection metadata.
+tooltip  : |
+    Overview of metagenome collection metadata.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_metagenomes :
+        ui-name : |
+            Metagenome List
+        short-hint : |
+            object name of Communities.Collection
+        long-hint  : |
+            object name of Communities.Collection
+
+
+description : |
+    Overview of metagenome metadata.
+
+
+technical-description : |
+    Overview of metagenome metadata.

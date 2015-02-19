@@ -2,10 +2,9 @@
 # Define basic display information
 #
 name     : View Abundance Data PCoA
-subtitle : |
-    View a PCoA generated from an abundance profile
+
 tooltip  : |
-    View a PCoA generated from an abundance profile
+    View a principal coordinates analysis (PCoA) generated from an abundance profile.
 
 screenshots :
     []
@@ -13,11 +12,17 @@ screenshots :
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #

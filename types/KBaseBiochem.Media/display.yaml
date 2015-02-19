@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : Media
+subtitle : Media object
+tooltip  : Media object
+
+icon : none
+
+description : |
+    <p>This type describes Media object.</p>
+
+    
+    
+    

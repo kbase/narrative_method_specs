@@ -30,17 +30,6 @@
       "valid_ws_types" : [ "KBaseBiochem.Media" ]
     }
   }, {
-    "id": "integrate_solution",
-    "optional":false,
-    "advanced":false,
-    "allow_multiple":false,
-    "default_values":["1"],
-    "field_type" : "checkbox",
-    "checkbox_options":{
-      "checked_value": 1,
-      "unchecked_value": 0
-    }
-  }, {
     "id" : "output_model",
     "optional" : false,
     "advanced" : false,
@@ -92,10 +81,6 @@
           "target_property": "formulation:formulation:media"
         },
         {
-          "input_parameter": "integrate_solution",
-          "target_property": "integrate_solution"
-        },
-        {
           "input_parameter": "comprehensive_gapfill",
           "target_property": "simultaneous"
         },
@@ -108,20 +93,21 @@
           "target_property": "fastgapfill"
         },
         {
+          "constant_value": 1,
+          "target_property": "integrate_solution"
+        },
+        {
           "narrative_system_variable": "workspace",
           "target_property": "workspace"
-        }
-        ,
+        },
         {
           "narrative_system_variable": "workspace",
           "target_property": "model_workspace"
-        }
-        ,
+        },
         {
           "narrative_system_variable": "workspace",
           "target_property": "source_model_ws"
-        }
-        ,
+        },
         {
           "narrative_system_variable": "workspace",
           "target_property": "formulation:formulation:media_workspace"

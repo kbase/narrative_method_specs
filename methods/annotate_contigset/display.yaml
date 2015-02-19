@@ -9,14 +9,22 @@ tooltip  : |
 screenshots :
     []
 
+icon: icon.png
+
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #
@@ -58,217 +66,206 @@ parameters :
 
     call_features_rRNA_SEED :
         ui-name : |
-            Call features rRNA SEED
+            Call rRNAs
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_tRNA_trnascan :
         ui-name : |
-            Call features tRNA trnascan
+            Call tRNAs with tRNAscan
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-    
+            See manual page for description of annotation pipieline
+                
     call_selenoproteins :
         ui-name : |
             Call selenoproteins
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_pyrrolysoproteins :
         ui-name : |
             Call pyrrolysoproteins
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_repeat_region_SEED :
         ui-name : |
-            Call features repeat region SEED
+            Call large repeat regions
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_insertion_sequences :
         ui-name : |
-            Call features insertion sequences
+            Call insertion sequences
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_strep_suis_repeat :
         ui-name : |
-            Call features strep suis repeat
+            Find Streptococcus repeat regions
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_strep_pneumo_repeat :
         ui-name : |
             Call features strep pneumo repeat
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_crispr :
         ui-name : |
-            Call features crispr
+            Call CRISPRs
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_CDS_glimmer3 :
         ui-name : |
-            Call features CDS glimmer3
+            Call protein-encoding genes with Glimmer3
         short-hint : |
-            Analysis steps to include in annotation pipieline
+        short-hint : |
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_CDS_prodigal :
         ui-name : |
-            Call features CDS prodigal
+            Call protein-encoding genes with Prodigal
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     annotate_proteins_kmer_v2 :
         ui-name : |
-            Annotate proteins kmer v2
+            Annotate protein-encoding genes with k-mers v2
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     kmer_v1_parameters :
         ui-name : |
-            Kmer v1 parameters
+            Annotate remaining hypothetical proteins with k-mers
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     annotate_proteins_similarity :
         ui-name : |
-            Annotate proteins similarity
+            Annotate remaining hypothetical proteins by searching against close relatives
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     resolve_overlapping_features :
         ui-name : |
-            Resolve overlapping features
+            Perform basic gene overlap removal
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     find_close_neighbors :
         ui-name : |
             Find close neighbors
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_prophage_phispy :
         ui-name : |
-            Call features prophage phispy
+            Find prophage elements with phispy
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-
+            See manual page for description of annotation pipieline
+            
     output_genome :
         ui-name : |
             Output Genome Name
         short-hint : |
-            Name to assign the output genome; if left blank, a name will be generated for you
-        long-hint  : |
-            Name to assign the output genome; if left blank, a name will be generated for you
+            Name to assign the output genome
 
 
 description : |
-    <p>This method uses components from the RAST (Rapid Annotations using Subsystems Technology) toolkit to annotate an assembled bacterial or archaeal genome.  The required input--a set of contigs in FASTA format--can be generated using the Assemble Contigs app, or uploaded from a user’s computer or imported via ftp.  The method converts the FASTA file of contigs (the &quot;Contig Set&quot;) into a genome typed object, which is called a &quot;Genome&quot; in the data menu.</p>
-
+    <p>This method uses components from the RAST (<a href= "http://rast.nmpdr.org/">Rapid Annotations using Subsystems Technology</a>) toolkit to annotate an assembled bacterial or archaeal genome.  The required input - a Contig Set in FASTA format - can be generated using the <a data-method-id=“assemble_contigset_from_reads”>Assemble Contigs from Reads</a> method, uploaded from a GenBank file, or imported directly from NCBI via FTP.  The method converts the FASTA file of contigs (the &quot;Contig Set&quot;) into a genome typed object, which is called a &quot;Genome&quot; in the data menu.</p>
+    
     <p>There are three essential metadata fields that must be filled in: scientific name, domain, and genetic code. Most bacterial and archaeal genomes use genetic code 11, while Mycoplasmas use genetic code 4. For more information on genetic codes please refer to <a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi">this NCBI document</a>. All fields are required because they affect conditional parameters in various programs that are being run. Use existing scientific names whenever possible.</p>
-
-    <p><strong>Inputs</strong>
     
-    <p<i>ContigSet</i><br>
-    A set of bacterial or archaeal genomic contigs in FASTA format</p>
-    
-    <p><strong>Outputs</strong>
-    
-    <p><i>Output Genome</i><br>
-    A genome (set of DNA contigs) including structural and functional annotations</p>
-    </p>
-    
-    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
-    Thomas Brettin, James Davis, Terry Disz, Robert Edwards, Chris Henry, Gary Olsen, Robert Olson, Ross Overbeek, Bruce Parrello, Gordon Pusch, Roman Sutormin, Fangfang Xia. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
-
     <p><strong>The Default Annotation Pipeline</strong><br>
     Clicking &quot;Run&quot; will run the default pipeline. For a typical 2-5 MBp genome, this should take about 5 minutes. The default pipeline consists of the following steps:</p>
-
+    
     <ol>
-    <li><i>Call rRNAs</i><br>
+    <li><i>Call rRNAs (default = on)</i><br>
     This is a custom BLAST-based tool.</li>
-
-    <li><i>Call tRNAs with tRNAscan</i><br>
+    
+    <li><i>Call tRNAs with tRNAscan (default = on)</i><br>
     <a href="http://www.ncbi.nlm.nih.gov/pubmed/902310"a="a">More info</a></li>
-
-    <li><i>Call selenoproteins</i><br>
+    
+    <li><i>Call selenoproteins (default = on)</i><br>
     This is a custom BLAST-based tool.</li>
-
-    <li><i>Call pyrrolysylproteins</i><br>
+    
+    <li><i>Call pyrrolysylproteins (default = on)</i><br>
     This is a custom BLAST-based tool.</li>
-
-    <li><i>Call large repeat regions</i><br>
+    
+    <li><i>Call large repeat regions (default = on)</i><br>
     This is a BLASTN search within the genome for regions greater than 95% nucleotide similarity greater than or equal to 100bp in length.</li>
-
-    <li><i>Find Streptococcus repeat regions</i><br>
+    
+    <li><i>Find insertion sequences (default = off)</i><br>
+    This uses a series of BLAST searches to find insertion sequences by first looking for known insertion sequences, and then searching for inverted repeats with a transposase gene.</li>
+    
+    <li><i>Find Streptococcus repeat regions (default = contitional)</i><br>
     This is a conditional command that will only be implemented if the genus is Streptococcus. <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3049150/">More info</a>.</li>
-
-    <li><i>Call CRISPRs</i><br>
+    
+    <li><i>Call CRISPRs (default = on)</i><br>
     This is a custom tool that uses a perl regular expression-based search to find CRISPR elements.</li>
-
-    <li><i>Call the protein-encoding genes with Prodigal and Glimmer3</i><br>
+    
+    <li><i>Call the protein-encoding genes with Prodigal and Glimmer3 (default = on)</i><br>
     See <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=20211023">Prodigal</a> and
     <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=17237039">Glimmer</a> for more info
     </li>
-
-    <li><i>Annotate protein-encoding genes with k-mers (version 2)</i><br>
+    
+    <li><i>Annotate protein-encoding genes with k-mers (version 2; default = on)</i><br>
     This is a set of signature k-mers (amino acid 8-mers) built from the annotations in the <a href="http://core.theseed.org/FIG/seedviewer.cgi">CoreSEED</a>. The CoreSEED is a database of ~1,000 diverse microbial genomes and is currently the main focus of the RAST manual annotation efforts.  Annotating using this k-mer set provides the user with our most stable and best estimate of the core gene functions.</li>
-
-    <li><i>Annotate remaining hypothetical proteins with k-mers (version 1)</i><br>
+    
+    <li><i>Annotate remaining hypothetical proteins with k-mers (version 1; default = on)</i><br>
     This set of k-mers is built from the <a href="http://www.ncbi.nlm.nih.gov/pubmed/19762480">FigFam collection</a> in the PubSEED, which is the publically annotated version of the SEED database that consists of ~12,000 microbial genomes.  The &quot;classic&quot; version of RAST on the RAST website (rast.nmpdr.org) uses the FigFam-based k-mers (hence the version 1 designation).</li>
     
-    <li><i>Annotate remaining hypothetical proteins by searching against close relatives </i><br>
-    We have several nonredundant databases for the most common genera.  If the genus name of your organism matches one of these, a search will be performed against the remaining hypothetical proteins to attempt to find a function.  The search uses a combination of BLAT and BLAST.</li>    
-
-    <li><i>Perform a basic gene overlap removal</i><br>
+    <li><i>Annotate remaining hypothetical proteins by searching against close relatives (default = on)</i><br>
+    We have several nonredundant databases for the most common genera.  If the genus name of your organism matches one of these, a search will be performed against the remaining hypothetical proteins to attempt to find a function.  The search uses a combination of BLAT and BLAST.</li>
+    
+    <li><i>Perform a basic gene overlap removal (default = on)</i><br>
     Using multiple gene calling algorithms can result in overlapping gene calls. This program is a custom tool that attempts to minimize overlaps and gaps to provide a set of calls that has a smaller number of gene calling errors. We do not recommend using overlap removal if you are attempting to annotate phage.</li>
-
-    <li><i>Find close neighbors</i><br>
+    
+    <li><i>Find close neighbors (default = on)</i><br>
     After the genome has been annotated, a BLASTP search using a set of unique proteins from the genome is used to find closely related genomes in KBase. The similarity is BLAST-based and should not be considered phylogenetic; however, this works well for quickly finding close relatives for downstream applications.
+    
+    <li><i>Find prophage elements with phispy (default = off)</i><br>
+    This will use the phispy program to find prophage elements. <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=22584627">More information on phispy can be found here.</a>
     </li>
     </ol>
     </p>
-
-    
     
     <p><strong>Advanced Annotation Options</strong><br>
     If you wish to customize your annotation, you can click the &quot;show advanced options&quot; link. This will display the full set of available annotation programs. There are currently two additional options,  &quot;Call features insertion sequences &quot; and &quot;Call features prophage phispy&quot;, which are left unchecked in the default pipeline because they are slower.  The insertion sequence finder is a custom BLAST-based script, and information on phispy can be found <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=22584627">here</a>.</p>
@@ -278,15 +275,8 @@ description : |
     
     <p><strong>Additional Information</strong><br>
     For more information on the steps of the default RAStk pipeline please refer to our publication on this (publication forthcoming). For more detailed tutorial information and to explore the additional functionality of RASTtk not currently available in the Narrative interface please refer to <a href="http://tutorial.theseed.org">http://tutorial.theseed.org.</a></p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Thomas Brettin, James Davis, Terry Disz, Robert Edwards, Chris Henry, Gary Olsen, Robert Olson, Ross Overbeek, Bruce Parrello, Gordon Pusch, Roman Sutormin, Fangfang Xia. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
-    <p></p>
-
-    <p></p>
-
-    <p></p>
-
-    <p></p>
-
-
-technical-description : |
     

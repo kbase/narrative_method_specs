@@ -1,0 +1,32 @@
+{
+    "ver":"0.1.0",
+    "authors": [ "chenry" ],
+    "contact": "help@kbase.us",
+
+    "categories": [ "featured_apps" ],
+
+    "steps" : [
+        {
+            "step-id": "step_1",
+            "method-id": "insert_set_of_genomes_into_species_tree_generic"
+        },
+
+        {
+            "step-id": "step_2",
+            "method-id": "build_genome_set_from_tree_generic",
+            "input_mapping" : [
+                {
+                    "step":"step_1",
+                    "is_from_input":true,
+                    "from":"param2",
+                    "to": "param0"
+                }
+            ]
+        }
+    ],
+
+
+    "behavior": {
+    }
+
+}

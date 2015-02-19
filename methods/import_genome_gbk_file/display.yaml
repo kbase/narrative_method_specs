@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : UPLOAD GBK FILE
+name     : UPLOAD GenBank FILE
 subtitle : |
-    Import into your narrative a genome and contig set from a local file in GBK format.
+    Import into your narrative a genome and contig set from a local file in GenBank format.
 tooltip  : |
-    Import into your narrative a genome and contig set from a local file in GBK format.
+    Import into your narrative a genome and contig set from a local file in GenBank format.
 
 screenshots :
     []
@@ -13,11 +13,17 @@ screenshots :
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #
@@ -28,9 +34,9 @@ parameters :
         ui-name : |
             GENBANK FILE
         short-hint : |
-            File with genome data in GBK format or zip-file with contigs.
+            File with genome data in GenBank format or zip-file with contigs. The uncompressed data has to be less than 2G and with < 10000 files or contigs.
         long-hint  : |
-            File with genome data in GBK format or zip-file with contigs.
+            File with genome data in GenBank format or zip-file with contigs. The uncompressed data has to be less than 2G  and with < 10000 files or contigs.
 
     outputObject :
         ui-name : |
@@ -44,14 +50,14 @@ parameters :
         ui-name : |
             CONTIG-SET OBJECT ID
         short-hint : |
-            Provide a name for the contig-set object you are uploading. If empty, an ID will be chosen based on genome object ID.
+            Provide a name for the contig-set object you are uploading. If empty, an ID will be chosen based on the genome object ID.
         long-hint  : |
-            Provide a name for the contig-set object you are uploading. If empty, an ID will be chosen based on genome object ID.
+            Provide a name for the contig-set object you are uploading. If empty, an ID will be chosen based on the genome object ID.
 
 
 description : |
-    Import into your narrative a genome from your local GBK files or from an FTP, such as NCBI.
+    Import into your narrative a genome from your local GenBank files or from an FTP, such as NCBI.
 
 
 technical-description : |
-    Import into your narrative a genome from your local GBK files or from an FTP, such as NCBI.
+    Import into your narrative a genome from your local GenBank files or from an FTP, such as NCBI.

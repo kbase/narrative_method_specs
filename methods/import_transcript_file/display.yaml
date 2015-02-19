@@ -13,11 +13,17 @@ screenshots :
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #
@@ -28,17 +34,33 @@ parameters :
         ui-name : |
             FASTA FILE
         short-hint : |
-            File with protein/rna data in FASTA format.
+            File with protein/cDNA in FASTA format (must have .fa or .fasta extension).
         long-hint  : |
-            File with protein/rna data in FASTA format.
+            File with protein/cDNA in FASTA format (must have .fa or .fasta extension).
 
     outputObject :
         ui-name : |
-            GENOME OBJECT ID
+            GENOME OBJECT NAME
         short-hint : |
             Provide a name for the genome object you are uploading.<br>ex) Athaliana.TAIR10
         long-hint  : |
             Provide a name for the genome object you are uploading.<br>ex) Athaliana.TAIR10
+
+    genomeId :
+        ui-name : |
+            GENOME IDENTIFIER
+        short-hint : |
+            Optional genome identifier.
+        long-hint  : |
+            Optional genome identifier.
+
+    dna :
+        ui-name : |
+            IS DNA
+        short-hint : |
+            Indicates that file contains nucleic acid sequences rather than proteins.
+        long-hint  : |
+            Indicates that file contains nucleic acid sequences rather than proteins.
 
 
 description : |

@@ -12,21 +12,24 @@
     "id" : "param0",
     "optional" : false,
     "advanced" : false,
-    "allow_multiple" : false,
+    "allow_multiple" : true,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseSearch.GenomeSet" ]
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
     }
   }, {
     "id" : "param1",
     "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "" ],
+    "default_values" : [ "100" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
+      "valid_ws_types" : [ ],
+      "validate_as": "int",
+      "min_int" : 1,
+      "max_int" : 200
     }
   }, {
     "id" : "param2",
@@ -48,8 +51,8 @@
       "input_mapping" : [
         {
           "input_parameter": "param0",
-          "target_property": "genomeset_ref",
-          "target_type_transform": "ref"
+          "target_property": "new_genomes",
+          "target_type_transform": "list<ref>"
         },
         {
           "input_parameter": "param1",

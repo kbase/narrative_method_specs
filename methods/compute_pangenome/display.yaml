@@ -4,7 +4,7 @@
 name     : Compute Pangenome
 
 tooltip  : |
-    Compute pangenome from a list of individual genomes
+    Compute pangenome of a set of individual genomes
 
 screenshots :
 
@@ -17,11 +17,17 @@ screenshots :
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #
@@ -30,44 +36,37 @@ method-suggestions :
 parameters :
     input_genomes :
         ui-name : |
-            Genome IDs
+            Genome(s)
         short-hint : |
-            Input IDs of all genomes to be compared to form pangenome
+            Add several Genomes one at a time to compose a set (optional - but then a GenomeSet must be provided in the previous input)
         long-hint  : |
-            Input IDs of all genomes to be compared to form pangenome
+            Add several Genomes one at a time to compose a set (optional - but then a GenomeSet must be provided in the previous input)
 
+    input_genomeset :
+        ui-name : |
+            Genome Set
+        short-hint : |
+            A set of references to genomes stored in KBase (optional - but then at least two genomes must be provided in the next input)
+        long-hint  : |
+            A set of references to genomes stored in KBase (optional - but then at least two genomes must be provided in the next input)
 
     output_pangenome :
         ui-name : |
             Pangenome ID
         short-hint : |
-            Name of the output Pangenome object
+            A list of all distinct protein families identified in a set of input genome sequences, as well as the IDs of the proteins present in each family
         long-hint  : |
-            Name of the output Pangenome object
+            A list of all distinct protein families identified in a set of input genome sequences, as well as the IDs of the proteins present in each family
 
 
 description : |
-    
+
     <p>It is often useful to group all proteins present in an input set of genomes into families based on sequence homology. This permits a powerful set of comparisons to be performed, such as evaluating the consistency of functional assignments for highly homologous proteins, or evaluating the extent to which each protein family has been conserved across the entire input set of genomes. Protein families present in all input genomes are said to be "core" protein families, while non-conserved families are peripheral and likely linked to more phylogenetically recent adaptations by a species to its environment. Protein families present in any of the input genomes constitute the pangenome of this set.</p>
     <p>The current KBase algorithm to compute a protein pangenome is a k-mer-based method, which offers the advantage of greater speed at the cost of lower resolution of protein sequence differences. Specifically, we identify all the distinct k-mers of length 8 occurring in each protein of each genome. If a k-mer occurs in more than five proteins within a single genome, we remove the k-mer from consideration. Next, if we find that two proteins either within the same genome or across multiple genomes share at least five k-mers in common, we lump the proteins together into a single protein family, and we lump the k-mer databases for the proteins together into a single k-mer database for the protein family. We proceed in this manner, analyzing additional proteins and building up our list of distinct protein families and their associated k-mer databases on the fly. Once all genomes have been analyzed in this way, we rescore every protein family, breaking up families that are overly diverse and recomputing the number of k-mer matches between each protein and its assigned family. All data is then stored in the Pangenome object.</p>
     <p>One limitation of a protein k-mer based approach is that it does not work for distantly related species. For example, while B. subtilis and E. coli share many proteins with common functions, there are very few k-mers of length 8 shared between proteins in these species. For this reason, our k-mer-based protein family identification algorithm will fail to construct accurate families for more distant organisms. In this analysis, it is important that all the genomes included in the input set be phylogenetically close (approximately 90% 16S nucleotide identity).</p>
-    <p>The output for this method consists of a pangenome data object as well as a summary data table with three tabs displayed in the Narrative. The first tab corresponds to an overview of the results including the total number of proteins assigned to families and singletons and the list of genomes considered in the analysis. The second tab, ‘Shared homolog families’, shows a table of counts of protein families found in common between all pairs of genomes in the analysis. The third tab, ‘Protein families’, displays all individual sequence families determined in the pangenome analysis and includes putative functional assignments, the number of proteins assigned to each family and the number of genomes those proteins were found in. 
+    <p>We strongly encourage users to build a phylogenetically closely related set of genomes using the app "Insert Genomes into Species Tree" or from the method "Build Genome Set From Tree".  The output for this method consists of a pangenome data object as well as a summary data table with three tabs displayed in the Narrative. The first tab corresponds to an overview of the results including the total number of proteins assigned to families and singletons and the list of genomes considered in the analysis. The second tab, ‘Shared homolog families’, shows a table of counts of protein families found in common between all pairs of genomes in the analysis. The third tab, ‘Protein families’, displays all individual sequence families determined in the pangenome analysis and includes putative functional assignments, the number of proteins assigned to each family and the number of genomes those proteins were found in.
     </p>
-    
-    <p><strong>Inputs</strong>
-    
-    <p><i>Genome list</i><br>
-    A list of genomes from KBase to be compared to form pangenome</p>
 
-    <p><strong>Outputs</strong>
-    
-    <p><i>Pangenome</i><br>
-    A list of all distinct protein families identified in a set of input genome sequences, as well as the IDs of the proteins present in each family.</p>
-    </p>
-    
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
-# no technical description
-technical-description : | 
-    &nbsp;

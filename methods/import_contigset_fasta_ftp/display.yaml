@@ -3,9 +3,9 @@
 #
 name     : IMPORT FROM FTP
 subtitle : |
-    Upload a ContigSet object from FTP into your workspace.
+    Upload a ContigSet object from FTP into your narrative.
 tooltip  : |
-    Upload a ContigSet object from FTP into your workspace.
+    Upload a ContigSet object from FTP into your narrative.
 
 screenshots :
     []
@@ -13,11 +13,17 @@ screenshots :
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #
@@ -26,11 +32,11 @@ method-suggestions :
 parameters :
     ftpFolder :
         ui-name : |
-            FTP FOLDER
+            FTP FILE
         short-hint : |
-            Path to FTP folder with genome Fasta-file.
+            Path to FTP file in Fasta format.<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/NC_008321.fna
         long-hint  : |
-            Path to FTP folder with genome Fasta-file.
+            Path to FTP file in Fasta format.<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/NC_008321.fna
 
     outputObject :
         ui-name : |

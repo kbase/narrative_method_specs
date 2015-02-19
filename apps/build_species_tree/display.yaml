@@ -1,0 +1,32 @@
+#
+# Define basic display information
+#
+name     : Insert Genomes into Species Tree
+subtitle : |
+    Determine evolutionary relationships between organisms by generating both a tree and geonome set combining user-suplied genomes with closely related public genomes in KBase.
+tooltip  : |
+    Determine evolutionary relationships between organisms by generating both a tree and geonome set combining user-suplied genomes with closely related public genomes in KBase.
+
+screenshots : []
+
+
+header : |
+    <p>The Insert Genomes into Species Tree app enables a user to determine evolutionary relationships between organisms based on the differences in their genomic sequences by creating both a species tree and a genome set of closely related organisms. A set of reference alignments based on 49 highly conserved COG families is used to find the matching corresponding set of sequences in the seed genome. The sequences from the selected genome are then inserted into the reference alignments and the closest neighbors are extracted and concatenated, and a tree is rendered from them using FastTree (an approximate maximum likelihood method). After the tree is rendered, the set of neighboring genomes can be curated by adding or subtracting genomes as desired.</p>
+
+step-descriptions :
+    step_1 : |
+        Construct a species tree containing all supplied genomes 
+    step_2 : |
+        Build a new genome set containing all genomes included in the species tree
+
+
+description : |
+    <p>The Insert Genomes into Species Tree app enables a user to determine evolutionary relationships between organisms based on the differences in their genomic sequences by creating both a species tree and a genome set of closely related organisms. A set of reference alignments based on 49 highly conserved COG families is used to find the matching corresponding set of sequences in the seed genome. The sequences from the selected genome are then inserted into the reference alignments and the closest neighbors are extracted and concatenated, and a tree is rendered from them using FastTree (an approximate maximum likelihood method). After the tree is rendered, the set of neighboring genomes can be curated by adding or subtracting genomes as desired.</p>
+
+
+technical-description : |
+    &nbsp;
+    
+    
+    
+    
