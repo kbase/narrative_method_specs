@@ -22,7 +22,7 @@ suggestions :
         related :
             []
         next :
-            [annotate_domains_in_genome_generic, compare_two_proteomes_generic]
+            [annotate_domains_in_genome_generic]
 
 
 header : |
