@@ -20,12 +20,12 @@ suggestions :
         related :
             []
         next :
-            []
+            [fba_model_translation]
     methods:
         related :
             []
         next :
-            []
+            [compare_two_metabolic_models_generic, run_flux_balance_analysis]
 
 #
 # Configure the display and description of the parameters
