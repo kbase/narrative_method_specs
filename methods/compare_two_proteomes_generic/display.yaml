@@ -79,6 +79,8 @@ description : |
     
     <p>The output of this method is visualized as a dot plot matrix showing pairs of similar proteins determined from the BUS algorithm. This dot plot can be navigated by users with the provided zoom and scroll functions. Hovering over colored dots in the dot plot displays information about that pair of proteins. Clicking on a dot displays a column browser mode which allows one to navigate to the next or previous similar proteins in either genome. A larger red dot in the plot indicates the current pair of proteins.</p>
     
+    <p><a href="http://kbase.us/compare-two-proteomes-method/">Tutorial for Compare Two Proteomes Method</a></p>
+    
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
