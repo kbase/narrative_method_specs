@@ -9,7 +9,21 @@ tooltip  : |
 
 screenshots : []
 
-
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            [compare_two_proteomes_generic]
+            
 header : |
     <p>The Compare Genomes from Pangenome app conducts a detailed comparison of genomes on the basis of protein sequence similarity and function. It begins by creating a pangenome for a set of closely related organisms. The pangenome is defined as the set of conserved and variable genes that are found within a set of related genomes. In many cases, this is a desirable analysis for understanding which genes were gained and lost between strains, or for inferring which genes may confer a phenotype to a given strain.</p>
     
