@@ -67,7 +67,7 @@ parameters :
         short-hint : |
             Data source for annotation: default is SEED (for WGS), alternatives are WGS: RefSeq, GenBank, IMG, TrEMBL, SwissProt, PATRIC, KEGG, M5NR. Amplicon: RDP, Greengenes, LSU, SSU, M5RNA
         long-hint  : |
-            Data source for annotation: default is SEED (for WGS), alternatives are WGS: RefSeq, GenBank, IMG, TrEMBL, SwissProt, PATRIC, KEGG, M5NR. Amplicon: RDP, Greengenes, LSU, SSU, M5RNA
+            <p>Data source for annotation: default is SEED (for WGS), alternatives are</p> <p><b>WGS</b>: RefSeq, GenBank, IMG, TrEMBL, SwissProt, PATRIC, KEGG, M5NR.</p> <p><b>Amplicon</b>: RDP, Greengenes, LSU, SSU, M5RNA</p>
 
 
     evalue :
