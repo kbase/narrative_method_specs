@@ -3,9 +3,9 @@
 #
 name     : Insert Genomes into Species Tree
 subtitle : |
-    Determine evolutionary relationships between organisms by generating both a tree and geonome set combining user-suplied genomes with closely related public genomes in KBase.
+    Determine evolutionary relationships between organisms by generating both a tree and genome set combining user-supplied genomes with closely related public genomes in KBase.
 tooltip  : |
-    Determine evolutionary relationships between organisms by generating both a tree and geonome set combining user-suplied genomes with closely related public genomes in KBase.
+    Determine evolutionary relationships between organisms by generating both a tree and genome set combining user-supplied genomes with closely related public genomes in KBase.
 
 screenshots : []
 
