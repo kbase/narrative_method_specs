@@ -9,6 +9,20 @@ tooltip  : |
 
 screenshots : []
 
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            [compare_two_metabolic_models_generic, run_flux_balance_analysis, simulate_growth_on_a_phenotype_set]
 
 header : |
     <p>The Reconstruct Community Metabolic Model app generates a community metabolic model to be used with model-associated apps in KBase (e.g., "Run Flux Balance Analysis") to predict fluxes. To begin, the user may either upload a set of metabolic models or select a set of public metabolic models already present in KBase. KBase will then assemble these models into a single compartmentalized community model. The user may also select or upload a growth condition to which the community model will be gap filled.</p>
