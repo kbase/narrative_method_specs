@@ -25,7 +25,7 @@ suggestions :
         related :
             []
         next :
-            []
+            [gapfill_a_metabolic_model]
 
 
 #
@@ -93,7 +93,7 @@ description : |
     
     <p>The model construction methodology in KBase is primarily based on the Model SEED framework (Henry et. al) and the RAST genome annotation pipeline (Overbeek et. al). Biochemistry data used in the model construction pipeline have been gathered from multiple published metabolic models and from public databases such as KEGG, MetaCyc, EcoCyc, Plant BioCyc, Plant Metabolic Networks, and Gramene. Currently, the biochemistry database in KBase includes more than 13,000 biochemical reactions and over 16,000 metabolic compounds. </p>
     
-    <p>Once a draft model is generated, model accuracy can be improved by filling gaps in the metabolic network, known as the gapfilling process, and also through manual curation efforts. The gapfilling process (see <a data-method-id=Ògapfill_a_metabolic_modelÓ>Gapfill Metabolic Model</a>) involves adding a minimal number of reactions and compounds to make the biochemical network capable of generating biomass. This "gapfilled" version of the model can be further improved by reconciling phenotypic experimental growth data generated on different media conditions (see <a data-method-id=Òsimulate_growth_on_a_phenotype_setÓ>Simulate Growth on Phenotype Set</a>). The resulting metabolic model could be used to perform Flux Balance Analysis (see <a data-method-id=Òrun_flux_balance_analysisÓ>Run Flux Balance Analysis</a>) on a given media condition, predicting flux distributions for all biochemical reactions in the network.</p>
+    <p>Once a draft model is generated, model accuracy can be improved by filling gaps in the metabolic network, known as the gapfilling process, and also through manual curation efforts. The gapfilling process (see <a data-method-id=Ã’gapfill_a_metabolic_modelÃ“>Gapfill Metabolic Model</a>) involves adding a minimal number of reactions and compounds to make the biochemical network capable of generating biomass. This "gapfilled" version of the model can be further improved by reconciling phenotypic experimental growth data generated on different media conditions (see <a data-method-id=Ã’simulate_growth_on_a_phenotype_setÃ“>Simulate Growth on Phenotype Set</a>). The resulting metabolic model could be used to perform Flux Balance Analysis (see <a data-method-id=Ã’run_flux_balance_analysisÃ“>Run Flux Balance Analysis</a>) on a given media condition, predicting flux distributions for all biochemical reactions in the network.</p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
