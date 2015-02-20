@@ -212,7 +212,7 @@ description : |
     
     <p>There are three essential metadata fields that must be filled in: scientific name, domain, and genetic code. Most bacterial and archaeal genomes use genetic code 11, while Mycoplasmas use genetic code 4. For more information on genetic codes please refer to <a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi">this NCBI document</a>. All fields are required because they affect conditional parameters in various programs that are being run. Use existing scientific names whenever possible.</p>
     
-    <p><a href="http://kbase.us/annotate-microbial-contigs-method/">Tutorial for Annotate Microbial Contigs Method</a></p>
+    <p><a href="http://kbase.us/annotate-microbial-contigs-method/" target="_blank">Tutorial for Annotate Microbial Contigs Method</a></p>
     
     <p><strong>The Default Annotation Pipeline</strong><br>
     Clicking &quot;Run&quot; will run the default pipeline. For a typical 2-5 MBp genome, this should take about 5 minutes. The default pipeline consists of the following steps:</p>
