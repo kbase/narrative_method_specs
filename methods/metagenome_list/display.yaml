@@ -19,15 +19,12 @@ suggestions :
         related :
             []
         next :
-            - communities_build_functional_profile
-            - communities_build_taxonomic_profile
+            [communities_build_taxonomic_profile, communities_build_functional_profile]
     methods:
         related :
             []
         next :
-            - retrieve_functional_abundance_profile
-            - retrieve_taxonomic_abundance_profile
-            - view_mg_collection
+            []
 
 
 #
@@ -61,4 +58,4 @@ parameters :
 
 
 description : |
-    <p>This method creates a set of metagenomes out of one or more metagenomes. The set can then be used as input to the <a data-method-id=Òretrieve_taxonomic_abundance_profileÓ>Generate Taxonomic Abundance Data</a> or <a data-method-id=Òretrieve_functional_abundance_profileÓ>Generate Functional Abundance Data</a> methods.</p>
+    <p>This method creates a set of metagenomes out of one or more metagenomes. The set can then be used as input to the <a data-method-id=Ã’retrieve_taxonomic_abundance_profileÃ“>Generate Taxonomic Abundance Data</a> or <a data-method-id=Ã’retrieve_functional_abundance_profileÃ“>Generate Functional Abundance Data</a> methods.</p>
