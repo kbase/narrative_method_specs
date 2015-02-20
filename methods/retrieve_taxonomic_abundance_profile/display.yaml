@@ -65,9 +65,9 @@ parameters :
         ui-name : |
             Source Name
         short-hint : |
-            Data source for annotation: default is SEED (for WGS), alternatives are WGS: RefSeq, GenBank, IMG, TrEMBL, SwissProt, PATRIC, KEGG, M5NR. Amplicon: RDP, Greengenes, LSU, SSU, M5RNA
+            Data source for annotation: default is SEED (for WGS), alternatives are <br>WGS: RefSeq, GenBank, IMG, TrEMBL, SwissProt, PATRIC, KEGG, M5NR. <br>Amplicon: RDP, Greengenes, LSU, SSU, M5RNA
         long-hint  : |
-            Data source for annotation: default is SEED (for WGS), alternatives are WGS: RefSeq, GenBank, IMG, TrEMBL, SwissProt, PATRIC, KEGG, M5NR. Amplicon: RDP, Greengenes, LSU, SSU, M5RNA
+            <p>Data source for annotation: default is SEED (for WGS), alternatives are <br><b>WGS</b>: RefSeq, GenBank, IMG, TrEMBL, SwissProt, PATRIC, KEGG, M5NR. <br><b>Amplicon</b>: RDP, Greengenes, LSU, SSU, M5RNA</p>
 
 
     evalue :
