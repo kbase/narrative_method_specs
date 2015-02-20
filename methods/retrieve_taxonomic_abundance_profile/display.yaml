@@ -26,8 +26,7 @@ suggestions :
         related :
             []
         next :
-            - normalize_abundance_profile
-            - view_abundance_profile_rank_plot
+            [normalize_abundance_profile, view_abundance_profile_rank_plot]
 
 
 #
@@ -100,9 +99,9 @@ parameters :
 description : |
     <p>This method generates an abundance profile or matrix of abundance profiles for a single metagenome profile by entering a metagenome ID or a metagenome set. It projects abundance data onto data sources, which allows the user to compare metagenomes using Principal coordinates analysis (PCoA) or heatmaps for a selected data source. Users input a metagenome set for whole-genome shotgun (WGS) or amplicon datasets. E-value, percent identity, and alignment length values can be used to filter the annotation abundance data to the desired level of stringency. Users can review the distribution of the data using a boxplot and see if normalization is needed to resolve differences in the distribution of values among the selected profiles.</p>
     
-    <p>After generating these abundances, it is good practice to view the boxplots (use the <a data-method-id=“view_abundance_profile_boxplots”>Generate Boxplots for Abundance Data</a> method) of raw and normalized data to determine if normalization is necessary prior to comparative analyses. Datasets that exhibit similar distributions across all samples are comparable (as raw or normalized values); those that exhibit a variety of distributions are not suitable for direct comparison and may require normalization and/or additional processing to remove bias that could adversely affect downstream comparisons.</p>
+    <p>After generating these abundances, it is good practice to view the boxplots (use the <a data-method-id=√íview_abundance_profile_boxplots√ì>Generate Boxplots for Abundance Data</a> method) of raw and normalized data to determine if normalization is necessary prior to comparative analyses. Datasets that exhibit similar distributions across all samples are comparable (as raw or normalized values); those that exhibit a variety of distributions are not suitable for direct comparison and may require normalization and/or additional processing to remove bias that could adversely affect downstream comparisons.</p>
     
-    <p>The abundances generated with this method can be used as input for all other microbial communities methods such as <a data-method-id=“heatmap_from_abundance_profile”>Generate Heatmap from Abundance Data</a>, <a data-method-id=“pcoa_from_abundance_profile”>Generate PCoA Data from Abundance Data</a>, <a data-method-id=“view_abundance_profile_rank_plot”>Generate Rank Abundance Plot</a>, and <a data-method-id=“view_abundance_profile_boxplots”>Generate Boxplots for Abundance Data</a>.</p>
+    <p>The abundances generated with this method can be used as input for all other microbial communities methods such as <a data-method-id=√íheatmap_from_abundance_profile√ì>Generate Heatmap from Abundance Data</a>, <a data-method-id=√ípcoa_from_abundance_profile√ì>Generate PCoA Data from Abundance Data</a>, <a data-method-id=√íview_abundance_profile_rank_plot√ì>Generate Rank Abundance Plot</a>, and <a data-method-id=√íview_abundance_profile_boxplots√ì>Generate Boxplots for Abundance Data</a>.</p>
     
     <p><a href="http://kbase.us/generate-taxonomic-abundance-data-method/" target="_blank">Tutorial for Generate Taxonomic Abundance Data Method</a></p>
     
@@ -114,28 +113,28 @@ publications :
     -
 
         display-text: |
-            Benson DA, Cavanaugh M, Clark K (2013) Genbank. Nucleic Acids Res 41(Database issue):D36–42
+            Benson DA, Cavanaugh M, Clark K (2013) Genbank. Nucleic Acids Res 41(Database issue):D36√ê42
         link: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3531190/
 
     -
         display-text: |
-            Overbeek R, Begley T, Butler RM et al (2005) The subsystems approach to genome annotation and its use in the project to annotate 1000 genomes. Nucleic Acids Res 33(17): 5691–5702
+            Overbeek R, Begley T, Butler RM et al (2005) The subsystems approach to genome annotation and its use in the project to annotate 1000 genomes. Nucleic Acids Res 33(17): 5691√ê5702
         link: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1251668/
 
     -
         display-text: |
-            Pruesse E, Quast C, Knittel K et al (2007) SILVA: a comprehensive online resource for quality checked and aligned ribosomal RNA sequence data compatible with ARB. Nucleic acids research 35(21):7188–7196
+            Pruesse E, Quast C, Knittel K et al (2007) SILVA: a comprehensive online resource for quality checked and aligned ribosomal RNA sequence data compatible with ARB. Nucleic acids research 35(21):7188√ê7196
         link: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2175337/
 
     -
         pmid: #######
         display-text: |
-            DeSantis TZ, Hugenholtz P, Larsen N et al (2006) Greengenes, a Chimera-Checked 16S rRNA gene database and workbench compatible with ARB. Appl Environ Microbiol 72(7):5069–5072
+            DeSantis TZ, Hugenholtz P, Larsen N et al (2006) Greengenes, a Chimera-Checked 16S rRNA gene database and workbench compatible with ARB. Appl Environ Microbiol 72(7):5069√ê5072
         link: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1489311/
         
     -
         pmid: #######
         display-text: |
-            Cole JR, Chai B, Marsh TL et al (2003) The ribosomal database project (RDP-II): previewing a new autoaligner that allows regular updates and the new prokaryotic taxonomy. Nucleic Acids Res 31(1):442–443
+            Cole JR, Chai B, Marsh TL et al (2003) The ribosomal database project (RDP-II): previewing a new autoaligner that allows regular updates and the new prokaryotic taxonomy. Nucleic Acids Res 31(1):442√ê443
         link: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC165486/       
 
