@@ -23,7 +23,7 @@ suggestions :
         related :
             []
         next :
-            []
+            [annotate_contigset]
 
 
 #
