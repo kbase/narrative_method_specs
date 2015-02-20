@@ -23,4 +23,7 @@ step-descriptions :
 
 description : |
     <p>The Reconstruct Genome-scale Metabolic Model app builds a metabolic model, using the annotation data from an annotated Genome object to reconstruct the metabolic reactions that the cell is capable of performing.  It then performs gapfilling, which is the search for and subsequent bridging of missing metabolic reactions that were not found in the initial annotation search.</p>
+    
+    <p><a href="http://kbase.us/reconstruct-genome-scale-metabolic-model-app/">Tutorial for Reconstruct Genome-scale Metabolic Model App</a></p>
+
 
