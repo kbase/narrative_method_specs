@@ -24,7 +24,7 @@ suggestions :
         related :
             []
         next :
-            []
+            [compare_two_metabolic_models_generic, translate_model_to_new_genome]
 
 
 #
