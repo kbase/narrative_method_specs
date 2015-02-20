@@ -1,12 +1,12 @@
 {
-  "name" : "Create Metagenome Set from public Metagenomes",
+  "name" : "Communities Data Visualization",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["active","viewers"],
+  "categories" : ["active"],
   "widgets" : {
-    "input" : "create_metagenome_set_public",
+    "input" : "devVizSelector",
     "output" : null
   },
   "parameters" : [],
