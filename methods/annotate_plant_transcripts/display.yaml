@@ -19,7 +19,7 @@ suggestions :
         related :
             []
         next :
-            []
+            [build_plant_metabolic_model]
     methods:
         related :
             []
@@ -65,15 +65,9 @@ fixed-parameters :
         
  
 description : |
-    <p>This method uses the RAST approach to annotate plant transcripts with metabolic functions from the PlantSEED project. The PlantSEED project focused on high-quality annotation of plant primary metabolism, and some secondary metabolic pathways, in ten plant genomes. Signature k-mers were generated from these genomes for each metabolic function and are then used to assign the same metabolic functions to a new set of plant transcripts or a plant genome.</p>
+    <p>The Annotate Plant Transcripts with Metabolic Functions method performs functional annotation of plant cDNA or protein sequences. The input FASTA file should contain cDNA sequences (obtained from assembling transcripts from next generation sequencing of a transcriptome) or translated protein sequences from plant gene models. This method assigns metabolic functions (derived from the PlantSEED Subsystems ontology) to the sequences. The resulting annotated genome can then be reviewed and downloaded. It can also be used as an input to other KBase methods such as <a data-method-id=Òbuild_a_metabolic_modelÓ>Build Metabolic Model/a>.</p>
     
-    <p>The system will treat a set of transcripts (both raw and annotated) as a "Genome" object.</p>
-    
-    <p>This method starts with either using import of transcript sequences (cDNA or protein sequences) in FASTA format or using transcript sequences stored as Genome object in KBase.</p>
-    
-    <p>The transcript data can be added to the system by clicking the + symbol in the Data Panel, selecting the &quot;Import&quot; tab, then selecting &quot;Transcript&quot; from the dropdown menu. The user is presented with two boxes.  The first one lets you select the transcript FASTA file. Click on &quot;Select file&quot; to locate the transcript FASTA file on your computer and upload it to KBase. The progress of the upload is reflected in the box to the right of the "Select file" button. When the upload is finished (the progress box shows 100%), enter a name for the resulting data object in the second box and click the "Import" button.</p>
-    
-    <p>A user can also add  one of more than fifty publicly available genomes from the Data Panel, by selecting the &quot;Public&quot; tab, then selecting &quot;Plant Genoms&quot; from the dropdown menu. Here a user is presented with a list of plant genomes, and a search box for them to find their preferred species. Each genome has an &quot;Add&quot; button to its left, which is used to add the genome to their narrative.</p>
+    <p><a href="http://kbase.us/annotate-plant-transcripts-with-metabolic-functions-method/" target="_blank">Tutorial for Annotate Plant Transcripts with Metabolic Functions Method</a></p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Sam Seaver, Chris Henry, Robert Olson, Ross Overbeek, Gordon Pusch, Shiran Pasternak, Doreen Ware. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
@@ -81,11 +75,11 @@ description : |
 publications :
     -
         display-text: |
-            Seaver SMD, Gerdes S, Frelin O, Lerma-Ortiz C, Bradbury LMT, et al. (2014) High-throughput comparison, functional annotation, and metabolic modeling of plant genomes using the PlantSEED resource. Proc Natl Acad Sci USA 111: 9645�9650. doi:10.1073/pnas.1401329111
+            Seaver SMD, Gerdes S, Frelin O, Lerma-Ortiz C, Bradbury LMT, et al. (2014) High-throughput comparison, functional annotation, and metabolic modeling of plant genomes using the PlantSEED resource. Proc Natl Acad Sci USA 111: 9645Ð9650. doi:10.1073/pnas.1401329111
         link: http://www.pnas.org/content/111/26/9645.short
     -
         display-text: |
-            Overbeek R, Olson R, Pusch GD, Olsen GJ, Davis JJ, et al. (2014) The SEED and the Rapid Annotation of microbial genomes using Subsystems Technology (RAST). Nucl Acids Res 42: D206�D214. doi:10.1093/nar/gkt1226
+            Overbeek R, Olson R, Pusch GD, Olsen GJ, Davis JJ, et al. (2014) The SEED and the Rapid Annotation of microbial genomes using Subsystems Technology (RAST). Nucl Acids Res 42: D206ÐD214. doi:10.1093/nar/gkt1226
         link: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3965101/
 
 

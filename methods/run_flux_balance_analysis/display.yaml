@@ -4,7 +4,7 @@
 name     : Run Flux Balance Analysis
 
 tooltip  : |
-    This method uses Flux Balance Analysis (FBA) to predict metabolic fluxes in a metabolic model of an organism grown on a given media.
+    Use Flux Balance Analysis (FBA) to predict metabolic fluxes in a metabolic model of an organism grown on a given media.
 
 screenshots :
     - run_flux_balance_analysis_input.png
@@ -154,6 +154,8 @@ description : |
     
     <p>This method constructs a model of how metabolites flow through the metabolic network of a microbe or a plant. Flux Balance Analysis (FBA) is a constraint-based approach that estimates growth-optimal fluxes through all reactions in the metabolic network, thereby making it possible to estimate the growth rate of an organism (the rate of biomass production) or the rate of production of a given metabolic output on a specified media.This method allows you to analyze the organism’s growth on different substrates and to evaluate the reactions and metabolites that carry fluxes in each growth condition.</p>
     <p>Begin by selecting the metabolic model of organism that you want to perform the Flux Balance Analysis upon. Then, specify the media on which you will grow your organism. In KBase, the media object contains the chemical compounds on which you want to analyze the growth of your organism. KBase provides users with more than 500 commonly used media conditions to use when running FBA. These media formulations can be added to your narrative by clicking the “Add Data” button, navigating to the “Public” tab, filtering for “Media” using the dropdown menu in the top left corner, and selecting a desired media type.  In addition, users can build and upload their own custom media formulations. KBase will then simulate flux balance analysis with the model, enabling a wide range of custom FBA algorithms, including flux variability analysis, knockout of all individual genes, fitting to expression data, and Probabilistic Regulation of Metabolism (PROM). This method produces an FBA object, which may be exported in Excel or SBML format.</p>
+    
+    <p><a href="http://kbase.us/run-flux-balance-analysis-method/" target="_blank">Tutorial for Run Flux Balance Analysis Method</a></p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>

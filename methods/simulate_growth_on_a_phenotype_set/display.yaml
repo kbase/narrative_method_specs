@@ -3,9 +3,9 @@
 #
 name     : Simulate Growth on Phenotype Data
 subtitle : |
-    This method uses Flux Balance Analysis to simulate multiple growth phenotypes.
+    Use Flux Balance Analysis (FBA) to simulate multiple growth phenotypes.
 tooltip  : |
-    This method uses Flux Balance Analysis to simulate multiple growth phenotypes.
+    Use Flux Balance Analysis (FBA) to simulate multiple growth phenotypes.
 
 screenshots :
     - simulate_growth_on_a_phenotype_data_input.png
@@ -73,6 +73,8 @@ description : |
     <li>addtlCpd Ñ Additional media components added along with the primary media formulation.</li>
     </ul>
     </p>
+    
+    <p><a href="http://kbase.us/simulate-growth-on-phenotype-data-method/" target="_blank">Tutorial for Simulate Growth on Phenotype Data Method</a></p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong> Chris Henry, Janaka Edirisinghe, Sam Seaver, and Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 

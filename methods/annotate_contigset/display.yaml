@@ -19,12 +19,12 @@ suggestions :
         related :
             []
         next :
-            []
+            [build_fba_model, build_species_tree]
     methods:
         related :
             []
         next :
-            []
+            [annotate_domains_in_genome_generic]
 
 
 #
@@ -68,138 +68,137 @@ parameters :
         ui-name : |
             Call rRNAs
         short-hint : |
-            See manual page for description of annotation pipieline
+            Call rRNAs
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Call rRNAs
                         
     call_features_tRNA_trnascan :
         ui-name : |
             Call tRNAs with tRNAscan
         short-hint : |
-            See manual page for description of annotation pipieline
+            Call tRNAs with tRNAscan
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Call tRNAs with tRNAscan
                 
     call_selenoproteins :
         ui-name : |
             Call selenoproteins
         short-hint : |
-            See manual page for description of annotation pipieline
+            Call selenoproteins
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Call selenoproteins
                         
     call_pyrrolysoproteins :
         ui-name : |
             Call pyrrolysoproteins
         short-hint : |
-            See manual page for description of annotation pipieline
+            Call pyrrolysoproteins
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Call pyrrolysoproteins
                         
     call_features_repeat_region_SEED :
         ui-name : |
             Call large repeat regions
         short-hint : |
-            See manual page for description of annotation pipieline
+            Call pyrrolysoproteins
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Call pyrrolysoproteins
                         
     call_features_insertion_sequences :
         ui-name : |
             Call insertion sequences
         short-hint : |
-            See manual page for description of annotation pipieline
+            Call insertion sequences
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Call insertion sequences
                         
     call_features_strep_suis_repeat :
         ui-name : |
             Find Streptococcus repeat regions
         short-hint : |
-            See manual page for description of annotation pipieline
+            Find Streptococcus repeat regions
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Find Streptococcus repeat regions
                         
     call_features_strep_pneumo_repeat :
         ui-name : |
             Call features strep pneumo repeat
         short-hint : |
-            See manual page for description of annotation pipieline
+            Call features strep pneumo repeat
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Call features strep pneumo repeat
                         
     call_features_crispr :
         ui-name : |
             Call CRISPRs
         short-hint : |
-            See manual page for description of annotation pipieline
+            Call CRISPRs
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Call CRISPRs
                         
     call_features_CDS_glimmer3 :
         ui-name : |
             Call protein-encoding genes with Glimmer3
         short-hint : |
-        short-hint : |
-            See manual page for description of annotation pipieline
+            Call protein-encoding genes with Glimmer3
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Call protein-encoding genes with Glimmer3
                         
     call_features_CDS_prodigal :
         ui-name : |
             Call protein-encoding genes with Prodigal
         short-hint : |
-            See manual page for description of annotation pipieline
+            Call protein-encoding genes with Prodigal
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Call protein-encoding genes with Prodigal
                         
     annotate_proteins_kmer_v2 :
         ui-name : |
             Annotate protein-encoding genes with k-mers v2
         short-hint : |
-            See manual page for description of annotation pipieline
+            Annotate protein-encoding genes with k-mers v2
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Annotate protein-encoding genes with k-mers v2
                         
     kmer_v1_parameters :
         ui-name : |
             Annotate remaining hypothetical proteins with k-mers
         short-hint : |
-            See manual page for description of annotation pipieline
+            Annotate remaining hypothetical proteins with k-mers
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Annotate remaining hypothetical proteins with k-mers
                         
     annotate_proteins_similarity :
         ui-name : |
             Annotate remaining hypothetical proteins by searching against close relatives
         short-hint : |
-            See manual page for description of annotation pipieline
+            Annotate remaining hypothetical proteins by searching against close relatives
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Annotate remaining hypothetical proteins by searching against close relatives
                         
     resolve_overlapping_features :
         ui-name : |
             Perform basic gene overlap removal
         short-hint : |
-            See manual page for description of annotation pipieline
+            Perform basic gene overlap removal
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Perform basic gene overlap removal
                         
     find_close_neighbors :
         ui-name : |
             Find close neighbors
         short-hint : |
-            See manual page for description of annotation pipieline
+            Find close neighbors
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Find close neighbors
                         
     call_features_prophage_phispy :
         ui-name : |
             Find prophage elements with phispy
         short-hint : |
-            See manual page for description of annotation pipieline
+            Find prophage elements with phispy
         long-hint  : |
-            See manual page for description of annotation pipieline
+            Find prophage elements with phispy
             
     output_genome :
         ui-name : |
@@ -212,6 +211,8 @@ description : |
     <p>This method uses components from the RAST (<a href= "http://rast.nmpdr.org/">Rapid Annotations using Subsystems Technology</a>) toolkit to annotate an assembled bacterial or archaeal genome.  The required input - a Contig Set in FASTA format - can be generated using the <a data-method-id=“assemble_contigset_from_reads”>Assemble Contigs from Reads</a> method, uploaded from a GenBank file, or imported directly from NCBI via FTP.  The method converts the FASTA file of contigs (the &quot;Contig Set&quot;) into a genome typed object, which is called a &quot;Genome&quot; in the data menu.</p>
     
     <p>There are three essential metadata fields that must be filled in: scientific name, domain, and genetic code. Most bacterial and archaeal genomes use genetic code 11, while Mycoplasmas use genetic code 4. For more information on genetic codes please refer to <a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi">this NCBI document</a>. All fields are required because they affect conditional parameters in various programs that are being run. Use existing scientific names whenever possible.</p>
+    
+    <p><a href="http://kbase.us/annotate-microbial-contigs-method/" target="_blank">Tutorial for Annotate Microbial Contigs Method</a></p>
     
     <p><strong>The Default Annotation Pipeline</strong><br>
     Clicking &quot;Run&quot; will run the default pipeline. For a typical 2-5 MBp genome, this should take about 5 minutes. The default pipeline consists of the following steps:</p>

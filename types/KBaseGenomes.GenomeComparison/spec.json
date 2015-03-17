@@ -1,0 +1,9 @@
+{
+    "ver":"0.1.0",
+    "view_method_ids":[
+        "view_genome_comparison"
+    ],
+    "import_method_ids":[
+    ],
+    "landing_page_url_prefix":"genome_comparison"
+}
