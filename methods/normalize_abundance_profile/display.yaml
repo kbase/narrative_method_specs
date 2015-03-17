@@ -59,4 +59,6 @@ description : |
     
     <p>The normalized abundances generated with this method can be used as input for all other microbial communities methods such as <a data-method-id=Òheatmap_from_abundance_profileÓ>Generate Heatmap from Abundance Data</a>, <a data-method-id=Òpcoa_from_abundance_profileÓ>Generate PCoA Data from Abundance Data</a>, <a data-method-id=Òview_abundance_profile_rank_plotÓ>Generate Rank Abundance Plot</a>, and <a data-method-id=Òview_abundance_profile_boxplotsÓ>Generate Boxplots for Abundance Data</a>.</p>
     
+    <p><a href="http://kbase.us/normalize-abundance-data-method/" target="_blank">Tutorial for Normalize Abundance Data Method</a></p>
+    
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong> Jared Bischof, Travis Harrison, Folker Meyer, Tobias Paczian, and Andreas Wilke. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>

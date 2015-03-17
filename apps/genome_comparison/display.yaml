@@ -12,6 +12,8 @@ screenshots : []
 
 header : |
     <p>The Compare Genomes from Pangenome app conducts a detailed comparison of genomes on the basis of protein sequence similarity and function. It begins by creating a pangenome for a set of closely related organisms. The pangenome is defined as the set of conserved and variable genes that are found within a set of related genomes. In many cases, this is a desirable analysis for understanding which genes were gained and lost between strains, or for inferring which genes may confer a phenotype to a given strain.</p>
+    
+    <p><a href="http://kbase.us/compare-genomes-from-pangenome-app/" target="_blank">Tutorial for Compare Genomes from Pangenome App</a></p>
 
 step-descriptions :
     step_1 : |
@@ -22,5 +24,9 @@ step-descriptions :
 
 description : |
     <p>The Compare Genomes from Pangenome app conducts a detailed comparison of genomes on the basis of protein sequence similarity and function. It begins by creating a pangenome for a set of closely related organisms. The pangenome is defined as the set of conserved and variable genes that are found within a set of related genomes. In many cases, this is a desirable analysis for understanding which genes were gained and lost between strains, or for inferring which genes may confer a phenotype to a given strain.</p>
+    
+    <p><a href="http://kbase.us/compare-genomes-from-pangenome-app/" target="_blank">Tutorial for Compare Genomes from Pangenome App</a></p>
+
+
 
 

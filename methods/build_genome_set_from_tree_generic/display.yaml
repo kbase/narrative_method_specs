@@ -21,7 +21,7 @@ suggestions :
         related :
             []
         next :
-            []
+            [genome_comparison]
     methods:
         related :
             []

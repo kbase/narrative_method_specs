@@ -53,5 +53,7 @@ description : |
     
     <p>If distributions still look extremely different, comparisons need to be regarded with a great deal of skepticism; it may not be possible to distinguish real biological differences from those driven by bias/error that may still be present in the data.</p>
     
+    <p><a href="http://kbase.us/generate-boxplots-for-abundance-data-method/" target="_blank">Tutorial for Generate Boxplots for Abundance Data Method</a></p>
+    
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Kevin Keegan, Jared Bischof, Travis Harrison, Folker Meyer, Tobias Paczian, and Andreas Wilke. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>

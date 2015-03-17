@@ -9,8 +9,25 @@ tooltip  : |
 
 screenshots : []
 
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            [compare_two_metabolic_models_generic, run_flux_balance_analysis]
+            
 header : |
     <p>The Build Plant Metabolic Model app generates metabolic models for a plant. This app starts with either using import of transcript sequences (cDNA or protein sequences) in fasta format or using transcript sequences stored as Genome object in KBase. It involves three steps. First, the transcript sequences are annotated with PlantSEED based metabolic annotations. Second, a draft metabolic model is generated using annotated Genome object. Third, the draft metabolic model is gapfilled so that growth can be stimulated using Flux Balance Analysis (FBA). The user can visualize and download the annotated genome and the resulting metabolic models.</p>
+    
+    <p><a href="http://kbase.us/build-plant-metabolic-model-app/" target="_blank">Tutorial for Build Plant Metabolic Model App</a></p>
 
 step-descriptions :
     step_1 : |
@@ -22,6 +39,9 @@ step-descriptions :
 
 description : |
     <p>The Build Plant Metabolic Model app generates metabolic models for a plant. This app starts with either using import of transcript sequences (cDNA or protein sequences) in fasta format or using transcript sequences stored as Genome object in KBase. It involves three steps. First, the transcript sequences are annotated with PlantSEED based metabolic annotations. Second, a draft metabolic model is generated using annotated Genome object. Third, the draft metabolic model is gapfilled so that growth can be stimulated using Flux Balance Analysis (FBA). The user can visualize and download the annotated genome and the resulting metabolic models.</p>
+    
+    <p><a href="http://kbase.us/build-plant-metabolic-model-app/" target="_blank">Tutorial for Build Plant Metabolic Model App</a></p>
+
 
 
     

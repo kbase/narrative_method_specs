@@ -27,7 +27,7 @@ suggestions :
         related :
             []
         next :
-            []
+            [genome_comparison_from_pangenome]
 
 
 #

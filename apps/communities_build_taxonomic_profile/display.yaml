@@ -10,9 +10,26 @@ tooltip  : |
 
 screenshots : []
 
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            [heatmap_from_abundance_profile, pcoa_from_abundance_profile, view_abundance_profile_rank_plot]
 
 header : |
     <p>The Build and Normalize Metagenomic Taxonomic Abundance Data app generates taxonomic annotation abundance profiles and normalizes the data for a selected set of metagenomes. Taxonomic abundance profiles and matrices can be built for whole-genome shotgun (WGS) or amplicon samples. E-value, percent identity, and alignment length values can be used to filter the annotation abundance data to the desired level of stringency. Use KBase's Search feature to create a list of metagenomes and then specify options that define the various attributes (e.g., annotation e-value, percent identity, and level) to restrict the data that will be returned. Besides specifying the metagenome(s) to include and providing an output name, the most critical parameters for creating a profile are the taxa level (e.g., genus or perhaps phylum) and the source on which to base the annotation (Source Name). The second part of this app normalizes and standardizes the abundance profile data (log-transformation) to reduce experimental or technical bias among profiles, making them more comparable and reducing the chance of erroneous conclusions driven by non-biological trends in the data. Boxplots are generated for both raw and normalized data to display the distribution. The output of this app is an abundance profile for one or more metagenomes. This profile contains the raw annotation abundance data returned for the selected set of data attributes. Abundance profiles serve as the inputs for all other community-related apps: normalization, visualizations (PCoA, heatmap-dendrograms, and rank abundance plots) to look for trends in the data, and statistical analyses to identify the taxa or functions that drive these trends.</p>
+    
+    <p><a href="http://kbase.us/build-and-normalize-metagenomic-taxonomic-abundance-data-app/" target="_blank">Tutorial for Build and Normalize Metagenomic Taxonomic Abundance Data App</a></p>
+
 
 step-descriptions :
     step_1 : |
@@ -23,3 +40,6 @@ step-descriptions :
 
 description : |
     <p>The Build and Normalize Metagenomic Taxonomic Abundance Data app generates taxonomic annotation abundance profiles and normalizes the data for a selected set of metagenomes. Taxonomic abundance profiles and matrices can be built for whole-genome shotgun (WGS) or amplicon samples. E-value, percent identity, and alignment length values can be used to filter the annotation abundance data to the desired level of stringency. Use KBase's Search feature to create a list of metagenomes and then specify options that define the various attributes (e.g., annotation e-value, percent identity, and level) to restrict the data that will be returned. Besides specifying the metagenome(s) to include and providing an output name, the most critical parameters for creating a profile are the taxa level (e.g., genus or perhaps phylum) and the source on which to base the annotation (Source Name). The second part of this app normalizes and standardizes the abundance profile data (log-transformation) to reduce experimental or technical bias among profiles, making them more comparable and reducing the chance of erroneous conclusions driven by non-biological trends in the data. Boxplots are generated for both raw and normalized data to display the distribution. The output of this app is an abundance profile for one or more metagenomes. This profile contains the raw annotation abundance data returned for the selected set of data attributes. Abundance profiles serve as the inputs for all other community-related apps: normalization, visualizations (PCoA, heatmap-dendrograms, and rank abundance plots) to look for trends in the data, and statistical analyses to identify the taxa or functions that drive these trends.</p>
+    
+    <p><a href="http://kbase.us/build-and-normalize-metagenomic-taxonomic-abundance-data-app/" target="_blank">Tutorial for Build and Normalize Metagenomic Taxonomic Abundance Data App</a></p>
+
