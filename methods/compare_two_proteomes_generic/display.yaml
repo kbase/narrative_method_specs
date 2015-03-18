@@ -35,27 +35,27 @@ parameters :
         ui-name : |
             Genome1 ID
         short-hint : |
-            Source genome 1 ID
+            Source genome 1
         long-hint  : |
-            Source genome 1 ID
+            Source genome 1
 
 
     param1 :
         ui-name : |
             Genome2 ID
         short-hint : |
-            Source genome 2 ID
+            Source genome 2
         long-hint  : |
-            Source genome 2 ID
+            Source genome 2
 
 
     param2 :
         ui-name : |
-            Output Proteome Comparison ID
+            Output Proteome Comparison
         short-hint : |
-            Output proteome comparison ID; if empty, an ID will be chosen randomly
+            Output proteome comparison; if empty, a name will be chosen randomly
         long-hint  : |
-            Output proteome comparison ID; if empty, an ID will be chosen randomly
+            Output proteome comparison; if empty, a name will be chosen randomly
 
     param_max_eval :
         ui-name : |
