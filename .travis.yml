@@ -1,0 +1,16 @@
+---
+language: perl
+perl:
+  - "5.18"
+script: make test
+
+before_install:
+  - "cpanm JSON::RPC::Client"
+  - "cpanm Exception::Class"
+
+branches:
+  only:
+  - master
+  - staging
+  - develop
+  - dev
