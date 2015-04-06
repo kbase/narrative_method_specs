@@ -1,12 +1,15 @@
 ---
 language: perl
+
 perl:
   - "5.18"
-script: make test
 
-before_install:
-  - "cpanm JSON::RPC::Client"
-  - "cpanm Exception::Class"
+install:
+  - cpanm --verbose --notest JSON::RPC::Client
+  - cpanm --verbose --notest Exception::Class
+  - cpanm --verbose --notest File::Slurp
+
+script: make test
 
 branches:
   only:
