@@ -1,0 +1,62 @@
+#
+# Define basic display information
+#
+name     : Annotate Metagenome
+subtitle : |
+    Create and annotate metagenome from single or paired-end read library
+tooltip  : |
+    Create and annotate metagenome from single or paired-end read library
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_reads :
+        ui-name : |
+            Input Read Library
+        short-hint : |
+            The single or paired-end read library to annotate as a metagenome
+        long-hint  : |
+            The single or paired-end read library to annotate as a metagenome
+
+
+    output_metagenome :
+        ui-name : |
+            Output Metagenome
+        short-hint : |
+            Name to assign the output metagenome
+        long-hint  : |
+            Name to assign the output metagenome
+
+
+    project_name :
+        ui-name : |
+            Project Name
+        short-hint : |
+            Name of project to add metagenome too.
+        long-hint  : |
+            Name of project to add metagenome too.
+
+
+description : |
+    <p>This method creates and annotates a metagenome from a single or paired-end read library. This analysis may take some time, from several hours to several days depending on the size of the read library and the system load<p>
+

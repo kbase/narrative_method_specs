@@ -1,0 +1,79 @@
+{
+  "name" : "Annotate Metagenome",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "MetagenomeView"
+  },
+  "parameters" : [ {
+    "id" : "input_reads",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseAssembly.SingleEndLibrary", "KBaseAssembly.PairedEndLibrary" ]
+    }
+  }, {
+    "id" : "output_metagenome",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "Communities.Metagenome" ],
+      "is_output_name": true
+    }
+  }, {
+    "id" : "project_name",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  } ],
+  "behavior" : {
+      "script-mapping" : {
+          "module" : "communities_api",
+          "script" : "mg-submit",
+          "has_files": true,
+          "input_mapping" : [
+              {
+                  "input_parameter": "input_reads",
+                  "target_property": "json_in"
+              },
+              {
+                  "input_parameter": "output_metagenome",
+                  "target_property": "json_out"
+              },
+              {
+                  "input_parameter": "project_name",
+                  "target_property": "project_name"
+              },
+              {
+                  "narrative_system_variable": "token",
+                  "target_property": "token"
+              }
+          ],
+          "output_mapping" : [
+              {
+                  "input_parameter": "output_metagenome",
+                  "target_property": "id"
+              },
+              {
+                  "narrative_system_variable": "workspace",
+                  "target_property": "ws"
+              }
+          ]
+      }
+  }
+}
