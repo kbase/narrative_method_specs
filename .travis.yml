@@ -11,9 +11,3 @@ install:
 
 script: make test
 
-branches:
-  only:
-  - master
-  - staging
-  - develop
-  - dev
