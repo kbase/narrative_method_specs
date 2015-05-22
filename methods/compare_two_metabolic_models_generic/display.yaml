@@ -46,7 +46,7 @@ parameters :
 
     param1 :
         ui-name : |
-            FBA Model 2 ID
+            FBA Model 2
         short-hint : |
             Name of second model
         long-hint  : |
