@@ -33,7 +33,7 @@ suggestions :
 parameters :
     input_profile :
         ui-name : |
-            Abundance Profile or Matrix
+            Abundance Profile
         short-hint : |
             Select a profile or set of profiles generated from the Generate Taxonomic Abundance Data or Generate Functional Abundance Data methods
         long-hint  : |

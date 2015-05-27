@@ -36,7 +36,7 @@ suggestions :
 parameters :
     input_profile :
         ui-name : |
-            Abundance Profile or Matrix
+            Abundance Profile
         short-hint : |
             Select a profile or matrix generated from "Retrieve Taxonomic/Functional Abundance Data"
         long-hint  : |
@@ -45,7 +45,7 @@ parameters :
 
     output_profile :
         ui-name : |
-            Normalized Profile or Matrix
+            Normalized Abundance Profile
         short-hint : |
             Generates a single profile for taxonomy or function or a matrix for multiple metagenomes;  the table rows contain functions or taxa and the columns contain metagenome IDs
         long-hint  : |
