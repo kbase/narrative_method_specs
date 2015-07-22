@@ -273,3 +273,9 @@ description : |
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Thomas Brettin, James Davis, Terry Disz, Robert Edwards, Chris Henry, Gary Olsen, Robert Olson, Ross Overbeek, Bruce Parrello, Gordon Pusch, Roman Sutormin, Fangfang Xia. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
+publications :
+    -
+        pmid: 25666585
+        display-text: |
+            Brettin T, Davis JJ, Disz T, Edwards RA, Gerdes S, Olsen GJ, et al. RASTtk: A modular and extensible implementation of the RAST algorithm for building custom annotation pipelines and annotating batches of genomes. Scientific Reports. 2015;5: 8365. doi:10.1038/srep08365.
+        link: http://www.ncbi.nlm.nih.gov/pubmed/25666585
