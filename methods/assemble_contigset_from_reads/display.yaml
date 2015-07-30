@@ -34,9 +34,9 @@ parameters :
         ui-name : |
             AssemblyInput
         short-hint : |
-            A dataset of genomic reads generated from a sequencing platform (e.g., Illumina, PacBio). The dataset can specify sets of paired-end and/or single-end reads.
+            A dataset of genomic reads generated from a sequencing platform. The dataset can specify sets of paired-end and/or single-end reads.
         long-hint  : |
-            A dataset of genomic reads generated from a sequencing platform (e.g., Illumina, PacBio). The dataset can specify sets of paired-end and/or single-end reads.
+            A dataset of genomic reads generated from a sequencing platform. The dataset can specify sets of paired-end and/or single-end reads.
         placeholder : |
             select an AssemblyInput object
 
@@ -101,6 +101,8 @@ parameters :
 description : |
 
     <p>This method can be used to perform an automatic genome assembly using the latest computational tools. Single or multiple assemblers can be invoked to compare results. Resulting assemblies are automatically processed via a collection of analysis tools developed by both KBase and the research community. The assembly method attempts to select the best (the smallest number of contigs, the longest average contig length) assembly to suggest to the user.</p>
+    
+    <p>At present, reads from the Illumina sequencing platform in FASTQ format can be assembled.</p>
 
     <p>Several assembly workflows or "recipes" are available. These workflows have been tuned and tested to fit certain dataset types or desired analysis criteria such as throughput or rigor. The compute engine's flexible nature also enables the rapid design and emulation of other popular protocols.</p>
 

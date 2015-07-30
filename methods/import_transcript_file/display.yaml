@@ -2,10 +2,9 @@
 # Define basic display information
 #
 name     : UPLOAD TRANSCRIPT
-subtitle : |
-    Import into your narrative a transcript object from a local file in FASTA format.
+subtitle : none
 tooltip  : |
-    Import into your narrative a transcript object from a local file in FASTA format.
+    Import transcript data from a file in FASTA format into your Narrative.
 
 screenshots :
     []
@@ -34,38 +33,36 @@ parameters :
         ui-name : |
             FASTA FILE
         short-hint : |
-            File with protein/cDNA in FASTA format (must have .fa or .fasta extension).
+            File with protein/cDNA in FASTA format (must have .fa or .fasta extension)
         long-hint  : |
-            File with protein/cDNA in FASTA format (must have .fa or .fasta extension).
+            File with protein/cDNA in FASTA format (must have .fa or .fasta extension)
 
     outputObject :
         ui-name : |
             GENOME OBJECT NAME
         short-hint : |
-            Provide a name for the genome object you are uploading.<br>ex) Athaliana.TAIR10
+            Provide a name for the genome object you are uploading (e.g., Athaliana.TAIR10)
         long-hint  : |
-            Provide a name for the genome object you are uploading.<br>ex) Athaliana.TAIR10
+            Provide a name for the genome object you are uploading (e.g., Athaliana.TAIR10)
 
     genomeId :
         ui-name : |
             GENOME IDENTIFIER
         short-hint : |
-            Optional genome identifier.
+            Provide an optional genome identifier
         long-hint  : |
-            Optional genome identifier.
+            Provide an optional genome identifier
 
     dna :
         ui-name : |
             IS DNA
         short-hint : |
-            Indicates that file contains nucleic acid sequences rather than proteins.
+            If checked, indicates that file contains nucleic acid sequences rather than proteins
         long-hint  : |
-            Indicates that file contains nucleic acid sequences rather than proteins.
+            If checked, indicates that file contains nucleic acid sequences rather than proteins
 
 
-description : |
-    Import into your narrative a transcript object from a local file in FASTA format.
+description : none
 
 
-technical-description : |
-    Import into your narrative a transcript object from a local file in FASTA format.
+technical-description : none

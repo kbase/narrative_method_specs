@@ -1,6 +1,6 @@
 name     : FBA MODEL FROM SBML FILE
 subtitle : none
-tooltip  : Upload an Flux Balance Analysis Model object from SBML file into your narrative.
+tooltip  : Upload a Flux Balance Analysis Model from SBML file into your Narrative.
 
 screenshots :
     []
@@ -14,28 +14,28 @@ method-suggestions :
 parameters :
     reactionFile :
         ui-name : SBML FILE
-        short-hint : File with model in SBML format.
-        long-hint  : none
+        short-hint : File with model in SBML format
+        long-hint  : File with model in SBML format
 
     compoundFile :
-        ui-name : COMPOUND TSV FILE
-        short-hint : File with compounds in TSV format.
-        long-hint  : none
+        ui-name : COMPOUNDS TSV FILE
+        short-hint : File with compounds in TSV format
+        long-hint  : File with compounds in TSV format
 
     outputObject :
-        ui-name : OUTPUT OBJECT ID
-        short-hint : ID for output Flux Balance Analysis Model
-        long-hint  : none
+        ui-name : NAME OF FBA MODEL
+        short-hint : Provide the name for the Flux Balance Analysis Model object that will be created by this upload
+        long-hint  : Provide the name for the Flux Balance Analysis Model object that will be created by this upload
 
     genomeObject :
         ui-name : GENOME
-        short-hint : Identifier for Genome which contains features referenced to in FBAModel
-        long-hint  : none
+        short-hint : Select the Genome object that contains features referenced by the FBAModel
+        long-hint  : Select the Genome object that contains features referenced by the FBAModel
 
     biomass :
         ui-name : BIOMASS
-        short-hint : ID of biomass reaction in Reaction TSV File
-        long-hint  : none
+        short-hint : Provide a name for the biomass reaction in SBML file
+        long-hint  : Provide a name for the biomass reaction in SBML file
 
 description : none
 
