@@ -1,5 +1,5 @@
 #
-# Define basic display information
+# THIS IS OBSOLETE--replaced by import_contigset_fasta_file and import_contigset_fasta_ftp
 #
 name     : Import Contigs
 subtitle : |
