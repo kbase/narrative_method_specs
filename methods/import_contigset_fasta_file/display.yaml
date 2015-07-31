@@ -35,7 +35,7 @@ parameters :
         short-hint : |
             File with DNA data (one or more sequences) in FASTA format
         long-hint  : |
-            File with DNA data (one or more sequences) in FASTA format
+             Recognized extensions for the FASTA input file are .fasta, .fas, or .fa
 
     outputObject :
         ui-name : |
