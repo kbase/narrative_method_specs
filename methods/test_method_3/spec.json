@@ -73,6 +73,23 @@
         },
 
         {
+            "id": "param2.2",
+            
+            "optional":false,
+            "advanced":false,
+            "disabled":true,
+            
+            "allow_multiple":false,
+            "default_values":[""],
+            
+            "field_type" : "textarea",
+            
+            "textarea_options":{
+                "n_rows": 10
+            }
+        },
+
+        {
             "id": "param3",
             
             "optional":false,
