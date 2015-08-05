@@ -15,12 +15,12 @@ parameters :
     reactionFile :
         ui-name : REACTIONS TSV FILE
         short-hint : File with reactions in TSV format
-        long-hint  : File with reactions in TSV format
+        long-hint  : File with reactions in TSV format (filename should end with ".tsv")
 
     compoundFile :
         ui-name : COMPOUNDS TSV FILE
         short-hint : File with compounds in TSV format
-        long-hint  : File with compounds in TSV format
+        long-hint  : File with compounds in TSV format (filename should end with ".tsv")
 
     outputObject :
         ui-name : NAME OF FBA MODEL
