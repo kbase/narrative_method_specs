@@ -15,7 +15,8 @@ parameters :
     csvFile :
         ui-name : Name of TSV media file
         short-hint : Select a media file in TSV format
-        long-hint  : Select a media file in TSV format
+        long-hint  : Filename should end in .tsv. Tab-separated fields: compounds, concentrations, minflux, maxflux
+
 
     outputObject :
         ui-name : Output media object name
