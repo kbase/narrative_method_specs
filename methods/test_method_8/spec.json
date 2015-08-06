@@ -44,7 +44,7 @@
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "textsubdata",
-    "text_options" : {
+    "textsubdata_options" : {
       "subdata_selection": {
         "constant_ref": ["12/31","ws/MyObj"],
         "subdata_included": ["features/[*]/id", "features/[*]/aliases"],
