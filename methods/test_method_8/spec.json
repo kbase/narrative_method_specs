@@ -1,0 +1,68 @@
+{
+  "ver" : "1.0.0",
+  "authors" : [ "wstester2" ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["testmethods"],
+  "widgets" : {
+    "input" : null,
+    "output" : null
+  },
+  "parameters" : [ {
+    "id" : "genome_input",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+    }
+  },{
+    "id" : "feature_input",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "textsubdata",
+    "textsubdata_options" : {
+      "subdata_selection" : {
+        "param": "genome_input",
+        "subdata_included": ["features/[*]/id", "features/[*]/aliases","features/[*]/function"],
+        "path_to_subdata": ["features"],
+        "selection_id" : "id",
+        "selection_description" : ["aliases","function"]
+      },
+      "multiselection":false,
+      "show_src_obj":true,
+      "allow_custom":false
+    }
+  },{
+    "id" : "more_features",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "textsubdata",
+    "text_options" : {
+      "subdata_selection": {
+        "constant_ref": ["12/31","ws/MyObj"],
+        "subdata_included": ["features/[*]/id", "features/[*]/aliases"],
+        "path_to_subdata": ["features"],
+        "selection_id" : "id"
+      },
+      "multiselection":true
+    }
+  }],
+  "behavior" : {
+    "script-mapping" : {
+      "module" : "assembly",
+      "script" : "assemble_contigset_from_reads",
+      "has_files": true,
+      "input_mapping" : [
+      ],
+      "output_mapping" : [
+      ]
+    }
+  }
+}

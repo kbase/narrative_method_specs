@@ -1,0 +1,49 @@
+#
+# Define basic display information
+#
+name     : Test Subdata
+subtitle  : |
+    test for a subdata parameter
+tooltip  : |
+    test for a subdata parameter
+
+screenshots :
+    []
+
+icon: none
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related : []
+        next : []
+    methods:
+        related : []
+        next : []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    genome_input :
+        ui-name : |
+            Genome
+        short-hint : |
+            some genome
+    feature_input :
+        ui-name : |
+            Features
+        short-hint : |
+            Some Features
+    more_features :
+        ui-name : More Features
+        short-hint : enter some more
+        placeholder : enter the features
+
+
+description : |
+    <p>This description can be marked up with <b>html</b> and can have <a href="https://kbase.us">links</a></p>
+    <p>This description should be understandable by a novice biologist user.</p>
