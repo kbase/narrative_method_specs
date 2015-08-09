@@ -1,6 +1,6 @@
 name     : MEDIA FROM EXCEL FILE
 subtitle : none
-tooltip  : Upload a Media object from an Excel file into your Narrative.
+tooltip  : Upload a Media object from an Excel file
 
 screenshots :
     []
@@ -14,8 +14,9 @@ method-suggestions :
 parameters :
     inputFile :
         ui-name : Name of EXCEL media file
-        short-hint : Select a media file in EXCEL format
-        long-hint  : Select a media file in EXCEL format
+        short-hint : Select a media file in Excel format
+        long-hint  : |
+        Media file should have 4 tab-separated fields: compounds, concentrations, minflux, maxflux. Filename should end with ".xls" or ".xlsx"
 
     outputObject :
         ui-name : Output media object name
