@@ -21,7 +21,8 @@ parameters :
     fastqFile1 :
         ui-name : READS FILE
         short-hint : Short read file containing a paired end library in FASTA/FASTQ format
-        long-hint  : Valid file extensions for FASTA: .fasta, .fna, .fa   Valid file extensions for FASTQ: .fastq, .fnq, .fq
+        long-hint  : |
+            Valid file extensions for FASTA: .fasta, .fna, .fa   Valid file extensions for FASTQ: .fastq, .fnq, .fq
 
 
     fastqFile2 :
