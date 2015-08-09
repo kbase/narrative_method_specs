@@ -1,6 +1,6 @@
 name     : PHENOTYPE SET FROM TSV FILE
 subtitle : none
-tooltip  : Upload a Phenotype Set from a TSV file into your Narrative.
+tooltip  : Upload a Phenotype Set from a Tab Separated Values (TSV) file
 
 screenshots :
     []
@@ -15,7 +15,7 @@ parameters :
     csvFile :
         ui-name : Phenotype file
         short-hint : Select a phenotype file in TSV format
-        long-hint  : Select a phenotype file in TSV format
+        long-hint  : Filename should end in .tsv.  Note that this import functionality is still in development.
 
     outputObject :
         ui-name : Phenotype Set Name
