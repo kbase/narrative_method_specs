@@ -1,6 +1,6 @@
 name     : SINGLE END READS
 subtitle : none
-tooltip  : Upload a SingleEndLibrary from a FASTA/FASTQ file into your narrative.
+tooltip  : Upload a Single End Library from a FASTA/FASTQ file
 
 screenshots :
     []
@@ -21,7 +21,7 @@ parameters :
     fastqFile :
         ui-name : READS FILE
         short-hint : Short read file containing a single end library in FASTA/FASTQ format
-        long-hint  : Short read file containing a single end library in FASTA/FASTQ format
+        long-hint  : Valid file extensions for FASTA: .fasta, .fna, .fa   Valid file extensions for FASTQ: .fastq, .fnq, .fq
 
     outputObject :
         ui-name : OBJECT NAME
