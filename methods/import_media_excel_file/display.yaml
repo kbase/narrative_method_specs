@@ -16,7 +16,7 @@ parameters :
         ui-name : Name of EXCEL media file
         short-hint : Select a media file in Excel format
         long-hint  : |
-        Media file should have 4 tab-separated fields: compounds, concentrations, minflux, maxflux. Filename should end with ".xls" or ".xlsx"
+            Media file should have 4 tab-separated fields: compounds, concentrations, minflux, maxflux. Filename should end with ".xls" or ".xlsx"
 
     outputObject :
         ui-name : Output media object name
