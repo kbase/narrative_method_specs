@@ -43,7 +43,7 @@ parameters :
 
     output_profile :
         ui-name : |
-            Profile or Matrix
+            Abundance Profile
         short-hint : |
             Profile for taxonomy or a matrix for multiple metagenomes; the table rows contain functions or taxa and the columns contain metagenome IDs
         long-hint : |
@@ -63,7 +63,7 @@ parameters :
 
     source :
         ui-name : |
-            Source Name
+            Annotation Source
         short-hint : |
             Data source for annotation; default is Subsystems, alternatives are KO, NOG, COG
         long-hint  : |

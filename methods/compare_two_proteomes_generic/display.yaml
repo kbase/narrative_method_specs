@@ -35,27 +35,27 @@ parameters :
         ui-name : |
             Genome1 ID
         short-hint : |
-            Source genome 1 ID
+            Source genome 1
         long-hint  : |
-            Source genome 1 ID
+            Source genome 1
 
 
     param1 :
         ui-name : |
             Genome2 ID
         short-hint : |
-            Source genome 2 ID
+            Source genome 2
         long-hint  : |
-            Source genome 2 ID
+            Source genome 2
 
 
     param2 :
         ui-name : |
-            Output Proteome Comparison ID
+            Output Proteome Comparison
         short-hint : |
-            Output proteome comparison ID; if empty, an ID will be chosen randomly
+            Output proteome comparison; if empty, a name will be chosen randomly
         long-hint  : |
-            Output proteome comparison ID; if empty, an ID will be chosen randomly
+            Output proteome comparison; if empty, a name will be chosen randomly
 
     param_max_eval :
         ui-name : |
@@ -75,14 +75,14 @@ parameters :
 
 
 description : |
-    <p>This method performs an all-vs-all proteome comparison for a pair of species. The algorithm determines sets of similar proteins based on the Best Unambiguous Sets (BUS) algorithm. As a pre-processing step, BUS eliminates all edges that are less than 80% of the maximum-weight edge, both in amino acid identity and in sequence length. Based on the resulting unambiguous matches, the algorithm builds blocks of conserved gene order (synteny) when neighboring genes in one species have one-to-one matches to neighboring genes in the other species; these blocks of conserved synteny are used to resolve additional ambiguities by preferentially keeping matches within synteny blocks. Finally, the algorithm searches for subsets of genes that are locally optimal, such that all best matches of genes within the group are contained within the group and no genes outside the group have matches within the group. The output of this method is visualized as a dot plot matrix showing pairs of similar proteins determined from the BUS algorithm.</p>
+    <p>This method performs an all-vs-all proteome comparison for a pair of species based on BLAST output. The algorithm is similar to the BUS approach. It represents the best match of every gene as a set of genes instead of a single best hit, which makes it more robust to slight differences in sequence similarity. The similarities between the genes are treated as a bipartite graph connecting genes between two species by edges weighed as bit-scores of corresponding protein pairwise alignments. For every edge, the "Sub-optimal Best Bidirectional Hit Ratio" is calculated as a ratio of the weight of given edge to the best weight among edges connected to this edge. If this ratio is 100% then the edge is a true Best Bidirectional Hit (in terms of bit-score). All edges with a ratio below a specified minimum threshold are filtered out.</p>
     
-    <p>The output of this method is visualized as a dot plot matrix showing pairs of similar proteins determined from the BUS algorithm. This dot plot can be navigated by users with the provided zoom and scroll functions. Hovering over colored dots in the dot plot displays information about that pair of proteins. Clicking on a dot displays a column browser mode which allows one to navigate to the next or previous similar proteins in either genome. A larger red dot in the plot indicates the current pair of proteins.</p>
-    
+    <pThe output of this method is visualized as a dot plot matrix showing pairs of similar proteins determined from the algorithm. This dot plot can be navigated by users with the provided zoom and scroll functions. Hovering over colored dots in the dot plot displays information about that pair of proteins. Clicking on a dot displays a column browser which allows one to navigate to the next or previous similar proteins in either genome. A larger red dot in the plot indicates the current pair of proteins.</p>
+        
     <p><a href="http://kbase.us/compare-two-proteomes-method/" target="_blank">Tutorial for Compare Two Proteomes Method</a></p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
-    Chris Henry, Janaka Edirisinghe, Sam Seaver, Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
+    Roman Sutormin. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
 
 
