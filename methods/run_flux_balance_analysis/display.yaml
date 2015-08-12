@@ -118,6 +118,62 @@ parameters :
         long-hint  : |
             Specify additional compounds to add to media one at a time by using “add another additional compound” button
     
+    expression_matrix :
+        ui-name : |
+            Expression matrix
+        short-hint : |
+            An imported ExpressionMatrix containing gene expression values, one condition (column) of which will be used to constrain reaction activity in FBA
+        long-hint  : |
+            An imported ExpressionMatrix containing gene expression values, one condition (column) of which will be used to constrain reaction activity in FBA
+
+    expression_condition :
+        ui-name : |
+            Expression condition
+        short-hint : |
+            Specific condition in expression matrix to which reaction activity in FBA should be fit
+        long-hint  : |
+            Specific condition in expression matrix to which reaction activity in FBA should be fit
+
+    expression_threshold :
+        ui-name : |
+            Expression threshold
+        short-hint : |
+            Reactions with expression values in the percentile above this threshold are considered ON; if below, they are considered OFF
+        long-hint  : |
+            Reactions with expression values in the percentile above this threshold are considered ON; if below, they are considered OFF
+
+    expression_uncertainty :
+        ui-name : |
+            Expression uncertainty
+        short-hint : |
+            Range of uncertainty for classification of reaction activity based on expression threshold
+        long-hint  : |
+            Reactions with expression values in a percentile that is within this uncertainty of the expression threshold will not be classified as on or off
+
+    universal_gene_threshold :
+        ui-name : |
+            Universal genes-based threshold
+        short-hint : |
+            Use expression threshold value (above) as the percentile of universal gene expression to use to set final threshold for gene activity
+        long-hint  : |
+            If checked, all expression values associated with a set of universally active genes will be sorted, and the value at the percentile set by Expression Threshold will be used to set activity all genes in the genome
+
+    objective_fraction :
+        ui-name : |
+            Objective constraint
+        short-hint : |
+            What fraction of the optimal objective value should be transcriptomics FBA problem be constrained at? Values between 0 and 1.
+        long-hint  : |
+            What fraction of the optimal objective value should be transcriptomics FBA problem be constrained at? Values between 0 and 1. 1 is not recommended.
+    
+    discrete_variables :
+        ui-name : |
+            Discrete formulation
+        short-hint : |
+            If checked, discrete binary variables are used for reaction activity and reaction slack in transcriptomic FBA. FBA will be slower. FVA will be much slower.
+        long-hint  : |
+            If checked, discrete binary variables are used for reaction activity and reaction slack in transcriptomic FBA. FBA will be slower. FVA will be much slower.
+    
     maxc_uptake :
         ui-name : |
             Max Carbon Uptake
@@ -152,7 +208,7 @@ parameters :
 
 description : |
     
-    <p>This method constructs a model of how metabolites flow through the metabolic network of a microbe or a plant. Flux Balance Analysis (FBA) is a constraint-based approach that estimates growth-optimal fluxes through all reactions in the metabolic network, thereby making it possible to estimate the growth rate of an organism (the rate of biomass production) or the rate of production of a given metabolic output on a specified media.This method allows you to analyze the organism’s growth on different substrates and to evaluate the reactions and metabolites that carry fluxes in each growth condition.</p>
+    <p>This method constructs a model of how metabolites flow through the metabolic network of a microbe or a plant. Flux Balance Analysis (FBA) is a constraint-based approach that estimates growth-optimal fluxes through all reactions in the metabolic network, thereby making it possible to estimate the growth rate of an organism (the rate of biomass production) or the rate of production of a given metabolic output on a specified media.This method allows you to analyze the organism''s growth on different substrates and to evaluate the reactions and metabolites that carry fluxes in each growth condition.</p>
     <p>Begin by selecting the metabolic model of organism that you want to perform the Flux Balance Analysis upon. Then, specify the media on which you will grow your organism. In KBase, the media object contains the chemical compounds on which you want to analyze the growth of your organism. KBase provides users with more than 500 commonly used media conditions to use when running FBA. These media formulations can be added to your narrative by clicking the “Add Data” button, navigating to the “Public” tab, filtering for “Media” using the dropdown menu in the top left corner, and selecting a desired media type.  In addition, users can build and upload their own custom media formulations. KBase will then simulate flux balance analysis with the model, enabling a wide range of custom FBA algorithms, including flux variability analysis, knockout of all individual genes, fitting to expression data, and Probabilistic Regulation of Metabolism (PROM). This method produces an FBA object, which may be exported in Excel or SBML format.</p>
     
     <p><a href="http://kbase.us/run-flux-balance-analysis-method/" target="_blank">Tutorial for Run Flux Balance Analysis Method</a></p>
