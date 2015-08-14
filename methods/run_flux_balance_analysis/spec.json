@@ -45,7 +45,7 @@
     "optional":false,
     "advanced":true,
     "allow_multiple":false,
-    "default_values":["0"],
+    "default_values":["1"],
     "field_type" : "checkbox",
     "checkbox_options":{
       "checked_value": 1,
@@ -67,7 +67,7 @@
     "optional":false,
     "advanced":true,
     "allow_multiple":false,
-    "default_values":["0"],
+    "default_values":["1"],
     "field_type" : "checkbox",
     "checkbox_options":{
       "checked_value": 1,
@@ -122,6 +122,78 @@
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ]
+    }
+  }, {
+	"id" : "expression_matrix",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ]
+    }
+  }, {
+	"id" : "expression_condition",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as": "string"
+    }
+  }, {
+	"id" : "expression_threshold",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "0.5" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as": "float"
+    }
+  }, {
+	"id" : "expression_uncertainty",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "0.1" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as": "float"
+    }
+  }, {
+	"id" : "universal_gene_threshold",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+	"id" : "objective_fraction",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "0.1" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as": "float"
+    }
+  }, {
+	"id" : "discrete_variables",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
     }
   }, {
     "id" : "maxc_uptake",
@@ -249,6 +321,34 @@
         {
           "narrative_system_variable": "workspace",
           "target_property": "workspace"
+        },
+        {
+          "input_parameter": "expression_threshold",
+          "target_property": "expression_threshold_percentile"
+        },
+        {
+          "input_parameter": "expression_uncertainty",
+          "target_property": "kappa"
+        },
+        {
+          "input_parameter": "expression_condition",
+          "target_property": "expsample"
+        },
+        {
+          "input_parameter": "expression_matrix",
+          "target_property": "expseries"
+        },
+        {
+          "input_parameter": "discrete_variables",
+          "target_property": "use_discrete_variables"
+        },
+        {
+          "input_parameter": "objective_fraction",
+          "target_property": "formulation:objfraction"
+        },
+        {
+          "input_parameter": "universal_gene_threshold",
+          "target_property": "universal_gene_threshold"
         }
       ],
       "output_mapping" : [

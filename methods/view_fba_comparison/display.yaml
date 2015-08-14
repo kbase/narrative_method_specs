@@ -1,0 +1,47 @@
+#
+# Define basic display information
+#
+name     : View Flux Balance Analysis Comparison
+subtitle : |
+    Displays a side-by-side comparison of serveral flux balance analysis solutions.
+tooltip  : |
+    Displays a side-by-side comparison of serveral flux balance analysis solutions.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            FBA Comparison
+        short-hint : |
+            the FBA Comparison to view
+        long-hint  : |
+            the FBA Comparison to view
+
+
+description : |
+    Displays a side-by-side comparison of serveral flux balance analysis solutions.
+
+
+technical-description : |
+    Displays a side-by-side comparison of serveral flux balance analysis solutions.
