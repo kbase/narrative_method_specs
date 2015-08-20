@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : FeatureSet
+tooltip : FeatureSet object
+subtitle : FeatureSet object
+
+icon : none
+
+description : |
+    <p>a featureset.</p>
+
+    
+    
+    

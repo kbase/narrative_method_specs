@@ -1,0 +1,125 @@
+{
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseFeatureSet"
+  },
+  "parameters" : [ {
+    "id" : "input_genome",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+    }
+  },{
+    "id" : "input_feature_ids",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "textsubdata",
+    "textsubdata_options" : {
+      "subdata_selection": {
+        "parameter_id" : "input_genome",
+        "subdata_included" : ["features/[*]/id", "features/[*]/aliases","features/[*]/function"],
+        "path_to_subdata": ["features"],
+        "selection_id" : "id",
+        "selection_description" : ["aliases","function"],
+        "description_template" :
+            "{{#if aliases.length}} ({{aliases}}){{/if}}{{#if function}} - {{function}}{{/if}}"
+      },
+      "multiselection":true,
+      "show_src_obj":true,
+      "allow_custom":false
+    }
+  }, {
+    "id" : "base_feature_set",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseCollections.FeatureSet" ]
+    }
+  }, {
+    "id" : "output_feature_set",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "NewFeatureSet" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseCollections.FeatureSet" ],
+      "is_output_name":true
+    }
+  }, {
+    "id" : "description",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "textarea",
+    "textarea_options" : {
+      "n_rows" : 2
+    }
+  } ],
+  "behavior" : {
+    "service-mapping" : {
+      "url" : "https://next.kbase.us/services/feature_values/jsonrpc",
+      "name" : "KBaseFeatureValues",
+      "method" : "build_feature_set",
+      "input_mapping" : [
+        {
+          "input_parameter": "input_genome",
+          "target_property": "genome",
+          "target_type_transform": "ref"
+        },
+        {
+          "input_parameter": "input_feature_ids",
+          "target_property": "feature_ids"
+        },
+        {
+          "input_parameter": "description",
+          "target_property": "description"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "out_workspace"
+        },
+        {
+          "input_parameter": "base_feature_set",
+          "target_property": "base_feature_set",
+          "target_type_transform": "ref"
+        },
+        {
+          "input_parameter": "output_feature_set",
+          "target_property": "output_feature_set"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "output_feature_set",
+          "target_property": "featureset_name"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceName"
+        },
+        {
+          "service_method_output_path": [],
+          "target_property": "job_id"
+        }
+      ]
+    }
+  },
+  "job_id_output_field": "job_id"
+}
+
