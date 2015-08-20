@@ -1,0 +1,14 @@
+#
+# Define basic display information
+#
+name     : Expression Estimate K Result
+subtitle : Expression Estimate K Result object
+tooltip  : Expression Estimate K Result object
+
+icon : none
+
+description : |
+    <p>This type describes expression estimate K result.</p>
+    
+    
+    

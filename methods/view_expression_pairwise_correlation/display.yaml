@@ -1,0 +1,53 @@
+#
+# Define basic display information
+#
+name     : View Pairwise Correlation for Expression Data
+
+tooltip  : |
+    View Pairwise Correlation for Expression Data
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_expression_matrix :
+        ui-name : |
+            Expression Matrix
+        short-hint : |
+            Matrix with expression values
+        long-hint  : |
+            Select the matrix with expression values
+
+    input_gene_ids :
+        ui-name : |
+            Features
+        short-hint : |
+            Select the features to compare.
+        long-hint  : |
+            If no features are found, you probably have to associate this expression data set with a Genome.
+
+    input_featureset :
+        ui-name : |
+            Feature Set
+        short-hint : |
+            Include all the features from this FeatureSet
+
+description : |
+    View and explore expression pairwise correlation in your workspace.
+
+
+technical-description : |
+    View and explore  expression pairwise correlation in your workspace.

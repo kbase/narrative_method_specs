@@ -1,0 +1,48 @@
+#
+# Define basic display information
+#
+name     : Impute Missing Expression Values
+
+tooltip  : |
+    Impute Missing Expression Values
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_data:
+        ui-name : |
+            Input Matrix
+        short-hint : |
+            Input Expression Matrix
+        long-hint  : |
+            Input Expression Matrix
+
+    out_matrix_id :
+        ui-name : |
+            Output Matrix
+        short-hint : |
+            Output Expression Matrix (optional, overwrites input if not set)
+        long-hint  : |
+            Output Expression Matrix (optional, overwrites input if not set)
+
+
+description : |
+    Expression Toolkit set missing values
+
+
+technical-description : |
+    Expression Toolkit set missing values

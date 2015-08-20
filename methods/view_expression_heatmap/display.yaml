@@ -33,7 +33,28 @@ parameters :
         ui-name : |
             Features
         short-hint : |
-            Select the features to include in the heatmap.
+            Select the features to compare.
+        long-hint  : |
+            If no features are found, you probably have to associate this expression data set with a Genome.
+
+    input_featureset :
+        ui-name : |
+            Feature Set
+        short-hint : |
+            Include all the features from this FeatureSet
+
+    min_colorvalue :
+        ui-name : |
+            Min Color Range
+        short-hint : |
+            For the heatmap, set the value of the maximum color.
+
+    max_colorvalue :
+        ui-name : |
+            Max Color Range
+        short-hint : |
+            For the heatmap, set the value of the minimum color.
+
 
 description : |
     View and explore expression data as a sortable heatmap.  Conditions/Samples are displayed on each row

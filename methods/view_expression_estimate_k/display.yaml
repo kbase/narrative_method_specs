@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : View Estimated K Result
+subtitle : |
+    View Estimated K Result object in your workspace.
+tooltip  : |
+    View Estimated K Result object in your workspace.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_estimate_k_result :
+        ui-name : |
+            Estimated K Result
+        short-hint : |
+            select the Estimated K Result you want to view
+        long-hint  : |
+            select the Estimated K Result you want to view
+
+
+description : |
+    View Estimated K Result object in your workspace.
+
+
+technical-description : |
+    View Estimated K Result object in your workspace.

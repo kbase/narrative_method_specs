@@ -1,0 +1,37 @@
+{
+  "name" : "View Expression Cluster Set",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["viewers"],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseExpressionFeatureClusters"
+  },
+  "parameters" : [ {
+    "id" : "input_cluster_set",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFeatureValues.FeatureClusters" ]
+    }
+  } ],
+  "behavior" : {
+    "none" : {
+      "output_mapping" : [
+        {
+          "input_parameter": "input_cluster_set",
+          "target_property": "clusterSetID"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceID"
+        }
+      ]
+    }
+  }
+}

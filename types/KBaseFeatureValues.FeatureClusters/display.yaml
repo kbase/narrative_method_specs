@@ -1,0 +1,14 @@
+#
+# Define basic display information
+#
+name     : Expression Feature Clusters
+subtitle : Expression Feature Clusters
+tooltip  : Expression Feature Clusters
+
+icon : none
+
+description : |
+    <p>This type describes expression cluster set.</p>
+    
+    
+    

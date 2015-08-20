@@ -1,0 +1,91 @@
+#
+# Define basic display information
+#
+name     : Estimate K for K-Means Clustering for Expression Data
+
+tooltip  : |
+    Calculate an optimal value of k for use in k-means clustering method.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_expression_matrix:
+        ui-name : |
+            Expression Matrix
+        short-hint : |
+            Expression Matrix to use for estimating value of k 
+        long-hint  : |
+            Expression Matrix to use for estimating value of k 
+
+    output_estimated_k :
+        ui-name : |
+            Estimated number of clusters
+        short-hint : |
+            Provide name for estimated number of clusters output
+        long-hint  : |
+            Provide name for estimated number of clusters output
+
+    min_k :
+        ui-name : Min. Number of Clusters
+        short-hint : Minimum number of clusters
+        long-hint  : Minimum number of clusters
+
+    max_k :
+        ui-name : Max. Number of Clusters
+        short-hint : Maximum number of clusters (Set max to 100 for most datasets)
+        long-hint  : Maximum number of clusters (Set max to 100 for most datasets)
+
+    max_iter :
+        ui-name : Max. Number of Iterations
+        short-hint : Maximum allowed iterations for K-Means algorithm to converge. 
+        long-hint  : Try increasing this parameter if the method gives a warning - "did not converge in <max_iter> iterations"
+
+    neighb_size :
+        ui-name : Neighborhood Size
+        short-hint : Neighborhood size used for the connectivity measure
+        long-hint  : Neighborhood size used for the connectivity measure
+
+    max_items :
+        ui-name : Max. number of rows
+        short-hint : Maximum number of rows (recommended only for large datasets)
+        long-hint  : This parameter is used to randomly sample the expression matrix to estimate k
+
+    random_seed :
+        ui-name : Random Seed
+        short-hint : Random seed used by K-means algorithm
+        long-hint  : Random seed used by K-means algorithm
+
+
+description : |
+    <p>This method computes an optimal number of clusters (k) for use in the K-Means Clustering for Expression Data method. This is achieved by minimizing both the number of clusters (k) and the average variance between the clusters. Begin by selecting or importing an expression dataset to analyze using the Add Data button. Provide a name for the output estimate, a valid number for Max. Number of clusters and a valid number for Max. Number of Iterations ,run the method to calculate an optimal value for k. The number of iterations determines how many times the k-means algorithm is run on the dataset until convergence is achieved.</p>
+    
+    <p><u>For smaller datasets (less than 4000 expression values and fewer than 20 conditions):</u></p>
+    
+    <p>If the estimate k method gives the warning, "did not converge in <max_iter> iterations", try increasing the Max. Number of Iterations parameter before running the method again.</p>
+    
+    <p>If the estimate k method gives the warning, "Quick-TRANSfer stage steps exceeded maximum", try decreasing the Max. Num of Clusters to a smaller number before running the method again.</p>
+    
+    <p><u>For larger datasets (over 15000 expression features and more than 20 conditions):</u></p>
+    
+    <p>Set the Max. number of rows parameter (in advanced options) to a smaller number (1000 - 15000) for estimating k. This parameter is used to randomly sample the dataset in order to compute the estimate for k.</p>
+        
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
+
+    <p>For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
+    
+

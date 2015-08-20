@@ -1,0 +1,37 @@
+{
+  "name" : "View FeatureSet",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["viewers"],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseFeatureSet"
+  },
+  "parameters" : [ {
+    "id" : "featureset_name",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseCollections.FeatureSet" ]
+    }
+  } ],
+  "behavior" : {
+    "none" : {
+      "output_mapping" : [
+        {
+          "input_parameter": "featureset_name",
+          "target_property": "featureset_name"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceName"
+        }
+      ]
+    }
+  }
+}
