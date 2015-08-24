@@ -1,0 +1,57 @@
+#
+# Define basic display information
+#
+name     : Associate Expression Data Matrix to Genome Features
+
+tooltip  : |
+    Associate expression data matrix rows to genome features by ID or alias
+
+screenshots :
+    []
+
+replacement-text : Associated Expression data {{{input_data}}} to Genome {{{genome_id}}}
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_data:
+        ui-name : |
+            Expression Matrix
+        short-hint : |
+            Expression data to associate with genome features
+
+    genome_id:
+        ui-name : |
+            Genome
+        short-hint : |
+            Genome containing features referenced by the selected Expression Matrix
+
+    out_matrix_id :
+        ui-name : |
+            Output Expression Matrix Name
+        short-hint : |
+            Provide a name for the new expresion data matrix associated with the genome
+
+
+description : |
+    This method accepts an Expression data matrix and a Genome and attempts to associate
+    the rows in the data to features in the Genome.  The matching is performed by simply comparing
+    the row IDs to genome feature IDs or aliases.  Methods that operate on expression data
+    often rely on this mapping between rows and features to properly function.
+

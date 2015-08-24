@@ -4,7 +4,7 @@
 name     : UPLOAD TRANSCRIPT
 subtitle : none
 tooltip  : |
-    Import transcript data from a file in FASTA format into your Narrative.
+    Import transcripts (cDNA or protein) from a file in FASTA format
 
 screenshots :
     []
@@ -33,9 +33,9 @@ parameters :
         ui-name : |
             FASTA FILE
         short-hint : |
-            File with protein/cDNA in FASTA format (must have .fa or .fasta extension)
+            File with protein/cDNA sequences in FASTA format
         long-hint  : |
-            File with protein/cDNA in FASTA format (must have .fa or .fasta extension)
+            Your filename should end with .fa or .fasta
 
     outputObject :
         ui-name : |
@@ -59,7 +59,7 @@ parameters :
         short-hint : |
             If checked, indicates that file contains nucleic acid sequences rather than proteins
         long-hint  : |
-            If checked, indicates that file contains nucleic acid sequences rather than proteins
+            (The default is proteins)
 
 
 description : none

@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : FBA Comparison
+subtitle : FBA Comparison
+tooltip  : FBA Comparison
+
+icon : none
+
+description : |
+    <p>This type contains data from a comparison of multiple FBA solutions.</p>
+
+    
+    
+    
