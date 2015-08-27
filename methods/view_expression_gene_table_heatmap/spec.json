@@ -1,0 +1,60 @@
+{
+  "name" : "View Expression Heatmap In Feature Table",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseExpressionFeatureTableHeatmap"
+  },
+  "parameters" : [ {
+    "id" : "input_expression_matrix",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ]
+    }
+  } , {
+    "id" : "input_condition_ids",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "textsubdata",
+    "textsubdata_options" : {
+      "subdata_selection": {
+
+        "parameter_id" : "input_expression_matrix",
+        "subdata_included" : ["data/col_ids"],
+        "path_to_subdata": ["data","col_ids"]
+      },
+      "multiselection":true,
+      "show_src_obj":false,
+      "allow_custom":false
+    }
+  }
+],
+  "behavior" : {
+    "none" : {
+      "output_mapping" : [
+        {
+          "input_parameter": "input_expression_matrix",
+          "target_property": "expressionMatrixID"
+        },
+        {
+          "input_parameter": "input_condition_ids",
+          "target_property": "conditionIds"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceID"
+        }
+      ]
+    }
+  }
+}

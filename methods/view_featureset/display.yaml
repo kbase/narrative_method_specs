@@ -1,0 +1,40 @@
+#
+# Define basic display information
+#
+name     : View FeatureSet
+tooltip  : |
+    View a FeatureSet
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    featureset_name :
+        ui-name : |
+            FeatureSet
+        short-hint : |
+            the FeatureSet to view
+
+
+description : |
+    View a FeatureSet
+

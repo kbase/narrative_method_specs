@@ -1,0 +1,170 @@
+{
+  "name" : "Expression Toolkit cluster k_means",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseExpressionFeatureClusters"
+  },
+  "parameters" : [ {
+    "id" : "input_expression_matrix",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ]
+    }
+  },{
+    "id" : "input_k_value",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as": "int",
+      "min_int" : 2
+    }
+  }, {
+    "id" : "output_cluster_set",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFeatureValues.FeatureClusters" ],
+      "is_output_name":true
+    }
+  }, {
+    "id" : "n_start",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "1000" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ],
+      "validate_as": "int",
+      "min_int" : 1
+    }
+  }, {
+    "id" : "max_iter",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "1000" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ],
+      "validate_as": "int",
+      "min_int" : 10,
+      "max_int" : 100000
+    }
+  }, {
+    "id" : "algorithm",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "Lloyd" ],
+    "field_type" : "dropdown",
+    "dropdown_options":{
+      "options": [
+        {
+          "value": "Lloyd",
+          "display": "Lloyd",
+          "id": "Lloyd",
+          "ui_name": "Lloyd"
+        },
+        {
+          "value": "Hartigan-Wong",
+          "display": "Hartigan-Wong",
+          "id": "Hartigan-Wong",
+          "ui_name": "Hartigan-Wong"
+        },
+        {
+          "value": "Forgy",
+          "display": "Forgy",
+          "id": "Forgy",
+          "ui_name": "Forgy"
+        },
+        {
+          "value": "MacQueen",
+          "display": "MacQueen",
+          "id": "MacQueen",
+          "ui_name": "MacQueen"
+        }
+      ]
+    }
+  }, {
+    "id" : "random_seed",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ],
+      "validate_as": "int"
+    }
+  } ],
+  "behavior" : {
+    "service-mapping" : {
+      "url" : "https://kbase.us/services/feature_values/jsonrpc",
+      "name" : "KBaseFeatureValues",
+      "method" : "cluster_k_means",
+      "input_mapping" : [
+        {
+          "input_parameter": "input_k_value",
+          "target_property": "k"
+        },
+        {
+          "input_parameter": "input_expression_matrix",
+          "target_property": "input_data",
+          "target_type_transform": "ref"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "out_workspace"
+        },
+        {
+          "input_parameter": "output_cluster_set",
+          "target_property": "out_clusterset_id"
+        },
+        {
+          "input_parameter": "n_start",
+          "target_property": "n_start"
+        },
+        {
+          "input_parameter": "max_iter",
+          "target_property": "max_iter"
+        },
+        {
+          "input_parameter": "random_seed",
+          "target_property": "random_seed"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "output_cluster_set",
+          "target_property": "clusterSetID"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceID"
+        },
+        {
+          "service_method_output_path": [],
+          "target_property": "job_id"
+        }
+      ]
+    }
+  },
+  "job_id_output_field": "job_id"
+}
+
