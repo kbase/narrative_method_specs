@@ -1,5 +1,5 @@
 {
-  "name" : "View Expression Heatmap",
+  "name" : "View Expression Pairwise Correlation",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
@@ -7,7 +7,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "kbaseExpressionHeatmap"
+    "output" : "kbaseExpressionPairwiseCorrelation"
   },
   "parameters" : [ {
     "id" : "input_expression_matrix",
@@ -19,7 +19,7 @@
     "text_options" : {
       "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ]
     }
-  } , {
+  }, {
     "id" : "input_gene_ids",
     "optional" : true,
     "advanced" : false,
@@ -48,24 +48,24 @@
       "valid_ws_types" : [ "KBaseCollections.FeatureSet" ]
     }
   }, {
-    "id" : "min_colorvalue",
+    "id" : "min_range",
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "validate_as": "float"
+      "validate_as":"float"
     }
   }, {
-    "id" : "max_colorvalue",
+    "id" : "max_range",
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "validate_as": "float"
+      "validate_as":"float"
     }
   }
 ],
@@ -85,12 +85,12 @@
           "target_property": "featureset"
         },
         {
-          "input_parameter": "min_colorvalue",
-          "target_property": "min_colorvalue"
+          "input_parameter": "min_range",
+          "target_property": "minRange"
         },
         {
-          "input_parameter": "max_colorvalue",
-          "target_property": "max_colorvalue"
+          "input_parameter": "max_range",
+          "target_property": "maxRange"
         },
         {
           "narrative_system_variable": "workspace",

@@ -41,7 +41,7 @@
   }, {
     "id" : "fillMissingValues",
     "optional" : true,
-    "advanced" : false,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values":["0"],
     "field_type" : "checkbox",
@@ -59,29 +59,35 @@
     "dropdown_options":{
       "options": [
         {
-          "value": "level",
-          "display": "Absolute Level",
-          "id": "level",
-          "ui_name": "Absolute Level"
+          "value": "untransformed",
+          "display": "Untransformed Raw Values"
         },
         {
-          "value": "ratio",
-          "display": "Ratio",
-          "id": "ratio",
-          "ui_name": "Ratio"
+          "value": "log2_level",
+          "display": "log2 Level"
         },
         {
-          "value": "log-ratio",
-          "display": "Log-ratio",
-          "id": "log-ratio",
-          "ui_name": "Log-ratio"
+          "value": "log10_level",
+          "display": "log10 Level"
+        },
+        {
+          "value": "log2_ratio",
+          "display": "log2 Ratio"
+        },
+        {
+          "value": "log10_ratio",
+          "display": "log10 Ratio"
+        },
+        {
+          "value": "unknown",
+          "display": "Unknown"
         }
       ]
     }
   }, {
     "id" : "dataScale",
     "optional" : true,
-    "advanced" : false,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text"

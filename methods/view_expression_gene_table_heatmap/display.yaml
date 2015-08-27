@@ -1,0 +1,39 @@
+#
+# Define basic display information
+#
+name     : View Expression Matrix Heatmap In Feature Table
+
+tooltip  : |
+    Explore an Expression Matrix by viewing a sortable heatmap of selected conditions.  
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_expression_matrix :
+        ui-name : |
+            Expression Matrix
+        short-hint : |
+            Select the Expression Matrix to vizualize
+
+    input_condition_ids :
+        ui-name : |
+            Conditions
+        short-hint : |
+            Select the conditions to compare
+
+description : |
+    <p>View and explore expression data as a sortable heatmap. Features (genes) are displayed on each row with some summary statistics averaged across the selected conditions. The features can be sorted by those values. Each of the selected conditions is represented in a simple heatmap in the table. Mouseover the heatmap to view specific expression values.</p>
