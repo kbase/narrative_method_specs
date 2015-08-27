@@ -2,8 +2,7 @@
 # Define basic display information
 #
 name     : View Feature Clusters
-subtitle : |
-    View Feature Clusters
+
 tooltip  : |
     View Feature Clusters
 
@@ -28,14 +27,9 @@ parameters :
         ui-name : |
             Expression Feature Clusters
         short-hint : |
-            select the Expression Cluster Set you want to view
-        long-hint  : |
-            select the Expression Cluster Set you want to view
+            Select the Expression Cluster Set you want to view
 
 
 description : |
-    View Expression Cluster Set object in your workspace.
+    View Expression Cluster Set object in your Narrative.
 
-
-technical-description : |
-    View Expression Cluster Set object in your workspace.

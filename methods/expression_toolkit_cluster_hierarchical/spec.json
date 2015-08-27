@@ -43,31 +43,23 @@
       "is_output_name":true
     }
   }, {
-    "id" : "distance_metric",
+    "id" : "max_items",
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "" ],
+    "default_values" : [ "5000" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
-    }
-  }, {
-    "id" : "linkage_criteria",
-    "optional" : true,
-    "advanced" : true,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ ]
+      "valid_ws_types" : [ ],
+      "validate_as": "int",
+      "min_int" : 2
     }
   }, {
     "id" : "algorithm",
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "hclust" ],
+    "default_values" : [ "flashClust" ],
     "field_type" : "dropdown",
     "dropdown_options":{
       "options": [
@@ -110,12 +102,8 @@
           "target_property": "out_clusterset_id"
         },
         {
-          "input_parameter": "distance_metric",
-          "target_property": "distance_metric"
-        },
-        {
-          "input_parameter": "linkage_criteria",
-          "target_property": "linkage_criteria"
+          "input_parameter": "max_items",
+          "target_property": "max_items"
         },
         {
           "input_parameter": "algorithm",

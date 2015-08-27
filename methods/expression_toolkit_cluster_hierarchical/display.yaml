@@ -4,7 +4,7 @@
 name     : Cluster Expression Data - Hierarchical
 
 tooltip  : |
-    Group gene expression data as branches of dendrogram.
+    Perform hierarchical clustering to group gene expression data as branches of dendrogram.
 
 screenshots :
     []
@@ -47,16 +47,11 @@ parameters :
         long-hint  : |
             After the method has finished running, an ClusterSet data object will be added to your data panel. Provide a name for this data object, using only alphanumeric characters and underscores.
 
-    distance_metric :
-        ui-name : Distance metric
-        short-hint : Measure of distance used between pairs of observations 
-        long-hint  : This must be one of "euclidean", "maximum", "manhattan", "canberra", "binary", "pearson", "abspearson", "correlation", "abscorrelation", "spearman" or "kendall".
+    max_items :
+        ui-name : Max. number of rows
+        short-hint : Maximum number of rows (recommended only for large datasets)
+        long-hint  : Maximum number of rows (recommended only for large datasets)
 
-    linkage_criteria :
-        ui-name : Linkage criteria
-        short-hint : Determines the dissimilarity of sets based of the distances between observations in the sets 
-        long-hint  : This should be (an unambiguous abbreviation of) one of "ward", "single", "complete", "average", "mcquitty", "median" or "centroid","centroid2".
-        
     algorithm :
         ui-name : Algorithm
         short-hint : Select between a normal clustering algorithm (hclust) and a fast version (flashClust)

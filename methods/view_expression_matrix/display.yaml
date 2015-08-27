@@ -27,14 +27,9 @@ parameters :
         ui-name : |
             Expression Matrix
         short-hint : |
-            Select an expression matrix to view
-        long-hint  : |
-            Select an expression matrix to view
+            Select an Expression Matrix to view
 
 
 description : |
-    View and explore Expression Matrix object in your workspace.
+    View and explore an Expression Matrix in your Narrative.
 
-
-technical-description : |
-    View and explore an Expression Matrix in your workspace.

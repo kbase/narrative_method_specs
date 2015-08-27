@@ -42,6 +42,12 @@ parameters :
         short-hint : |
             Select Features from the Genome to include
 
+    input_feature_ids_custom:
+        ui-name : |
+            Opt. Feature IDs
+        short-hint : |
+            Fill in comma-separated Feature IDs from the Genome to include
+
     base_feature_set:
         ui-name : |
             Base FeatureSet

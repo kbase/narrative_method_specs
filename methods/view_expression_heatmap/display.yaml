@@ -1,10 +1,10 @@
 #
 # Define basic display information
 #
-name     : View Expression Matrix Heatmap
+name     : View Expression Matrix Heatmap in Condition Table
 
 tooltip  : |
-    Explore an expression data matrix by viewing a sortable heatmap of selected features  
+    Explore an Expression Matrix as a sortable heatmap of selected features. 
 
 screenshots :
     []
@@ -27,15 +27,15 @@ parameters :
         ui-name : |
             Expression Matrix
         short-hint : |
-            Select the expression data to visualize
+            Select an Expression Matrix to visualize with a heatmap
 
     input_gene_ids :
         ui-name : |
             Features
         short-hint : |
-            Select the features to compare.
+            Select the features to compare
         long-hint  : |
-            If no features are found, you probably have to associate this expression data set with a Genome.
+            If no features are found, your expression dataset may not be associated with the Genome that contains the features. Use the Associate Expression Matrix to Genome Features method to associate your expression dataset with the proper Genome.
 
     input_featureset :
         ui-name : |
@@ -45,19 +45,19 @@ parameters :
 
     min_colorvalue :
         ui-name : |
-            Min Color Range
+            Min. Color Range
         short-hint : |
-            For the heatmap, set the value of the maximum color.
+            For the heatmap, set the value of the maximum color
 
     max_colorvalue :
         ui-name : |
-            Max Color Range
+            Max. Color Range
         short-hint : |
-            For the heatmap, set the value of the minimum color.
+            For the heatmap, set the value of the minimum color
 
 
 description : |
-    View and explore expression data as a sortable heatmap.  Conditions/Samples are displayed on each row
-    with some summary statistics averaged across the selected features.  The conditions can be sorted
-    by those values.  Each of the selected features is represented in a simple heatmap in the table.
-    Mouseover the heatmap to view specific expression values.
+    <p>This method allows you to view and explore expression data as a sortable heatmap. The conditions&#47;samples are displayed on each row with some summary statistics averaged across the selected features. The conditions can be sorted by those values. Each of the selected features is represented in a simple heatmap in the table. Mouse over the heatmap to view specific expression values.</p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>

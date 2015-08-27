@@ -50,6 +50,16 @@
       "valid_ws_types" : [ "KBaseCollections.FeatureSet" ]
     }
   }, {
+    "id" : "input_feature_ids_custom",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "textarea",
+    "textarea_options" : {
+      "n_rows" : 4
+    }
+  }, {
     "id" : "output_feature_set",
     "optional" : false,
     "advanced" : false,
@@ -85,6 +95,10 @@
         {
           "input_parameter": "input_feature_ids",
           "target_property": "feature_ids"
+        },
+        {
+          "input_parameter": "input_feature_ids_custom",
+          "target_property": "feature_ids_custom"
         },
         {
           "input_parameter": "description",

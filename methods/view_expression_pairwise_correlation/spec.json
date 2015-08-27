@@ -47,6 +47,26 @@
     "text_options" : {
       "valid_ws_types" : [ "KBaseCollections.FeatureSet" ]
     }
+  }, {
+    "id" : "min_range",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as":"float"
+    }
+  }, {
+    "id" : "max_range",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as":"float"
+    }
   }
 ],
   "behavior" : {
@@ -63,6 +83,14 @@
         {
           "input_parameter": "input_featureset",
           "target_property": "featureset"
+        },
+        {
+          "input_parameter": "min_range",
+          "target_property": "minRange"
+        },
+        {
+          "input_parameter": "max_range",
+          "target_property": "maxRange"
         },
         {
           "narrative_system_variable": "workspace",
