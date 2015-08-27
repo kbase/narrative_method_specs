@@ -1,10 +1,10 @@
 #
 # Define basic display information
 #
-name     : View Expression Matrix Heatmap in Condition Table
+name     : View Expression Profile
 
 tooltip  : |
-    Explore an Expression Matrix as a sortable heatmap of selected features. 
+    Explore the expression profile of an Expression Matrix.
 
 screenshots :
     []
@@ -27,7 +27,8 @@ parameters :
         ui-name : |
             Expression Matrix
         short-hint : |
-            Select an Expression Matrix to visualize with a heatmap
+            Select an Expression Matrix to view
+
 
     input_gene_ids :
         ui-name : |
@@ -43,21 +44,8 @@ parameters :
         short-hint : |
             Include all the features from this FeatureSet
 
-    min_colorvalue :
-        ui-name : |
-            Min. Color Range
-        short-hint : |
-            For the heatmap, set the value of the maximum color
-
-    max_colorvalue :
-        ui-name : |
-            Max. Color Range
-        short-hint : |
-            For the heatmap, set the value of the minimum color
-
-
 description : |
-    <p>This method allows you to view and explore expression data as a sortable heatmap. The conditions&#47;samples are displayed on each row with some summary statistics averaged across the selected features. The conditions can be sorted by those values. Each of the selected features is represented in a simple heatmap in the table. Mouse over the heatmap to view specific expression values.</p>
+    <p>This method allows you to plot and compare the average expression values of the full Expression Matrix to the average expression values of selected features across the different conditions. Click on the Show&#47;Hide Selected Features button on the top of the plot to view and sort based on the summary statistics of expression values for selected features. Mouse over the points on the plot to view condition specific average expression values.</p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>

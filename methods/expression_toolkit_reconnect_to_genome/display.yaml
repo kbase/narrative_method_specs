@@ -1,10 +1,10 @@
 #
 # Define basic display information
 #
-name     : Associate Expression Data Matrix to Genome Features
+name     : Associate Expression Matrix to Genome Features
 
 tooltip  : |
-    Associate expression data matrix rows to genome features by ID or alias
+    Associate an Expression Matrix with a Genome that contains features referenced in the matrix.
 
 screenshots :
     []
@@ -34,24 +34,24 @@ parameters :
         ui-name : |
             Expression Matrix
         short-hint : |
-            Expression data to associate with genome features
+            Select the Expression Matrix to associate with the Genome that references features contained within the expression data
 
     genome_id:
         ui-name : |
             Genome
         short-hint : |
-            Genome containing features referenced by the selected Expression Matrix
+            Select the Genome containing features referenced by the Expression Matrix
 
     out_matrix_id :
         ui-name : |
             Output Expression Matrix Name
         short-hint : |
-            Provide a name for the new expresion data matrix associated with the genome
+            Provide a name for the new Expression Matrix associated with the Genome
 
 
 description : |
-    This method accepts an Expression data matrix and a Genome and attempts to associate
-    the rows in the data to features in the Genome.  The matching is performed by simply comparing
-    the row IDs to genome feature IDs or aliases.  Methods that operate on expression data
-    often rely on this mapping between rows and features to properly function.
+    <p>This method associates the rows of an Expression Matrix to features contained in the Genome by matching the row IDs to genome feature IDs or aliases. Methods that operate on expression data often require this mapping between rows and features to properly function. This method is can be used in case the Expression Matrix was not associated with a Genome upon importing or if an updated Genome becomes available to associate with the Expression Matrix.</p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
 

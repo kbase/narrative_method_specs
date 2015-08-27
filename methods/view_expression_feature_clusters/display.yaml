@@ -1,10 +1,10 @@
 #
 # Define basic display information
 #
-name     : View Expression Matrix
+name     : View Feature Clusters
 
 tooltip  : |
-    View Expression Matrix
+    View Feature Clusters
 
 screenshots :
     []
@@ -23,13 +23,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_cluster_set :
         ui-name : |
-            Expression Matrix
+            Expression Feature Clusters
         short-hint : |
-            Select an Expression Matrix to view
+            Select the Expression Cluster Set you want to view
 
 
 description : |
-    View and explore an Expression Matrix in your Narrative.
+    View Expression Cluster Set object in your Narrative.
 

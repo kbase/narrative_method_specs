@@ -1,10 +1,10 @@
 #
 # Define basic display information
 #
-name     : View Expression Matrix Heatmap in Condition Table
+name     : View Pairwise Correlation for Expression Data
 
 tooltip  : |
-    Explore an Expression Matrix as a sortable heatmap of selected features. 
+    Explore pairwise correlation of selected features as a heatmap.
 
 screenshots :
     []
@@ -27,7 +27,9 @@ parameters :
         ui-name : |
             Expression Matrix
         short-hint : |
-            Select an Expression Matrix to visualize with a heatmap
+            Select the Expression Matrix to vizualize as a pairwise correlation
+        long-hint  : |
+            Choose an Expression Matrix from your Data Panel to use with this method. You can upload an Expression Matrix into your Narrative by clicking the <i>Add Data</i> button and selecting the <i>Import</i> tab.
 
     input_gene_ids :
         ui-name : |
@@ -41,23 +43,23 @@ parameters :
         ui-name : |
             Feature Set
         short-hint : |
-            Include all the features from this FeatureSet
+            Include all the features from this FeatureSet.
 
-    min_colorvalue :
+    min_range :
         ui-name : |
-            Min. Color Range
+            Min Color Range
         short-hint : |
-            For the heatmap, set the value of the maximum color
+            The color range of the heatmat will be calibrated to set this as the minimum value.
 
-    max_colorvalue :
+    max_range :
         ui-name : |
-            Max. Color Range
+            Max Color Range
         short-hint : |
-            For the heatmap, set the value of the minimum color
-
+            The color range of the heatmat will be calibrated to set this as the maximum value.
 
 description : |
-    <p>This method allows you to view and explore expression data as a sortable heatmap. The conditions&#47;samples are displayed on each row with some summary statistics averaged across the selected features. The conditions can be sorted by those values. Each of the selected features is represented in a simple heatmap in the table. Mouse over the heatmap to view specific expression values.</p>
+    <p>This method allows you to view and explore pairwise correlation of selected features as a heatmap. Click on the Hide&#47;Show Selected Features button on the top of the heatmap to view and sort the summary statistics of expression values for selected features. Mouse over the heatmap to view specific correlation values.</p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
+
