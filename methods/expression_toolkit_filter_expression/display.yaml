@@ -1,0 +1,74 @@
+#
+# Define basic display information
+#
+name     : Filtering expression
+tooltip  : |
+    Filter out non-differentially expressed features
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    expression :
+        ui-name : |
+            Input Expression
+        short-hint : |
+            select ExpressionMatrix you want to filter
+        long-hint  : |
+            select ExpressionMatrix you want to filter
+    filtered_expression :
+        ui-name : |
+            Filtered Expression
+        short-hint : |
+            the output filtered ExpressionMatrix object name
+        long-hint  : |
+            the output filtered ExpressionMatrix object name
+    filtered_featureset :
+        ui-name : |
+            Filtered FeatureSet
+        short-hint : |
+            the output filtered FeatureSet object name
+        long-hint  : |
+            the output filtered FeatureSet object name
+    method :
+        ui-name : |
+            Filtering Method
+        short-hint : |
+            ANOVA (ANalysis Of VAriance) or LOR (Log Odd Ratio)
+    num_features :
+        ui-name : |
+            Number of Features
+        short-hint : |
+            the number of features you want to retain
+        long-hint  : |
+            You must select either the number of features or P_value
+    p_value :
+        ui-name : |
+            P-value
+        short-hint : |
+            P-value cut off
+        long-hint  : |
+            You must select either the number of features or P_value
+
+description : |
+    Filtering differentially expressed genes and generate both selected FeatureSet and reduced ExpressionMatrix
+
+
