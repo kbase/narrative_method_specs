@@ -1,4 +1,4 @@
-**master:** [![Build Status](https://travis-ci.org/kbase/narrative_method_specs.svg?branch=master)](https://travis-ci.org/kbase/narrative_method_specs) | **staging:** [![Build Status](https://travis-ci.org/kbase/narrative_method_specs.svg?branch=staging)](https://travis-ci.org/kbase/narrative_method_specs) | **develop:** [![Build Status](https://travis-ci.org/kbase/narrative_method_specs.svg?branch=develop)](https://travis-ci.org/kbase/narrative_method_specs)
+**master:** [![Build Status](https://travis-ci.org/kbase/narrative_method_specs.svg?branch=master)](https://travis-ci.org/kbase/narrative_method_specs) | **staging:** [![Build Status](https://travis-ci.org/kbase/narrative_method_specs.svg?branch=staging)](https://travis-ci.org/kbase/narrative_method_specs) | **develop:** [![Build Status](https://travis-ci.org/kbase/narrative_method_specs.svg?branch=develop)](https://travis-ci.org/kbase/narrative_method_specs) | **CI:** [![Build Status](https://travis-ci.org/kbase/narrative_method_specs.svg?branch=ci)](https://travis-ci.org/kbase/narrative_method_specs)
 
 Narrative Method & App Specifications
 -----------------------------------------------

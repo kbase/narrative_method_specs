@@ -21,12 +21,14 @@ parameters :
     fastqFile1 :
         ui-name : READS FILE
         short-hint : Short read file containing a paired end library in FASTA/FASTQ format
-        long-hint  : Short read file containing a paired end library in FASTA/FASTQ format
+        long-hint  : |
+            Valid file extensions for FASTA: .fasta, .fna, .fa   Valid file extensions for FASTQ: .fastq, .fnq, .fq
+
 
     fastqFile2 :
         ui-name : READS FILE
-        short-hint : Optional second short read file containing a paired end library in FASTA/FASTQ format. Not needed in an interleaved library
-        long-hint  : Optional second short read file containing a paired end library in FASTA/FASTQ format. Not needed in an interleaved library
+        short-hint : Optional second short read file containing a paired end library in FASTA/FASTQ format.
+        long-hint  : Not needed in an interleaved library
 
     insertSizeMean :
         ui-name : MEAN INSERT SIZE
