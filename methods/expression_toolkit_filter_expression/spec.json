@@ -74,7 +74,7 @@
       }
     }, {
       "id" : "p_value",
-      "optional" : false,
+      "optional" : true,
       "advanced" : false,
       "allow_multiple" : false,
       "default_values" : [ "0.05" ],
@@ -85,7 +85,7 @@
   } ],
   "behavior" : {
     "service-mapping" : {
-      "url" : "impl",
+      "url" : "",
       "name" : "CoExpression",
       "method" : "coex_filter",
       "input_mapping" : [
