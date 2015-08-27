@@ -46,9 +46,9 @@ parameters :
         ui-name : |
             Draft Model
         short-hint : |
-            A draft metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass  
+            Enter a name for the metabolic model to be created.
         description  : |
-            A draft metabolic network model consisting of stoichiometric reactions, compounds, and the weighted components of the biomass 
+            Enter a name for the metabolic model to be created.
         placeholder : |
             Output Metabolic Model Name
            
