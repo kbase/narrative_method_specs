@@ -78,7 +78,7 @@
         },
         {
           "input_parameter": "input_media",
-          "target_property": "formulation:formulation:media"
+          "target_property": "formulation:media"
         },
         {
           "input_parameter": "comprehensive_gapfill",
@@ -110,7 +110,7 @@
         },
         {
           "narrative_system_variable": "workspace",
-          "target_property": "formulation:formulation:media_workspace"
+          "target_property": "formulation:media_workspace"
         }
       ],
       "output_mapping" : [
