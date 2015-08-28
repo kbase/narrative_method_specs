@@ -50,8 +50,6 @@
       "default_values" : [ "300" ],
       "field_type" : "text",
       "text_options" : {
-        "validate_as": "int",
-        "min_int" : 1
       }
     }, {
       "id" : "filtered_expression",
@@ -83,7 +81,6 @@
       "default_values" : [ "0.05" ],
       "field_type" : "text",
       "text_options" : {
-        "validate_as": "float"
       }
   } ],
   "behavior" : {
