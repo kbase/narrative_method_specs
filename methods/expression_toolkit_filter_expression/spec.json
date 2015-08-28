@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["inactive"],
+  "categories" : ["active"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseExpressionMatrix"
@@ -50,7 +50,8 @@
       "default_values" : [ "300" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ ]
+        "validate_as": "int",
+        "min_int" : 1
       }
     }, {
       "id" : "filtered_expression",
@@ -60,7 +61,8 @@
       "default_values" : [ "" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ ]
+        "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ],
+        "is_output_name" : true
       }
     }, {
       "id" : "filtered_featureset",
@@ -70,7 +72,8 @@
       "default_values" : [ "" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ ]
+        "valid_ws_types" : [ "KBaseCollections.FeatureSet" ],
+        "is_output_name" : true
       }
     }, {
       "id" : "p_value",
@@ -80,7 +83,7 @@
       "default_values" : [ "0.05" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ ]
+        "validate_as": "float"
       }
   } ],
   "behavior" : {
