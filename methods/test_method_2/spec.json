@@ -48,7 +48,7 @@
     
     "behavior": {
         "service-mapping": {
-            "url": "http://neverservice.com:555/",
+            "url": "${endpoint-host}:555${endpoint-base}/neverservice",
             "name": "KBaseNeverService",
             "method": "test_method",
             "input_mapping": [
