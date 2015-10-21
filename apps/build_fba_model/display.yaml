@@ -3,24 +3,31 @@
 #
 name     : Reconstruct Genome-scale Metabolic Model
 subtitle : |
-    Starting with an Annotated Genome, build a metabolic model and add reactions until the model can predict growth.
+    Infer and gapfill a metabolic FBA model from a microbial genome in a specified growth condition.
 tooltip  : |
-    In this App, you can build a model for a genome and gapfill it.
+    Infer and gapfill a metabolic FBA model from a microbial genome in a specified growth condition.
 
 screenshots : []
 
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            [compare_two_metabolic_models_generic, run_flux_balance_analysis]
 
 header : |
-    <p>Starting with an annotated Genome, this KBase App will use the annotations to identify
-    which biochemical reactions are likely to occur in your organism.  Annotations are not always perfect,
-    so some essential reactions will likely be missed.  Gapfilling is an approach to automatically
-    add reactions until the model is complete enough to predict that the cell will grow under some conditions</p>
-    
-    <p>Begin by selecting an annotated Genome data object below, and provide a name for the new metabolic model.
-    Then click Run to start the App</p>
-    
-    <p>For more technical details about the methods used in this app, see the documentation on the 
-    <a href="https://kbase.us/developer-zone/documentation/fba-modeling-service/" target="_blank">kbase FBA tools</a>.</p>
+    <p>The Reconstruct Genome-scale Metabolic Model app builds a metabolic model, using the annotation data from an annotated Genome object to reconstruct the metabolic reactions that the cell is capable of performing.  It then performs gapfilling, which is the search for and subsequent bridging of missing metabolic reactions that were not found in the initial annotation search.</p>
+  
+    <p><a href="http://kbase.us/reconstruct-genome-scale-metabolic-model-app/" target="_blank">Tutorial for Reconstruct Genome-scale Metabolic Model App</a></p>
 
 step-descriptions :
     step_1 : |
@@ -30,16 +37,8 @@ step-descriptions :
 
 
 description : |
-    <p>The "Reconstruct Genome-scale Metabolic Model" app automatically constructs a genome-scale metabolic model for a KBase-annotated genome produced by one of the assembly apps. The model is then gap filled to simulate growth in any growth condition specified by the user. KBase already includes over 500 preloaded growth conditions for the user to select from. Users can also load their own custom growth conditions by uploading a table of growth condition data or by constructing a growth condition in KBase. The metabolic model object produced by this app can be exported in SBML or Excel format or immediately used as input in any of the downstream apps described below (e.g., Flux Balance Analysis).</p>
+    <p>The Reconstruct Genome-scale Metabolic Model app builds a metabolic model, using the annotation data from an annotated Genome object to reconstruct the metabolic reactions that the cell is capable of performing.  It then performs gapfilling, which is the search for and subsequent bridging of missing metabolic reactions that were not found in the initial annotation search.</p>
+    
+    <p><a href="http://kbase.us/reconstruct-genome-scale-metabolic-model-app/" target="_blank">Tutorial for Reconstruct Genome-scale Metabolic Model App</a></p>
 
 
-technical-description : |
-    <b> this is the technical description of the test app</b> <br>
-    
-    <pre>some code here</pre>
-    
-    yada, yada, yada <br>
-    
-    
-    
-    

@@ -1,0 +1,61 @@
+#
+# Define basic display information
+#
+name     : Create Metagenome Set
+
+tooltip  : |
+    Combine multiple metagenomes into a set to use as input for the Generate Taxonomic Abundance Data or Generate Functional Abundance Data methods.
+
+screenshots :
+    []
+
+icon: icon.png
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            [communities_build_taxonomic_profile, communities_build_functional_profile]
+    methods:
+        related :
+            []
+        next :
+            []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_profile :
+        ui-name : |
+            Metagenomes
+        short-hint : |
+            Users select metagenomes that are found in their data panel
+        long-hint  : |
+            Users select metagenomes that are found in their data panel
+
+    output_boxplot :
+        ui-name : |
+            Output Boxplot
+        short-hint : |
+            Name of output boxplot
+        long-hint  : |
+            Name of output boxplot
+
+
+    name :
+        ui-name : |
+            Output Metagenome Set
+        short-hint : |
+            Output set of metagenomes
+        long-hint  : |
+            Output set of metagenomes
+
+
+description : |
+    <p>This method creates a set of metagenomes out of one or more metagenomes. The set can then be used as input to the <a data-method-id=Òretrieve_taxonomic_abundance_profileÓ>Generate Taxonomic Abundance Data</a> or <a data-method-id=Òretrieve_functional_abundance_profileÓ>Generate Functional Abundance Data</a> methods.</p>

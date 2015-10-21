@@ -1,0 +1,37 @@
+{
+  "name" : "View Metagenome Annotation Set",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active","viewers"],
+  "widgets" : {
+    "input" : null,
+    "output" : "AnnotationSetTable"
+  },
+  "parameters" : [ {
+    "id" : "input_metagenome",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.MetagenomeAnnotation" ]
+    }
+  } ],
+  "behavior" : {
+      "none" : {
+            "output_mapping" : [
+                {
+                    "input_parameter": "input_metagenome",
+                    "target_property": "id"
+                },
+                {
+                    "narrative_system_variable": "workspace",
+                    "target_property": "ws"
+                }
+            ]
+        }
+  }
+}

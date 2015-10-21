@@ -1,0 +1,116 @@
+{
+  "ver" : "1.0.0",
+  "authors" : [ "jmc", "psnovichkov", "rsutormin" ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseDomainAnnotation"
+  },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+    }
+  }, {
+    "id" : "param1",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "KBasePublicGeneDomains/All" ],
+    "field_type" : "dropdown",
+    "dropdown_options":{
+      "options": [
+        {
+          "value": "KBasePublicGeneDomains/All",
+          "display": "All domain libraries"
+        },
+        {
+          "value": "KBasePublicGeneDomains/COGs-only",
+          "display": "COGs 1.0 (from CDD 3.12) domains only"
+        },
+        {
+          "value": "KBasePublicGeneDomains/NCBI-CDD-only",
+          "display": "NCBI-curated CDD 3.12 domains only"
+        },
+        {
+          "value": "KBasePublicGeneDomains/SMART-only",
+          "display": "SMART 6.0 (from CDD 3.12) domains only"
+        },
+        {
+          "value": "KBasePublicGeneDomains/Pfam-only",
+          "display": "Pfam 27 domains only"
+        },
+        {
+          "value": "KBasePublicGeneDomains/TIGRFAMs-only",
+          "display": "TIGRFAM 15 domains only"
+        }
+      ]
+    }
+  }, {
+    "id" : "param2",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGeneFamilies.DomainAnnotation" ],
+      "is_output_name":true
+    }
+  } ],
+  "behavior" : {
+    "service-mapping" : {
+      "url" : "https://kbase.us/services/gene_families/",
+      "name" : "KBaseGeneFamilies",
+      "method" : "search_domains",
+      "input_mapping" : [
+        {
+          "input_parameter": "param0",
+          "target_property": "genome",
+          "target_type_transform": "ref"
+        },
+        {
+          "input_parameter": "param1",
+          "target_property": "dms_ref"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "out_workspace"
+        },
+        {
+          "input_parameter": "param2",
+          "target_property": "out_result_id",
+          "generated_value": {
+            "prefix": "domains_"
+          }
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "param2",
+          "target_property": "domainAnnotationID"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceID"
+        },
+        {
+          "constant_value": "500px",
+          "target_property": "height"
+        },
+        {
+          "service_method_output_path": [],
+          "target_property": "jobID"
+        }
+      ]
+    }
+  },
+  "job_id_output_field": "jobID"
+}

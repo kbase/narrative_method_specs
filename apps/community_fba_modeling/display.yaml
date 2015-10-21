@@ -3,34 +3,50 @@
 #
 name     : Reconstruct Community Metabolic Model
 subtitle : |
-    In this App, you can create an fba model for a microbial community and gapfill it.
+    Reconstruct a compartmentalized metabolic model of a community using abundance data.
 tooltip  : |
-    In this App, you can create an fba model for a microbial community and gapfill it.
+    Reconstruct a compartmentalized metabolic model of a community using abundance data.
 
 screenshots : []
 
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            [compare_two_metabolic_models_generic, run_flux_balance_analysis]
 
 header : |
-    Instructions appear here.
+    <p>The Reconstruct Community Metabolic Model app generates a community metabolic model to be used with model-associated apps in KBase (e.g., "Run Flux Balance Analysis") to predict fluxes. To begin, the user may either upload a set of metabolic models or select a set of public metabolic models already present in KBase. KBase will then assemble these models into a single compartmentalized community model. The user may also select or upload a growth condition to which the community model will be gap filled.</p>
+    
+    <p><a href="http://kbase.us/reconstruct-community-metabolic-model/" target="_blank">Tutorial for Reconstruct Community Metabolic Model App</a></p>
 
 step-descriptions :
     step_1 : |
-        additional instructions/details regarding the step with id step_1
+        Select functional annotations organized by OTU from metagenome database
     step_2 : |
-        additional instructions/details regarding the step with id step_2
+        Construct metabolic models for abudant OTUs and ensemble model for all remaining functions in annotated metagenome
+    step_3 : |
+        Merge all metagenome models into a single compartmentalized community model
+    step_4 : |
+        Gapfill community model to permit function on a specified growth condition
 
 
 description : |
-    <p>The Reconstruct Community Metabolic Model app generates a community model to be used with model-associated apps in KBase (e.g., Flux Balance Analysis, Growth Phenotype Simulation and Reconciliation) to predict flux and interactions between species in the community. To begin, the user may either upload a set of metabolic models or select a set of metabolic models already present in KBase. KBase will then assemble these models into a single compartmentalized microbial community model. The user may also select or upload a growth condition to which the community model will be gap filled.</p>
+    <p>The Reconstruct Community Metabolic Model app generates a community metabolic model to be used with model-associated apps in KBase (e.g., "Run Flux Balance Analysis") to predict fluxes. To begin, the user may either upload a set of metabolic models or select a set of public metabolic models already present in KBase. KBase will then assemble these models into a single compartmentalized community model. The user may also select or upload a growth condition to which the community model will be gap filled.</p>
+    
+    <p><a href="http://kbase.us/reconstruct-community-metabolic-model/" target="_blank">Tutorial for Reconstruct Community Metabolic Model App</a></p>
 
 
-technical-description : |
-    <b> this is the technical description of the test app</b> <br>
-    
-    <pre>some code here</pre>
-    
-    yada, yada, yada <br>
-    
+
     
     
     

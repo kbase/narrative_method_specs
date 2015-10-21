@@ -1,0 +1,47 @@
+#
+# Define basic display information
+#
+name     : View AssemblyReport
+subtitle : |
+    View and explore a AssemblyReport object in your workspace. [5]
+tooltip  : |
+    View and explore a AssemblyReport object in your workspace. [5]
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            AssemblyReport
+        short-hint : |
+            select the AssemblyReport you want to view [5.1]
+        long-hint  : |
+            select the AssemblyReport you want to view [5.1]
+
+
+description : |
+    View and explore a AssemblyReport object in your workspace. [5]
+
+
+technical-description : |
+    View and explore a AssemblyReport object in your workspace. [5]

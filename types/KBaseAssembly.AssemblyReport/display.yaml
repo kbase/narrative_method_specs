@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : AssemblyReport
+subtitle : AssemblyReport object
+tooltip  : AssemblyReport object
+
+icon : contigset.jpg
+
+description : |
+    <p>This type describes assembly report.</p>
+
+    
+    
+    

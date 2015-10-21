@@ -1,0 +1,77 @@
+#
+# Define basic display information
+#
+name     : Insert Set of Genomes Into Species Tree
+
+tooltip  : |
+    Add a user-provided GenomeSet to the KBase species tree.
+
+
+screenshots :
+    - insert_genome_into_species_tree_input.png
+    - insert_genome_into_species_tree_output1.png
+    - insert_genome_into_species_tree_output2.png
+    - insert_genome_into_species_tree_output3.png
+    - insert_genome_into_species_tree_output4.png
+
+icon: icon.png
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            [build_genome_set_from_tree_generic]
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            GenomeSet
+        short-hint : |
+            GenomeSet to be inserted into a phylogenetic tree for comparing it with closely related publicly available genomes
+        long-hint  : |
+            GenomeSet to be inserted into a phylogenetic tree for comparing it with closely related publicly available genomes
+
+
+    param1 :
+        ui-name : |
+            Neighbor public genome count
+        short-hint : |
+            Number of closest public genomes the tree will contain. (optional, default value is 100)
+        long-hint  : |
+            Number of closest public genomes the tree will contain. (optional, default value is 100)
+
+
+    param2 :
+        ui-name : |
+            Output Tree
+        short-hint : |
+            Output species tree name; if empty, an ID will be chosen randomly
+        long-hint : |
+            A phylogenetic tree relating genomes available in KBase to the user-provided genome
+            
+
+
+description : |
+    <p>This method allows a user to construct a phylogenetic tree combining the GenomeSet provided by the user with a set of closely related genomes from the KBase list of species. Since the number of genomes available in KBase is very large, the procedure starts by selecting a subset of KBase genomes closely related to the user-provided genome. Relatedness is determined by alignment similarity to a select subset of COG (Clusters of Orthologous Groups) domains. Next, a phylogenetic tree is reconstructed using FastTree (a method to quickly estimate maximum likelihood phylogeny, see Publications) with the genome provided by the user and the set of genomes identified as similar in the previous step. The output tree can be shown with two possible layouts - rectangular and circular.</p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong> Roman Sutormin. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
+
+publications :
+    -
+        display-text: |
+            Price MN, Dehal PS, Arkin AP (2010)FastTree 2--approximately maximum-likelihood trees for large alignments. PLoS One. 2010 Mar 10;5(3):e9490
+        link: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2835736/
+

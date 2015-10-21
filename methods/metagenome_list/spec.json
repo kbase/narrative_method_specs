@@ -1,0 +1,28 @@
+{
+  "name" : "Create metagenome set",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : "create_metagenome_set",
+    "output" : null
+  },
+  "parameters" : [],
+  "behavior" : {
+      "none" : {
+          "input_mapping" : [
+              {
+                  "narrative_system_variable": "workspace",
+                  "target_property": "ws"
+              },
+              {
+                  "narrative_system_variable": "token",
+                  "target_property": "auth"
+              }
+          ],
+		  "output_mapping" : []
+      }
+  }
+}

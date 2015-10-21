@@ -1,46 +1,54 @@
-name     : PAIRED END FASTQ
+name     : PAIRED END READS
 subtitle : none
-tooltip  : Upload a PairedEndLibrary object from FASTQ-file(s) into your workspace.
+tooltip  : Upload a PairedEndLibrary from FASTA/FASTQ file(s) into your Narrative.
 
 screenshots :
     []
 
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 parameters :
     fastqFile1 :
-        ui-name : FASTQ FILE
-        short-hint : First short read file of a paired end library in FASTQ format.
-        long-hint  : none
+        ui-name : READS FILE
+        short-hint : Short read file containing a paired end library in FASTA/FASTQ format
+        long-hint  : |
+            Valid file extensions for FASTA: .fasta, .fna, .fa   Valid file extensions for FASTQ: .fastq, .fnq, .fq
+
 
     fastqFile2 :
-        ui-name : FASTQ FILE
-        short-hint : Second short read file of a paired end library in FASTQ format. Not needed in an interleaved library.
-        long-hint  : none
+        ui-name : READS FILE
+        short-hint : Optional second short read file containing a paired end library in FASTA/FASTQ format.
+        long-hint  : Not needed in an interleaved library
 
     insertSizeMean :
-        ui-name : INSERT SIZE MEAN
-        short-hint : Insert size mean
-        long-hint  : none
+        ui-name : MEAN INSERT SIZE
+        short-hint : Specify the mean (average) insert length
+        long-hint  : Specify the mean (average) insert length
 
     insertSizeStDev :
-        ui-name : INSERT SIZE STDEV
-        short-hint : Insert size standard deviation
-        long-hint  : none
+        ui-name : STDEV OF INSERT SIZE
+        short-hint : Specify the standard deviation of insert lengths
+        long-hint  : Specify the standard deviation of insert lengths
 
     readOrientationOutward :
         ui-name : READS ORIENTATION OUTWARD
         short-hint : Reads in a pair point outward
-        long-hint  : none
+        long-hint  : Reads in a pair point outward
 
     outputObject :
-        ui-name : OUTPUT OBJECT ID
-        short-hint : Target object ID.
-        long-hint  : none
+        ui-name : OBJECT NAME
+        short-hint : Provide a name for the output object that will be created by this upload
+        long-hint  : Provide a name for the output object that will be created by this upload
 
 description : none
 

@@ -2,10 +2,9 @@
 # Define basic display information
 #
 name     : UPLOAD FROM FASTA FILE
-subtitle : |
-    Upload a ContigSet object from Fasta-file into your workspace.
+subtitle : none
 tooltip  : |
-    Upload a ContigSet object from Fasta-file into your workspace.
+    Upload DNA sequence(s) in FASTA format (creating a ContigSet).
 
 screenshots :
     []
@@ -13,11 +12,17 @@ screenshots :
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #
@@ -26,24 +31,32 @@ method-suggestions :
 parameters :
     fastaFile :
         ui-name : |
-            FASTA FILE
+            FASTA file
         short-hint : |
-            File with dna data in Fasta format.
+            File with DNA data (one or more sequences) in FASTA format
         long-hint  : |
-            File with dna data in Fasta format.
+             Recognized extensions for the FASTA input file are .fasta, .fna, or .fa
 
     outputObject :
         ui-name : |
-            CONTIGSET OBJECT ID
+            ContigSet name
         short-hint : |
-            Target object ID.
+            Provide a name for the ContigSet that will be created by this upload
         long-hint  : |
-            Target object ID.
+            Provide a name for the ContigSet that will be created by this upload
+
+    fastaReferenceOnly :
+        ui-name : |
+            FASTA reference only
+        short-hint : |
+            Creates a reference to the FASTA file in Shock, but does not store the sequences in the workspace object (not recommended unless the FASTA file is larger than 1GB. This is the default behaviour for files that are large)
+        long-hint  : |
+            Creates a reference to the FASTA file in Shock, but does not store the sequences in the workspace object (not recommended unless the FASTA file is larger than 1GB. This is the default behaviour for files that are large)
 
 
 description : |
-    Upload a ContigSet object from Fasta-file into your workspace.
+    Upload DNA sequence(s) in FASTA format (creating a ContigSet)
 
 
 technical-description : |
-    Upload a ContigSet object from Fasta-file into your workspace.
+    Upload DNA sequence(s) in FASTA format (creating a ContigSet)

@@ -7,7 +7,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "kbaseModelTabs"
+    "output" : "kbaseTabTable"
   },
   "parameters" : [ {
     "id" : "input_model",
@@ -28,17 +28,6 @@
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ "KBaseBiochem.Media" ]
-    }
-  }, {
-    "id": "integrate_solution",
-    "optional":false,
-    "advanced":false,
-    "allow_multiple":false,
-    "default_values":["1"],
-    "field_type" : "checkbox",
-    "checkbox_options":{
-      "checked_value": 1,
-      "unchecked_value": 0
     }
   }, {
     "id" : "output_model",
@@ -89,11 +78,7 @@
         },
         {
           "input_parameter": "input_media",
-          "target_property": "formulation:formulation:media"
-        },
-        {
-          "input_parameter": "integrate_solution",
-          "target_property": "integrate_solution"
+          "target_property": "formulation:media"
         },
         {
           "input_parameter": "comprehensive_gapfill",
@@ -108,29 +93,34 @@
           "target_property": "fastgapfill"
         },
         {
+          "constant_value": 1,
+          "target_property": "integrate_solution"
+        },
+        {
           "narrative_system_variable": "workspace",
           "target_property": "workspace"
-        }
-        ,
+        },
         {
           "narrative_system_variable": "workspace",
           "target_property": "model_workspace"
-        }
-        ,
+        },
         {
           "narrative_system_variable": "workspace",
           "target_property": "source_model_ws"
-        }
-        ,
+        },
         {
           "narrative_system_variable": "workspace",
-          "target_property": "formulation:formulation:media_workspace"
+          "target_property": "formulation:media_workspace"
         }
       ],
       "output_mapping" : [
         {
+          "constant_value": "KBaseFBA.FBAModel",
+          "target_property": "type"
+        },
+        {
           "input_parameter": "output_model",
-          "target_property": "id"
+          "target_property": "obj"
         },
         {
           "narrative_system_variable": "workspace",

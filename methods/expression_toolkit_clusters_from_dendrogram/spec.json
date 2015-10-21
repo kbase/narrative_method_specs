@@ -1,0 +1,88 @@
+{
+  "name" : "Expression Toolkit clusters from dendrogram",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseExpressionFeatureClusters"
+  },
+  "parameters" : [ {
+    "id" : "input_data",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFeatureValues.FeatureClusters" ]
+    }
+  },{
+    "id" : "feature_height_cutoff",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "0.5" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as": "float",
+      "min_int" : 0.0,
+      "max_int" : 1.0
+    }
+  }, {
+    "id" : "out_clusterset_id",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFeatureValues.FeatureClusters" ],
+      "is_output_name":true
+    }
+  } ],
+  "behavior" : {
+    "service-mapping" : {
+      "url" : "https://next.kbase.us/services/feature_values/jsonrpc",
+      "name" : "KBaseFeatureValues",
+      "method" : "clusters_from_dendrogram",
+      "input_mapping" : [
+        {
+          "input_parameter": "feature_height_cutoff",
+          "target_property": "feature_height_cutoff"
+        },
+        {
+          "input_parameter": "input_data",
+          "target_property": "input_data",
+          "target_type_transform": "ref"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "out_workspace"
+        },
+        {
+          "input_parameter": "out_clusterset_id",
+          "target_property": "out_clusterset_id"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "out_clusterset_id",
+          "target_property": "clusterSetID"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceID"
+        },
+        {
+          "service_method_output_path": [],
+          "target_property": "job_id"
+        }
+      ]
+    }
+  },
+  "job_id_output_field": "job_id"
+}
+

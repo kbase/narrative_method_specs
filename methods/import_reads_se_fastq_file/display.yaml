@@ -1,26 +1,33 @@
-name     : SINGLE END FASTQ
+name     : SINGLE END READS
 subtitle : none
-tooltip  : Upload a SingleEndLibrary object from FASTQ-file into your workspace.
+tooltip  : Upload a Single End Library from a FASTA/FASTQ file
 
 screenshots :
     []
 
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 parameters :
     fastqFile :
-        ui-name : READ PAIR FASTQ
-        short-hint : Short read file of single end library in FASTQ format.
-        long-hint  : none
+        ui-name : READS FILE
+        short-hint : Short read file containing a single end library in FASTA/FASTQ format
+        long-hint  : |
+            Valid file extensions for FASTA: .fasta, .fna, .fa   Valid file extensions for FASTQ: .fastq, .fnq, .fq
 
     outputObject :
-        ui-name : OUTPUT OBJECT ID
-        short-hint : Target object ID.
-        long-hint  : none
+        ui-name : OBJECT NAME
+        short-hint : Provide a name for the output object that will be created by this upload
+        long-hint  : Provide a name for the output object that will be created by this upload
 
 description : none
 

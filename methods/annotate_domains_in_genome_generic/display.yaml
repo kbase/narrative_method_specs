@@ -1,0 +1,78 @@
+#
+# Define basic display information
+#
+name     : Annotate Domains in a Genome
+
+tooltip  : |
+    Annotate a genome with protein domains from widely used domain libraries.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        [annotate_genome_generic, annotate_contigset]
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Genome
+        short-hint : |
+            Genome to annotate
+        long-hint  : |
+            Select a Genome from your data store annotate.  It must already have annotated genes
+
+    param1 :
+        ui-name : |
+            Domain Model Set
+        short-hint : |
+            Set of domain models or libraries to use
+        long-hint  : |
+            Set of domain models or libraries to use
+
+    param2 :
+        ui-name : |
+            Output DomainAnnotation Name
+        short-hint : |
+            This object with annotated domains will be stored in your data store
+        long-hint  : |
+            This object with annotated domains will be stored in your data store
+
+
+
+description : |
+    
+    <p>This method identifies protein domains from widely used domain libraries.  It requires a Genome as input, which must already have annotated genes (e.g., those identified using the <a data-method-id=Òreannotate_microbial_genomeÓ>Annotate Microbial Genome</a> or <a data-method-id=Òannotate_contigsetÓ>Annotate Microbial Contigs</a> methods).</p>
+    
+    <p>The user must choose one of the following sets of models with which to annotate their Genome:</p>
+    
+    <ul>
+    <li><b>COGs</b> (clusters of orthologous groups, <a href="http://www.ncbi.nlm.nih.gov/COG/">http://www.ncbi.nlm.nih.gov/COG/</a>) from the <a href="http://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml">NCBI conserved domains database</a> (CDD) version 3.12.</li>
+    
+    <li>NCBI's <b>CDD</b> models from the <a href="http://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml">NCBI conserved domains database</a> (CDD) version 3.12.  This dataset includes only the <a href="http://www.ncbi.nlm.nih.gov/Structure/cdd/cdd_help.shtml#CDSource_NCBI_curated">NCBI-curated domains</a>.</li>
+    
+    <li><b>SMART</b> (Simple Modular Architecture Research Tool, <a href="http://smart.embl-heidelberg.de/">http://smart.embl-heidelberg.de/</a> version 6.0, from the <a href="http://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml">NCBI conserved domains database</a> (CDD) version 3.12.</li>
+    
+    <li><b>Pfam</b> version 27.0 hidden Markov models, from <a href="http://pfam.xfam.org/">http://pfam.xfam.org/</a>.</li>
+    
+    <li><b>TIGRFAMs</b> version 15.0 hidden Markov models, from the <a href="http://www.jcvi.org/cgi-bin/tigrfams/index.cgi">J. Craig Venter Institute</a>.</li>
+    
+    <li><b>All of the above</b> libraries.</li>
+    </ul>
+    
+    <p>For the first three libraries above (COGs, CDD, and SMART), KBase runs RPS-BLAST version 2.2.30, from the <a href="http://www.ncbi.nlm.nih.gov/books/NBK1762/">BLAST+ package at NCBI</a>, identifying all domain hits with an E-value of 10<sup>-4</sup> or better.</p>
+    
+    <p>For the two HMM libraries (Pfam and TIGRFAMs), KBase runs <a href="http://hmmer.janelia.org/">HMMER version 3.1b1</a>, identifying all domain hits at least as significant as the family-specific <i>trusted cutoff</i> identified by the curators of each model.</p>
+    
+    <p>The annotation job may run for an hour or longer, especially if all libraries are selected.  When the annotation job finishes, a DomainAnnotation object will be stored in your data store, which can be used to browse the domains that were identified in your genome.</p>
+    
+    <p><strong>Team members who developed &amp; deployed methods in KBase:</strong> John-Marc Chandonia, Roman Sutormin, and Pavel Novichkov. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>

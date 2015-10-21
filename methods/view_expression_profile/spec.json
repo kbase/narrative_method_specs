@@ -1,0 +1,74 @@
+{
+  "name" : "View Expression Profile",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseExpressionSparkline"
+  },
+  "parameters" : [ {
+    "id" : "input_expression_matrix",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ]
+    }
+  }, {
+    "id" : "input_gene_ids",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "textsubdata",
+    "textsubdata_options" : {
+      "subdata_selection": {
+        "parameter_id" : "input_expression_matrix",
+        "subdata_included" : ["feature_mapping"],
+        "path_to_subdata": ["feature_mapping"],
+        "selection_id": ["value"]
+      },
+      "multiselection":true,
+      "show_src_obj":false,
+      "allow_custom":false
+    }
+  }, {
+    "id" : "input_featureset",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseCollections.FeatureSet" ]
+    }
+  }
+],
+  "behavior" : {
+    "none" : {
+      "output_mapping" : [
+        {
+          "input_parameter": "input_expression_matrix",
+          "target_property": "expressionMatrixID"
+        },
+        {
+          "input_parameter": "input_gene_ids",
+          "target_property": "geneIds"
+        },
+        {
+          "input_parameter": "input_featureset",
+          "target_property": "featureset"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceID"
+        }
+      ]
+    }
+  }
+}

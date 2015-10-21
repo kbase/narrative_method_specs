@@ -1,5 +1,5 @@
 #
-# Define basic display information
+#  THIS IS OBSOLETE--replaced by import_contigset_fasta_file and import_contigset_fasta_ftp
 #
 name     : Import Contigs
 subtitle : |
@@ -13,11 +13,17 @@ screenshots :
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #

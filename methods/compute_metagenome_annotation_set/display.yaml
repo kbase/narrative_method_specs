@@ -1,0 +1,101 @@
+#
+# Define basic display information
+#
+name     : Compute Metagenome Annotation Set
+subtitle : |
+     Compute metagenome annotation set for selected metagenome.
+tooltip  : |
+     Compute metagenome annotation set for selected metagenome.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            [metagenome_annotation_to_models]
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_metagenome :
+        ui-name : |
+            Metagenome
+        short-hint : |
+            metagenome object
+        long-hint  : |
+            metagenome object
+
+
+    output_set :
+        ui-name : |
+            Annotation Set
+        short-hint : |
+            Annotation set for metagenome
+        long-hint  : |
+            Annotation set for metagenome
+
+
+    level :
+        ui-name : |
+            Taxonomic Level
+        short-hint : |
+            Annotation hierarchical level to retrieve abundances: default is genus, alternatives are family, order, class, phylum, domain
+        long-hint  : |
+            Annotation hierarchical level to retrieve abundances: default is genus, alternatives are family, order, class, phylum, domain
+
+
+    top :
+        ui-name : |
+            Top Organisms
+        short-hint : |
+            Produce annotations for top N abundant organisms; default is 10, alternative is an integer
+        long-hint  : |
+            Produce annotations for top N abundant organisms; default is 10, alternative is an integer
+
+
+    evalue :
+        ui-name : |
+            E-Value
+        short-hint : |
+            Negative log10 value for the upper E-value cutoff; default is 5, alternative is any other integer
+        long-hint  : |
+            Negative log10 value for the upper E-value cutoff; default is 5, alternative is any other integer
+
+
+    identity :
+        ui-name : |
+            Percent Identity
+        short-hint : |
+            Percent value for minimum % identity cutoff: default is 60%, alternative is any integer between 1-100
+        long-hint  : |
+            Percent value for minimum % identity cutoff: default is 60%, alternative is any integer between 1-100
+
+
+    length :
+        ui-name : |
+            Alignment Length
+        short-hint : |
+            Value for minimum alignment length cutoff: default is 15bp, alternative is any other integer 
+        long-hint  : |
+            Value for minimum alignment length cutoff: default is 15bp, alternative is any other integer 
+            
+
+description : |
+    <p>This method allows users to compute an annotation set for a single metagenome. Taxonomic level and top count can be used to restrict the annotation namespace. E-value, percent identity, and alignment length values can be used to filter the annotation abundance data to the desired level of stringency.</p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong><br>Kevin Keegan, Jared Bischof, Travis Harrison, Folker Meyer, Tobias Paczian, Andreas Wilke. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
+ 
+

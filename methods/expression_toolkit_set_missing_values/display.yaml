@@ -1,0 +1,48 @@
+#
+# Define basic display information
+#
+name     : Impute Missing Expression Values
+
+tooltip  : |
+    Replace missing expression values with the average of all other values present for a given gene-id.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_data:
+        ui-name : |
+            Input Matrix
+        short-hint : |
+            Select the Expression Matrix for imputing missing values
+        long-hint  : |
+            Choose an Expression Matrix from your Data Panel to use with this method. You can upload an Expression Matrix into your Narrative by clicking the <i>Add Data</i> button and selecting the <i>Import</i> tab.
+
+    out_matrix_id :
+        ui-name : |
+            Output Matrix
+        short-hint : |
+            Provide name for the imputed Expression Matrix (optional)
+        long-hint  : |
+            If left blank, the input Expression Matix will be overwritten with the newly imputed values.
+
+
+description : |
+    <p>This method imputes the missing values of gene-ids for all of the samples or conditions contained within an Expression Matrix. The missing values are calculated by taking a mean of the gene expression values for all the samples in the specific rows with missing gene expression values</p>
+   
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
+

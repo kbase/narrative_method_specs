@@ -1,0 +1,141 @@
+{
+  "name" : "Filtering Expression",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseExpressionMatrix"
+  },
+  "parameters" : [ {
+      "id" : "expression",
+      "optional" : false,
+      "advanced" : false,
+      "allow_multiple" : false,
+      "default_values" : [ "" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ]
+      }
+    }, {
+      "id" : "method",
+      "optional" : true,
+      "advanced" : false,
+      "allow_multiple" : false,
+      "default_values" : [ "lor" ],
+      "field_type" : "dropdown",
+      "dropdown_options":{
+        "options": [
+          {
+            "value": "lor",
+            "display": "Log odd ratio",
+            "id": "lor",
+            "ui_name": "lor"
+          },
+          {
+            "value": "anova",
+            "display": "ANOVA",
+            "id": "anova",
+            "ui_name": "anova"
+          }
+        ]
+      }
+    }, {
+      "id" : "num_features",
+      "optional" : true,
+      "advanced" : false,
+      "allow_multiple" : false,
+      "default_values" : [ "300" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }, {
+      "id" : "filtered_expression",
+      "optional" : false,
+      "advanced" : false,
+      "allow_multiple" : false,
+      "default_values" : [ "" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }, {
+      "id" : "filtered_featureset",
+      "optional" : false,
+      "advanced" : false,
+      "allow_multiple" : false,
+      "default_values" : [ "" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }, {
+      "id" : "p_value",
+      "optional" : true,
+      "advanced" : false,
+      "allow_multiple" : false,
+      "default_values" : [ "0.05" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+  } ],
+  "behavior" : {
+    "service-mapping" : {
+      "url" : "",
+      "name" : "CoExpression",
+      "method" : "coex_filter",
+      "input_mapping" : [
+        {
+          "input_parameter" : "expression",
+          "target_property" : "object_name"
+        },
+        {
+          "input_parameter" : "filtered_expression",
+          "target_property" : "out_expr_object_name"
+        },
+        {
+          "input_parameter" : "filtered_featureset",
+          "target_property" : "out_fs_object_name"
+        },
+        {
+          "input_parameter" : "method",
+          "target_property" : "method"
+        },
+        {
+          "input_parameter" : "num_features",
+          "target_property" : "num_features"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property" : "workspace_name"
+        },
+        {
+          "input_parameter" : "p_value",
+          "target_property" : "p_value"
+        },
+        {
+          "constant_value" : "0.00000000005",
+          "target_property" : "coverage"
+        }      
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "filtered_expression",
+          "target_property": "expressionMatrixID"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceID"
+        },
+        {
+          "service_method_output_path": [],
+          "target_property": "job_id"
+        }
+      ]
+    }
+  }
+}

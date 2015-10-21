@@ -2,10 +2,9 @@
 # Define basic display information
 #
 name     : IMPORT FROM FTP
-subtitle : |
-    Upload a ContigSet object from FTP into your workspace.
+subtitle : none
 tooltip  : |
-    Upload a ContigSet object from FTP into your workspace.
+    Upload DNA sequence(s) in FASTA format via FTP.
 
 screenshots :
     []
@@ -13,11 +12,17 @@ screenshots :
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #
@@ -26,24 +31,30 @@ method-suggestions :
 parameters :
     ftpFolder :
         ui-name : |
-            FTP FOLDER
+            Name of FTP file
         short-hint : |
-            Path to FTP folder with genome Fasta-file.
+            Provide a path to an FTP file with contigs in FASTA format (e.g., ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/NC_008321.fna)
         long-hint  : |
-            Path to FTP folder with genome Fasta-file.
+            Provide a path to an FTP file with contigs in FASTA format (e.g., ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/NC_008321.fna)
 
     outputObject :
         ui-name : |
-            CONTIGSET OBJECT ID
+            Name of ContigSet
         short-hint : |
-            Target object ID.
+            Provide a name for the ContigSet that will be created by this upload
         long-hint  : |
-            Target object ID.
+            Provide a name for the ContigSet that will be created by this upload
+
+    fastaReferenceOnly :
+        ui-name : |
+            FASTA reference only
+        short-hint : |
+            Creates a reference to the FASTA file in Shock, but does not store the sequences in the workspace object. Not recommended unless the FASTA file is larger than 1GB. This is the default behaviour for files that are large.
+        long-hint  : |
+            Creates a reference to the FASTA file in Shock, but does not store the sequences in the workspace object. Not recommended unless the FASTA file is larger than 1GB. This is the default behaviour for files that are large.
 
 
-description : |
-    Upload a ContigSet object from Fasta-file into your workspace.
+description : none
 
 
-technical-description : |
-    Upload a ContigSet object from Fasta-file into your workspace.
+technical-description : none

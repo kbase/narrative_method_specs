@@ -2,23 +2,31 @@
 # Define basic display information
 #
 name     : Generate Rank Abundance Plot
-subtitle : |
-    Generate rank abundance profile from annotation abundance data.
+
 tooltip  : |
-    Generate rank abundance profile from annotation abundance data.
+    Generate a rank abundance plot from abundance data in a set of metagenomics samples.
 
 screenshots :
-    []
+
+    - generate_rank_abundance_plot_input.png
+    - generate_rank_abundance_plot_output.png
+
+icon: icon.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
-
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 #
 # Configure the display and description of the parameters
@@ -26,43 +34,43 @@ method-suggestions :
 parameters :
     input_profile :
         ui-name : |
-            Input Name
+            Abundance Profile or Matrix
         short-hint : |
-            object name of input abundance profile
+            Select a profile or matrix generated from the Generate Taxonomic Abundance Data or Generate Functional Abundance Data methods
         long-hint  : |
-            object name of input abundance profile
-
+            Select a profile or matrix generated from the Generate Taxonomic Abundance Data or Generate Functional Abundance Data methods
 
     name :
         ui-name : |
             Label by Name
         short-hint : |
-            label by metagenome name and not ID
+            Label by metagenome name instead of KBase metagenome ID
         long-hint  : |
-            label by metagenome name and not ID
+            Label by metagenome name instead of KBase metagenome ID
 
 
     top :
         ui-name : |
             Top Annotations
         short-hint : |
-            produce profile for top N abundant annotations
+            Produce profile for top N abundant annotations; default is 10, alternative is an integer
         long-hint  : |
-            produce profile for top N abundant annotations
+            Produce profile for top N abundant annotations; default is 10, alternative is an integer
 
 
     order :
         ui-name : |
             Order By
         short-hint : |
-            rank by either the position of metagenome in profile (integer) or 'average' or 'max' of metagenomes
+            Order of metagenomes; the default is average abundance, alternative is maximum or sum of abundances in each of the metagenomes
         long-hint  : |
-            rank by either the position of metagenome in profile (integer) or 'average' or 'max' of metagenomes
+            Order of metagenomes; the default is average abundance, alternative is maximum or sum of abundances in each of the metagenomes
 
 
 description : |
-    Generate rank abundance profile from annotation abundance data.
+    <p>This method compares the relative abundance and diversity of species within a community (using amplicon or WGS taxonomic profiles) by plotting the relative abundance in a set of metagenomics s<a data-method-id=Òretrieve_taxonomic_abundance_profileÓ>Generate Taxonomic Abundance Data</a> or <a data-method-id=Òretrieve_functional_abundance_profileÓ>Generate Functional Abundance Data</a></p>  
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Kevin Keegan, Jared Bischof, Travis Harrison, Folker Meyer, Tobias Paczian, Andreas Wilke. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
 
-technical-description : |
-    Generate rank abundance profile from annotation abundance data.

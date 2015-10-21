@@ -1,0 +1,56 @@
+#
+# Define basic display information
+#
+name     : View Clusters from Dendrogram
+
+tooltip  : |
+    View Clusters from Dendrogram in your Narrative.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_data:
+        ui-name : |
+            Input clusters
+        short-hint : |
+            Clusters with dendrogram created by hierarchical clustering
+        long-hint  : |
+            Clusters with dendrogram created by hierarchical clustering
+
+    feature_height_cutoff:
+        ui-name : |
+            Tree height cutoff
+        short-hint : |
+            Tree height cutoff
+        long-hint  : |
+            Tree height cutoff
+
+    out_clusterset_id :
+        ui-name : |
+            Set of clusters
+        short-hint : |
+            Generted clusters
+        long-hint  : |
+            Generted clusters
+
+
+description : |
+    Expression Toolkit cluster from dendrogram
+
+
+technical-description : |
+    Expression Toolkit cluster from dendrogram

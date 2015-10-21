@@ -1,23 +1,30 @@
 #
 # Define basic display information
 #
-name     : Annotate a microbial genome
-subtitle : |
-    Annotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]
+name     : Annotate Microbial Genome
+
 tooltip  : |
-    Annotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]
+    Annotate or re-annotate bacterial or archaeal genome using RASTtk.
 
 screenshots :
     []
 
+icon: icon.png
+
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            [build_fba_model, build_species_tree]
+    methods:
+        related :
+            []
+        next :
+            [annotate_domains_in_genome_generic]
 
 
 #
@@ -28,166 +35,247 @@ parameters :
         ui-name : |
             Genome
         short-hint : |
-            Input genome object to be reannotated
+            A genome (set of DNA contigs) including structural and functional annotations
         long-hint  : |
-            Input genome object to be reannotated
+            A genome (set of DNA contigs) including structural and functional annotations
 
 
     call_features_rRNA_SEED :
         ui-name : |
             Call features rRNA SEED
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
             
     call_features_tRNA_trnascan :
         ui-name : |
             Call features tRNA trnascan
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-    
+            See manual page for description of annotation pipieline
+                
     call_selenoproteins :
         ui-name : |
             Call selenoproteins
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_pyrrolysoproteins :
         ui-name : |
             Call pyrrolysoproteins
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_repeat_region_SEED :
         ui-name : |
             Call features repeat region SEED
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_insertion_sequences :
         ui-name : |
             Call features insertion sequences
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_strep_suis_repeat :
         ui-name : |
             Call features strep suis repeat
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_strep_pneumo_repeat :
         ui-name : |
             Call features strep pneumo repeat
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_crispr :
         ui-name : |
             Call features crispr
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_CDS_glimmer3 :
         ui-name : |
             Call features CDS glimmer3
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_CDS_prodigal :
         ui-name : |
             Call features CDS prodigal
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     annotate_proteins_kmer_v2 :
         ui-name : |
             Annotate proteins kmer v2
         short-hint : |
-            Analysis steps to include in annotation pipieline
+        short-hint : |
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     kmer_v1_parameters :
         ui-name : |
             Kmer v1 parameters
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     annotate_proteins_similarity :
         ui-name : |
             Annotate proteins similarity
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-    
+            See manual page for description of annotation pipieline
+                
     retain_old_anno_for_hypotheticals :
         ui-name : |
             Retain old annotations for hypotheticals
         short-hint : |
-            When KBase annotates as hypothetical, keep existing annotation
+            See manual page for description of annotation pipieline
         long-hint  : |
-            When KBase annotates as hypothetical, keep existing annotation. This will make it more difficult to see which genes were annotated by KBase.
-    
+            See manual page for description of annotation pipieline
+                
     resolve_overlapping_features :
         ui-name : |
             Resolve overlapping features
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     find_close_neighbors :
         ui-name : |
             Find close neighbors
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-            
+            See manual page for description of annotation pipieline
+                        
     call_features_prophage_phispy :
         ui-name : |
             Call features prophage phispy
         short-hint : |
-            Analysis steps to include in annotation pipieline
+            See manual page for description of annotation pipieline
         long-hint  : |
-            Analysis steps to include in annotation pipieline
-
+            See manual page for description of annotation pipieline
+            
     output_genome :
         ui-name : |
             Output Genome Name
         short-hint : |
-            name to assign the output genome; if left blank, a name will be generated for you
+            A genome with updated structural and functional annotations
         long-hint  : |
-            name to assign the output genome; if left blank, a name will be generated for you
+            A genome with updated structural and functional annotations
+        placeholder : |
+            Name to assign genome
 
 description : |
-    Reannotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]
+    <p>This method uses components from RAST (<a href= "http://rast.nmpdr.org/">Rapid Annotations using Subsystems Technology</a>) toolkit to annotate a prokaryotic genome. In KBase, all Genome-typed objects include feature calls and annotation data.  This method allows users to re-annotate annotated genomes in order to make the annotations consistent with other KBase genomes and prepare the imported genome for further processing by KBase methods.</p>
+    
+    <p>This method uses components from the RAST (<a href= "http://rast.nmpdr.org/">Rapid Annotations using Subsystems Technology</a>) toolkit to annotate a prokaryotic genome, to update the annotations of a genome, or to perform computations on a set of genomes so that they are consistent. In KBase, all Genome-typed objects include feature calls and annotation data. This method allows users to re-annotate annotated genomes in order to make the annotations consistent with other KBase genomes and prepare the imported genome for further processing by KBase methods. A Genome-typed object can be generated by uploading a GenBank file, importing a GenBank file from NCBI via FTP, retrieving a Genome-typed object from KBase, or using the output of the <a data-method-id=Òannotate_contigsetÓ>Annotate Microbial Contigs</a> method. Unlike the Annotate Microbial Contigs method, no metadata fields are required by this method, since it is assumed that they exist from GenBank file that was uploaded or original Genome-typed object. The output of this method is a Genome-typed object with the new annotations.</p>
+    
+    <p><a href="http://kbase.us/annotate-microbial-genome-method/" target="_blank">Tutorial for Annotate Microbial Genome Method</a></p>
+    
+    <p>By default, this method assumes that you want to retain the gene calls from the original Genome-typed object and that you only wish to generate new annotations for the protein-encoding genes.  Therefore, the only scripts that run by default are the protein annotation scripts and the nearest neighbor computation.  However, the full annotation pipeline can be turned on using the advanced options.</p>
+    
+    <p><strong>The Default Annotation Pipeline</strong><br>
+    Clicking &quot;Run&quot; will run the default pipeline. For a typical 2-5 MBp genome, this should take about 5 minutes. Note that the default behavior of this app is to only reannotate the protein-encoding genes.  The default pipeline for this app consists of the following steps:</p>
+    
+    <ol>
+    <li><i>Annotate protein-encoding genes with k-mers (version 2)</i><br>
+    This is a set of signature k-mers (amino acid 8-mers) built from the annotations in the <a href="http://core.theseed.org/FIG/seedviewer.cgi">CoreSEED</a>. The CoreSEED is a database of ~1,000 diverse microbial genomes and is currently the main focus of the RAST manual annotation efforts.  Annotating using this k-mer set provides the user with our most stable and best estimate of the core gene functions.</li>
+    
+    <li><i>Annotate remaining hypothetical proteins with k-mers (version 1)</i><br>
+    This set of k-mers is built from the <a href="http://www.ncbi.nlm.nih.gov/pubmed/19762480">FigFam collection</a> in the PubSEED, which is the publically annotated version of the SEED database that consists of ~12,000 microbial genomes.  The &quot;classic&quot; version of RAST on the RAST website (rast.nmpdr.org) uses the FigFam-based k-mers (hence the version 1 designation).</li>
+    
+    <li><i>Annotate remaining hypothetical proteins by searching against close relatives </i><br>
+    We have several nonredundant databases for the most common genera.  If the genus name of your organism matches one of these, a search will be performed against the remaining hypothetical proteins to attempt to find a function.  The search uses a combination of BLAT and BLAST.</li>
+    
+    <li><i>Perform a basic gene overlap removal</i><br>
+    Using multiple gene calling algorithms can result in overlapping gene calls. This program is a custom tool that attempts to minimize overlaps and gaps to provide a set of calls that has a smaller number of gene calling errors. We do not recommend using overlap removal if you are attempting to annotate phage.</li>
+    
+    <p><strong>Other Non-default options</strong><br>
+    Note that most of the non-default parameters will recall features.  Since the genome typed object does not contain the original contigs it is necessary to retain the contig set if you have generated the initial genome typed object by uploading a GenBank file or annotating with the ÒAnnotate a Microbial GenomeÓ app. If you recall rRNA or CDS features we highly recommend turning on the ÒResolve overlapping featuresÓ option so that you do not end up with duplicate feature calls.</p>
+    
+    <li><i>Call rRNAs (default = on)</i><br>
+    This is a custom BLAST-based tool.</li>
+    
+    <li><i>Call tRNAs with tRNAscan (default = on)</i><br>
+    <a href="http://www.ncbi.nlm.nih.gov/pubmed/902310"a="a">More info</a></li>
+    
+    <li><i>Call selenoproteins (default = on)</i><br>
+    This is a custom BLAST-based tool.</li>
+    
+    <li><i>Call pyrrolysylproteins (default = on)</i><br>
+    This is a custom BLAST-based tool.</li>
+    
+    <li><i>Call large repeat regions (default = on)</i><br>
+    This is a BLASTN search within the genome for regions greater than 95% nucleotide similarity greater than or equal to 100bp in length.</li>
+    
+    <li><i>Call insertion sequences (default = off)</i><br>
+    This program uses BLAST to find insertion sequences within the genome.  It will search the genome for known insertion sequences by looking for canonical end patterns using BLASTN and known insertion sequence proteins with BLASTP.  It also searches for novel insertion sequences by searching for inverted repeats.</li>
+    
+    <li><i>Find Streptococcus repeat regions (default = conditional)</i><br>
+    This is a conditional command that will only be implemented if the genus is Streptococcus. <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3049150/">More info</a>.</li>
+    
+    <li><i>Call CRISPRs</i><br>
+    This is a custom tool that uses a perl regular expression-based search to find CRISPR elements.</li>
+    
+    <li><i>Call the protein-encoding genes with Prodigal and Glimmer3</i><br>
+    See <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=20211023">Prodigal</a> and
+    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=17237039">Glimmer</a> for more info
+    </li>
+    
+    <li><i>Retain old annotations for hypotheticals</i><br>
+    In instances where the pipeline fails to find an annotation for a gene, this will retain the original annotation from the input genome typed object.
+    </li>
+    
+    <li><i>Find prophage elements with phispy (default = off)</i><br>
+    This will use the phispy program to find prophage elements. <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=22584627">More information on phispy can be found here.</a>
+    </li>
+    
+    <li><i>Annotate remaining hypothetical proteins by searching against close relatives</i><br>
+    We have several nonredundant databases for the most common genera.  If the genus name of your organisms matches one of these, a search will be made with the remaining hypothetical proteins to attempt to find a function.  The search uses a combination of BLAT and BLAST.
+    </li>
+    
+    <li><i>Find close neighbors</i><br>
+    Using multiple gene calling algorithms can result in overlapping gene calls.  This program is a custom tool that attempts to minimize overlaps and gaps to provide a set of calls that has a smaller number of gene calling errors.  We do not recommend using overlap removal if you are attempting to annotate phage.
+    </li>
+    </ol>
+    </p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Thomas Brettin, James Davis, Terry Disz, Robert Edwards, Chris Henry, Gary Olsen, Robert Olson, Ross Overbeek, Bruce Parrello, Gordon Pusch, Roman Sutormin, Fangfang Xia. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
-
-technical-description : |
-    Reannotate an existing genome while keeping existing gene calls intact.  This function will start a job that might run for 5-10 minutes. When the job finishes, the Genome with KBase annotations will be stored in your workspace. [21]
+publications :
+    -
+        pmid: 25666585
+        display-text: |
+            Brettin T, Davis JJ, Disz T, Edwards RA, Gerdes S, Olsen GJ, et al. RASTtk: A modular and extensible implementation of the RAST algorithm for building custom annotation pipelines and annotating batches of genomes. Scientific Reports. 2015;5: 8365. doi:10.1038/srep08365.
+        link: http://www.ncbi.nlm.nih.gov/pubmed/25666585

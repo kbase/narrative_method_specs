@@ -7,8 +7,8 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "kbaseFbaTabsNarrative"
-  },  
+    "output" : "kbaseTabTable"
+  },
   "parameters" : [ {
     "id" : "input_model",
     "optional" : false,
@@ -45,7 +45,7 @@
     "optional":false,
     "advanced":true,
     "allow_multiple":false,
-    "default_values":["0"],
+    "default_values":["1"],
     "field_type" : "checkbox",
     "checkbox_options":{
       "checked_value": 1,
@@ -67,11 +67,31 @@
     "optional":false,
     "advanced":true,
     "allow_multiple":false,
-    "default_values":["0"],
+    "default_values":["1"],
     "field_type" : "checkbox",
     "checkbox_options":{
       "checked_value": 1,
       "unchecked_value": 0
+    }
+  }, {
+    "id": "objective",
+    "optional":true,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["bio1"],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id": "custom_bounds",
+    "optional":true,
+    "advanced":true,
+    "allow_multiple":true,
+    "default_values":[],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
     }
   }, {
     "id" : "gene_ko",
@@ -102,6 +122,78 @@
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ]
+    }
+  }, {
+	"id" : "expression_matrix",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ]
+    }
+  }, {
+	"id" : "expression_condition",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as": "string"
+    }
+  }, {
+	"id" : "expression_threshold",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "0.5" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as": "float"
+    }
+  }, {
+	"id" : "expression_uncertainty",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "0.1" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as": "float"
+    }
+  }, {
+	"id" : "universal_gene_threshold",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  }, {
+	"id" : "objective_fraction",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "0.1" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as": "float"
+    }
+  }, {
+	"id" : "discrete_variables",
+    "optional":false,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["1"],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
     }
   }, {
     "id" : "maxc_uptake",
@@ -143,16 +235,6 @@
     "text_options" : {
       "validate_as": "float"
     }
-  }, {
-    "id" : "input_prom",
-    "optional" : true,
-    "advanced" : true,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "KBaseFBA.PromConstraint" ]
-    }
   } ],
   "behavior" : {
     "service-mapping" : {
@@ -160,6 +242,10 @@
       "name" : "KBaseFBAModeling",
       "method" : "runfba",
       "input_mapping" : [
+        {
+          "constant_value": "0",
+          "target_property": "localmode"
+        },
         {
           "input_parameter": "input_model",
           "target_property": "model"
@@ -189,6 +275,14 @@
           "target_property": "formulation:rxnko"
         },
         {
+          "input_parameter": "objective",
+          "target_property": "biomass"
+        },
+        {
+          "input_parameter": "custom_bounds",
+          "target_property": "custom_bounds"
+        },
+        {
           "input_parameter": "maxc_uptake",
           "target_property": "formulation:uptakelim:C"
         },
@@ -203,10 +297,6 @@
         {
           "input_parameter": "maxs_uptake",
           "target_property": "formulation:uptakelim:S"
-        },
-        {
-          "input_parameter": "input_prom",
-          "target_property": "formulation:promconstraint"
         },
         {
           "input_parameter": "simulate_ko",
@@ -231,12 +321,44 @@
         {
           "narrative_system_variable": "workspace",
           "target_property": "workspace"
+        },
+        {
+          "input_parameter": "expression_threshold",
+          "target_property": "expression_threshold_percentile"
+        },
+        {
+          "input_parameter": "expression_uncertainty",
+          "target_property": "kappa"
+        },
+        {
+          "input_parameter": "expression_condition",
+          "target_property": "expsample"
+        },
+        {
+          "input_parameter": "expression_matrix",
+          "target_property": "expseries"
+        },
+        {
+          "input_parameter": "discrete_variables",
+          "target_property": "use_discrete_variables"
+        },
+        {
+          "input_parameter": "objective_fraction",
+          "target_property": "formulation:objfraction"
+        },
+        {
+          "input_parameter": "universal_gene_threshold",
+          "target_property": "universal_gene_threshold"
         }
       ],
       "output_mapping" : [
         {
+          "constant_value": "KBaseFBA.FBA",
+          "target_property": "type"
+        },
+        {
           "input_parameter": "output_fba",
-          "target_property": "id"
+          "target_property": "obj"
         },
         {
           "narrative_system_variable": "workspace",

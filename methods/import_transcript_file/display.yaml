@@ -2,10 +2,9 @@
 # Define basic display information
 #
 name     : UPLOAD TRANSCRIPT
-subtitle : |
-    Import into your narrative a transcript object from a local file in FASTA format.
+subtitle : none
 tooltip  : |
-    Import into your narrative a transcript object from a local file in FASTA format.
+    Import transcripts (cDNA or protein) from a file in FASTA format
 
 screenshots :
     []
@@ -13,11 +12,17 @@ screenshots :
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #
@@ -28,22 +33,36 @@ parameters :
         ui-name : |
             FASTA FILE
         short-hint : |
-            File with protein/rna data in FASTA format.
+            File with protein/cDNA sequences in FASTA format
         long-hint  : |
-            File with protein/rna data in FASTA format.
+            Your filename should end with .fa or .fasta
 
     outputObject :
         ui-name : |
-            GENOME OBJECT ID
+            GENOME OBJECT NAME
         short-hint : |
-            Provide a name for the genome object you are uploading.<br>ex) Athaliana.TAIR10
+            Provide a name for the genome object you are uploading (e.g., Athaliana.TAIR10)
         long-hint  : |
-            Provide a name for the genome object you are uploading.<br>ex) Athaliana.TAIR10
+            Provide a name for the genome object you are uploading (e.g., Athaliana.TAIR10)
+
+    genomeId :
+        ui-name : |
+            GENOME IDENTIFIER
+        short-hint : |
+            Provide an optional genome identifier
+        long-hint  : |
+            Provide an optional genome identifier
+
+    dna :
+        ui-name : |
+            IS DNA
+        short-hint : |
+            If checked, indicates that file contains nucleic acid sequences rather than proteins
+        long-hint  : |
+            (The default is proteins)
 
 
-description : |
-    Import into your narrative a transcript object from a local file in FASTA format.
+description : none
 
 
-technical-description : |
-    Import into your narrative a transcript object from a local file in FASTA format.
+technical-description : none
