@@ -65,7 +65,7 @@ fixed-parameters :
         
  
 description : |
-    <p>The Annotate Plant Transcripts with Metabolic Functions method performs functional annotation of plant cDNA or protein sequences. The input FASTA file should contain cDNA sequences (obtained from assembling transcripts from next generation sequencing of a transcriptome) or translated protein sequences from plant gene models. This method assigns metabolic functions (derived from the PlantSEED Subsystems ontology) to the sequences. The resulting annotated genome can then be reviewed and downloaded. It can also be used as an input to other KBase methods such as <a data-method-id=Òbuild_a_metabolic_modelÓ>Build Metabolic Model/a>.</p>
+    <p>The Annotate Plant Transcripts with Metabolic Functions method performs functional annotation of plant cDNA or protein sequences. The input KBaseGenomes.Genome object should contain cDNA sequences (obtained from assembling transcripts from next generation sequencing of a transcriptome) or translated protein sequences from plant gene models. The KBaseGenomes.Genome object can be created by importing a fasta file of nucleotide or protein sequences in the Data pane, as "Transcripts". This method assigns metabolic functions (derived from the PlantSEED Subsystems ontology) to the sequences. The resulting annotated genome can then be reviewed and downloaded. It can also be used as an input to other KBase methods such as <a data-method-id=Òbuild_a_metabolic_modelÓ>Build Metabolic Model</a>.</p>
     
     <p><a href="http://kbase.us/annotate-plant-transcripts-with-metabolic-functions-method/" target="_blank">Tutorial for Annotate Plant Transcripts with Metabolic Functions Method</a></p>
     
