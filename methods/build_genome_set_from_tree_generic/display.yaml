@@ -2,10 +2,10 @@
 # Define basic display information
 #
 name     : Build Genome Set From Tree
-subtitle : |
-    Extract a set of genomes from a species tree
-tooltip  : |
-    Extract a set of genomes from a species tree
+
+tooltip : |
+    Extract a set of genomes from a species tree.
+
 screenshots :
     
     - build_genome_set_input.png
@@ -21,7 +21,7 @@ suggestions :
         related :
             []
         next :
-            []
+            [genome_comparison]
     methods:
         related :
             []
@@ -53,7 +53,7 @@ parameters :
 
 
 description : |
-    <p>This method allows a user to extract a set of genomes from a user-generated species Tree object. First, this method copies the set of genomes from the tree to the current narrative.  The output widget allows to name the Genome Set object as well as to select specific genomes from the genomes contained in the input Tree object. The genomes can be deleted from the output set by clicking the trash can icon.  Additional genomes can be added by pressing &quot;Add&quot; button at the bottom of the table in the Narrative panel. Finally, the Genome Set object is saved when the &quot;Save&quot; button is clicked. The resulting Genome Set object can then be submitted to additional methods such as Compute Pangenome and Insert Set of Genomes into Species Tree.</p>
+    <p>This method allows a user to extract a set of genomes from a user-generated species Tree object. First, this method copies the set of genomes from the tree to the current narrative.  The output widget allows to name the Genome Set object as well as to select specific genomes from the genomes contained in the input Tree object. The genomes can be deleted from the output set by clicking the trash can icon.  Additional genomes can be added by pressing &quot;Add&quot; button at the bottom of the table in the Narrative panel. Finally, the Genome Set object is saved when the &quot;Save&quot; button is clicked. The resulting Genome Set object can then be submitted to additional methods such as <a data-method-id=Òcompute_pangenomeÓ>Compute Pangenome</a> and <a data-method-id=Òinsert_genomeset_into_species_tree_genericÓ>Insert Set of Genomes into Species Tree</a>.</p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong> Roman Sutormin. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 

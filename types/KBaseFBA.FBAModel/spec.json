@@ -3,7 +3,7 @@
     "view_method_ids":[ "view_metabolic_model_details"
     ],
     "import_method_ids":[
-        "import_fbamodel_csv_file", "import_fbamodel_sbml_file"
+        "import_fbamodel_csv_file", "import_fbamodel_sbml_file", "import_fbamodel_excel_file"
     ],
     "landing_page_url_prefix":"ws/models"
 }

@@ -3,10 +3,9 @@
 #
 name     : View Abundance Data Table
 subtitle : |
-    View the annotation abundance data as a table
+    View annotation abundance data as a table.
 tooltip  : |
-    View the annotation abundance data as a table
-
+    View annotation abundance data as a table.
 screenshots :
 
     - view_abundance_data_input.png
@@ -51,7 +50,7 @@ parameters :
 
 
 description : |
-    <p>Once you have generated your profile or matrix from "Retrieve Taonomic/Functional  Abundance Data" this method can be used to view the table of values. You can choose to view the entire table or a selection from it using the table coordinates. Here, you can visually inspect the abundance data. It is recommended to explore the first few lines of the abundance data to determine if there are any irregularities in the data (e.g., profiles with missing abundance data, non-integer values, or other obvious problems that could interfere with downstream analyses and comparisons among the profiles).</p>
+    <p>Once you have generated your profile or matrix from "Retrieve Taxonomic/Functional  Abundance Data" this method can be used to view the table of values. You can choose to view the entire table or a selection from it using the table coordinates. Here, you can visually inspect the abundance data. It is recommended to explore the first few lines of the abundance data to determine if there are any irregularities in the data (e.g., profiles with missing abundance data, non-integer values, or other obvious problems that could interfere with downstream analyses and comparisons among the profiles).</p>
     
     <p><strong>Inputs</strong>
     

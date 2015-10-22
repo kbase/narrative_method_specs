@@ -3,18 +3,31 @@
 #
 name     : Reconstruct Genome-scale Metabolic Model
 subtitle : |
-    Construct a genome-scale metabolic model and gapfill it to simulate growth in a specified growth condition.
+    Infer and gapfill a metabolic FBA model from a microbial genome in a specified growth condition.
 tooltip  : |
-    Construct a genome-scale metabolic model and gapfill it to simulate growth in a specified growth condition.
+    Infer and gapfill a metabolic FBA model from a microbial genome in a specified growth condition.
 
 screenshots : []
 
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            [compare_two_metabolic_models_generic, run_flux_balance_analysis]
 
 header : |
     <p>The Reconstruct Genome-scale Metabolic Model app builds a metabolic model, using the annotation data from an annotated Genome object to reconstruct the metabolic reactions that the cell is capable of performing.  It then performs gapfilling, which is the search for and subsequent bridging of missing metabolic reactions that were not found in the initial annotation search.</p>
-    
-    <p><a href="https://docs.google.com/document/d/1sWVb-adcUUuzLvToISCkjxkoZPAhtHGmqKiKYqj3tn8/">Link to Reconstruct Genome-scale Metabolic Model tutorial</a></p>
-
+  
+    <p><a href="http://kbase.us/reconstruct-genome-scale-metabolic-model-app/" target="_blank">Tutorial for Reconstruct Genome-scale Metabolic Model App</a></p>
 
 step-descriptions :
     step_1 : |
@@ -26,4 +39,6 @@ step-descriptions :
 description : |
     <p>The Reconstruct Genome-scale Metabolic Model app builds a metabolic model, using the annotation data from an annotated Genome object to reconstruct the metabolic reactions that the cell is capable of performing.  It then performs gapfilling, which is the search for and subsequent bridging of missing metabolic reactions that were not found in the initial annotation search.</p>
     
-    <p><a href="https://docs.google.com/document/d/1sWVb-adcUUuzLvToISCkjxkoZPAhtHGmqKiKYqj3tn8/">Link to Reconstruct Genome-scale Metabolic Model tutorial</a></p>
+    <p><a href="http://kbase.us/reconstruct-genome-scale-metabolic-model-app/" target="_blank">Tutorial for Reconstruct Genome-scale Metabolic Model App</a></p>
+
+

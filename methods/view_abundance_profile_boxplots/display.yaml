@@ -35,9 +35,9 @@ parameters :
         ui-name : |
             Abundance Profile or Matrix
         short-hint : |
-            Select a profile or set of profiles generated from "Generate Taxonomic/Functional Abundance Data" methods
+            Select a profile or set of profiles generated from the Generate Taxonomic Abundance Data or Generate Functional Abundance Data methods
         long-hint  : |
-            Select a profile or set of profiles generated from "Generate Taxonomic/Functional Abundance Data" methods
+            Select a profile or set of profiles generated from the Generate Taxonomic Abundance Data or Generate Functional Abundance Data methods
 
 
     name :
@@ -52,6 +52,8 @@ description : |
     <p>This method produces a boxplot image for one or more abundance profiles. Each bar, or column, represents the distribution of abundance data for a single metagenome. This visualization allows users to easily compare the distribution of values for all their samples. Samples that exhibit dissimilar distributions cannot be compared in a meaningful way. Normalization can account for differences in data distributions but not always. Users need to look at the distribution of post-normalization values to see if the distributions have been made more similar.</p>
     
     <p>If distributions still look extremely different, comparisons need to be regarded with a great deal of skepticism; it may not be possible to distinguish real biological differences from those driven by bias/error that may still be present in the data.</p>
+    
+    <p><a href="http://kbase.us/generate-boxplots-for-abundance-data-method/" target="_blank">Tutorial for Generate Boxplots for Abundance Data Method</a></p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Kevin Keegan, Jared Bischof, Travis Harrison, Folker Meyer, Tobias Paczian, and Andreas Wilke. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>

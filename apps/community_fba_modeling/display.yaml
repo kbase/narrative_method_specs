@@ -9,9 +9,25 @@ tooltip  : |
 
 screenshots : []
 
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            [compare_two_metabolic_models_generic, run_flux_balance_analysis]
 
 header : |
-    <p>The &quot;Reconstruct Community Metabolic Model&quot; app generates a community metabolic model to be used with model-associated apps in KBase (e.g., &quot;Run Flux Balance Analysis&quot;) to predict fluxes. To begin, the user may either upload a set of metabolic models or select a set of public metabolic models already present in KBase. KBase will then assemble these models into a single compartmentalized community model. The user may also select or upload a growth condition to which the community model will be gap filled.</p>
+    <p>The Reconstruct Community Metabolic Model app generates a community metabolic model to be used with model-associated apps in KBase (e.g., "Run Flux Balance Analysis") to predict fluxes. To begin, the user may either upload a set of metabolic models or select a set of public metabolic models already present in KBase. KBase will then assemble these models into a single compartmentalized community model. The user may also select or upload a growth condition to which the community model will be gap filled.</p>
+    
+    <p><a href="http://kbase.us/reconstruct-community-metabolic-model/" target="_blank">Tutorial for Reconstruct Community Metabolic Model App</a></p>
 
 step-descriptions :
     step_1 : |
@@ -25,7 +41,10 @@ step-descriptions :
 
 
 description : |
-    <p>The &quot;Reconstruct Community Metabolic Model&quot; app generates a community metabolic model to be used with model-associated apps in KBase (e.g., &quot;Run Flux Balance Analysis&quot;) to predict fluxes. To begin, the user may either upload a set of metabolic models or select a set of public metabolic models already present in KBase. KBase will then assemble these models into a single compartmentalized community model. The user may also select or upload a growth condition to which the community model will be gap filled.</p>
+    <p>The Reconstruct Community Metabolic Model app generates a community metabolic model to be used with model-associated apps in KBase (e.g., "Run Flux Balance Analysis") to predict fluxes. To begin, the user may either upload a set of metabolic models or select a set of public metabolic models already present in KBase. KBase will then assemble these models into a single compartmentalized community model. The user may also select or upload a growth condition to which the community model will be gap filled.</p>
+    
+    <p><a href="http://kbase.us/reconstruct-community-metabolic-model/" target="_blank">Tutorial for Reconstruct Community Metabolic Model App</a></p>
+
 
 
     

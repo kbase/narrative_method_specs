@@ -163,16 +163,6 @@
     "text_options" : {
       "validate_as": "float"
     }
-  }, {
-    "id" : "input_prom",
-    "optional" : true,
-    "advanced" : true,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "KBaseFBA.PromConstraint" ]
-    }
   } ],
   "behavior" : {
     "service-mapping" : {
@@ -180,6 +170,10 @@
       "name" : "KBaseFBAModeling",
       "method" : "runfba",
       "input_mapping" : [
+        {
+          "constant_value": "0",
+          "target_property": "localmode"
+        },
         {
           "input_parameter": "input_model",
           "target_property": "model"
@@ -231,10 +225,6 @@
         {
           "input_parameter": "maxs_uptake",
           "target_property": "formulation:uptakelim:S"
-        },
-        {
-          "input_parameter": "input_prom",
-          "target_property": "formulation:promconstraint"
         },
         {
           "input_parameter": "simulate_ko",

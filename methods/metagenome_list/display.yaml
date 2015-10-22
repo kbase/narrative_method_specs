@@ -4,7 +4,7 @@
 name     : Create Metagenome Set
 
 tooltip  : |
-    A method to combine multiple metagenomes into a set for “Generate Taxonomic/Functional Abundance Data.”
+    Combine multiple metagenomes into a set to use as input for the Generate Taxonomic Abundance Data or Generate Functional Abundance Data methods.
 
 screenshots :
     []
@@ -19,15 +19,12 @@ suggestions :
         related :
             []
         next :
-            - communities_build_functional_profile
-            - communities_build_taxonomic_profile
+            [communities_build_taxonomic_profile, communities_build_functional_profile]
     methods:
         related :
             []
         next :
-            - retrieve_functional_abundance_profile
-            - retrieve_taxonomic_abundance_profile
-            - view_mg_collection
+            []
 
 
 #
@@ -61,4 +58,4 @@ parameters :
 
 
 description : |
-    <p>This method creates a set of metagenomes out of one or more metagenomes. The set can then be used as input to Generate Taxonomic Abundance Data” or Generate Functional Abundance Data” apps.</p>
+    <p>This method creates a set of metagenomes out of one or more metagenomes. The set can then be used as input to the <a data-method-id=√íretrieve_taxonomic_abundance_profile√ì>Generate Taxonomic Abundance Data</a> or <a data-method-id=√íretrieve_functional_abundance_profile√ì>Generate Functional Abundance Data</a> methods.</p>

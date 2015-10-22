@@ -1,0 +1,3 @@
+[submodule "narrative_method_store"]
+	path = narrative_method_store
+	url = https://github.com/kbase/narrative_method_store

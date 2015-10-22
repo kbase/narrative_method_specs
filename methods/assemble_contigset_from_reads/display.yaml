@@ -2,10 +2,9 @@
 # Define basic display information
 #
 name     : Assemble Contigs from Reads
-subtitle  : |
-    Assemble a set of short DNA reads into a set of genome contigs
+
 tooltip  : |
-    Assemble a set of short DNA reads into a set of genome contigs
+    Assemble a set of short DNA reads into a set of contigs.
 
 screenshots :
     - assemble_contigs_from_reads_input1.png
@@ -24,7 +23,7 @@ suggestions :
         related :
             []
         next :
-            []
+            [annotate_contigset]
 
 
 #
@@ -101,7 +100,7 @@ parameters :
 
 description : |
 
-    <p>This method can be used to perform an automatic genome assembly using the latest computational tools. Single or multiple assemblers can be invoked to compare results.  Resulting assemblies are automatically processed via a collection of analysis tools developed by both KBase and the research community. The assembly method attempts to select the best (the smallest number of contigs, the longest average contig length) assembly to suggest to the user.</p>
+    <p>This method can be used to perform an automatic genome assembly using the latest computational tools. Single or multiple assemblers can be invoked to compare results. Resulting assemblies are automatically processed via a collection of analysis tools developed by both KBase and the research community. The assembly method attempts to select the best (the smallest number of contigs, the longest average contig length) assembly to suggest to the user.</p>
 
     <p>Several assembly workflows or "recipes" are available. These workflows have been tuned and tested to fit certain dataset types or desired analysis criteria such as throughput or rigor. The compute engine's flexible nature also enables the rapid design and emulation of other popular protocols.</p>
 

@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Insert Genome into Species Tree
+name     : Insert Genome Into Species Tree
 subtitle : |
     Add one or more genomes to the KBase species tree.
 tooltip  : |
@@ -23,7 +23,7 @@ suggestions :
         related :
             []
         next :
-            []
+            [build_genome_set_from_tree_generic]
 
 
 #

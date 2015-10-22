@@ -2,10 +2,9 @@
 # Define basic display information
 #
 name     : View Abundance Data PCoA
-subtitle : |
-    View a PCoA generated from an abundance profile
+
 tooltip  : |
-    View a PCoA generated from an abundance profile
+    View a principal coordinates analysis (PCoA) generated from an abundance profile.
 
 screenshots :
     []
