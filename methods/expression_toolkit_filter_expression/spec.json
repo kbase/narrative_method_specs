@@ -30,7 +30,7 @@
         "options": [
           {
             "value": "lor",
-            "display": "Log odd ratio",
+            "display": "Log odds ratio",
             "id": "lor",
             "ui_name": "lor"
           },

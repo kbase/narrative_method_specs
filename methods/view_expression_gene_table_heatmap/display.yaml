@@ -4,7 +4,7 @@
 name     : View Expression Matrix Heatmap In Feature Table
 
 tooltip  : |
-    Explore an Expression Matrix by viewing a sortable heatmap of selected conditions.  
+    Explore an Expression Matrix as a sortable heatmap of selected features.
 
 screenshots :
     []
@@ -36,4 +36,4 @@ parameters :
             Select the conditions to compare
 
 description : |
-    <p>View and explore expression data as a sortable heatmap. Features (genes) are displayed on each row with some summary statistics averaged across the selected conditions. The features can be sorted by those values. Each of the selected conditions is represented in a simple heatmap in the table. Mouseover the heatmap to view specific expression values.</p>
+    <p>View and explore expression data as a sortable heatmap. Features (genes) are displayed on each row with some summary statistics averaged across the selected conditions. The features can be sorted by those values. Each of the selected conditions is represented in a simple heatmap in the table. Mouse over the heatmap to view specific expression values.</p>
