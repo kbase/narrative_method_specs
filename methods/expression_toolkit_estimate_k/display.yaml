@@ -4,7 +4,7 @@
 name     : Estimate K for K-Means Clustering
 
 tooltip  : |
-    Predict reasonable values of k for use in k-means clustering
+    Compute reasonable values of k for use in k-means clustering.
 
 screenshots :
     []
@@ -76,7 +76,7 @@ parameters :
 
 
 description : |
-    <p>This method predicts reasonable numbers of clusters (k) for use in the Cluster Expression Data - K-Means method. This is achieved by minimizing both the number of clusters (k) and the average variance between the clusters. Begin by selecting or importing an expression dataset to analyze using the Add Data button. Provide a name for the output estimate, a valid number for the Max. Num of Clusters and select a criterion for running estimate k, run the method to predict reasonable values for k.</p>
+    <p>This method generates reasonable numbers of clusters (k) for use in the Cluster Expression Data - K-Means method. Reasonable values of k are computed by minimizing both the number of clusters (k) and the average variance between the clusters. Begin by selecting or importing an expression dataset to analyze using the Add Data button. Provide a name for the output estimate, a valid number for the maximum number of clusters, and select a criterion for running estimate k. Run the method to generate a graph with peaks that represent reasonable values for k calculated by the algorithm.</p>
     
     <p>This method is based on the <a href="http://www.inside-r.org/packages/cran/fpc/docs/pamk">fpc package for R</a>.</p>
     
