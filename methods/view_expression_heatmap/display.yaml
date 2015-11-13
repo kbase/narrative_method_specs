@@ -4,7 +4,7 @@
 name     : View Expression Matrix Heatmap in Condition Table
 
 tooltip  : |
-    Explore an Expression Matrix as a sortable heatmap of selected features. 
+    Explore an Expression Matrix by viewing a sortable heatmap of selected conditions.
 
 screenshots :
     []

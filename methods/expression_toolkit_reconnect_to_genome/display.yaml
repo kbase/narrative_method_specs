@@ -4,7 +4,7 @@
 name     : Associate Expression Matrix to Genome Features
 
 tooltip  : |
-    Associate an Expression Matrix with a Genome that contains features referenced in the matrix.
+    Associate an Expression Matrix with an annotated Genome that contains features referenced in the matrix.
 
 screenshots :
     []
