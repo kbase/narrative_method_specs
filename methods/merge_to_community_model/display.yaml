@@ -71,5 +71,7 @@ description : |
     
     <p>This method primarily requires two input parameters: (i) the list of models IDs of individual organisms (ii) relative abundances (in the same order as model IDs) of each of those organisms in the community. The relative abundance values allow one to formulate the biomass composition for the entire community. Relative abundances need to be normalized to one. For example, a four species community with equal abundances of these species is represented by 0.25; 0.25; 0.25; 0.25 in the second input field.</p>
     
-        <p><strong>Team members who developed & deployed algorithm in KBase:</strong> Chris Henry, Janaka Edirisinghe, Sam Seaver, and Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
-
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong> Chris Henry, Janaka Edirisinghe, Sam Seaver, and Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
+    
+<p><strong> Additional resources</strong>
+<ul><li><a href="http://kbase.us/metabolic-modeling-faq/">Metabolic Modeling FAQ</a></li></ul></p>
