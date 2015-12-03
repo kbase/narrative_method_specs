@@ -36,24 +36,17 @@ parameters :
             Contig Set
         short-hint : |
             The set of contig sequences to annotate
-        long-hint  : |
-            The set of contig sequences to annotate
-
 
     scientific_name :
         ui-name : |
             Scientific Name
         short-hint : |
             The scientific name to assign to the genome
-        long-hint  : |
-            The scientific name to assign to the genome
-    
+
     domain :
         ui-name : |
             Domain
         short-hint : |
-            The domain of life of the organism being annotated
-        long-hint  : |
             The domain of life of the organism being annotated
 
     genetic_code :
@@ -61,145 +54,109 @@ parameters :
             Genetic Code
         short-hint : |
             The genetic code used in translating to protein sequences
-        long-hint  : |
-            The genetic code used in translating to protein sequences
 
     call_features_rRNA_SEED :
         ui-name : |
             Call rRNAs
         short-hint : |
             Call rRNAs
-        long-hint  : |
-            Call rRNAs
-                        
+
     call_features_tRNA_trnascan :
         ui-name : |
             Call tRNAs with tRNAscan
         short-hint : |
             Call tRNAs with tRNAscan
-        long-hint  : |
-            Call tRNAs with tRNAscan
-                
+
     call_selenoproteins :
         ui-name : |
             Call selenoproteins
         short-hint : |
             Call selenoproteins
-        long-hint  : |
-            Call selenoproteins
-                        
+
     call_pyrrolysoproteins :
         ui-name : |
             Call pyrrolysoproteins
         short-hint : |
             Call pyrrolysoproteins
-        long-hint  : |
-            Call pyrrolysoproteins
-                        
+
     call_features_repeat_region_SEED :
         ui-name : |
             Call large repeat regions
         short-hint : |
-            Call pyrrolysoproteins
-        long-hint  : |
-            Call pyrrolysoproteins
-                        
+            Call large repeat regions
+
     call_features_insertion_sequences :
         ui-name : |
             Call insertion sequences
         short-hint : |
             Call insertion sequences
-        long-hint  : |
-            Call insertion sequences
-                        
+
     call_features_strep_suis_repeat :
         ui-name : |
             Find Streptococcus repeat regions
         short-hint : |
             Find Streptococcus repeat regions
-        long-hint  : |
-            Find Streptococcus repeat regions
-                        
+
     call_features_strep_pneumo_repeat :
         ui-name : |
             Call features strep pneumo repeat
         short-hint : |
             Call features strep pneumo repeat
-        long-hint  : |
-            Call features strep pneumo repeat
-                        
+
     call_features_crispr :
         ui-name : |
             Call CRISPRs
         short-hint : |
             Call CRISPRs
-        long-hint  : |
-            Call CRISPRs
-                        
+
     call_features_CDS_glimmer3 :
         ui-name : |
             Call protein-encoding genes with Glimmer3
         short-hint : |
             Call protein-encoding genes with Glimmer3
-        long-hint  : |
-            Call protein-encoding genes with Glimmer3
-                        
+
     call_features_CDS_prodigal :
         ui-name : |
             Call protein-encoding genes with Prodigal
         short-hint : |
             Call protein-encoding genes with Prodigal
-        long-hint  : |
-            Call protein-encoding genes with Prodigal
-                        
+
     annotate_proteins_kmer_v2 :
         ui-name : |
             Annotate protein-encoding genes with k-mers v2
         short-hint : |
             Annotate protein-encoding genes with k-mers v2
-        long-hint  : |
-            Annotate protein-encoding genes with k-mers v2
-                        
+
     kmer_v1_parameters :
         ui-name : |
             Annotate remaining hypothetical proteins with k-mers
         short-hint : |
             Annotate remaining hypothetical proteins with k-mers
-        long-hint  : |
-            Annotate remaining hypothetical proteins with k-mers
-                        
+
     annotate_proteins_similarity :
         ui-name : |
             Annotate remaining hypothetical proteins by searching against close relatives
         short-hint : |
             Annotate remaining hypothetical proteins by searching against close relatives
-        long-hint  : |
-            Annotate remaining hypothetical proteins by searching against close relatives
-                        
+
     resolve_overlapping_features :
         ui-name : |
             Perform basic gene overlap removal
         short-hint : |
             Perform basic gene overlap removal
-        long-hint  : |
-            Perform basic gene overlap removal
-                        
+
     find_close_neighbors :
         ui-name : |
             Find close neighbors
         short-hint : |
             Find close neighbors
-        long-hint  : |
-            Find close neighbors
-                        
+
     call_features_prophage_phispy :
         ui-name : |
             Find prophage elements with phispy
         short-hint : |
             Find prophage elements with phispy
-        long-hint  : |
-            Find prophage elements with phispy
-            
+
     output_genome :
         ui-name : |
             Output Genome Name
