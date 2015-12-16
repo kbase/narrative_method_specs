@@ -1,23 +1,29 @@
 #
 # Define basic display information
 #
-name     : Insert Genomes into Species Tree
+name     : Insert Genome Into Species Tree
 subtitle : |
-    Insert Genomes into a global genome tree composed of conserved COGs
+    Add one or more genomes to the KBase species tree.
 tooltip  : |
-    Insert Genomes into a global genome tree composed of conserved COGs
+    Add one or more genomes to the KBase species tree.
 
 screenshots :
-    []
+    - insert_set_of_genomes_into_species_tree_input.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            [build_genome_set_from_tree_generic]
 
 
 #
@@ -26,34 +32,39 @@ method-suggestions :
 parameters :
     param0 :
         ui-name : |
-            Genome ID
+            Genome
         short-hint : |
-            a Genome to insert into the tree
+            Genome to be inserted into a phylogenetic species tree
         long-hint  : |
-            a Genome to insert into the tree
+            Genome to be inserted into a phylogenetic species tree composed of closely related publicly available genomes
 
 
     param1 :
         ui-name : |
             Neighbor public genome count
         short-hint : |
-            number of closest public genomes the tree will contain. (optional, default value is 100)
+            Number of closest public genomes the tree will contain. (optional, default value is 100)
         long-hint  : |
-            number of closest public genomes the tree will contain. (optional, default value is 100)
+            Number of closest public genomes the tree will contain. (optional, default value is 100)
 
 
     param2 :
         ui-name : |
-            Output species tree ID
+            Output Tree
         short-hint : |
-            Output species tree ID. If empty, an ID will be chosen randomly.
-        long-hint  : |
-            Output species tree ID. If empty, an ID will be chosen randomly.
+            Output species tree name
+        long-hint : |
+            The name of the output phylogenetic tree relating genomes available in KBase to your genome
 
 
 description : |
-    Insert Genomes into a global genome tree composed of conserved COGs
+    <p>This method allows a user to construct a phylogenetic tree combining the genome(s) provided by the user with a set of closely related genomes selected from all public KBase genomes. Since the number of genomes available in KBase is very large, the procedure starts by selecting a subset of public KBase genomes closely related to the user-provided genomes. Relatedness is determined by alignment similarity to a select subset of COG (Clusters of Orthologous Groups) domains. Next, a phylogenetic tree is reconstructed using FastTree (a method to quickly estimate maximum likelihood phylogeny, see Publications) with the genome provided by the user and the set of genomes identified as similar in the previous step.</p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong> Roman Sutormin. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
+    
+publications :
+    -
+        display-text: |
+            Price MN, Dehal PS, Arkin AP (2010)FastTree 2--approximately maximum-likelihood trees for large alignments. PLoS One. 2010 Mar 10;5(3):e9490
+        link: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2835736/
 
-
-technical-description : |
-    Insert Genomes into a global genome tree composed of conserved COGs

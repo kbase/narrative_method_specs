@@ -13,14 +13,22 @@ screenshots :
     - compare_two_metabolic_models_output3.png
     - compare_two_metabolic_models_output4.png
 
+icon: icon.png
+
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #
@@ -29,25 +37,25 @@ method-suggestions :
 parameters :
     param0 :
         ui-name : |
-            FBA Model 1 ID
+            FBA Model 1
         short-hint : |
-            Name or ID of the first model
+            Name of first model
         long-hint  : |
-            Name or ID of the first model
+            Name of first model
 
 
     param1 :
         ui-name : |
             FBA Model 2 ID
         short-hint : |
-            Name or ID of the second model
+            Name of second model
         long-hint  : |
-            Name or ID of the second model
+            Name of second model
 
 
     param2 :
         ui-name : |
-            Proteome Comparison ID
+            Proteome Comparison
         short-hint : |
             A proteome comparison dataset (see Compare Two Proteomes method) that includes information about orthologous genes in two genomes for which models were generated.
         long-hint  : |
@@ -55,8 +63,9 @@ parameters :
 
 
 description : |
-    <p>Comparison of two different metabolic models identifies their core and unique reactions and compounds, along with the gene-protein associations between the two models. Proteome comparison data (see Compare Two Proteomes method) are used to identify the orthologous genes. This method produces an output table that lists core reactions, unique reactions, genes, and annotations associated with each biochemical reaction for the two compared metabolic models.</p>
+    <p>Comparison of two different metabolic models identifies their core and unique reactions and compounds, along with the gene-protein associations between the two models. When the input models are constructed from different genomes, a Proteome Comparison data object must also be provided as input to map the genes in one model's genome to the genes in the other model's genome. This method produces an output table that lists core reactions, unique reactions, genes, and annotations associated with each biochemical reaction for the two compared metabolic models.</p>
+    
+    <p><a href="http://kbase.us/compare-two-metabolic-models-method/" target="_blank">Tutorial for Compare Two Metabolic Models Method</a></p>
 
-
-technical-description : |
-    none
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong> Chris Henry, Janaka Edirisinghe, Sam Seaver, and Neal Conrad. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>

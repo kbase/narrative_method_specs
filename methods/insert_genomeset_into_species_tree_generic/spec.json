@@ -1,0 +1,99 @@
+{
+  "ver" : "1.0.1",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseTree"
+  },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseSearch.GenomeSet" ]
+    }
+  }, {
+    "id" : "param1",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "100" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ],
+      "validate_as": "int",
+      "min_int" : 1,
+      "max_int" : 200
+    }
+  }, {
+    "id" : "param2",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseTrees.Tree" ],
+      "is_output_name":true
+    }
+  } ],
+  "behavior" : {
+    "service-mapping" : {
+      "url" : "https://kbase.us/services/trees",
+      "name" : "KBaseTrees",
+      "method" : "construct_species_tree",
+      "input_mapping" : [
+        {
+          "input_parameter": "param0",
+          "target_property": "genomeset_ref",
+          "target_type_transform": "ref"
+        },
+        {
+          "input_parameter": "param1",
+          "target_property": "nearest_genome_count",
+          "target_type_transform": "int"
+        },
+        {
+          "input_parameter": "param2",
+          "generated_value": {
+            "prefix": "sptree_"
+          },
+          "target_property": "out_tree_id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "out_workspace"
+        },
+        {
+          "constant_value": 0,
+          "target_property": "use_ribosomal_s9_only"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "param2",
+          "target_property": "treeID"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceID"
+        },
+        {
+          "constant_value": "500px",
+          "target_property": "height"
+        },
+        {
+          "service_method_output_path": [],
+          "target_property": "jobID"
+        }
+      ]
+    }
+  },
+  "job_id_output_field": "jobID"
+}

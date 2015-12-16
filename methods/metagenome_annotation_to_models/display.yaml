@@ -1,0 +1,77 @@
+#
+# Define basic display information
+#
+name     : Build Models from Metagenome
+
+tooltip  : |
+    This method constructs one or more ensemble and OTU models based on an input metagenome annotation.
+
+screenshots :
+    - build_models_from_metagenome_input.png
+    - build_models_from_metagenome_output.png
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            [merge_to_community_model]
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_metagenome :
+        ui-name : |
+            Metagenome annotation
+        short-hint : |
+            The set of OTUs and associated functional roles that map to one or more reads an annotation metagenome dataset
+        long-hint  : |
+            The set of OTUs and associated functional roles that map to one or more reads an annotation metagenome dataset
+
+    max_otu_models :
+        ui-name : |
+            Maximum number of OTU models
+        short-hint : |
+            The number of models constructed for OTUs in the metagenome should not exceed this value
+        long-hint  : |
+            The number of models constructed for OTUs in the metagenome should not exceed this value
+
+    min_abundance :
+        ui-name : |
+            Minimum average abundance
+        short-hint : |
+            Do not construct a model of an OTU if the average number of reads mapping to each function is lower than this value
+        long-hint  : |
+            Do not construct a model of an OTU if the average number of reads mapping to each function is lower than this value
+
+    min_reactions :
+        ui-name : |
+            Minimum reactions threshold
+        short-hint : |
+            Do not construct a model of an OTU if it contains fewer than this number of reactions
+        long-hint  : |
+            Do not construct a model of an OTU if it contains fewer than this number of reactions
+
+    output_models :
+        ui-name : |
+            Output model set
+        short-hint : |
+            The set of metabolic models that will be generated from the metagenome annoations by this method.
+        long-hint  : |
+            The set of metabolic models that will be generated from the metagenome annoations by this method.
+
+description : |
+    <p>This method constructs a series of metabolic models for the input metagenome annotation. Models are constructed for the most abundant operational taxonomic units (OTUs) first, up to the specified limit. If the average number of hits per functional role in an OTU fail to exceed the specified minimum abundance, the OTU model will not be constructed. Similarly, if a constructed OTU model contains fewer than the specified minimum number of reactions, it will be rejected and its functions returned to a general pool of hits for the metagenome. Once all specified OTU models are constructed, a single ensemble model will be constructed based on all functional annotations that were not included in any OTU models.</p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong> Chris Henry, Andreas Wilke, Travis Harrison. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
+

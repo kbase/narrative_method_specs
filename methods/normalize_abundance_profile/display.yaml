@@ -2,22 +2,32 @@
 # Define basic display information
 #
 name     : Normalize Abundance Data
-subtitle : |
-    Normalize abundance data for selected metagenomes.
+
 tooltip  : |
-    Normalize abundance data for selected metagenomes.
+    Normalize metagenomic abundance data produced by the Generate Taxonomic Abundance Data or Generate Functional Abundance Data methods.
 
 screenshots :
-    []
+    - normalize_abundance_profile_input.png
+
+icon: icon.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            - heatmap_from_abundance_profile
+            - pcoa_from_abundance_profile
+            - view_abundance_profile_rank_plot
+
 
 
 #
@@ -26,25 +36,29 @@ method-suggestions :
 parameters :
     input_profile :
         ui-name : |
-            Raw Abundance Profile
+            Abundance Profile or Matrix
         short-hint : |
-            object name of input abundance profile
+            Select a profile or matrix generated from "Retrieve Taxonomic/Functional Abundance Data"
         long-hint  : |
-            object name of input abundance profile
+            Select a profile or matrix generated from "Retrieve Taxonomic/Functional Abundance Data"
 
 
     output_profile :
         ui-name : |
-            Normalized Abundance Profile
+            Normalized Profile or Matrix
         short-hint : |
-            object name of output abundance profile
+            Generates a single profile for taxonomy or function or a matrix for multiple metagenomes;  the table rows contain functions or taxa and the columns contain metagenome IDs
         long-hint  : |
-            object name of output abundance profile
+            Generates a single profile for taxonomy or function or a matrix for multiple metagenomes;  the table rows contain functions or taxa and the columns contain metagenome IDs
 
 
 description : |
-    Normalize abundance data for selected profile.
-
-
-technical-description : |
-    Normalize abundance data for selected profile.
+    <p>This method normalizes and standardizes abundance data (log-transformation) to reduce experimental or technical bias, making them more comparable and reducing the chance of erroneous conclusions driven by non-biological trends in the data. A boxplot is generated to display the distribution of data, allowing users to assess whether normalization has resolved differences in the distribution of values among the selected data sets.Normalized values are scaled from 0 to 1 across the entire dataset. </p>
+    
+    <p>It is good practice to view the boxplots (use the <a data-method-id=Òview_abundance_profile_boxplotsÓ>Generate Boxplots for Abundance Data</a> method) of raw and normalized data to determine if normalization is necessary prior to comparative analyses. Datasets that exhibit similar distributions across all samples are comparable (as raw or normalized values); those that exhibit a variety of distributions are not suitable for direct comparison and may require normalization and/or additional processing to remove bias that could adversely affect downstream comparisons.</p>
+    
+    <p>The normalized abundances generated with this method can be used as input for all other microbial communities methods such as <a data-method-id=Òheatmap_from_abundance_profileÓ>Generate Heatmap from Abundance Data</a>, <a data-method-id=Òpcoa_from_abundance_profileÓ>Generate PCoA Data from Abundance Data</a>, <a data-method-id=Òview_abundance_profile_rank_plotÓ>Generate Rank Abundance Plot</a>, and <a data-method-id=Òview_abundance_profile_boxplotsÓ>Generate Boxplots for Abundance Data</a>.</p>
+    
+    <p><a href="http://kbase.us/normalize-abundance-data-method/" target="_blank">Tutorial for Normalize Abundance Data Method</a></p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong> Jared Bischof, Travis Harrison, Folker Meyer, Tobias Paczian, and Andreas Wilke. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>

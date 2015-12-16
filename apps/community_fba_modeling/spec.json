@@ -8,15 +8,38 @@
     "steps" : [
         {
             "step-id": "step_1",
-            "method-id": "merge_to_community_model"
+            "method-id": "compute_metagenome_annotation_set"
         },
-        
         {
             "step-id": "step_2",
-            "method-id": "gapfill_a_metabolic_model",
+            "method-id": "metagenome_annotation_to_models",
             "input_mapping" : [
                 {
                     "step":"step_1",
+                    "is_from_input":true,
+                    "from":"output_set",
+                    "to": "input_metagenome"
+                }
+            ]
+        },
+        {
+            "step-id": "step_3",
+            "method-id": "merge_to_community_model",
+            "input_mapping" : [
+                {
+                    "step":"step_2",
+                    "is_from_input":true,
+                    "from":"output_models",
+                    "to": "input_modelset"
+                }
+            ]
+        },
+        {
+            "step-id": "step_4",
+            "method-id": "gapfill_a_metabolic_model",
+            "input_mapping" : [
+                {
+                    "step":"step_3",
                     "is_from_input":true,
                     "from":"output_model",
                     "to": "input_model"

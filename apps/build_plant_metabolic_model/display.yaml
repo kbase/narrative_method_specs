@@ -1,29 +1,48 @@
 #
 # Define basic display information
 #
-name     : Build Plant Metabolic Model and Run FBA
+name     : Build Plant Metabolic Model
 subtitle : |
-    Build a metabolic model for a plant based on annotated sequences of mRNA transcripts and carry out Flux Balance Analysis (FBA) of the model.
+    Build a metabolic model for a plant based on annotated sequences of transcripts.
 tooltip  : |
-    Build a metabolic model for a plant based on annotated sequences of mRNA transcripts and carry out Flux Balance Analysis (FBA) of the model.
+    Build a metabolic model for a plant based on annotated sequences of transcripts.
 
 screenshots : []
 
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            [compare_two_metabolic_models_generic, run_flux_balance_analysis]
+            
 header : |
-    <p>The &quot;Build Plant Metabolic Model and Run FBA&quot; app generates a metabolic model for a plant and then carries out Flux Balance Analysis (FBA) of the model. The user begins by supplying an annotated Genome object derived either from another KBase app (&quot;Plant Transcript Sequences to Annotated Genome&quot;) or from the collection of annotated public genomes pre-loaded in KBase. A metabolic model is generated from the PlantSEED-based metabolic annotation of the genome. The model is then gap filled and subject to FBA simulations. The user can visualize and export both the model and the FBA results.</p>
+    <p>The Build Plant Metabolic Model app generates metabolic models for a plant. This app starts with either using import of transcript sequences (cDNA or protein sequences) in fasta format or using transcript sequences stored as Genome object in KBase. It involves three steps. First, the transcript sequences are annotated with PlantSEED based metabolic annotations. Second, a draft metabolic model is generated using annotated Genome object. Third, the draft metabolic model is gapfilled so that growth can be stimulated using Flux Balance Analysis (FBA). The user can visualize and download the annotated genome and the resulting metabolic models.</p>
+    
+    <p><a href="http://kbase.us/build-plant-metabolic-model-app/" target="_blank">Tutorial for Build Plant Metabolic Model App</a></p>
 
 step-descriptions :
     step_1 : |
         additional instructions/details regarding the step with id step_1
     step_2 : |
         additional instructions/details regarding the step with id step_2
+    step_3 : |
+        additional instructions/details regarding the step with id step_3
 
 description : |
-    <p>The &quot;Build Plant Metabolic Model and Run FBA&quot; app generates a metabolic model for a plant and then carries out Flux Balance Analysis (FBA) of the model. The user begins by supplying an annotated Genome object derived either from another KBase app (&quot;Plant Transcript Sequences to Annotated Genome&quot;) or from the collection of annotated public genomes pre-loaded in KBase. A metabolic model is generated from the PlantSEED-based metabolic annotation of the genome. The model is then gap filled and subject to FBA simulations. The user can visualize and export both the model and the FBA results.</p>
+    <p>The Build Plant Metabolic Model app generates metabolic models for a plant. This app starts with either using import of transcript sequences (cDNA or protein sequences) in fasta format or using transcript sequences stored as Genome object in KBase. It involves three steps. First, the transcript sequences are annotated with PlantSEED based metabolic annotations. Second, a draft metabolic model is generated using annotated Genome object. Third, the draft metabolic model is gapfilled so that growth can be stimulated using Flux Balance Analysis (FBA). The user can visualize and download the annotated genome and the resulting metabolic models.</p>
+    
+    <p><a href="http://kbase.us/build-plant-metabolic-model-app/" target="_blank">Tutorial for Build Plant Metabolic Model App</a></p>
 
-technical-description : |
-    &nbsp;
-    
-    
+
+
     
     

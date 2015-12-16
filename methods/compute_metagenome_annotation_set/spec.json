@@ -1,0 +1,167 @@
+{
+  "name" : "Compute Metagenome Annotation Set",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "AnnotationSetTable"
+  },
+  "parameters" : [ {
+    "id" : "input_metagenome",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "Communities.Metagenome" ]
+    }
+  }, {
+    "id" : "output_set",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.MetagenomeAnnotation" ],
+      "is_output_name": true
+    }
+  }, {
+    "id" : "level",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "genus" ],
+    "field_type" : "dropdown",
+    "dropdown_options" : {
+        "options": [
+        {
+            "value" : "genus",
+            "display" : "genus"
+        },
+        {
+            "value" : "family",
+            "display" : "family"
+        },
+        {
+            "value" : "order",
+            "display" : "order"
+        },
+        {
+            "value" : "class",
+            "display" : "class"
+        },
+        {
+            "value" : "phylum",
+            "display" : "phylum"
+        },
+        {
+            "value" : "domain",
+            "display" : "domain"
+        }
+    ] }
+  }, {
+    "id" : "top",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "10" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "evalue",
+    "optional" : false,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "5" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "identity",
+    "optional" : false,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "60" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "length",
+    "optional" : false,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "15" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  } ],
+  "behavior" : {
+    "script-mapping" : {
+        "module" : "communities_api",
+        "script" : "mg-get-annotation-set",
+        "has_files": true,
+        "input_mapping" : [
+            {
+                "input_parameter": "input_metagenome",
+                "target_property": "id"
+            },
+            {
+                "input_parameter": "output_set",
+                "target_property": "output"
+            },
+            {
+                "input_parameter": "level",
+                "target_property": "level"
+            },
+            {
+                "input_parameter": "top",
+                "target_property": "top"
+            },
+            {
+                "input_parameter": "evalue",
+                "target_property": "evalue"
+            },
+            {
+                "input_parameter": "identity",
+                "target_property": "identity"
+            },
+            {
+                "input_parameter": "length",
+                "target_property": "length"
+            },
+            {
+                "constant_value": "json",
+                "target_property": "format"
+            },
+            {
+                "narrative_system_variable": "token",
+                "target_property": "token"
+            }
+        ],
+        "output_mapping" : [
+            {
+                "input_parameter": "output_set",
+                "target_property": "id"
+            },
+            {
+                "narrative_system_variable": "workspace",
+                "target_property": "ws"
+            },
+            {
+                "narrative_system_variable": "token",
+                "target_property": "auth"
+            }
+        ]
+    }
+  }
+}

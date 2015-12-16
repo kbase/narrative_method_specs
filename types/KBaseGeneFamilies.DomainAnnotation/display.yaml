@@ -1,0 +1,14 @@
+#
+# Define basic display information
+#
+name     : Domain Annotation
+subtitle : Domain Annotation object
+tooltip  : Domain Annotation object
+
+icon : none
+
+description : |
+    <p>This type describes a set of domains annotated in a genome.</p>
+    
+    
+    

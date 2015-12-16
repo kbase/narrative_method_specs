@@ -1,31 +1,37 @@
 name     : REFERENCE FASTA
 subtitle : none
-tooltip  : Upload a ReferenceAssembly object from FASTA-file into your workspace.
+tooltip  : Upload a ReferenceAssembly from a FASTA file into your Narrative.
 
 screenshots :
     []
 
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 parameters :
     fastaFile :
-        ui-name : REFERENCE ASSEMBLY FASTA
-        short-hint : File with short reads in FASTA format.
-        long-hint  : none
+        ui-name : REFERENCE ASSEMBLY DATA FILE IN FASTA FORMAT
+        short-hint : Select a file that contains short reads in FASTA format
+        long-hint  : Select a file that contains short reads in FASTA format
 
     outputObject :
-        ui-name : OUTPUT OBJECT ID
-        short-hint : Target object ID.
-        long-hint  : none
+        ui-name : OBJECT NAME
+        short-hint : Provide a name for the object that will be created by this upload
+        long-hint  : Provide a name for the object that will be created by this upload
 
     refname :
         ui-name : REFERENCE GENOME
-        short-hint : Optional name of reference genome.
-        long-hint  : none
+        short-hint : Provide a name for a reference genome (optional)
+        long-hint  : Provide a name for a reference genome (optional)
 
 description : none
 

@@ -1,0 +1,111 @@
+{
+  "name" : "Build models from metagenome",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseTabTable"
+  },
+  "parameters" : [ {
+    "id" : "input_metagenome",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomes.MetagenomeAnnotation" ]
+    }
+  }, {
+    "id" : "max_otu_models",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "2" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "min_abundance",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "1" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "min_reactions",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "100" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }    
+  }, {
+    "id" : "output_models",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFBA.FBAModelSet" ],
+      "is_output_name":true
+    }
+  } ],
+  "behavior" : {
+    "service-mapping" : {
+      "url" : "",
+      "name" : "KBaseFBAModeling",
+      "method" : "metagenome_to_fbamodels",
+      "input_mapping" : [
+        {
+          "input_parameter": "input_metagenome",
+          "target_property": "metaanno_uid"
+        },
+        {
+          "input_parameter": "max_otu_models",
+          "target_property": "max_otu_models"
+        },
+        {
+          "input_parameter": "min_abundance",
+          "target_property": "min_abundance"
+        },
+    	{
+          "input_parameter": "min_reactions",
+          "target_property": "min_reactions"
+        },
+        {
+          "input_parameter": "output_models",
+          "target_property": "modelset_id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspace"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "constant_value": "KBaseFBA.FBAModelSet",
+          "target_property": "type"
+        },
+        {
+          "input_parameter": "output_models",
+          "target_property": "obj"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws"
+        }
+      ]
+    }
+  }
+}

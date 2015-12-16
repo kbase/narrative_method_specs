@@ -3,9 +3,9 @@
 #
 name     : View Metagenome
 subtitle : |
-    Overview of metagenome statistics, numeric and plotted.
+    Overview of metagenome.
 tooltip  : |
-    Overview of metagenome statistics, numeric and plotted.
+    Overview of metagenome.
 
 screenshots :
     []
@@ -13,29 +13,35 @@ screenshots :
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_metagenome :
         ui-name : |
-            Metagenome ID
+            Metagenome
         short-hint : |
-            id of a metagenome
+            metagenome object
         long-hint  : |
-            id of a metagenome
+            metagenome object
 
 
 description : |
-    Overview of metagenome statistics, numeric and plotted.
+    Overview of metagenome.
 
 
 technical-description : |
-    Overview of metagenome statistics, numeric and plotted.
+    Overview of metagenome.
