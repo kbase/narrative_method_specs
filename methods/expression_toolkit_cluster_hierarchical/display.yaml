@@ -4,7 +4,7 @@
 name     : Cluster Expression Data - Hierarchical
 
 tooltip  : |
-    Perform hierarchical clustering to group gene expression data as branches of dendrogram.
+    Perform hierarchical clustering to group gene expression data into a dendrogram.
 
 screenshots :
     []

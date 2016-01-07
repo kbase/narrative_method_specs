@@ -73,12 +73,12 @@ parameters :
 description : |
     <p>This method enables users to observe and analyze patterns of gene expression by grouping expression data via k-means clustering. K-means clustering is useful for discovering functionally related sets of genes, investigating regulatory networks for gene expression, and deducing unknown gene functions by observing and grouping their expression patterns in differing conditions.</p>
 
-    <p>Begin by selecting or importing both the expression dataset to analyze and the genome associated with the expression dataset using the Add Data button. Specify a value for k. You can use the Estimate K method to assist in determining an optimal value for k. Provide a name for the output set of clusters. Define the number of starts and iterations, select the k-means clustering algorithm to use for the analysis, and input a random seed value.</p>
+    <p>Begin by selecting or importing both the expression dataset to analyze and the genome associated with the expression dataset using the Add Data button. Specify a value for k. You can use the Estimate K for K-Means Clustering method to assist in determining an optimal value for k. Provide a name for the output set of clusters. Define the number of starts and iterations, select the k-means clustering algorithm to use for the analysis, and input a random seed value.</p>
     
-    <p>Description of k-means clustering algorithms: 
+    <p>Description of k-means clustering algorithms:
         <ul>
         <li>Hartigan-Wong (default): Efficient clustering algorithm; fast initial convergence; optimizes within-cluster sum of squares</li>
-        <li>Lloyd: For large data sets; discrete data distribution; optimizes total sum of squares </li>
+        <li>Lloyd: For large data sets; discrete data distribution; optimizes total sum of squares</li>
         <li>Forgy: For large data sets; continuous data distribution; optimizes total sum of squares</li>
         <li>MacQueen: Fast initial convergence; optimizes total sum of squares</li></ul></p>
         

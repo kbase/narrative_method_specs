@@ -2,7 +2,7 @@
     "ver": "0.1.0",
     "authors": [ "teharrison" ],
     "contact": "help@kbase.us",
-    "categories": [ "featured_apps" ],
+    "categories": [ "inactive" ],
     "steps" : [
         {
             "step-id": "step_1",

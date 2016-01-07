@@ -3,7 +3,7 @@
 #
 name     : Build a FeatureSet from a Genome
 tooltip  : |
-    Create a new FeatureSet by selecting Features from a Genome
+    Create a new FeatureSet by selecting features from a Genome.
 
 screenshots :
     []
