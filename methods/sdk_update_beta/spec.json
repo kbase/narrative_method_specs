@@ -1,0 +1,57 @@
+{
+	"ver": "0.0.1",
+	
+	"authors": [
+		"msneddon"
+	],
+	"contact": "help@kbase.us",
+	"visible": true,
+	"categories": ["active"],
+	"widgets": {
+		"input": null,
+		"output": "kbaseDefaultNarrativeOutput"
+	},
+	"parameters": [ 
+		{
+			"id": "module_name",
+			"optional": true,
+			"advanced": false,
+			"allow_multiple": false,
+			"default_values": [ "" ],
+			"field_type": "text",
+			"text_options": {
+				"valid_ws_types" : [ ]
+			}
+		},
+		{
+			"id": "git_url",
+			"optional": true,
+			"advanced": true,
+			"allow_multiple": false,
+			"default_values": [ "" ],
+			"field_type": "text",
+			"text_options": {
+				"valid_ws_types" : [ ]
+			}
+		}
+	],
+	"behavior": {
+		"service-mapping": {
+			"url": "${endpoint}/catalog",
+			"name": "Catalog",
+			"method": "push_dev_to_beta",
+			"input_mapping": [
+				{
+					"input_parameter": "module_name",
+					"target_property": "module_name"
+				},
+				{
+					"input_parameter": "git_url",
+					"target_property": "git_url"
+				}
+			],
+			"output_mapping": [
+			]
+		}
+	}
+}

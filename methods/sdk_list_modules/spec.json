@@ -1,0 +1,91 @@
+{
+	"ver": "0.0.1",
+	
+	"authors": [
+		"msneddon"
+	],
+	"contact": "help@kbase.us",
+	"visible": true,
+	"categories": ["active"],
+	"widgets": {
+		"input": null,
+		"output": "kbaseDefaultNarrativeOutput"
+	},
+	"parameters": [
+	  	{
+		    "id": "include_released",
+		    "optional":true,
+		    "advanced":false,
+		    "allow_multiple":false,
+		    "default_values":[1],
+		    "field_type" : "checkbox",
+		    "checkbox_options":{
+			      "checked_value": 1,
+			      "unchecked_value": 0
+		    }
+	  	},
+	  	{
+		    "id": "include_unreleased",
+		    "optional":true,
+		    "advanced":false,
+		    "allow_multiple":false,
+		    "default_values":[1],
+		    "field_type" : "checkbox",
+		    "checkbox_options":{
+			      "checked_value": 1,
+			      "unchecked_value": 0
+		    }
+	  	},
+	  	{
+		    "id": "owners",
+		    "optional":true,
+		    "advanced":false,
+		    "allow_multiple":true,
+		    "default_values":[""],
+		    "field_type" : "text"
+	  	},
+	  	{
+		    "id": "include_disabled",
+		    "optional":true,
+		    "advanced":true,
+		    "allow_multiple":false,
+		    "default_values":[0],
+		    "field_type" : "checkbox",
+		    "checkbox_options":{
+			      "checked_value": 1,
+			      "unchecked_value": 0
+		    }
+	  	}
+	],
+	"behavior": {
+		"service-mapping": {
+			"url": "${endpoint}/catalog",
+			"name": "Catalog",
+			"method": "list_basic_module_info",
+			"input_mapping": [
+				{
+					"input_parameter": "include_released",
+					"target_property": "include_released"
+				},
+				{
+					"input_parameter": "include_unreleased",
+					"target_property": "include_unreleased"
+				},
+				{
+					"input_parameter": "include_disabled",
+					"target_property": "include_disabled"
+				},
+				{
+					"input_parameter": "owners",
+					"target_property": "owners"
+				}
+			],
+			"output_mapping": [
+                {
+                    "service_method_output_path": [],
+                    "target_property": "output"
+                }
+			]
+		}
+	}
+}

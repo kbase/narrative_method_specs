@@ -1,0 +1,31 @@
+{
+	"ver": "0.0.1",
+	
+	"authors": [
+		"msneddon"
+	],
+	"contact": "help@kbase.us",
+	"visible": true,
+	"categories": ["active"],
+	"widgets": {
+		"input": null,
+		"output": "kbaseDefaultNarrativeOutput"
+	},
+	"parameters": [
+	],
+	"behavior": {
+		"service-mapping": {
+			"url": "${endpoint}/catalog",
+			"name": "Catalog",
+			"method": "list_requested_releases",
+			"input_mapping": [
+			],
+			"output_mapping": [
+                {
+                    "service_method_output_path": [],
+                    "target_property": "output"
+                }
+			]
+		}
+	}
+}

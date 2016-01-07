@@ -1,0 +1,48 @@
+#
+# define display information
+#
+name: SDK - Update Beta Version
+
+tooltip: |
+	Migrates the latest dev version to beta
+
+screenshots: []
+
+icon: icon.png
+
+#
+# define a set of similar methods that might be useful to the user
+#
+suggestions:
+	apps:
+		related:
+			[]
+		next:
+			[]
+	methods:
+		related:
+			[]
+		next:
+			[]
+
+#
+# Configure the display and description of parameters
+#
+parameters :
+
+    module_name :
+        ui-name : |
+            Module Name
+        short-hint : |
+            Name of the registered module
+            
+    git_url :
+        ui-name : |
+            Git URL
+        short-hint : |
+            Git URL of registered repository
+
+
+
+description : |
+	<p>Updates the beta version</p>

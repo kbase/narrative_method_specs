@@ -1,0 +1,34 @@
+#
+# define display information
+#
+name: SDK - List Module Releases Under Review
+
+tooltip: |
+	List the modules that have requested a release
+
+screenshots: []
+
+icon: icon.png
+
+#
+# define a set of similar methods that might be useful to the user
+#
+suggestions:
+	apps:
+		related:
+			[]
+		next:
+			[]
+	methods:
+		related:
+			[]
+		next:
+			[]
+
+#
+# Configure the display and description of parameters
+#
+parameters : {}
+
+description : |
+	<p>List modules that have requested a release</p>

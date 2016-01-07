@@ -1,0 +1,60 @@
+#
+# define display information
+#
+name: SDK Admin - Review Release Request
+
+tooltip: |
+	Allows admin users to review and accept/deny requests for general release
+
+screenshots: []
+
+icon: icon.png
+
+#
+# define a set of similar methods that might be useful to the user
+#
+suggestions:
+	apps:
+		related:
+			[]
+		next:
+			[]
+	methods:
+		related:
+			[]
+		next:
+			[]
+
+#
+# Configure the display and description of parameters
+#
+parameters :
+
+    module_name :
+        ui-name : |
+            Module Name
+        short-hint : |
+            Name of the registered module
+
+    decision :
+        ui-name : |
+            Review Decision
+        short-hint : |
+            If approved, module is immediately released
+
+    review_message :
+        ui-name : |
+            Review
+        short-hint : |
+            Explanation of decision, only required if request is denied
+
+    git_url :
+        ui-name : |
+            Git URL
+        short-hint : |
+            Git URL of registered repository
+
+
+
+description : |
+	<p>Updates the beta version</p>

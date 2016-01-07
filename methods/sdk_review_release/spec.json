@@ -1,0 +1,96 @@
+{
+	"ver": "0.0.1",
+	
+	"authors": [
+		"msneddon"
+	],
+	"contact": "help@kbase.us",
+	"visible": true,
+	"categories": ["active"],
+	"widgets": {
+		"input": null,
+		"output": "kbaseDefaultNarrativeOutput"
+	},
+	"parameters": [ 
+		{
+			"id": "module_name",
+			"optional": true,
+			"advanced": false,
+			"allow_multiple": false,
+			"default_values": [ "" ],
+			"field_type": "text",
+			"text_options": {
+				"valid_ws_types" : [ ]
+			}
+		},
+		{
+		    "id" : "decision",
+		    "optional" : false,
+		    "advanced" : false,
+		    "allow_multiple" : false,
+		    "default_values" : [ "" ],
+		    "field_type" : "dropdown",
+		    "dropdown_options":{
+		      "options": [
+		        {
+		          "value": "approved",
+		          "display": "approved"
+		        },
+		        {
+		          "value": "denied",
+		          "display": "denied"
+		        }
+		      ]
+		    }
+		},
+		{
+			"id": "review_message",
+			"optional": true,
+			"advanced": false,
+			"allow_multiple": false,
+			"default_values": [ "" ],
+			"field_type": "text",
+		    "textarea_options" : {
+		      "n_rows" : 3
+		    }
+		},
+		{
+			"id": "git_url",
+			"optional": true,
+			"advanced": true,
+			"allow_multiple": false,
+			"default_values": [ "" ],
+			"field_type": "text",
+			"text_options": {
+				"valid_ws_types" : [ ]
+			}
+		}
+	],
+	"behavior": {
+		"service-mapping": {
+			"url": "${endpoint}/catalog",
+			"name": "Catalog",
+			"method": "review_release_request",
+			"input_mapping": [
+				{
+					"input_parameter": "module_name",
+					"target_property": "module_name"
+				},
+				{
+					"input_parameter": "git_url",
+					"target_property": "git_url"
+				},
+				{
+					"input_parameter": "decision",
+					"target_property": "decision"
+				},
+				{
+					"input_parameter": "review_message",
+					"target_property": "review_message"
+				}
+			],
+			"output_mapping": [
+			]
+		}
+	}
+}

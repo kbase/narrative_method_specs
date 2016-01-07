@@ -1,0 +1,50 @@
+#
+# define display information
+#
+name: SDK - Register Repo
+
+tooltip: |
+	Register dynamically service repository to the Catalog.
+
+screenshots: []
+
+icon: icon.png
+
+#
+# define a set of similar methods that might be useful to the user
+#
+suggestions:
+	apps:
+		related:
+			[]
+		next:
+			[]
+	methods:
+		related:
+			[]
+		next:
+			[]
+
+#
+# Configure the display and description of parameters
+#
+parameters :
+    git_url :
+        ui-name : |
+            Git URL
+        short-hint : |
+            Git URL of registered repository
+        long-hint  : |
+            Git URL of registered repository
+
+    git_commit_hash :
+        ui-name : |
+            Git commit hash
+        short-hint : |
+            Version of registered repository set by Git commit hash
+        long-hint  : |
+            Version of registered repository set by Git commit hash
+
+
+description : |
+	<p>Register a new version of an SDK module.</p>
