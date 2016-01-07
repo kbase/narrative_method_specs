@@ -1,0 +1,48 @@
+#
+# define display information
+#
+name: SDK - Request Module Relese
+
+tooltip: |
+	Indicates that the beta version is ready for release, and requests a review
+
+screenshots: []
+
+icon: icon.png
+
+#
+# define a set of similar methods that might be useful to the user
+#
+suggestions:
+	apps:
+		related:
+			[]
+		next:
+			[]
+	methods:
+		related:
+			[]
+		next:
+			[]
+
+#
+# Configure the display and description of parameters
+#
+parameters :
+
+    module_name :
+        ui-name : |
+            Module Name
+        short-hint : |
+            Name of the registered module
+
+    git_url :
+        ui-name : |
+            Git URL
+        short-hint : |
+            Git URL of registered repository
+
+
+
+description : |
+	<p>Requests a new release of the module, pending review of the release</p>

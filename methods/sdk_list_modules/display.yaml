@@ -1,0 +1,50 @@
+#
+# define display information
+#
+name: SDK - List Modules
+
+tooltip: |
+	List modules from the catalog
+
+screenshots: []
+
+icon: icon.png
+
+#
+# define a set of similar methods that might be useful to the user
+#
+suggestions:
+	apps:
+		related:
+			[]
+		next:
+			[]
+	methods:
+		related:
+			[]
+		next:
+			[]
+
+#
+# Configure the display and description of parameters
+#
+parameters :
+    include_released :
+        ui-name : |
+            Include released modules
+        short-hint: Include released modules
+    include_unreleased :
+        ui-name : |
+            Include unreleased modules
+        short-hint: Include unreleased modules
+    owners :
+        ui-name : |
+            Owners
+        short-hint: Only include modules with these owners
+    include_disabled :
+        ui-name : |
+            Include disabled modules
+        short-hint: Include disabled modules
+
+description : |
+	<p>List modules.</p>

@@ -1,0 +1,40 @@
+#
+# define display information
+#
+name: SDK - View Module Registration Log
+
+tooltip: |
+    View the log and status of a registration based on ID
+
+screenshots: []
+
+icon: icon.png
+
+#
+# define a set of similar methods that might be useful to the user
+#
+suggestions:
+    apps:
+        related:
+            []
+        next:
+            []
+    methods:
+        related:
+            []
+        next:
+            []
+
+#
+# Configure the display and description of parameters
+#
+parameters :
+    registration_id :
+        ui-name : |
+            Registration ID
+        short-hint : |
+            The registration ID of an SDK module registration
+
+
+description : |
+    <p>View the regsistration log o.</p>

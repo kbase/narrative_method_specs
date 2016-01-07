@@ -1,0 +1,38 @@
+{
+    "ver": "0.0.1",
+    
+    "authors": [
+        "rsutormin", 
+        "msneddon"
+    ],
+    "contact": "help@kbase.us",
+    "visible": true,
+    "categories": ["active"],
+    "widgets": {
+        "input": null,
+        "output": "kbaseRegisterRepoState"
+    },
+    "parameters": [ 
+        {
+            "id": "registration_id",
+            "optional": false,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [ "" ],
+            "field_type": "text",
+            "text_options": {
+                "valid_ws_types" : [ ]
+            }
+        }
+    ],
+    "behavior": {
+        "none": {
+            "output_mapping": [
+                {
+                    "input_parameter": "registration_id",
+                    "target_property": "registration_id"
+                }
+            ]
+        }
+    }
+}
