@@ -37,6 +37,8 @@ parameters :
         short-hint : Provide a name for the biomass reaction in SBML file
         long-hint  : Provide a name for the biomass reaction in SBML file
 
-description : none
-
+description : |
+    <p>Please see <a href="http://kbase.us/data-upload-download-guide/fba-model/" target="_blank">http://kbase.us/data-upload-download-guide/fba-model/</a>
+    for more information about how to format your FBA model input file.</p>
+    
 technical-description : none
