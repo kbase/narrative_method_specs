@@ -33,9 +33,9 @@ parameters :
         ui-name : |
             Name of FTP file
         short-hint : |
-            Provide a path to an FTP file with contigs in FASTA format (e.g., ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/NC_008321.fna)
+            Provide a path to an FTP file with contigs in FASTA format (e.g., ftp://ftp.ncbi.nlm.nih.gov/genomes/archive/old_genbank/Bacteria/Shewanella_MR-4_uid13904/CP000446.gbk)
         long-hint  : |
-            Provide a path to an FTP file with contigs in FASTA format (e.g., ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/NC_008321.fna)
+            Provide a path to an FTP file with contigs in FASTA format (e.g., ftp://ftp.ncbi.nlm.nih.gov/genomes/archive/old_genbank/Bacteria/Shewanella_MR-4_uid13904/CP000446.gbk)
 
     outputObject :
         ui-name : |
