@@ -29,8 +29,8 @@ parameters :
 
     biomass :
         ui-name : BIOMASS
-        short-hint : Provide a name for the biomass reaction in Excel file
-        long-hint  : Provide a name for the biomass reaction in Excel file
+        short-hint : Provide the biomass reaction identifier in Excel file
+        long-hint  : Provide the biomass reaction identifier in Excel file
 
 description : none
 
