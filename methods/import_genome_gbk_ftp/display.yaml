@@ -32,7 +32,7 @@ parameters :
         ui-name : |
             Name of FTP file
         short-hint : |
-            Enter the path to the FTP file in GenBank format (for example, ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/NC_008321.gbk)
+            Enter the path to the FTP file in GenBank format (for example, ftp://ftp.ncbi.nlm.nih.gov/genomes/archive/old_refseq/Bacteria/Shewanella_MR_4_uid58345/NC_008321.gbk)
         long-hint  : |
             The uncompressed data must be less than 2G. File extension should be .gbk, .gb, .genbank, .gbf, or .gbff.
     outputObject :
