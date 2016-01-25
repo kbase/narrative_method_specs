@@ -52,7 +52,7 @@ parameters :
         ui-name : |
             Filtering Method
         short-hint : |
-            Select between the two methods to perform differential expression filtering: ANOVA (ANalysis Of VAriance) or Log odd ratio
+            Select between the two methods to perform differential expression filtering: ANOVA (ANalysis Of VAriance) or Log odds ratio
     num_features :
         ui-name : |
             Number of Features
@@ -69,7 +69,9 @@ parameters :
             Select either the P-value Cutoff or the Number of Features to filter differentially expressed genes
 
 description : |
-    <p>This method filters differentially expressed genes from the Expression Matrix and generates a FeatureSet and reduced ExpressionMatrix. Begin by selecting or importing both the Expression Matrix to analyze and the Genome associated with the Expression Matrix using the Add Data button. If the Expression Matrix was not associated with a Genome when it was imported, please run the method Associate Expression Matrix to Genome Features on the expression matrix before running this method. Select either of the filtering methods that use the Number of Features, or a P-value cutoff to filter differentially expressed genes. If both the Number of Features and the P-value cutoff are populated, the method will default to using the Number of Features with the selected filtering method as the mode of differentiating the genes. Provide names for the output filtered Expression Matrix and FeatureSet object type and then run the method.</p>
+    <p>This method filters differentially expressed genes from the Expression Matrix and generates a FeatureSet and reduced ExpressionMatrix. Begin by selecting or importing both the Expression Matrix to analyze and the Genome associated with the Expression Matrix using the Add Data button. If the Expression Matrix was not associated with a Genome when it was imported, please run the method Associate Expression Matrix to Genome Features on the expression matrix before running this method. Select either of the filtering methods that use the Number of Features, or a P-value cutoff to filter differentially expressed genes. If both the Number of Features and the P-value cutoff are populated, the method will default to using the Number of Features with the selected filtering method as the mode of differentiating the genes. Provide names for the output filtered Expression Matrix and FeatureSet object and then run the method.</p>
+    
+    <p>The input is a .tsv file with "gene-id" listed in the A1 cell, the gene ids listed in the A column, the sample/conditions identifiers in the 1 row, and expression values that correspond to the gene-ids and sample throughout. For a comprehensive guide to formatting your expression data for import into KBase, see the <a href="http://kbase.us/data-upload-download-guide/expression-matrix/">Data Upload/Download Guide</a>.</p>
      
     <p>Description of filtering methods to do differential Expression: 
         <ul>
