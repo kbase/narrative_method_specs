@@ -50,9 +50,9 @@ parameters :
         ui-name : |
             FTP FOLDER
         short-hint : |
-            Enter the path to the FTP folder with the GBK-file(s).<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/
+            Enter the path to the FTP folder with the GBK-file(s).<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/archive/old_refseq/Bacteria/Shewanella_MR_4_uid58345/
         long-hint  : |
-            Enter the path to the FTP folder with the GBK-file(s).<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/
+            Enter the path to the FTP folder with the GBK-file(s).<br>ex) ftp://ftp.ncbi.nlm.nih.gov/genomes/archive/old_refseq/Bacteria/Shewanella_MR_4_uid58345/
 
     outputObject :
         ui-name : |
