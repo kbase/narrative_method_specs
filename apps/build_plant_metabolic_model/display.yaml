@@ -3,9 +3,9 @@
 #
 name     : Build Plant Metabolic Model
 subtitle : |
-    Build a metabolic model for a plant based on annotated sequences of coding sequences.
+    Build a metabolic model for a plant based on annotated coding sequences.
 tooltip  : |
-    Build a metabolic model for a plant based on annotated sequences of coding sequences.
+    Build a metabolic model for a plant based on annotated coding sequences.
 
 screenshots : []
 
