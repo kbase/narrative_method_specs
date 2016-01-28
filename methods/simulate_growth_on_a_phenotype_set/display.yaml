@@ -57,6 +57,14 @@ parameters :
             Name the Phenotype Simulation Result data
 
 
+    objective :
+        ui-name : |
+            Reaction to maximize
+        short-hint : |
+            ID of reaction flux to maximize in phenotype simulation (e.g. rxn00001, cpd00001_e0, bio1)
+        long-hint  : |
+            ID of reaction flux to maximize in phenotype simulation (e.g. rxn00001, cpd00001_e0, bio1)
+
 description : |
     <p>This method uses an input metabolic model to simulate growth in a set of media conditions, with a specified set of gene knockouts, and with specified media supplements. A metabolic model can be curated using phenotypic data such as Biolog growth data or gene essentiality data generated on a specific set of media conditions. The method reports differences between growth predictions and experimentally measured growth rates. This method can be applied to test the accuracy of a model in replicating experimental observations, as well as exploring the set of metabolites that an organism can utilize as nutrient sources.  The Simulate Growth on Phenotype Data  method carries out flux balance analysis (FBA) for each medium and knockout in the phenotype dataset and displays the output (growth/no growth) as a side-by-side comparison of model predictions and experimental results. To begin, the user uploads a table of phenotype data (e.g., Biolog or gene essentiality data) into the app. The user also either uploads a metabolic model or selects a model already present in KBase. KBase uses the selected model to simulate the uploaded phenotypes, presenting simulation results in a detailed exportable report. This method also conducts some reconciliation of models with phenotype data.</p>
     
