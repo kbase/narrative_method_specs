@@ -34,8 +34,10 @@ parameters :
 
     biomass :
         ui-name : BIOMASS
-        short-hint : Provide a name for the biomass reaction in SBML file
-        long-hint  : Provide a name for the biomass reaction in SBML file
+        short-hint : Provide the biomass reaction identifier in SBML file
+        long-hint  : Provide the biomass reaction identifier in SBML file
+
+description : none
 
 description : |
     <p>Please see <a href="http://kbase.us/data-upload-download-guide/fba-model/" target="_blank">http://kbase.us/data-upload-download-guide/fba-model/</a>
