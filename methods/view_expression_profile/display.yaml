@@ -47,5 +47,7 @@ parameters :
 description : |
     <p>This method allows you to plot and compare the average expression values of all features in Expression Matrix to the average expression values of selected features across the different conditions. Click on the Show/Hide Selected Features button on the top of the plot to view and sort based on the summary statistics of expression values for selected features. Mouse over the points on the plot to view condition specific average expression values.</p>
     
+    <p>The input is a .tsv file with "gene-id" listed in the A1 cell, the gene ids listed in the A column, the sample/conditions identifiers in the 1 row, and expression values that correspond to the gene-ids and sample throughout. For a comprehensive guide to formatting your expression data for import into KBase, see the <a href="http://kbase.us/data-upload-download-guide/expression-matrix/">Data Upload/Download Guide</a>.</p>    
+    
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
