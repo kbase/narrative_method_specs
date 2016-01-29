@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : Assembly
+subtitle : Assembly object
+tooltip  : Assemblyt object
+
+icon : assembly.jpg
+
+description : |
+    <p>This type describes a genome assembly.</p>
+
+    
+    
+    
