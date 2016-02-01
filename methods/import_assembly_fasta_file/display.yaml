@@ -1,0 +1,53 @@
+#
+# Define basic display information
+#
+name     : UPLOAD FROM FASTA FILE
+subtitle : none
+tooltip  : |
+    Upload DNA sequence(s) in FASTA format (creating an Assembly).
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    fastaFile :
+        ui-name : |
+            FASTA file
+        short-hint : |
+            File with DNA data (one or more sequences) in FASTA format
+        long-hint  : |
+            Recognized extensions for the FASTA input file are .fasta, .fna, or .fa
+
+    outputObject :
+        ui-name : |
+            Assembly name
+        short-hint : |
+            Provide a name for the Assembly that will be created by this upload
+        long-hint  : |
+            Provide a name for the Assembly that will be created by this upload
+
+description : |
+    Upload DNA sequence(s) in FASTA format (creating an Assembly)
+
+
+technical-description : |
+    Upload DNA sequence(s) in FASTA format (creating an Assembly)
