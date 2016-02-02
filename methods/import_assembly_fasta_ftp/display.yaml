@@ -1,0 +1,51 @@
+#
+# Define basic display information
+#
+name     : IMPORT FROM FTP
+subtitle : none
+tooltip  : |
+    Upload assembled DNA sequence(s) in FASTA format via FTP.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    ftpFolder :
+        ui-name : |
+            Name of FTP file
+        short-hint : |
+            Provide a path to an FTP file with contigs in FASTA format (e.g., ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/NC_008321.fna)
+        long-hint  : |
+            Provide a path to an FTP file with contigs in FASTA format (e.g., ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/NC_008321.fna)
+
+    outputObject :
+        ui-name : |
+            Name of Assembly
+        short-hint : |
+            Provide a name for the Assembly that will be created by this upload
+        long-hint  : |
+            Provide a name for the Assembly that will be created by this upload
+
+description : none
+
+
+technical-description : none
