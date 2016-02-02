@@ -1,0 +1,51 @@
+#
+# Define basic display information
+#
+name     : UPLOAD GENBANK FILE
+subtitle : none
+tooltip  : |
+    Import a genome in GenBank format or as a zip file of multiple GenBank files, creating GenomeAnnotation and Assembly objects for use in various analysis methods.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    gbkFile :
+        ui-name : |
+            GenBank file
+        short-hint : |
+            File with genome sequence in GenBank format or zip-file with GenBank files.
+        long-hint  : |
+            File with genome sequence in GenBank format or zip-file with GenBank files.
+
+    outputObject :
+        ui-name : |
+            Name of the genome
+        short-hint : |
+            Provide a name for the genome you are uploading (for example, Shewanella_MR_4)
+        long-hint  : |
+            Provide a name for the genome you are uploading (for example, Shewanella_MR_4)
+
+description : none
+
+
+technical-description : none

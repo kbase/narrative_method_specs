@@ -1,0 +1,81 @@
+{
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "importers" ],
+  "widgets" : {
+    "input" : "kbaseNarrativeMethodInput",
+    "output" : "GenomeAnnotation"
+  },
+  "parameters" : [ {
+    "id" : "ftpFolder",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "outputObject",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseGenomeAnnotations.GenomeAnnotation" ],
+      "is_output_name" : true
+    }
+  } ],
+  "behavior" : {
+    "service-mapping" : {
+      "url" : "http://localhost:11111/",
+      "name" : "KBaseDataImport",
+      "method" : "upload",
+      "input_mapping" : [
+        {
+          "constant_value": "KBaseGenomes.GBK",
+          "target_argument_position": 0
+        },
+        {
+          "constant_value": "KBaseGenomeAnnotations.GenomeAnnotation",
+          "target_argument_position": 1
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_argument_position": 2
+        },
+        {
+          "input_parameter": "outputObject",
+          "generated_value": {
+            "prefix": "genome_"
+          },
+          "target_argument_position": 3
+        },
+        {
+          "input_parameter": "ftpFolder",
+          "target_property": "ftp_path",
+          "target_argument_position": 4
+        }
+      ],
+      "output_mapping" : [
+        {
+          "input_parameter": "outputObject",
+          "target_property": "ws_id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws_name"
+        },
+        {
+          "service_method_output_path": ["1"],
+          "target_property": "job_id"
+        }
+      ]
+    }
+  },
+  "job_id_output_field": "job_id"
+}

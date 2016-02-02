@@ -1,0 +1,50 @@
+#
+# Define basic display information
+#
+name     : IMPORT FROM FTP
+subtitle : none
+tooltip  : |
+    Import a genome with genome sequence in GenBank format or as a zip file of multiple GenBank files, creating GenomeAnnotation and Assembly objects for use in various analysis methods.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    ftpFolder :
+        ui-name : |
+            Name of FTP file
+        short-hint : |
+            Enter the path to the FTP file in GenBank format. (for example, ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/NC_008321.gbk)
+        long-hint  : |
+            Enter the path to the FTP file in GenBank format. (for example, ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/Shewanella_MR_4_uid58345/NC_008321.gbk)
+
+    outputObject :
+        ui-name : |
+            Name of the genome
+        short-hint : |
+            Provide a name for the genome you are uploading (for example, Shewanella_MR_4)
+        long-hint  : |
+            Provide a name for the genome you are uploading (for example, Shewanella_MR_4)
+
+description : none
+
+
+technical-description : none
