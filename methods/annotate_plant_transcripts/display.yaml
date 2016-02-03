@@ -1,10 +1,10 @@
 #
 # Define basic display information
 #
-name     : Annotate Plant Transcripts with Metabolic Functions
+name     : Annotate Plant Coding Sequences with Metabolic Functions
 
 tooltip  : |
-    Annotate a set of plant transcripts with metabolic functions from the PlantSEED project.
+    Annotate a set of plant coding sequences with metabolic functions from the PlantSEED project.
 
 screenshots :
     - annotate_plant_transcripts_with_metabolic_functions_input1.png
@@ -33,20 +33,20 @@ suggestions :
 parameters :
     input_genome :
         ui-name : |
-            Plant Transcripts
+            Plant Coding Sequences
         short-hint : |
-            The set of plant transcripts to annotate
+            The set of plant coding sequences to annotate
         long-hint  : |
-            The set of plant transcripts to annotate
+            The set of plant coding sequences to annotate
 
 
     output_genome :
         ui-name : |
             Output Genome
         short-hint : |
-            A set of metabolically annotated transcripts saved as a "Genome" object
+            A set of metabolically annotated coding sequences saved as a "Genome" object
         long-hint  : |
-            A set of metabolically annotated transcripts saved as a "Genome" object
+            A set of metabolically annotated coding sequences saved as a "Genome" object
         placeholder : |
             Name of Output Genome
             
@@ -55,17 +55,17 @@ fixed-parameters :
         ui-name : |
             Dataset name
         description : |
-            The name of the set of signature k-mers to use for annotating the plant transcripts. The SEED project frequently releases new and updated sets of signature k-mers for each round of annotation accomplished. The set that contains this parameter allows us to retrieve and use the signature k-mers computed via the PlantSEED project. We are currently using Release 70.
+            The name of the set of signature k-mers to use for annotating the plant coding sequences. The SEED project frequently releases new and updated sets of signature k-mers for each round of annotation accomplished. The set that contains this parameter allows us to retrieve and use the signature k-mers computed via the PlantSEED project. We are currently using Release 70.
     
     -
         ui-name : |
             k-mer size
         description : |
-            The length of k-mer to use when annotating plant transcripts. When a set of signature k-mers is computed, the computation is done at various k-mer lengths. By default we are using the signature k-mers of 8 amino acids in length.
+            The length of k-mer to use when annotating plant coding sequences. When a set of signature k-mers is computed, the computation is done at various k-mer lengths. By default we are using the signature k-mers of 8 amino acids in length.
         
  
 description : |
-    <p>The Annotate Plant Transcripts with Metabolic Functions method performs functional annotation of plant cDNA or protein sequences. The input FASTA file should contain cDNA sequences (obtained from assembling transcripts from next generation sequencing of a transcriptome) or translated protein sequences from plant gene models. This method assigns metabolic functions (derived from the PlantSEED Subsystems ontology) to the sequences. The resulting annotated genome can then be reviewed and downloaded. It can also be used as an input to other KBase methods such as <a data-method-id=Òbuild_a_metabolic_modelÓ>Build Metabolic Model/a>.</p>
+    <p>The Annotate Plant Coding Sequences with Metabolic Functions method performs functional annotation of plant cDNA or protein sequences. The input FASTA file should contain cDNA sequences (obtained from assembling transcripts from next generation sequencing of a transcriptome) or translated protein sequences from plant gene models. This method assigns metabolic functions (derived from the PlantSEED Subsystems ontology) to the sequences. The resulting annotated genome can then be reviewed and downloaded. It can also be used as an input to other KBase methods such as <a data-method-id=Òbuild_a_metabolic_modelÓ>Build Metabolic Model/a>.</p>
     
     <p><a href="http://kbase.us/annotate-plant-transcripts-with-metabolic-functions-method/" target="_blank">Tutorial for Annotate Plant Transcripts with Metabolic Functions Method</a></p>
     
