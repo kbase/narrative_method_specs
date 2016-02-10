@@ -40,6 +40,16 @@
       "valid_ws_types" : [ "KBasePhenotypes.PhenotypeSimulationSet" ],
       "is_output_name":true
     }
+  }, {
+    "id": "objective",
+    "optional":true,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":["bio1"],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
   } ],
   "behavior" : {
     "service-mapping" : {
@@ -58,6 +68,10 @@
         {
           "input_parameter": "output_phenosim",
           "target_property": "phenotypeSimultationSet"
+        },
+        {
+          "input_parameter": "objective",
+          "target_property": "biomass"
         },
         {
           "narrative_system_variable": "workspace",

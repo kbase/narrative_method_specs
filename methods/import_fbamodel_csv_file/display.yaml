@@ -34,9 +34,11 @@ parameters :
 
     biomass :
         ui-name : BIOMASS
-        short-hint : Provide a name for the biomass reaction in Reaction TSV file
-        long-hint  : Provide a name for the biomass reaction in Reaction TSV file
+        short-hint : Provide the biomass reaction identifier in Reaction TSV file
+        long-hint  : Provide the biomass reaction identifier in Reaction TSV file
 
-description : none
+description : |
+    <p>Please see <a href="http://kbase.us/data-upload-download-guide/fba-model/" target="_blank">http://kbase.us/data-upload-download-guide/fba-model/</a>
+    for more information about how to format your FBA model input file.</p>
 
 technical-description : none
