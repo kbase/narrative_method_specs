@@ -3,7 +3,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["importers", "annotation"],
+  "categories" : ["importers"],
   "widgets" : {
     "input" : "kbaseTabbedInput"
   },
