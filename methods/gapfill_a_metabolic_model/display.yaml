@@ -58,6 +58,86 @@ parameters :
         long-hint  : |
             Name of the model produced by the gapfill analysis
 
+    target_reaction :
+        ui-name : |
+            Reaction to activate
+        short-hint : |
+            ID of reaction to activate in gapfilling (e.g. rxn00001, cpd00001_e0, bio1)
+        long-hint  : |
+            ID of reaction to activate in gapfilling (e.g. rxn00001, cpd00001_e0, bio1)
+
+    gene_ko :
+        ui-name : |
+            Gene Knockouts
+        short-hint : |
+            User may add gene knockout information one at a time using “add another gene knockout” button. Gene IDs should be in the same format that appears in your metabolic model (e.g., kb|g.220339.CDS.2927)
+        long-hint  : |
+            User may add gene knockout information one at a time using “add another gene knockout” button. Gene IDs should be in the same format that appears in your metabolic model (e.g., kb|g.220339.CDS.2927)
+
+    reaction_ko :
+        ui-name : |
+            Reaction Knockouts
+        short-hint : |
+            User may add reaction knockout information one at a time using “add another reaction knockout” button. Reaction IDs should be in the same format that appears in your metabolic model (e.g rxn00002_c0)
+        long-hint  : |
+            User may add reaction knockout information one at a time using “add another reaction knockout” button. Reaction IDs should be in the same format that appears in your metabolic model (e.g rxn00002_c0)
+
+    expression_matrix :
+        ui-name : |
+            Expression matrix
+        short-hint : |
+            An imported ExpressionMatrix containing gene expression values, one condition (column) of which will be used to constrain reaction activity in FBA
+        long-hint  : |
+            An imported ExpressionMatrix containing gene expression values, one condition (column) of which will be used to constrain reaction activity in FBA
+
+    expression_condition :
+        ui-name : |
+            Expression condition
+        short-hint : |
+            Specific condition in expression matrix to which reaction activity in FBA should be fit
+        long-hint  : |
+            Specific condition in expression matrix to which reaction activity in FBA should be fit
+
+    expression_threshold :
+        ui-name : |
+            Expression threshold
+        short-hint : |
+            Reactions with expression values in the percentile above this threshold are considered ON; if below, they are considered OFF
+        long-hint  : |
+            Reactions with expression values in the percentile above this threshold are considered ON; if below, they are considered OFF
+
+    expression_uncertainty :
+        ui-name : |
+            Expression uncertainty
+        short-hint : |
+            Range of uncertainty for classification of reaction activity based on expression threshold
+        long-hint  : |
+            Reactions with expression values in a percentile that is within this uncertainty of the expression threshold will not be classified as on or off
+
+    universal_gene_threshold :
+        ui-name : |
+            Universal genes-based threshold
+        short-hint : |
+            Use expression threshold value (above) as the percentile of universal gene expression to use to set final threshold for gene activity
+        long-hint  : |
+            If checked, all expression values associated with a set of universally active genes will be sorted, and the value at the percentile set by Expression Threshold will be used to set activity all genes in the genome
+
+    objective_fraction :
+        ui-name : |
+            Objective constraint
+        short-hint : |
+            What fraction of the optimal objective value should be transcriptomics FBA problem be constrained at? Values between 0 and 1.
+        long-hint  : |
+            What fraction of the optimal objective value should be transcriptomics FBA problem be constrained at? Values between 0 and 1. 1 is not recommended.
+    
+    discrete_variables :
+        ui-name : |
+            Discrete formulation
+        short-hint : |
+            If checked, discrete binary variables are used for reaction activity and reaction slack in transcriptomic FBA. FBA will be slower. FVA will be much slower.
+        long-hint  : |
+            If checked, discrete binary variables are used for reaction activity and reaction slack in transcriptomic FBA. FBA will be slower. FVA will be much slower.
+
     comprehensive_gapfill :
         ui-name : |
             Comprehensive Gapfill
