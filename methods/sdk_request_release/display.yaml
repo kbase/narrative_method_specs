@@ -1,7 +1,7 @@
 #
 # define display information
 #
-name: SDK - Request Module Relese
+name: SDK - Request Module Release
 
 tooltip: |
 	Indicates that the beta version is ready for release, and requests a review
