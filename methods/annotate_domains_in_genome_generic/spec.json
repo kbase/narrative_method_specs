@@ -3,7 +3,7 @@
   "authors" : [ "jmc", "psnovichkov", "rsutormin" ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["active"],
+  "categories" : ["active", "annotation"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseDomainAnnotation"

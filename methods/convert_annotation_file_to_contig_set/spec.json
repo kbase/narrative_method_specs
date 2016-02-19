@@ -4,7 +4,7 @@
   "authors" : [ "jkbaumohl", "mhenderson", "gaprice" ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["active"],
+  "categories" : ["active", "annotation"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseContigSetView"
