@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Compare Two Proteomes
+name     : KB-UTIL - Compare Two Proteomes
 
 tooltip  : |
     Perform a comparison of two proteomes, producing a dot plot matrix and a table of gene differences.
@@ -10,6 +10,8 @@ screenshots :
 
     - compare_two_proteomes_input.png
     - compare_two_proteomes_output.png
+
+icon: kb_logo-violet.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
