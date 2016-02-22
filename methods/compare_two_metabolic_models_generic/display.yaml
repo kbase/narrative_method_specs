@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : KB-UTIL - Compare Two Metabolic Models
+name     : MODELSEED - Compare Two Metabolic Models
 tooltip  : |
     Compare two metabolic models by identifying shared and unique biochemical reactions and compounds. 
 
