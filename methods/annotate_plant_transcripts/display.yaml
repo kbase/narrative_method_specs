@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : RASTtk - Annotate Plant Coding Sequences with Metabolic Functions
+name     : PLANTSEED - Annotate Plant Coding Sequences with Metabolic Functions
 
 tooltip  : |
     Annotate a set of plant coding sequences with metabolic functions from the PlantSEED project.
