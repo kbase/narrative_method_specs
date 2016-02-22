@@ -1,12 +1,14 @@
 #
 # Define basic display information
 #
-name     : Build a FeatureSet from a Genome
+name     : KB-UTIL - Build a FeatureSet from a Genome
 tooltip  : |
     Create a new FeatureSet by selecting features from a Genome.
 
 screenshots :
     []
+
+icon: kb_logo-violet.png
 
 replacement-text : Created a new FeatureSet with Features from {{{input_genome}}}
 
