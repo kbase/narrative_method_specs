@@ -1,12 +1,14 @@
 #
 # Define basic display information
 #
-name     : Identify Differentially Expressed Genes
+name     : KB-EXPtk - Identify Differentially Expressed Genes
 tooltip  : |
     Filter an Expression Matrix to show differentially expressed genes.
 
 screenshots :
     []
+
+icon: kb_logo-mustard.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
