@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : KB-UTIL - Cluster Expression Data - Hierarchical
+name     : KB-EXPtk - Cluster Expression Data - Hierarchical
 
 tooltip  : |
     Perform hierarchical clustering to group gene expression data into a dendrogram.
