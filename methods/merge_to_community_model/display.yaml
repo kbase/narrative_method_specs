@@ -10,7 +10,7 @@ screenshots :
     - merge_metabolic_models_into_community_model_input.png
     - merge_metabolic_models_into_community_model_output.png
 
-icon: kb_logo-green-png
+icon: kb_logo-turquoise.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
