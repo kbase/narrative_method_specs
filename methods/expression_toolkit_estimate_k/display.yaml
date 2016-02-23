@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : KB-UTIL - Estimate K for K-Means Clustering
+name     : KB-EXPtk - Estimate K for K-Means Clustering
 
 tooltip  : |
     Compute reasonable values of k for use in k-means clustering.
