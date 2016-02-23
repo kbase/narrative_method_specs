@@ -24,7 +24,7 @@
       "output_mapping" : [
         {
           "input_parameter": "cummerbund_output_name",
-          "target_property": "cummerbund_output_name"
+          "target_property": "generate_cummerbund_plots"
         },
         {
           "narrative_system_variable": "workspace",
