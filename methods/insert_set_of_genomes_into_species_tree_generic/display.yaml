@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Insert Genome Into Species Tree
+name     : KB-UTIL - Insert Genome Into Species Tree
 subtitle : |
     Add one or more genomes to the KBase species tree.
 tooltip  : |
@@ -9,6 +9,8 @@ tooltip  : |
 
 screenshots :
     - insert_set_of_genomes_into_species_tree_input.png
+
+icon: kb_logo-violet.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
