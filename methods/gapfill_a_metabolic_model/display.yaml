@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Gapfill Metabolic Model
+name     : MODELSEED - Gapfill Metabolic Model
 tooltip  : |
     Identify the minimal set of biochemical reactions to add to a draft metabolic model to enable it to produce biomass in a specified media. 
 
@@ -10,7 +10,7 @@ screenshots :
     - gapfill_metabolic_model_input.png
     - gapfill_metabolic_model_output.png
 
-icon: icon.png
+icon: kb_logo-turquoise.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
