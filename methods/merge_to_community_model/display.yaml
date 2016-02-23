@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Merge Metabolic Models into Community Model
+name     : MODELSEED - Merge Metabolic Models into Community Model
 
 tooltip  : |
     Merge two or more metabolic models into a compartmentalized community model.
@@ -9,6 +9,8 @@ tooltip  : |
 screenshots :
     - merge_metabolic_models_into_community_model_input.png
     - merge_metabolic_models_into_community_model_output.png
+
+icon: kb_logo-green-png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
