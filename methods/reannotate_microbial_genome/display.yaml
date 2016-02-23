@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Annotate Microbial Genome
+name     : RASTtk - Annotate Microbial Genome
 
 tooltip  : |
     Annotate or re-annotate bacterial or archaeal genome using RASTtk.
@@ -9,7 +9,7 @@ tooltip  : |
 screenshots :
     []
 
-icon: icon.png
+icon: kb_logo-red.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
