@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["active", "communities", "metabolic_modeling", "populations"],
+  "categories" : ["active", "metabolic_modeling", "communities", "populations"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseTabTable"
