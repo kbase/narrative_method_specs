@@ -1,13 +1,15 @@
 #
 # Define basic display information
 #
-name     : Impute Missing Expression Values
+name     : KB-EXPtk - Impute Missing Expression Values
 
 tooltip  : |
     Replace missing expression values with the average of all other values present for a given feature.
 
 screenshots :
     []
+    
+icon: kb_logo-mustard.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
