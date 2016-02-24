@@ -1,0 +1,35 @@
+#
+# Define basic display information
+#
+name     : View RNASeq Sample
+
+tooltip  : |
+    View RNASeq Sample
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            RNASeq Sample
+        short-hint : |
+            Select a RNASeq Sample to view
+
+
+description : |
+    View and explore a RNASeq Sample in your Narrative.
+
