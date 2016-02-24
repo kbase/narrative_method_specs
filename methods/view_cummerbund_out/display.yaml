@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : View RNASeq differential expression plots
+tooltip  : |
+    View RNASeq differential plots created by R package cummerbund
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    cummerbund_output_name :
+        ui-name : |
+            RNASeq differential expression plots
+        short-hint : |
+            RNASeq differential expression plots
+
+
+description : |
+     This works with Cuffdiff data and creates plots using R package cummerbund. There is a list of plots that can be selected using the drop down menu.
+
+
