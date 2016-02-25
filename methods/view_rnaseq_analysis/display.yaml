@@ -1,0 +1,35 @@
+#
+# Define basic display information
+#
+name     : View RNASeqAnalysis
+
+tooltip  : |
+    View RNASeqAnalysis
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            RNASeqAnalysis
+        short-hint : |
+            Select a RNASeqAnalysis object to view
+
+
+description : |
+    View and explore a RNASeqAnalysis in your Narrative.
+
