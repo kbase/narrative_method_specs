@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : MODELSEED - Compare Two Metabolic Models
+name     : Compare Two Metabolic Models
 tooltip  : |
     Compare two metabolic models by identifying shared and unique biochemical reactions and compounds. 
 
@@ -13,7 +13,7 @@ screenshots :
     - compare_two_metabolic_models_output3.png
     - compare_two_metabolic_models_output4.png
 
-icon: kb_logo-turquoise.png
+icon: modelseed-teal.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
