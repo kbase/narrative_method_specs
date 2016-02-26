@@ -11,7 +11,7 @@ screenshots :
     - convert_annotation_file_to_contig_set_output.png
 
 
-icon: icon.png
+icon: arast-blue.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
