@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : MODELSEED - Build Metabolic Model
+name     : Build Metabolic Model
 tooltip  : |
     Generate a draft metabolic model based on an annotated genome. 
 screenshots :
@@ -10,7 +10,7 @@ screenshots :
     - build_metabolic_model_output.png
 
 
-icon: kb_logo-turquoise.png
+icon: modelseed-teal.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
