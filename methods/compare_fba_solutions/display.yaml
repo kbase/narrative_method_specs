@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : KB-UTIL - Compare FBA Solutions
+name     : Compare FBA Solutions
 
 tooltip  : |
     Compare the solutions from multiple FBA simulations.
@@ -11,7 +11,7 @@ screenshots :
     - compare_fba_input.png
     - compare_fba_output1.png
 
-icon: kb_logo-turquoise.png
+icon: fba-teal.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
