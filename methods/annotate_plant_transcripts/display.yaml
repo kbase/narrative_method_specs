@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : PLANTSEED - Annotate Plant Coding Sequences with Metabolic Functions
+name     : Annotate Plant Coding Sequences with Metabolic Functions
 
 tooltip  : |
     Annotate a set of plant coding sequences with metabolic functions from the PlantSEED project.
@@ -9,7 +9,7 @@ tooltip  : |
 screenshots :
     - annotate_plant_transcripts_with_metabolic_functions_input1.png
 
-icon: kb_logo-red.png
+icon: plantseed-red.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
