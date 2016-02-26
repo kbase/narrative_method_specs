@@ -11,7 +11,7 @@ screenshots :
     - build_genome_set_input.png
     - build_genome_set_output.png
 
-icon: icon.png
+icon: kb-purple.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
