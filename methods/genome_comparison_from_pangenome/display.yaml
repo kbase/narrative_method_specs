@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : KB-UTIL - Compare Genomes from Pangenome
+name     : Compare Genomes from Pangenome
 
 tooltip  : |
     Compare isofunctional and homologous gene families for all genomes in the pangenome.
@@ -9,7 +9,7 @@ tooltip  : |
 screenshots :
     - genome_comparison_from_pangenome_input.png
 
-icon: kb_logo-violet.png
+icon: kb-purple.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
