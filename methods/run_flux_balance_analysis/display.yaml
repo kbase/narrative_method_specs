@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : MODELSEED - Run Flux Balance Analysis
+name     : Run Flux Balance Analysis
 
 tooltip  : |
     Use Flux Balance Analysis (FBA) to predict metabolic fluxes in a metabolic model of an organism grown on a given media.
@@ -10,7 +10,7 @@ screenshots :
     - run_flux_balance_analysis_input.png
     - run_flux_balance_analysis_output.png
 
-icon: kb_logo-turquoise.png
+icon: fba-teal.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
