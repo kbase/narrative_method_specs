@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : RPS-BLAST - Annotate Domains in a Genome
+name     : Annotate Domains in a Genome
 
 tooltip  : |
     Annotate a genome with protein domains from widely used domain libraries such as COG, PFAM, etc.
