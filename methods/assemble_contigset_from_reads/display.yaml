@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : ARAST - Assemble Contigs from Reads
+name     : Assemble Contigs from Reads
 
 tooltip  : |
     Assemble a set of short DNA reads into a set of contigs.
@@ -10,7 +10,7 @@ screenshots :
     - assemble_contigs_from_reads_input1.png
     - assemble_contigs_from_reads_input2.png
 
-icon: kb_logo-blue.png
+icon: arast-blue.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
