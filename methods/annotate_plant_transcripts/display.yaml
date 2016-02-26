@@ -9,7 +9,7 @@ tooltip  : |
 screenshots :
     - annotate_plant_transcripts_with_metabolic_functions_input1.png
 
-icon: icon.png
+icon: plantseed-red.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.

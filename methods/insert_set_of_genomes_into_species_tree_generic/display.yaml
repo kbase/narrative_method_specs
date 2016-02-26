@@ -10,6 +10,8 @@ tooltip  : |
 screenshots :
     - insert_set_of_genomes_into_species_tree_input.png
 
+icon: kb-purple.png
+
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #

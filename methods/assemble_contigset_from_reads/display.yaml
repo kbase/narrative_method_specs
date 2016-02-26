@@ -10,6 +10,8 @@ screenshots :
     - assemble_contigs_from_reads_input1.png
     - assemble_contigs_from_reads_input2.png
 
+icon: arast-blue.png
+
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #

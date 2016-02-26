@@ -3,7 +3,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["active"],
+  "categories" : ["active", "comparative_genomics"],
   "widgets" : {
     "input" : null,
     "output" : "GenomeComparisonWidget"
