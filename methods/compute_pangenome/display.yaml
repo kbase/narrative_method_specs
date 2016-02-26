@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : KB-UTIL - Compute Pangenome
+name     : Compute Pangenome
 
 tooltip  : |
     Compute pangenome of a set of individual genomes
@@ -13,7 +13,7 @@ screenshots :
     - compute_pangenome_output2.png
     - compute_pangenome_output3.png
 
-icon: kb_logo-violet.png
+icon: kb-purple.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
