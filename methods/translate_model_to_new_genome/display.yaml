@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : KB-UTIL - Propagate Model to New Genome
+name     : Propagate Model to New Genome
  
 tooltip  : |
     Translate the metabolic model of one organism to another, using a mapping of similar proteins between their genomes.
@@ -10,7 +10,7 @@ screenshots :
     - propagate_model_to_new_genome_input.png
     - propagate_model_to_new_genome_output.png
 
-icon: kb_logo-turquoise.png
+icon: kb-teal.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
