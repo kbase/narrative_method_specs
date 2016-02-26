@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : MODELSEED - Simulate Growth on Phenotype Data
+name     : Simulate Growth on Phenotype Data
 subtitle : |
     Use Flux Balance Analysis (FBA) to simulate multiple growth phenotypes.
 tooltip  : |
@@ -10,7 +10,7 @@ tooltip  : |
 screenshots :
     - simulate_growth_on_a_phenotype_data_input.png
 
-icon: kb_logo-turquoise.png
+icon: modelseed-teal.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
