@@ -1,0 +1,14 @@
+#
+# Define basic display information
+#
+name     : Growth Parameters
+subtitle : Growth Parameters object
+tooltip  : Growth Parameters object
+
+icon : none
+
+description : |
+    <p>This type describes growth parameters.</p>
+    
+    
+    
