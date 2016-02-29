@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : View Chromatography Matrix 
+subtitle : |
+    View Chromatography Matrix 
+tooltip  : |
+    View Chromatography Matrix
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_chromatography_matrix :
+        ui-name : |
+            Chromatography Matrix
+        short-hint : |
+            Select the chromatography matrix you want to display
+        long-hint  : |
+            Select the ChromatographyMatrix object you want to display
+
+
+description : |
+    View Chromatography Matrix.
+
+
+technical-description : |
+    View ChromatographyMatrix object.

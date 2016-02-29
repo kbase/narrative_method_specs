@@ -1,0 +1,72 @@
+#
+# Define basic display information
+#
+name     : View Growth Curves
+subtitle : |
+    View and explore growth curves.
+tooltip  : |
+    View and explore growth curves of selected samples or data series.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_growth_matrix :
+        ui-name : |
+            Growth Matrix
+        short-hint : |
+            Select the Growth Matrix to build and display growth curves
+        long-hint  : |
+            Select name of the Growth Matrix you want to visualize
+
+    input_value_type :
+        ui-name : |
+            Type of data
+        short-hint : |
+            Display individual samples or group them into series?
+        long-hint  : |
+            Select series if you want to group replicated samples into a single growth curve. Select samples to display individual growth curve for each sample
+
+    input_condition_ids :
+        ui-name : |
+            Samples/Series
+        short-hint : |
+            Select samples/series you want to view
+        long-hint  : |
+            Select one or several samples/series to display their growth curves
+
+    input_show_error_bar :
+        ui-name : |
+            Error bars
+        short-hint : |
+            Show error bars
+        long-hint  : |
+            Show error bars (if series of samples were selected)
+
+    input_log_scale :
+        ui-name : |
+            Log scale
+        short-hint : |
+            Show values in log scale
+        long-hint  : |
+            Show values in log scale
+
+description : |
+    View and explore growth curves. This method takes a GrowthMatrix object as input and displays one or several growth curves.
+
+
+technical-description : |
+    View and explore growth curves.

@@ -1,0 +1,64 @@
+#
+# Define basic display information
+#
+name     : View Sample Properties Bar Chart
+subtitle : |
+    View bar chart of all property values for a selected set of samples from SamplePropertyMatrix
+tooltip  : |
+    View bar chart of all property values for a selected set of samples from SamplePropertyMatrix
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_sample_property_matrix :
+        ui-name : |
+            Sample Property Matrix
+        short-hint : |
+            Select SamplePropertyMatrix
+        long-hint  : |
+            Select SamplePropertyMatrix with the data you want to display
+
+    input_samples :
+        ui-name : |
+            Sample identifiers
+        short-hint : |
+            Select samples
+        long-hint  : |
+            Select samples
+
+    input_show_error_bar :
+        ui-name : |
+            Error bars
+        short-hint : |
+            Show error bars
+        long-hint  : |
+            Show error bars
+
+    input_log_scale :
+        ui-name : |
+            Log scale
+        short-hint : |
+            Show values in log scale
+        long-hint  : |
+            Show values in log scale
+
+description : |
+    View bar chart of all property values for a selected set of samples from SamplePropertyMatrix.
+
+
+technical-description : |
+    View bar chart of all property values for a selected set of samples from SamplePropertyMatrix.

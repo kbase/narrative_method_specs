@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : View SamplePropertyMatrix
+subtitle : |
+    View and explore sample properties matrix
+tooltip  : |
+    View and explore sample properties matrix
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_sample_property_matrix :
+        ui-name : |
+            Sample Properties Matrix
+        short-hint : |
+            Select SamplePropertyMatrix 
+        long-hint  : |
+            Select the SamplePropertyMatrix you want to explore
+
+
+description : |
+    View and explore sample properties matrix.
+
+
+technical-description : |
+    View and explore SamplePropertyMatrix object.
