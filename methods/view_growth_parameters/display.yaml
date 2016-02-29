@@ -1,0 +1,41 @@
+#
+# Define basic display information
+#
+name     : View Growth Parameters
+subtitle : |
+    View and explore growth parameters.
+tooltip  : |
+    View and explore growth parameters.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_growth_parameters :
+        ui-name : |
+            Growth Parameters
+        short-hint : |
+            Select the growth parameters you want to view
+        long-hint  : |
+            Select the growth parameters you want to view
+
+
+description : |
+    View and explore growth parameters.
+
+
+technical-description : |
+    View and explore growth parameters.

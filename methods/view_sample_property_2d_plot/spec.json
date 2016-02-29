@@ -1,0 +1,71 @@
+{
+  "name" : "View Sample Property 2D Plot",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : "kbaseSampleProperty2DPlotInput",
+    "output" : "kbaseSampleProperty2DPlot"
+  },
+  "parameters" : [ 
+      {
+        "id" : "input_sample_property_matrix",
+        "optional" : false,
+        "advanced" : false,
+        "allow_multiple" : false,
+        "default_values" : [ "" ],
+        "field_type" : "text",
+        "text_options" : {
+          "valid_ws_types" : [ "KBaseEnigmaMetals.SamplePropertyMatrix" ]
+        }
+      },
+      {
+        "id" : "input_property_x",
+        "optional" : false,
+        "advanced" : false,
+        "allow_multiple" : false,
+        "default_values" : [ "" ],
+        "field_type" : "custom_textsubdata",
+        "dropdown_options":{
+            "options": [
+            ]
+        }
+      },
+      {
+        "id" : "input_property_y",
+        "optional" : false,
+        "advanced" : false,
+        "allow_multiple" : false,
+        "default_values" : [ "" ],
+        "field_type" : "custom_textsubdata",
+        "dropdown_options":{
+            "options": [
+            ]
+        }
+      }       
+  ],
+  "behavior" : {
+    "none" : {
+      "output_mapping" : [
+        {
+          "input_parameter": "input_sample_property_matrix",
+          "target_property": "matrixID"
+        },
+        {
+          "input_parameter": "input_property_x",
+          "target_property": "propertySeriesX"
+        },
+        {
+          "input_parameter": "input_property_y",
+          "target_property": "propertySeriesY"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceID"
+        }
+      ]
+    }
+  }
+}

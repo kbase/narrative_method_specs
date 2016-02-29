@@ -1,0 +1,74 @@
+#
+# Define basic display information
+#
+name     : View Growth Parameters Plot
+subtitle : |
+    Plot a growth parameter versus one of growth conditions
+tooltip  : |
+    View Growth Parameters Plot.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_growth_parameters :
+        ui-name : |
+            Growth Parameters
+        short-hint : |
+            Select the growth parameters you want to view
+        long-hint  : |
+            Select a source of growth parameters data
+
+    input_growth_param :
+        ui-name : |
+            Select a parameter
+        short-hint : |
+            Select a growth parameter for Y axis
+        long-hint  : |
+            Select one of the growth parameters for Y axis
+
+    input_condition_param :
+        ui-name : |
+            Select a condition
+        short-hint : |
+            Select a growth condition for X axis
+        long-hint  : |
+            Select one of the growth conditions for X axis
+
+    input_check_other_params :
+        ui-name : |
+            Check other conditions
+        short-hint : |
+            Click the button to check other conditions and select their values
+        long-hint  : |
+            Click the button to check whether there are other conditions to be constrained
+
+    input_condition_filter :
+        ui-name : |
+             Select values of other conditions
+        short-hint : |
+            
+        long-hint  : |
+            
+
+
+
+description : |
+    Ths method displays a plot of a single growth parameter versus one of growth conditions. If several growth conditions varied between samples, you select one condition and constrain values of all other conditions.
+
+
+technical-description : |
+    View Growth Parameters Plot.

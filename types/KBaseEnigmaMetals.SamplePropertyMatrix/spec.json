@@ -1,0 +1,10 @@
+{
+    "ver":"0.1.0",
+    "view_method_ids":[
+        "view_sample_property_matrix"        
+    ],
+    "import_method_ids":[
+        "import_sampleproperty_tsv_file"
+    ],
+    "landing_page_url_prefix":""
+}

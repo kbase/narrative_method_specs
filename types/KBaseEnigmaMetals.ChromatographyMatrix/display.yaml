@@ -1,0 +1,12 @@
+#
+# Define basic display information
+#
+name     : Chromatography data
+subtitle : ChromatographyMatrix object
+tooltip  : ChromatographyMatrix object
+
+icon : none
+
+description : |
+    <p>This type describes growth data.</p>
+

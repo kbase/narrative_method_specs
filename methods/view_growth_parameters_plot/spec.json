@@ -1,0 +1,115 @@
+{
+  "name" : "View Growth Parameters Plot",
+  "ver" : "1.0.1",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : "kbaseGrowthParamsPlotInput",
+    "output" : "kbaseGrowthParamsPlot"
+  },
+  "parameters" : [ 
+    {
+        "id" : "input_growth_parameters",
+        "optional" : false,
+        "advanced" : false,
+        "allow_multiple" : false,
+        "default_values" : [ "" ],
+        "field_type" : "text",
+        "text_options" : {
+          "valid_ws_types" : [ "KBaseEnigmaMetals.GrowthParameters" ]
+        }
+      }, 
+      {
+        "id" : "input_growth_param",
+        "optional" : false,
+        "advanced" : false,
+        "allow_multiple" : false,
+        "default_values" : [ "growth_rate" ],
+        "field_type" : "dropdown",
+        "dropdown_options":{
+            "options": [
+                {
+                    "value": "growth_rate",
+                    "display": "Growth rate"
+                },
+                {
+                    "value": "max_growth",
+                    "display": "Max growth"
+                },                
+                {
+                    "value": "lag_phase",
+                    "display": "Lag phase"
+                },
+                {
+                    "value": "area_under_curve",
+                    "display": "Area under curve"
+                }
+            ]
+        }
+      },
+      {
+        "id" : "input_condition_param",
+        "optional" : false,
+        "advanced" : false,
+        "allow_multiple" : false,
+        "default_values" : [ "" ],
+        "field_type" : "custom_textsubdata",
+        "dropdown_options":{
+            "options": [
+            ]
+        }
+      },
+      {
+        "id" : "input_check_other_params",
+        "optional" : false,
+        "advanced" : false,
+        "allow_multiple" : false,
+        "default_values" : [ "" ],
+        "field_type" : "custom_button",
+        "dropdown_options":{
+            "options": [
+            ]
+        }
+      },
+      {
+        "id" : "input_condition_filter",
+        "optional" : false,
+        "advanced" : false,
+        "allow_multiple" : false,
+        "default_values" : [ "" ],
+        "field_type" : "custom_widget",
+        "dropdown_options":{
+            "options": [
+            ]
+        }
+      }
+  ],
+  "behavior" : {
+    "none" : {
+      "output_mapping" : [
+        {
+          "input_parameter": "input_growth_parameters",
+          "target_property": "growthParametersID"
+        },
+        {
+          "input_parameter": "input_growth_param",
+          "target_property": "growthParam"            
+        },      
+        {
+          "input_parameter": "input_condition_param",
+          "target_property": "conditionParam"            
+        },                
+        {
+          "input_parameter": "input_condition_filter",
+          "target_property": "conditionFilter"            
+        },                
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceID"
+        }
+      ]
+    }
+  }
+}

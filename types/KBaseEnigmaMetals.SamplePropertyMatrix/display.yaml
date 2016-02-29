@@ -1,0 +1,12 @@
+#
+# Define basic display information
+#
+name     : Sample properties data
+subtitle : SamplePropertyMatrix object
+tooltip  : SamplePropertyMatrix object
+
+icon : none
+
+description : |
+    <p>This type describes various properties (chemical etc.) of samples.</p>
+
