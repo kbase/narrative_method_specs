@@ -1,0 +1,29 @@
+name     : CHROMATOGRAPHY MATRIX FROM TSV FILE
+subtitle : none
+tooltip  : Upload a chromatography matrix from a TSV file into your Narrative.
+
+screenshots :
+    []
+
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+parameters :
+    chromatographyFile :
+        ui-name : CHROMATOGRAPHY TSV FILE
+        short-hint : File with chromatography data in TSV format
+        long-hint  : File with chromatography data in TSV format (Tab-separated table in text format. First row should contain unique sample identifiers. First column should contain unique row identifiers. Filename should end with ".tsv")
+
+    outputObject :
+        ui-name : NAME OF CHROMATOGRAPHY MATRIX
+        short-hint : Provide the name for the Chromatography Matrix object that will be created by this upload
+        long-hint  : Provide the name for the Chromatography Matrix object that will be created by this upload
+
+description : |
+        <p>This uploader enables you to upload a chromatography data matrix in TSV (Tab-Separated Values) format.
+        <p>This file consists of two parts: data section, where each row represents one time point, and each column depicts a sample, and metadata section. First label in the first column of the data section is "DATA". Each row has an identifier in the first column, and each column has an identifier in the first row. Other cells in The data section contain absorbance values for the appropriate time point and sample. The metadata section starts with a header line that contains “METADATA”, “Category”, “Property”, “Unit” and “Value” column labels. All experimental conditions are described in this Metadata section.  See <a href="https://github.com/kbaseIncubator/enigma_metal_campaign/wiki/ChromatographyMatrix-data-type">https://github.com/kbaseIncubator/enigma_metal_campaign/wiki/ChromatographyMatrix-data-type</a> for more information about formatting your chromatography data file.
+
+technical-description : Upload chromatography data in TSV format (creating ChromatographyMatrix object)

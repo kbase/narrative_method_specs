@@ -1,0 +1,35 @@
+name     : SAMPLE PROPERTIES MATRIX FROM TSV FILE
+subtitle : none
+tooltip  : Upload a sample properties matrix from a TSV file into your Narrative.
+
+screenshots :
+    []
+
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+parameters :
+    samplePropertyFile :
+        ui-name : SAMPLE PROPERTIES TSV FILE
+        short-hint : File with sample properties data in TSV format
+        long-hint  : File with sample properties data in TSV format (Tab-separated table in text format. First row should contain unique identifiers. First column should contain unique row identifiers, next columns should contain  values. Filename should end with ".tsv")
+
+    outputObject :
+        ui-name : NAME OF SAMPLE PROPERTIES MATRIX
+        short-hint : Provide the name for the SamplePropertyMatrix object that will be created by this upload
+        long-hint  : Provide the name for the SamplePropertyMatrix object that will be created by this upload
+
+    hasReplicates :
+        ui-name : Do you have series of replicates in your input file?
+        short-hint : If your input file contains replicates, uploader can group them into data series
+        long-hint  : If your input file contains replicates, either marked in the metadata section or unmarked, uploader will mark them in matrix metadata. Only file with raw values can contain replicates.
+
+
+description : |
+    <p>This uploader enables you to upload a sample properties matrix in TSV (Tab-Separated Values) format.
+    <p>This file consists of two parts: data section, where each row represents one time point, and each column depicts a sample, and metadata section. First label in the first column of the data section is "DATA". Each row has an identifier in the first column, and each column has an identifier in the first row. Other cells in The data section contain measured values for the appropriate sample and property. The metadata section starts with a header line that contains “METADATA”, “Category”, “Property”, “Unit” and “Value” column labels. All experimental conditions are described in this Metadata section.  See <a href="https://github.com/kbaseIncubator/enigma_metal_campaign/wiki/SamplePropertyMatrix-data-type">https://github.com/kbaseIncubator/enigma_metal_campaign/wiki/SamplePropertyMatrix-data-type</a> for more information about formatting your sample properties data file.
+
+technical-description : Upload sample properties data in TSV format (creating SamplePropertyMatrix object)

@@ -1,0 +1,67 @@
+{
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : [ "importers" ],
+  "widgets" : {
+    "input" : "kbaseNarrativeMethodInput"
+  },
+  "parameters" : [ {
+    "id" : "growthFile",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "file",
+    "text_options" : {
+      "valid_ws_types" : [ ]
+    }
+  }, {
+    "id" : "hasReplicates",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "0" ],
+    "field_type" : "dropdown",
+    "dropdown_options":{
+      "options": [
+        {
+          "value": "0",
+          "display": "My data have replicates, marked in metadata section"
+        },
+        {
+          "value": "1",
+          "display": "My data have unmarked replicates, try to find them"
+        },
+        {
+          "value": "2",
+          "display": "My data have no replicates"
+        }
+      ]
+    }
+  }, {
+    "id" : "outputObject",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseEnigmaMetals.GrowthMatrix" ],
+      "is_output_name" : true
+    }
+  } ],
+  "behavior" : {
+    "service-mapping" : {
+      "url" : "http://localhost:11111/",
+      "name" : "KBaseDataImport",
+      "method" : "upload",
+      "input_mapping" : [
+      ],
+      "output_mapping" : [
+      ]
+    }
+  },
+  "job_id_output_field": "job_id"
+}
