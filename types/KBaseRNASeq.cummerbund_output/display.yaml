@@ -1,0 +1,12 @@
+#
+# Define basic display information
+#
+name     : RNASeq differential expression Cummerbund plots
+subtitle : Stores the output of RNASeq differential expression plots
+tooltip  : Stores the output of differential expression  plots
+
+icon : none
+
+description : |
+    <p>Stores the output of RNASeq differential expression plots created by R package Cummerbund</p>
+
