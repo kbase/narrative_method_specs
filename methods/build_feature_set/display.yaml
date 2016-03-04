@@ -8,7 +8,7 @@ tooltip  : |
 screenshots :
     []
 
-icon: kb-purple.png
+icon: kb-orange.png
 
 replacement-text : Created a new FeatureSet with Features from {{{input_genome}}}
 
