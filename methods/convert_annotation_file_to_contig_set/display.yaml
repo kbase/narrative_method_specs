@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Convert Assembly File to Contigs
+name     : Convert JGI Assembly File to Contigs
 
 tooltip  : |
     Convert an assembly file from JGI containing an assembled microbial genome into a contig set that can be used in KBase methods.
