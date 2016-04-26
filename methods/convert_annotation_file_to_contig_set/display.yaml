@@ -4,7 +4,7 @@
 name     : Convert Assembly File to Contigs
 
 tooltip  : |
-    Convert an assembly file containing an assembled microbial genome into a contig set that can be used in KBase methods.
+    Convert an assembly file from JGI containing an assembled microbial genome into a contig set that can be used in KBase methods.
 
 screenshots :
     - convert_annotation_file_to_contig_set_input.png
