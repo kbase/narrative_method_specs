@@ -6,5 +6,8 @@
     "import_method_ids":[
         "import_genome_data_generic"
     ],
+    "export_functions":[
+        "TestRepo/test_download"
+    ],
     "landing_page_url_prefix":"genomes"
 }
