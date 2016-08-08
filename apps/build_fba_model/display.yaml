@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Reconstruct Genome-scale Metabolic Model (Depreciated)
+name     : Reconstruct Genome-scale Metabolic Model (Deprecated)
 subtitle : |
     Infer and gapfill a metabolic FBA model from a microbial genome in a specified growth condition.
 tooltip  : |
