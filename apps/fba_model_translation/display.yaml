@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Propagate Genome-scale Model to Close Genome (Depreciated)
+name     : Propagate Genome-scale Model to Close Genome (Deprecated)
 subtitle : |
     Propagate genome-scale metabolic model to closely related genome and gapfill the model.
     
