@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Build Plant Metabolic Model (Depreciated)
+name     : Build Plant Metabolic Model (Deprecated)
 subtitle : |
     Build a metabolic model for a plant based on annotated coding sequences.
 tooltip  : |
