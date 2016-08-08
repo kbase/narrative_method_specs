@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Reconstruct Community Metabolic Model
+name     : Reconstruct Community Metabolic Model (Deprecated)
 subtitle : |
     Reconstruct a compartmentalized metabolic model of a community using abundance data.
 tooltip  : |
@@ -25,6 +25,8 @@ suggestions :
             [compare_two_metabolic_models_generic, run_flux_balance_analysis]
 
 header : |
+    <p>“This multi-step app is deprecated and will no longer function after an upcoming KBase update. Any results produced by this app will be saved and you will be able to reproduce the functionality of this app with single-step apps."</p>
+
     <p>The Reconstruct Community Metabolic Model app generates a community metabolic model to be used with model-associated apps in KBase (e.g., "Run Flux Balance Analysis") to predict fluxes. To begin, the user may either upload a set of metabolic models or select a set of public metabolic models already present in KBase. KBase will then assemble these models into a single compartmentalized community model. The user may also select or upload a growth condition to which the community model will be gap filled.</p>
     
     <p><a href="http://kbase.us/reconstruct-community-metabolic-model/" target="_blank">Tutorial for Reconstruct Community Metabolic Model App</a></p>
