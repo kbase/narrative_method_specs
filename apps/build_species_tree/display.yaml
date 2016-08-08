@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Insert Genomes into Species Tree
+name     : Insert Genomes into Species Tree (Deprecated)
 subtitle : |
     Determine evolutionary relationships between organisms by generating both a tree and genome set combining user-supplied genomes with closely related public genomes in KBase.
 tooltip  : |
@@ -25,6 +25,8 @@ suggestions :
             []
 
 header : |
+    <p>“This multi-step app is deprecated and will no longer function after an upcoming KBase update. Any results produced by this app will be saved and you will be able to reproduce the functionality of this app with single-step apps."</p>
+
     <p>The Insert Genomes into Species Tree app enables a user to determine evolutionary relationships between organisms based on the differences in their genomic sequences by creating both a species tree and a genome set of closely related organisms. A set of reference alignments based on 49 highly conserved COG families is used to find the matching corresponding set of sequences in the seed genome. The sequences from the selected genome are then inserted into the reference alignments and the closest neighbors are extracted and concatenated, and a tree is rendered from them using FastTree (an approximate maximum likelihood method). After the tree is rendered, the set of neighboring genomes can be curated by adding or subtracting genomes as desired.</p>
     
     <p><a href="http://kbase.us/insert-genomes-into-species-tree-app/" target="_blank">Tutorial for Insert Genomes into Species Tree App</a></p>
