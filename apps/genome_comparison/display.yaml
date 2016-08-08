@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Compare Genomes from Pangenome (Depreciated)
+name     : Compare Genomes from Pangenome (Deprecated)
 subtitle : |
     Conduct a detailed comparison of genomes on the basis of protein sequence similarity and function.
 tooltip  : |
