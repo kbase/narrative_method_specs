@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Assemble and Annotate Microbial Genome (Depreciated)
+name     : Assemble and Annotate Microbial Genome (Deprecated)
 subtitle : |
     Assemble NGS reads into contigs and then perform structural and functional annotation of the assembled contigs.
 tooltip  : |
