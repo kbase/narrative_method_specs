@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Insert Genomes into Species Tree (Depreciated)
+name     : Insert Genomes into Species Tree (Deprecated)
 subtitle : |
     Determine evolutionary relationships between organisms by generating both a tree and genome set combining user-supplied genomes with closely related public genomes in KBase.
 tooltip  : |
