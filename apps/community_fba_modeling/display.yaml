@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Reconstruct Community Metabolic Model (Depreciated)
+name     : Reconstruct Community Metabolic Model (Deprecated)
 subtitle : |
     Reconstruct a compartmentalized metabolic model of a community using abundance data.
 tooltip  : |
