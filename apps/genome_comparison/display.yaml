@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Compare Genomes from Pangenome
+name     : Compare Genomes from Pangenome (Depreciated)
 subtitle : |
     Conduct a detailed comparison of genomes on the basis of protein sequence similarity and function.
 tooltip  : |
@@ -11,6 +11,8 @@ screenshots : []
 
 
 header : |
+    <p>“This multi-step app is deprecated and will no longer function after an upcoming KBase update. Any results produced by this app will be saved and you will be able to reproduce the functionality of this app with single-step apps."</p>
+
     <p>The Compare Genomes from Pangenome app conducts a detailed comparison of genomes on the basis of protein sequence similarity and function. It begins by creating a pangenome for a set of closely related organisms. The pangenome is defined as the set of conserved and variable genes that are found within a set of related genomes. In many cases, this is a desirable analysis for understanding which genes were gained and lost between strains, or for inferring which genes may confer a phenotype to a given strain.</p>
     
     <p><a href="http://kbase.us/compare-genomes-from-pangenome-app/" target="_blank">Tutorial for Compare Genomes from Pangenome App</a></p>
