@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Build and Normalize Metagenomic Functional Abundance Data (Depreciated)
+name     : Build and Normalize Metagenomic Functional Abundance Data (Deprecated)
 subtitle : |
     Derive the relative abundance of genes assigned to a user-selected functional ontology in one or more selected metagenomes.
 tooltip  : |
