@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Build Plant Metabolic Model
+name     : Build Plant Metabolic Model (Depreciated)
 subtitle : |
     Build a metabolic model for a plant based on annotated coding sequences.
 tooltip  : |
@@ -25,6 +25,8 @@ suggestions :
             [compare_two_metabolic_models_generic, run_flux_balance_analysis]
             
 header : |
+    <p>“This multi-step app is deprecated and will no longer function after an upcoming KBase update. Any results produced by this app will be saved and you will be able to reproduce the functionality of this app with single-step apps."</p>
+
     <p>The Build Plant Metabolic Model app generates metabolic models for a plant. This app starts with either using import of coding sequences (cDNA or protein sequences) in fasta format or using coding sequences stored as Genome object in KBase. It involves three steps. First, the coding sequences are annotated with PlantSEED based metabolic annotations. Second, a draft metabolic model is generated using annotated Genome object. Third, the draft metabolic model is gapfilled so that growth can be stimulated using Flux Balance Analysis (FBA). The user can visualize and download the annotated genome and the resulting metabolic models.</p>
     
     <p><a href="http://kbase.us/build-plant-metabolic-model-app/" target="_blank">Tutorial for Build Plant Metabolic Model App</a></p>
