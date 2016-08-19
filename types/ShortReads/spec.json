@@ -3,7 +3,7 @@
     "view_method_ids":[
     ],
     "import_method_ids":[
-        "import_reads_pe_fastq_file", "import_reads_se_fastq_file", "import_reads_fasta_file"
+       "ReadsUtils/import_se_reads", "ReadsUtils/import_pe_reads"
     ],
     "landing_page_url_prefix":""
 }

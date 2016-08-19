@@ -1,7 +1,7 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
-        "view_growth_parameters"
+        "NarrativeViewers/view_growth_parameters"
     ],
     "import_method_ids":[
     ],

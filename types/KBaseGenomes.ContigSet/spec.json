@@ -1,10 +1,13 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
-        "view_contigset"
+        "NarrativeViewers/view_contigset"
     ],
     "import_method_ids":[
         "import_contigset_fasta_file", "import_contigset_fasta_ftp"
     ],
+    "export_functions":{
+        "FASTA": "AssemblyUtil/export_assembly_as_fasta"
+    },
     "landing_page_url_prefix":""
 }

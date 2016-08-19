@@ -1,9 +1,15 @@
 {
     "ver":"0.1.0",
-    "view_method_ids":[ "view_metabolic_model_details"
+    "view_method_ids":[ 
+        "NarrativeViewers/view_metabolic_model_details"
     ],
     "import_method_ids":[
-        "import_fbamodel_csv_file", "import_fbamodel_sbml_file", "import_fbamodel_excel_file"
+        "FBAFileUtil/import_fbamodel_tsv_file", "FBAFileUtil/import_fbamodel_sbml_file", "FBAFileUtil/import_fbamodel_excel_file"
     ],
+    "export_functions":{
+        "SBML": "FBAFileUtil/export_model_as_sbml_file",
+        "TSV": "FBAFileUtil/export_model_as_tsv_file",
+        "EXCEL": "FBAFileUtil/export_model_as_excel_file"
+    },
     "landing_page_url_prefix":"ws/models"
 }
