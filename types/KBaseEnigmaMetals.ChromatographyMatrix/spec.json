@@ -1,7 +1,7 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
-        "view_chromatography_matrix"
+        "NarrativeViewers/view_chromatography_matrix"
     ],
     "import_method_ids":[
         "import_chromatography_tsv_file"

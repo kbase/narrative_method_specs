@@ -1,7 +1,7 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
-        "view_rnaseq_analysis"
+        "NarrativeViewers/view_rnaseq_analysis"
     ],
     "import_method_ids":[]
 }
