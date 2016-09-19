@@ -3,7 +3,7 @@
   "authors" : [ "fangfang", "cbun" ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["active", "annotation"],
+  "categories" : ["active", "assembly"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseAssemblyView"

@@ -13,6 +13,7 @@ screenshots :
     - compute_pangenome_output2.png
     - compute_pangenome_output3.png
 
+icon: kb-purple.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.

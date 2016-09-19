@@ -3,7 +3,7 @@
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
-  "categories" : ["active", "metabolic_modeling"],
+  "categories" : ["inactive", "metabolic_modeling"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseTabTable"
