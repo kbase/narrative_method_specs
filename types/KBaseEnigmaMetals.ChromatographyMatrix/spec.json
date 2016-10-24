@@ -4,7 +4,6 @@
         "NarrativeViewers/view_chromatography_matrix"
     ],
     "import_method_ids":[
-        "import_chromatography_tsv_file"
     ],
     "landing_page_url_prefix":""
 }
