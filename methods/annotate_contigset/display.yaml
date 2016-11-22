@@ -234,6 +234,25 @@ description : |
     <p><strong>Additional Information</strong><br>
     For more information on the steps of the default RAStk pipeline please refer to our publication on this (publication forthcoming). For more detailed tutorial information and to explore the additional functionality of RASTtk not currently available in the Narrative interface please refer to <a href="http://tutorial.theseed.org">http://tutorial.theseed.org.</a></p>
     
+        <p>How do gene coordinates work in my annotated genome?</p>
+    <p>The locations of the genes are the locations of the genes in each particular contig. The contig ID is included in the gene location.</p>
+    <p>So if a gene has the following location data:
+    <ul>
+    <li>Start = 10000</li>
+    <li>Direction = “-“</li>
+    <li>Length = 1000</li>
+    <li>Contig = MyContig.4</li>
+    </ul>
+    That gene will occur between base pairs 9000 and 10000 in MyContig.4, with transcription occurring in the reverse direction.</p>
+    <p>If a gene has the following location data:
+    <ul>
+    <li>Start = 10000</li>
+    <li>Direction = “+“</li>
+    <li>Length = 1000</li>
+    <li>Contig = MyContig.4</li>
+    </ul>
+    That gene will occur between base pairs 10000 and 11000 in MyContig.4, with transcription occurring in the forward direction.</p>
+    
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Thomas Brettin, James Davis, Terry Disz, Robert Edwards, Chris Henry, Gary Olsen, Robert Olson, Ross Overbeek, Bruce Parrello, Gordon Pusch, Roman Sutormin, Fangfang Xia. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
