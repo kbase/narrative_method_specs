@@ -25,7 +25,7 @@ suggestions :
             [compare_two_metabolic_models_generic, run_flux_balance_analysis]
 
 header : |
-    <p>“This multi-step app is deprecated and will no longer function after an upcoming KBase update. Any results produced by this app will be saved and you will be able to reproduce the functionality of this app with single-step apps."</p>
+    <p><b>Please note: This multi-step app is deprecated and will no longer function after an upcoming KBase update. However, any results produced by this app will be saved and you will be able to reproduce the functionality of this app with single-step apps.</b></p>
     
     <p>The Reconstruct Genome-scale Metabolic Model app builds a metabolic model, using the annotation data from an annotated Genome object to reconstruct the metabolic reactions that the cell is capable of performing.  It then performs gapfilling, which is the search for and subsequent bridging of missing metabolic reactions that were not found in the initial annotation search.</p>
   
@@ -39,8 +39,10 @@ step-descriptions :
 
 
 description : |
-    <p>The Reconstruct Genome-scale Metabolic Model app builds a metabolic model, using the annotation data from an annotated Genome object to reconstruct the metabolic reactions that the cell is capable of performing.  It then performs gapfilling, which is the search for and subsequent bridging of missing metabolic reactions that were not found in the initial annotation search.</p>
+    <p><b>Please note: This multi-step app is deprecated and will no longer function after an upcoming KBase update. However, any results produced by this app will be saved and you will be able to reproduce the functionality of this app with single-step apps.</b></p>
     
+    <p>The Reconstruct Genome-scale Metabolic Model app builds a metabolic model, using the annotation data from an annotated Genome object to reconstruct the metabolic reactions that the cell is capable of performing.  It then performs gapfilling, which is the search for and subsequent bridging of missing metabolic reactions that were not found in the initial annotation search.</p>
+  
     <p><a href="http://kbase.us/reconstruct-genome-scale-metabolic-model-app/" target="_blank">Tutorial for Reconstruct Genome-scale Metabolic Model App</a></p>
 
     <p><a href="http://kbase.us/metabolic-modeling-faq/">Metabolic Modeling FAQ</a></p>
