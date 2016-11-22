@@ -4,7 +4,7 @@
 name     : UPLOAD TRANSCRIPT
 subtitle : none
 tooltip  : |
-    Import transcripts (cDNA or protein) from a file in FASTA format
+    Import plant transcripts (cDNA or protein) from a file in FASTA format
 
 screenshots :
     []
@@ -33,7 +33,7 @@ parameters :
         ui-name : |
             FASTA FILE
         short-hint : |
-            File with protein/cDNA sequences in FASTA format
+            File with plant protein/cDNA sequences in FASTA format
         long-hint  : |
             Your filename should end with .fa or .fasta
 
@@ -63,6 +63,5 @@ parameters :
 
 
 description : none
-
 
 technical-description : none
