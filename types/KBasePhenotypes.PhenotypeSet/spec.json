@@ -1,10 +1,13 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
-        "view_phenotype_set"
+        "NarrativeViewers/view_phenotype_set"
     ],
     "import_method_ids":[
-        "import_phenotypeset_csv_file"
+        "FBAFileUtil/import_phenotypeset_tsv_file"
     ],
+    "export_functions":{
+        "TSV": "FBAFileUtil/export_phenotype_set_as_tsv_file"
+    },
     "landing_page_url_prefix":"ws/phenotype"
 }

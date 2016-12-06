@@ -1,7 +1,7 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
-        "view_expression_estimate_k"
+        "NarrativeViewers/view_expression_estimate_k"
     ],
     "import_method_ids":[
     ],

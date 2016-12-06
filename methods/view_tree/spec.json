@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["viewers", "comparative_genomics"],
+  "categories" : ["inactive", "viewers", "comparative_genomics"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseTree"

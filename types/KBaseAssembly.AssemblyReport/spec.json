@@ -1,7 +1,7 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
-        "view_assemblyreport"
+        "NarrativeViewers/view_assemblyreport"
     ],
     "landing_page_url_prefix":""
 }
