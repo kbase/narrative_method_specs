@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["active","viewers"],
+  "categories" : ["inactive", "viewers"],
   "widgets" : {
     "input" : null,
     "output" : "AnnotationSetTable"

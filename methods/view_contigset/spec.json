@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["viewers", "assembly"],
+  "categories" : ["inactive", "viewers", "assembly"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseContigSetView"
