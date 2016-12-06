@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : OntologyTranslation
+subtitle : OntologyTranslation object
+tooltip  : OntologyTranslation
+
+icon : none
+
+description : |
+    <p>This type describes ontology translations.</p>
+
+    
+    
+    

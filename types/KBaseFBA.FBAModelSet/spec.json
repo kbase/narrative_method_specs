@@ -1,7 +1,7 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
-        "view_fba_model_set"
+        "NarrativeViewers/view_fba_model_set"
     ],
     "import_method_ids":[
     ],

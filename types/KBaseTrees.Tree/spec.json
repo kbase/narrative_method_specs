@@ -1,7 +1,7 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
-        "view_tree"
+        "NarrativeViewers/view_tree"
     ],
     "import_method_ids":[
     ],
