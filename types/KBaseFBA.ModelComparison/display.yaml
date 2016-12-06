@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : FBA model comparison
+subtitle : FBA model comparison object
+tooltip  : FBA model comparison object
+
+icon : none
+
+description : |
+    <p>This type describes the FBA model comparison object.</p>
+
+    
+    
+    

@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : OntologyDictionary
+subtitle : OntologyDictionary object
+tooltip  : OntologyDictionary
+
+icon : none
+
+description : |
+    <p>This type describes ontology dictionaries.</p>
+
+    
+    
+    
