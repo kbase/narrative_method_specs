@@ -1,10 +1,13 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
-        "view_expression_matrix"
+        "NarrativeViewers/view_expression_matrix"
     ],
     "import_method_ids":[
-        "import_expression_tsv_file"
+        "KBaseFeatureValues/import_expression_tsv_file"
     ],
+    "export_functions":{
+        "TSV": "KBaseFeatureValues/export_matrix"
+    },
     "landing_page_url_prefix":""
 }

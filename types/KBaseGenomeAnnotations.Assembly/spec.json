@@ -4,6 +4,7 @@
         "NarrativeViewers/view_assembly"
     ],
     "import_method_ids":[
+        "AssemblyUtil/import_assembly_fasta_file", "AssemblyUtil/import_assembly_fasta_ftp"
     ],
     "export_functions":{
         "FASTA": "AssemblyUtil/export_assembly_as_fasta"
