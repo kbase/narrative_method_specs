@@ -1,0 +1,14 @@
+#
+# Define basic display information
+#
+name     : Expression Sample
+subtitle : Expression Sample object
+tooltip  : Expression Sample object
+
+icon : none
+
+description : |
+    <p>This type describes expression sample.</p>
+    
+    
+    

@@ -1,0 +1,11 @@
+#
+# Define basic display information
+#
+name     : Details of a RNASeq SampleSet
+subtitle : Stores the reads information associated with a particular RNASeq SampleSet
+tooltip  : Stores the reads information associated with a particular RNASeq SampleSet
+
+icon : none
+
+description : |
+    <p>Stores the reads information associated with a particular RNASeq SampleSet</p>

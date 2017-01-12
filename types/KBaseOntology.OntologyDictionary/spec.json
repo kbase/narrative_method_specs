@@ -1,9 +1,9 @@
 {
-    "ver":"0.1.1",
+    "ver":"0.1.0",
     "view_method_ids":[
+        "NarrativeViewers/view_ontology_dictionary"
     ],
     "import_method_ids":[
-    	"ReadsUtils/import_pe_reads", "ReadsUtils/import_se_reads"
     ],
     "landing_page_url_prefix":""
 }
