@@ -1,0 +1,12 @@
+{
+    "ver":"0.1.0",
+    "view_method_ids":[
+        "NarrativeViewers/view_reads"
+    ],
+    "import_method_ids":[
+    ],
+    "export_functions":{
+        "FASTQ": "ReadsUtils.export_reads"
+    },
+    "landing_page_url_prefix": ""
+}
