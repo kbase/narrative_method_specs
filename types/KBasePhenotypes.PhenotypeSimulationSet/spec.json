@@ -1,9 +1,13 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
-        "view_phenotype_simulation_results"
+        "NarrativeViewers/view_phenotype_simulation_results"
     ],
     "import_method_ids":[
     ],
+    "export_functions":{
+        "TSV": "fba_tools/export_phenotype_simulation_set_as_tsv_file",
+        "EXCEL": "fba_tools/export_phenotype_simulation_set_as_excel_file"
+    },
     "landing_page_url_prefix":""
 }
