@@ -6,7 +6,7 @@
     "import_method_ids":[
     ],
     "export_functions":{
-        "FASTQ": "ReadsUtils.export_reads"
+        "FASTQ": "ReadsUtils/export_reads"
     },
     "landing_page_url_prefix": ""
 }
