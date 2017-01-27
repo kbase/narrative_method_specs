@@ -1,7 +1,7 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
-        "view_genome_comparison"
+        "NarrativeViewers/view_genome_comparison"
     ],
     "import_method_ids":[
     ],

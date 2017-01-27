@@ -1,0 +1,37 @@
+#
+# Define basic display information
+#
+name     : View Feature Clusters
+
+tooltip  : |
+    View Feature Clusters
+
+screenshots :
+    []
+    
+icon: kb-yellow.png
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_cluster_set :
+        ui-name : |
+            Expression Feature Clusters
+        short-hint : |
+            Select the Expression Cluster Set you want to view
+
+
+description : |
+    View Expression Cluster Set object in your Narrative.
+

@@ -1,0 +1,14 @@
+#
+# Define basic display information
+#
+name     : Expression Matrix
+subtitle : Expression Matrix object
+tooltip  : Expression Matrix object
+
+icon : none
+
+description : |
+    <p>This type describes expression matrix.</p>
+    
+    
+    

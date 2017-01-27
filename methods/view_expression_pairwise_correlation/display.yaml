@@ -1,0 +1,69 @@
+#
+# Define basic display information
+#
+name     : View Pairwise Correlation for Expression Data
+
+tooltip  : |
+    Explore pairwise correlation values of selected features as a heatmap.
+
+screenshots :
+    []
+    
+icon: kb-yellow.png
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_expression_matrix :
+        ui-name : |
+            Expression Matrix
+        short-hint : |
+            Select the Expression Matrix to vizualize as a pairwise correlation
+        long-hint  : |
+            Choose an Expression Matrix from your Data Panel to use with this method. You can upload an Expression Matrix into your Narrative by clicking the <i>Add Data</i> button and selecting the <i>Import</i> tab.
+
+    input_gene_ids :
+        ui-name : |
+            Features
+        short-hint : |
+            Select the features to compare
+        long-hint  : |
+            If no features are found, your expression dataset may not be associated with the Genome that contains the features. Use the Associate Expression Matrix to Genome Features method to associate your expression dataset with the proper Genome.
+
+    input_featureset :
+        ui-name : |
+            Feature Set
+        short-hint : |
+            Include all the features from this FeatureSet.
+
+    min_range :
+        ui-name : |
+            Min Color Range
+        short-hint : |
+            The color range of the heatmat will be calibrated to set this as the minimum value.
+
+    max_range :
+        ui-name : |
+            Max Color Range
+        short-hint : |
+            The color range of the heatmat will be calibrated to set this as the maximum value.
+
+description : |
+    <p>This method allows you to view and explore pairwise correlation of selected features as a heatmap. Click on the Hide&#47;Show Selected Features button on the top of the heatmap to view and sort the summary statistics of expression values for selected features. Mouse over the heatmap to view specific correlation values.</p>
+
+    <p>The input is a .tsv file with "gene-id" listed in the A1 cell, the gene ids listed in the A column, the sample/conditions identifiers in the 1 row, and expression values that correspond to the gene-ids and sample throughout. For a comprehensive guide to formatting your expression data for import into KBase, see the <a href="http://kbase.us/data-upload-download-guide/expression-matrix/">Data Upload/Download Guide</a>.</p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
+

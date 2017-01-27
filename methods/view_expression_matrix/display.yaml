@@ -1,0 +1,37 @@
+#
+# Define basic display information
+#
+name     : View Expression Matrix
+
+tooltip  : |
+    View Expression Matrix
+
+screenshots :
+    []
+    
+icon: kb-yellow.png
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Expression Matrix
+        short-hint : |
+            Select an Expression Matrix to view
+
+
+description : |
+    View and explore an Expression Matrix in your Narrative.
+

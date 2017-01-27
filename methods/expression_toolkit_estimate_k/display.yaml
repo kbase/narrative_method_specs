@@ -1,0 +1,91 @@
+#
+# Define basic display information
+#
+name     : Estimate K for K-Means Clustering
+
+tooltip  : |
+    Compute reasonable values of k for use in k-means clustering.
+
+screenshots :
+    []
+
+icon: kb_expr-yellow.png
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_expression_matrix:
+        ui-name : |
+            Expression Matrix
+        short-hint : |
+            Select the Expression Matrix to use for estimating value of k
+        long-hint  : |
+            Predict reasonable values of k for the selected Expression Matrix. You can upload an Expression Matrix into your Narrative by clicking the <i>Add Data</i> button and selecting the <i>Import</i> tab.
+
+    output_estimated_k :
+        ui-name : |
+            Estimated number of clusters
+        short-hint : |
+            Provide a name for estimated number of clusters output
+        long-hint  : |
+            After the method has finished running, an EstimateKResult data object will be added to your data panel. Provide a name for this data object, using only alphanumeric characters and underscores.
+
+
+    min_k :
+        ui-name : Min. Number of Clusters
+        short-hint : Minimum number of clusters
+        long-hint  : The smallest number of clusters for estimating potential values of k.
+        
+    max_k :
+        ui-name : Max. Number of Clusters
+        short-hint : Maximum number of clusters
+        long-hint  : The largest number of clusters for estimating potential values of k.
+
+    criterion :
+        ui-name : Criterion
+        short-hint : Criterion for calculating average silhouette width
+        long-hint  : Select "asw" to calculate using average silhouette width given out by the pam/clara. Use "multiasw" for silhouette width computed by distcritmulti - recommended for large data sets with usepam is not selected. If "ch" is selected, the Calinski-Harabasz index for estimating the number of clusters is applied.
+
+    usepam:
+        ui-name : Use pam
+        short-hint : If checked, Partitioning Around Medoids (pam) is used. Otherwise Clustering Large Applications (clara) is used.
+        long-hint  : Clustering Large Applications (clara) is recommended for large datasets that contain over 2000 observations.
+
+    alpha:
+        ui-name : alpha
+        short-hint : Provide a numeric value between 0 and 1
+        long-hint  : Tuning constant used for Duda-Hart test for whether a data set should be split into two clusters. Provide a numeric value between 0 and 1 to set the significance level, recommended to be small if this is used for estimating the number of clusters.
+
+    diss:
+        ui-name : diss
+        short-hint : If checked, data will be considered as  dissimilarity matrix 
+        long-hint  : Considering data as a dissimilarity matrix means that the potential number of clusters will be larger than one. Otherwise, the data will beconsidered as a matrix of observations by variables.
+    random_seed :
+        ui-name : Random Seed
+        short-hint : Seed value used by K-means algorithm
+        long-hint  : If left empty, a random seed value is generated to be used by K-means algorithm. Setting the seed explicitly to a specific value is required to generate the same results every time.
+
+
+description : |
+    <p>This method generates reasonable numbers of clusters (k) for use in the Cluster Expression Data - K-Means method. Reasonable values of k are computed by minimizing both the number of clusters (k) and the average variance between the clusters. Begin by selecting or importing an expression dataset to analyze using the Add Data button. Provide a name for the output estimate, a valid number for the maximum number of clusters, and select a criterion for running estimate k. Run the method to generate a graph with peaks that represent reasonable values for k calculated by the algorithm.</p>
+    
+    <p>The input is a .tsv file with "gene-id" listed in the A1 cell, the gene ids listed in the A column, the sample/conditions identifiers in the 1 row, and expression values that correspond to the gene-ids and sample throughout. For a comprehensive guide to formatting your expression data for import into KBase, see the <a href="http://kbase.us/data-upload-download-guide/expression-matrix/">Data Upload/Download Guide</a>.</p>    
+    
+    <p>This method is based on the <a href="http://www.inside-r.org/packages/cran/fpc/docs/pamk">fpc package for R</a>.</p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
+    
+    <p>For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
+

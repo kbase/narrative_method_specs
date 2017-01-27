@@ -1,0 +1,67 @@
+#
+# Define basic display information
+#
+name     : View Expression Matrix Heatmap in Condition Table
+
+tooltip  : |
+    Explore an Expression Matrix by viewing a sortable heatmap of selected conditions.
+
+screenshots :
+    []
+    
+icon: kb-yellow.png
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_expression_matrix :
+        ui-name : |
+            Expression Matrix
+        short-hint : |
+            Select an Expression Matrix to visualize with a heatmap
+
+    input_gene_ids :
+        ui-name : |
+            Features
+        short-hint : |
+            Select the features to compare
+        long-hint  : |
+            If no features are found, your expression dataset may not be associated with the Genome that contains the features. Use the Associate Expression Matrix to Genome Features method to associate your expression dataset with the proper Genome.
+
+    input_featureset :
+        ui-name : |
+            Feature Set
+        short-hint : |
+            Include all the features from this FeatureSet
+
+    min_colorvalue :
+        ui-name : |
+            Min. Color Range
+        short-hint : |
+            For the heatmap, set the value of the maximum color
+
+    max_colorvalue :
+        ui-name : |
+            Max. Color Range
+        short-hint : |
+            For the heatmap, set the value of the minimum color
+
+
+description : |
+    <p>This method allows you to view and explore expression data as a sortable heatmap. The conditions&#47;samples are displayed on each row with some summary statistics averaged across the selected features. The conditions can be sorted by those values. Each of the selected features is represented in a simple heatmap in the table. Mouse over the heatmap to view specific expression values.</p>
+    
+    <p>The input is a .tsv file with "gene-id" listed in the A1 cell, the gene ids listed in the A column, the sample/conditions identifiers in the 1 row, and expression values that correspond to the gene-ids and sample throughout. For a comprehensive guide to formatting your expression data for import into KBase, see the <a href="http://kbase.us/data-upload-download-guide/expression-matrix/">Data Upload/Download Guide</a>.</p>    
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>

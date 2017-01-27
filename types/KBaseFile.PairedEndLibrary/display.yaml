@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : Short reads
+subtitle : Short reads object
+tooltip  : Short reads object
+
+icon : none
+
+description : |
+    <p>This type describes short reads.</p>
+
+    
+    
+    

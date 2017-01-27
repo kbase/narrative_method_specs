@@ -1,0 +1,11 @@
+#
+# Define basic display information
+#
+name     : Details of a RNASeq Analysis
+subtitle : Stores the metadata information associated with a particular RNASeq Analysis
+tooltip  : Stores the metadata information associated with a particular RNASeq Analysis
+
+icon : none
+
+description : |
+    <p>Stores the metadata information associated with a particular RNASeq Analysis</p>

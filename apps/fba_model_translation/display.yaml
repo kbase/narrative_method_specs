@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Propagate Genome-scale Model to Close Genome
+name     : Propagate Genome-scale Model to Close Genome (Deprecated)
 subtitle : |
     Propagate genome-scale metabolic model to closely related genome and gapfill the model.
     
@@ -26,6 +26,8 @@ suggestions :
             [compare_two_metabolic_models_generic, run_flux_balance_analysis]
 
 header : |
+    <p><b>Please note: This multi-step app is deprecated and will no longer function after an upcoming KBase update. However, any results produced by this app will be saved and you will be able to reproduce the functionality of this app with single-step apps.</b></p>
+
     <p>The Propagate Genome-Scale Model to Close Genome app allows an existing genome-scale model of a reference genome to be translated to a new model of a closely related genome. This is advantageous because the model being translated may include extensive manual curation, and it is often faster to translate an existing curated model to a new genome rather than building a new model of the genome from scratch. The user must select the model to be translated, as well as the genome to which the model will be propagated. Propagation is based on bidirectional best hits between the original model genome and the genome selected by the user for propagation. The resultant model will then be gap-filled by KBase in any growth condition selected by the user. The metabolic model object produced by this app may be exported in SBML or Excel format or immediately used as input in any of the downstream modeling apps.</p>
     
     <p><a href="http://kbase.us/propagate-genome-scale-model-to-close-genome-app/" target="_blank">Tutorial for Propagate Genome-scale Model to Close Genome App</a></p>
@@ -43,11 +45,9 @@ step-descriptions :
 
 
 description : |
+    <p><b>Please note: This multi-step app is deprecated and will no longer function after an upcoming KBase update. However, any results produced by this app will be saved and you will be able to reproduce the functionality of this app with single-step apps.</b></p>
+
     <p>The Propagate Genome-Scale Model to Close Genome app allows an existing genome-scale model of a reference genome to be translated to a new model of a closely related genome. This is advantageous because the model being translated may include extensive manual curation, and it is often faster to translate an existing curated model to a new genome rather than building a new model of the genome from scratch. The user must select the model to be translated, as well as the genome to which the model will be propagated. Propagation is based on bidirectional best hits between the original model genome and the genome selected by the user for propagation. The resultant model will then be gap-filled by KBase in any growth condition selected by the user. The metabolic model object produced by this app may be exported in SBML or Excel format or immediately used as input in any of the downstream modeling apps.</p>
     
     <p><a href="http://kbase.us/propagate-genome-scale-model-to-close-genome-app/" target="_blank">Tutorial for Propagate Genome-scale Model to Close Genome App</a></p>
-
-
-    
-    
     

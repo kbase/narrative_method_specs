@@ -1,0 +1,61 @@
+#
+# Define basic display information
+#
+name     : Associate Expression Matrix to Genome Features
+
+tooltip  : |
+    Associate an Expression Matrix with an annotated Genome that contains features referenced in the matrix.
+
+screenshots :
+    []
+    
+icon: kb_expr-yellow.png
+
+replacement-text : Associated Expression data {{{input_data}}} to Genome {{{genome_id}}}
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_data:
+        ui-name : |
+            Expression Matrix
+        short-hint : |
+            Select the Expression Matrix to associate with the Genome that references features contained within the expression data
+
+    genome_id:
+        ui-name : |
+            Genome
+        short-hint : |
+            Select the Genome containing features referenced by the Expression Matrix
+
+    out_matrix_id :
+        ui-name : |
+            Output Expression Matrix Name
+        short-hint : |
+            Provide a name for the new Expression Matrix associated with the Genome
+
+
+description : |
+    <p>This method associates the rows of an Expression Matrix to features contained in the Genome by matching the row IDs to genome feature IDs or aliases. Methods that operate on expression data often require this mapping between rows and features to properly function. This method is can be used in case the Expression Matrix was not associated with a Genome upon importing or if an updated Genome becomes available to associate with the Expression Matrix.</p>
+    
+    <p>The input is a .tsv file with "gene-id" listed in the A1 cell, the gene ids listed in the A column, the sample/conditions identifiers in the 1 row, and expression values that correspond to the gene-ids and sample throughout. For a comprehensive guide to formatting your expression data for import into KBase, see the <a href="http://kbase.us/data-upload-download-guide/expression-matrix/">Data Upload/Download Guide</a>.</p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
+

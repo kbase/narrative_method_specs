@@ -1,0 +1,11 @@
+#
+# Define basic display information
+#
+name     : Details of a RNASeq Alignment
+subtitle : Stores the statistics information associated with a single RNASeq Alignment
+tooltip  : Stores the metadata information associated with a single RNASeq Alignment
+
+icon : none
+
+description : |
+    <p>Stores the metadata information associated with a single RNASeq Alignment</p>

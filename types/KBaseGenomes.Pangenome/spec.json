@@ -1,9 +1,13 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
-        "view_pangenome"
+        "NarrativeViewers/view_pangenome"
     ],
     "import_method_ids":[
     ],
+    "export_functions":{
+        "TSV": "PangenomeFileUtil/export_pangenome_as_tsv_file",
+        "EXCEL": "PangenomeFileUtil/export_pangenome_as_excel_file"
+    },
     "landing_page_url_prefix":"pangenome"
 }

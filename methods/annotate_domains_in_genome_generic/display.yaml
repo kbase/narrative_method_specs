@@ -4,10 +4,12 @@
 name     : Annotate Domains in a Genome
 
 tooltip  : |
-    Annotate a genome with protein domains from widely used domain libraries.
+    Annotate a genome with protein domains from widely used domain libraries such as COG, PFAM, etc.
 
 screenshots :
     []
+
+icon: domains-red.png
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
@@ -51,7 +53,7 @@ parameters :
 
 description : |
     
-    <p>This method identifies protein domains from widely used domain libraries.  It requires a Genome as input, which must already have annotated genes (e.g., those identified using the <a data-method-id=Òreannotate_microbial_genomeÓ>Annotate Microbial Genome</a> or <a data-method-id=Òannotate_contigsetÓ>Annotate Microbial Contigs</a> methods).</p>
+    <p>This method identifies protein domains from widely used domain libraries.  It requires a Genome as input, which must already have annotated genes (e.g., those identified using the <a data-method-id=Ã’reannotate_microbial_genomeÃ“>Annotate Microbial Genome</a> or <a data-method-id=Ã’annotate_contigsetÃ“>Annotate Microbial Contigs</a> methods).</p>
     
     <p>The user must choose one of the following sets of models with which to annotate their Genome:</p>
     

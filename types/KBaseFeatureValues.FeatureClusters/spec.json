@@ -1,0 +1,13 @@
+{
+    "ver":"0.1.0",
+    "view_method_ids":[
+        "NarrativeViewers/view_expression_feature_clusters"
+    ],
+    "import_method_ids":[
+    ],
+    "export_functions":{
+        "TSV": "KBaseFeatureValues/export_clusters_tsv",
+        "SIF": "KBaseFeatureValues/export_clusters_sif"
+    },
+    "landing_page_url_prefix":""
+}

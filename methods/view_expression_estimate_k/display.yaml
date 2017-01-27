@@ -1,0 +1,40 @@
+#
+# Define basic display information
+#
+name     : View Estimated K Result
+
+tooltip  : |
+    View Estimate K Result in your Narrative.
+
+screenshots :
+    []
+    
+icon: kb-yellow.png
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_estimate_k_result :
+        ui-name : |
+            Estimated K Result
+        short-hint : |
+            Select the Estimated K Result you want to view
+        long-hint  : |
+            Select the Estimated K Result you want to view
+
+
+description : |
+
+    <p>View the plot between the number of clusters k and the average silhouette width for the k clusters. The average silhoutte width provides an evaluation of the K-Means clustering validity and is used to estimate k for K-Means Clustering. Observations with a large silhouette width (near 1) are well clustered, observations near 0 lie between 2 clusters and observations with a negative silhouette width are placed in the wrong cluster.</p>
+     

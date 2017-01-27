@@ -10,6 +10,8 @@ tooltip  : |
 screenshots :
     - insert_set_of_genomes_into_species_tree_input.png
 
+icon: kb-purple.png
+
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
@@ -58,7 +60,62 @@ parameters :
 
 
 description : |
-    <p>This method allows a user to construct a phylogenetic tree combining the genome(s) provided by the user with a set of closely related genomes selected from all public KBase genomes. Since the number of genomes available in KBase is very large, the procedure starts by selecting a subset of public KBase genomes closely related to the user-provided genomes. Relatedness is determined by alignment similarity to a select subset of COG (Clusters of Orthologous Groups) domains. Next, a phylogenetic tree is reconstructed using FastTree (a method to quickly estimate maximum likelihood phylogeny, see Publications) with the genome provided by the user and the set of genomes identified as similar in the previous step.</p>
+    
+    <p>This app allows a user to construct a phylogenetic tree combining the genome(s) provided by the user with a set of closely related genomes selected from all public KBase genomes. Since the number of genomes available in KBase is very large, the procedure starts by selecting a subset of public KBase genomes closely related to the user-provided genomes. Relatedness is determined by alignment similarity to 49 COG (Clusters of Orthologous Groups) domains. Next, a phylogenetic tree is reconstructed using FastTree (a method to quickly estimate maximum likelihood phylogeny, see Publications) with the genome provided by the user and the set of genomes identified as similar in the previous step.</p>
+    
+    <p>The 49 COG domains used by this app are:
+        <ul>
+        <li>COG0012, COG0012, Predicted GTPase, probable translation factor [Translation, ribosomal structure and biogenesis].</li>
+        <li>COG0013, AlaS, Alanyl-tRNA synthetase [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0016, PheS, Phenylalanyl-tRNA synthetase alpha subunit [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0018, ArgS, Arginyl-tRNA synthetase [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0030, KsgA, Dimethyladenosine transferase (rRNA methylation) [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0041, PurE, Phosphoribosylcarboxyaminoimidazole (NCAIR) mutase [Nucleotide transport and metabolism]</li>
+        <li>COG0046, PurL, Phosphoribosylformylglycinamidine (FGAM) synthase, synthetase domain [Nucleotide transport and metabolism]</li>
+        <li>COG0048, RpsL, Ribosomal protein S12 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0049, RpsG, Ribosomal protein S7 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0051, RpsJ, Ribosomal protein S10 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0052, RpsB, Ribosomal protein S2 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0072, PheT, Phenylalanyl-tRNA synthetase beta subunit [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0080, RplK, Ribosomal protein L11 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0081, RplA, Ribosomal protein L1 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0082, AroC, Chorismate synthase [Amino acid transport and metabolism]</li>
+        <li>COG0086, RpoC, DNA-directed RNA polymerase, beta' subunit/160 kD subunit [Transcription]</li>
+        <li>COG0087, RplC, Ribosomal protein L3 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0088, RplD, Ribosomal protein L4 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0089, RplW, Ribosomal protein L23 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0090, RplB, Ribosomal protein L2 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0091, RplV, Ribosomal protein L22 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0092, RpsC, Ribosomal protein S3 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0093, RplN, Ribosomal protein L14 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0094, RplE, Ribosomal protein L5 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0096, RpsH, Ribosomal protein S8 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0097, RplF, Ribosomal protein L6P/L9E [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0098, RpsE, Ribosomal protein S5 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0099, RpsM, Ribosomal protein S13 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0100, RpsK, Ribosomal protein S11 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0102, RplM, Ribosomal protein L13 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0103, RpsI, Ribosomal protein S9 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0105, Ndk, Nucleoside diphosphate kinase [Nucleotide transport and metabolism]</li>
+        <li>COG0126, Pgk, 3-phosphoglycerate kinase [Carbohydrate transport and metabolism]</li>
+        <li>COG0127, COG0127, Xanthosine triphosphate pyrophosphatase [Nucleotide transport and metabolism]</li>
+        <li>COG0130, TruB, Pseudouridine synthase [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0150, PurM, Phosphoribosylaminoimidazole (AIR) synthetase [Nucleotide transport and metabolism]</li>
+        <li>COG0151, PurD, Phosphoribosylamine-glycine ligase [Nucleotide transport and metabolism]</li>
+        <li>COG0164, RnhB, Ribonuclease HII [DNA replication, recombination, and repair]</li>
+        <li>COG0172, SerS, Seryl-tRNA synthetase [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0185, RpsS, Ribosomal protein S19 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0186, RpsQ, Ribosomal protein S17 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0215, CysS, Cysteinyl-tRNA synthetase [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0244, RplJ, Ribosomal protein L10 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0256, RplR, Ribosomal protein L18 [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0343, Tgt, Queuine/archaeosine tRNA-ribosyltransferase [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0504, PyrG, CTP synthase (UTP-ammonia lyase) [Nucleotide transport and metabolism]</li>
+        <li>COG0519, GuaA, GMP synthase, PP-ATPase domain/subunit [Nucleotide transport and metabolism]</li>
+        <li>COG0532, InfB, Translation initiation factor 2 (IF-2; GTPase) [Translation, ribosomal structure and biogenesis]</li>
+        <li>COG0533, QRI7, Metal-dependent proteases with possible chaperone activity [Posttranslational modification, protein turnover, chaperones]</li>
+        </ul>
+    </p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong> Roman Sutormin. For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
     

@@ -1,7 +1,7 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
-        "view_fba_comparison"
+        "NarrativeViewers/view_fba_comparison"
     ],
     "import_method_ids":[
     ],

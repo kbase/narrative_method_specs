@@ -1,7 +1,7 @@
 {
     "ver":"0.1.0",
     "view_method_ids":[
-        "view_genomeset"
+        "NarrativeViewers/view_genomeset"
     ],
     "import_method_ids":[
     ],
