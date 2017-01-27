@@ -3,5 +3,9 @@
     "view_method_ids":[
         "NarrativeViewers/view_rnaseq_differential_expression"
     ],
-    "import_method_ids":[]
+    "import_method_ids":[],
+    "export_functions":{
+        "ZIP": "kb_rnaseq_donwloader/export_rna_seq_differential_expression_as_zip"
+    },
+    "landing_page_url_prefix": ""
 }
