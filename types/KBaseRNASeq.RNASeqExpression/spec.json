@@ -4,5 +4,8 @@
         "NarrativeViewers/view_rnaseq_sample_expression"
     ],
     "import_method_ids":[],
-    "landing_page_url_prefix":""
+    "export_functions":{
+        "ZIP": "kb_rnaseq_donwloader/export_rna_seq_expression_as_zip"
+    },
+    "landing_page_url_prefix": ""
 }
