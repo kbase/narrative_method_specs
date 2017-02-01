@@ -6,8 +6,8 @@
     "import_method_ids":[
     ],
     "export_functions":{
-        "TSV": "FBAFileUtil/export_fba_as_tsv_file",
-        "EXCEL": "FBAFileUtil/export_fba_as_excel_file"
+        "TSV": "fba_tools/export_fba_as_tsv_file",
+        "EXCEL": "fba_tools/export_fba_as_excel_file"
     },
     "landing_page_url_prefix":"ws/fbas"
 }
