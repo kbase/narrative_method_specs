@@ -1,0 +1,11 @@
+#
+# Define basic display information
+#
+name     : Binned Contigs
+subtitle : Binned Contigs object
+tooltip  : Binned Contigs object
+
+icon : none
+
+description : |
+    <p>This type describes binned contigs compiled from a metagenomic assembly.</p>
