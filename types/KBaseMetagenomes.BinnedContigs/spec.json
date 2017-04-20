@@ -1,0 +1,12 @@
+{
+    "ver":"0.0.1",
+    "view_method_ids":[
+        "NarrativeViewers/view_binned_contigs"
+    ],
+    "import_method_ids":[
+    ],
+    "export_functions":{
+        "FASTA SET": "MetagenomeUtils/binned_contigs_to_file"
+    },
+    "landing_page_url_prefix":""
+}
