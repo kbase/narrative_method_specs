@@ -4,8 +4,8 @@
     	"NarrativeViewers/view_media"
     ],
     "import_method_ids":[
-        "fba_tools/import_media_tsv_file", "FBAFileUtil/import_media_excel_file",
-        "fba_tools/import_media_excel_file", "FBAFileUtil/import_media_excel_file"
+        "fba_tools/import_media_tsv_file",
+        "fba_tools/import_media_excel_file"
     ],
     "export_functions":{
         "TSV": "fba_tools/export_media_as_tsv_file",
