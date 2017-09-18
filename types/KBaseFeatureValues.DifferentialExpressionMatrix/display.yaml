@@ -1,0 +1,14 @@
+#
+# Define basic display information
+#
+name     : Differential Expression Matrix
+subtitle : Differential Expression Matrix object
+tooltip  : Differential Expression Matrix object
+
+icon : none
+
+description : |
+    <p>This type describes differential expression matrix.</p>
+    
+    
+    

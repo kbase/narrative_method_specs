@@ -1,0 +1,11 @@
+{
+    "ver":"0.1.0",
+    "view_method_ids":[
+        "NarrativeViewers/view_expression_matrix"
+    ],
+    "import_method_ids":[],
+    "export_functions":{
+        "TSV": "DifferentialExpressionUtils/export_diff_expr_matrix_as_tsv"
+    },
+    "landing_page_url_prefix":""
+}
