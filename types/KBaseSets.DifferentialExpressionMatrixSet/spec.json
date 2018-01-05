@@ -1,0 +1,7 @@
+{
+    "ver":"0.1.0",
+    "view_method_ids":[
+        "NarrativeViewers/view_differential_expression_matrix_set"
+    ],
+    "import_method_ids":[]
+}

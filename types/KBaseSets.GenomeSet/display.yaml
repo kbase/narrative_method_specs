@@ -1,0 +1,11 @@
+#
+# Define basic display information
+#
+name     : Details of a Genome Set
+subtitle : Stores the statistics information associated with a Genome Set
+tooltip  : Stores the metadata information associated with a Genome Set
+
+icon : none
+
+description : |
+    <p>Stores the metadata information associated with a Genome Set</p>
