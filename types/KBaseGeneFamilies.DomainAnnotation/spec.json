@@ -3,5 +3,8 @@
     "view_method_ids":[
         "NarrativeViewers/view_domain_annotation"
     ],
+    "export_functions":{
+        "CSV": "DomainAnnotation/export_csv"
+    },
     "landing_page_url_prefix":""
 }
