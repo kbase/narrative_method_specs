@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : Compound Set
+subtitle : A set of chemical compounds
+tooltip  : A set of chemical compounds
+
+icon : none
+
+description : |
+    <p>This type describes the sets of chemical structures</p>
+
+    
+    
+    
