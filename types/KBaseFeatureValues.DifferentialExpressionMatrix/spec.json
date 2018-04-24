@@ -1,8 +1,6 @@
 {
     "ver":"0.1.0",
-    "view_method_ids":[
-        "NarrativeViewers/view_expression_matrix"
-    ],
+    "view_method_ids":[],
     "import_method_ids":[],
     "export_functions":{
         "TSV": "DifferentialExpressionUtils/export_diff_expr_matrix_as_tsv"
