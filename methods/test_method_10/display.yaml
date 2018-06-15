@@ -1,0 +1,50 @@
+#
+# Define basic display information
+#
+name     : Test Subdata
+subtitle  : |
+    test for a subdata parameter
+tooltip  : |
+    test for a subdata parameter
+
+screenshots :
+    []
+
+icon: none
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related : []
+        next : []
+    methods:
+        related : []
+        next : []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    search :
+        ui-name : |
+            Search test
+        short-hint : |
+            Search test
+    ftp :
+        ui-name : |
+            staging service test
+        short-hint : |
+            staging service test
+    custom :
+        ui-name : |
+            dynamic service test
+        short-hint : |
+            dynamic service test
+
+
+description : |
+    <p>This description can be marked up with <b>html</b> and can have <a href="https://kbase.us">links</a></p>
+    <p>This description should be understandable by a novice biologist user.</p>

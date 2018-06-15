@@ -1,0 +1,77 @@
+{
+  "ver" : "1.0.0",
+  "authors" : [ "wstester2" ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["testmethods"],
+  "widgets" : {
+    "input" : null,
+    "output" : null
+  },
+  "parameters" : [ {
+    "id" : "ftp",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "dynamic_dropdown",
+    "dynamic_dropdown_options" : {
+      "data_source": "ftp_staging"
+    }
+  },{
+    "id" : "search",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "dynamic_dropdown",
+    "dynamic_dropdown_options" : {
+      "data_source": "search",
+      "service_params": [{
+          "object_types": ["taxon"],
+          "match_filter": {
+              "full_text_in_all": "{{dynamic_dropdown_input}}"
+          },
+          "access_filter": {
+              "with_private": 0,
+              "with_public": 1
+          },
+          "sorting_rules": [{
+              "is_object_property": 0,
+              "property": "timestamp",
+              "ascending": 0
+          }]
+      }],
+      "selection_id" : "taxon_name",
+      "description_template" : "<strong>{{scientific_name}}</strong>: {{scientific_lineage}}",
+      "multiselection":false
+    }
+  },{
+    "id" : "custom",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "dynamic_dropdown",
+    "dynamic_dropdown_options" : {
+      "data_source": "custom",
+      "service_function": "BiochemistryAPI.get_reactions",
+      "service_version": "beta",
+      "service_params": [{"reactions":["{{dynamic_dropdown_input}}"]}],
+      "selection_id" : "id",
+      "description_template" : "<strong>{{name}}</strong>: {{equation}}",
+      "multiselection":true
+    }
+  }],
+  "behavior" : {
+    "script-mapping" : {
+      "module" : "assembly",
+      "script" : "assemble_contigset_from_reads",
+      "has_files": true,
+      "input_mapping" : [
+      ],
+      "output_mapping" : [
+      ]
+    }
+  }
+}
