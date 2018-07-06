@@ -8,7 +8,7 @@
     ],
     "export_functions":{
         "GENBANK": "GenomeFileUtil/export_genome_as_genbank",
-        "GFF": "GenomeFileUtil/export_genome_as_gff"
+        "GFF + FASTA": "GenomeFileUtil/export_genome_as_gff"
     },
     "landing_page_url_prefix":"genomes"
 }
