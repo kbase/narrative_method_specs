@@ -1,0 +1,11 @@
+#
+# Define basic display information
+#
+name     : Details of a Attribute Mapping
+subtitle : Details of a Attribute Mapping
+tooltip  : Details of a Attribute Mapping
+
+icon : none
+
+description : |
+    <p>Attribute Mapping</p>

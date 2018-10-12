@@ -1,0 +1,11 @@
+#
+# Define basic display information
+#
+name     : Details of a Generic Matrix
+subtitle : Details of a Generic Matrix
+tooltip  : Details of a Generic Matrix
+
+icon : none
+
+description : |
+    <p>Generic Matrix</p>
