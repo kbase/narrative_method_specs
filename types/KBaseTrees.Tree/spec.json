@@ -3,6 +3,9 @@
     "view_method_ids":[
         "NarrativeViewers/view_tree"
     ],
+    "export_functions":{
+        "NEWICK": "TreeUtils/export_tree_newick"
+    },
     "import_method_ids":[
     ],
     "landing_page_url_prefix":"tree"
