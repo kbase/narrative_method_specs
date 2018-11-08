@@ -6,7 +6,8 @@
     "import_method_ids":[],
     "export_functions":{
         "BAM": "kb_rnaseq_donwloader/export_rna_seq_alignment_as_bam",
-        "SAM": "kb_rnaseq_donwloader/export_rna_seq_alignment_as_sam"
+        "SAM": "kb_rnaseq_donwloader/export_rna_seq_alignment_as_sam",
+        "STAGING": "kb_staging_exporter/export_to_staging"
     },
     "landing_page_url_prefix": ""
 }
