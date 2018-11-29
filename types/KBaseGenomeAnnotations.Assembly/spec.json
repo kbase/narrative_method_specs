@@ -7,7 +7,8 @@
         "AssemblyUtil/import_assembly_fasta_file", "AssemblyUtil/import_assembly_fasta_ftp"
     ],
     "export_functions":{
-        "FASTA": "AssemblyUtil/export_assembly_as_fasta"
+        "FASTA": "AssemblyUtil/export_assembly_as_fasta",
+        "STAGING": "kb_staging_exporter/export_to_staging"
     },
     "landing_page_url_prefix":""
 }
