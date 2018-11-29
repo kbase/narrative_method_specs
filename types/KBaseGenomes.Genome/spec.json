@@ -8,7 +8,8 @@
     ],
     "export_functions":{
         "GENBANK": "GenomeFileUtil/export_genome_as_genbank",
-        "GFF": "GenomeFileUtil/export_genome_as_gff"
+        "GFF": "GenomeFileUtil/export_genome_as_gff",
+        "STAGING": "kb_staging_exporter/export_to_staging"
     },
     "landing_page_url_prefix":"genomes"
 }
