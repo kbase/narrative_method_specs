@@ -1,0 +1,11 @@
+{
+    "ver":"0.1.0",
+    "view_method_ids":[
+        "NarrativeViewers/view_condition_set"
+    ],
+    "import_method_ids":[],
+    "export_functions": {
+        "TSV": "GenericsAPI/export_attribute_mapping_tsv",
+        "EXCEL": "GenericsAPI/export_attribute_mapping_excel"
+    }
+}

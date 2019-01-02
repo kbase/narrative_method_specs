@@ -1,0 +1,8 @@
+{
+    "ver":"0.1.0",
+    "view_method_ids":["NarrativeViewers/view_generic_matrix"],
+    "import_method_ids":[],
+    "export_functions": {
+        "EXCEL": "GenericsAPI/export_matrix"
+    }
+}

@@ -1,0 +1,14 @@
+#
+# Define basic display information
+#
+name     : GenomeClassifierTrainingSet
+subtitle : Training Set for a Genome Classifier
+tooltip  : Training Set for a Genome Classifier
+
+icon : none
+
+description : |
+    <p>This type contains a training set that can be used to train a Genome Classifier.</p>
+    
+    
+    
