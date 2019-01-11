@@ -6,7 +6,8 @@
     "import_method_ids":[
     ],
     "export_functions":{
-        "FASTA SET": "MetagenomeUtils/binned_contigs_to_file"
+        "FASTA SET": "MetagenomeUtils/binned_contigs_to_file",
+        "EXCEL": "MetagenomeUtils/export_binned_contigs_as_excel"
     },
     "landing_page_url_prefix":""
 }
