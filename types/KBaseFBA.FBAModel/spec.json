@@ -6,7 +6,7 @@
         "fba_tools/import_fbamodel_tsv_file", "fba_tools/import_fbamodel_sbml_file", "fba_tools/import_fbamodel_excel_file"
     ],
     "export_functions":{
-        "SBML": "fba_tools/export_model_as_sbml_file",
+        "SBML": "kb_cobrapy/export_model_as_sbml",
         "TSV": "fba_tools/export_model_as_tsv_file",
         "EXCEL": "fba_tools/export_model_as_excel_file"
     },
