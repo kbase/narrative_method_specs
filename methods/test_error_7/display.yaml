@@ -1,0 +1,39 @@
+#
+# Define basic display information
+#
+name     : Test Method Estimator Error 1
+subtitle  : |
+    test for a method estimator in the spec
+tooltip  : |
+    test for a method estimator in the spec
+
+screenshots :
+    []
+
+icon: none
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related : []
+        next : []
+    methods:
+        related : []
+        next : []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    foo :
+        ui-name : |
+            foo
+        short-hint : |
+            foo
+
+description : |
+    <p>This description can be marked up with <b>html</b> and can have <a href="https://kbase.us">links</a></p>
+    <p>This description should be understandable by a novice biologist user.</p>
