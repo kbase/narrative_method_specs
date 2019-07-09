@@ -1,0 +1,30 @@
+{
+  "ver" : "1.0.0",
+  "authors" : [ "wjriehl" ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["testmethods"],
+  "widgets" : {
+    "input" : null,
+    "output" : null
+  },
+  "parameters" : [ {
+    "id" : "foo",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text"
+  }],
+  "behavior" : {
+    "service-mapping" : {
+      "name" : "SomeService",
+      "method" : "some_method",
+      "resource_estimator_module": "SomeService",
+      "input_mapping" : [
+      ],
+      "output_mapping" : [
+      ]
+    }
+  }
+}
