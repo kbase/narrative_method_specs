@@ -8,4 +8,4 @@ tooltip  : Annotated Metagenome Assembly object
 icon : none
 
 description : |
-    <p>This type describes binned contigs compiled from a metagenomic assembly.</p>
+    <p>This type describes an annotated metagenome assembly.</p>
