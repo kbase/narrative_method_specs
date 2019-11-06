@@ -7,7 +7,7 @@
   "categories" : ["inactive", "viewers", "annotation", "comparative_genomics"],
   "widgets" : {
     "input" : null,
-    "output" : "kbaseGenomeView"
+    "output" : "kbaseAnnotatedMetagenomeAssemblyView"
   },
   "parameters" : [ {
     "id" : "param0",
