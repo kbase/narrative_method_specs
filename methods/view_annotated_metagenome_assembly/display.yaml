@@ -1,0 +1,46 @@
+#
+# Define basic display information
+#
+name     : View Annotated Metagenome Assembly
+subtitle : |
+    View and explore a Annotated Metagenome Assembly object in your workspace.
+tooltip  : |
+    View and explore a Annotated Metagenome Assembly object in your workspace.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param0 :
+        ui-name : |
+            Annotated Metagenome Assembly
+        short-hint : |
+            select the Annotated Metagenome Assembly you want to view
+        long-hint  : |
+            select the Annotated Metagenome Assembly you want to view
+
+
+description : |
+    View and explore a Annotated Metagenome Assembly object in your workspace.
+
+
+technical-description : |
+    View and explore a Annotated Metagenome Assembly object in your workspace.

@@ -1,0 +1,11 @@
+#
+# Define basic display information
+#
+name     : Annotated Metagenome Assembly
+subtitle : Annotated Metagenome Assembly object
+tooltip  : Annotated Metagenome Assembly object
+
+icon : none
+
+description : |
+    <p>This type describes an annotated metagenome assembly.</p>
