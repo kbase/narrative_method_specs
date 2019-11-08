@@ -6,7 +6,7 @@
     "import_method_ids":[
     ],
     "export_functions":{
-        "GFF + FASTA": "GenomeFileUtil/export_genome_as_gff",
+        "GFF + FASTA": "GenomeFileUtil/export_metagenome_as_gff",
         "STAGING": "kb_staging_exporter/export_to_staging"
     },
     "landing_page_url_prefix":""
