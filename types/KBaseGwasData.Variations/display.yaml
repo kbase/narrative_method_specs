@@ -1,0 +1,15 @@
+#
+# Define basic display information
+#
+name     : View Variation object
+subtitle : View Variation object
+tooltip  : View Variation object
+
+icon : none
+
+description : |
+    <p>This type describes Variation object.</p>
+
+    
+    
+    
