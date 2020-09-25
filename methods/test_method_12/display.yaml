@@ -1,0 +1,63 @@
+#
+# Define basic display information
+#
+name     : Test Method 12
+subtitle : This method is a test, and only a test, of the method store system.
+tooltip  : This method is a test, and only a test.  Hello tooltip!
+
+screenshots : []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        - test_method_1
+    next :
+        - test_method_2
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    param_multiselection_false:
+        ui-name    : Multiselection false
+        short-hint : Multiselection false
+
+    param_multiselection_true:
+        ui-name    : Multiselection true
+        short-hint : Multiselection true
+
+    param_multiselection_default:
+        ui-name    : Multiselection default
+        short-hint : Multiselection default
+
+    param_multiselection_false_allow_multiple:
+        ui-name    : Multiselection false, allow_multiple true
+        short-hint : Multiselection false, allow_multiple true
+
+    param_multiselection_true_allow_multiple:
+        ui-name    : Multiselection true, allow_multiple true
+        short-hint : Multiselection true, allow_multiple true
+
+    param_multiselection_default_allow_multiple:
+        ui-name    : Multiselection default, allow_multiple true
+        short-hint : Multiselection default, allow_multiple true
+
+description : |
+    <p>This is a test method</p>
+
+    <pre>some code here</pre>
+
+    yada, yada, yada <br>
+
+
+technical-description : |
+    <b> this is the technical description </b> <br>
+
+    <pre>some code here</pre>
+
+    yada, yada, yada <br>
+
+
+
