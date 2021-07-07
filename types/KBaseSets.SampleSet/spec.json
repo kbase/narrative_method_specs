@@ -1,0 +1,13 @@
+{
+    "ver":"0.1.0",
+    "view_method_ids":[
+        "NarrativeViewers/view_sample_set"
+    ],
+    "import_method_ids":[
+    ],
+    "export_functions":{
+        "STAGING": "kb_staging_exporter/export_to_staging",
+        "SESAR CSV": "sample_uploader/export_samples"
+    },
+    "landing_page_url_prefix":""
+}
