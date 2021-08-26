@@ -1,0 +1,11 @@
+#
+# Define basic display information
+#
+name     : Sample Set
+subtitle : Sample Set object
+tooltip  : Sample Set object
+
+icon : none
+
+description : |
+    <p>This type describes a set of samples.</p>
